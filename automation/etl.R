@@ -10,6 +10,13 @@ library(srppp)
 library(tidyr)
 library(purrr)
 library(jsonlite)
+library(rdfhelper) # install from <https://github.com/damian-oswald/rdfhelper>
+
+# ------------------------------------------------------------------
+# DEFINE GLOBAL PARAMETERS
+# ------------------------------------------------------------------
+
+base <- "https://agriculture.ld.admin.ch/plant-protection/"
 
 # ------------------------------------------------------------------
 # DEFINE HELPER FUNCTIONS
@@ -49,34 +56,13 @@ detail_to_df <- function(x) {
   do.call(rbind, y)
 }
 
-# Function to construct IRI
-IRI <- function(domain, id, prefix = "") {
-  paste0(prefix, ":", domain, "-", id)
-}
-
-# Function to construct a literal
-literal <- function(x, datatype = NULL, lang = NULL) {
-  d = if(!is.null(datatype)) paste0("^^xsd:", datatype) else ""
-  l = if(!is.null(lang)) paste0("@", lang) else ""
-  sprintf("\"%s\"%s%s", x, d, l)
-}
-
-# Function to mark up url
-URL <- function(x) sprintf("<%s>", x)
-
-# Fuction to `cat` a triple (or return it...)
-triple <- function(subject, predicate, object, return = FALSE) {
-  x = sprintf("%s %s %s .\n", subject, predicate, object)
-  if(return) return(x) else cat(x)
-}
-
 # DOMAINS
-# 1: Product
-# 2: Company
-# 3: Address (of a company)
-# 4: Hazard statement
-# 5: Crop
-# 6: Pest
+# 0001: Product
+# 0002: Company
+# 0003: Address (of a company)
+# 0004: Hazard statement
+# 0005: Crop
+# 0006: Pest
 
 # ------------------------------------------------------------------
 # DOWNLOAD THE SWISS PLANT PROTECTION REGISTRY AS AN XML FILE
@@ -86,21 +72,18 @@ triple <- function(subject, predicate, object, return = FALSE) {
 SRPPP <- srppp_dm()
 
 # Download and unzip the file
-zip_url <- "https://www.blv.admin.ch/dam/blv/de/dokumente/zulassung-pflanzenschutzmittel/pflanzenschutzmittelverzeichnis/daten-pflanzenschutzmittelverzeichnis.zip.download.zip/Daten%20Pflanzenschutzmittelverzeichnis.zip"
+srppp_zip_url <- "https://www.blv.admin.ch/dam/blv/de/dokumente/zulassung-pflanzenschutzmittel/pflanzenschutzmittelverzeichnis/daten-pflanzenschutzmittelverzeichnis.zip.download.zip/Daten%20Pflanzenschutzmittelverzeichnis.zip"
 temp_zip <- tempfile(fileext = ".zip")
 unzip_dir <- tempdir()
-download.file(zip_url, temp_zip, mode = "wb")
+download.file(srppp_zip_url, temp_zip, mode = "wb")
 unzip(temp_zip, exdir = unzip_dir)
-
-# Read the XML file
 xml_file_path <- file.path(unzip_dir, "PublicationData.xml")
-xml_data <- read_xml(xml_file_path)
+XML <- read_xml(xml_file_path)
 
 # Read mapping tables
-lindas_country = read.csv("mapping-tables/lindas-country.csv", row.names = 1)
-zefix_company = read.csv("mapping-tables/zefix-company.csv", row.names = 1)
-srppp_product_categories = read.csv("mapping-tables/srppp-product-categories.csv", row.names = 1)
-wikidata_taxon = read.csv("mapping-tables/wikidata-taxon.csv")
+lindas_country = read.csv("tables/mapping/lindas-country.csv", row.names = 1)
+srppp_product_category = read.csv("tables/mapping/srppp-product-category.csv", row.names = 1)
+zefix_company = read.csv("tables/mapping/zefix-company.csv", row.names = 1)
 
 # ------------------------------------------------------------------
 # WRITE PRODUCT INFORMATION
@@ -108,17 +91,17 @@ wikidata_taxon = read.csv("mapping-tables/wikidata-taxon.csv")
 
 # pre-process product tables
 swiss_products = SRPPP$products[,c("pNbr", "wNbr", "name", "exhaustionDeadline", "soldoutDeadline", "permission_holder")]
-colnames(swiss_products) = c("pNbr", "hasFederalAdmissionNumber", "label", "hasExhaustionDeadline", "hasSoldoutDeadline", "hasPermissionHolder")
-swiss_products$hasFederalAdmissionNumber = paste0("W-", swiss_products$hasFederalAdmissionNumber)
-swiss_products$hasCountryOfOrigin = "https://ld.admin.ch/country/CHE"
-swiss_products$hasForeignAdmissionNumber = NA
-swiss_products$isParallelImport = FALSE
+colnames(swiss_products) = c("pNbr", "hasFederalAdmissionNumber", "rdfs:label", "hasExhaustionDeadline", "hasSoldoutDeadline", "hasPermissionHolder")
+swiss_products[,"hasFederalAdmissionNumber"] = paste0("W-", unlist(swiss_products[,"hasFederalAdmissionNumber"]))
+swiss_products[,"hasCountryOfOrigin"] = "https://ld.admin.ch/country/CHE"
+swiss_products[,"hasForeignAdmissionNumber"] = NA
+swiss_products[,"isParallelImport"] = FALSE
 
 # pre-process parallel imports tables
 parallel_imports = SRPPP$parallel_imports[,c("pNbr", "id", "name", "exhaustionDeadline", "soldoutDeadline", "permission_holder", "producingCountryPrimaryKey", "admissionnumber")]
 colnames(parallel_imports) = colnames(swiss_products)
-parallel_imports$hasCountryOfOrigin = lindas_country[as.character(parallel_imports$hasCountryOfOrigin),]
-parallel_imports$isParallelImport = TRUE
+parallel_imports[,"hasCountryOfOrigin"] = lindas_country[as.character(parallel_imports[,"hasCountryOfOrigin"]),]
+parallel_imports[,"isParallelImport"] = TRUE
 
 # merge the two tables
 products = rbind(swiss_products, parallel_imports)
@@ -126,16 +109,16 @@ products = as.data.frame(products)
 products[products==""] <- NA
 
 # tag the products that are allowed non-professionally (runn `unique(SRPPP$CodeS[SRPPP$CodeS$desc_pk==13876,]` to check code ID)
-products$isNonProfessionallyAllowed = products[,"pNbr"] %in% unlist(SRPPP$CodeS[SRPPP$CodeS$desc_pk==13876,"pNbr"])
+products[,"isNonProfessionallyAllowed"] = products[,"pNbr"] %in% unlist(SRPPP$CodeS[SRPPP$CodeS$desc_pk==13876,"pNbr"])
 
 # sort by product ID (this is important for the "sameProductAs" search)
 products = products[order(products$pNbr),]
 
 # open file
-sink("data/products.ttl")
+sink("rdf/products.ttl")
 
 cat("
-@prefix : <https://agriculture.ld.admin.ch/foag/plant-protection#> .
+@prefix : <https://agriculture.ld.admin.ch/plant-protection/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -145,45 +128,60 @@ cat("
 # write triples
 for (i in 1:nrow(products)) {
   
-  # save categories as one string
-  c <- srppp_product_categories[as.character(unlist(SRPPP$categories[SRPPP$categories$pNbr==products[i,"pNbr"],2])),2] |>
-    strsplit(", ") |> unlist() |> unique() |> paste(collapse = ", ")
+  # save the current row
+  x = as.list(products[i,])
   
-  # define basic product information
-  sprintf("%s a :Product, %s ;\n", IRI("1", products[i,"hasFederalAdmissionNumber"]), c) |> cat()
-  sprintf("    :hasFederalAdmissionNumber %s ;\n", literal(products[i,"hasFederalAdmissionNumber"], datatype = "string")) |> cat()
-  if(products[i,"isParallelImport"]) {
-    sprintf("    a :ParallelImport ;\n") |> cat()
-    if(!is.na(products[i,"hasForeignAdmissionNumber"])) sprintf("    :hasForeignAdmissionNumber %s ;\n", literal(products[i,"hasForeignAdmissionNumber"], datatype = "string")) |> cat()
-  }
-  sprintf("    rdfs:label %s ;\n", literal(products[i,"label"])) |> cat()
-  sprintf("    :isParallelImport %s ;\n", tolower(products[i,"isParallelImport"])) |> cat()
-  sprintf("    :isNonProfessionallyAllowed %s ;\n", tolower(products[i,"isNonProfessionallyAllowed"])) |> cat()
+  # save the current product
+  subject = uri(paste0("1-",x$hasFederalAdmissionNumber), base)
   
-  # some products have defined deadlines
-  if(!is.na(products[i,"hasExhaustionDeadline"])) {
-    sprintf("    :hasExhaustionDeadline %s ;\n", literal(products[i,"exhaustionDeadline"], datatype = "date")) |> cat()
-  }
-  if(!is.na(products[i,"hasSoldoutDeadline"])) {
-    sprintf("    :hasSoldoutDeadline %s ;\n", literal(products[i,"hasSoldoutDeadline"], datatype = "date")) |> cat()
-  }
+  # save classes as one string
+  classes <- uri(srppp_product_category[as.character(unlist(SRPPP$categories[SRPPP$categories$pNbr==products[i,"pNbr"],2])),1])
+  if(products[i,"isParallelImport"]) classes = c(classes, uri("ParallelImport", base))
   
+  triple(subject, "a", classes)
+  triple(subject, "rdfs:label", literal(x[["rdfs:label"]]))
+  for (j in names(x)[-c(1,3)]) {
+    
+    # save predicate and object
+    predicate <- paste0(":", j)
+    object <- x[[j]]
+    
+    # check if object is not NA
+    if(!is.na(object)) {
+      
+      # conditionally make statement based on object class
+      if(class(object)=="character") {
+        if(length(grep("https://", object))>0) {
+          triple(subject, predicate, uri(object))
+        } else {
+          triple(subject, predicate, literal(object))
+        }
+      } else if(class(object)=="logical") {
+        triple(subject, predicate, typed(tolower(object), datatype = "boolean"))
+      } else if(class(object)=="Date") {
+        triple(subject, predicate, typed(object, datatype = "date"))
+      }
+    }
+  }
+
   # find the chemically identical products
   if(sum(products[,"pNbr"]==products[i,"pNbr"])>1) {
     for (j in which(products[,"pNbr"]==products[i,"pNbr"])) {
       if(i != j) {
-        sprintf("    :isSameProductAs %s ;\n", IRI("1", products[j,"hasFederalAdmissionNumber"])) |> cat()
+        triple(subject, ":isSameProductAs", uri(paste0("1-",products[j,"hasFederalAdmissionNumber"]),base))
       }
     }
   }
   
-  sprintf("    :hasCountryOfOrigin %s ;\n", URL(products[i,"hasCountryOfOrigin"])) |> cat()
-  
+
   # reuse existing company from lindas zefix, if possible
-  zefix_iri = zefix_company[as.character(products[i,"hasPermissionHolder"]),"IRI"]
-  x = ifelse(!is.na(zefix_iri), sprintf("<%s>",zefix_iri), IRI("2", products[i,"hasPermissionHolder"]))
-  sprintf("    :hasPermissionHolder %s .\n", x) |> cat()
-  cat("\n")
+  if(!is.na(products[i,"hasPermissionHolder"])) {
+    zefix = zefix_company[as.character(products[i,"hasPermissionHolder"]),"IRI"]
+    if(!is.na(zefix)) {
+      triple(subject, ":hasPermissionHolder", uri(zefix))
+    }
+  }
+
 }
 
 sink()
