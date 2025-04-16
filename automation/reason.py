@@ -1,9 +1,10 @@
+import sys
 import rdflib
 from rdflib import Graph, RDF, RDFS, OWL, URIRef, Namespace
 from rdflib.namespace import NamespaceManager
 from otsrdflib import OrderedTurtleSerializer
 
-SCHEMA = Namespace("http://schema.org/") # set schema prefix to the old, outdated http://... prefix because LINDAS works with these
+SCHEMA = Namespace("http://schema.org/")  # set schema prefix to the old, outdated http://... prefix
 
 def sort_and_overwrite_turtle(graph: Graph, file_path: str):
     """
@@ -37,6 +38,7 @@ def sort_and_overwrite_turtle(graph: Graph, file_path: str):
 
     print(f"File '{file_path}': Triples sorted and overwritten.")
 
+
 def load_and_sort_ttl(file_path: str) -> Graph:
     """
     Loads a TTL file into an RDF graph, sorts it, and overwrites the original file.
@@ -47,6 +49,22 @@ def load_and_sort_ttl(file_path: str) -> Graph:
     # Sort the file's content, overwriting the original.
     sort_and_overwrite_turtle(g, file_path)
     return g
+
+
+def load_and_sort_ttl_list(file_paths) -> Graph:
+    """
+    Loads and sorts each file in `file_paths`.
+    Returns a single merged graph of all those files.
+    """
+    all_data_graph = Graph()
+    for fp in file_paths:
+        print(f"Processing data file: {fp}")
+        # Sort the current file
+        g = load_and_sort_ttl(fp)
+        # Merge its triples into the big combined data graph
+        all_data_graph += g
+    return all_data_graph
+
 
 def reason_subclass_and_inverse(ontology_graph: Graph, data_graph: Graph) -> Graph:
     """
@@ -97,9 +115,7 @@ def reason_subclass_and_inverse(ontology_graph: Graph, data_graph: Graph) -> Gra
         if len(g) > len(existing_triples):
             changed = True
 
-    # --- New part: duplicate langstring labels/comments as schema:name/description ---
-    # We'll do a final pass to copy over rdfs:label => schema:name, rdfs:comment => schema:description
-    # preserving language tags if present.
+    # --- Duplicate langstring labels/comments as schema:name/description ---
     new_triples = []
     for s, p, o in g.triples((None, None, None)):
         # Check if it's a label
@@ -107,7 +123,6 @@ def reason_subclass_and_inverse(ontology_graph: Graph, data_graph: Graph) -> Gra
             # (s, schema:name, o) if not already in the graph
             if (s, SCHEMA.name, o) not in g:
                 new_triples.append((s, SCHEMA.name, o))
-
         # Check if it's a comment
         elif p == RDFS.comment:
             # (s, schema:description, o) if not already in the graph
@@ -118,27 +133,49 @@ def reason_subclass_and_inverse(ontology_graph: Graph, data_graph: Graph) -> Gra
         g.add(triple)
     # ---
 
-    print(f"File 'graph.ttl': Finished reasoning, added new triples.")
+    print(f"Finished reasoning, added new triples. Total size: {len(g)}")
     return g
 
+
 if __name__ == "__main__":
-    # Paths
-    ontology_path = "rdf/ontology.ttl"
-    data_path = "rdf/products.ttl"
-    output_path = "rdf/graph.ttl"
+    """
+    Usage example:
+        python3 automation/reason.py rdf/ontology.ttl rdf/products.ttl rdf/companies.ttl
+    The first argument is the path to the ontology.
+    All subsequent arguments are data TTL files.
+    The script will:
+        1) Sort & overwrite each data file.
+        2) Sort & overwrite the ontology.
+        3) Merge them all and run reasoning.
+        4) Write out to graph.ttl
+        5) Finally, sort & overwrite the final file: graph.ttl
+    """
+    if len(sys.argv) < 3:
+        print("ERROR: Please specify 1 ontology file and at least 1 data file.")
+        print("Usage: python script.py <ontology.ttl> <data1.ttl> [data2.ttl ...]")
+        sys.exit(1)
 
-    # 1) Load and sort the individual TTL files
-    #    This step ensures the source TTL files are also "cleanly" sorted
+    # Read arguments
+    ontology_path = sys.argv[1]
+    data_paths = sys.argv[2:]  # all data TTL files
+
+    # 1) Load & sort ontology
+    print(f"Processing ontology file: {ontology_path}")
     ont_graph = load_and_sort_ttl(ontology_path)
-    data_graph = load_and_sort_ttl(data_path)
 
-    # 2) Run custom reasoning
+    # 2) Load & sort data files, merging them into one data graph
+    data_graph = load_and_sort_ttl_list(data_paths)
+
+    # 3) Reason
     reasoned_graph = reason_subclass_and_inverse(ont_graph, data_graph)
 
-    # 3) Save reasoned output
+    # 4) Serialize to graph.ttl
+    output_path = "rdf/graph.ttl"
     reasoned_graph.serialize(destination=output_path, format="turtle")
+    print(f"Reasoned output written to {output_path}")
 
-    # 4) Finally, sort and overwrite the final output file
+    # 5) Sort & overwrite the final combined file
     final_graph = Graph()
     final_graph.parse(output_path, format="turtle")
     sort_and_overwrite_turtle(final_graph, output_path)
+    print("All done.")

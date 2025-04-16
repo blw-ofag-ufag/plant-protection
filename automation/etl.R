@@ -2,14 +2,9 @@
 # ADD LIBRARIES TO SEARCH PATH
 # ------------------------------------------------------------------
 
-library(httr)
 library(xml2)
-library(rdflib)
 library(dplyr)
 library(srppp)
-library(tidyr)
-library(purrr)
-library(jsonlite)
 library(rdfhelper) # install from <https://github.com/damian-oswald/rdfhelper>
 
 # ------------------------------------------------------------------
@@ -35,35 +30,6 @@ nodeset_to_dataframe <- function(nodeset) {
   return(df)
 }
 
-# Function to extract data from each Detail node
-detail_to_df <- function(x) {
-  y <- lapply(x, function(detail) {
-    primaryKey <- xml_attr(detail, "primaryKey")
-    
-    descriptions <- xml_find_all(detail, ".//Description")
-    data <- lapply(descriptions, function(description) {
-      language <- xml_attr(description, "language")
-      city_name <- xml_attr(description, "value")
-      data.frame(
-        ID = primaryKey,
-        lang = language,
-        name = city_name,
-        stringsAsFactors = FALSE
-      )
-    })
-    do.call(rbind, data)
-  })
-  do.call(rbind, y)
-}
-
-# DOMAINS
-# 0001: Product
-# 0002: Company
-# 0003: Address (of a company)
-# 0004: Hazard statement
-# 0005: Crop
-# 0006: Pest
-
 # ------------------------------------------------------------------
 # DOWNLOAD THE SWISS PLANT PROTECTION REGISTRY AS AN XML FILE
 # ------------------------------------------------------------------
@@ -79,6 +45,7 @@ download.file(srppp_zip_url, temp_zip, mode = "wb")
 unzip(temp_zip, exdir = unzip_dir)
 xml_file_path <- file.path(unzip_dir, "PublicationData.xml")
 XML <- read_xml(xml_file_path)
+rm(xml_file_path, srppp_zip_url, temp_zip, unzip_dir)
 
 # Read mapping tables
 lindas_country = read.csv("tables/mapping/lindas-country.csv", row.names = 1)
@@ -100,7 +67,7 @@ swiss_products[,"isParallelImport"] = FALSE
 # pre-process parallel imports tables
 parallel_imports = SRPPP$parallel_imports[,c("pNbr", "id", "name", "exhaustionDeadline", "soldoutDeadline", "permission_holder", "producingCountryPrimaryKey", "admissionnumber")]
 colnames(parallel_imports) = colnames(swiss_products)
-parallel_imports[,"hasCountryOfOrigin"] = lindas_country[as.character(parallel_imports[,"hasCountryOfOrigin"]),]
+parallel_imports[,"hasCountryOfOrigin"] = lindas_country[as.character(unlist(parallel_imports[,"hasCountryOfOrigin"])),]
 parallel_imports[,"isParallelImport"] = TRUE
 
 # merge the two tables
@@ -132,7 +99,7 @@ for (i in 1:nrow(products)) {
   x = as.list(products[i,])
   
   # save the current product
-  subject = uri(paste0("1-",x$hasFederalAdmissionNumber), base)
+  subject = uri(x$hasFederalAdmissionNumber, base)
   
   # save classes as one string
   classes <- uri(srppp_product_category[as.character(unlist(SRPPP$categories[SRPPP$categories$pNbr==products[i,"pNbr"],2])),1])
@@ -168,20 +135,21 @@ for (i in 1:nrow(products)) {
   if(sum(products[,"pNbr"]==products[i,"pNbr"])>1) {
     for (j in which(products[,"pNbr"]==products[i,"pNbr"])) {
       if(i != j) {
-        triple(subject, ":isSameProductAs", uri(paste0("1-",products[j,"hasFederalAdmissionNumber"]),base))
+        triple(subject, ":isSameProductAs", uri(products[j,"hasFederalAdmissionNumber"], base))
       }
     }
   }
-  
 
   # reuse existing company from lindas zefix, if possible
-  if(!is.na(products[i,"hasPermissionHolder"])) {
-    zefix = zefix_company[as.character(products[i,"hasPermissionHolder"]),"IRI"]
-    if(!is.na(zefix)) {
-      triple(subject, ":hasPermissionHolder", uri(zefix))
+  company <- products[i,"hasPermissionHolder"]
+  if(!is.na(company)) {
+    zefix_iri = zefix_company[as.character(company),"IRI"]
+    if(!is.na(zefix_iri)) {
+      triple(subject, ":hasPermissionHolder", uri(zefix_iri))
+    } else {
+      triple(subject, ":hasPermissionHolder", uri(company, base))
     }
   }
-
 }
 
 sink()
@@ -202,7 +170,7 @@ cities <- map_df(xml_find_all(xml_data, ".//MetaData[@name='City']/Detail"), fun
 cities = data.frame(cities[,-1], row.names = cities$id)
 
 # extract company elements from XML file
-company_xml <- xml_find_all(xml_data, "//PermissionHolder")
+company_xml <- xml_find_all(XML, "//PermissionHolder")
 
 # create company table
 companies <- nodeset_to_dataframe(company_xml)
@@ -230,7 +198,7 @@ colnames(companies) <- c("IRI","label","hasUID","telephone","faxNumber","email",
 companies$zefixIRI <- zefix_company[companies[,"IRI"],"IRI"]
 
 # open file
-sink("data/companies.ttl")
+sink("rdf/companies.ttl")
 
 cat("
 @prefix : <https://agriculture.ld.admin.ch/foag/plant-protection#> .
@@ -238,7 +206,7 @@ cat("
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix wd: <http://www.wikidata.org/entity/> .
-@prefix schema: <https://schema.org/> .
+@prefix schema: <http://schema.org/> .
 @prefix zefix: <https://register.ld.admin.ch/zefix/company/> .
 
 ")
@@ -246,42 +214,29 @@ cat("
 # loop over every company
 for (i in 1:nrow(companies)) {
   
-  # we can re-use zefix companies, but only for the registered ones...
-  if(is.na(companies[i,"zefixIRI"])) {
-    
-    # define a new company IRI
-    x = IRI("2", companies[i,"IRI"])
-    
-    # set company (legal) name and contact info
-    sprintf("%s a schema:Organization .\n", x) |> cat()
-    sprintf("%s schema:name %s .\n", x, literal(companies[i,"label"])) |> cat()
-    sprintf("%s schema:legalName %s .\n", x, literal(companies[i,"label"])) |> cat()
-    for (property in c("email","telephone","faxNumber")) {
-      if(!is.na(companies[i,property])) sprintf("%s :%s %s .\n", x, property, literal(companies[i,property])) |> cat()
-    }
-    
-    # construct address IRI
-    a = IRI("3", companies[i,"IRI"])
-    sprintf("%s schema:address %s .\n", x, a) |> cat()
-    sprintf("%s a schema:PostalAddress .\n", a) |> cat()
-    for (property in c("postOfficeBoxNumber","streetAddress","postalCode","addressLocality")) {
-      if(!is.na(companies[i,property])) sprintf("%s :%s %s .\n", a, property, literal(companies[i,property])) |> cat()
-    }
-    sprintf("%s schema:addressCountry %s .\n", a, URL(companies[i,"addressCountry"])) |> cat()
-    for (p in na.omit(products[products$hasPermissionHolder==companies[i,"IRI"],"hasFederalAdmissionNumber"])) {
-      sprintf("%s :holdsPermissionToSell %s .\n", x, IRI("1", p)) |> cat()
-    }
-    
-  }
-  else {
-    EHRAID = gsub("https://register.ld.admin.ch/zefix/company/","",companies[i,"zefixIRI"])
-    x = paste("zefix", EHRAID, sep=":")
-    sprintf("%s schema:addressCountry %s .\n", x, URL(companies[i,"addressCountry"])) |> cat()
-    for (p in na.omit(products[products$hasPermissionHolder==companies[i,"IRI"],"hasFederalAdmissionNumber"])) {
-      sprintf("%s :holdsPermissionToSell %s .\n", x, IRI("1", p)) |> cat()
+  # define a new company IRI
+  x = uri(companies[i,"IRI"], base)
+  
+  # set company (legal) name and contact info
+  triple(x, "a", "schema:Organization")
+  triple(x, "schema:name", literal(companies[i,"label"]))
+  triple(x, "schema:legalName", literal(companies[i,"label"]))
+  for (property in c("email","telephone","faxNumber")) {
+    if(!is.na(companies[i,property])) {
+      triple(x, uri(property, "http://schema.org/"), literal(companies[i,property]))
     }
   }
-  cat("\n")
+  
+  # construct address IRI
+  address = uri(uuid::UUIDfromName("2034115b-8c4e-43a1-960f-c73320210196", companies[i,"IRI"]), base)
+  triple(x, "schema:address", address)
+  for (property in c("postOfficeBoxNumber","streetAddress","postalCode", "addressLocality")) {
+    if(!is.na(companies[i,property])) {
+      triple(address, uri(property, "http://schema.org/"), literal(companies[i,property]))
+    }
+  }
+  triple(address, "schema:addressCountry", uri(companies[i,"addressCountry"]))
+  
 }
 
 sink()
@@ -311,7 +266,7 @@ for (i in 1:nrow(CodeR)) {
   
   J = products[products$pNbr %in% unlist(SRPPP$CodeR[SRPPP$CodeR$desc_pk==as.numeric(CodeR[i,1]),"pNbr"]),"hasFederalAdmissionNumber"]
   for (j in J) {
-    sprintf("  :appliesToProduct %s ;\n", IRI("1",j)) |> cat()
+    sprintf("  :appliesToProduct %s ;\n", IRI("0001",j)) |> cat()
   }
   
   cat(".\n")
@@ -328,7 +283,7 @@ for (i in 1:nrow(CodeS)) {
   
   J = products[products$pNbr %in% unlist(SRPPP$CodeS[SRPPP$CodeS$desc_pk==as.numeric(CodeS[i,1]),"pNbr"]),"hasFederalAdmissionNumber"]
   for (j in J) {
-    sprintf("  :appliesToProduct %s ;\n", IRI("1",j)) |> cat()
+    sprintf("  :appliesToProduct %s ;\n", IRI("0001",j)) |> cat()
   }
   
   cat(".\n")

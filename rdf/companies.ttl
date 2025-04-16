@@ -1,0 +1,2356 @@
+@prefix schema: <http://schema.org/> .
+
+<https://agriculture.ld.admin.ch/plant-protection/10011> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/9343115b-385a-59a5-82b6-0eabc0f2ef38> ;
+    schema:faxNumber "tel:+41-62-917-50-06" ;
+    schema:legalName "Andermatt Biocontrol Suisse AG" ;
+    schema:name "Andermatt Biocontrol Suisse AG" ;
+    schema:telephone "tel:+41-62-917-50-05" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10019> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/aa880957-f953-5e91-9246-e7fd81751a9e> ;
+    schema:email "stephan.schwarzmueller@basf.com" ;
+    schema:legalName "BASF Schweiz AG" ;
+    schema:name "BASF Schweiz AG" ;
+    schema:telephone "tel:+41-61-636-28-44" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10023> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/a2a48407-2f8b-5b96-9ebe-0b5cdee64d15> ;
+    schema:legalName "Blaser Swisslube AG" ;
+    schema:name "Blaser Swisslube AG" ;
+    schema:telephone "tel:+41-34-460-03-05" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10035> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/97bd54ed-631a-56fc-974e-e3a1c749997a> ;
+    schema:legalName "Coop Genossenschaft" ;
+    schema:name "Coop Genossenschaft" ;
+    schema:telephone "tel:+41-62-206-32-51" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10038> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/6f081948-79e4-5f38-abe7-0bf693c1e6d7> ;
+    schema:legalName "Desinfecta AG" ;
+    schema:name "Desinfecta AG" ;
+    schema:telephone "tel:+41-61-633-13-13" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10050> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/5ee4bc84-f806-5df1-ac87-90f9a461809f> ;
+    schema:legalName "Leu + Gygax AG" ;
+    schema:name "Leu + Gygax AG" ;
+    schema:telephone "tel:+41-56-201-45-45" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10051> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/b8b88689-c9e0-5afa-a177-603a517dbad3> ;
+    schema:faxNumber "tel:+41-41-917-17-76" ;
+    schema:legalName "Läubli Feuerwerk AG" ;
+    schema:name "Läubli Feuerwerk AG" ;
+    schema:telephone "tel:+41-41-917-17-10" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10053> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/b9a65785-aeb4-5b6f-a27c-a834a8a6bcb6> ;
+    schema:faxNumber "tel:+41-79-817-44-70" ;
+    schema:legalName "Arxada AG" ;
+    schema:name "Arxada AG" ;
+    schema:telephone "tel:+41-61-316-26-48" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10054> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/2a98afa2-2af6-5436-8fe2-4a80040a0c6a> ;
+    schema:legalName "Syngenta Agro AG " ;
+    schema:name "Syngenta Agro AG " ;
+    schema:telephone "tel:+41-61-323-56-70" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10056> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/2c824f23-2ea0-5142-a862-e827cec01e47> ;
+    schema:faxNumber "tel:+41-27-746-33-24" ;
+    schema:legalName "Méoc SA" ;
+    schema:name "Méoc SA" ;
+    schema:telephone "tel:+41-27-746-16-39" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10057> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/13051718-ffe9-594c-b496-e613477ed518> ;
+    schema:legalName "Migros-Genossenschafts-Bund" ;
+    schema:name "Migros-Genossenschafts-Bund" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10065> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/328cdaa2-726f-5a69-a95e-32f0c03b3d65> ;
+    schema:faxNumber "tel:+41-62-893-28-84" ;
+    schema:legalName "Racroc AG" ;
+    schema:name "Racroc AG" ;
+    schema:telephone "tel:+41-62-893-28-83" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10073> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/3fbd9628-d161-5ca5-b98d-5e2babf49911> ;
+    schema:legalName "Schneiter Agro AG" ;
+    schema:name "Schneiter Agro AG" ;
+    schema:telephone "tel:+41-56-201-45-45" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10079> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/15abf9ed-abe3-5777-b2e7-21343f4b0dd7> ;
+    schema:faxNumber "tel:+41-62-398-57-55" ;
+    schema:legalName "Sintagro M. Eggen" ;
+    schema:name "Sintagro M. Eggen" ;
+    schema:telephone "tel:+41-62-398-57-57" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10087> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/d3f58aeb-b14a-55f4-ad76-7eceeb9b6ec2> ;
+    schema:faxNumber "tel:+41-32-387-70-79" ;
+    schema:legalName "Matox AG" ;
+    schema:name "Matox AG" ;
+    schema:telephone "tel:+41-32-387-70-70" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10093> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/85178607-d0b9-53cf-a052-3c9f4e9dad43> ;
+    schema:legalName "A. Ziegler AG" ;
+    schema:name "A. Ziegler AG" ;
+    schema:telephone "tel:+41-43-466-10-00" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10095> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/29567354-ccb1-5068-9bed-e9dd553edced> ;
+    schema:legalName "Bio-Agrar-Counsel GmbH" ;
+    schema:name "Bio-Agrar-Counsel GmbH" ;
+    schema:telephone "tel:+41-33-827-02-83" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10096> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/bba07692-0d6d-5db1-91db-e1b0e7daacf6> ;
+    schema:legalName "Cemag Handels AG" ;
+    schema:name "Cemag Handels AG" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10105> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/fc2d4f26-ba1f-550a-9427-328850599dae> ;
+    schema:faxNumber "tel:+41-32-389-10-12" ;
+    schema:legalName "Hauert HBG Dünger AG" ;
+    schema:name "Hauert HBG Dünger AG" ;
+    schema:telephone "tel:+41-32-389-10-10" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10106> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/badca180-5647-5a32-8b69-1dd7f675814b> ;
+    schema:faxNumber "tel:+41-62-896-12-65" ;
+    schema:legalName "Hauri AG" ;
+    schema:name "Hauri AG" ;
+    schema:telephone "tel:+41-62-896-12-65" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10115> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/bdaa41bb-f5e4-5dcc-af34-e66276fcb147> ;
+    schema:faxNumber "tel:+41-58-220-36-71" ;
+    schema:legalName "Medol" ;
+    schema:name "Medol" ;
+    schema:telephone "tel:+41-58-220-36-70" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10125> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/5b5b04ce-40c4-5ed2-a91b-71d69c12a5cd> ;
+    schema:email "patrick.sauder@renovita.ch" ;
+    schema:legalName "Renovita Wilen GmbH" ;
+    schema:name "Renovita Wilen GmbH" ;
+    schema:telephone "tel:+41-71-955-00-55" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10127> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/4ca784c4-fb54-5b0d-8c8f-31105deaf7a5> ;
+    schema:faxNumber "tel:+41-33-227-57-58" ;
+    schema:legalName "Eric Schweizer AG" ;
+    schema:name "Eric Schweizer AG" ;
+    schema:telephone "tel:+41-33-227-57-57" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10128> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/adae6a03-3fbf-5f11-be8b-6bc38fd52a9e> ;
+    schema:legalName "Sofbey SA" ;
+    schema:name "Sofbey SA" ;
+    schema:telephone "tel:+41-91-223-10-90" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10141> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/a4f37142-e042-5b85-a098-4587e027a1f1> ;
+    schema:email "vera.stoll@fenaco.com" ;
+    schema:legalName "AGROLINE Bioprotect" ;
+    schema:name "AGROLINE Bioprotect" ;
+    schema:telephone "tel:+41-58-434-32-97" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10213> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/cb5e7685-ef02-5dd7-ac99-1e9561720e7c> ;
+    schema:legalName "Omya (Schweiz) AG" ;
+    schema:name "Omya (Schweiz) AG" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10271> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/e50ab3ce-aeea-5305-b20a-e8fb1cdb5c75> ;
+    schema:legalName "Diachem SPA" ;
+    schema:name "Diachem SPA" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10281> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/a2f4a7ac-c8b0-57f1-9a0e-31b01f6fdd24> ;
+    schema:legalName "BASF AG" ;
+    schema:name "BASF AG" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10285> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/4b24a845-b4d7-5b01-b4f4-065ba74527da> ;
+    schema:legalName "Koppert Deutschland GmbH " ;
+    schema:name "Koppert Deutschland GmbH " .
+
+<https://agriculture.ld.admin.ch/plant-protection/10297> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/6a6a5363-97a9-5ba9-9f32-579fa340ed24> ;
+    schema:legalName "BASF France" ;
+    schema:name "BASF France" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10310> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/609bacc3-19e3-593b-ae18-28bcdd2eeb3e> ;
+    schema:faxNumber "tel:+41-32-623-17-06" ;
+    schema:legalName "Amreco AG" ;
+    schema:name "Amreco AG" ;
+    schema:telephone "tel:+41-32-621-69-70" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10340> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/f6063710-8295-53cd-b5c4-974fb7182fab> ;
+    schema:faxNumber "tel:+41-53663065" ;
+    schema:legalName "De Sangosse" ;
+    schema:name "De Sangosse" ;
+    schema:telephone "tel:+41-53693630" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10367> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/02d5f06a-b14d-5132-955a-170aec5592e8> ;
+    schema:faxNumber "tel:+49-7381-935454" ;
+    schema:legalName "Biofa AG" ;
+    schema:name "Biofa AG" ;
+    schema:telephone "tel:+49-7381-93540" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10388> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/5571ee46-d9ec-539a-8bba-83ff3fba5caa> ;
+    schema:legalName "Syngenta Agro AG" ;
+    schema:name "Syngenta Agro AG" ;
+    schema:telephone "tel:+41-61-323-56-70" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10392> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/09b4b197-3604-5699-b099-08e838829af6> ;
+    schema:legalName "Corteva Agriscience France S.A.S" ;
+    schema:name "Corteva Agriscience France S.A.S" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10445> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/cf397f47-1afd-5912-bc22-3325113d4be3> ;
+    schema:faxNumber "tel:+41-79-126-94-77" ;
+    schema:legalName "Hans Müller Gärtnerei AG" ;
+    schema:name "Hans Müller Gärtnerei AG" ;
+    schema:telephone "tel:+41-71-642-11-77" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10446> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/63e70ec2-aeef-5337-ae06-7dfe8a309d65> ;
+    schema:legalName "FMC Europe NV" ;
+    schema:name "FMC Europe NV" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10489> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/a79bb6e6-5a60-5c0e-816a-211a39237645> ;
+    schema:legalName "W. Neudorff GmbH KG" ;
+    schema:name "W. Neudorff GmbH KG" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10504> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/2c081d57-3b8f-59e8-956e-6496bf092c89> ;
+    schema:legalName "industrias químicas del vallés, s.a." ;
+    schema:name "industrias químicas del vallés, s.a." .
+
+<https://agriculture.ld.admin.ch/plant-protection/10555> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/f7b685d9-e99f-5e90-8e7d-6b329c206a27> ;
+    schema:faxNumber "tel:+45-96-90-96-91" ;
+    schema:legalName "Cheminova Agro A/S" ;
+    schema:name "Cheminova Agro A/S" ;
+    schema:telephone "tel:+45-96-90-96-90" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10570> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/0b266bf5-337a-5810-b600-bd07ef501619> ;
+    schema:legalName "Corteva Agriscience International Sàrl" ;
+    schema:name "Corteva Agriscience International Sàrl" ;
+    schema:telephone "tel:+41-22-717-58-68" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10595> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/a1828cb6-2ae4-5dd1-8bd7-208b19121a1d> ;
+    schema:faxNumber "tel:+32-4-385-97-49" ;
+    schema:legalName "Arysta LifeScience Ougrée Production sprl" ;
+    schema:name "Arysta LifeScience Ougrée Production sprl" ;
+    schema:telephone "tel:+32-4-385-97-11" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10606> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/eae51d52-0aa3-54da-b370-adf9dbf40c66> ;
+    schema:faxNumber "tel:+41-61-486-20-01" ;
+    schema:legalName "COMPO Jardin AG" ;
+    schema:name "COMPO Jardin AG" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10618> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/5493b81e-2cc4-5b7a-81ad-8ab48ccddfb8> ;
+    schema:legalName "Bayer S.p.A." ;
+    schema:name "Bayer S.p.A." .
+
+<https://agriculture.ld.admin.ch/plant-protection/10619> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/144919b1-9e4c-5c29-9615-61c944eb2c38> ;
+    schema:legalName "Isagro S.p.A." ;
+    schema:name "Isagro S.p.A." .
+
+<https://agriculture.ld.admin.ch/plant-protection/10635> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/a4866721-0916-5f19-9004-fa45767fc41c> ;
+    schema:legalName "Cheminova A/S" ;
+    schema:name "Cheminova A/S" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10639> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/78a23d27-5a8d-509c-ba1f-6313f24d33a7> ;
+    schema:legalName "BASF Aktiengesellschaft" ;
+    schema:name "BASF Aktiengesellschaft" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10661> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/e4f392f1-052b-5fbe-ace9-adc45bb3614b> ;
+    schema:faxNumber "tel:+41-31-869-23-39" ;
+    schema:legalName "Bayer (Schweiz) AG" ;
+    schema:name "Bayer (Schweiz) AG" ;
+    schema:telephone "tel:+41-31-869-16-66" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10662> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/a6689ebf-9dd7-56a5-935d-e103406e9581> ;
+    schema:faxNumber "tel:+49-2173-383735" ;
+    schema:legalName "Bayer CropScience AG" ;
+    schema:name "Bayer CropScience AG" ;
+    schema:telephone "tel:+49-2173-383374" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10664> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/25d19972-d423-5b7a-b61c-b01ecc81317b> ;
+    schema:faxNumber "tel:+49-5155-6247122" ;
+    schema:legalName "W. Neudorff GmbH KG" ;
+    schema:name "W. Neudorff GmbH KG" ;
+    schema:telephone "tel:+49-5155-624126" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10679> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/8966c81c-662d-5958-89ec-e30fec15f8e8> ;
+    schema:legalName "Bayer CropScience S.A." ;
+    schema:name "Bayer CropScience S.A." .
+
+<https://agriculture.ld.admin.ch/plant-protection/10686> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/e4cdc49c-2a9b-5473-9e75-00101622092a> ;
+    schema:faxNumber "tel:+41-22-990-21-29" ;
+    schema:legalName "SCAE - Valent BioSciences Sàrl (Switzerland)" ;
+    schema:name "SCAE - Valent BioSciences Sàrl (Switzerland)" ;
+    schema:telephone "tel:+41-22-990-21-25" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10709> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/dafba3bc-7bbf-5515-8c4e-956d5830347a> ;
+    schema:faxNumber "tel:+49-69-3053826" ;
+    schema:legalName "Bayer CropScience AG" ;
+    schema:name "Bayer CropScience AG" ;
+    schema:telephone "tel:+49-69-3053763" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10711> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/6244b3bf-e823-5291-b1cb-0cb1972aaead> ;
+    schema:legalName "SIPCAM OXON S.p.A." ;
+    schema:name "SIPCAM OXON S.p.A." .
+
+<https://agriculture.ld.admin.ch/plant-protection/10712> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/0daf828b-b474-54fb-92e6-aee84a959234> ;
+    schema:faxNumber "tel:+41-62-746-80-08" ;
+    schema:legalName "Stähler Suisse SA" ;
+    schema:name "Stähler Suisse SA" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10716> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/83930b9e-bccc-5c81-92fc-c6c45d49e894> ;
+    schema:faxNumber "tel:+31-11681565" ;
+    schema:legalName "GLOBACHEM NV" ;
+    schema:name "GLOBACHEM NV" ;
+    schema:telephone "tel:+32-11-78-57-17" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10717> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/dbc8ed1b-d64c-5820-a62c-635cfc12553d> ;
+    schema:legalName "Bayer CropScience GmbH" ;
+    schema:name "Bayer CropScience GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10727> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/a63df699-ef87-582f-82f9-03f17af2ae62> ;
+    schema:legalName "Bayer CropScience SA" ;
+    schema:name "Bayer CropScience SA" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10745> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/f4a100c9-9edf-576b-8700-86e5261b3af6> ;
+    schema:legalName "Phyteurop S.A." ;
+    schema:name "Phyteurop S.A." .
+
+<https://agriculture.ld.admin.ch/plant-protection/10746> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/4ded97bc-a97c-51e5-9fd1-86ff523c9761> ;
+    schema:legalName "Andermatt Biogarten AG" ;
+    schema:name "Andermatt Biogarten AG" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10763> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/53888f7f-4e6e-5e30-9c97-93e60144bc19> ;
+    schema:email "florence.pineda@isk.be" ;
+    schema:legalName "ISK Biosciences (Schweiz) GmbH" ;
+    schema:name "ISK Biosciences (Schweiz) GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10767> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/eca8d8a5-7f15-5254-98b7-698f14f7b20f> ;
+    schema:legalName "United Phosphorus Limited" ;
+    schema:name "United Phosphorus Limited" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10796> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/5edafd46-c287-5ac4-a592-37d5f1aa1b19> ;
+    schema:legalName "Arysta Lifescience" ;
+    schema:name "Arysta Lifescience" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10859> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/193e924e-6080-5c67-929e-758ef9f10096> ;
+    schema:faxNumber "tel:+41-76-210-20-05" ;
+    schema:legalName "808 Schweiz AG" ;
+    schema:name "808 Schweiz AG" ;
+    schema:telephone "tel:+41-04432102005" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10868> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/27db1e11-27af-5e31-8de1-05c93b7fdb7e> ;
+    schema:legalName "ISK Biosciences Europe N.V." ;
+    schema:name "ISK Biosciences Europe N.V." .
+
+<https://agriculture.ld.admin.ch/plant-protection/10873> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/e957bff4-6b2a-53ac-8b34-94e8ac8ca34f> ;
+    schema:legalName "Belchim Crop Protection N.V." ;
+    schema:name "Belchim Crop Protection N.V." .
+
+<https://agriculture.ld.admin.ch/plant-protection/10874> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/4788f717-898a-5331-972b-5c5943502aaa> ;
+    schema:faxNumber "tel:+39-363-320-589" ;
+    schema:legalName "Corteva Agriscience Italia s.r.l" ;
+    schema:name "Corteva Agriscience Italia s.r.l" ;
+    schema:telephone "tel:+39-363-320-474" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10876> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/1cb1162a-0e19-5a97-a849-decc42a5e838> ;
+    schema:legalName "WASGOM" ;
+    schema:name "WASGOM" ;
+    schema:telephone "tel:+41-79-426-98-04" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10880> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/e64f3385-4a36-5ed6-8a4b-909056c313cf> ;
+    schema:legalName "BASF Italia SpA" ;
+    schema:name "BASF Italia SpA" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10885> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/ba599bf0-f2c6-5c10-9808-13edc10bd408> ;
+    schema:legalName "Agro-Stulln GmbH" ;
+    schema:name "Agro-Stulln GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10889> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/1d74120f-1f38-5bae-9a20-6165dcf071e7> ;
+    schema:legalName "SAN Agrow Holding GmbH" ;
+    schema:name "SAN Agrow Holding GmbH" ;
+    schema:telephone "tel:+43-2782-83300" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10918> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/6d56da89-9e88-59be-a5d8-b58ecfe9939e> ;
+    schema:legalName "UPL -United Phosphorous Ltd." ;
+    schema:name "UPL -United Phosphorous Ltd." .
+
+<https://agriculture.ld.admin.ch/plant-protection/10962> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/e97d9824-e0d2-5acf-b1f4-734212dfbe52> ;
+    schema:legalName "BASF Belgium S.A." ;
+    schema:name "BASF Belgium S.A." .
+
+<https://agriculture.ld.admin.ch/plant-protection/10965> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/967ec720-af27-5b32-a887-fc3e47dcfe83> ;
+    schema:legalName "Syngenta Crop Protection N.V." ;
+    schema:name "Syngenta Crop Protection N.V." .
+
+<https://agriculture.ld.admin.ch/plant-protection/10976> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/99372c3d-7243-5889-a817-1a96f1f2d859> ;
+    schema:legalName "Irvita Plant Protection N.V." ;
+    schema:name "Irvita Plant Protection N.V." .
+
+<https://agriculture.ld.admin.ch/plant-protection/10980> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/99f03823-37c5-5941-8fa7-b06534039ac2> ;
+    schema:legalName "Nufarm Deutschland GmbH" ;
+    schema:name "Nufarm Deutschland GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10989> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/958f0b66-8b7a-510a-aba8-af8bedb361a1> ;
+    schema:faxNumber "tel:+41-26-663-51-32" ;
+    schema:legalName "Seydoux Grains Sàrl" ;
+    schema:name "Seydoux Grains Sàrl" ;
+    schema:telephone "tel:+41-26-663-51-77" .
+
+<https://agriculture.ld.admin.ch/plant-protection/10993> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/c4e7c83d-1c9f-5a05-b3e1-df8de22fef45> ;
+    schema:legalName "Regaber Holding AG" ;
+    schema:name "Regaber Holding AG" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11009> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/9fcb66d1-9cb0-5051-897d-6f0e4c093d04> ;
+    schema:legalName "Fine Agrochemicals Limited" ;
+    schema:name "Fine Agrochemicals Limited" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11028> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/649adb5e-29e2-512f-82b7-7a38641ed91d> ;
+    schema:email "ricardo@rovagro.ch" ;
+    schema:faxNumber "tel:+41-21-866-79-14" ;
+    schema:legalName "Rovagro SA" ;
+    schema:name "Rovagro SA" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11036> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/7f05e3b0-5cd5-55a2-8941-36b1c60a3f8e> ;
+    schema:legalName "Nufarm Suisse Sàrl" ;
+    schema:name "Nufarm Suisse Sàrl" ;
+    schema:telephone "tel:+43-732-69182773" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11037> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/cbc48733-6631-5a2f-bad8-a1b9ecd1b33f> ;
+    schema:legalName "GNS Consult AG" ;
+    schema:name "GNS Consult AG" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11044> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/e30d0abb-d181-5cc6-9550-1361444f589c> ;
+    schema:legalName "Sumitomo Chemical Agro Europe SAS" ;
+    schema:name "Sumitomo Chemical Agro Europe SAS" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11049> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/2d4ab346-d3da-55da-acb7-c18aca926107> ;
+    schema:legalName "ADAMA Agriculture Swiss AG" ;
+    schema:name "ADAMA Agriculture Swiss AG" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11065> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/5f7b33ac-6e27-5d68-9ab8-cd6053ae9c7f> ;
+    schema:legalName "Albaugh Europe Sàrl" ;
+    schema:name "Albaugh Europe Sàrl" ;
+    schema:telephone "tel:+41-21-799-91-30" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11066> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/2d4fe063-bc50-5141-bda6-46e70f7290bb> ;
+    schema:legalName "Valent Biosciences" ;
+    schema:name "Valent Biosciences" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11071> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/aa0665aa-12ec-59e3-a799-d275afd38213> ;
+    schema:legalName "Agro Trade GMBH" ;
+    schema:name "Agro Trade GMBH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11074> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/bd66c474-e1dd-5ae9-99b8-78be6d90da24> ;
+    schema:faxNumber "tel:+41-44-322-20-15" ;
+    schema:legalName "Insektol AG Pest Control" ;
+    schema:name "Insektol AG Pest Control" ;
+    schema:telephone "tel:+41-44-322-20-20" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11080> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/3e6b45d5-4bbd-5714-b4e2-eb586465bac3> ;
+    schema:legalName "Novozymes Switzerland AG" ;
+    schema:name "Novozymes Switzerland AG" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11096> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/2dd68944-9b8d-5012-8033-ae800049b211> ;
+    schema:legalName "Bayer CropScience " ;
+    schema:name "Bayer CropScience " .
+
+<https://agriculture.ld.admin.ch/plant-protection/11116> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/88572cff-626f-5a09-a232-d2c9f9d71163> ;
+    schema:legalName "Menora GmbH" ;
+    schema:name "Menora GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11117> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/05235818-3fe7-5374-9612-d3ccc62444b4> ;
+    schema:legalName "Taminco N.V." ;
+    schema:name "Taminco N.V." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11119> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/5b980437-f31e-52da-b2ba-e0e62141605b> ;
+    schema:email "alb@kreglinger.com" ;
+    schema:legalName "Kreglinger International AG" ;
+    schema:name "Kreglinger International AG" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11121> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/45bcc756-da10-58da-9db1-af67c3c8e6e1> ;
+    schema:faxNumber "tel:+41-31-328-35-40" ;
+    schema:legalName "Sharda Swiss Sàrl" ;
+    schema:name "Sharda Swiss Sàrl" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11123> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/c24e1fe8-1300-56d4-9034-93e686f420a0> ;
+    schema:legalName "Sharda Worldwide Export Private Ltd." ;
+    schema:name "Sharda Worldwide Export Private Ltd." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11131> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/9071c43d-45df-5ed8-a35f-62dd85a05c5f> ;
+    schema:legalName "Danstar Ferment AG" ;
+    schema:name "Danstar Ferment AG" ;
+    schema:telephone "tel:+358-50-5435547" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11141> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/7342805d-1bc0-51b6-b0d6-1d7a6ddfcf39> ;
+    schema:legalName "DuPont de Nemours (France) S.A." ;
+    schema:name "DuPont de Nemours (France) S.A." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11158> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/3d944b31-5192-5150-9202-ac71aab15c59> ;
+    schema:email "alexander.ruecker@upl-ltd.com" ;
+    schema:legalName "UPL Switzerland AG" ;
+    schema:name "UPL Switzerland AG" ;
+    schema:telephone "tel:+49-172-7660774" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11168> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/65e7ebbe-1971-5c35-9e75-e0dbb634a19d> ;
+    schema:legalName "Sharda Europe b.v.b.a." ;
+    schema:name "Sharda Europe b.v.b.a." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11169> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/bbde877b-62a0-5d37-9629-a58bd31d0851> ;
+    schema:legalName "CBC (Europe) Ltd" ;
+    schema:name "CBC (Europe) Ltd" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11189> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/6967a3fc-bf07-531d-8743-edf781823c3e> ;
+    schema:legalName "Nisso Chemical Europe GmbH" ;
+    schema:name "Nisso Chemical Europe GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11190> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/f1af8450-f6e5-545d-a51e-1170283296c6> ;
+    schema:legalName "Globachem NV" ;
+    schema:name "Globachem NV" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11209> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/81afbe8f-7baa-5adb-afc1-936752e7ab6e> ;
+    schema:legalName "Proplan Plant Protection Company S.L." ;
+    schema:name "Proplan Plant Protection Company S.L." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11210> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/56181d99-e098-5167-98e0-9fe64fd0afa9> ;
+    schema:legalName "Nufarm Italia S.R.L." ;
+    schema:name "Nufarm Italia S.R.L." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11235> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/1327b231-a81d-509a-8a9c-194d13da4446> ;
+    schema:legalName "Industrias Afrasa S.A" ;
+    schema:name "Industrias Afrasa S.A" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11257> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/cfb5556b-129d-565c-b3c5-0949fa7144fd> ;
+    schema:legalName "Linde Gas Schweiz AG" ;
+    schema:name "Linde Gas Schweiz AG" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11262> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/b107b53d-163e-5127-b443-0ec490b26cfc> ;
+    schema:email "chiara.perazzolo@lkc-ltd.com" ;
+    schema:legalName "LKC Switzerland Ltd." ;
+    schema:name "LKC Switzerland Ltd." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11275> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/be629faa-f036-53b2-be10-67bc05c64e7c> ;
+    schema:legalName "ISK Biosciences Europe S.A." ;
+    schema:name "ISK Biosciences Europe S.A." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11284> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/d6530149-a889-5e21-892f-68fc17748413> ;
+    schema:legalName "FytoFend S.A." ;
+    schema:name "FytoFend S.A." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11313> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/de2b322e-b38a-5e58-b8cb-6518128fcdf1> ;
+    schema:legalName "Oleon NV" ;
+    schema:name "Oleon NV" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11324> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/765cafc3-5c92-5ccb-998c-34bfd53395f6> ;
+    schema:legalName "Kanesho Soil Treatment SPRL/BVBA" ;
+    schema:name "Kanesho Soil Treatment SPRL/BVBA" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11348> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/444b726f-bd42-5606-ac9a-47a0888ee6c9> ;
+    schema:faxNumber "tel:+49-4141-92049248" ;
+    schema:legalName "Cheminova Deutschland GmbH & Co. KG" ;
+    schema:name "Cheminova Deutschland GmbH & Co. KG" ;
+    schema:telephone "tel:+49-4141-9204248" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11350> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/393528e2-2772-5267-b030-1242037a2326> ;
+    schema:faxNumber "tel:+49-4141-92049248" ;
+    schema:legalName "BASF" ;
+    schema:name "BASF" ;
+    schema:telephone "tel:+49-4141-9204248" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11356> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/fe5bdc68-ea47-579b-a675-86cca19281f4> ;
+    schema:legalName "Belchim Crop Protection Switzerland GmbH" ;
+    schema:name "Belchim Crop Protection Switzerland GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11400> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/6711a281-c34e-5607-b145-84a19bdf7d2e> ;
+    schema:legalName "Tilco-Alginure GmbH" ;
+    schema:name "Tilco-Alginure GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11401> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/2f96b757-137f-55b4-a1ba-9cc05ad837c0> ;
+    schema:faxNumber "tel:+41-41-448-21-89" ;
+    schema:legalName "Amstutz-Produkte AG" ;
+    schema:name "Amstutz-Produkte AG" ;
+    schema:telephone "tel:+41-41-448-14-41" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11414> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/816a63a1-f0a3-5b56-b15b-0cda955ba96e> ;
+    schema:legalName "Bayer SAS" ;
+    schema:name "Bayer SAS" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11416> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/9c9b1441-2d0e-5555-9433-fc8fad2640b1> ;
+    schema:legalName "Sharda Cropchem Ltd." ;
+    schema:name "Sharda Cropchem Ltd." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11419> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/cb65cb37-459e-567d-a992-d438a6b5b66c> ;
+    schema:legalName "Cheminova Agro France S.A.S" ;
+    schema:name "Cheminova Agro France S.A.S" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11434> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/24a72d18-6315-5394-ba56-1525433b1796> ;
+    schema:legalName "BASF SE" ;
+    schema:name "BASF SE" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11438> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/c9282968-dd11-56a7-b589-b25daaa6acce> ;
+    schema:legalName "Schneider Formulations Consulting" ;
+    schema:name "Schneider Formulations Consulting" ;
+    schema:telephone "tel:+41-61-599-46-03" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11441> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/d62f3b56-a1b5-51ab-9281-475b066b7a3f> ;
+    schema:legalName "ADAMA Agan Ltd" ;
+    schema:name "ADAMA Agan Ltd" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11444> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/6df02bfb-b466-52fd-9099-33791413c430> ;
+    schema:legalName "Life Scientific Ltd" ;
+    schema:name "Life Scientific Ltd" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11447> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/81663d01-a076-5388-8701-9c719d0369fe> ;
+    schema:legalName "Rotam Agrochemical Europe Ltd" ;
+    schema:name "Rotam Agrochemical Europe Ltd" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11451> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/cfc29847-8b9a-536e-afe4-aaf750679118> ;
+    schema:legalName "Cosaco GmbH" ;
+    schema:name "Cosaco GmbH" ;
+    schema:telephone "tel:+49-40-236520" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11452> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/cbb9c25d-da74-5712-8570-4bbe28f5c073> ;
+    schema:legalName "Belchim Crop Protection" ;
+    schema:name "Belchim Crop Protection" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11453> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/78b6fdca-72ab-54d7-aac2-5e764d8a602f> ;
+    schema:legalName "Bayer CropScience N.V." ;
+    schema:name "Bayer CropScience N.V." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11467> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/47390d26-57f9-5386-b26f-2ffda34f5216> ;
+    schema:legalName "DU PONT DE NEMOURS ITALIANA S.R.L." ;
+    schema:name "DU PONT DE NEMOURS ITALIANA S.R.L." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11471> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/64ab0cef-b10a-5a30-a4aa-99d5ef38ae48> ;
+    schema:legalName "Luxembourg Pamol (Cyprus) LTD." ;
+    schema:name "Luxembourg Pamol (Cyprus) LTD." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11522> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/32c72302-2140-5f4c-9c9f-9cc9077690da> ;
+    schema:legalName "Dormfresh Limited, Perth (UK)" ;
+    schema:name "Dormfresh Limited, Perth (UK)" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11524> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/5df9a9d1-0c96-560c-b61a-52b0f28434c0> ;
+    schema:email "femeapu@agrofresh.com" ;
+    schema:legalName "AGFS Switzerland GmbH" ;
+    schema:name "AGFS Switzerland GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11528> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/02d7d8e8-5339-542f-81e9-250d58f169d4> ;
+    schema:legalName "IFR Associés SA" ;
+    schema:name "IFR Associés SA" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11530> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/99ec61c2-fcf5-5223-b911-ebc80da869af> ;
+    schema:legalName "Dr. Knoell Consult Schweiz GmbH" ;
+    schema:name "Dr. Knoell Consult Schweiz GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11545> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/d792ba62-2a41-53dd-9753-97b335275acf> ;
+    schema:legalName "Certis Belchim B.V." ;
+    schema:name "Certis Belchim B.V." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11594> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/e18be3c9-cec9-50ef-b892-86080ea423ea> ;
+    schema:legalName "ADAMA Deutschland GmbH" ;
+    schema:name "ADAMA Deutschland GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11596> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/d6fa9fba-f2df-5fde-83c7-026028956125> ;
+    schema:legalName "Douglas Switzerland GmbH" ;
+    schema:name "Douglas Switzerland GmbH" ;
+    schema:telephone "tel:+41-41-726-82-00" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11601> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/a75294f3-ad41-5d03-952e-376d0b157300> ;
+    schema:legalName "Bernbeck LLP" ;
+    schema:name "Bernbeck LLP" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11605> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/2c0e1947-bde5-50a7-95c2-e4c381fbbdab> ;
+    schema:legalName "Arysta LifeScience Germany GmbH" ;
+    schema:name "Arysta LifeScience Germany GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11609> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/dee28f83-ba10-5f9e-bd44-f9a9e7745958> ;
+    schema:legalName "Syngenta France SAS" ;
+    schema:name "Syngenta France SAS" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11611> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/9664c4a5-0713-5e03-8e36-167d7731cd92> ;
+    schema:legalName "UPL Italia S.R.L." ;
+    schema:name "UPL Italia S.R.L." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11612> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/211f6366-7a7a-55cd-8e47-b257193730b6> ;
+    schema:legalName "Nichino Europ Co LTD" ;
+    schema:name "Nichino Europ Co LTD" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11613> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/2be48e21-64c4-5a10-b04a-facc7bbee0bc> ;
+    schema:legalName "Sipcam Italia S.P.A." ;
+    schema:name "Sipcam Italia S.P.A." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11614> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/967e6d7d-2f66-5468-914d-bbc5ee131928> ;
+    schema:legalName "Bayer SAS" ;
+    schema:name "Bayer SAS" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11615> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/d4876bfe-f813-5a54-a6d4-51d344fba78d> ;
+    schema:legalName "Du Pont De Nemours Italiana" ;
+    schema:name "Du Pont De Nemours Italiana" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11616> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/583d600f-6533-581d-9e42-28cd99479dea> ;
+    schema:faxNumber "tel:+49-2173-2076451" ;
+    schema:legalName "Monsanto Agrar Deutschland GmbH" ;
+    schema:name "Monsanto Agrar Deutschland GmbH" ;
+    schema:telephone "tel:+49-2173-2076569" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11617> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/dbc5c1b7-5d7e-5e98-83b3-e82f03eb6ec3> ;
+    schema:legalName "Philagro France" ;
+    schema:name "Philagro France" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11618> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/1f3cc082-08a5-56a8-a0c3-2d76a6626f27> ;
+    schema:legalName "Cheminova Agro Italia S.R.L." ;
+    schema:name "Cheminova Agro Italia S.R.L." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11622> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/f48bb036-ea10-5a23-bff1-f37d8dff27ae> ;
+    schema:legalName "Scam SPA" ;
+    schema:name "Scam SPA" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11629> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/e731a731-3c76-5903-8f17-78f7e8227d36> ;
+    schema:legalName "Arysta Lifescience Benelux SPRL" ;
+    schema:name "Arysta Lifescience Benelux SPRL" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11633> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/4b0d771a-473b-5421-9327-b59b98ae91b2> ;
+    schema:legalName "Albaugh TKI d.o.o." ;
+    schema:name "Albaugh TKI d.o.o." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11644> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/79e6511d-3c0a-5618-b351-d132cedd07e4> ;
+    schema:legalName "SBM Life Science SA" ;
+    schema:name "SBM Life Science SA" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11695> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/2ac88734-18a7-596f-9ae8-ae58fd89ca3f> ;
+    schema:faxNumber "tel:+34-977-52-46-51" ;
+    schema:legalName "Azufrera y Fertilizantes Pallares, S.A." ;
+    schema:name "Azufrera y Fertilizantes Pallares, S.A." ;
+    schema:telephone "tel:+34-977-52-46-50" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11696> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/1f47c5e6-1eb2-5497-98ef-32d4adc22e49> ;
+    schema:legalName "OGET Innovations GmbH " ;
+    schema:name "OGET Innovations GmbH " .
+
+<https://agriculture.ld.admin.ch/plant-protection/11699> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/1685dd9f-c45a-5ccf-a587-1d2c38455919> ;
+    schema:legalName "HMWC SARL" ;
+    schema:name "HMWC SARL" ;
+    schema:telephone "tel:+33-6-08-89-37-27" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11705> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/0750529e-7d7f-5a8b-a4ea-23248f174784> ;
+    schema:legalName "BASF SE" ;
+    schema:name "BASF SE" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11706> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/8e5d818d-6d81-5b0b-abf1-a100d29766f5> ;
+    schema:legalName "I.B.G. S.R.L." ;
+    schema:name "I.B.G. S.R.L." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11712> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/e606e5fb-a143-5764-9f9b-40553eca40f1> ;
+    schema:legalName "Phoenix-Del S.R.L." ;
+    schema:name "Phoenix-Del S.R.L." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11722> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/dfacc140-bdbb-5ea1-b59f-4e4a75ea5a9f> ;
+    schema:legalName "UPL Europe Ltd" ;
+    schema:name "UPL Europe Ltd" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11730> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/0c543628-05b4-565c-a906-857962dcfd41> ;
+    schema:legalName "agrostulln GmbH" ;
+    schema:name "agrostulln GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11733> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/1f2c9731-4092-5a87-a3e0-5339b7d5da0b> ;
+    schema:legalName "FMC International Switzerland Sàrl" ;
+    schema:name "FMC International Switzerland Sàrl" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11734> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/bce2bfe9-b1d0-5844-aeb1-6895f2e510b5> ;
+    schema:legalName "Nissan Chemical Europe S.A.S." ;
+    schema:name "Nissan Chemical Europe S.A.S." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11738> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/0dff2f13-e843-5819-bd46-b04cb3f1e1ef> ;
+    schema:legalName "Bayer AG" ;
+    schema:name "Bayer AG" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11753> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/b1e5895b-19a4-5f0b-948f-cb491d456f4e> ;
+    schema:legalName "Crop Chem Handelsgesellschaft GmbH" ;
+    schema:name "Crop Chem Handelsgesellschaft GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11757> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/498067f2-8555-574b-88a2-69413a2d9026> ;
+    schema:legalName "Albaugh UK Limited" ;
+    schema:name "Albaugh UK Limited" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11759> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/3e2dc2a6-0f69-5366-a026-4009d6f096c0> ;
+    schema:legalName "Gowan Crop Protection Ltd." ;
+    schema:name "Gowan Crop Protection Ltd." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11761> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/ac5b754c-9d81-5057-8c91-566d083e66c4> ;
+    schema:legalName "Adama France SAS" ;
+    schema:name "Adama France SAS" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11762> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/4cec4e60-e38e-5c2d-bb42-4e68fe72197f> ;
+    schema:legalName "ISK Biosciences Europe S.A. (B)" ;
+    schema:name "ISK Biosciences Europe S.A. (B)" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11770> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/bd210d5f-74e3-5fda-b2cc-c69f7c21eba6> ;
+    schema:legalName "ADAMA Italia srl" ;
+    schema:name "ADAMA Italia srl" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11773> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/cbf9710c-801a-536f-a10e-452449d11ada> ;
+    schema:legalName "Agrimotion S. A. " ;
+    schema:name "Agrimotion S. A. " .
+
+<https://agriculture.ld.admin.ch/plant-protection/11776> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/e2f61b98-1d1f-5960-94a1-e07bef2d8192> ;
+    schema:legalName "Mitsui Agriscience Int." ;
+    schema:name "Mitsui Agriscience Int." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11777> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/28c6309b-0848-5735-aeeb-c9942ec5bb00> ;
+    schema:legalName "Helm Swiss GmbH" ;
+    schema:name "Helm Swiss GmbH" ;
+    schema:telephone "tel:+49-173-3569531" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11807> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/398045be-5a45-5cb8-8572-213bafc13f38> ;
+    schema:legalName "Sumitomo Chemical Italia" ;
+    schema:name "Sumitomo Chemical Italia" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11808> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/432aa7a2-a847-5666-8b9a-771a3112831d> ;
+    schema:legalName "JT Agro Ltd" ;
+    schema:name "JT Agro Ltd" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11810> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/10cec7d4-e653-5018-b557-060de1e27b44> ;
+    schema:legalName "Quimetal internacional" ;
+    schema:name "Quimetal internacional" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11811> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/b9ccca6e-b8c5-591e-97ba-787a422b5948> ;
+    schema:legalName "Maschinenring Graubünden" ;
+    schema:name "Maschinenring Graubünden" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11829> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/a038de8b-9856-5de4-b147-3249480305d3> ;
+    schema:legalName "Tessenderlo Groupe" ;
+    schema:name "Tessenderlo Groupe" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11830> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/fccc868a-da2c-5e75-a05a-b438b21070d5> ;
+    schema:legalName "Bayer CropScience Deutschland GmbH" ;
+    schema:name "Bayer CropScience Deutschland GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11831> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/6fea949a-b088-5943-a4e0-84b54e55050a> ;
+    schema:legalName "Bayer CropScience S.r.l." ;
+    schema:name "Bayer CropScience S.r.l." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11833> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/d225b112-b08b-5334-a95b-7cf970faeaf5> ;
+    schema:legalName "Nufarm SAS" ;
+    schema:name "Nufarm SAS" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11842> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/d2f6474d-a136-51dc-a627-0861206f4074> ;
+    schema:legalName "Sharda Cropchem Espana S.L." ;
+    schema:name "Sharda Cropchem Espana S.L." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11843> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/3ca4b3ea-5b7e-5746-9146-fa1c4957f1d5> ;
+    schema:legalName "Pan Amenity Ltd" ;
+    schema:name "Pan Amenity Ltd" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11846> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/ed152be0-7ce1-51de-86a2-38381236f4b2> ;
+    schema:legalName "Life Scientific Ltd" ;
+    schema:name "Life Scientific Ltd" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11854> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/562b64b4-79ac-5530-a6bb-12da45f8a554> ;
+    schema:legalName "Ascenza Agro S.A." ;
+    schema:name "Ascenza Agro S.A." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11858> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/61b3fe18-d239-5e34-aa02-ae6d488c8615> ;
+    schema:legalName "AGROLINE Bioprotect" ;
+    schema:name "AGROLINE Bioprotect" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11890> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/1ed8bb7e-c588-55b2-8531-609ed08a8349> ;
+    schema:legalName "Agrostar SARL" ;
+    schema:name "Agrostar SARL" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11902> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/a60f7e1e-ddcb-5c35-83c1-d269406306be> ;
+    schema:legalName "Agrifutur Srl, Alfaniello" ;
+    schema:name "Agrifutur Srl, Alfaniello" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11904> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/0864ecf6-6a25-52ff-8558-c21160acf93d> ;
+    schema:legalName "Ascenza Italia S.r.l." ;
+    schema:name "Ascenza Italia S.r.l." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11906> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/b818daf2-aa89-5e8e-b1ac-aa431781f1d6> ;
+    schema:legalName "Evergreen Garden Care Österreich GmbH" ;
+    schema:name "Evergreen Garden Care Österreich GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11907> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/97b7e273-1595-5f73-b60c-9f684c760acd> ;
+    schema:legalName "UPL Benelux B.V." ;
+    schema:name "UPL Benelux B.V." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11908> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/7b5b0254-5099-58d8-ae0e-065d27b1b0fe> ;
+    schema:legalName "Corteva Agriscience Germany GmbH" ;
+    schema:name "Corteva Agriscience Germany GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11909> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/5d413675-5c16-59d6-9e49-81de3f15491b> ;
+    schema:legalName "SFP Europe SA" ;
+    schema:name "SFP Europe SA" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11910> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/df17c909-3e55-5745-8e7f-5196c57489ad> ;
+    schema:legalName "FMC Agro Austria GmbH" ;
+    schema:name "FMC Agro Austria GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11911> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/5e5e0bc2-26d9-5c91-97e5-277e48f34229> ;
+    schema:legalName "ICL Italia Treviso srl" ;
+    schema:name "ICL Italia Treviso srl" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11932> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/fcbd0f40-5ed8-58fe-aa1b-62f7a9d6afeb> ;
+    schema:legalName "Sharda Cropchem Ltd." ;
+    schema:name "Sharda Cropchem Ltd." .
+
+<https://agriculture.ld.admin.ch/plant-protection/11947> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/dc7b2cd3-6f25-5d63-84ae-81e0405c874d> ;
+    schema:legalName "KRONI AG" ;
+    schema:name "KRONI AG" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11959> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/8cbae8ee-1f9a-5975-aee4-55d8a18b04a6> ;
+    schema:legalName "MR Personal und Service GmbH" ;
+    schema:name "MR Personal und Service GmbH" ;
+    schema:telephone "tel:+41-81-925-38-38" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11968> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/863cf085-2bca-591d-94e7-5b31a2a4a486> ;
+    schema:legalName "UFA-Samen PROFI GRÜN" ;
+    schema:name "UFA-Samen PROFI GRÜN" ;
+    schema:telephone "tel:+41-58-433-76-76" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11982> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/713a250d-e3c2-5ef1-97f4-b18a2063659b> ;
+    schema:email "nadine.brinkmann@mycosolutions.ch" ;
+    schema:legalName "MycoSolutions AG" ;
+    schema:name "MycoSolutions AG" ;
+    schema:telephone "tel:+41-71-244-62-62" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11995> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/9725e4c3-b486-52ad-8f43-cea14573dc9a> ;
+    schema:legalName "Agrimotion Deutschland Gmbh" ;
+    schema:name "Agrimotion Deutschland Gmbh" .
+
+<https://agriculture.ld.admin.ch/plant-protection/11997> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/be3aae6c-0db3-53f8-8809-1969556cd2e2> ;
+    schema:legalName "You Solution" ;
+    schema:name "You Solution" .
+
+<https://agriculture.ld.admin.ch/plant-protection/12015> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/020ca123-1397-551c-88ea-581d83f1f8dc> ;
+    schema:faxNumber "tel:+41-44-855-60-13" ;
+    schema:legalName "Westland Schweiz GmbH " ;
+    schema:name "Westland Schweiz GmbH " ;
+    schema:telephone "tel:+41-79-557-99-44" .
+
+<https://agriculture.ld.admin.ch/plant-protection/12027> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/ea28ec77-b4df-5d69-8173-a1adcd78ab8c> ;
+    schema:legalName "Agrocare Chemicals KFT " ;
+    schema:name "Agrocare Chemicals KFT " .
+
+<https://agriculture.ld.admin.ch/plant-protection/12028> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/a7112c4b-e7fe-5942-a053-4c360ad827bf> ;
+    schema:legalName "Kregliner Europe nv" ;
+    schema:name "Kregliner Europe nv" .
+
+<https://agriculture.ld.admin.ch/plant-protection/12029> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/079c3752-930e-5b33-8b32-45856e799555> ;
+    schema:legalName "FMC AGRO ITALIA S.R.L." ;
+    schema:name "FMC AGRO ITALIA S.R.L." .
+
+<https://agriculture.ld.admin.ch/plant-protection/12030> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/72678b5c-47be-5b32-9013-503681b05e0b> ;
+    schema:legalName "FMC France" ;
+    schema:name "FMC France" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7009> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/68dc13f6-85fe-5439-9744-17ef411d517b> ;
+    schema:legalName "Agrimix S.R.L." ;
+    schema:name "Agrimix S.R.L." .
+
+<https://agriculture.ld.admin.ch/plant-protection/7032> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/d105cd18-c27a-544c-864c-2a29d9132018> ;
+    schema:legalName "BASF Agro SAS" ;
+    schema:name "BASF Agro SAS" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7034> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/804f6731-0b6e-5174-9c16-a9751ebc70c1> ;
+    schema:legalName "Bayer Austria GmbH Geschäftsbereich für Pflanzenschutz" ;
+    schema:name "Bayer Austria GmbH Geschäftsbereich für Pflanzenschutz" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7048> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/c616a8b6-d4c5-5212-a871-e106965f27a6> ;
+    schema:legalName "Certis Europe BV" ;
+    schema:name "Certis Europe BV" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7056> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/ab5f61d4-9d78-5d7f-ab69-26231033dea9> ;
+    schema:legalName "COMPO Italia Srl" ;
+    schema:name "COMPO Italia Srl" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7070> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/4451ab11-8472-5ade-b164-86f97b58bcdd> ;
+    schema:legalName "DU PONT DE NEMOURS (FRANCE) S.A." ;
+    schema:name "DU PONT DE NEMOURS (FRANCE) S.A." .
+
+<https://agriculture.ld.admin.ch/plant-protection/7080> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/2bc32527-39f0-53dc-a202-cc71a9a9d44a> ;
+    schema:legalName "Eurofyto" ;
+    schema:name "Eurofyto" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7100> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/d35563d3-c1ab-5a92-b892-cbc2fc21f082> ;
+    schema:legalName "Helm AG" ;
+    schema:name "Helm AG" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7126> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/ffbfb927-542c-5967-8b5c-2fb3374bd86a> ;
+    schema:legalName "Milentus BV" ;
+    schema:name "Milentus BV" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7127> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/29fe4b97-038e-5d34-b0a9-85d98508905b> ;
+    schema:legalName "Monsanto Agrar Deutschland GmbH" ;
+    schema:name "Monsanto Agrar Deutschland GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7143> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/a14bd8c6-30ee-577a-a906-df6c7ba3510a> ;
+    schema:legalName "Phyto - Service" ;
+    schema:name "Phyto - Service" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7151> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/0708b524-800b-5243-81ea-3a7917222c48> ;
+    schema:legalName "Quene Plant Protection N.V." ;
+    schema:name "Quene Plant Protection N.V." .
+
+<https://agriculture.ld.admin.ch/plant-protection/7162> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/453e9bd7-39ba-55cf-9cb8-fed63367dd02> ;
+    schema:legalName "Scam S.P.A." ;
+    schema:name "Scam S.P.A." .
+
+<https://agriculture.ld.admin.ch/plant-protection/7170> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/e9c4cc50-7a5d-5b7e-9d4d-7c0f3eb6b678> ;
+    schema:legalName "Societe financiere de Pontarlier" ;
+    schema:name "Societe financiere de Pontarlier" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7174> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/12006ab2-1731-57b2-9df2-59dc01479f35> ;
+    schema:legalName "STAR Agro Handels GmbH" ;
+    schema:name "STAR Agro Handels GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7179> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/2d75d911-d6d9-519a-b0a4-2d7fae21bc9a> ;
+    schema:legalName "Syngenta Agro GmbH" ;
+    schema:name "Syngenta Agro GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7180> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/658fb5f6-a927-5096-af1e-fba90a2bf4a2> ;
+    schema:legalName "Syngenta Agro GmbH" ;
+    schema:name "Syngenta Agro GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7182> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/62cd30cd-c6ec-5dbf-8b50-b9d30ea2f60f> ;
+    schema:legalName "Syngenta Italia S.P.A." ;
+    schema:name "Syngenta Italia S.P.A." .
+
+<https://agriculture.ld.admin.ch/plant-protection/7183> a schema:Organization ;
+    schema:address <https://agriculture.ld.admin.ch/plant-protection/5eacb805-8942-529d-bec2-d37661aeb222> ;
+    schema:legalName "TBH Agrochemie GmbH" ;
+    schema:name "TBH Agrochemie GmbH" .
+
+<https://agriculture.ld.admin.ch/plant-protection/020ca123-1397-551c-88ea-581d83f1f8dc> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Dielsdorf" ;
+    schema:postalCode "8157" ;
+    schema:streetAddress "Rudolf-Maag-Strasse 5" .
+
+<https://agriculture.ld.admin.ch/plant-protection/02d5f06a-b14d-5132-955a-170aec5592e8> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Münsingen" ;
+    schema:postalCode "75525" ;
+    schema:streetAddress "Rudolf-Diesel-Strasse 2" .
+
+<https://agriculture.ld.admin.ch/plant-protection/02d7d8e8-5339-542f-81e9-250d58f169d4> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Genève" ;
+    schema:postOfficeBoxNumber " C.P. 1468" ;
+    schema:postalCode "1201" ;
+    schema:streetAddress "Rue du Mont-Blanc 9" .
+
+<https://agriculture.ld.admin.ch/plant-protection/05235818-3fe7-5374-9612-d3ccc62444b4> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "B - 9000 Gent" ;
+    schema:streetAddress "Pantserschipstraat 207" .
+
+<https://agriculture.ld.admin.ch/plant-protection/0708b524-800b-5243-81ea-3a7917222c48> schema:addressCountry <https://ld.admin.ch/country/NLD> ;
+    schema:addressLocality "CURACAO (ANTILLE  NL)" ;
+    schema:streetAddress "Kaya W.F.G. (Jombi) Mensing 34 P.O. Box 403" .
+
+<https://agriculture.ld.admin.ch/plant-protection/0750529e-7d7f-5a8b-a4ea-23248f174784> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Limburgerhof" ;
+    schema:postOfficeBoxNumber "67117" ;
+    schema:postalCode "D-67117" ;
+    schema:streetAddress "Speyerer Straße 2" .
+
+<https://agriculture.ld.admin.ch/plant-protection/079c3752-930e-5b33-8b32-45856e799555> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Bergamo" ;
+    schema:postOfficeBoxNumber "32/28" ;
+    schema:postalCode "24121" ;
+    schema:streetAddress "Via F.lli Bronzetti" .
+
+<https://agriculture.ld.admin.ch/plant-protection/0864ecf6-6a25-52ff-8558-c21160acf93d> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Saronno (VA)" ;
+    schema:postalCode "21047" ;
+    schema:streetAddress "Via Varese 25/G" .
+
+<https://agriculture.ld.admin.ch/plant-protection/09b4b197-3604-5699-b099-08e838829af6> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Cernay Cedex" ;
+    schema:postalCode "F-68701" ;
+    schema:streetAddress "82, Rue de Wittelsheim" .
+
+<https://agriculture.ld.admin.ch/plant-protection/0b266bf5-337a-5810-b600-bd07ef501619> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Versoix" ;
+    schema:postalCode "1290" ;
+    schema:streetAddress "Route de Suisse 160" .
+
+<https://agriculture.ld.admin.ch/plant-protection/0c543628-05b4-565c-a906-857962dcfd41> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Stulln" ;
+    schema:postalCode "D-92551" ;
+    schema:streetAddress "Werksweg 2" .
+
+<https://agriculture.ld.admin.ch/plant-protection/0daf828b-b474-54fb-92e6-aee84a959234> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Zofingen" ;
+    schema:postalCode "4800" ;
+    schema:streetAddress "Henzmannstrasse 17A" .
+
+<https://agriculture.ld.admin.ch/plant-protection/0dff2f13-e843-5819-bd46-b04cb3f1e1ef> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Leverkusen " ;
+    schema:postOfficeBoxNumber "51373 " ;
+    schema:postalCode "D-51373 " ;
+    schema:streetAddress "Kaiser-Wilhelm-Allee 1 " .
+
+<https://agriculture.ld.admin.ch/plant-protection/10cec7d4-e653-5018-b557-060de1e27b44> schema:addressCountry <https://ld.admin.ch/country/ESP> ;
+    schema:addressLocality "Madrid" ;
+    schema:postalCode "28046" ;
+    schema:streetAddress "Calle Torneros 14" .
+
+<https://agriculture.ld.admin.ch/plant-protection/12006ab2-1731-57b2-9df2-59dc01479f35> schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+    schema:addressLocality "Allerheiligen " ;
+    schema:postalCode "8412" ;
+    schema:streetAddress "Europapark 1" .
+
+<https://agriculture.ld.admin.ch/plant-protection/13051718-ffe9-594c-b496-e613477ed518> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Zürich" ;
+    schema:postOfficeBoxNumber "Postfach" ;
+    schema:postalCode "8031" ;
+    schema:streetAddress "Limmatstrasse 152" .
+
+<https://agriculture.ld.admin.ch/plant-protection/1327b231-a81d-509a-8a9c-194d13da4446> schema:addressCountry <https://ld.admin.ch/country/ESP> ;
+    schema:addressLocality "Paterna (Valencia)" ;
+    schema:postalCode "46988" ;
+    schema:streetAddress "Pol. Ind. Fuente del Jarro, Ciudad de Sevilla, 53" .
+
+<https://agriculture.ld.admin.ch/plant-protection/144919b1-9e4c-5c29-9615-61c944eb2c38> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Milano" ;
+    schema:postalCode "20153" ;
+    schema:streetAddress "Via Caldera, 21" .
+
+<https://agriculture.ld.admin.ch/plant-protection/15abf9ed-abe3-5777-b2e7-21343f4b0dd7> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Langenthal" ;
+    schema:postalCode "4900" ;
+    schema:streetAddress "Chasseralstrasse 1-3" .
+
+<https://agriculture.ld.admin.ch/plant-protection/1685dd9f-c45a-5ccf-a587-1d2c38455919> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Montsuzain" ;
+    schema:postOfficeBoxNumber "10150 " ;
+    schema:postalCode "F-10150" ;
+    schema:streetAddress "8 voie vallon" .
+
+<https://agriculture.ld.admin.ch/plant-protection/193e924e-6080-5c67-929e-758ef9f10096> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Zürich" ;
+    schema:postalCode "8044" ;
+    schema:streetAddress "Tichelrütistrasse 6" .
+
+<https://agriculture.ld.admin.ch/plant-protection/1cb1162a-0e19-5a97-a849-decc42a5e838> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Schafhausen" ;
+    schema:postalCode "3415" ;
+    schema:streetAddress "Wydimattstrasse 22" .
+
+<https://agriculture.ld.admin.ch/plant-protection/1d74120f-1f38-5bae-9a20-6165dcf071e7> schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+    schema:addressLocality "Herzogenburg" ;
+    schema:postalCode "A-3130" ;
+    schema:streetAddress " " .
+
+<https://agriculture.ld.admin.ch/plant-protection/1ed8bb7e-c588-55b2-8531-609ed08a8349> schema:addressCountry <https://ld.admin.ch/country/LUX> ;
+    schema:addressLocality "Wasserbillig" ;
+    schema:postalCode "6617" ;
+    schema:streetAddress "Rte. D'Echternac 15" .
+
+<https://agriculture.ld.admin.ch/plant-protection/1f2c9731-4092-5a87-a3e0-5339b7d5da0b> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Vernier" ;
+    schema:postalCode "1214" ;
+    schema:streetAddress "Chemin de Blandonnet 8" .
+
+<https://agriculture.ld.admin.ch/plant-protection/1f3cc082-08a5-56a8-a0c3-2d76a6626f27> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Bergamo" ;
+    schema:postalCode "24121" ;
+    schema:streetAddress "Via F. lli Bronzetti, 32/38" .
+
+<https://agriculture.ld.admin.ch/plant-protection/1f47c5e6-1eb2-5497-98ef-32d4adc22e49> schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+    schema:addressLocality "Allerheiligen " ;
+    schema:postOfficeBoxNumber "8412" ;
+    schema:postalCode "8412" ;
+    schema:streetAddress "Europapark 1" .
+
+<https://agriculture.ld.admin.ch/plant-protection/211f6366-7a7a-55cd-8e47-b257193730b6> schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+    schema:addressLocality "Cambridge" ;
+    schema:postalCode "CB24 9PT " ;
+    schema:streetAddress "5 Pionee Court, Vision Park Histon" .
+
+<https://agriculture.ld.admin.ch/plant-protection/24a72d18-6315-5394-ba56-1525433b1796> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Ludwigshafen" ;
+    schema:postalCode "D-67056" ;
+    schema:streetAddress "Carl-Bosch-Strasse 38 " .
+
+<https://agriculture.ld.admin.ch/plant-protection/25d19972-d423-5b7a-b61c-b01ecc81317b> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Emmerthal" ;
+    schema:postalCode "D-31857" ;
+    schema:streetAddress "An der Mühle 3" .
+
+<https://agriculture.ld.admin.ch/plant-protection/27db1e11-27af-5e31-8de1-05c93b7fdb7e> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Diegem" ;
+    schema:postalCode "B-1831" ;
+    schema:streetAddress "Pegasus Park / De Kleetlaan 12B" .
+
+<https://agriculture.ld.admin.ch/plant-protection/28c6309b-0848-5735-aeeb-c9942ec5bb00> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Zürich" ;
+    schema:postalCode "8002" ;
+    schema:streetAddress "Bodmerstrasse 7" .
+
+<https://agriculture.ld.admin.ch/plant-protection/29567354-ccb1-5068-9bed-e9dd553edced> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Interlaken " ;
+    schema:postalCode "3800" ;
+    schema:streetAddress "Rosenstrasse 2" .
+
+<https://agriculture.ld.admin.ch/plant-protection/29fe4b97-038e-5d34-b0a9-85d98508905b> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Düsseldorf" ;
+    schema:postalCode "40212" ;
+    schema:streetAddress "Vogelsanger Weg 91" .
+
+<https://agriculture.ld.admin.ch/plant-protection/2a98afa2-2af6-5436-8fe2-4a80040a0c6a> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Stein" ;
+    schema:postOfficeBoxNumber "Postfach " ;
+    schema:postalCode "4332" ;
+    schema:streetAddress "Schaffhauserstr. 101" .
+
+<https://agriculture.ld.admin.ch/plant-protection/2ac88734-18a7-596f-9ae8-ae58fd89ca3f> schema:addressCountry <https://ld.admin.ch/country/ESP> ;
+    schema:addressLocality "Costanti" ;
+    schema:postalCode "43120" ;
+    schema:streetAddress "Av. Europa parcela 1-7, poligino de Costanti" .
+
+<https://agriculture.ld.admin.ch/plant-protection/2bc32527-39f0-53dc-a202-cc71a9a9d44a> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Ieper" ;
+    schema:postalCode "8100" ;
+    schema:streetAddress "Industrielaan 6 B" .
+
+<https://agriculture.ld.admin.ch/plant-protection/2be48e21-64c4-5a10-b04a-facc7bbee0bc> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Milano" ;
+    schema:postalCode "20123" ;
+    schema:streetAddress "Via Carroccio, 8" .
+
+<https://agriculture.ld.admin.ch/plant-protection/2c081d57-3b8f-59e8-956e-6496bf092c89> schema:addressCountry <https://ld.admin.ch/country/ESP> ;
+    schema:addressLocality "Barcelona" ;
+    schema:postalCode "8100" ;
+    schema:streetAddress "Av. de Rafael Casanova, 81 Molle del Valles" .
+
+<https://agriculture.ld.admin.ch/plant-protection/2c0e1947-bde5-50a7-95c2-e4c381fbbdab> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Düsseldorf" ;
+    schema:postalCode "40217" ;
+    schema:streetAddress "Elisabethstrasse 44" .
+
+<https://agriculture.ld.admin.ch/plant-protection/2c824f23-2ea0-5142-a862-e827cec01e47> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Charrat" ;
+    schema:postOfficeBoxNumber "C P 48" ;
+    schema:postalCode "1906" ;
+    schema:streetAddress "Route du Léman 10" .
+
+<https://agriculture.ld.admin.ch/plant-protection/2d4ab346-d3da-55da-acb7-c18aca926107> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Schaffhausen" ;
+    schema:postalCode "8200" ;
+    schema:streetAddress "Spitalstrasse 5" .
+
+<https://agriculture.ld.admin.ch/plant-protection/2d4fe063-bc50-5141-bda6-46e70f7290bb> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Saint Didier Au Mont d'Or" ;
+    schema:postalCode "F-69370" ;
+    schema:streetAddress "PARC D'AFFAIRES DE CRECY 2, RUE CLAUDE CHAPPE" .
+
+<https://agriculture.ld.admin.ch/plant-protection/2d75d911-d6d9-519a-b0a4-2d7fae21bc9a> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Maintal" ;
+    schema:streetAddress "am Technologiepark 1 - 5" .
+
+<https://agriculture.ld.admin.ch/plant-protection/2dd68944-9b8d-5012-8033-ae800049b211> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Leverkusen" ;
+    schema:postalCode "51369" .
+
+<https://agriculture.ld.admin.ch/plant-protection/2f96b757-137f-55b4-a1ba-9cc05ad837c0> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Eschenbach" ;
+    schema:postalCode "6274" ;
+    schema:streetAddress "Luzernstrasse 11" .
+
+<https://agriculture.ld.admin.ch/plant-protection/328cdaa2-726f-5a69-a95e-32f0c03b3d65> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Seon" ;
+    schema:postalCode "5703" ;
+    schema:streetAddress "Industrie Birren 30" .
+
+<https://agriculture.ld.admin.ch/plant-protection/32c72302-2140-5f4c-9c9f-9cc9077690da> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Basel" ;
+    schema:postalCode "4051" ;
+    schema:streetAddress "Steinenschanze 6" .
+
+<https://agriculture.ld.admin.ch/plant-protection/393528e2-2772-5267-b030-1242037a2326> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Limburgerhof" ;
+    schema:postalCode "D-67117" ;
+    schema:streetAddress "Carl-Bosch-Str. 64" .
+
+<https://agriculture.ld.admin.ch/plant-protection/398045be-5a45-5cb8-8572-213bafc13f38> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Milano" ;
+    schema:postalCode "20153" ;
+    schema:streetAddress "Via Caldera 21" .
+
+<https://agriculture.ld.admin.ch/plant-protection/3ca4b3ea-5b7e-5746-9146-fa1c4957f1d5> schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+    schema:addressLocality "Cambridgeshire" ;
+    schema:postOfficeBoxNumber "PE27 5HJ" ;
+    schema:postalCode "UK-Cambridgeshire" ;
+    schema:streetAddress "8 Cromwell Mews" .
+
+<https://agriculture.ld.admin.ch/plant-protection/3d944b31-5192-5150-9202-ac71aab15c59> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Rotkreuz " ;
+    schema:postalCode "6343" ;
+    schema:streetAddress "Blegi 3" .
+
+<https://agriculture.ld.admin.ch/plant-protection/3e2dc2a6-0f69-5366-a026-4009d6f096c0> schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+    schema:addressLocality "Berkshire" ;
+    schema:postalCode " 1NT" ;
+    schema:streetAddress "Highlands House Reading Basingstoke Road, Spencers" .
+
+<https://agriculture.ld.admin.ch/plant-protection/3e6b45d5-4bbd-5714-b4e2-eb586465bac3> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Aesch" ;
+    schema:postalCode "4147" ;
+    schema:streetAddress "Gewerbestrasse 7A " .
+
+<https://agriculture.ld.admin.ch/plant-protection/3fbd9628-d161-5ca5-b98d-5e2babf49911> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Seon" ;
+    schema:postalCode "5703" ;
+    schema:streetAddress "Birren 30" .
+
+<https://agriculture.ld.admin.ch/plant-protection/432aa7a2-a847-5666-8b9a-771a3112831d> schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+    schema:addressLocality "Berkshire" ;
+    schema:postalCode " 1NT" ;
+    schema:streetAddress "1 Bell Street, Maidenhead" .
+
+<https://agriculture.ld.admin.ch/plant-protection/444b726f-bd42-5606-ac9a-47a0888ee6c9> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Stade" ;
+    schema:postalCode "D-21683" ;
+    schema:streetAddress "Stader Elbstrasse 26-28" .
+
+<https://agriculture.ld.admin.ch/plant-protection/4451ab11-8472-5ade-b164-86f97b58bcdd> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Paris Cedex 07" ;
+    schema:streetAddress "137, Rue de l'université" .
+
+<https://agriculture.ld.admin.ch/plant-protection/453e9bd7-39ba-55cf-9cb8-fed63367dd02> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "S.Maria Mugano" ;
+    schema:postalCode "41010" ;
+    schema:streetAddress "Via Bellaria 164" .
+
+<https://agriculture.ld.admin.ch/plant-protection/45bcc756-da10-58da-9db1-af67c3c8e6e1> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Bern" ;
+    schema:postalCode "3011" ;
+    schema:streetAddress "Kochergasse 6" .
+
+<https://agriculture.ld.admin.ch/plant-protection/47390d26-57f9-5386-b26f-2ffda34f5216> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Mailand" ;
+    schema:postalCode "20121" ;
+    schema:streetAddress "VIA PONTACCIO, 10" .
+
+<https://agriculture.ld.admin.ch/plant-protection/4788f717-898a-5331-972b-5c5943502aaa> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Mozzanica, Bergamo" ;
+    schema:postalCode "I-24050" ;
+    schema:streetAddress "S.S. n° 11, Km 190,2" .
+
+<https://agriculture.ld.admin.ch/plant-protection/498067f2-8555-574b-88a2-69413a2d9026> schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+    schema:addressLocality "London" ;
+    schema:postalCode "WC2N 5BW" ;
+    schema:streetAddress "1 Northumberland Ave, Westminster" .
+
+<https://agriculture.ld.admin.ch/plant-protection/4b0d771a-473b-5421-9327-b59b98ae91b2> schema:addressCountry <https://ld.admin.ch/country/SVN> ;
+    schema:addressLocality "Race" ;
+    schema:postalCode "2327" ;
+    schema:streetAddress "Grajski trg 21" .
+
+<https://agriculture.ld.admin.ch/plant-protection/4b24a845-b4d7-5b01-b4f4-065ba74527da> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Sissach" ;
+    schema:postalCode "4450" ;
+    schema:streetAddress "Gewerbestrasse 12" .
+
+<https://agriculture.ld.admin.ch/plant-protection/4ca784c4-fb54-5b0d-8c8f-31105deaf7a5> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Steffisburg" ;
+    schema:postalCode "3612" ;
+    schema:streetAddress "Maienstrasse 8" .
+
+<https://agriculture.ld.admin.ch/plant-protection/4cec4e60-e38e-5c2d-bb42-4e68fe72197f> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Brüssel" ;
+    schema:postalCode "BE-1150" ;
+    schema:streetAddress "Tour Itt., Avenue Louise 480, boite 12" .
+
+<https://agriculture.ld.admin.ch/plant-protection/4ded97bc-a97c-51e5-9fd1-86ff523c9761> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Grossdietwil" ;
+    schema:postalCode "6146" ;
+    schema:streetAddress "Stahlermatten 6" .
+
+<https://agriculture.ld.admin.ch/plant-protection/53888f7f-4e6e-5e30-9c97-93e60144bc19> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Bern" ;
+    schema:postalCode "3005" ;
+    schema:streetAddress "Archivstrasse 18" .
+
+<https://agriculture.ld.admin.ch/plant-protection/5493b81e-2cc4-5b7a-81ad-8ab48ccddfb8> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Milano" ;
+    schema:postalCode "20156" ;
+    schema:streetAddress "Viale Certosa 126-130" .
+
+<https://agriculture.ld.admin.ch/plant-protection/5571ee46-d9ec-539a-8bba-83ff3fba5caa> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Stein" ;
+    schema:postOfficeBoxNumber "Postfach " ;
+    schema:postalCode "4332" ;
+    schema:streetAddress "Schaffhauserstr. 101 " .
+
+<https://agriculture.ld.admin.ch/plant-protection/56181d99-e098-5167-98e0-9fe64fd0afa9> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Milano" ;
+    schema:postalCode "I-20100" ;
+    schema:streetAddress "Viale Luigi Majno 17/A" .
+
+<https://agriculture.ld.admin.ch/plant-protection/562b64b4-79ac-5530-a6bb-12da45f8a554> schema:addressCountry <https://ld.admin.ch/country/PRT> ;
+    schema:addressLocality "Setúbal" ;
+    schema:postalCode "2910-440" ;
+    schema:streetAddress "Avnida do Rio Tejo, Herdade das Praias" .
+
+<https://agriculture.ld.admin.ch/plant-protection/583d600f-6533-581d-9e42-28cd99479dea> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Langenfeld" ;
+    schema:postalCode "D-40764" ;
+    schema:streetAddress "Elisabeth- Selbert- Straße 4a" .
+
+<https://agriculture.ld.admin.ch/plant-protection/5b5b04ce-40c4-5ed2-a91b-71d69c12a5cd> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Wilen b. Wil" ;
+    schema:postOfficeBoxNumber " " ;
+    schema:postalCode "9535" ;
+    schema:streetAddress "Weidstrasse 11" .
+
+<https://agriculture.ld.admin.ch/plant-protection/5b980437-f31e-52da-b2ba-e0e62141605b> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Basel" ;
+    schema:postalCode "4052" ;
+    schema:streetAddress "Picassoplatz 8" .
+
+<https://agriculture.ld.admin.ch/plant-protection/5d413675-5c16-59d6-9e49-81de3f15491b> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Schaffhausen" ;
+    schema:postalCode "8200" ;
+    schema:streetAddress "Spitalstrasse 5" .
+
+<https://agriculture.ld.admin.ch/plant-protection/5df9a9d1-0c96-560c-b61a-52b0f28434c0> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Zürich" ;
+    schema:postalCode "8001" ;
+    schema:streetAddress "Bahnhofstrasse 70" .
+
+<https://agriculture.ld.admin.ch/plant-protection/5e5e0bc2-26d9-5c91-97e5-277e48f34229> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Treviso" ;
+    schema:postalCode "31100" ;
+    schema:streetAddress "Via Monterumici 8" .
+
+<https://agriculture.ld.admin.ch/plant-protection/5eacb805-8942-529d-bec2-d37661aeb222> schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+    schema:addressLocality "Allerheiligen " ;
+    schema:postalCode "8412" ;
+    schema:streetAddress "Grossfeiting 16a" .
+
+<https://agriculture.ld.admin.ch/plant-protection/5edafd46-c287-5ac4-a592-37d5f1aa1b19> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Noguères" ;
+    schema:postalCode "F-64150" ;
+    schema:streetAddress "Route d'Artix" .
+
+<https://agriculture.ld.admin.ch/plant-protection/5ee4bc84-f806-5df1-ac87-90f9a461809f> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Birmenstorf" ;
+    schema:postalCode "5413" ;
+    schema:streetAddress "Fellstrasse 1" .
+
+<https://agriculture.ld.admin.ch/plant-protection/5f7b33ac-6e27-5d68-9ab8-cd6053ae9c7f> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Lausanne" ;
+    schema:postalCode "1018" ;
+    schema:streetAddress "Avenue Gratta-Paille 2" .
+
+<https://agriculture.ld.admin.ch/plant-protection/609bacc3-19e3-593b-ae18-28bcdd2eeb3e> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Solothurn" ;
+    schema:postalCode "4502" .
+
+<https://agriculture.ld.admin.ch/plant-protection/61b3fe18-d239-5e34-aa02-ae6d488c8615> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Aesch" ;
+    schema:postalCode "4147" ;
+    schema:streetAddress "Nordring 4" .
+
+<https://agriculture.ld.admin.ch/plant-protection/6244b3bf-e823-5291-b1cb-0cb1972aaead> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Salerano su Lambro (Lo)" ;
+    schema:streetAddress "Via Vittorio Veneto 81" .
+
+<https://agriculture.ld.admin.ch/plant-protection/62cd30cd-c6ec-5dbf-8b50-b9d30ea2f60f> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Milano" ;
+    schema:postalCode "20153" ;
+    schema:streetAddress "Via Gallarate, 139" .
+
+<https://agriculture.ld.admin.ch/plant-protection/63e70ec2-aeef-5337-ae06-7dfe8a309d65> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Bruxelles" ;
+    schema:postalCode "1050" ;
+    schema:streetAddress "Boulevard de la Plaine 9/3" .
+
+<https://agriculture.ld.admin.ch/plant-protection/649adb5e-29e2-512f-82b7-7a38641ed91d> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Oulens-sous-Echallens" ;
+    schema:postalCode "1377" ;
+    schema:streetAddress "Route de Bettens 19" .
+
+<https://agriculture.ld.admin.ch/plant-protection/64ab0cef-b10a-5a30-a4aa-99d5ef38ae48> schema:addressCountry <https://ld.admin.ch/country/CYP> ;
+    schema:addressLocality "Nikosia" ;
+    schema:postalCode "1061" ;
+    schema:streetAddress "3 Demetriou Vikella Street" .
+
+<https://agriculture.ld.admin.ch/plant-protection/658fb5f6-a927-5096-af1e-fba90a2bf4a2> schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+    schema:addressLocality "Wien" ;
+    schema:postalCode "1230" ;
+    schema:streetAddress "Anton-Baumgartner-Strasse 125" .
+
+<https://agriculture.ld.admin.ch/plant-protection/65e7ebbe-1971-5c35-9e75-e0dbb634a19d> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Asse" ;
+    schema:postalCode "1720" ;
+    schema:streetAddress "Heedstraat 58" .
+
+<https://agriculture.ld.admin.ch/plant-protection/6711a281-c34e-5607-b145-84a19bdf7d2e> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Rheienfeld" ;
+    schema:postalCode "23858" ;
+    schema:streetAddress "Holländerkoppel 1a" .
+
+<https://agriculture.ld.admin.ch/plant-protection/68dc13f6-85fe-5439-9744-17ef411d517b> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Pomezia (Roma)" ;
+    schema:postalCode "00040" ;
+    schema:streetAddress "Via Campobello, 1" .
+
+<https://agriculture.ld.admin.ch/plant-protection/6967a3fc-bf07-531d-8743-edf781823c3e> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Düsseldorf" ;
+    schema:postalCode "40212" ;
+    schema:streetAddress "Berliner Allee 42" .
+
+<https://agriculture.ld.admin.ch/plant-protection/6a6a5363-97a9-5ba9-9f32-579fa340ed24> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Levallois-Perret Cedex" ;
+    schema:streetAddress "49, avenue Georges-Pompidou" .
+
+<https://agriculture.ld.admin.ch/plant-protection/6d56da89-9e88-59be-a5d8-b58ecfe9939e> schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+    schema:addressLocality "Sandbach Cheshire" ;
+    schema:postalCode "CQ11 3QQ " ;
+    schema:streetAddress "Hall Lane, Rookery Bridge" .
+
+<https://agriculture.ld.admin.ch/plant-protection/6df02bfb-b466-52fd-9099-33791413c430> schema:addressCountry <https://ld.admin.ch/country/IRL> ;
+    schema:addressLocality "Dublin 4" ;
+    schema:postalCode "Dublin 4" ;
+    schema:streetAddress "Nova UCD, Belfield Innovation Park , UCD Belfield" .
+
+<https://agriculture.ld.admin.ch/plant-protection/6f081948-79e4-5f38-abe7-0bf693c1e6d7> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Deisswil b. Stettlen" ;
+    schema:postalCode "3066" ;
+    schema:streetAddress "Bernapark 23" .
+
+<https://agriculture.ld.admin.ch/plant-protection/6fea949a-b088-5943-a4e0-84b54e55050a> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Milano" ;
+    schema:postalCode "20156" ;
+    schema:streetAddress "Viale Certosa 130" .
+
+<https://agriculture.ld.admin.ch/plant-protection/713a250d-e3c2-5ef1-97f4-b18a2063659b> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "St. Gallen" ;
+    schema:postalCode "9014" ;
+    schema:streetAddress "Lerchenfeldstrasse 3" .
+
+<https://agriculture.ld.admin.ch/plant-protection/72678b5c-47be-5b32-9013-503681b05e0b> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Lyon" ;
+    schema:postOfficeBoxNumber "11" ;
+    schema:postalCode "69002" ;
+    schema:streetAddress "bis quai Perrache" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7342805d-1bc0-51b6-b0d6-1d7a6ddfcf39> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Puteaux Cédex" ;
+    schema:postalCode "92800" ;
+    schema:streetAddress "23/25 rue Delarivière-Lefoullon, La Défense 9" .
+
+<https://agriculture.ld.admin.ch/plant-protection/765cafc3-5c92-5ccb-998c-34bfd53395f6> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Brüssel" ;
+    schema:postalCode "BE-1150" ;
+    schema:streetAddress "Avenue de Tervueren 270" .
+
+<https://agriculture.ld.admin.ch/plant-protection/78a23d27-5a8d-509c-ba1f-6313f24d33a7> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Ludwigshafen" ;
+    schema:postalCode "D-67056" ;
+    schema:streetAddress "Carl Bosch Strasse 38" .
+
+<https://agriculture.ld.admin.ch/plant-protection/78b6fdca-72ab-54d7-aac2-5e764d8a602f> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Diegem" ;
+    schema:postalCode "1831" ;
+    schema:streetAddress "J.E.Mommertslaan 14" .
+
+<https://agriculture.ld.admin.ch/plant-protection/79e6511d-3c0a-5618-b351-d132cedd07e4> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Freiburg" ;
+    schema:postalCode "1700" ;
+    schema:streetAddress "Rue des Pilettes 3" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7b5b0254-5099-58d8-ae0e-065d27b1b0fe> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "München" ;
+    schema:postalCode "D-81677" ;
+    schema:streetAddress "Riedenburger Str. 7" .
+
+<https://agriculture.ld.admin.ch/plant-protection/7f05e3b0-5cd5-55a2-8941-36b1c60a3f8e> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Nyon" ;
+    schema:postalCode "1260" ;
+    schema:streetAddress "Chemin du Canal 5" .
+
+<https://agriculture.ld.admin.ch/plant-protection/804f6731-0b6e-5174-9c16-a9751ebc70c1> schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+    schema:addressLocality "Wien" ;
+    schema:postalCode "A-1011" ;
+    schema:streetAddress "Lerchenfelder Gürtel 9-11" .
+
+<https://agriculture.ld.admin.ch/plant-protection/81663d01-a076-5388-8701-9c719d0369fe> schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+    schema:addressLocality "London" ;
+    schema:postalCode "NW11 7JT" ;
+    schema:streetAddress "Hamilton House, Mobledon Place" .
+
+<https://agriculture.ld.admin.ch/plant-protection/816a63a1-f0a3-5b56-b15b-0cda955ba96e> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Lyon Cedex 09" ;
+    schema:postalCode "69336" ;
+    schema:streetAddress "16, rue Jean-Marie Leclair - CS 90106" .
+
+<https://agriculture.ld.admin.ch/plant-protection/81afbe8f-7baa-5adb-afc1-936752e7ab6e> schema:addressCountry <https://ld.admin.ch/country/ESP> ;
+    schema:addressLocality "La Rozas, Madrid" ;
+    schema:postalCode "E-28232" ;
+    schema:streetAddress "Valle del Roncal 12-1 Pl Oficina N. 7" .
+
+<https://agriculture.ld.admin.ch/plant-protection/83930b9e-bccc-5c81-92fc-c6c45d49e894> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Sint-Truiden" ;
+    schema:postalCode "B-3803" ;
+    schema:streetAddress "Leeuwerweg 138" .
+
+<https://agriculture.ld.admin.ch/plant-protection/85178607-d0b9-53cf-a052-3c9f4e9dad43> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Obernau" ;
+    schema:postalCode "6012" ;
+    schema:streetAddress "Rengglochstrasse 38" .
+
+<https://agriculture.ld.admin.ch/plant-protection/863cf085-2bca-591d-94e7-5b31a2a4a486> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Winterthur" ;
+    schema:postalCode "8408" ;
+    schema:streetAddress "In der Euelwies 34" .
+
+<https://agriculture.ld.admin.ch/plant-protection/88572cff-626f-5a09-a232-d2c9f9d71163> schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+    schema:addressLocality "Graz" ;
+    schema:postalCode "8020" ;
+    schema:streetAddress "Metahofgasse 30" .
+
+<https://agriculture.ld.admin.ch/plant-protection/8966c81c-662d-5958-89ec-e30fec15f8e8> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Lyon Cedex 09" ;
+    schema:postalCode "F 69266" ;
+    schema:streetAddress "14-20 Rue Pierre Baizet" .
+
+<https://agriculture.ld.admin.ch/plant-protection/8cbae8ee-1f9a-5975-aee4-55d8a18b04a6> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Cazis" ;
+    schema:postalCode "7408" ;
+    schema:streetAddress "Italienische Strasse 126" .
+
+<https://agriculture.ld.admin.ch/plant-protection/8e5d818d-6d81-5b0b-abf1-a100d29766f5> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Genua " ;
+    schema:postOfficeBoxNumber "16121 " ;
+    schema:postalCode "I-16121 " ;
+    schema:streetAddress "Via B. Bosco 57/3" .
+
+<https://agriculture.ld.admin.ch/plant-protection/9071c43d-45df-5ed8-a35f-62dd85a05c5f> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Zug " ;
+    schema:postalCode "6300" ;
+    schema:streetAddress "Poststrasse 30" .
+
+<https://agriculture.ld.admin.ch/plant-protection/9343115b-385a-59a5-82b6-0eabc0f2ef38> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Grossdietwil" ;
+    schema:postalCode "6146" ;
+    schema:streetAddress "Stahlermatten 6" .
+
+<https://agriculture.ld.admin.ch/plant-protection/958f0b66-8b7a-510a-aba8-af8bedb361a1> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Cheyres" ;
+    schema:postalCode "1468" ;
+    schema:streetAddress "Le Ferrajoz 4" .
+
+<https://agriculture.ld.admin.ch/plant-protection/9664c4a5-0713-5e03-8e36-167d7731cd92> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "S. Carlo di Cesena (FC)" ;
+    schema:postalCode "I-47023" ;
+    schema:streetAddress "Via Terni 275" .
+
+<https://agriculture.ld.admin.ch/plant-protection/967e6d7d-2f66-5468-914d-bbc5ee131928> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Méréville" ;
+    schema:postalCode "F-91660 " ;
+    schema:streetAddress "14 Rue de la Pierre Follege " .
+
+<https://agriculture.ld.admin.ch/plant-protection/967ec720-af27-5b32-a887-fc3e47dcfe83> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Ruisbroek" ;
+    schema:postalCode "1601" ;
+    schema:streetAddress "Humaniteitslaan 65" .
+
+<https://agriculture.ld.admin.ch/plant-protection/9725e4c3-b486-52ad-8f43-cea14573dc9a> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Troisdorf" ;
+    schema:postalCode "D-53840" ;
+    schema:streetAddress "Carl-Diem-Str. 3" .
+
+<https://agriculture.ld.admin.ch/plant-protection/97b7e273-1595-5f73-b60c-9f684c760acd> schema:addressCountry <https://ld.admin.ch/country/NLD> ;
+    schema:addressLocality "CP Breda" ;
+    schema:postalCode "4818" ;
+    schema:streetAddress "Claudius Prinsenlaan 144 a," .
+
+<https://agriculture.ld.admin.ch/plant-protection/97bd54ed-631a-56fc-974e-e3a1c749997a> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Wangen bei Olten" ;
+    schema:postOfficeBoxNumber "Postfach" ;
+    schema:postalCode "4612" ;
+    schema:streetAddress "Industriestrasse 17" .
+
+<https://agriculture.ld.admin.ch/plant-protection/99372c3d-7243-5889-a817-1a96f1f2d859> schema:addressCountry <https://ld.admin.ch/country/NLD> ;
+    schema:addressLocality "CURACAO (ANTILLE  NL)" ;
+    schema:streetAddress "Kaya SFG (Jombi) Mensing 34 " .
+
+<https://agriculture.ld.admin.ch/plant-protection/99ec61c2-fcf5-5223-b911-ebc80da869af> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Basel" ;
+    schema:postalCode "4058" ;
+    schema:streetAddress "Riehenstrasse 43" .
+
+<https://agriculture.ld.admin.ch/plant-protection/99f03823-37c5-5941-8fa7-b06534039ac2> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Köln" ;
+    schema:postalCode "50670" ;
+    schema:streetAddress "Im MediaPark 4 d" .
+
+<https://agriculture.ld.admin.ch/plant-protection/9c9b1441-2d0e-5555-9433-fc8fad2640b1> schema:addressCountry <https://ld.admin.ch/country/IND> ;
+    schema:addressLocality "Mumbai" ;
+    schema:postalCode "400 050" ;
+    schema:streetAddress "Dashrathlal Joshi Road, Vile Parle (West)" .
+
+<https://agriculture.ld.admin.ch/plant-protection/9fcb66d1-9cb0-5051-897d-6f0e4c093d04> schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+    schema:addressLocality "Worcester" ;
+    schema:postOfficeBoxNumber "WR 2 5AA" ;
+    schema:streetAddress "3, The Bull Ring" .
+
+<https://agriculture.ld.admin.ch/plant-protection/a038de8b-9856-5de4-b147-3249480305d3> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Bruxelles" ;
+    schema:postalCode "1170" ;
+    schema:streetAddress "rue du Trone 130" .
+
+<https://agriculture.ld.admin.ch/plant-protection/a14bd8c6-30ee-577a-a906-df6c7ba3510a> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Maves" ;
+    schema:postalCode "41500" ;
+    schema:streetAddress "15, rue du Pont, Pontijou - RD 924" .
+
+<https://agriculture.ld.admin.ch/plant-protection/a1828cb6-2ae4-5dd1-8bd7-208b19121a1d> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Ougrée" ;
+    schema:postalCode "4102" ;
+    schema:streetAddress "Rue de Renory, 26/2" .
+
+<https://agriculture.ld.admin.ch/plant-protection/a2a48407-2f8b-5b96-9ebe-0b5cdee64d15> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Hasle-Rüegsau " ;
+    schema:postalCode "3415" ;
+    schema:streetAddress "Winterseistrasse" .
+
+<https://agriculture.ld.admin.ch/plant-protection/a2f4a7ac-c8b0-57f1-9a0e-31b01f6fdd24> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Limburgerhof" ;
+    schema:postOfficeBoxNumber "PF 120" ;
+    schema:postalCode "D-67117" .
+
+<https://agriculture.ld.admin.ch/plant-protection/a4866721-0916-5f19-9004-fa45767fc41c> schema:addressCountry <https://ld.admin.ch/country/DNK> ;
+    schema:addressLocality "Harboore" ;
+    schema:postalCode "7673" ;
+    schema:streetAddress "Thyboronvej 78" .
+
+<https://agriculture.ld.admin.ch/plant-protection/a4f37142-e042-5b85-a098-4587e027a1f1> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Aesch" ;
+    schema:postalCode "4147" ;
+    schema:streetAddress "Nordring 4" .
+
+<https://agriculture.ld.admin.ch/plant-protection/a60f7e1e-ddcb-5c35-83c1-d269406306be> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Lugano " ;
+    schema:postalCode "6900" ;
+    schema:streetAddress "Via Greina 3" .
+
+<https://agriculture.ld.admin.ch/plant-protection/a63df699-ef87-582f-82f9-03f17af2ae62> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Lyon Cedex 09" ;
+    schema:postOfficeBoxNumber "CP 106" ;
+    schema:postalCode "F 69266" ;
+    schema:streetAddress "16 rue Jean-Marie Leclair" .
+
+<https://agriculture.ld.admin.ch/plant-protection/a6689ebf-9dd7-56a5-935d-e103406e9581> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Monheim am Rhein" ;
+    schema:postalCode "D-40789 " ;
+    schema:streetAddress "Alfred-Nobel-Str. 50" .
+
+<https://agriculture.ld.admin.ch/plant-protection/a7112c4b-e7fe-5942-a053-4c360ad827bf> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Antwerpen" ;
+    schema:postOfficeBoxNumber "7" ;
+    schema:postalCode "2000" ;
+    schema:streetAddress "Grote Mark" .
+
+<https://agriculture.ld.admin.ch/plant-protection/a75294f3-ad41-5d03-952e-376d0b157300> schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+    schema:addressLocality "London" ;
+    schema:postalCode "WC1R 4HE" ;
+    schema:streetAddress "26-28 Bedford Row" .
+
+<https://agriculture.ld.admin.ch/plant-protection/a79bb6e6-5a60-5c0e-816a-211a39237645> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Lüneburg" ;
+    schema:streetAddress "Otto-Brenner-Str. 13-15" .
+
+<https://agriculture.ld.admin.ch/plant-protection/aa0665aa-12ec-59e3-a799-d275afd38213> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Lauschied" ;
+    schema:postalCode "55568" ;
+    schema:streetAddress "Bärweiler Strasse 55" .
+
+<https://agriculture.ld.admin.ch/plant-protection/aa880957-f953-5e91-9246-e7fd81751a9e> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Basel" ;
+    schema:postalCode "4057" ;
+    schema:streetAddress "Klybeckstrasse 161" .
+
+<https://agriculture.ld.admin.ch/plant-protection/ab5f61d4-9d78-5d7f-ab69-26231033dea9> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Cesena Maderno" ;
+    schema:postalCode "20031" ;
+    schema:streetAddress "Via Marvonato 8" .
+
+<https://agriculture.ld.admin.ch/plant-protection/ac5b754c-9d81-5057-8c91-566d083e66c4> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Suresnes" ;
+    schema:postalCode " 92150" ;
+    schema:streetAddress "33 Rue de Verdun" .
+
+<https://agriculture.ld.admin.ch/plant-protection/adae6a03-3fbf-5f11-be8b-6bc38fd52a9e> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Mendrisio" ;
+    schema:postalCode "6850" ;
+    schema:streetAddress "Via San Martino 16 a" .
+
+<https://agriculture.ld.admin.ch/plant-protection/b107b53d-163e-5127-b443-0ec490b26cfc> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Füllinsdorf" ;
+    schema:postalCode "4414" ;
+    schema:streetAddress "Hauptstrasse 10" .
+
+<https://agriculture.ld.admin.ch/plant-protection/b1e5895b-19a4-5f0b-948f-cb491d456f4e> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Lauschied" ;
+    schema:postalCode "55568" ;
+    schema:streetAddress "Bärweilerstrasse 55" .
+
+<https://agriculture.ld.admin.ch/plant-protection/b818daf2-aa89-5e8e-b1ac-aa431781f1d6> schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+    schema:addressLocality "Wals-Siezenheim" ;
+    schema:postalCode "5071" ;
+    schema:streetAddress "Franz-Brötzner-Straße 11-13" .
+
+<https://agriculture.ld.admin.ch/plant-protection/b8b88689-c9e0-5afa-a177-603a517dbad3> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Aesch" ;
+    schema:postalCode "6287" ;
+    schema:streetAddress "Mosenstrasse 32" .
+
+<https://agriculture.ld.admin.ch/plant-protection/b9a65785-aeb4-5b6f-a27c-a834a8a6bcb6> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Visp" ;
+    schema:postalCode "3930" ;
+    schema:streetAddress "Lonzastrasse 2" .
+
+<https://agriculture.ld.admin.ch/plant-protection/b9ccca6e-b8c5-591e-97ba-787a422b5948> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Cazis" ;
+    schema:postalCode "7408" ;
+    schema:streetAddress "Italienische Strasse 126" .
+
+<https://agriculture.ld.admin.ch/plant-protection/ba599bf0-f2c6-5c10-9808-13edc10bd408> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Stulln" ;
+    schema:postalCode "D-92551" ;
+    schema:streetAddress "Werksweg 2" .
+
+<https://agriculture.ld.admin.ch/plant-protection/badca180-5647-5a32-8b69-1dd7f675814b> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Mägenwil" ;
+    schema:postalCode "5506" ;
+    schema:streetAddress "Eichlistr. 9" .
+
+<https://agriculture.ld.admin.ch/plant-protection/bba07692-0d6d-5db1-91db-e1b0e7daacf6> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Birmenstorf" ;
+    schema:postalCode "5413" ;
+    schema:streetAddress "Fellstrasse 1" .
+
+<https://agriculture.ld.admin.ch/plant-protection/bbde877b-62a0-5d37-9629-a58bd31d0851> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Mailand" ;
+    schema:postalCode "20054" ;
+    schema:streetAddress "Via E.Majorana  2" .
+
+<https://agriculture.ld.admin.ch/plant-protection/bce2bfe9-b1d0-5844-aeb1-6895f2e510b5> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Saint Didier Au Mont d'Or" ;
+    schema:postalCode "F-69370" ;
+    schema:streetAddress "10A, rue de la Voie Lactée" .
+
+<https://agriculture.ld.admin.ch/plant-protection/bd210d5f-74e3-5fda-b2cc-c69f7c21eba6> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Grassobbio (Bergamo)" ;
+    schema:postalCode "24050" ;
+    schema:streetAddress "Via Zanica, 19" .
+
+<https://agriculture.ld.admin.ch/plant-protection/bd66c474-e1dd-5ae9-99b8-78be6d90da24> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Zürich" ;
+    schema:postalCode "8051" ;
+    schema:streetAddress "Ueberlandstrasse 341" .
+
+<https://agriculture.ld.admin.ch/plant-protection/bdaa41bb-f5e4-5dcc-af34-e66276fcb147> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Murten / Morat" ;
+    schema:postalCode "3280" ;
+    schema:streetAddress "Pra Pury 7 d" .
+
+<https://agriculture.ld.admin.ch/plant-protection/be3aae6c-0db3-53f8-8809-1969556cd2e2> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Köln" ;
+    schema:postalCode "50735" ;
+    schema:streetAddress "Nattermannallee 1" .
+
+<https://agriculture.ld.admin.ch/plant-protection/be629faa-f036-53b2-be10-67bc05c64e7c> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Selm" ;
+    schema:postalCode "59379" ;
+    schema:streetAddress "Olfener Str. 36" .
+
+<https://agriculture.ld.admin.ch/plant-protection/c24e1fe8-1300-56d4-9034-93e686f420a0> schema:addressCountry <https://ld.admin.ch/country/IND> ;
+    schema:addressLocality "Mumbai 400 050" ;
+    schema:streetAddress "Domnic Road 29th, Bandra West" .
+
+<https://agriculture.ld.admin.ch/plant-protection/c4e7c83d-1c9f-5a05-b3e1-df8de22fef45> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Zug" ;
+    schema:postalCode "6301" ;
+    schema:streetAddress "Industriestrasse 9" .
+
+<https://agriculture.ld.admin.ch/plant-protection/c616a8b6-d4c5-5212-a871-e106965f27a6> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Guyancourt" ;
+    schema:postalCode "78280" ;
+    schema:streetAddress "5 rue Galilée" .
+
+<https://agriculture.ld.admin.ch/plant-protection/c9282968-dd11-56a7-b589-b25daaa6acce> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Pfeffingen" ;
+    schema:postalCode "4148" ;
+    schema:streetAddress "Moosackerweg 28" .
+
+<https://agriculture.ld.admin.ch/plant-protection/cb5e7685-ef02-5dd7-ac99-1e9561720e7c> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Oftringen" ;
+    schema:postalCode "4665" ;
+    schema:streetAddress "Baslerstrasse 42" .
+
+<https://agriculture.ld.admin.ch/plant-protection/cb65cb37-459e-567d-a992-d438a6b5b66c> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "LYON " ;
+    schema:postalCode "69003" ;
+    schema:streetAddress "19 Bd Eugène Duruelle" .
+
+<https://agriculture.ld.admin.ch/plant-protection/cbb9c25d-da74-5712-8570-4bbe28f5c073> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Londerzeel" ;
+    schema:postalCode "1840" ;
+    schema:streetAddress "Technologielann 7" .
+
+<https://agriculture.ld.admin.ch/plant-protection/cbc48733-6631-5a2f-bad8-a1b9ecd1b33f> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Tägerwilen " ;
+    schema:postalCode "8274" ;
+    schema:streetAddress "Konstanzerstrasse 19" .
+
+<https://agriculture.ld.admin.ch/plant-protection/cbf9710c-801a-536f-a10e-452449d11ada> schema:addressCountry <https://ld.admin.ch/country/POL> ;
+    schema:addressLocality "Bydgoszcz" ;
+    schema:postalCode "85-862" ;
+    schema:streetAddress "ul Bydgoskich Przemyslowcow 6" .
+
+<https://agriculture.ld.admin.ch/plant-protection/cf397f47-1afd-5912-bc22-3325113d4be3> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Kradolf" ;
+    schema:postalCode "9214" ;
+    schema:streetAddress "Oberfeldstr. 5" .
+
+<https://agriculture.ld.admin.ch/plant-protection/cfb5556b-129d-565c-b3c5-0949fa7144fd> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Dagmersellen" ;
+    schema:postalCode "6252" ;
+    schema:streetAddress "Industriepark 10" .
+
+<https://agriculture.ld.admin.ch/plant-protection/cfc29847-8b9a-536e-afe4-aaf750679118> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Hamburg" ;
+    schema:postalCode "20457" ;
+    schema:streetAddress "Singapurstrasse 1" .
+
+<https://agriculture.ld.admin.ch/plant-protection/d105cd18-c27a-544c-864c-2a29d9132018> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Ecully CEDEX" ;
+    schema:postalCode "69136" ;
+    schema:streetAddress "21, chemin de la Sauvegard" .
+
+<https://agriculture.ld.admin.ch/plant-protection/d225b112-b08b-5334-a95b-7cf970faeaf5> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Colombes" ;
+    schema:postalCode "92700" ;
+    schema:streetAddress "11 rue du Débarcadère" .
+
+<https://agriculture.ld.admin.ch/plant-protection/d2f6474d-a136-51dc-a627-0861206f4074> schema:addressCountry <https://ld.admin.ch/country/ESP> ;
+    schema:addressLocality "Murcia" ;
+    schema:postalCode "30006" ;
+    schema:streetAddress "Carril Condomina n°3" .
+
+<https://agriculture.ld.admin.ch/plant-protection/d35563d3-c1ab-5a92-b892-cbc2fc21f082> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Hamburg" ;
+    schema:postalCode "20095" ;
+    schema:streetAddress "Nordkanalstrasse 28" .
+
+<https://agriculture.ld.admin.ch/plant-protection/d3f58aeb-b14a-55f4-ad76-7eceeb9b6ec2> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Lyss" ;
+    schema:postOfficeBoxNumber "Postfach 61" ;
+    schema:postalCode "3250" ;
+    schema:streetAddress "Werkstrasse 39" .
+
+<https://agriculture.ld.admin.ch/plant-protection/d4876bfe-f813-5a54-a6d4-51d344fba78d> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Cernusco sul Naviglio (MI)" ;
+    schema:postalCode "I-20063" ;
+    schema:streetAddress "Centro Direzionale Villa Fiorita - Via Piero Gobet" .
+
+<https://agriculture.ld.admin.ch/plant-protection/d62f3b56-a1b5-51ab-9281-475b066b7a3f> schema:addressCountry <https://ld.admin.ch/country/ISR> ;
+    schema:addressLocality "Ashdod" ;
+    schema:postalCode "77102" ;
+    schema:streetAddress "P.O. Box 262" .
+
+<https://agriculture.ld.admin.ch/plant-protection/d6530149-a889-5e21-892f-68fc17748413> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Isnes" ;
+    schema:postalCode "5032" ;
+    schema:streetAddress "Rue Georges Legrand 6" .
+
+<https://agriculture.ld.admin.ch/plant-protection/d6fa9fba-f2df-5fde-83c7-026028956125> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Zug " ;
+    schema:postalCode "6300" ;
+    schema:streetAddress "Zählerweg 6" .
+
+<https://agriculture.ld.admin.ch/plant-protection/d792ba62-2a41-53dd-9753-97b335275acf> schema:addressCountry <https://ld.admin.ch/country/NLD> ;
+    schema:addressLocality "AZ Utrecht" ;
+    schema:postalCode "3521" ;
+    schema:streetAddress "Stadsplateau 16" .
+
+<https://agriculture.ld.admin.ch/plant-protection/dafba3bc-7bbf-5515-8c4e-956d5830347a> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Frankfurt Griesheim" .
+
+<https://agriculture.ld.admin.ch/plant-protection/dbc5c1b7-5d7e-5e98-83b3-e82f03eb6ec3> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Baccon" ;
+    schema:postalCode "F-45130" ;
+    schema:streetAddress "VILCERY" .
+
+<https://agriculture.ld.admin.ch/plant-protection/dbc8ed1b-d64c-5820-a62c-635cfc12553d> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Frankfurt am Main" ;
+    schema:postalCode "D-65926" .
+
+<https://agriculture.ld.admin.ch/plant-protection/dc7b2cd3-6f25-5d63-84ae-81e0405c874d> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Altstätten" ;
+    schema:postalCode "9450" ;
+    schema:streetAddress "Bafflesstrasse 5" .
+
+<https://agriculture.ld.admin.ch/plant-protection/de2b322e-b38a-5e58-b8cb-6518128fcdf1> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Ertvelde" ;
+    schema:postalCode "9940" ;
+    schema:streetAddress "Assenedestraat 2" .
+
+<https://agriculture.ld.admin.ch/plant-protection/dee28f83-ba10-5f9e-bd44-f9a9e7745958> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Saint-Sauveur" ;
+    schema:postalCode "F-31790" ;
+    schema:streetAddress "12 Che de l'Hobit" .
+
+<https://agriculture.ld.admin.ch/plant-protection/df17c909-3e55-5745-8e7f-5196c57489ad> schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+    schema:addressLocality "Graz" ;
+    schema:postalCode "8042" ;
+    schema:streetAddress "St. Peter Gürtel 8" .
+
+<https://agriculture.ld.admin.ch/plant-protection/dfacc140-bdbb-5ea1-b59f-4e4a75ea5a9f> schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+    schema:addressLocality "Warrington, Cheshire " ;
+    schema:postalCode "WA3 6YN" ;
+    schema:streetAddress "Birchwood Park" .
+
+<https://agriculture.ld.admin.ch/plant-protection/e18be3c9-cec9-50ef-b892-86080ea423ea> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "51149 Köln" ;
+    schema:streetAddress "Edmund-Rumpler-Str. 6" .
+
+<https://agriculture.ld.admin.ch/plant-protection/e2f61b98-1d1f-5960-94a1-e07bef2d8192> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Brüssel" ;
+    schema:postalCode "1200" ;
+    schema:streetAddress "Boulevard de la Woluwe 60" .
+
+<https://agriculture.ld.admin.ch/plant-protection/e30d0abb-d181-5cc6-9550-1361444f589c> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Saint Didier Au Mont d'Or" ;
+    schema:postalCode "F-69370" ;
+    schema:streetAddress "10a, rue de la Voie Lactée" .
+
+<https://agriculture.ld.admin.ch/plant-protection/e4cdc49c-2a9b-5473-9e75-00101622092a> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Nyon" ;
+    schema:postalCode "1260" ;
+    schema:streetAddress "Rue de la Gare 36" .
+
+<https://agriculture.ld.admin.ch/plant-protection/e4f392f1-052b-5fbe-ace9-adc45bb3614b> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Basel" ;
+    schema:postOfficeBoxNumber " " ;
+    schema:postalCode "4052" ;
+    schema:streetAddress "Peter-Merian-Strasse 84" .
+
+<https://agriculture.ld.admin.ch/plant-protection/e50ab3ce-aeea-5305-b20a-e8fb1cdb5c75> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Albano" ;
+    schema:postalCode "I-24061" ;
+    schema:streetAddress "Via Tonale 15" .
+
+<https://agriculture.ld.admin.ch/plant-protection/e606e5fb-a143-5764-9f9b-40553eca40f1> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Padova" ;
+    schema:postOfficeBoxNumber "30131" ;
+    schema:postalCode "I-30131" ;
+    schema:streetAddress "Via Venezia, 9/A" .
+
+<https://agriculture.ld.admin.ch/plant-protection/e64f3385-4a36-5ed6-8a4b-909056c313cf> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Cesano Maderno" ;
+    schema:postalCode "I-20031" ;
+    schema:streetAddress "Via Marconato" .
+
+<https://agriculture.ld.admin.ch/plant-protection/e731a731-3c76-5903-8f17-78f7e8227d36> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Ougrée" ;
+    schema:postalCode "4102" ;
+    schema:streetAddress "Rue de Renory 26/1" .
+
+<https://agriculture.ld.admin.ch/plant-protection/e957bff4-6b2a-53ac-8b34-94e8ac8ca34f> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Londerzeel" ;
+    schema:postalCode "1840" ;
+    schema:streetAddress "Neringstraat 15" .
+
+<https://agriculture.ld.admin.ch/plant-protection/e97d9824-e0d2-5acf-b1f4-734212dfbe52> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "Bruxelles" ;
+    schema:postalCode "1170" ;
+    schema:streetAddress "Chaussée de la Hulpe 178" .
+
+<https://agriculture.ld.admin.ch/plant-protection/e9c4cc50-7a5d-5b7e-9d4d-7c0f3eb6b678> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Aix-en-Provence" ;
+    schema:postalCode "13090" ;
+    schema:streetAddress "VILLA CELONY, 1175 MONTEE D'AVIGNON" .
+
+<https://agriculture.ld.admin.ch/plant-protection/ea28ec77-b4df-5d69-8173-a1adcd78ab8c> schema:addressCountry <https://ld.admin.ch/country/HUN> ;
+    schema:addressLocality "Remeteszolos" ;
+    schema:postOfficeBoxNumber "140" ;
+    schema:postalCode "2090" ;
+    schema:streetAddress "Patak setany 140, 2090 Remeteszolos, HU" .
+
+<https://agriculture.ld.admin.ch/plant-protection/eae51d52-0aa3-54da-b370-adf9dbf40c66> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Allschwil" ;
+    schema:postalCode "4123" ;
+    schema:streetAddress "Hegenheimermattweg 65" .
+
+<https://agriculture.ld.admin.ch/plant-protection/eca8d8a5-7f15-5254-98b7-698f14f7b20f> schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+    schema:addressLocality "Warrington" ;
+    schema:postalCode "WA3 6YN" ;
+    schema:streetAddress "Birchwood Park" .
+
+<https://agriculture.ld.admin.ch/plant-protection/ed152be0-7ce1-51de-86a2-38381236f4b2> schema:addressCountry <https://ld.admin.ch/country/IRL> ;
+    schema:addressLocality "Dublin 4" ;
+    schema:postalCode "Dublin 4" ;
+    schema:streetAddress "Nova UCD Belfield Innovation Park , UCD Belfield" .
+
+<https://agriculture.ld.admin.ch/plant-protection/f1af8450-f6e5-545d-a51e-1170283296c6> schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+    schema:addressLocality "St. Truiden" ;
+    schema:postalCode "3800" ;
+    schema:streetAddress "Lichtenberglaan 2019" .
+
+<https://agriculture.ld.admin.ch/plant-protection/f48bb036-ea10-5a23-bff1-f37d8dff27ae> schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+    schema:addressLocality "Turin" ;
+    schema:postalCode "I-10137 " ;
+    schema:streetAddress "Corso Orbassano 368/18" .
+
+<https://agriculture.ld.admin.ch/plant-protection/f4a100c9-9edf-576b-8700-86e5261b3af6> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Levallois-Perret" ;
+    schema:postalCode "F 92531" ;
+    schema:streetAddress "53 rue Raspail" .
+
+<https://agriculture.ld.admin.ch/plant-protection/f6063710-8295-53cd-b5c4-974fb7182fab> schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+    schema:addressLocality "Pont-du-Casse" ;
+    schema:postOfficeBoxNumber "B P 5" ;
+    schema:postalCode "47480" ;
+    schema:streetAddress "Bonnel" .
+
+<https://agriculture.ld.admin.ch/plant-protection/f7b685d9-e99f-5e90-8e7d-6b329c206a27> schema:addressCountry <https://ld.admin.ch/country/DNK> ;
+    schema:addressLocality "Lemvig" ;
+    schema:postOfficeBoxNumber "P.O. Box 9" ;
+    schema:postalCode "7620" .
+
+<https://agriculture.ld.admin.ch/plant-protection/fc2d4f26-ba1f-550a-9427-328850599dae> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Grossaffoltern " ;
+    schema:postalCode "3257" ;
+    schema:streetAddress "Dorfstrasse 12" .
+
+<https://agriculture.ld.admin.ch/plant-protection/fcbd0f40-5ed8-58fe-aa1b-62f7a9d6afeb> schema:addressCountry <https://ld.admin.ch/country/IND> ;
+    schema:addressLocality "Mumbai" ;
+    schema:postalCode "400 050" ;
+    schema:streetAddress "29th Road, Bandra (West)" .
+
+<https://agriculture.ld.admin.ch/plant-protection/fccc868a-da2c-5e75-a05a-b438b21070d5> schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+    schema:addressLocality "Langenfeld" ;
+    schema:postalCode "D-40764" ;
+    schema:streetAddress "Elisabeth-Selbert-Straße 4a " .
+
+<https://agriculture.ld.admin.ch/plant-protection/fe5bdc68-ea47-579b-a675-86cca19281f4> schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+    schema:addressLocality "Muttenz" ;
+    schema:postalCode "4132" ;
+    schema:streetAddress "Hofackerstrasse 3a" .
+
+<https://agriculture.ld.admin.ch/plant-protection/ffbfb927-542c-5967-8b5c-2fb3374bd86a> schema:addressCountry <https://ld.admin.ch/country/NLD> ;
+    schema:addressLocality "AT Muiden" ;
+    schema:postalCode "1398" .
+
