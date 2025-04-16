@@ -107,7 +107,7 @@ for (i in 1:nrow(products)) {
   
   triple(subject, "a", classes)
   triple(subject, "rdfs:label", literal(x[["rdfs:label"]]))
-  for (j in names(x)[-c(1,3)]) {
+  for (j in setdiff(names(x), c("pNbr","rdfs:label","isParallelImport"))) {
     
     # save predicate and object
     predicate <- paste0(":", j)
@@ -147,7 +147,7 @@ for (i in 1:nrow(products)) {
     if(!is.na(zefix_iri)) {
       triple(subject, ":hasPermissionHolder", uri(zefix_iri))
     } else {
-      triple(subject, ":hasPermissionHolder", uri(company, base))
+      triple(subject, ":hasPermissionHolder", uri(file.path("company",company), base))
     }
   }
 }
@@ -159,7 +159,7 @@ sink()
 # ------------------------------------------------------------------
 
 # first, create city table
-cities <- map_df(xml_find_all(xml_data, ".//MetaData[@name='City']/Detail"), function(detail) {
+cities <- map_df(xml_find_all(XML, ".//MetaData[@name='City']/Detail"), function(detail) {
   city_id <- xml_attr(detail, "primaryKey")
   german_desc <- xml_find_first(detail, ".//Description[@language='de']")
   german_name <- if (!is.na(german_desc)) xml_attr(german_desc, "value") else NA_character_
@@ -185,6 +185,7 @@ email_regex <- "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
 email_from_phone <- ifelse(grepl(email_regex, companies$Phone), tolower(companies$Phone), NA)
 email_from_fax <- ifelse(grepl(email_regex, companies$Fax), tolower(companies$Fax), NA)
 companies$hasEmailAddress <- ifelse(is.na(email_from_phone), email_from_fax, email_from_phone)
+companies$hasEmailAddress <- ifelse(is.na(companies$hasEmailAddress),NA,paste0("mailto:",companies$hasEmailAddress))
 companies$hasPhoneNumber <- companies$Phone |> dialr::phone("CH") |> format(format = "RFC3966", clean = FALSE)
 companies$hasFaxNumber <- companies$Fax |> dialr::phone("CH") |> format(format = "RFC3966", clean = FALSE)
 
@@ -215,7 +216,7 @@ cat("
 for (i in 1:nrow(companies)) {
   
   # define a new company IRI
-  x = uri(companies[i,"IRI"], base)
+  x = uri(file.path("company",companies[i,"IRI"]), base)
   
   # set company (legal) name and contact info
   triple(x, "a", "schema:Organization")
@@ -223,7 +224,7 @@ for (i in 1:nrow(companies)) {
   triple(x, "schema:legalName", literal(companies[i,"label"]))
   for (property in c("email","telephone","faxNumber")) {
     if(!is.na(companies[i,property])) {
-      triple(x, uri(property, "http://schema.org/"), literal(companies[i,property]))
+      triple(x, uri(property, "http://schema.org/"), uri(companies[i,property]))
     }
   }
   
@@ -245,48 +246,35 @@ sink()
 # Write data about hazard codes (Code R and Code S)
 # ------------------------------------------------------------------
 
-sink("data/hazard-statements.ttl")
+CodeR = unique(SRPPP$CodeR[,-1])
+colnames(CodeR) <- c("id", "code", "de", "fr", "it", "en")
+CodeS = unique(SRPPP$CodeS[,-1])
+colnames(CodeS) <- c("id", "code", "de", "fr", "it", "en")
+codes = data.frame(rbind(CodeR, CodeS), type = c(rep(":CodeR", nrow(CodeR)), rep(":CodeS", nrow(CodeS))))
+rm(CodeR, CodeS)
+
+sink("rdf/hazard-statements.ttl")
 
 cat("
-@prefix : <https://agriculture.ld.admin.ch/foag/plant-protection#> .
+@prefix : <https://agriculture.ld.admin.ch/plant-protection/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ")
 
-CodeR = unique(SRPPP$CodeR[,-1])
-for (i in 1:nrow(CodeR)) {
-  sprintf("%s a :HazardStatement, :CodeR ;\n", IRI("4", CodeR[i,1])) |> cat()
-  if(!is.na(CodeR[i,2])) sprintf("  :hasHazardStatementCode %s ;\n", literal(CodeR[i,2], datatype = "string")) |> cat()
-  sprintf("  rdfs:label %s ,\n", literal(CodeR[i,3], lang = "de")) |> cat()
-  #sprintf("    %s ,\n", literal(CodeR[i,4], lang = "fr")) |> cat()
-  #sprintf("    %s ,\n", literal(CodeR[i,5], lang = "it")) |> cat()
-  sprintf("    %s ;\n", literal(CodeR[i,6], lang = "en")) |> cat()
-  
-  J = products[products$pNbr %in% unlist(SRPPP$CodeR[SRPPP$CodeR$desc_pk==as.numeric(CodeR[i,1]),"pNbr"]),"hasFederalAdmissionNumber"]
-  for (j in J) {
-    sprintf("  :appliesToProduct %s ;\n", IRI("0001",j)) |> cat()
+for (i in 1:nrow(codes)) {
+  subject = uri(file.path("code", codes[i,1]),base)
+  triple(subject, "a", codes[i,"type"])
+  if(!is.na(codes[i,2])) triple(subject, ":hasHazardStatementCode", literal(codes[i,2]))
+  for (lang in c("de","fr","it","en")) {
+    label = codes[i,lang]
+    if(label!="") triple(subject, "rdfs:label", langstring(label, lang = lang))
   }
-  
-  cat(".\n")
-}
-
-CodeS = unique(SRPPP$CodeS[,-1])
-for (i in 1:nrow(CodeS)) {
-  sprintf("%s a :HazardStatement, :CodeS ;\n", IRI("4", CodeS[i,1])) |> cat()
-  if(!is.na(CodeS[i,2]) & !grepl("^\\s*$", CodeS[i,2])) sprintf("  :hasHazardStatementCode %s ;\n", literal(CodeS[i,2], datatype = "string")) |> cat()
-  sprintf("  rdfs:label %s ;\n", literal(CodeS[i,3], lang = "de")) |> cat()
-  #sprintf("  rdfs:label %s ;\n", literal(CodeS[i,4], lang = "fr")) |> cat()
-  #sprintf("  rdfs:label %s ;\n", literal(CodeS[i,5], lang = "it")) |> cat()
-  if(!is.na(CodeS[i,6]) & !CodeS[i,6]=="") sprintf("  rdfs:label %s ;\n", literal(CodeS[i,6], lang = "en")) |> cat()
-  
-  J = products[products$pNbr %in% unlist(SRPPP$CodeS[SRPPP$CodeS$desc_pk==as.numeric(CodeS[i,1]),"pNbr"]),"hasFederalAdmissionNumber"]
+  J = products[products$pNbr %in% unlist(SRPPP$CodeR[SRPPP$CodeR$desc_pk==as.numeric(codes[i,1]),"pNbr"]),"hasFederalAdmissionNumber"]
   for (j in J) {
-    sprintf("  :appliesToProduct %s ;\n", IRI("0001",j)) |> cat()
+    triple(subject, ":appliesToProduct", uri(j, base))
   }
-  
-  cat(".\n")
 }
 
 sink()
@@ -296,7 +284,7 @@ sink()
 # ------------------------------------------------------------------
 
 # Find all Detail nodes within the Culture MetaData
-crops_xml <- xml_find_all(xml_data, ".//MetaData[@name='Culture']/Detail")
+crops_xml <- xml_find_all(XML, ".//MetaData[@name='Culture']/Detail")
 parent_ids = crops_xml |> xml_find_all("Parent") |> xml_attr("primaryKey")
 
 # Read JSON file about crops
