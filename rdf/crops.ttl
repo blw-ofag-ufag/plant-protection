@@ -192,7 +192,8 @@ crop:10040 a srppp:CropGroup ;
     rdfs:label "Begonia"@de,
         "bégonia"@fr,
         "Begonia"@it ;
-    srppp:hasParentCropGroup crop:12097 .
+    srppp:hasParentCropGroup crop:10021,
+        crop:12097 .
 
 crop:10042 a srppp:CropGroup ;
     rdfs:label "Chinaschilf"@de,
@@ -234,7 +235,8 @@ crop:10050 a srppp:CropGroup ;
     rdfs:label "Cyclame"@de,
         "cyclamen"@fr,
         "Ciclamino"@it ;
-    srppp:hasParentCropGroup crop:12097 .
+    srppp:hasParentCropGroup crop:10021,
+        crop:12097 .
 
 crop:10051 a srppp:CropGroup ;
     rdfs:label "Speisepilze"@de,
@@ -306,7 +308,8 @@ crop:10070 a srppp:CropGroup ;
     rdfs:label "Hyazinthe"@de,
         "jacinthe"@fr,
         "Giacinto"@it ;
-    srppp:hasParentCropGroup crop:10134 .
+    srppp:hasParentCropGroup crop:10134,
+        crop:12097 .
 
 crop:10071 a srppp:CropGroup ;
     rdfs:label "Tabak"@de,
@@ -390,7 +393,8 @@ crop:10090 a srppp:CropGroup ;
     rdfs:label "Gladiole"@de,
         "glaïeul"@fr,
         "Gladiolo"@it ;
-    srppp:hasParentCropGroup crop:10015 .
+    srppp:hasParentCropGroup crop:10015,
+        crop:12097 .
 
 crop:10091 a srppp:CropGroup ;
     rdfs:label "Walnuss"@de,
@@ -408,7 +412,8 @@ crop:10094 a srppp:CropGroup ;
     rdfs:label "Winterweizen"@de,
         "Blé d'automne"@fr,
         "Frumento autunnale"@it ;
-    srppp:hasParentCropGroup crop:10167 .
+    srppp:hasParentCropGroup crop:10167,
+        crop:13784 .
 
 crop:10095 a srppp:CropGroup ;
     rdfs:label "Baumschule"@de,
@@ -420,19 +425,22 @@ crop:10096 a srppp:CropGroup ;
     rdfs:label "Chrysantheme"@de,
         "chrysanthème"@fr,
         "Crisantemo"@it ;
-    srppp:hasParentCropGroup crop:10015 .
+    srppp:hasParentCropGroup crop:10015,
+        crop:12097 .
 
 crop:10097 a srppp:CropGroup ;
     rdfs:label "Pelargonien"@de,
         "géranium"@fr,
         "Geranio"@it ;
-    srppp:hasParentCropGroup crop:12097 .
+    srppp:hasParentCropGroup crop:10021,
+        crop:12097 .
 
 crop:10098 a srppp:CropGroup ;
     rdfs:label "Primeln"@de,
         "primevères"@fr,
         "Primule"@it ;
-    srppp:hasParentCropGroup crop:12097 .
+    srppp:hasParentCropGroup crop:10021,
+        crop:12097 .
 
 crop:10099 a srppp:CropGroup ;
     rdfs:label "Azaleen"@de,
@@ -444,7 +452,8 @@ crop:10100 a srppp:CropGroup ;
     rdfs:label "Rhododendron"@de,
         "rhododendron"@fr,
         "Rododendro"@it ;
-    srppp:hasParentCropGroup crop:10108 .
+    srppp:hasParentCropGroup crop:10108,
+        crop:12096 .
 
 crop:10101 a srppp:CropGroup ;
     rdfs:label "Ziergehölze (ausserhalb Forst)"@de,
@@ -456,7 +465,8 @@ crop:10103 a srppp:CropGroup ;
     rdfs:label "Kirschlorbeer"@de,
         "laurier-cerise"@fr,
         "Lauro ceraso"@it ;
-    srppp:hasParentCropGroup crop:10108 .
+    srppp:hasParentCropGroup crop:10108,
+        crop:12096 .
 
 crop:10104 a srppp:CropGroup ;
     rdfs:label "Rosen"@de,
@@ -468,13 +478,15 @@ crop:10109 a srppp:CropGroup ;
     rdfs:label "Rosskastanie"@de,
         "marronnier d'Inde"@fr,
         "Ippocastano"@it ;
-    srppp:hasParentCropGroup crop:10108 .
+    srppp:hasParentCropGroup crop:10108,
+        crop:12096 .
 
 crop:10110 a srppp:CropGroup ;
     rdfs:label "Blautanne"@de,
         "sapin bleu"@fr,
         "Abete del Colorado"@it ;
-    srppp:hasParentCropGroup crop:10111 .
+    srppp:hasParentCropGroup crop:10111,
+        crop:12096 .
 
 crop:10111 a srppp:CropGroup ;
     rdfs:label "Nadelgehölze (Koniferen)"@de,
@@ -510,7 +522,8 @@ crop:10118 a srppp:CropGroup ;
     rdfs:label "Sommerweizen"@de,
         "Blé de printemps"@fr,
         "Frumento primaverile"@it ;
-    srppp:hasParentCropGroup crop:10164 .
+    srppp:hasParentCropGroup crop:10164,
+        crop:13784 .
 
 crop:10119 a srppp:CropGroup ;
     rdfs:label "Triticale"@de,
@@ -534,7 +547,8 @@ crop:10122 a srppp:CropGroup ;
     rdfs:label "Korn (Dinkel)"@de,
         "Épeautre"@fr,
         "Spelta"@it ;
-    srppp:hasParentCropGroup crop:10167 .
+    srppp:hasParentCropGroup crop:10052,
+        crop:10167 .
 
 crop:10124 a srppp:CropGroup ;
     rdfs:label "Eiweisserbse"@de,
@@ -582,7 +596,8 @@ crop:10136 a srppp:CropGroup ;
     rdfs:label "Blaudistel"@de,
         "chardon bleu"@fr,
         "Cardo azzurro"@it ;
-    srppp:hasParentCropGroup crop:10015 .
+    srppp:hasParentCropGroup crop:10015,
+        crop:12097 .
 
 crop:10137 a srppp:CropGroup ;
     rdfs:label "Sonnenblume"@de,
@@ -600,20 +615,23 @@ crop:10143 a srppp:CropGroup ;
     rdfs:label "Sommergerste"@de,
         "orge de printemps"@fr,
         "Orzo primaverile"@it ;
-    srppp:hasParentCropGroup crop:10164 .
+    srppp:hasParentCropGroup crop:10083,
+        crop:10164 .
 
 crop:10144 a srppp:CropGroup ;
     rdfs:label "Sommerhafer"@de,
         "Avoine de printemps"@fr,
         "Avena primaverile"@it ;
-    srppp:hasParentCropGroup crop:10164 .
+    srppp:hasParentCropGroup crop:10121,
+        crop:10164 .
 
 crop:10147 a srppp:CropGroup ;
     rdfs:label "Gerbera"@de,
         "Gerbera"@en,
         "gerbera"@fr,
         "Gerbera"@it ;
-    srppp:hasParentCropGroup crop:10015 .
+    srppp:hasParentCropGroup crop:10015,
+        crop:12097 .
 
 crop:10150 a srppp:CropGroup ;
     rdfs:label "Luzerne"@de,
@@ -631,7 +649,8 @@ crop:10152 a srppp:CropGroup ;
     rdfs:label "Buchsbäume (Buxus)"@de,
         "buis (Buxus)"@fr,
         "Bosso (Buxus)"@it ;
-    srppp:hasParentCropGroup crop:10108 .
+    srppp:hasParentCropGroup crop:10108,
+        crop:12096 .
 
 crop:10155 a srppp:CropGroup ;
     rdfs:label "Winterraps"@de,
@@ -708,7 +727,8 @@ crop:10180 a srppp:CropGroup ;
     rdfs:label "Wintertriticale"@de,
         "Triticale d'automne"@fr,
         "Triticale autunnale"@it ;
-    srppp:hasParentCropGroup crop:10167 .
+    srppp:hasParentCropGroup crop:10119,
+        crop:10167 .
 
 crop:10186 a srppp:CropGroup ;
     rdfs:label "Küchenkräuter"@de,
@@ -938,7 +958,8 @@ crop:10271 a srppp:CropGroup ;
     rdfs:label "Emmer"@de,
         "Amidonnier"@fr,
         "Farro"@it ;
-    srppp:hasParentCropGroup crop:10167 .
+    srppp:hasParentCropGroup crop:10052,
+        crop:10167 .
 
 crop:10272 a srppp:CropGroup ;
     rdfs:label "Kardy"@de,
@@ -1017,7 +1038,8 @@ crop:10290 a srppp:CropGroup ;
     rdfs:label "Weihnachtsbäume"@de,
         "arbres de Noël"@fr,
         "Alberi di Natale"@it ;
-    srppp:hasParentCropGroup crop:10111 .
+    srppp:hasParentCropGroup crop:10111,
+        crop:12096 .
 
 crop:10292 a srppp:CropGroup ;
     rdfs:label "Bohnen mit Hülsen"@de,
@@ -1620,7 +1642,8 @@ crop:9943 a srppp:CropGroup ;
     rdfs:label "Wintergerste"@de,
         "Orge d'automne"@fr,
         "Orzo autunnale"@it ;
-    srppp:hasParentCropGroup crop:10167 .
+    srppp:hasParentCropGroup crop:10083,
+        crop:10167 .
 
 crop:9944 a srppp:CropGroup ;
     rdfs:label "Blattsalate (Asteraceae)"@de,
@@ -1632,7 +1655,8 @@ crop:9945 a srppp:CropGroup ;
     rdfs:label "Winterroggen"@de,
         "Seigle d'automne"@fr,
         "Segale autunnale"@it ;
-    srppp:hasParentCropGroup crop:10167 .
+    srppp:hasParentCropGroup crop:10120,
+        crop:10167 .
 
 crop:9946 a srppp:CropGroup ;
     rdfs:label "Sellerie"@de,
@@ -1673,13 +1697,15 @@ crop:9954 a srppp:CropGroup ;
     rdfs:label "Forstliche Pflanzgärten"@de,
         "pépinières forestières"@fr,
         "Vivai forestali"@it ;
-    srppp:hasParentCropGroup crop:12465 .
+    srppp:hasParentCropGroup crop:12464,
+        crop:12465 .
 
 crop:9955 a srppp:CropGroup ;
     rdfs:label "Nelken"@de,
         "oeillet"@fr,
         "Garofani"@it ;
-    srppp:hasParentCropGroup crop:10015 .
+    srppp:hasParentCropGroup crop:10015,
+        crop:12097 .
 
 crop:9956 a srppp:CropGroup ;
     rdfs:label "Liegendes Rundholz im Wald und auf Lagerplätzen"@de,

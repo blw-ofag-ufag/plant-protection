@@ -271,17 +271,17 @@ sink()
 # Write data about crops
 # ------------------------------------------------------------------
 
-# Find all Detail nodes within the Culture MetaData
+# Function to convert *one* crop object to a better processable list
 convert <- function(x) {
-  pks   <- sapply(x[names(x)=="Parent"], attr, "primaryKey")
-  pks   <- c(pks, NA, NA)[1:2]
+  parents <- sapply(x[names(x)=="Parent"], attr, "primaryKey")
   descs <- x[names(x)=="Description"]
   lang <- sapply(descs, attr, "language")
   vals  <- sapply(descs, attr, "value")
-  c(id = attr(x, "primaryKey"),
-    parent1   = unname(pks[1]),
-    parent2   = unname(pks[2]),
-    setNames(vals, lang)
+  c(list(
+      id = attr(x, "primaryKey"),
+      parents = unname(parents)
+    ),
+    setNames(as.list(vals), lang)
   )
 }
 
@@ -293,15 +293,17 @@ crops = xml_find_all(XML, "//MetaData[@name='Culture']/Detail") |>
 sink("rdf/crops.ttl")
 cat(prefixes)
 for (crop in crops) {
-  subject <- uri(file.path("crop",crop["id"]), base)
+  subject <- uri(file.path("crop",crop[["id"]]), base)
   triple(subject, "a", ":CropGroup")
   for (lang in c("de","fr","it","en")) {
     label <- crop[lang]
     if(label!=""&!is.na(label)) {
-      triple(subject, "rdfs:label", langstring(crop[lang], lang))
+      triple(subject, "rdfs:label", langstring(label, lang))
     }
   }
-  if(!is.na(crop["parent1"])) triple(subject, ":hasParentCropGroup", uri(file.path("crop", crop["parent1"]), base))
+  for (parent in crop[["parents"]]) {
+    triple(subject, ":hasParentCropGroup", uri(file.path("crop", parent), base))
+  }
 }
 sink()
 
@@ -309,65 +311,22 @@ sink()
 # Write data about pests
 # ------------------------------------------------------------------
 
-# Read JSON file with data
-stressors = jsonlite::read_json("mapping-tables/crop-stressors.json", simplifyVector = FALSE)
-
-lapply(stressors, function(x) if(x[["type"]]=="nonstressor") return(x$label$de)) |> unlist() |> paste(collapse = ", ")
-
-# Convert nested arrays to vectors
-stressors <- lapply(stressors, function(x) {
-  for (i in c("wikidata-iri", "identical")) x[[i]] <- unlist(x[[i]])
-  x$labels <- lapply(x$labels, unlist)
-  return(x)
-})
-
-# Quality check 1: Is there a pest missing in the JSON file?
-pests = xml_find_all(xml_data, ".//MetaData[@name='Pest']/Detail")
-a = pests |> xml_attr("primaryKey")
-b = sapply(stressors, function(x) x["srppp-id"]) |> unlist() |> unname() |> as.character()
-if(all(a%in%b)) cat("Congrats, the JSON is (still) complete!") else cat("The JSON is missing a few items:\n\n", as.character(pests[which(!a%in%b)]))
-
-# Quality check 2: Is every item with a latin name also biotic?
-for (i in 1:length(stressors)) {
-  if(stressors[[i]][["srppp-id"]] %in% c(10743,10968,11191,11131,11103,11014,12434)) next # skip these, they are exceptions...
-  a <- length(stressors[[i]][["labels"]][["la"]])>0
-  b <- stressors[[i]][["type"]]=="biotic"
-  if(a&!b | !a&b) cat("\nID =",stressors[[i]][["srppp-id"]])
-}
+# extract all pests (we can re-use the convert function from before)
+pests <- xml_find_all(XML, "//MetaData[@name='Pest']/Detail") |>
+  as_list() |> lapply(convert)
 
 # Write Turtle file
-sink("data/crop-stressors.ttl")
-
-cat("
-@prefix : <https://agriculture.ld.admin.ch/foag/plant-protection#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix wd: <https://www.wikidata.org/wiki/> .
-
-")
-
-# Write RDF data
-for (i in 1:length(stressors)) {
-  
-  iri = IRI("6", stressors[[i]]["srppp-id"])
-  de = unlist(stressors[[i]]$labels$de)
-  en = unlist(stressors[[i]]$labels$en)
-  taxa = unlist(stressors[[i]]["wikidata-iri"])
-  type = stressors[[i]][["type"]]
-  
-  sprintf("%s a :CropStressor ;\n", iri) |> cat()
-  if(is.null(type)) cat("")
-  else if(type=="biotic") sprintf("  a :BioticStressor ;\n") |> cat()
-  else if(type=="abiotic") sprintf("  a :AbioticStressor ;\n") |> cat()
-  if(length(de)>0) sprintf("  rdfs:label %s ;\n", literal(de[[1]], lang = "de")) |> cat()
-  if(length(en)>0) sprintf("  rdfs:label %s ;\n", literal(en[[1]], lang = "en")) |> cat()
-  if(length(taxa)>0) {
-    for (taxon in taxa) {
-      sprintf("  :bioticStressorIsDefinedByBiologicalTaxon wd:%s ;\n", taxon) |> cat()
+sink("rdf/pests.ttl")
+cat(prefixes)
+for (pest in pests) {
+  subject <- uri(file.path("pest",pest[["id"]]), base)
+  triple(subject, "a", ":CropStressor")
+  for (lang in c("de","fr","it","en", "lt")) {
+    label <- pest[lang]
+    if(label!=""&!is.na(label)) {
+      triple(subject, "rdfs:label", langstring(gsub("\"", "'", label), lang))
     }
   }
-  cat(".\n\n")
 }
-
 sink()
+

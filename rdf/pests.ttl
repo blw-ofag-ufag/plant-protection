@@ -1,0 +1,3216 @@
+@prefix pest: <https://agriculture.ld.admin.ch/plant-protection/pest/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix srppp: <https://agriculture.ld.admin.ch/plant-protection/> .
+
+pest:10349 a srppp:CropStressor ;
+    rdfs:label "Alternaria spp."@de,
+        "alternarioses"@fr,
+        "Alternaria spp."@it,
+        "Alternaria spp."@lt .
+
+pest:10351 a srppp:CropStressor ;
+    rdfs:label "Monocotyledonen (Ungräser)"@de,
+        "monocotylédones"@fr,
+        "Monocotiledoni (malerbe)"@it,
+        "Monocotyledona"@lt .
+
+pest:10360 a srppp:CropStressor ;
+    rdfs:label "Wurzelgallennematoden"@de,
+        "nématodes cécidogènes des racines"@fr,
+        "Anguillula radicicola"@it,
+        "Meloidogyne spp."@lt .
+
+pest:10366 a srppp:CropStressor ;
+    rdfs:label "Schorf des Kernobstes"@de,
+        "scab"@en,
+        "tavelure des arbres fruitiers à pépins"@fr,
+        "Ticchiolatura della frutta a granelli"@it,
+        "Venturia inaequalis, Venturia pirina, Venturia nashicola"@lt .
+
+pest:10367 a srppp:CropStressor ;
+    rdfs:label "Bakterielle Fleckenkrankheit"@de,
+        "bacterial speck of tomato"@en,
+        "moucheture bactérienne"@fr,
+        "Batteriosi "@it,
+        "Pseudomonas syringae pv. tomato"@lt .
+
+pest:10369 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau der Zwiebel"@de,
+        "mildiou de l'oignon"@fr,
+        "Peronospora della cipolla"@it,
+        "Peronospora destructor"@lt .
+
+pest:10373 a srppp:CropStressor ;
+    rdfs:label "Graufäule (Botrytis cinerea)"@de,
+        "pourriture grise (Botrytis cinerea)"@fr,
+        "Marciume grigio (Botrytis cinerea)"@it,
+        "Botrytis cinerea"@lt .
+
+pest:10375 a srppp:CropStressor ;
+    rdfs:label "Thripse"@de,
+        "thrips"@fr,
+        "Tripidi"@it,
+        "Thripidae"@lt .
+
+pest:10376 a srppp:CropStressor ;
+    rdfs:label "Kalifornischer Blütenthrips"@de,
+        "Western Flower Thrips"@en,
+        "thrips de Californie"@fr,
+        "Tripide occidentale dei fiori (Frankliniella occidentalis)"@it,
+        "Frankliniella occidentalis"@lt .
+
+pest:10377 a srppp:CropStressor ;
+    rdfs:label "Zwiebelthrips"@de,
+        "Onion thrips"@en,
+        "thrips de l'oignon"@fr,
+        "Tripide della cipolla"@it,
+        "Thrips tabaci"@lt .
+
+pest:10379 a srppp:CropStressor ;
+    rdfs:label "Spinnmilben"@de,
+        "spider mites"@en,
+        "acariens tétranyques"@fr,
+        "Ragnetti"@it,
+        "Tetranychidae"@lt .
+
+pest:10381 a srppp:CropStressor ;
+    rdfs:label "Weichhautmilben"@de,
+        "tarsonèmes"@fr,
+        "Tarsonemidi"@it,
+        "Tarsonemidae"@lt .
+
+pest:10383 a srppp:CropStressor ;
+    rdfs:label "Gemeine Spinnmilbe"@de,
+        "acarien jaune commun"@fr,
+        "Ragnetto giallo comune"@it,
+        "Tetranychus urticae"@lt .
+
+pest:10384 a srppp:CropStressor ;
+    rdfs:label "Rote Spinne"@de,
+        "acarien rouge"@fr,
+        "Ragnetto rosso"@it,
+        "Panonychus ulmi"@lt .
+
+pest:10385 a srppp:CropStressor ;
+    rdfs:label "Zünsler"@de,
+        "pyrales"@fr,
+        "Piralidi"@it,
+        "Pyralidae"@lt .
+
+pest:10388 a srppp:CropStressor ;
+    rdfs:label "Blattkäfer"@de,
+        "chrysomélidés"@fr,
+        "Crisomelidi"@it,
+        "Chrysomelidae"@lt .
+
+pest:10389 a srppp:CropStressor ;
+    rdfs:label "Rübenerdflöhe"@de,
+        "altises de la betterave"@fr,
+        "Altiche della barbabietola"@it,
+        "Chaetocnema concinna, C. tibialis"@lt .
+
+pest:10390 a srppp:CropStressor ;
+    rdfs:label "Kartoffelkäfer"@de,
+        "doryphore"@fr,
+        "Dorifora della patata"@it,
+        "Leptinotarsa decemlineata"@lt .
+
+pest:10391 a srppp:CropStressor ;
+    rdfs:label "Maikäfer"@de,
+        "May bug"@en,
+        "hanneton commun"@fr,
+        "Maggiolino"@it,
+        "Melolontha melolontha"@lt .
+
+pest:10396 a srppp:CropStressor ;
+    rdfs:label "Wanzen"@de,
+        "punaises"@fr,
+        "Cimici"@it,
+        "Heteroptera"@lt .
+
+pest:10397 a srppp:CropStressor ;
+    rdfs:label "Erdflöhe"@de,
+        "altises"@fr,
+        "Altiche"@it,
+        "Halticinae"@lt .
+
+pest:10398 a srppp:CropStressor ;
+    rdfs:label "Blattläuse (Röhrenläuse)"@de,
+        "pucerons du feuillage"@fr,
+        "Afidi "@it,
+        "Aphididae"@lt .
+
+pest:10403 a srppp:CropStressor ;
+    rdfs:label "Schildläuse"@de,
+        "cochenilles"@fr,
+        "Cocciniglie"@it,
+        "Coccoidea"@lt .
+
+pest:10404 a srppp:CropStressor ;
+    rdfs:label "Napfschildläuse"@de,
+        "cochenilles lécanines"@fr,
+        "Cocciniglie del genere lecanio"@it,
+        "Coccidae"@lt .
+
+pest:10405 a srppp:CropStressor ;
+    rdfs:label "Wollläuse (Schmierläuse)"@de,
+        "cochenilles farineuses"@fr,
+        "Cocciniglie cotonose"@it,
+        "Pseudococcidae"@lt .
+
+pest:10406 a srppp:CropStressor ;
+    rdfs:label "Deckelschildläuse"@de,
+        "cochenilles diaspines"@fr,
+        "Cocciniglie diaspine"@it,
+        "Diaspididae"@lt .
+
+pest:10410 a srppp:CropStressor ;
+    rdfs:label "Weisse Fliegen (Mottenschildläuse)"@de,
+        "mouches blanches"@fr,
+        "Aleurodidi"@it,
+        "Aleyrodidae"@lt .
+
+pest:10412 a srppp:CropStressor ;
+    rdfs:label "Grüne Gurkenblattlaus"@de,
+        "puceron du melon et du cotonnier"@fr,
+        "Afide delle Malvacee e del cotone"@it,
+        "Aphis gossypii"@lt .
+
+pest:10413 a srppp:CropStressor ;
+    rdfs:label "Schwarze Bohnenlaus = Schwarze Rübenblattlaus"@de,
+        "puceron noir de la fève"@fr,
+        "Afide nero della fava"@it,
+        "Aphis fabae"@lt .
+
+pest:10414 a srppp:CropStressor ;
+    rdfs:label "Mehlige Kohlblattlaus"@de,
+        "puceron cendré du chou"@fr,
+        "Afide ceroso del cavolo"@it,
+        "Brevicoryne brassicae"@lt .
+
+pest:10415 a srppp:CropStressor ;
+    rdfs:label "Salatwurzellaus"@de,
+        "puceron des racines de la laitue"@fr,
+        "Afide radicicolo della lattuga"@it,
+        "Pemphigus bursarius"@lt .
+
+pest:10416 a srppp:CropStressor ;
+    rdfs:label "Möhrenblattfloh"@de,
+        "psylle de la carotte"@fr,
+        "Psilla della carota"@it,
+        "Trioza apicalis"@lt .
+
+pest:10417 a srppp:CropStressor ;
+    rdfs:label "Tabakmottenschildlaus"@de,
+        "Aleurode du tabac"@fr,
+        "Aleurode delle solanacee"@it,
+        "Bemisia tabaci"@lt .
+
+pest:10420 a srppp:CropStressor ;
+    rdfs:label "Kohleule"@de,
+        "noctuelle du chou"@fr,
+        "Nottua del cavolo"@it,
+        "Mamestra brassicae"@lt .
+
+pest:10421 a srppp:CropStressor ;
+    rdfs:label "Eulenraupen"@de,
+        "noctuelles"@fr,
+        "Larve di nottue"@it,
+        "Noctuidae"@lt .
+
+pest:10423 a srppp:CropStressor ;
+    rdfs:label "Spanner"@de,
+        "phalènes"@fr,
+        "Falene"@it,
+        "Geometridae"@lt .
+
+pest:10425 a srppp:CropStressor ;
+    rdfs:label "Kohlschotengallmücke"@de,
+        "cécidomyie des siliques du colza"@fr,
+        "Cecidomia delle silique delle crocifere"@it,
+        "Dasineura brassicae"@lt .
+
+pest:10426 a srppp:CropStressor ;
+    rdfs:label "Miniermotten"@de,
+        "mineuses"@fr,
+        "Minatrici"@it,
+        "Gracillariidae, Lyonetiidae"@lt .
+
+pest:10427 a srppp:CropStressor ;
+    rdfs:label "Trägspinner"@de,
+        "lymantridés"@fr,
+        "Limantridi"@it,
+        "Lymantriidae"@lt .
+
+pest:10429 a srppp:CropStressor ;
+    rdfs:label "Weisslinge"@de,
+        "Pieridae"@fr,
+        "Cavolaie"@it,
+        "Pieridae"@lt .
+
+pest:10430 a srppp:CropStressor ;
+    rdfs:label "Minierfliegen"@de,
+        "mouches mineuses"@fr,
+        "Minatrici"@it,
+        "Agromyzidae"@lt .
+
+pest:10434 a srppp:CropStressor ;
+    rdfs:label "Trauermücken"@de,
+        "sciarides, mouches du terreau"@fr,
+        "Sciaridi"@it,
+        "Sciaridae"@lt .
+
+pest:10435 a srppp:CropStressor ;
+    rdfs:label "Gallmücken"@de,
+        "cécidomyies"@fr,
+        "Cecidomie"@it,
+        "Cecidomyiidae"@lt .
+
+pest:10436 a srppp:CropStressor ;
+    rdfs:label "Erdschnaken"@de,
+        "tipules"@fr,
+        "Tipulidi"@it,
+        "Tipulidae"@lt .
+
+pest:10442 a srppp:CropStressor ;
+    rdfs:label "Drahtwürmer"@de,
+        "vers fil de fer"@fr,
+        "Elateridi"@it,
+        "Elateridae"@lt .
+
+pest:10445 a srppp:CropStressor ;
+    rdfs:label "Gefleckter Kohltriebrüssler"@de,
+        "charançon de la tige du chou"@fr,
+        "Punteruolo degli steli di cavoli"@it,
+        "Ceutorhynchus quadridens"@lt .
+
+pest:10447 a srppp:CropStressor ;
+    rdfs:label "Kohlgallenrüssler"@de,
+        "charançon gallicole du chou"@fr,
+        "Punteruolo delle galle dei cavoli"@it,
+        "Ceutorhynchus pleurostigma"@lt .
+
+pest:10448 a srppp:CropStressor ;
+    rdfs:label "Kleespitzmäuschen"@de,
+        "apions du trèfle"@fr,
+        "Apioni dei capolini del trifoglio"@it,
+        "Apion spp."@lt .
+
+pest:10450 a srppp:CropStressor ;
+    rdfs:label "Maulwurfsgrille"@de,
+        "courtilière"@fr,
+        "Grillotalpa"@it,
+        "Gryllotalpa gryllotalpa"@lt .
+
+pest:10451 a srppp:CropStressor ;
+    rdfs:label "Blindwanzen"@de,
+        "mirides"@fr,
+        "Miridi"@it,
+        "Miridae"@lt .
+
+pest:10452 a srppp:CropStressor ;
+    rdfs:label "Blattwespen"@de,
+        "tenthrèdes"@fr,
+        "Tentredini"@it,
+        "Tenthredinidae"@lt .
+
+pest:10455 a srppp:CropStressor ;
+    rdfs:label "Blutlaus"@de,
+        "puceron lanigère du pommier"@fr,
+        "Afide lanigero del melo"@it,
+        "Eriosoma lanigerum"@lt .
+
+pest:10458 a srppp:CropStressor ;
+    rdfs:label "Kohlschabe"@de,
+        "teigne des crucifères (Plutella xylostella)"@fr,
+        "Tignola delle Crocifere"@it,
+        "Plutella xylostella"@lt .
+
+pest:10459 a srppp:CropStressor ;
+    rdfs:label "Lauchmotte"@de,
+        "teigne du poireau"@fr,
+        "Tignola del porro"@it,
+        "Acrolepiopsis assectella"@lt .
+
+pest:10460 a srppp:CropStressor ;
+    rdfs:label "Spargelhähnchen"@de,
+        "criocère de l'asperge"@fr,
+        "Criocera dell'asparago"@it,
+        "Crioceris asparagi"@lt .
+
+pest:10461 a srppp:CropStressor ;
+    rdfs:label "Spargelkäfer"@de,
+        "criocère à douze points de l'asperge"@fr,
+        "Criocera a dodici punti"@it,
+        "Crioceris duodecimpunctata"@lt .
+
+pest:10463 a srppp:CropStressor ;
+    rdfs:label "Erbsenblattrandkäfer"@de,
+        "sitone du pois"@fr,
+        "Sitone del pisello"@it,
+        "Sitona lineatus"@lt .
+
+pest:10464 a srppp:CropStressor ;
+    rdfs:label "Kohldrehherzgallmücke"@de,
+        "cécidomyie du chou"@fr,
+        "Cecidomia del cavolo"@it,
+        "Contarinia nasturtii"@lt .
+
+pest:10465 a srppp:CropStressor ;
+    rdfs:label "Kohlfliege"@de,
+        "mouche du chou"@fr,
+        "Mosca del cavolo"@it,
+        "Delia radicum, D. floralis"@lt .
+
+pest:10466 a srppp:CropStressor ;
+    rdfs:label "Spargelfliege"@de,
+        "mouche de l'asperge"@fr,
+        "Mosca dell'asparago"@it,
+        "Platyparea poeciloptera"@lt .
+
+pest:10469 a srppp:CropStressor ;
+    rdfs:label "Rübenfliege"@de,
+        "mouche de la betterave"@fr,
+        "Mosca della barbabietola"@it,
+        "Pegomya betae"@lt .
+
+pest:10470 a srppp:CropStressor ;
+    rdfs:label "Möhrenfliege"@de,
+        "mouche de la carotte"@fr,
+        "Mosca della carota"@it,
+        "Psila rosae"@lt .
+
+pest:10472 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau des Apfels/der Birne"@de,
+        "powdery mildew"@en,
+        "oïdium du pommier/du poirier"@fr,
+        "Oidio della mela/pera"@it,
+        "Podosphaera leucotricha"@lt .
+
+pest:10474 a srppp:CropStressor ;
+    rdfs:label "Einjährige Monocotyledonen (Ungräser)"@de,
+        "monocotylédones annuelles"@fr,
+        "Monocotiledoni annuali (malerbe)."@it .
+
+pest:10477 a srppp:CropStressor ;
+    rdfs:label "Blattbräune der Quitte"@de,
+        "entomosporiose du cognassier"@fr,
+        "Entomosporiosi del cotogno"@it,
+        "Entomosporium mespili"@lt .
+
+pest:10478 a srppp:CropStressor ;
+    rdfs:label "Gelbe Getreidehalmfliege"@de,
+        "chlorops"@fr,
+        "Cloropo del grano"@it,
+        "Chlorops pumilionis"@lt .
+
+pest:10479 a srppp:CropStressor ;
+    rdfs:label "Kelchfäule (Botrytis cinerea)"@de,
+        "eye rot"@en,
+        "pourriture de la mouche des pommes (Botrytis cinerea)"@fr,
+        "Marciume (Botrytis cinerea)"@it,
+        "Botrytis cinerea (Kelchfäule)"@lt .
+
+pest:10481 a srppp:CropStressor ;
+    rdfs:label "Blüten- und Zweigdürre"@de,
+        "blossom blight"@en,
+        "moniliose des fleurs et des rameaux"@fr,
+        "Monilia dei rami e dei fiori"@it,
+        "Monilia laxa"@lt .
+
+pest:10482 a srppp:CropStressor ;
+    rdfs:label "Schorf des Pfirsichs"@de,
+        "scab"@en,
+        "tavelure noire du pêcher"@fr,
+        "Ticchiolatura del pesco"@it,
+        "Venturia carpophila"@lt .
+
+pest:10483 a srppp:CropStressor ;
+    rdfs:label "Schrotschuss"@de,
+        "shot-hole"@en,
+        "maladie criblée des Prunus"@fr,
+        "Vaiolatura della frutta a nocciolo"@it,
+        "Wilsonomyces carpophilus (syn. Stigmina carpophila)"@lt .
+
+pest:10485 a srppp:CropStressor ;
+    rdfs:label "Bakterienbrand der Kirsche"@de,
+        "bacterial canker"@en,
+        "chancre bactérien du cerisier"@fr,
+        "Batteriosi del ciliegio"@it,
+        "Pseudomonas syringae pv. morsprunorum"@lt .
+
+pest:10486 a srppp:CropStressor ;
+    rdfs:label "Bitterfäule der Kirsche"@de,
+        "bitter rot"@en,
+        "pourriture amère des cerises"@fr,
+        "Antracnosi del ciliegio"@it,
+        "Glomerella cingulata"@lt .
+
+pest:10487 a srppp:CropStressor ;
+    rdfs:label "Sprühfleckenkrankheit der Kirsche"@de,
+        "leaf blight"@en,
+        "cylindrosporiose du cerisier"@fr,
+        "Cilindrosporiosi del ciliegio"@it,
+        "Blumeriella jaapii"@lt .
+
+pest:10488 a srppp:CropStressor ;
+    rdfs:label "Rost der Zwetschge"@de,
+        "rust"@en,
+        "rouille du prunier"@fr,
+        "Ruggine del susino"@it,
+        "Tranzschelia discolor, Tranzschelia pruni-spinosae"@lt .
+
+pest:10489 a srppp:CropStressor ;
+    rdfs:label "Kräuselkrankheit des Pfirsichs"@de,
+        "cloque du pêcher"@fr,
+        "Bolla del pesco"@it,
+        "Taphrina deformans"@lt .
+
+pest:10490 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau des Pfirsichs"@de,
+        "mildew"@en,
+        "oïdium du pêcher"@fr,
+        "Oidio della pesca"@it,
+        "Podosphaera pannosa"@lt .
+
+pest:10491 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Aprikose"@de,
+        "powdery mildew"@en,
+        "oïdium de l'abricotier"@fr,
+        "Oidio dell'albicocca"@it,
+        "Podosphaera tridactyla"@lt .
+
+pest:10492 a srppp:CropStressor ;
+    rdfs:label "Narren- oder Taschenkrankheit der Zwetschge"@de,
+        "pocket plums"@en,
+        "maladie des pochettes du prunier"@fr,
+        "Bozzacchioni del susino"@it,
+        "Taphrina pruni"@lt .
+
+pest:10493 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Erdbeere"@de,
+        "oïdium du fraisier"@fr,
+        "Oidio della fragola"@it,
+        "Podosphaera aphanis"@lt .
+
+pest:10495 a srppp:CropStressor ;
+    rdfs:label "Blattfleckenkrankheiten der Erdbeere"@de,
+        "taches pourpres du fraisier"@fr,
+        "Vaiolatura rossa della fragola"@it,
+        "Diplocarpon earlianum, Mycosphaerella fragariae"@lt .
+
+pest:10496 a srppp:CropStressor ;
+    rdfs:label "Lederfäule der Erdbeeren"@de,
+        "fruit rot"@en,
+        "mildiou du fraisier"@fr,
+        "Marciume delle fragole"@it,
+        "Phytophthora cactorum"@lt .
+
+pest:10497 a srppp:CropStressor ;
+    rdfs:label "Rote Wurzelfäule der Erdbeeren"@de,
+        "red core"@en,
+        "racines rouges du fraisier"@fr,
+        "Marciume radicale della fragola"@it,
+        "Phytophthora fragariae var. fragariae"@lt .
+
+pest:10498 a srppp:CropStressor ;
+    rdfs:label "Rhizomfäule der Erdbeeren"@de,
+        "rhizom rot"@en,
+        "coeur brun du fraisier"@fr,
+        "Fitoftora della fragola"@it,
+        "Phytophthora cactorum"@lt .
+
+pest:10499 a srppp:CropStressor ;
+    rdfs:label "Getreidehähnchen"@de,
+        "cereal leaf beetle "@en,
+        "criocères des céréales"@fr,
+        "Criocere dei cereali"@it,
+        "Oulema melanopus, O. lichenis"@lt .
+
+pest:10501 a srppp:CropStressor ;
+    rdfs:label "Rutenkrankheiten der Brombeere"@de,
+        "cane spot"@en,
+        "maladies des rameaux des ronces"@fr,
+        "Cancri del fusto della mora di rovo"@it,
+        "Didymella applanata, Leptosphaeria coniothyrium, Septocyta ruborum"@lt .
+
+pest:10502 a srppp:CropStressor ;
+    rdfs:label "Wurzelsterben der Himbeere"@de,
+        "dépérissement des racines du framboisier"@fr,
+        "Marciume radicale del lampone"@it,
+        "Phytophthora fragariae var. rubi"@lt .
+
+pest:10503 a srppp:CropStressor ;
+    rdfs:label "Roste der Ribes-Arten"@de,
+        "rust"@en,
+        "rouille des espèces de Ribes"@fr,
+        "Ruggine delle specie di ribes"@it,
+        "Cronartium ribicola, Puccinia ribis"@lt .
+
+pest:10504 a srppp:CropStressor ;
+    rdfs:label "Blattfallkrankheit der Ribes-Arten"@de,
+        "leaf spot"@en,
+        "anthracnose des espèces de Ribes"@fr,
+        "Seccume delle specie di ribes "@it,
+        "Drepanopeziza ribis"@lt .
+
+pest:10505 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Ribes-Arten"@de,
+        "powdery mildew"@en,
+        "oïdium des Ribes"@fr,
+        "Oidio delle varietà di ribes"@it,
+        "Podosphaera mors-uvae (Sphaerotheca mors-uvae)"@lt .
+
+pest:10506 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau der Rebe"@de,
+        "downy mildiou"@en,
+        "mildiou de la vigne"@fr,
+        "Peronospora della vite"@it,
+        "Plasmopara viticola"@lt .
+
+pest:10507 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Rebe"@de,
+        "powedery mildew"@en,
+        "oïdium de la vigne"@fr,
+        "Oidio della vite"@it,
+        "Uncinula (=Erysiphe) necator"@lt .
+
+pest:10508 a srppp:CropStressor ;
+    rdfs:label "Rotbrenner"@de,
+        "Rotbrenner"@en,
+        "rougeot parasitaire de la vigne"@fr,
+        "Rossore parassitario"@it,
+        "Pseudopeziza tracheiphila"@lt .
+
+pest:10509 a srppp:CropStressor ;
+    rdfs:label "Weissfäule der Rebe"@de,
+        "white rot"@en,
+        "coître de la vigne"@fr,
+        "Marciume bianco dell'uva"@it,
+        "Coniella diplodiella"@lt .
+
+pest:10510 a srppp:CropStressor ;
+    rdfs:label "Vorratsschädlinge"@de,
+        "ravageurs des denrées stockées"@fr,
+        "Parassiti delle scorte alimentari"@it,
+        "Vorratsschädlinge"@lt .
+
+pest:10511 a srppp:CropStressor ;
+    rdfs:label "Schwarzfleckenkrankheit der Rebe"@de,
+        "Phomopsis cane and leaf spot"@en,
+        "excoriose de la vigne"@fr,
+        "Escoriosi della vite"@it,
+        "Phomopsis viticola"@lt .
+
+pest:10513 a srppp:CropStressor ;
+    rdfs:label "Schwarzfäule der Rebe"@de,
+        "black-rot"@en,
+        "Pourriture noire (black rot) de la vigne"@fr,
+        "Marciume nero"@it,
+        "Guignardia bidwellii"@lt .
+
+pest:10516 a srppp:CropStressor ;
+    rdfs:label "Brennfleckenkrankheit der Bohne"@de,
+        "anthracnose du haricot"@fr,
+        "Antracnosi del fagiolo"@it,
+        "Colletotrichum lindemuthianum"@lt .
+
+pest:10517 a srppp:CropStressor ;
+    rdfs:label "Fettfleckenkrankheit"@de,
+        "graisse du haricot"@fr,
+        "Grassume del fagiolo"@it,
+        "Pseudomonas syringae pv. phaseolicola"@lt .
+
+pest:10518 a srppp:CropStressor ;
+    rdfs:label "Rost der Bohne"@de,
+        "rouille du haricot"@fr,
+        "Ruggine del fagiolo"@it,
+        "Uromyces appendiculatus"@lt .
+
+pest:10519 a srppp:CropStressor ;
+    rdfs:label "Eckige Blattfleckenkrankheit"@de,
+        "taches angulaires"@fr,
+        "Maculature angolari"@it,
+        "Pseudomonas syringae pv. lacrymans"@lt .
+
+pest:10521 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau der Kürbisgewächse"@de,
+        "mildiou des cucurbitacées"@fr,
+        "Peronospora delle Cucurbitacee"@it,
+        "Pseudoperonospora cubensis"@lt .
+
+pest:10523 a srppp:CropStressor ;
+    rdfs:label "Alternaria-Möhrenschwärze"@de,
+        "alternariose de la carotte"@fr,
+        "Altenariosi delle carote"@it,
+        "Alternaria dauci Alternaria radicina"@lt .
+
+pest:10524 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau des Salats"@de,
+        "mildiou de la laitue"@fr,
+        "Peronospora della lattuga"@it,
+        "Bremia lactucae"@lt .
+
+pest:10528 a srppp:CropStressor ;
+    rdfs:label "Alternaria-Kohlschwärze"@de,
+        "maladie des taches noires du chou"@fr,
+        "Maculatura anulare nera del cavolo"@it,
+        "Alternaria brassicae"@lt .
+
+pest:10530 a srppp:CropStressor ;
+    rdfs:label "Marssonina-Blattfleckenkrankheit (Salate)"@de,
+        "anthracnose de la laitue"@fr,
+        "Marciume della lattuga"@it,
+        "Marssonina panattoniana"@lt .
+
+pest:10531 a srppp:CropStressor ;
+    rdfs:label "Septoria-Blattfleckenkrankheit des Selleries"@de,
+        "leaf spot of celery"@en,
+        "septoriose du céleri"@fr,
+        "Septoriosi del sedano"@it,
+        "Septoria apiicola"@lt .
+
+pest:10532 a srppp:CropStressor ;
+    rdfs:label "Samtfleckenkrankheit der Tomate"@de,
+        "leaf mould of tomato"@en,
+        "cladosporiose de la tomate"@fr,
+        "Ticchiolatura del pomodoro"@it,
+        "Mycovellosiella fulva, Fulvia fulva, Cladosporium fulvum"@lt .
+
+pest:10533 a srppp:CropStressor ;
+    rdfs:label "Botrytis spp."@de,
+        "Botrytis spp."@fr,
+        "Botrytis spp."@it,
+        "Botrytis spp."@lt .
+
+pest:10534 a srppp:CropStressor ;
+    rdfs:label "Mehlkrankheit der Zwiebel"@de,
+        "pourriture blanche des Allium"@fr,
+        "Marciume bianco della cipolla"@it,
+        "Sclerotium cepivorum"@lt .
+
+pest:10535 a srppp:CropStressor ;
+    rdfs:label "Cercospora- und Ramularia-Blattfleckenkrankheiten"@de,
+        "cercosporiose et ramulariose"@fr,
+        "Cercosporiosi e ramulariosi"@it,
+        "Cercospora spp., Ramularia spp."@lt .
+
+pest:10536 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Kürbisgewächse"@de,
+        "Powdery mildew of cucurbits"@en,
+        "oïdium des cucurbitacées"@fr,
+        "Oidio delle Cucurbitacee"@it,
+        "Podosphaera xanthii Golovinomyces orontii "@lt .
+
+pest:10537 a srppp:CropStressor ;
+    rdfs:label "Weisser Rost der Schwarzwurzel"@de,
+        "rouille blanche de la scorsonère"@fr,
+        "Ruggine bianca della scorzonera"@it,
+        "Albugo tragopogonis"@lt .
+
+pest:10538 a srppp:CropStressor ;
+    rdfs:label "Septoria-Blattfleckenkrankheit der Tomate/Aubergine"@de,
+        "septoriose de la tomate/aubergine"@fr,
+        "Septoriosi del pomodoro/della melanzana"@it,
+        "Septoria lycopersici"@lt .
+
+pest:10539 a srppp:CropStressor ;
+    rdfs:label "Blattschwärze der Spargel"@de,
+        "brûlure des feuilles de l'asperge"@fr,
+        "Bruciatura delle foglie dell'asparago"@it,
+        "Stemphylium vesicarium"@lt .
+
+pest:10540 a srppp:CropStressor ;
+    rdfs:label "Alternaria-Dürrfleckenkrankheit"@de,
+        "alternariose"@fr,
+        "Alternariosi delle solanacee"@it,
+        "Alternaria spp."@lt .
+
+pest:10544 a srppp:CropStressor ;
+    rdfs:label "Zwergbrand"@de,
+        "carie naine"@fr,
+        "Carie nana"@it,
+        "Tilletia controversa"@lt .
+
+pest:10545 a srppp:CropStressor ;
+    rdfs:label "Stinkbrand"@de,
+        "carie ordinaire"@fr,
+        "Carie"@it,
+        "Tilletia caries, T. laevis"@lt .
+
+pest:10546 a srppp:CropStressor ;
+    rdfs:label "Flugbrand des Weizens"@de,
+        "charbon nu du blé"@fr,
+        "Carbone del grano"@it,
+        "Ustilago tritici"@lt .
+
+pest:10549 a srppp:CropStressor ;
+    rdfs:label "Flugbrand der Gerste"@de,
+        "charbon nu de l'orge"@fr,
+        "Carbone nudo dell'orzo"@it,
+        "Ustilago nuda"@lt .
+
+pest:10550 a srppp:CropStressor ;
+    rdfs:label "Gedeckter Brand der Gerste"@de,
+        "charbon couvert de l'orge"@fr,
+        "Carbone coperto dell'orzo"@it,
+        "Ustilago hordei"@lt .
+
+pest:10551 a srppp:CropStressor ;
+    rdfs:label "Streifenkrankheit der Gerste"@de,
+        "maladie striée de l'orge"@fr,
+        "Striatura bruna dell'orzo"@it,
+        "Pyrenophora graminea (Anam. Drechslera graminea)"@lt .
+
+pest:10554 a srppp:CropStressor ;
+    rdfs:label "Rapserdfloh"@de,
+        "altise d'hiver du colza"@fr,
+        "Altica della colza"@it,
+        "Psylliodes chrysocephala"@lt .
+
+pest:10555 a srppp:CropStressor ;
+    rdfs:label "Rhizoctonia-solani-Krankheit"@de,
+        "rhizoctone"@fr,
+        "Rizottonia"@it,
+        "Thanatephorus cucumeris (Anam. Rhizoctonia solani)"@lt .
+
+pest:10556 a srppp:CropStressor ;
+    rdfs:label "Flugbrand des Hafers"@de,
+        "charbon nu de l'avoine"@fr,
+        "Carbone nudo dell'avena"@it,
+        "Ustilago avenae"@lt .
+
+pest:10559 a srppp:CropStressor ;
+    rdfs:label "Wurzelbrand der Zuckerrübe"@de,
+        "pied noir de la betterave"@fr,
+        "Mal del piede della barbabietola"@it,
+        "Aphanomyces spp., Phoma spp., Pythium spp., Rhizoctonia spp."@lt .
+
+pest:10560 a srppp:CropStressor ;
+    rdfs:label "Halmbruchkrankheit des Weizens"@de,
+        "Foot rot of cereals"@en,
+        "Piétin-verse du blé"@fr,
+        "Mal del piede dei cereali"@it,
+        "Pseudocercosporella herpotrichoides (syn. Oculimacula yallundae)"@lt .
+
+pest:10561 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau des Getreides"@de,
+        "Powdery mildew of cereals"@en,
+        "oïdium des céréales"@fr,
+        "Oidio dei cereali"@it,
+        "Blumeria graminis"@lt .
+
+pest:10562 a srppp:CropStressor ;
+    rdfs:label "Gelbrost"@de,
+        "rouille jaune"@fr,
+        "Ruggine gialla"@it,
+        "Puccinia striiformis"@lt .
+
+pest:10563 a srppp:CropStressor ;
+    rdfs:label "Braunrost"@de,
+        "Brown rust of wheat"@en,
+        "rouille brune"@fr,
+        "Ruggine bruna"@it,
+        "Puccinia recondita"@lt .
+
+pest:10565 a srppp:CropStressor ;
+    rdfs:label "Ährenfusariosen"@de,
+        "fusarioses de l'épi"@fr,
+        "Fusariosi della spiga"@it,
+        "Fusarium spp., Gerlachia nivalis"@lt .
+
+pest:10566 a srppp:CropStressor ;
+    rdfs:label "Netzfleckenkrankheit der Gerste"@de,
+        "Net blotch of barley"@en,
+        "helminthosporiose de l'orge"@fr,
+        "Macchie reticolate dell'orzo"@it,
+        "Pyrenophora teres (Anam. Drechslera teres)"@lt .
+
+pest:10567 a srppp:CropStressor ;
+    rdfs:label "Rhynchosporium-Blattfleckenkrankheit"@de,
+        "Leaf blotch (= scald) of cereals"@en,
+        "rhynchosporiose"@fr,
+        "Rincosporiosi"@it,
+        "Rhynchosporium secalis"@lt .
+
+pest:10569 a srppp:CropStressor ;
+    rdfs:label "Kraut- und Fruchtfäule"@de,
+        "mildiou de la tomate"@fr,
+        "Peronospora del pomodoro"@it,
+        "Phytophthora infestans"@lt .
+
+pest:10570 a srppp:CropStressor ;
+    rdfs:label "Prozessionsspinner"@de,
+        "chenilles processionnaires"@fr,
+        "Taumatopea"@it,
+        "Thaumetopoeidae"@lt .
+
+pest:10571 a srppp:CropStressor ;
+    rdfs:label "Maulwürfe (Fam.)"@de,
+        "taupes (fam.)"@fr,
+        "Talpidi (fam.)"@it,
+        "Talpidae"@lt .
+
+pest:10572 a srppp:CropStressor ;
+    rdfs:label "Blauschimmel des Tabaks"@de,
+        "mildiou du tabac"@fr,
+        "Peronospora del tabacco"@it,
+        "Peronospora tabacina"@lt .
+
+pest:10574 a srppp:CropStressor ;
+    rdfs:label "Blattfleckenpilze"@de,
+        "maladies fongiques des feuilles"@fr,
+        "Maculature fogliari"@it,
+        "Species ex Genus Alternaria spp., Apiognomonia spp., Ascochyta spp., Cercospora spp. aut Septoria spp., Gloeosporium sp."@lt .
+
+pest:10575 a srppp:CropStressor ;
+    rdfs:label "Krankheiten durch pathogene Bodenpilze"@de,
+        "champignons pathogènes du sol (fonte ou toile des semis)"@fr,
+        "Malattie causate da funghi patogeni del suolo"@it,
+        "B.cinerea, Chalara spp., Fusarium spp., Penicillium spp., Pythium spp., Rhizoctonia spp., Sclerotinia spp., etc."@lt .
+
+pest:10579 a srppp:CropStressor ;
+    rdfs:label "Kohlschotenrüssler"@de,
+        "charançon des siliques"@fr,
+        "Punteruolo delle silique delle crocifere"@it,
+        "Ceutorhynchus assimilis"@lt .
+
+pest:10580 a srppp:CropStressor ;
+    rdfs:label "Fritfliege"@de,
+        "oscinie"@fr,
+        "Mosca frit"@it,
+        "Oscinella frit"@lt .
+
+pest:10584 a srppp:CropStressor ;
+    rdfs:label "Blattfleckenkrankheit der Chrysantheme"@de,
+        "septoriose du chrysanthème"@fr,
+        "Necrosi fogliare del crisantemo"@it,
+        "Septoria chrysanthemella"@lt .
+
+pest:10585 a srppp:CropStressor ;
+    rdfs:label "Desinfektion"@de,
+        "désinfection"@fr,
+        "Disinfezione"@it .
+
+pest:10589 a srppp:CropStressor ;
+    rdfs:label "Ohrläppchenkrankheit der Azaleen"@de,
+        "cloque des azalées"@fr,
+        "Bolla dell'azalea"@it,
+        "Exobasidium vaccinii var. japonicum"@lt .
+
+pest:10590 a srppp:CropStressor ;
+    rdfs:label "Knospensterben an Rhododendron"@de,
+        "brûlure des bourgeons des rhododendrons"@fr,
+        "Disseccamento dei bottoni fiorali del rododendro"@it,
+        "Pycnostysanus azaleae"@lt .
+
+pest:10593 a srppp:CropStressor ;
+    rdfs:label "Sternrusstau der Rosen"@de,
+        "black spot of roses / leaf blotch of roses"@en,
+        "maladie des taches noires du rosier"@fr,
+        "Ticchiolatura della rosa"@it,
+        "Diplocarpon rosae"@lt .
+
+pest:10594 a srppp:CropStressor ;
+    rdfs:label "Nelkenschwärze"@de,
+        "hétérosporiose de l'oeillet"@fr,
+        "Vaiolo del garofano"@it,
+        "Mycosphaerella dianthi"@lt .
+
+pest:10597 a srppp:CropStressor ;
+    rdfs:label "Knospensterben der Blautanne"@de,
+        "dépérissement des bourgeons du sapin bleu"@fr,
+        "Disseccamento delle gemme del abete del Colorado"@it,
+        "Gemmamyces piceae"@lt .
+
+pest:10599 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau des Hopfens"@de,
+        "oïdium du houblon"@fr,
+        "Oidio del luppolo"@it,
+        "Podosphaera macularis"@lt .
+
+pest:10605 a srppp:CropStressor ;
+    rdfs:label "Hirtentäschelkraut"@de,
+        "capselle bourse-à-pasteur"@fr,
+        "Borsa di pastore"@it,
+        "Capsella bursa-pastoris"@lt .
+
+pest:10609 a srppp:CropStressor ;
+    rdfs:label "Kanadisches Berufkraut"@de,
+        "vergerette du Canada"@fr,
+        "Saeppola canadese"@it,
+        "Erigeron canadensis, i.e. Conyza canadensis"@lt .
+
+pest:10614 a srppp:CropStressor ;
+    rdfs:label "Klettenlabkraut"@de,
+        "gaillet gratteron"@fr,
+        "Caglio asprello"@it,
+        "Galium aparine"@lt .
+
+pest:10620 a srppp:CropStressor ;
+    rdfs:label "Steifer Sauerklee"@de,
+        "oxalis raide"@fr,
+        "Acetosella dei boschi"@it,
+        "Oxalis stricta"@lt .
+
+pest:10622 a srppp:CropStressor ;
+    rdfs:label "Vogelknöterich"@de,
+        "renouée des oiseaux"@fr,
+        "Poligono centinodia"@it,
+        "Polygonum aviculare"@lt .
+
+pest:10634 a srppp:CropStressor ;
+    rdfs:label "Kriechender Günsel"@de,
+        "bugle rampante"@fr,
+        "Bugola"@it,
+        "Ajuga reptans"@lt .
+
+pest:10635 a srppp:CropStressor ;
+    rdfs:label "Gänseblümchen"@de,
+        "pâquerette"@fr,
+        "Pratolina comune"@it,
+        "Bellis perennis"@lt .
+
+pest:10636 a srppp:CropStressor ;
+    rdfs:label "Zaunwinde"@de,
+        "liseron des haies"@fr,
+        "Vilucchio bianco"@it,
+        "Calystegia sepium, i.e. Convolvulus sepium"@lt .
+
+pest:10638 a srppp:CropStressor ;
+    rdfs:label "Ackerkratzdistel"@de,
+        "chardon ou cirse des champs"@fr,
+        "Stoppione"@it,
+        "Cirsium arvense"@lt .
+
+pest:10640 a srppp:CropStressor ;
+    rdfs:label "Ackerwinde"@de,
+        "liseron des champs"@fr,
+        "Vilucchio comune"@it,
+        "Convolvulus arvensis"@lt .
+
+pest:10641 a srppp:CropStressor ;
+    rdfs:label "Gundelrebe"@de,
+        "lierre terrestre"@fr,
+        "Ellera terrestre comune"@it,
+        "Glechoma hederacea"@lt .
+
+pest:10643 a srppp:CropStressor ;
+    rdfs:label "Spitzwegerich"@de,
+        "plantain lancéolé"@fr,
+        "Piantaggine lanciuola"@it,
+        "Plantago lanceolata"@lt .
+
+pest:10644 a srppp:CropStressor ;
+    rdfs:label "Grosser Ampfer"@de,
+        "oseille des prés"@fr,
+        "Romice acetosa"@it,
+        "Rumex acetosa"@lt .
+
+pest:10645 a srppp:CropStressor ;
+    rdfs:label "Stumpfblättriger Ampfer (Blacken)"@de,
+        "rumex à feuilles obtuses"@fr,
+        "Romice comune"@it,
+        "Rumex obtusifolius"@lt .
+
+pest:10647 a srppp:CropStressor ;
+    rdfs:label "Löwenzahn"@de,
+        "dent-de-lion"@fr,
+        "Tarassaco"@it,
+        "Taraxacum officinale"@lt .
+
+pest:10648 a srppp:CropStressor ;
+    rdfs:label "Weissklee"@de,
+        "trèfle rampant, trèfle blanc"@fr,
+        "Trifoglio bianco"@it,
+        "Trifolium repens"@lt .
+
+pest:10649 a srppp:CropStressor ;
+    rdfs:label "Grosse Brennnessel"@de,
+        "ortie dioïque"@fr,
+        "Ortica dioica"@it,
+        "Urtica dioica"@lt .
+
+pest:10650 a srppp:CropStressor ;
+    rdfs:label "Gamanderehrenpreis"@de,
+        "véronique petit-chêne, fausse germandrée"@fr,
+        "Veronica comune"@it,
+        "Veronica chamaedrys"@lt .
+
+pest:10651 a srppp:CropStressor ;
+    rdfs:label "Faden-Ehrenpreis"@de,
+        "véronique filiforme"@fr,
+        "Veronica filiforme"@it,
+        "Veronica filiformis"@lt .
+
+pest:10652 a srppp:CropStressor ;
+    rdfs:label "Quendelblättriger Ehrenpreis"@de,
+        "véronique à feuilles de serpolet"@fr,
+        "Veronica a foglie di serpillo"@it,
+        "Veronica serpyllifolia"@lt .
+
+pest:10653 a srppp:CropStressor ;
+    rdfs:label "Gemeine Quecke"@de,
+        "chiendent rampant"@fr,
+        "Gramigna"@it,
+        "Agropyron repens (Elymus repens)"@lt .
+
+pest:10657 a srppp:CropStressor ;
+    rdfs:label "Gemeiner Windhalm"@de,
+        "loose silky bent (windgrass)"@en,
+        "agrostis jouet du vent"@fr,
+        "agrostide annuale (spica venti)"@it,
+        "Apera spica-venti (Agrostis spica-venti)"@lt .
+
+pest:10659 a srppp:CropStressor ;
+    rdfs:label "Einjähriges Rispengras"@de,
+        "pâturin annuel"@fr,
+        "Poa annua"@it,
+        "Poa annua"@lt .
+
+pest:10660 a srppp:CropStressor ;
+    rdfs:label "Getreideplattkäfer"@de,
+        "silvain"@fr,
+        "Silvano surinamense"@it,
+        "Oryzaephilus  surinamensis"@lt .
+
+pest:10662 a srppp:CropStressor ;
+    rdfs:label "Rutenkrankheiten der Himbeere"@de,
+        "cane spot"@en,
+        "maladies des rameaux du framboisier"@fr,
+        "Cancri del fusto del lampone"@it,
+        "Didymella applanata, Leptosphaeria coniothyrium"@lt .
+
+pest:10667 a srppp:CropStressor ;
+    rdfs:label "Lagerschorf des Apfels"@de,
+        "storage scab"@en,
+        "tavelure tardive des pommes"@fr,
+        "Ticchiolatura tardiva del melo"@it,
+        "Venturia inaequalis"@lt .
+
+pest:10668 a srppp:CropStressor ;
+    rdfs:label "Lentizellenfäulnis des Apfels"@de,
+        "fruit rot"@en,
+        "pourriture lenticellaire (pommier)"@fr,
+        "Marciume lenticellare delle mele"@it,
+        "Pezicula malicorticis, Pezicula alba"@lt .
+
+pest:10669 a srppp:CropStressor ;
+    rdfs:label "Fruchtmonilia"@de,
+        "brown rot"@en,
+        "moniliose des fruits"@fr,
+        "Monilia dei frutti"@it,
+        "Monilia sp."@lt .
+
+pest:10671 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Quitte"@de,
+        "powedery mildew"@en,
+        "oïdium du cognassier"@fr,
+        "Oidio del cotogno"@it,
+        "Podosphaera clandestina"@lt .
+
+pest:10673 a srppp:CropStressor ;
+    rdfs:label "Desikkation, Abbrennen"@de,
+        "dessiccation, défanage"@fr,
+        "Disseccamento, essiccamento"@it .
+
+pest:10678 a srppp:CropStressor ;
+    rdfs:label "Rapsglanzkäfer"@de,
+        "méligèthe des crucifères"@fr,
+        "Meligete della colza"@it,
+        "Meligethes aeneus"@lt .
+
+pest:10679 a srppp:CropStressor ;
+    rdfs:label "Rotfadenkrankheit des Rasens"@de,
+        "fil rouge du gazon"@fr,
+        "Filo rosso del tappeto erboso"@it,
+        "Laetisaria  fuciformis"@lt .
+
+pest:10680 a srppp:CropStressor ;
+    rdfs:label "Rostmilben"@de,
+        "ériophyides libres"@fr,
+        "Eriofidi rugginosi"@it,
+        "Eriophyidae, Phytoptidae, Diptilomiopidae (freilebende)"@lt .
+
+pest:10681 a srppp:CropStressor ;
+    rdfs:label "Birnenpockenmilbe"@de,
+        "phytopte du poirier"@fr,
+        "Eriofide del pero"@it,
+        "Phytoptus pyri"@lt .
+
+pest:10683 a srppp:CropStressor ;
+    rdfs:label "Kräuselmilbe"@de,
+        "acariose de la vigne"@fr,
+        "Acariosi della vite"@it,
+        "Calepitrimerus vitis"@lt .
+
+pest:10684 a srppp:CropStressor ;
+    rdfs:label "Pockenmilbe der Reben"@de,
+        "Erineum leaf mite"@en,
+        "érinose de la vigne"@fr,
+        "Eriofide della vite"@it,
+        "Colomerus vitis"@lt .
+
+pest:10685 a srppp:CropStressor ;
+    rdfs:label "Brombeermilbe"@de,
+        "ériophyide des ronces"@fr,
+        "Eriofide delle more"@it,
+        "Eriophyes essigi"@lt .
+
+pest:10686 a srppp:CropStressor ;
+    rdfs:label "Erdbeermilbe"@de,
+        "tarsonème du fraisier"@fr,
+        "Tarsonemide della fragola"@it,
+        "Phytonemus pallidus"@lt .
+
+pest:10690 a srppp:CropStressor ;
+    rdfs:label "Kirschenfliege"@de,
+        "mouche de la cerise"@fr,
+        "Mosca della ciliegia"@it,
+        "Rhagoletis cerasi"@lt .
+
+pest:10693 a srppp:CropStressor ;
+    rdfs:label "Apfelblütenstecher"@de,
+        "anthonome du pommier"@fr,
+        "Antonomo del melo"@it,
+        "Anthonomus pomorum"@lt .
+
+pest:10696 a srppp:CropStressor ;
+    rdfs:label "Dickmaulrüssler"@de,
+        "otiorhynques"@fr,
+        "Oziorrinchi"@it,
+        "Otiorhynchus spp."@lt .
+
+pest:10697 a srppp:CropStressor ;
+    rdfs:label "Erdbeer- oder Himbeerblütenstecher"@de,
+        "anthonome du fraisier ou du framboisier"@fr,
+        "Antonomo delle fragole o dei lamponi"@it,
+        "Anthonomus rubi"@lt .
+
+pest:10698 a srppp:CropStressor ;
+    rdfs:label "Himbeerkäfer"@de,
+        "raspberry beetle"@en,
+        "ver des framboises"@fr,
+        "Verme del lampone"@it,
+        "Byturus tomentosus"@lt .
+
+pest:10699 a srppp:CropStressor ;
+    rdfs:label "Borkenkäfer"@de,
+        "scolytes"@fr,
+        "Scolitidi"@it,
+        "Scolytidae"@lt .
+
+pest:10701 a srppp:CropStressor ;
+    rdfs:label "Sclerotinia-Fäule"@de,
+        "sclérotiniose"@fr,
+        "Mal dello sclerozio"@it,
+        "Sclerotinia spp."@lt .
+
+pest:10702 a srppp:CropStressor ;
+    rdfs:label "Phytophthora spp."@de,
+        "Phytophthora spp."@en,
+        "Phytophthora spp."@fr,
+        "Phytophthora spp."@it,
+        "Phytophthora spp."@lt .
+
+pest:10703 a srppp:CropStressor ;
+    rdfs:label "Sägewespen"@de,
+        "hoplocampes"@fr,
+        "Tentredini"@it,
+        "Hoplocampa spp."@lt .
+
+pest:10704 a srppp:CropStressor ;
+    rdfs:label "Reiskäfer"@de,
+        "charançon du riz"@fr,
+        "Punteruolo del riso"@it,
+        "Sitophilus oryzae"@lt .
+
+pest:10705 a srppp:CropStressor ;
+    rdfs:label "Mehlige Birnblattlaus"@de,
+        "puceron cendré du poirier"@fr,
+        "Afide sanguigno del pero"@it,
+        "Dysaphis pyri"@lt .
+
+pest:10706 a srppp:CropStressor ;
+    rdfs:label "Mehlige Apfelblattlaus"@de,
+        "puceron cendré du pommier"@fr,
+        "Afide grigio - rosa del melo"@it,
+        "Dysaphis plantaginea"@lt .
+
+pest:10707 a srppp:CropStressor ;
+    rdfs:label "Schwarze Kirschenblattlaus"@de,
+        "puceron noir du cerisier"@fr,
+        "Afide nerastro del ciliegio"@it,
+        "Myzus cerasi"@lt .
+
+pest:10708 a srppp:CropStressor ;
+    rdfs:label "Grüne Pfirsichblattlaus"@de,
+        "puceron vert du pêcher"@fr,
+        "Afide verde del pesco"@it,
+        "Myzus persicae"@lt .
+
+pest:10710 a srppp:CropStressor ;
+    rdfs:label "Brachfliege"@de,
+        "mouche grise des céréales"@fr,
+        "Mosca grigia dei cereali"@it,
+        "Delia coarctata"@lt .
+
+pest:10714 a srppp:CropStressor ;
+    rdfs:label "Gemeine Kommaschildlaus"@de,
+        "cochenille virgule"@fr,
+        "Cocciniglia virgola"@it,
+        "Lepidosaphes ulmi"@lt .
+
+pest:10716 a srppp:CropStressor ;
+    rdfs:label "Frühlingsapfelblattsauger"@de,
+        "psylle printanier du pommier"@fr,
+        "Psilla primaverile del melo"@it,
+        "Cacopsylla mali"@lt .
+
+pest:10720 a srppp:CropStressor ;
+    rdfs:label "Reblaus"@de,
+        "grapevine leaf louse"@en,
+        "phylloxéra de la vigne"@fr,
+        "Filossera della vite "@it,
+        "Viteus vitifoliae (syn. Dactylosphaera vitifolii)"@lt .
+
+pest:10721 a srppp:CropStressor ;
+    rdfs:label "Maiszünsler"@de,
+        "European corn borer"@en,
+        "pyrale du maïs"@fr,
+        "Piralide del mais"@it,
+        "Ostrinia nubilalis"@lt .
+
+pest:10722 a srppp:CropStressor ;
+    rdfs:label "Kornkäfer"@de,
+        "charançon du blé"@fr,
+        "Punteruolo del grano"@it,
+        "Sitophilus granarius"@lt .
+
+pest:10723 a srppp:CropStressor ;
+    rdfs:label "Grüne Rebzikade"@de,
+        "cicadelle verte de la vigne"@fr,
+        "Cicalina verde della vite"@it,
+        "Empoasca vitis"@lt .
+
+pest:10725 a srppp:CropStressor ;
+    rdfs:label "Fruchtwanzen"@de,
+        "punaises des fruits"@fr,
+        "Cimici dei frutti"@it,
+        "Calocoris spp., Lygus spp., Plesicocoris spp., Psallus spp."@lt .
+
+pest:10730 a srppp:CropStressor ;
+    rdfs:label "Apfelwickler"@de,
+        "carpocapse des pommes, poires et abricots"@fr,
+        "Carpocapsa delle mele"@it,
+        "Cydia pomonella"@lt .
+
+pest:10731 a srppp:CropStressor ;
+    rdfs:label "Silberschorf"@de,
+        "gale argentée de la pomme de terre"@fr,
+        "Tigna argentata della patata"@it,
+        "Helminthosporium solani"@lt .
+
+pest:10733 a srppp:CropStressor ;
+    rdfs:label "Kleiner Fruchtwickler"@de,
+        "petite tordeuse des fruits"@fr,
+        "Piccola tortrice dei frutti"@it,
+        "Grapholita lobarzewskii"@lt .
+
+pest:10736 a srppp:CropStressor ;
+    rdfs:label "Schalenwickler"@de,
+        "tordeuses de la pelure"@fr,
+        "Tortrici ricamatrici"@it,
+        "Adoxophyes orana, Pandemis heparana, Archips podanus"@lt .
+
+pest:10738 a srppp:CropStressor ;
+    rdfs:label "Moose (Bryophyta)"@de,
+        "mousses (bryophytes)"@fr,
+        "Muschi (Briofite)"@it,
+        "Bryophyta"@lt .
+
+pest:10739 a srppp:CropStressor ;
+    rdfs:label "Traubenwickler"@de,
+        "vers de la grappe"@fr,
+        "Tignole della vite (Eupoecilia ambiguella, Lobesia botrana)"@it,
+        "Eupoecilia ambiguella, Lobesia botrana"@lt .
+
+pest:10740 a srppp:CropStressor ;
+    rdfs:label "Einbindiger Traubenwickler"@de,
+        "cochylis"@fr,
+        "Tignola della vite"@it,
+        "Eupoecilia ambiguella"@lt .
+
+pest:10741 a srppp:CropStressor ;
+    rdfs:label "Bekreuzter Traubenwickler"@de,
+        "eudémis"@fr,
+        "Tignoletta dell'uva"@it,
+        "Lobesia botrana"@lt .
+
+pest:10742 a srppp:CropStressor ;
+    rdfs:label "Springwurm"@de,
+        "pyrale de la vigne"@fr,
+        "Tortrice della vite"@it,
+        "Sparganothis pilleriana"@lt .
+
+pest:10743 a srppp:CropStressor ;
+    rdfs:label "Flechten"@de,
+        "lichens"@fr,
+        "Licheni"@it,
+        "Lichenes"@lt .
+
+pest:10744 a srppp:CropStressor ;
+    rdfs:label "Pflaumenwickler"@de,
+        "carpocapse des prunes"@fr,
+        "Tortrice delle susine"@it,
+        "Grapholita funebrana"@lt .
+
+pest:10745 a srppp:CropStressor ;
+    rdfs:label "Pfirsichwickler"@de,
+        "tordeuse orientale du pêcher (Laspeyresia molesta)"@fr,
+        "Tortrice orientale del pesco"@it,
+        "Grapholita molesta"@lt .
+
+pest:10746 a srppp:CropStressor ;
+    rdfs:label "Gespinstmotten"@de,
+        "hyponomeutes"@fr,
+        "Tignole"@it,
+        "Yponomeutidae"@lt .
+
+pest:10754 a srppp:CropStressor ;
+    rdfs:label "Dörrobstmotte"@de,
+        "pyrale des fruits secs"@fr,
+        "Tignola fasciata"@it,
+        "Plodia interpunctella"@lt .
+
+pest:10755 a srppp:CropStressor ;
+    rdfs:label "Frostspanner"@de,
+        "cheimatobies"@fr,
+        "Falene"@it,
+        "Operophtera brumata"@lt .
+
+pest:10756 a srppp:CropStressor ;
+    rdfs:label "Rhombenspanner"@de,
+        "boarmie des bourgeons sur vigne"@fr,
+        "Boarmia"@it,
+        "Boarmia rhomboidaria"@lt .
+
+pest:10757 a srppp:CropStressor ;
+    rdfs:label "Moosknopfkäfer"@de,
+        "atomaire de la betterave"@fr,
+        "Atomaria della barbabietola"@it,
+        "Atomaria linearis"@lt .
+
+pest:10759 a srppp:CropStressor ;
+    rdfs:label "Erdraupen"@de,
+        "noctuelles terricoles ou vers gris"@fr,
+        "Nottue terricole o vermi grigi"@it,
+        "Agrotis spp., Euxoa spp."@lt .
+
+pest:10760 a srppp:CropStressor ;
+    rdfs:label "Wickler"@de,
+        "tordeuses"@fr,
+        "Tortrici"@it,
+        "Tortricidae"@lt .
+
+pest:10762 a srppp:CropStressor ;
+    rdfs:label "Bakteriosen"@de,
+        "bactérioses"@fr,
+        "Batteriosi"@it .
+
+pest:10763 a srppp:CropStressor ;
+    rdfs:label "Algen"@de,
+        "algues"@fr,
+        "Alghe"@it,
+        "Algae"@lt .
+
+pest:10765 a srppp:CropStressor ;
+    rdfs:label "Zwergzikaden"@de,
+        "cicadelles"@fr,
+        "Cicaline nane"@it,
+        "Jassidae (syn. Cicadellidae)"@lt .
+
+pest:10770 a srppp:CropStressor ;
+    rdfs:label "Mehrjährige Ehrenpreis-Arten"@de,
+        "véroniques vivaces"@fr,
+        "Varietà pluriennali di veronica"@it .
+
+pest:10774 a srppp:CropStressor ;
+    rdfs:label "Mehrjährige Monocotyledonen (Ungräser)"@de,
+        "monocotylédones vivaces"@fr,
+        "Monocotiledoni perenni (malerbe)"@it .
+
+pest:10779 a srppp:CropStressor ;
+    rdfs:label "Wühl- oder Schermaus"@de,
+        "campagnol terrestre"@fr,
+        "Arvicola terrestre"@it,
+        "Arvicola terrestris"@lt .
+
+pest:10784 a srppp:CropStressor ;
+    rdfs:label "Blatt- und Sägewespen"@de,
+        "tenthrèdes et hoplocampes"@fr,
+        "Tentredini"@it,
+        "Tenthredinidae"@lt .
+
+pest:10785 a srppp:CropStressor ;
+    rdfs:label "Gallmilben"@de,
+        "phytoptes"@fr,
+        "Eriofidi"@it,
+        "Phytoptus sp. u.a."@lt .
+
+pest:10786 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau des Hopfens"@de,
+        "mildiou du houblon"@fr,
+        "Peronospora del luppolo"@it,
+        "Pseudoperonospora humuli"@lt .
+
+pest:10798 a srppp:CropStressor ;
+    rdfs:label "Blüten- und Fruchtausdünnung"@de,
+        "éclaircissage des fleurs et fruits"@fr,
+        "Diradamento dei fiori e dei frutticini"@it .
+
+pest:10799 a srppp:CropStressor ;
+    rdfs:label "Brechung der Alternanz (Apfelbaum)"@de,
+        "rupture de l'alternance (pommier)"@fr,
+        "Interruzione dell'alternanza (melo)"@it .
+
+pest:10800 a srppp:CropStressor ;
+    rdfs:label "Gegen Rötel"@de,
+        "contre le rougissement précoce"@fr,
+        "Contro l'arrossamento"@it .
+
+pest:10802 a srppp:CropStressor ;
+    rdfs:label "Erhöhung der Standfestigkeit"@de,
+        "augmentation de la résistance à la verse"@fr,
+        "Aumento della stabilità"@it .
+
+pest:10803 a srppp:CropStressor ;
+    rdfs:label "Hemmung des Längenwachstums (Stauchen)"@de,
+        "inhibition de la croissance des organes aériens"@fr,
+        "Inibizione della crescita longitudinale"@it .
+
+pest:10804 a srppp:CropStressor ;
+    rdfs:label "Bildung von Fruchtholz an nichttragenden Jungbäumen"@de,
+        "pour favoriser la formation des branches fruitières des jeunes arbres"@fr,
+        "Formazione di ramo fruttifero su alberi giovani "@it .
+
+pest:10806 a srppp:CropStressor ;
+    rdfs:label "Buchdrucker"@de,
+        "typographe"@fr,
+        "Tipografo"@it,
+        "Ips typographus"@lt .
+
+pest:10809 a srppp:CropStressor ;
+    rdfs:label "Verbesserung des Fruchtansatzes (Bildung von parthenokarpen Früchten)"@de,
+        "amélioration de la nouaison  (formation de fruits parthénocarpiques)"@fr,
+        "Miglioramento dell'allegagione (formazione di frutti partenocarpici)"@it .
+
+pest:10810 a srppp:CropStressor ;
+    rdfs:label "Brechung der Knospenruhe, Förderung des Längenwachstums"@de,
+        "levée de la dormance des bourgeons, stimulation de la croissance"@fr,
+        "Interruzione della dormienza delle gemme, stimolo della crescita longitudinale"@it .
+
+pest:10823 a srppp:CropStressor ;
+    rdfs:label "Wegschnecken/Arion Arten"@de,
+        "limaces du genre Arion"@fr,
+        "Limacce del genere Arion"@it,
+        "Arionidae"@lt .
+
+pest:10825 a srppp:CropStressor ;
+    rdfs:label "Ackerschnecken/Deroceras Arten"@de,
+        "limaces du genre Deroceras"@fr,
+        "Limacce del genere Deroceras"@it,
+        "Deroceras spp."@lt .
+
+pest:10834 a srppp:CropStressor ;
+    rdfs:label "Austernschildläuse"@de,
+        "cochenilles diaspines"@fr,
+        "Cocciniglie ostreiformi"@it,
+        "Quadraspidiotus spp."@lt .
+
+pest:10836 a srppp:CropStressor ;
+    rdfs:label "Rost der Rose"@de,
+        "rouille du rosier"@fr,
+        "Ruggine della rosa"@it,
+        "Phragmidium mucronatum"@lt .
+
+pest:10837 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Rosen"@de,
+        "oïdium du rosier"@fr,
+        "Oidio delle rose"@it,
+        "Sphaerotheca pannosa"@lt .
+
+pest:10838 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau der Rosen"@de,
+        "mildiou du rosier"@fr,
+        "Peronospora della rosa"@it,
+        "Peronospora sparsa"@lt .
+
+pest:10839 a srppp:CropStressor ;
+    rdfs:label "Rindenbrandkrankheit der Rosen"@de,
+        "chancre du rosier"@fr,
+        "Cancri rameali da septoria"@it,
+        "Coniothyrium sp."@lt .
+
+pest:10841 a srppp:CropStressor ;
+    rdfs:label "Blattbotrytis der Zwiebel"@de,
+        "botrytis des feuilles de l'oignon"@fr,
+        "Botrite della cipolla (Botrytis squamosa)"@it,
+        "Botryotinia squamosa (Syn. Botrytis squamosa, Sclerotinia squamosa)"@lt .
+
+pest:10848 a srppp:CropStressor ;
+    rdfs:label "Birnblattsauger"@de,
+        "psylles du poirier"@fr,
+        "Psille del pero"@it,
+        "Cacopsylla spp."@lt .
+
+pest:10850 a srppp:CropStressor ;
+    rdfs:label "Dicotyledonen (Unkräuter) und Monocotyledonen (Ungräser)"@de,
+        "dicotylédones et monocotylédones"@fr,
+        "Dicotiledoni e monocotiledoni (malerbe)"@it,
+        "Dicotyledona, Monocotyledona"@lt .
+
+pest:10853 a srppp:CropStressor ;
+    rdfs:label "Dicotyledonen (Unkräuter)"@de,
+        "dicotylédones"@fr,
+        "Dicotiledoni (malerbe)"@it,
+        "Dicotyledona"@lt .
+
+pest:10854 a srppp:CropStressor ;
+    rdfs:label "Mehrjährige Dicotyledonen (Unkräuter)"@de,
+        "dicotylédones vivaces"@fr,
+        "Dicotiledoni pluriennali (malerbe)"@it .
+
+pest:10855 a srppp:CropStressor ;
+    rdfs:label "Einjährige Dicotyledonen (Unkräuter)"@de,
+        "dicotylédones annuelles"@fr,
+        "Dicotiledoni annuali (malerbe)"@it .
+
+pest:10856 a srppp:CropStressor ;
+    rdfs:label "Grünstreifige Kartoffelblattlaus"@de,
+        "puceron à strie verte de la pomme de terre (Macrosiphum euphorbiae)"@fr,
+        "Afide della patata"@it,
+        "Macrosiphum euphorbiae"@lt .
+
+pest:10858 a srppp:CropStressor ;
+    rdfs:label "Blattfleckenkrankheit der Blaudisteln"@de,
+        "charbon des feuilles du chardon bleu"@fr,
+        "Necrosi fogliare del cardo azzurro"@it,
+        "Entyloma eryngii"@lt .
+
+pest:10859 a srppp:CropStressor ;
+    rdfs:label "Hirsen"@de,
+        "millets"@fr,
+        "Tipi di miglio"@it .
+
+pest:10861 a srppp:CropStressor ;
+    rdfs:label "Keimhemmung"@de,
+        "inhibition de la germination"@fr,
+        "Inibizione della germinazione"@it .
+
+pest:10862 a srppp:CropStressor ;
+    rdfs:label "Schachtelhalme (Equisetaceae)"@de,
+        "prêles (Equisetaceae)"@fr,
+        "Equiseti"@it,
+        "Equisetaceae"@lt .
+
+pest:10863 a srppp:CropStressor ;
+    rdfs:label "Einjährige Ehrenpreis-Arten"@de,
+        "véroniques annuelles"@fr,
+        "Varietà annuali di veronica"@it .
+
+pest:10864 a srppp:CropStressor ;
+    rdfs:label "Rumex-Arten"@de,
+        "rumex"@fr,
+        "Specie di romice"@it,
+        "Rumex spp."@lt .
+
+pest:10865 a srppp:CropStressor ;
+    rdfs:label "Sträucher"@de,
+        "buissons"@fr,
+        "Arbusti"@it .
+
+pest:10868 a srppp:CropStressor ;
+    rdfs:label "Ausfallgetreide"@de,
+        "repousses de céréales"@fr,
+        "Ricacci di cereali"@it .
+
+pest:10871 a srppp:CropStressor ;
+    rdfs:label "Talerfleckenkrankheit (Dollarfleckenkrankheit)"@de,
+        "dollar spot"@en,
+        "dollar spot des graminées"@fr,
+        "Agente della macchia a forma di dollaro"@it,
+        "Sclerotinia homoeocarpa"@lt .
+
+pest:10873 a srppp:CropStressor ;
+    rdfs:label "Wundverschluss"@de,
+        "cicatrisation des plaies"@fr,
+        "Cicatrizzazione "@it .
+
+pest:10875 a srppp:CropStressor ;
+    rdfs:label "Mechanische Verletzungen"@de,
+        "blessures dues à des causes mécaniques"@fr,
+        "Danni meccanici"@it .
+
+pest:10882 a srppp:CropStressor ;
+    rdfs:label "Gegen das Durchtreiben der Zwiebeln"@de,
+        "contre la germination des oignons (bulbes)"@fr,
+        "Contro la germinazione delle cipolle"@it .
+
+pest:10883 a srppp:CropStressor ;
+    rdfs:label "Werftkäfer"@de,
+        "lymexylons"@fr,
+        "Limexilonidi"@it,
+        "Lymexylonidae"@lt .
+
+pest:10885 a srppp:CropStressor ;
+    rdfs:label "Ringflecken des Kohls"@de,
+        "taches annulaires du chou"@fr,
+        "Maculatura anulare del cavolo "@it,
+        "Mycosphaerella brassicicola"@lt .
+
+pest:10886 a srppp:CropStressor ;
+    rdfs:label "Weissfleckigkeit des Kohls"@de,
+        "cylindrosporiose des Brassica"@fr,
+        "Pyrenopeziza brassicae"@it,
+        "Pyrenopeziza brassicae"@lt .
+
+pest:10887 a srppp:CropStressor ;
+    rdfs:label "Wurzelhals- und Stengelfäule"@de,
+        "Phoma leaf spot"@en,
+        "nécrose du collet du colza"@fr,
+        "Marciume da phoma delle crocifere"@it,
+        "Leptosphaeria maculans (Anam. Phoma lingam)"@lt .
+
+pest:10888 a srppp:CropStressor ;
+    rdfs:label "Alternaria-Purpurfleckenkrankheit"@de,
+        "taches pourpres ou alternariose des allium"@fr,
+        "Alternariosi (Alternaria porri)"@it,
+        "Alternaria porri"@lt .
+
+pest:10889 a srppp:CropStressor ;
+    rdfs:label "Cladosporium-Blattflecken der Zwiebel"@de,
+        "cladosporiose de l'oignon"@fr,
+        "Ticchiolatura della cipolla"@it,
+        "Cladosporium allii-cepae"@lt .
+
+pest:10890 a srppp:CropStressor ;
+    rdfs:label "Rost auf Zwiebel-Arten"@de,
+        "rouille des Allium"@fr,
+        "Ruggine delle Agliacee (Puccinia allii)"@it,
+        "Puccinia allii"@lt .
+
+pest:10891 a srppp:CropStressor ;
+    rdfs:label "Anthraknose"@de,
+        "anthracnose"@en,
+        "anthracnose"@fr,
+        "Antracnosi "@it,
+        "Glomerella cingulata"@lt .
+
+pest:10894 a srppp:CropStressor ;
+    rdfs:label "Lauchrost"@de,
+        "rouille du poireau"@fr,
+        "Ruggine del porro "@it,
+        "Puccinia porri, Puccinia allii"@lt .
+
+pest:10897 a srppp:CropStressor ;
+    rdfs:label "DTR-Blattfleckenkrankheit"@de,
+        "Tan/Yellow leaf spot of cereals"@en,
+        "helminthosporiose des céréales (DTR)"@fr,
+        "Pyrenophora tritici-repentis (DTR)"@it,
+        "Pyrenophora tritici-repentis (Anam. Drechslera  tritici-repentis)"@lt .
+
+pest:10898 a srppp:CropStressor ;
+    rdfs:label "Erhöhung des Netz- und Haftvermögens"@de,
+        "augmentation du pouvoir mouillant et adhésif"@fr,
+        "Aumento del potere umidificante e adesivante"@it .
+
+pest:10900 a srppp:CropStressor ;
+    rdfs:label "Adlerfarn"@de,
+        "fougère impériale"@fr,
+        "Felce maggiore"@it,
+        "Pteridium aquilinum"@lt .
+
+pest:10901 a srppp:CropStressor ;
+    rdfs:label "Zitrusschmierlaus"@de,
+        "cochenille farineuse du citronnier"@fr,
+        "Cocciniglia cotonosa"@it,
+        "Planococcus citri"@lt .
+
+pest:10905 a srppp:CropStressor ;
+    rdfs:label "Keimlingskrankheiten"@de,
+        "fontes des semis"@fr,
+        "Malattie parassitarie dei germogli"@it,
+        "Gemüsebau: Alternaria spp., Fusarium spp., Phoma spp., Pythium spp., Rhizoctonia solani, Ascochyta spp. Mais: Fusarium spp., Pythium ultimum, Rhizoctonia spp. Eiweisserbsen, Ackerbohne, Lein, Lupine: Ascochyta spp., Pythium spp, Phoma spp.,"@lt .
+
+pest:10906 a srppp:CropStressor ;
+    rdfs:label "Rotfäule"@de,
+        "pourriture rouge"@fr,
+        "Marciume rosso"@it,
+        "Heterobasidion annosum"@lt .
+
+pest:10910 a srppp:CropStressor ;
+    rdfs:label "Blattfressende Raupen"@de,
+        "chenilles défoliatrices"@fr,
+        "Larve defogliatrici"@it .
+
+pest:10912 a srppp:CropStressor ;
+    rdfs:label "Alpenampfer"@de,
+        "rumex des Alpes, rhubarbe des moines"@fr,
+        "Romice alpino"@it,
+        "Rumex alpinus"@lt .
+
+pest:10917 a srppp:CropStressor ;
+    rdfs:label "Mehlmotte"@de,
+        "teigne de la farine"@fr,
+        "Tignola grigia delle provviste alimentari"@it,
+        "Ephestia kühniella"@lt .
+
+pest:10919 a srppp:CropStressor ;
+    rdfs:label "Wildverbiss"@de,
+        "abroutissement par le gibier"@fr,
+        "Brucatura da selvaggina"@it .
+
+pest:10925 a srppp:CropStressor ;
+    rdfs:label "Fegen"@de,
+        "frayure"@fr,
+        "Fregone"@it .
+
+pest:10927 a srppp:CropStressor ;
+    rdfs:label "Rost der Rüben"@de,
+        "rouille des betteraves"@fr,
+        "Ruggine delle barbabietole"@it,
+        "Uromyces beticola"@lt .
+
+pest:10930 a srppp:CropStressor ;
+    rdfs:label "Gummistengelkrankheit"@de,
+        "gommose des Cucurbitacées"@fr,
+        "Cancro gommoso"@it,
+        "Didymella bryoniae"@lt .
+
+pest:10931 a srppp:CropStressor ;
+    rdfs:label "Weisser Germer"@de,
+        "vératre blanc"@fr,
+        "Veratro comune"@it,
+        "Veratrum album"@lt .
+
+pest:10932 a srppp:CropStressor ;
+    rdfs:label "Einjährige Disteln"@de,
+        "chardons annuels"@fr,
+        "Cardi annuali"@it .
+
+pest:10933 a srppp:CropStressor ;
+    rdfs:label "Mehrjährige Disteln"@de,
+        "chardons vivaces"@fr,
+        "Cardi perenni"@it .
+
+pest:10934 a srppp:CropStressor ;
+    rdfs:label "Zweijährige Disteln"@de,
+        "chardons bisannuels"@fr,
+        "Cardi biennali"@it .
+
+pest:10935 a srppp:CropStressor ;
+    rdfs:label "Palmenthrips"@de,
+        "thrips des Dracaena"@fr,
+        "Tripide della Dracaena"@it,
+        "Parthenothrips dracaenae"@lt .
+
+pest:10937 a srppp:CropStressor ;
+    rdfs:label "Saissetia coffeae"@de,
+        "cochenille du caféier (Saissetia coffeae)"@fr,
+        "Cocciniglia emisferica delle piante ornamentali"@it,
+        "Saissetia coffeae"@lt .
+
+pest:10939 a srppp:CropStressor ;
+    rdfs:label "Samtfleckenkrankheit"@de,
+        "cladosporiose"@fr,
+        "Ticchiolatura"@it,
+        "Cladosporium spp."@lt .
+
+pest:10940 a srppp:CropStressor ;
+    rdfs:label "Einjährige Hahnenfussgewächse"@de,
+        "renonculacées annuelles"@fr,
+        "Ranuncoli annuali"@it .
+
+pest:10941 a srppp:CropStressor ;
+    rdfs:label "Mehrjährige Hahnenfussgewächse"@de,
+        "renoncules vivaces"@fr,
+        "Ranuncoli pluriennali"@it .
+
+pest:10943 a srppp:CropStressor ;
+    rdfs:label "Samtfleckenkrankheit der Zwiebelgewächse"@de,
+        "cladosporiose des oignons"@fr,
+        "Cladosporiosi degli ortaggi a bulbo"@it,
+        "Cladosporium allii"@lt .
+
+pest:10948 a srppp:CropStressor ;
+    rdfs:label "Fusarium culmorum"@de,
+        "pourriture des racines"@fr,
+        "Mal del piede (Fusarium culmorum)"@it,
+        "Fusarium culmorum"@lt .
+
+pest:10950 a srppp:CropStressor ;
+    rdfs:label "Adernschwärze"@de,
+        "nervures noires du chou"@fr,
+        "Nervazione nera delle Crocifere"@it,
+        "Xanthomonas campestris. pv campestris"@lt .
+
+pest:10951 a srppp:CropStressor ;
+    rdfs:label "Bohnenbrand"@de,
+        "brûlure bactérienne du haricot"@fr,
+        "Antracnosi del fagiolo"@it,
+        "Xanthomonas campestris pv. phaseoli"@lt .
+
+pest:10952 a srppp:CropStressor ;
+    rdfs:label "Bakterielle Tomatenwelke"@de,
+        "chancre bactérien de la tomate"@fr,
+        "Avvizzimento batterico del pomodoro"@it,
+        "Clavibacter michiganensis pv. michiganensis"@lt .
+
+pest:10956 a srppp:CropStressor ;
+    rdfs:label "Wurmfarn"@de,
+        "dryoptéris"@fr,
+        "Felce maschio"@it,
+        "Dryopteris filix-mas"@lt .
+
+pest:10959 a srppp:CropStressor ;
+    rdfs:label "Pseudococcus viburni"@de,
+        "pseudococcus viburni"@fr,
+        "Pseudococcus viburni"@it,
+        "Pseudococcus viburni"@lt .
+
+pest:10965 a srppp:CropStressor ;
+    rdfs:label "Feuerbrand"@de,
+        "feu bactérien"@fr,
+        "Fuoco batterico"@it,
+        "Erwinia amylovora"@lt .
+
+pest:10966 a srppp:CropStressor ;
+    rdfs:label "Brombeersträucher"@de,
+        "ronces"@fr,
+        "Rovi"@it,
+        "Rubus spp."@lt .
+
+pest:10967 a srppp:CropStressor ;
+    rdfs:label "Strunkbehandlung gegen Stockausschläge"@de,
+        "traitement du tronc contre les rejets"@fr,
+        "Trattamento della ceppaia contro i ricacci"@it .
+
+pest:10968 a srppp:CropStressor ;
+    rdfs:label "Lagerfäulen"@de,
+        "maladies de conservation"@fr,
+        "Deperimento di ortofrutticoli in deposito"@it .
+
+pest:10970 a srppp:CropStressor ;
+    rdfs:label "Tabakkäfer"@de,
+        "altises du tabac"@fr,
+        "Lasioderma"@it,
+        "Lasioderma serricorne"@lt .
+
+pest:10972 a srppp:CropStressor ;
+    rdfs:label "Hahnenfuss-Arten"@de,
+        "renoncules"@fr,
+        "Specie di ranuncoli"@it,
+        "Ranunculus spp."@lt .
+
+pest:10974 a srppp:CropStressor ;
+    rdfs:label "Winden"@de,
+        "liserons"@fr,
+        "Convolvulaceae"@it,
+        "Convolvulaceae"@lt .
+
+pest:10975 a srppp:CropStressor ;
+    rdfs:label "Distelarten"@de,
+        "chardons"@fr,
+        "Specie di cardi"@it,
+        "Cirsium spp."@lt .
+
+pest:10976 a srppp:CropStressor ;
+    rdfs:label "Ehrenpreis-Arten"@de,
+        "véroniques"@fr,
+        "Varietà di veronica"@it,
+        "Veronica spp."@lt .
+
+pest:10977 a srppp:CropStressor ;
+    rdfs:label "Vorzeitiger Fruchtfall"@de,
+        "Chute précoce"@fr,
+        "Caduta precoce"@it .
+
+pest:10979 a srppp:CropStressor ;
+    rdfs:label "Tabakmotte"@de,
+        "teigne du cacao sur tabac"@fr,
+        "Tignola del cacao e del tabacco"@it,
+        "Ephestia elutella"@lt .
+
+pest:10980 a srppp:CropStressor ;
+    rdfs:label "Septoria-Blattfleckenkrankheit der Petersilie"@de,
+        "septoriose du persil"@fr,
+        "Necrosi fogliare del prezzemolo"@it,
+        "Septoria petroselini, Septoria apiicola"@lt .
+
+pest:10981 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau der Brombeere"@de,
+        "mildiou des ronces"@fr,
+        "Peronospora della mora"@it,
+        "Peronospora sparsa"@lt .
+
+pest:10982 a srppp:CropStressor ;
+    rdfs:label "Birnengitterrost"@de,
+        "rouille grillagée du poirier"@fr,
+        "Ruggine del pero"@it,
+        "Gymnosporangium fuscum"@lt .
+
+pest:10983 a srppp:CropStressor ;
+    rdfs:label "Regenfleckenkrankheit der Äpfel und Birnen"@de,
+        "maladie de la suie des pommes et des poires"@fr,
+        "Macchie nere delle mele e delle pere"@it,
+        "Gleodes pomigena"@lt .
+
+pest:10984 a srppp:CropStressor ;
+    rdfs:label "Septoria-Blattdürre (S. tritici oder S. nodorum)"@de,
+        "Septoria leaf spot of wheat"@en,
+        "septorioses foliaires (S. tritici ou S. nodorum)"@fr,
+        "Septoriosi fogliare (S. tritici o S. nodorum)"@it,
+        "Phaeosphaeria nodorum , Mycosphaerella graminicola (Anam. Septoria nodorum, Septoria tritici)"@lt .
+
+pest:10985 a srppp:CropStressor ;
+    rdfs:label "Birnenblütenbrand"@de,
+        "flétrissement bactérien du poirier"@fr,
+        "Batteriosi del pero"@it,
+        "Pseudomonas syringae pv. syringae"@lt .
+
+pest:10986 a srppp:CropStressor ;
+    rdfs:label "Rasenanthracnose"@de,
+        "anthracnose du gazon"@fr,
+        "Colletotrichum graminicola"@it,
+        "Colletotrichum graminicola"@lt .
+
+pest:10988 a srppp:CropStressor ;
+    rdfs:label "Blattfleckenkrankheit"@de,
+        "taches de feuilles"@fr,
+        "Elmintosporiosi"@it,
+        "Drechslera spp."@lt .
+
+pest:10990 a srppp:CropStressor ;
+    rdfs:label "Ophiosphaerella herpotricha"@de,
+        "Spring dead spot"@en,
+        "Ophiosphaerella herpotricha"@fr,
+        "Ophiosphaerella herpotricha"@it,
+        "Ophiosphaerella herpotricha"@lt .
+
+pest:10991 a srppp:CropStressor ;
+    rdfs:label "Sommerflecken"@de,
+        "taches d'été"@fr,
+        "Macchie estive"@it,
+        "Magnaporthe poae"@lt .
+
+pest:10992 a srppp:CropStressor ;
+    rdfs:label "Gaeumannomyces graminis var. avenae (Rasen)"@de,
+        "Gaeumannomyces graminis var. avenae (gazon)"@fr,
+        "Mal del piede dei cereali var. avena (tappeto erboso)"@it,
+        "Gaeumannomyces graminis var. avenae"@lt .
+
+pest:10993 a srppp:CropStressor ;
+    rdfs:label "Getreidekapuziner"@de,
+        "bostryche des graines"@fr,
+        "Punteruolo dei cereali"@it,
+        "Rhizoperta dominica"@lt .
+
+pest:10995 a srppp:CropStressor ;
+    rdfs:label "Schneeschimmel"@de,
+        "Snow mould"@en,
+        "moisissure des neiges"@fr,
+        "Muffa delle nevi "@it,
+        "Microdochium majus (auf Weizen), Microdochium nivale (auf Roggen, Triticale, Dinkel, Gerste, Zier- und Sportrasen), Typhula incarnata, Typhula ishikariensis (auf Zier- und Sportrasen)"@lt .
+
+pest:10998 a srppp:CropStressor ;
+    rdfs:label "Blattflecken und Fruchtfäule der Erdbeere"@de,
+        "dessèchement du feuillage des fraises"@fr,
+        "Septoriosi e marciume della fragola"@it,
+        "Gnomonia fructicola"@lt .
+
+pest:11001 a srppp:CropStressor ;
+    rdfs:label "Grünfleckige Kartoffelblattlaus"@de,
+        "puceron à taches vertes"@fr,
+        "Afide a macchie verdi della patata"@it,
+        "Aulacorthum solani"@lt .
+
+pest:11002 a srppp:CropStressor ;
+    rdfs:label "Spargelrost"@de,
+        "rouille de l'asperge"@fr,
+        "Ruggine dell'asparago"@it,
+        "Puccinia asparagi"@lt .
+
+pest:11003 a srppp:CropStressor ;
+    rdfs:label "Distelfalter"@de,
+        "vanesse de l'artichaut"@fr,
+        "Vanessa del cardo"@it,
+        "Vanessa cardui"@lt .
+
+pest:11004 a srppp:CropStressor ;
+    rdfs:label "Pythium spp."@de,
+        "Pythium spp."@en,
+        "Pythium spp."@fr,
+        "Pythium spp."@it,
+        "Pythium spp."@lt .
+
+pest:11005 a srppp:CropStressor ;
+    rdfs:label "Wirkungssicherung"@de,
+        "maintien de l'efficacité"@fr,
+        "Assicurazione dell'efficacia"@it .
+
+pest:11006 a srppp:CropStressor ;
+    rdfs:label "Mondscheinigkeit"@de,
+        "colletotrichum"@fr,
+        "Antracnosi"@it,
+        "Colletotrichum acutatum"@lt .
+
+pest:11007 a srppp:CropStressor ;
+    rdfs:label "Rapsblattwespe"@de,
+        "tenthrède de la rave"@fr,
+        "Tentredine delle crocifere"@it,
+        "Athalia rosae"@lt .
+
+pest:11008 a srppp:CropStressor ;
+    rdfs:label "Rapsstengelrüssler"@de,
+        "gros charançon de la tige du colza"@fr,
+        "Punteruolo degli steli della colza"@it,
+        "Ceutorhynchus napi"@lt .
+
+pest:11011 a srppp:CropStressor ;
+    rdfs:label "Fusarium spp."@de,
+        "Fusarium spp."@fr,
+        "Fusarium spp."@it,
+        "Fusarium spp."@lt .
+
+pest:11013 a srppp:CropStressor ;
+    rdfs:label "Kraut- und Knollenfäule"@de,
+        "mildiou de la pomme de terre"@fr,
+        "Peronospora della patata"@it,
+        "Phytophthora infestans"@lt .
+
+pest:11014 a srppp:CropStressor ;
+    rdfs:label "Lagerkrankheiten"@de,
+        "maladies de stockage"@fr,
+        "Malattie da stoccaggio"@it,
+        "Venturia spp. und Lagerfäulen / et maladies de conservation / e deperimento di ortofrutticoli in deposito"@lt .
+
+pest:11015 a srppp:CropStressor ;
+    rdfs:label "Apfelbaumglasflügler"@de,
+        "sésie du pommier"@fr,
+        "Sesia del melo"@it,
+        "Synanthedon myopaeformis"@lt .
+
+pest:11016 a srppp:CropStressor ;
+    rdfs:label "Zwiebelhalsfäule"@de,
+        "Botrytis allii"@fr,
+        "Marciume del colletto di cipolla"@it,
+        "Botrytis allii"@lt .
+
+pest:11017 a srppp:CropStressor ;
+    rdfs:label "Rost der Himbeere"@de,
+        "rouille des framboisiers"@fr,
+        "Ruggine del lampone"@it,
+        "Phragmidium rubi-idaei"@lt .
+
+pest:11022 a srppp:CropStressor ;
+    rdfs:label "Erbsenwickler"@de,
+        "tordeuse du pois"@fr,
+        "Tortrice del pisello"@it,
+        "Cydia nigricana"@lt .
+
+pest:11023 a srppp:CropStressor ;
+    rdfs:label "Gartenlaubkäfer"@de,
+        "hanneton horticole"@fr,
+        "Carruga degli orti"@it,
+        "Phyllopertha horticola"@lt .
+
+pest:11024 a srppp:CropStressor ;
+    rdfs:label "Bodenbürtige Krankheiten"@de,
+        "maladies liées au sol"@fr,
+        "Malattie legate al suolo"@it,
+        "Phoma, Plasmodiophora, Phytophthora"@lt .
+
+pest:11027 a srppp:CropStressor ;
+    rdfs:label "Puccinia spp."@de,
+        "Puccinia spp."@fr,
+        "Ruggine fogliare (Puccinia spp.)"@it,
+        "Puccinia spp."@lt .
+
+pest:11029 a srppp:CropStressor ;
+    rdfs:label "Helminthosporium-Krankheiten"@de,
+        "helminthosporioses"@fr,
+        "Elmintosporiosi"@it,
+        "Bipolaris spp., Curvularia spp., Drechslera spp., Exserohilum spp."@lt .
+
+pest:11034 a srppp:CropStressor ;
+    rdfs:label "Rhynchosporium-Blattflecken des Rasens"@de,
+        "rhynchosporiose du gazon"@fr,
+        "Rincosporiosi del tappeto erboso"@it,
+        "Rhynchosporium orthosporum, Rhynchosporium secalis"@lt .
+
+pest:11037 a srppp:CropStressor ;
+    rdfs:label "Braunfleckenkrankheit"@de,
+        "botrytis des vicia"@fr,
+        "Maculatura arancione"@it,
+        "Botrytis fabae"@lt .
+
+pest:11042 a srppp:CropStressor ;
+    rdfs:label "Optimierung der Sortierung"@de,
+        "optimisation du triage"@fr,
+        "Ottimizzazione della cernita"@it .
+
+pest:11047 a srppp:CropStressor ;
+    rdfs:label "Septoria-Spelzenbräune (S. nodorum)"@de,
+        "septoriose de l'épi (S. nodorum)"@fr,
+        "Septoriosi della spiga (S. nodorum)"@it,
+        "Phaeosphaeria nodorum (Anam. Septoria nodorum)"@lt .
+
+pest:11048 a srppp:CropStressor ;
+    rdfs:label "Lagerschorf des Kernobstes"@de,
+        "tavelure tardive des fruits à pépins"@fr,
+        "Ticchiolatura della frutta a granelli"@it,
+        "Venturia inaequalis, V. pirina"@lt .
+
+pest:11060 a srppp:CropStressor ;
+    rdfs:label "Papierfleckenkrankheit des Spinats"@de,
+        "cladosporiose de l'épinard"@fr,
+        "Ticchiolatura dello spinacio"@it,
+        "Cladosporium variabile"@lt .
+
+pest:11062 a srppp:CropStressor ;
+    rdfs:label "Trespenarten"@de,
+        "espèces de bromes"@fr,
+        "Specie di bromo"@it,
+        "Bromus sp."@lt .
+
+pest:11063 a srppp:CropStressor ;
+    rdfs:label "Weisser Rost"@de,
+        "rouille blanche"@fr,
+        "Ruggine bianca"@it,
+        "Albugo candida"@lt .
+
+pest:11064 a srppp:CropStressor ;
+    rdfs:label "Zweig- und Beerenkrankheit"@de,
+        "Colletotrichum acutatum"@fr,
+        "Antracnosi dei piccoli frutti"@it,
+        "Colletotrichum acutatum"@lt .
+
+pest:11077 a srppp:CropStressor ;
+    rdfs:label "Johannisbeerglasflügler"@de,
+        "sésie tipuliforme"@fr,
+        "Sesia del ribes"@it,
+        "Synanthedon tipuliformis"@lt .
+
+pest:11087 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Rüben"@de,
+        "oïdium des betteraves"@fr,
+        "Oidio delle barbabietole"@it,
+        "Erysiphe betae"@lt .
+
+pest:11088 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau des Steinobstes"@de,
+        "oïdium des arbres fruitiers à noyau"@fr,
+        "Oidio della frutta a nocciolo"@it,
+        "Podosphaera pannosa, P. tridactyla"@lt .
+
+pest:11089 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Tomate"@de,
+        "oïdium de la tomate"@fr,
+        "Oidio del pomodoro"@it,
+        "Oidium neolycopersici, Leveillula taurica"@lt .
+
+pest:11090 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Asteraceen"@de,
+        "oïdium des astéracées"@fr,
+        "Oidio delle Asteracee"@it,
+        "Erysiphe cichoracearum"@lt .
+
+pest:11091 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Heidelbeere"@de,
+        "oïdium des myrtilles"@fr,
+        "Oidio dei mirtilli"@it,
+        "Podosphaera myrtillina"@lt .
+
+pest:11093 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau der Sonnenblume"@de,
+        "mildiou du tournesol"@fr,
+        "Peronospora del girasole"@it,
+        "Plasmopara halstedii"@lt .
+
+pest:11094 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau des Spinats"@de,
+        "mildiou de l'épinard"@fr,
+        "Peronospora dello spinacio"@it,
+        "Peronospora farinosa f.sp. spinaciae"@lt .
+
+pest:11095 a srppp:CropStressor ;
+    rdfs:label "Wurzelfäulen"@de,
+        "pourriture des racines"@fr,
+        "Mal del piede"@it,
+        "Phytophthora spp., Pythium spp."@lt .
+
+pest:11096 a srppp:CropStressor ;
+    rdfs:label "Rhizoctonia-Fäule des Salats"@de,
+        "rhizoctone de la laitue"@fr,
+        "Rizottonia della lattuga"@it,
+        "Rhizoctonia solani"@lt .
+
+pest:11103 a srppp:CropStressor ;
+    rdfs:label "Samen- und bodenbürtige Krankheiten"@de,
+        "maladies du sol et transmises par les semences"@fr,
+        "Malattie trasmesse dal suolo e dalle sementi"@it .
+
+pest:11111 a srppp:CropStressor ;
+    rdfs:label "Krätze der Kürbisgewächse"@de,
+        "scab of cucurbits"@en,
+        "cladosporiose des cucurbitacées"@fr,
+        "Cladosporiosi delle cucurbitacee"@it,
+        "Cladosporium cucumerinum"@lt .
+
+pest:11116 a srppp:CropStressor ;
+    rdfs:label "Phomopsis der Sonnenblume"@de,
+        "phomopsis du tournesol"@fr,
+        "Phomopsis del girasole"@it,
+        "Diaporthe helianthi (Anam. Phomopsis helianthi)"@lt .
+
+pest:11120 a srppp:CropStressor ;
+    rdfs:label "Pythium ultimum"@de,
+        "Pythium ultimum"@en,
+        "Pythium ultimum"@fr,
+        "Pythium ultimum"@it,
+        "Pythium ultimum"@lt .
+
+pest:11124 a srppp:CropStressor ;
+    rdfs:label "Doldenwelke"@de,
+        "flétrissement de l'ombelle"@fr,
+        "Avvizzimento dei corimbi del sambuco"@it,
+        "Phoma sambuci-nigrae"@lt .
+
+pest:11125 a srppp:CropStressor ;
+    rdfs:label "Beerenkrankheit"@de,
+        "maladie des baies"@fr,
+        "Antracnosi dei piccoli frutti"@it,
+        "Colletotrichum acutatum"@lt .
+
+pest:11127 a srppp:CropStressor ;
+    rdfs:label "Herbstzeitlose"@de,
+        "Autumn crocus"@en,
+        "colchique d'automne"@fr,
+        "Colchico d'autunno"@it,
+        "Colchicum autumnale"@lt .
+
+pest:11129 a srppp:CropStressor ;
+    rdfs:label "Kastanienminiermotte"@de,
+        "mineuse du chataignier"@fr,
+        "Minatrice dell'ippocastano"@it,
+        "Cameraria ohridella"@lt .
+
+pest:11131 a srppp:CropStressor ;
+    rdfs:label "Breitblättrige Unkräuter"@de,
+        "mauvaises herbes à feuilles larges"@fr,
+        "Malerbe a foglia larga"@it .
+
+pest:11138 a srppp:CropStressor ;
+    rdfs:label "Sprenkelnekrosen (PLS+RCC)"@de,
+        "grillures (PLS+RCC)"@fr,
+        "Bruciature fogliari (PLS + RCC)"@it,
+        "PLS=physiological leaf spots, RCC=Ramularia collo-cygni"@lt .
+
+pest:11139 a srppp:CropStressor ;
+    rdfs:label "Sprenkelnekrosen (PLS)"@de,
+        "grillures (PLS)"@fr,
+        "Bruciature fogliari (PLS)"@it,
+        "PLS=physiological leaf spots"@lt .
+
+pest:11144 a srppp:CropStressor ;
+    rdfs:label "Blausieb"@de,
+        "Leopard Moth (Zeuzera pyrina)"@en,
+        "coquette"@fr,
+        "rodilegno giallo"@it,
+        "Zeuzera pyrina"@lt .
+
+pest:11151 a srppp:CropStressor ;
+    rdfs:label "Fruchtausdünnung"@de,
+        "éclaircissage des fruits"@fr,
+        "Diradamento dei frutticini"@it .
+
+pest:11157 a srppp:CropStressor ;
+    rdfs:label "Giftige Kreuzkräuter (Senecio spp.)"@de,
+        "séneçons toxiques (Senecio spp.)"@fr,
+        "Senecioni tossici (Senecio spp.) "@it,
+        "Senecio spp."@lt .
+
+pest:11158 a srppp:CropStressor ;
+    rdfs:label "Rebzikade (Scaphoideus titanus)"@de,
+        "Scaphoideus titanus"@en,
+        "Scaphoideus titanus"@fr,
+        "Scafoideo"@it,
+        "Scaphoideus titanus"@lt .
+
+pest:11159 a srppp:CropStressor ;
+    rdfs:label "Virusübertragende Blattläuse"@de,
+        "Pucerons vecteurs de virus"@fr,
+        "Afidi vettori di virus"@it,
+        "Aphididae"@lt .
+
+pest:11160 a srppp:CropStressor ;
+    rdfs:label "Aufrechtes Traubenkraut (Ambrosia artemisiifolia)"@de,
+        "ambroisie à feuilles d'armoise (Ambrosia artemisiifolia)"@fr,
+        "Ambrosia "@it,
+        "Ambrosia artemisiifolia"@lt .
+
+pest:11162 a srppp:CropStressor ;
+    rdfs:label "Reifeverzögerung"@de,
+        "retard de la maturité"@fr,
+        "Ritardo della maturazione"@it .
+
+pest:11168 a srppp:CropStressor ;
+    rdfs:label "Speichermotte"@de,
+        "Tobacco moth"@en,
+        "teigne des aliments (pyrale du cacao/du tabac)"@fr,
+        "tignola del tabacco/del cacao"@it,
+        "Ephestia elutella"@lt .
+
+pest:11169 a srppp:CropStressor ;
+    rdfs:label "Brotkäfer"@de,
+        "Drugstore beetle / Bread beetle "@en,
+        "vrillette du pain"@fr,
+        "anobio del pane"@it,
+        "Stegobium paniceum"@lt .
+
+pest:11171 a srppp:CropStressor ;
+    rdfs:label "Erdnussplattkäfer"@de,
+        "merchant grain beetle"@en,
+        "cucujide des grains oléagineux"@fr,
+        "silvano dei mercati "@it,
+        "Oryzaephilus mercator"@lt .
+
+pest:11176 a srppp:CropStressor ;
+    rdfs:label "Phoma"@de,
+        "Phoma"@en,
+        "Phoma"@fr,
+        "Phoma"@it,
+        "Phoma sp."@lt .
+
+pest:11177 a srppp:CropStressor ;
+    rdfs:label "Phytophthora cryptogea"@de,
+        "Phytophthora cryptogea"@en,
+        "Phytophthora cryptogea"@fr,
+        "Phytophthora cryptogea"@it,
+        "Phytophthora cryptogea"@lt .
+
+pest:11178 a srppp:CropStressor ;
+    rdfs:label "Braunfleckigkeit des Reises"@de,
+        "Helminthosporium oryzae"@en,
+        "helminthosporiose du riz"@fr,
+        "Elmintosporiosi del riso"@it,
+        "Helminthosporium oryzae"@lt .
+
+pest:11183 a srppp:CropStressor ;
+    rdfs:label "Maiskäfer"@de,
+        "maize weevil"@en,
+        "charançon du maïs"@fr,
+        "punteruolo del mais"@it,
+        "Sitophilus zeamais"@lt .
+
+pest:11185 a srppp:CropStressor ;
+    rdfs:label "Halmbruchkrankheit des Getreides"@de,
+        "piétin-verse des céréales"@fr,
+        "Mal del piede dei cereali"@it,
+        "Oculimacula yallundae (Anam. Pseudocercosporella herpotrichoides)"@lt .
+
+pest:11186 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Kreuzblütler"@de,
+        "powdery mildew of crucifers"@en,
+        "oïdium des crucifères"@fr,
+        "Oidio delle crocifere"@it,
+        "Erysiphe cruciferarum (=communis)"@lt .
+
+pest:11187 a srppp:CropStressor ;
+    rdfs:label "Reisbräune"@de,
+        "pyriculariose du riz"@fr,
+        "Brusone del riso"@it,
+        "Magnaporthe grisea (Anam. Pyricularia oryzae)"@lt .
+
+pest:11188 a srppp:CropStressor ;
+    rdfs:label "Botryosphaeria obtusa (Black rot)"@de,
+        "Black rot"@en,
+        "Botryosphaeria obtusa (Blackr ot)"@fr,
+        "Botryosphaeria obtusa (Black rot)"@it,
+        "Botryosphaeria obtusa"@lt .
+
+pest:11190 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Möhre"@de,
+        "Powdery mildew"@en,
+        "oïdium de la carotte"@fr,
+        "Oidio delle carote"@it,
+        "Erysiphe heraclei"@lt .
+
+pest:11191 a srppp:CropStressor ;
+    rdfs:label "Quarantäneschädlinge"@de,
+        "Ravageurs de quarantaine"@fr,
+        "Organismi animali di quarantena"@it .
+
+pest:11192 a srppp:CropStressor ;
+    rdfs:label "Hühnerhirse"@de,
+        "cock's-foot"@en,
+        "panic pied-de-coq"@fr,
+        "panico selvatico"@it,
+        "Echinochloa crus-galli"@lt .
+
+pest:11193 a srppp:CropStressor ;
+    rdfs:label "Pseudomonas"@de,
+        "Pseudomonas"@fr,
+        "Pseudomonas"@it,
+        "Pseudomonas sp."@lt .
+
+pest:11194 a srppp:CropStressor ;
+    rdfs:label "Bakterienweichfäule"@de,
+        "pourriture molle "@fr,
+        "Marciume molle"@it,
+        "Erwinia carotovora subsp. carotovora  (Jones) Berey et al. "@lt .
+
+pest:11196 a srppp:CropStressor ;
+    rdfs:label "Umfallkrankheit des Kohls"@de,
+        "Fonte des semis des crucifères"@fr,
+        "Phoma lingam"@it,
+        "Plenodomus lingam (syn. Phoma lingam)"@lt .
+
+pest:11197 a srppp:CropStressor ;
+    rdfs:label "Papierfleckenkrankheit der Zwiebel"@de,
+        "phytophthora de l'oignon"@fr,
+        "Peronospora delle cipolle"@it,
+        "Phytophthora porri"@lt .
+
+pest:11203 a srppp:CropStressor ;
+    rdfs:label "Vogelrepellent (Krähen)"@de,
+        "répulsifs pour oiseaux (corneilles)"@fr,
+        "Repellente per uccelli (corvi)"@it .
+
+pest:11204 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau der Kreuzblütengewächse"@de,
+        "mildiou des crucifères"@fr,
+        "Peronospora delle crucifere"@it,
+        "Peronospora parasitica"@lt .
+
+pest:11205 a srppp:CropStressor ;
+    rdfs:label "Tausendfüsser"@de,
+        "millipede"@en,
+        "Myriapode (Mille-pattes)"@fr,
+        "Miriapodi (Millepiedi)"@it,
+        "Myriapoda"@lt .
+
+pest:11206 a srppp:CropStressor ;
+    rdfs:label "Roste der Brombeere"@de,
+        "Rusts of blackberry"@en,
+        "Rouilles des ronces"@fr,
+        "Ruggini delle more"@it,
+        "Phragmidium violaceum, Kuehneola uredinis    "@lt .
+
+pest:11208 a srppp:CropStressor ;
+    rdfs:label "Blattfleckenkrankheit des Lauches"@de,
+        "moisissure noire des feuilles du poireau"@fr,
+        "Pleospora herbarum"@it,
+        "Pleospora herbarum (Stemphylium botryosum)"@lt .
+
+pest:11209 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Solanaceae"@de,
+        "Oïdium des solanacées."@fr,
+        "Oidio delle solanceae"@it,
+        "Leveillula taurica"@lt .
+
+pest:11210 a srppp:CropStressor ;
+    rdfs:label "Echte Mehltaupilze der Zierpflanzen"@de,
+        "oïdiums des plantes ornementales"@fr,
+        "Oidio (diverse specie) su piante ornamentali"@it,
+        "Erysiphaceae"@lt .
+
+pest:11211 a srppp:CropStressor ;
+    rdfs:label "Grüne Zitrusblattlaus"@de,
+        "Green citrus aphid"@en,
+        "Puceron de la spirée"@fr,
+        "Afide verde degli agrumi"@it,
+        "Aphis spiraecola"@lt .
+
+pest:11212 a srppp:CropStressor ;
+    rdfs:label "Grüne Apfelblattlaus"@de,
+        "Green apple aphid"@en,
+        "Puceron vert du pommier"@fr,
+        "Afide verde del melo"@it,
+        "Aphis pomi"@lt .
+
+pest:11214 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau des Tabaks"@de,
+        "Powdery mildew of tobacco"@en,
+        "oïdium du tabac"@fr,
+        "Oidio del tabacco  "@it,
+        "Golovinomyces cichoracearum (Anam. Oidium tabaci)"@lt .
+
+pest:11215 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau der Erbse"@de,
+        "mildiou du pois"@fr,
+        "Peronospora del pisello"@it,
+        "Peronospora viciae"@lt .
+
+pest:11216 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau der Bohne"@de,
+        "mildiou du haricot"@fr,
+        "Peronospora del fagiolo"@it,
+        "Peronospora viciae, Phytophtora phaseoli"@lt .
+
+pest:11217 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau der Doldenblütler"@de,
+        "mildiou des ombellifères"@fr,
+        "Peronospora delle ombrellifere "@it,
+        "Plasmopara crustosa"@lt .
+
+pest:11218 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau des Nüsslisalats"@de,
+        "mildiou de la mache"@fr,
+        "Peronospora della valerianella"@it,
+        "Peronospora valerianellae"@lt .
+
+pest:11220 a srppp:CropStressor ;
+    rdfs:label "Papierfleckenkrankheit des Lauchs"@de,
+        "phytophthora du poireau"@fr,
+        "Peronospora del porro"@it,
+        "Phytophthora porri"@lt .
+
+pest:11221 a srppp:CropStressor ;
+    rdfs:label "Falsche Mehltaupilze der Küchenkräuter"@de,
+        "mildious des fines herbes"@fr,
+        "Peronospora (diverse specie)  su erbette da cucina"@it,
+        "Peronosporales"@lt .
+
+pest:11222 a srppp:CropStressor ;
+    rdfs:label "Falsche Mehltaupilze der Zierpflanzen"@de,
+        "mildious des plantes ornementales"@fr,
+        "Peronospora (diverse specie)  su piante ornamentali"@it,
+        "Peronosporales"@lt .
+
+pest:11223 a srppp:CropStressor ;
+    rdfs:label "Echte Mehltaupilze der Küchenkräuter"@de,
+        "oïdiums des fines herbes"@fr,
+        "Oidio (diverse specie) su erbette da cucina"@it,
+        "Erysiphaceae"@lt .
+
+pest:11225 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Aubergine"@de,
+        "oïdium de l'aubergine"@fr,
+        "Oidio della melanzana"@it,
+        "Leveillula taurica"@lt .
+
+pest:11226 a srppp:CropStressor ;
+    rdfs:label "Olivenfliege"@de,
+        "Olive fruit fly"@en,
+        "Mouche de l'olive"@fr,
+        "Mosca dell'olivo"@it,
+        "Bactrocera oleae"@lt .
+
+pest:11227 a srppp:CropStressor ;
+    rdfs:label "Beschleunigung und Synchronisierung der Fruchtreife"@de,
+        "accélération et synchronisation de la maturité des fruits"@fr,
+        "Accellerazione e sincronizzazione della maturità dei frutti"@it .
+
+pest:11229 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Gräser"@de,
+        "oïdium des graminées"@fr,
+        "Oidio delle graminacee"@it,
+        "Blumeria graminis"@lt .
+
+pest:11233 a srppp:CropStressor ;
+    rdfs:label "Baumwollkapselwurm"@de,
+        "Cotton Bollworm"@en,
+        "Ver de la capsule"@fr,
+        "Elotide del cotone"@it,
+        "Helicoverpa armigera (syn. Chloridea armigera, syn. Chloridea obsoleta, syn. Heliothis armigera, syn. Heliothis obsoleta)"@lt .
+
+pest:11238 a srppp:CropStressor ;
+    rdfs:label "Kontrolle der Durchwuchskartoffel in Nachfolgekulturen"@de,
+        "contrôle des repousses de pommes de terre dans les cultures suivantes"@fr,
+        "Controllo dei ricacci di patate nelle colture successive"@it .
+
+pest:11239 a srppp:CropStressor ;
+    rdfs:label "Japanischer Knöterich"@de,
+        "Renouée du Japon"@fr,
+        "Poligono del Giappone"@it,
+        "Fallopia japonica"@lt .
+
+pest:11240 a srppp:CropStressor ;
+    rdfs:label "Buchsbaum-Zünsler"@de,
+        "Box-tree pyralid"@en,
+        "pyrale du buis"@fr,
+        "Piralide del bosso"@it,
+        "Glyphodes perspectalis"@lt .
+
+pest:11242 a srppp:CropStressor ;
+    rdfs:label "Eichenprozessionsspinner"@de,
+        "Oak processionary caterpillar"@en,
+        "processionnaire du chêne"@fr,
+        "Processionaria della quercia"@it,
+        "Thaumetopoea processionea"@lt .
+
+pest:11243 a srppp:CropStressor ;
+    rdfs:label "Grosser Brauner Nadelholzrüssler"@de,
+        "Large brown pine weevil"@en,
+        "Grand charançon du pin"@fr,
+        "Ilobio dell'abete"@it,
+        "Hylobius abietis"@lt .
+
+pest:11245 a srppp:CropStressor ;
+    rdfs:label "Tomatenminiermotte"@de,
+        "Tuta absoluta"@en,
+        "Tigne de la tomate"@fr,
+        "Tuta absoluta"@it,
+        "Tuta absoluta"@lt .
+
+pest:11247 a srppp:CropStressor ;
+    rdfs:label "Himbeerblattmilbe"@de,
+        "raspberry (leaf) mite"@en,
+        "ériophyde des framboises"@fr,
+        "eriofide del lampone"@it,
+        "Phyllocoptes gracilis"@lt .
+
+pest:11251 a srppp:CropStressor ;
+    rdfs:label "Rostpilze der Zierpflanzen "@de,
+        "Chrysomyxa spp., Cronartium spp., Melampsora spp., Phragmidium spp., Puccinia spp., Uromyces spp."@en,
+        "rouilles des plantes ornementales "@fr,
+        "Ruggini su piante ornamentali"@it .
+
+pest:11252 a srppp:CropStressor ;
+    rdfs:label "Echte Mehltaupilze auf Nüsslisalat"@de,
+        "oïdiums sur mâche"@fr,
+        "Oidio (diverse specie) su valerianella "@it,
+        "Erysiphe communis (syn. poliphaga)"@lt .
+
+pest:11256 a srppp:CropStressor ;
+    rdfs:label "Rapsminierfliege"@de,
+        "imported leaf miner"@en,
+        "mouche mineuse des feuilles de colza"@fr,
+        "Mosca minatrice della colza"@it,
+        "Scaptomyza flava"@lt .
+
+pest:11257 a srppp:CropStressor ;
+    rdfs:label "Wiesenschnake"@de,
+        "common crane fly"@en,
+        "tipule des prairies"@fr,
+        "zanzarone degli orti"@it,
+        "Tipula paludosa"@lt .
+
+pest:11260 a srppp:CropStressor ;
+    rdfs:label "Pfauenaugenkrankheit"@de,
+        "peacock spot of olive"@en,
+        "maladie de l'oeil de paon"@fr,
+        "Occhio di pavone"@it,
+        "Cycloconium oleaginum"@lt .
+
+pest:11262 a srppp:CropStressor ;
+    rdfs:label "Anthraknose der Kürbisgewächse"@de,
+        "anthracnose of cucurbits "@en,
+        "anthracnose des cucurbitacées"@fr,
+        "Antracnosi delle cucurbitacee"@it,
+        "Glomerella lagenarium (syn. Colletotrichum lagenarium)"@lt .
+
+pest:11263 a srppp:CropStressor ;
+    rdfs:label "Trockenfäule der Gladiole"@de,
+        "dry rot of gladiolus"@en,
+        "pourriture sèche du glaïeul"@fr,
+        "Stromatinia gladioli"@it,
+        "Stromatinia gladioli"@lt .
+
+pest:11264 a srppp:CropStressor ;
+    rdfs:label "Seitentriebhemmung"@de,
+        "inhibition des pousses latérales "@fr,
+        "Inibizione dei germogli laterali"@it .
+
+pest:11265 a srppp:CropStressor ;
+    rdfs:label "Eckige Blattfleckenkrankheit der Erdbeere"@de,
+        "taches angulaires du fraisier"@fr,
+        "Maculature angolari della fragola"@it,
+        "Xanthomonas fragariae"@lt .
+
+pest:11310 a srppp:CropStressor ;
+    rdfs:label "Walnussfruchtfliege"@de,
+        "mouche de la noix"@fr,
+        "Mosca della noce"@it,
+        "Rhagoletis completa"@lt .
+
+pest:11319 a srppp:CropStressor ;
+    rdfs:label "Rost der Erbse"@de,
+        "rouilles du pois"@fr,
+        "Ruggini del pisello"@it,
+        "Uromyces pisi-sativi, Uromyces viciae-fabae"@lt .
+
+pest:11320 a srppp:CropStressor ;
+    rdfs:label "Rost der Ackerbohne"@de,
+        "rouille de la fève "@fr,
+        "Ruggine della fava "@it,
+        "Uromyces viciae-fabae"@lt .
+
+pest:11476 a srppp:CropStressor ;
+    rdfs:label "Kirschessigfliege"@de,
+        "drosophile du cerisier"@fr,
+        "Drosophila suzukii"@it,
+        "Drosophila suzukii"@lt .
+
+pest:11684 a srppp:CropStressor ;
+    rdfs:label "Pfirsichmotte"@de,
+        "peach twig borer"@en,
+        "petite mineuse ou teigne du pêcher"@fr,
+        "tignola del pesco"@it,
+        "Anarsia lineatella"@lt .
+
+pest:11707 a srppp:CropStressor ;
+    rdfs:label "Schorf der Ziergehölze"@de,
+        "tavelure des arbres et arbustres ornementaux"@fr,
+        "Ticchiolatura su alberi e arbusti ornamentali"@it,
+        "Venturia sp., Spilocaea sp."@lt .
+
+pest:11721 a srppp:CropStressor ;
+    rdfs:label "Colletotrichum-Fruchtfäule"@de,
+        "Colletotrichum sur fruits"@fr,
+        "Marciume dei frutti da Colletotrichum"@it,
+        "Glomerella acutata, Syn: Colletotrichum acutatum"@lt .
+
+pest:11956 a srppp:CropStressor ;
+    rdfs:label "Junikäfer"@de,
+        "hanneton européen / hanneton de la Saint-Jean"@fr,
+        "Rizotrogo"@it,
+        "Amphimallon majalis, A. solstitialis"@lt .
+
+pest:11995 a srppp:CropStressor ;
+    rdfs:label "Schwärmer"@de,
+        "sphingidés"@fr,
+        "Sfingi"@it,
+        "Sphingidae"@lt .
+
+pest:12138 a srppp:CropStressor ;
+    rdfs:label "Knollentrockenfäulen"@de,
+        "gangrene / dry rot"@en,
+        "pourritures sèches des tubercules"@fr,
+        "Marciumi secchi dei tuberi"@it,
+        "Fusarium spp., Phoma spp."@lt .
+
+pest:12145 a srppp:CropStressor ;
+    rdfs:label "Colletotrichum-Welke"@de,
+        "black dot disease of potato"@en,
+        "dartrose de la pomme de terre"@fr,
+        "'Black dot' della patata"@it,
+        "Colletotrichum coccodes"@lt .
+
+pest:12169 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau der Artischocke"@de,
+        "Artichoke Downy Mildew"@en,
+        "mildiou de l'artichaut"@fr,
+        "Peronospora del carciofo"@it,
+        "Bremia lactucae"@lt .
+
+pest:12329 a srppp:CropStressor ;
+    rdfs:label "Minierende Raupen"@de,
+        "chenilles mineuses"@fr,
+        "Bruchi minatori"@it .
+
+pest:12334 a srppp:CropStressor ;
+    rdfs:label "Leguminosenzünsler"@de,
+        "pyrale des haricots"@fr,
+        "piralide delle leguminose"@it,
+        "Etiella zinckenella"@lt .
+
+pest:12339 a srppp:CropStressor ;
+    rdfs:label "Echte Mehltaupilze der Laubbäume "@de,
+        "oïdiums des arbres feuillus"@fr,
+        "Oidio (diverse specie) su piante latifoglie"@it,
+        "Erysiphaceae"@lt .
+
+pest:12340 a srppp:CropStressor ;
+    rdfs:label "Eulenraupen (blattfressend)"@de,
+        "noctuelles (défoliatrices)"@fr,
+        "Nottue (defogliatrici)"@it,
+        "Noctuidae (blattfressend)"@lt .
+
+pest:12349 a srppp:CropStressor ;
+    rdfs:label "Septoria-Keimlingsbefall (S. nodorum)"@de,
+        "septoriose des plantules (S. nodorum)"@fr,
+        "Septoriosi delle piantule (S. nodorum)"@it,
+        "Phaeosphaeria nodorum (Anam. Septoria nodorum)"@lt .
+
+pest:12350 a srppp:CropStressor ;
+    rdfs:label "Brennfleckenkrankheit der Erbse"@de,
+        "anthracnose du pois"@fr,
+        "Antracnosi del pisello"@it,
+        "Ascochyta pisi, Mycosphaerella pinodes, Phoma pinodella"@lt .
+
+pest:12351 a srppp:CropStressor ;
+    rdfs:label "Stängelbräune des Leins"@de,
+        "brunissure du lin"@fr,
+        "Guignardia fulvida"@it,
+        "Guignardia fulvida (syn. Discosphaerina fulvida, veraltete Bezeichnung: Polyspora lini)"@lt .
+
+pest:12352 a srppp:CropStressor ;
+    rdfs:label "Pasmokrankheit"@de,
+        "pasmo du lin"@fr,
+        "Pasmo del lino"@it,
+        "Mycosphaerella linicola"@lt .
+
+pest:12353 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau des Leins"@de,
+        "oïdium du lin"@fr,
+        "Oidio del lino"@it,
+        "Golovinomyces orontii (Anam. Oidium lini)"@lt .
+
+pest:12354 a srppp:CropStressor ;
+    rdfs:label "Phoma der Sonnenblume"@de,
+        "phoma du tournesol"@fr,
+        "Phoma del girasole"@it,
+        "Plenodomus lindquistii (Anam. Phoma macdonaldii)"@lt .
+
+pest:12355 a srppp:CropStressor ;
+    rdfs:label "Zwergrost der Gerste"@de,
+        "rouille naine de l'orge"@fr,
+        "Ruggine nana dell'orzo "@it,
+        "Puccinia hordei"@lt .
+
+pest:12406 a srppp:CropStressor ;
+    rdfs:label "Netzschorf"@de,
+        "Common scab of potato"@en,
+        "gale commune "@fr,
+        "Scabbia comune"@it,
+        "Streptomyces scabiei"@lt .
+
+pest:12408 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau der Paprika"@de,
+        "mildiou du poivron"@fr,
+        "Peronospora del peperone "@it,
+        "Phytophtora capsici Peronospora tabacina"@lt .
+
+pest:12409 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau der Aubergine"@de,
+        "mildiou de l'aubergine"@fr,
+        "Peronospora della melanzana"@it,
+        "Phytophtora capsici, Phytophthora infestans"@lt .
+
+pest:12434 a srppp:CropStressor ;
+    rdfs:label "Abbrennen von Stockausschlägen"@de,
+        "Élimination des rejets"@fr,
+        "Eliminazione dei ricacci"@it .
+
+pest:12474 a srppp:CropStressor ;
+    rdfs:label "Cylindrocladium-Trieb- und Blattsterben"@de,
+        "cylindrocladium-dépérissement des feuilles et rameaux"@fr,
+        "Cylindrocladium buxicola"@it,
+        "Cylindrocladium buxicola"@lt .
+
+pest:12476 a srppp:CropStressor ;
+    rdfs:label "Rost der Gräser"@de,
+        "rouille des graminées"@fr,
+        "Ruggine delle graminacee"@it,
+        "Puccinia spp., Uromyces spp."@lt .
+
+pest:12477 a srppp:CropStressor ;
+    rdfs:label "Rhizoctonia-Krankheiten des Rasens"@de,
+        "rhizoctones des graminées"@fr,
+        "Rizottonie delle graminacee"@it,
+        "Rhizoctonia cerealis, R. oryzae, R. solani, R. zeae "@lt .
+
+pest:12482 a srppp:CropStressor ;
+    rdfs:label "Bakteriose der Walnuss"@de,
+        "bactériose du noyer"@fr,
+        "Batteriosi del noce"@it,
+        "Xanthomonas arboricola pv. juglandis"@lt .
+
+pest:12483 a srppp:CropStressor ;
+    rdfs:label "Blattfleckenkrankheit der Walnuss"@de,
+        "anthracnose du noyer"@fr,
+        "Antracnosi del noce"@it,
+        "Gnomonia leptostyla"@lt .
+
+pest:12484 a srppp:CropStressor ;
+    rdfs:label "Raubmilben"@de,
+        "acariens prédateurs"@fr,
+        "Acari predatori"@it,
+        "Parasitus sp."@lt .
+
+pest:12547 a srppp:CropStressor ;
+    rdfs:label "Gallmilben"@de,
+        "ériophyides gallicoles"@fr,
+        "Eriofidi gallicoli"@it,
+        "Eriophyidae, Phytoptidae, Diptilomiopidae (gallenbildende)"@lt .
+
+pest:12631 a srppp:CropStressor ;
+    rdfs:label "Lockerung des Traubenstielgerüsts"@de,
+        "Élongation de la rafle et décompactage des grappes de raisin"@fr,
+        "Allentamento del grapplo d'uva"@it .
+
+pest:12668 a srppp:CropStressor ;
+    rdfs:label "Rostpilze auf  Salate (Asteraceae) und Chicorée"@de,
+        "rouilles des salades (Asteraceae) et de la chicorée witloof (chicorée-endive)"@fr,
+        "ruggini su insalate (Asteraceae) e su cicoria belga"@it,
+        "Puccinia dioicae Magnus, Puccinia opizii, Puccinia cichorii"@lt .
+
+pest:12669 a srppp:CropStressor ;
+    rdfs:label "Rübenmotte"@de,
+        "beet moth"@en,
+        "Teigne de la betterave"@fr,
+        "tignola della barbabietola"@it,
+        "Scrobipalpa ocellatella"@lt .
+
+pest:12711 a srppp:CropStressor ;
+    rdfs:label "Falsche Mehltaupilze der Kamille"@de,
+        "mildious de la camomille"@fr,
+        "Peronospora della camomilla "@it,
+        "Peronosporales"@lt .
+
+pest:12759 a srppp:CropStressor ;
+    rdfs:label "Anthraknose der Erdbeere"@de,
+        "anthracnose of strawberry"@en,
+        "anthracnose du fraisier"@fr,
+        "Antracnosi della fragola"@it,
+        "Colletotrichum fragariae Colletotrichum acutatum"@lt .
+
+pest:12923 a srppp:CropStressor ;
+    rdfs:label "Vorratsschädlinge fliegend"@de,
+        "ravageurs des denrées stockées volants"@fr,
+        "parassiti delle scorte alimentari volanti"@it .
+
+pest:12924 a srppp:CropStressor ;
+    rdfs:label "Vorratsschädlinge kriechend"@de,
+        "ravageurs des denrées stockées rampants"@fr,
+        "parassiti delle scorte alimentari striscianti"@it .
+
+pest:13005 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau des Rhabarbers"@de,
+        "downy mildew of rhubarb"@en,
+        "Mildiou de la rhubarbe"@fr,
+        "Peronospora del rabarbaro"@it,
+        "Peronospora jaapiana"@lt .
+
+pest:13018 a srppp:CropStressor ;
+    rdfs:label "Fusarium Keimlingsbefall"@de,
+        "fusariose des plantules"@fr,
+        "Fusariosi delle piantine"@it,
+        "Fusarium spp. "@lt .
+
+pest:13140 a srppp:CropStressor ;
+    rdfs:label "Pepinomosaikvirus (PepMV)"@de,
+        "Pepino Mosaic Virus (PepMV)"@en,
+        "mosaïque du pépino (PepMV)"@fr,
+        "Virus del mosaico del pepino (PepMV)"@it .
+
+pest:13360 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Rubus-Arten"@de,
+        "powdery mildew"@en,
+        "oïdium des Rubus"@fr,
+        "Oidio delle verietà di rubus"@it,
+        "Podosphaera aphanis (syn. Sphaerotheca aphanis)"@lt .
+
+pest:13361 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Mini-Kiwi"@de,
+        "Powdery mildew on hardy kiwi"@en,
+        "Oïdium du Minikiwi (Phyllactinia actinidiae)"@fr,
+        "Oidio della Minikiwi (Phyllactinia actinidiae)"@it,
+        "Phyllactinia actinidiae"@lt .
+
+pest:13448 a srppp:CropStressor ;
+    rdfs:label "Brennfleckenkrankheit der Linse"@de,
+        "anthracnose de la lentille"@fr,
+        "Antracnosi della lenticchia"@it .
+
+pest:13449 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau der Linse"@de,
+        "mildiou de la lentille"@fr,
+        "Peronospora della lenticchia"@it .
+
+pest:13479 a srppp:CropStressor ;
+    rdfs:label "Colletotrichum-Wurzelbrand/-Blattflecken des Spinats"@de,
+        "pied noir / anthracnose de l'épinard (Colletotrichum)"@fr,
+        "Mal del piede / Antracnosi dello spinacio (Colletotrichum)"@it,
+        "Colletotrichum dematium f. spinaciae"@lt .
+
+pest:13493 a srppp:CropStressor ;
+    rdfs:label "Pflaumenblattsauger"@de,
+        "plum psylla"@en,
+        "psylle du prunier"@fr,
+        "psilla del prugno"@it,
+        "Psylla pruni syn. Cacopsylla pruni"@lt .
+
+pest:13549 a srppp:CropStressor ;
+    rdfs:label "Blattfusarium"@de,
+        "Fusariose foliaire"@fr,
+        "Fusariosi fogliare"@it,
+        "Microdochium nivale = Monographella nivalis"@lt .
+
+pest:13677 a srppp:CropStressor ;
+    rdfs:label "Hemmung des Triebwachstums"@de,
+        "inhibition de la croissance des rameaux"@fr,
+        "Inibizione della crescita dei polloni"@it .
+
+pest:13704 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Gojibeeren"@de,
+        "Oïdium des baies de Goji"@fr,
+        "Oidio delle bacche di Goji "@it,
+        "Arthrocladiella mougeotti"@lt .
+
+pest:13821 a srppp:CropStressor ;
+    rdfs:label "Laubkrankheit (Stemphylium botryosum)"@de,
+        "Leaf blight"@en,
+        "stemphyliose"@fr,
+        "Stemphylium botryosum"@it,
+        "Pleospora herbarum (syn. Stemphylium botryosum)"@lt .
+
+pest:13852 a srppp:CropStressor ;
+    rdfs:label "Anthraknose der Lupine"@de,
+        "Anthracnose du lupin"@fr,
+        "Antracnosi del lupino"@it,
+        "Colletotrichum lupini"@lt .
+
+pest:13946 a srppp:CropStressor ;
+    rdfs:label "Minderung von Fruchtberostung und Wachstumsrissen"@de,
+        "Diminution de la roussissure et des crevasses de croissance sur fruits "@fr,
+        "Riduzione della rugginosità della frutta e delle fratture di crescita"@it .
+
+pest:14147 a srppp:CropStressor ;
+    rdfs:label "Buchsbaumblattfloh"@de,
+        "Psylle du buis"@fr,
+        "Psilla del bosso"@it,
+        "Psylla buxi"@lt .
+
+pest:14259 a srppp:CropStressor ;
+    rdfs:label "Godronia-Triebsterben"@de,
+        "Godronia canker - canker of blueberry"@en,
+        "chancre godronien"@fr,
+        "cancro del mirtillo"@it,
+        "Godronia cassandrae"@lt .
+
+pest:14294 a srppp:CropStressor ;
+    rdfs:label "Rispenarten"@de,
+        "Espèces de pâturin"@fr,
+        "Specie die poa"@it .
+
+pest:14377 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Erbse"@de,
+        "oïdium du pois"@fr,
+        "Oidio del pisello"@it,
+        "Erysiphe pisi"@lt .
+
+pest:14737 a srppp:CropStressor ;
+    rdfs:label "Trichoderma aggressivum"@de,
+        "green mould disease of mushrooms (Trichoderma aggressivum)"@en,
+        "Trichoderma aggressivum"@fr,
+        "Trichoderma aggressivum"@it,
+        "Trichoderma aggressivum"@lt .
+
+pest:14770 a srppp:CropStressor ;
+    rdfs:label "Fussfäule des Leins"@de,
+        "foot rot of flax"@en,
+        "mort lin"@fr,
+        "phoma linicola"@it,
+        "Phoma exigua var. linicola"@lt .
+
+pest:14795 a srppp:CropStressor ;
+    rdfs:label "Rostpilze der Küchenkräuter"@de,
+        "rouilles des fines herbes"@fr,
+        "Ruggini su erbette da cucina"@it .
+
+pest:14878 a srppp:CropStressor ;
+    rdfs:label "Fusarium Welke"@de,
+        "flétrissement fusarien"@fr,
+        "Avvizzimento da fusariosi"@it,
+        "Fusarium oxysporum"@lt .
+
+pest:14999 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau des Maulbeerbaums "@de,
+        "oïdium du mûrier"@fr,
+        "Oidio del moro nero"@it,
+        "Phyllactinia moricola"@lt .
+
+pest:15000 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Schwarzen Apfelbeere"@de,
+        "oïdium de l'aronie noire"@fr,
+        "Oidio del aronia nera"@it,
+        "k.A. "@lt .
+
+pest:15001 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Eberesche"@de,
+        "oïdium du sorbier des oiseleurs"@fr,
+        "Oidio del sorbo degli ucellatori"@it,
+        "k.A."@lt .
+
+pest:15002 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau des Sanddorns"@de,
+        "oïdium de l'argousier"@fr,
+        "Oidio del'olivello spinoso"@it,
+        "k.A. "@lt .
+
+pest:15003 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der gemeinen Felsenbirne"@de,
+        "oïdium de l'amélavier commun"@fr,
+        "Oidio del pero corvino"@it,
+        "k.A."@lt .
+
+pest:15263 a srppp:CropStressor ;
+    rdfs:label "Wurzelläuse"@de,
+        "Root aphids"@en,
+        "pucerons des racines"@fr,
+        "Afidi delle radici"@it .
+
+pest:15310 a srppp:CropStressor ;
+    rdfs:label "Marmorierte Baumwanze"@de,
+        "punaise marbrée"@fr,
+        "cimice marmorata asiatica"@it,
+        "Halyomorpha halys"@lt .
+
+pest:15445 a srppp:CropStressor ;
+    rdfs:label "Australische Wollschildlaus "@de,
+        "Cochenille australienne "@fr,
+        "Cocciniglia cotonosa solcata"@it .
+
+pest:15474 a srppp:CropStressor ;
+    rdfs:label "Brennfleckenkrankheit der Ackerbohne"@de,
+        "anthracnose de la fève"@fr,
+        "Antracnosi della fava"@it .
+
+pest:15475 a srppp:CropStressor ;
+    rdfs:label "Falscher Mehltau der Ackerbohne"@de,
+        "mildiou de la fève"@fr,
+        "Peronospora della fava"@it .
+
+pest:15567 a srppp:CropStressor ;
+    rdfs:label "Marssonina- Blattfallkrankheit"@de,
+        "Marssonina leafspot of apple"@en,
+        "Chute des feuilles due à Marssonina"@fr,
+        "Caduta delle foglie dovuta a Marssonina"@it,
+        "Diplocarpon coronariae"@lt .
+
+pest:15588 a srppp:CropStressor ;
+    rdfs:label "Nesidiocoris tenuis"@de,
+        "Nesidiocoris tenuis"@fr,
+        "Nesidiocoris tenuis"@it,
+        "Nesidiocoris tenuis "@lt .
+
+pest:15703 a srppp:CropStressor ;
+    rdfs:label "Rost der Petersilie"@de,
+        "rouille du persil"@fr,
+        "Ruggine del prezzemolo"@it .
+
+pest:15705 a srppp:CropStressor ;
+    rdfs:label "Rhizoctonia-Fäule"@de,
+        "rhizoctone"@fr,
+        "Rizottonia"@it .
+
+pest:15868 a srppp:CropStressor ;
+    rdfs:label "Grüne Reiswanze "@de,
+        "Punaise verte ponctuée "@fr,
+        "cimice verde"@it,
+        "Nezara viridula "@lt .
+
+pest:15916 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau des Spinats"@de,
+        "oïdium de l'épinard "@fr,
+        "Oidio dello spinacio"@it .
+
+pest:15917 a srppp:CropStressor ;
+    rdfs:label "Echter Mehltau der Bohne"@de,
+        "oïdium du haricot "@fr,
+        "Oidio del fagiolo"@it .
+
