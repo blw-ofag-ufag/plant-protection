@@ -1471,15 +1471,6 @@
     :hasSoldoutDeadline "2025-02-28" ;
     :isNonProfessionallyAllowed false .
 
-:W-7115 a :Acaricide ;
-    rdfs:label "Milbeknock" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-21" ;
-    :hasFederalAdmissionNumber "W-7115" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11356> ;
-    :hasSoldoutDeadline "2024-02-21" ;
-    :isNonProfessionallyAllowed true .
-
 :W-7165 a :Acaricide,
         :Insecticide ;
     rdfs:label "Schädlingsfrei Forte" ;
@@ -1843,7 +1834,17 @@
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
     :hasFederalAdmissionNumber "W-7626" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/870785> ;
-    :isNonProfessionallyAllowed true .
+    :isNonProfessionallyAllowed true ;
+    :isSameProductAs :W-7626-1 .
+
+:W-7626-1 a :Acaricide,
+        :Insecticide ;
+    rdfs:label "Capito Garden Silver Spray " ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasFederalAdmissionNumber "W-7626-1" ;
+    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/267983> ;
+    :isNonProfessionallyAllowed true ;
+    :isSameProductAs :W-7626 .
 
 :W-7627 a :Acaricide,
         :Insecticide ;
@@ -1851,7 +1852,17 @@
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
     :hasFederalAdmissionNumber "W-7627" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/870785> ;
-    :isNonProfessionallyAllowed true .
+    :isNonProfessionallyAllowed true ;
+    :isSameProductAs :W-7627-1 .
+
+:W-7627-1 a :Acaricide,
+        :Insecticide ;
+    rdfs:label "Capito Garden Silver" ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasFederalAdmissionNumber "W-7627-1" ;
+    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/267983> ;
+    :isNonProfessionallyAllowed true ;
+    :isSameProductAs :W-7627 .
 
 :W-7631 a :Acaricide,
         :Insecticide ;
@@ -2124,7 +2135,16 @@
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
     :hasFederalAdmissionNumber "W-7564" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1410761> ;
-    :isNonProfessionallyAllowed false .
+    :isNonProfessionallyAllowed false ;
+    :isSameProductAs :W-7564-1 .
+
+:W-7564-1 a :AdhesionAgents ;
+    rdfs:label "CropCover CC-2000" ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasFederalAdmissionNumber "W-7564-1" ;
+    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1190792> ;
+    :isNonProfessionallyAllowed false ;
+    :isSameProductAs :W-7564 .
 
 :W-7569 a :AdhesionAgents ;
     rdfs:label "Break-Thru SP 133" ;
@@ -2143,32 +2163,40 @@
 :W-4574 a :BCAAgainstFungi ;
     rdfs:label "Beauveria-Schweizer " ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-03-31" ;
     :hasFederalAdmissionNumber "W-4574" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/166432> ;
+    :hasSoldoutDeadline "2025-03-31" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-4574-1 .
 
 :W-4574-1 a :BCAAgainstFungi ;
     rdfs:label "Beaupro" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-03-31" ;
     :hasFederalAdmissionNumber "W-4574-1" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1410761> ;
+    :hasSoldoutDeadline "2025-03-31" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-4574 .
 
 :W-6423 a :BCAAgainstFungi ;
     rdfs:label "Metarhizium Schweizer" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-03-31" ;
     :hasFederalAdmissionNumber "W-6423" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/166432> ;
+    :hasSoldoutDeadline "2025-03-31" ;
     :isNonProfessionallyAllowed true ;
     :isSameProductAs :W-6423-1 .
 
 :W-6423-1 a :BCAAgainstFungi ;
     rdfs:label "Metapro" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-03-31" ;
     :hasFederalAdmissionNumber "W-6423-1" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1410761> ;
+    :hasSoldoutDeadline "2025-03-31" ;
     :isNonProfessionallyAllowed true ;
     :isSameProductAs :W-6423 .
 
@@ -2297,6 +2325,20 @@
     :isSameProductAs :W-7529,
         :W-7529-1 .
 
+:W-7632 a :BCAAgainstFungi ;
+    rdfs:label "Metapro " ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasFederalAdmissionNumber "W-7632" ;
+    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1410761> ;
+    :isNonProfessionallyAllowed true .
+
+:W-7633 a :BCAAgainstFungi ;
+    rdfs:label "Beaupro " ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasFederalAdmissionNumber "W-7633" ;
+    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1410761> ;
+    :isNonProfessionallyAllowed false .
+
 :W-6912 a :BCABacteria,
         :Fungicide ;
     rdfs:label "Deposan" ;
@@ -2394,8 +2436,10 @@
 :W-4234 a :BCAInsectViruses ;
     rdfs:label "Capex 2" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-07-01" ;
     :hasFederalAdmissionNumber "W-4234" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1410761> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false .
 
 :W-6475 a :BCAInsectViruses ;
@@ -3862,7 +3906,17 @@
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
     :hasFederalAdmissionNumber "W-7549" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1410761> ;
-    :isNonProfessionallyAllowed true .
+    :isNonProfessionallyAllowed true ;
+    :isSameProductAs :W-7549-1 .
+
+:W-7549-1 a :BCANematodes,
+        :Insecticide ;
+    rdfs:label "BIOHOP NemaGAL Cold" ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasFederalAdmissionNumber "W-7549-1" ;
+    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1190792> ;
+    :isNonProfessionallyAllowed true ;
+    :isSameProductAs :W-7549 .
 
 :W-7551 a :BCANematodes,
         :Insecticide ;
@@ -3897,7 +3951,7 @@
     rdfs:label "Nemalo" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
     :hasFederalAdmissionNumber "W-7588" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11858> ;
+    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/10141> ;
     :isNonProfessionallyAllowed true .
 
 :W-7629 a :BCANematodes ;
@@ -4345,7 +4399,6 @@
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-7018-1,
         :W-7018-2,
-        :W-7018-3,
         :W-7018-4,
         :W-7018-5,
         :W-7018-6 .
@@ -4359,7 +4412,6 @@
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-7018,
         :W-7018-2,
-        :W-7018-3,
         :W-7018-4,
         :W-7018-5,
         :W-7018-6 .
@@ -4373,23 +4425,6 @@
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-7018,
         :W-7018-1,
-        :W-7018-3,
-        :W-7018-4,
-        :W-7018-5,
-        :W-7018-6 .
-
-:W-7018-3 a :Bactericide,
-        :Fungicide ;
-    rdfs:label "Cupromaag 35" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-07" ;
-    :hasFederalAdmissionNumber "W-7018-3" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/393743> ;
-    :hasSoldoutDeadline "2024-02-07" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7018,
-        :W-7018-1,
-        :W-7018-2,
         :W-7018-4,
         :W-7018-5,
         :W-7018-6 .
@@ -4404,7 +4439,6 @@
     :isSameProductAs :W-7018,
         :W-7018-1,
         :W-7018-2,
-        :W-7018-3,
         :W-7018-5,
         :W-7018-6 .
 
@@ -4418,7 +4452,6 @@
     :isSameProductAs :W-7018,
         :W-7018-1,
         :W-7018-2,
-        :W-7018-3,
         :W-7018-4,
         :W-7018-6 .
 
@@ -4432,7 +4465,6 @@
     :isSameProductAs :W-7018,
         :W-7018-1,
         :W-7018-2,
-        :W-7018-3,
         :W-7018-4,
         :W-7018-5 .
 
@@ -4746,9 +4778,11 @@
         :ParallelImport ;
     rdfs:label "Trinexapac-ethyl 175" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasExhaustionDeadline "2027-02-28" ;
     :hasFederalAdmissionNumber "D-6797" ;
     :hasForeignAdmissionNumber "007005-00/017" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11601> ;
+    :hasSoldoutDeadline "2026-02-28" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :D-6798,
         :D-7337,
@@ -4761,9 +4795,11 @@
         :ParallelImport ;
     rdfs:label "Trinex 175 " ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasExhaustionDeadline "2027-02-28" ;
     :hasFederalAdmissionNumber "D-6798" ;
     :hasForeignAdmissionNumber "007005-00/018" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11601> ;
+    :hasSoldoutDeadline "2026-02-28" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :D-6797,
         :D-7337,
@@ -4842,9 +4878,11 @@
         :ParallelImport ;
     rdfs:label "Calma" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasExhaustionDeadline "2027-02-28" ;
     :hasFederalAdmissionNumber "D-7337" ;
     :hasForeignAdmissionNumber "007005-00" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/10980> ;
+    :hasSoldoutDeadline "2026-02-28" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :D-6797,
         :D-6798,
@@ -5187,9 +5225,11 @@
         :ParallelImport ;
     rdfs:label "Trimaxx" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasExhaustionDeadline "2027-02-28" ;
     :hasFederalAdmissionNumber "F-7043" ;
     :hasForeignAdmissionNumber "2140082" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11833> ;
+    :hasSoldoutDeadline "2026-02-28" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :D-6797,
         :D-6798,
@@ -5282,9 +5322,11 @@
         :ParallelImport ;
     rdfs:label "Trimaxx" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
+    :hasExhaustionDeadline "2027-02-28" ;
     :hasFederalAdmissionNumber "I-7042" ;
     :hasForeignAdmissionNumber "16191" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11210> ;
+    :hasSoldoutDeadline "2026-02-28" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :D-6797,
         :D-6798,
@@ -5362,8 +5404,10 @@
 :W-3064 a :ChemicalProduct ;
     rdfs:label "Ethefon S" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-12-31" ;
     :hasFederalAdmissionNumber "W-3064" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1118792> ;
+    :hasSoldoutDeadline "2025-12-31" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-3064-1,
         :W-3064-2 .
@@ -5371,8 +5415,10 @@
 :W-3064-1 a :ChemicalProduct ;
     rdfs:label "Dartilon" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-12-31" ;
     :hasFederalAdmissionNumber "W-3064-1" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/267983> ;
+    :hasSoldoutDeadline "2025-12-31" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-3064,
         :W-3064-2 .
@@ -5380,8 +5426,10 @@
 :W-3064-2 a :ChemicalProduct ;
     rdfs:label "Ethephon LG" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-12-31" ;
     :hasFederalAdmissionNumber "W-3064-2" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/106909> ;
+    :hasSoldoutDeadline "2025-12-31" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-3064,
         :W-3064-1 .
@@ -5465,8 +5513,10 @@
 :W-3085 a :ChemicalProduct ;
     rdfs:label "Ethephon" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-10-31" ;
     :hasFederalAdmissionNumber "W-3085" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1634453> ;
+    :hasSoldoutDeadline "2025-10-31" ;
     :isNonProfessionallyAllowed false .
 
 :W-4549 a :ChemicalProduct ;
@@ -5508,8 +5558,10 @@
 :W-6247 a :ChemicalProduct ;
     rdfs:label "Primo Maxx" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2027-01-31" ;
     :hasFederalAdmissionNumber "W-6247" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/393743> ;
+    :hasSoldoutDeadline "2026-01-31" ;
     :isNonProfessionallyAllowed false .
 
 :W-6432 a :ChemicalProduct,
@@ -5671,8 +5723,10 @@
 :W-6832 a :ChemicalProduct ;
     rdfs:label "Trimaxx" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2027-02-28" ;
     :hasFederalAdmissionNumber "W-6832" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/932153> ;
+    :hasSoldoutDeadline "2026-02-28" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :D-6797,
         :D-6798,
@@ -5684,8 +5738,10 @@
 :W-6832-1 a :ChemicalProduct ;
     rdfs:label "Trinexx Top" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2027-02-28" ;
     :hasFederalAdmissionNumber "W-6832-1" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1118792> ;
+    :hasSoldoutDeadline "2026-02-28" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :D-6797,
         :D-6798,
@@ -6272,9 +6328,11 @@
         :ParallelImport ;
     rdfs:label "Forum" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/AUT> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "A-5351" ;
     :hasForeignAdmissionNumber "2660-0" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/10281> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :D-4556,
         :I-5350,
@@ -6382,9 +6440,11 @@
         :ParallelImport ;
     rdfs:label "Banjo Forte" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/AUT> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "A-7177" ;
     :hasForeignAdmissionNumber "3270-1" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/7174> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-7285 .
 
@@ -6534,7 +6594,8 @@
         :F-5427,
         :I-5093,
         :W-6060,
-        :W-6060-3 .
+        :W-6060-3,
+        :W-6060-4 .
 
 :D-3844 a :Fungicide,
         :ParallelImport ;
@@ -6563,9 +6624,11 @@
         :ParallelImport ;
     rdfs:label "Forum" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "D-4556" ;
     :hasForeignAdmissionNumber "034315-00" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/10281> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :A-5351,
         :I-5350,
@@ -6586,7 +6649,8 @@
         :F-5427,
         :I-5093,
         :W-6060,
-        :W-6060-3 .
+        :W-6060-3,
+        :W-6060-4 .
 
 :D-5269 a :Fungicide,
         :ParallelImport ;
@@ -6805,7 +6869,8 @@
         :F-5427,
         :I-5093,
         :W-6060,
-        :W-6060-3 .
+        :W-6060-3,
+        :W-6060-4 .
 
 :D-6223 a :Fungicide,
         :ParallelImport ;
@@ -7494,9 +7559,11 @@
         :ParallelImport ;
     rdfs:label "Orvego " ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "D-6942" ;
     :hasForeignAdmissionNumber "026833-00" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11434> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-7275,
         :W-7275-1 .
@@ -7930,7 +7997,8 @@
         :F-5427,
         :I-5093,
         :W-6060,
-        :W-6060-3 .
+        :W-6060-3,
+        :W-6060-4 .
 
 :D-6998 a :Fungicide,
         :ParallelImport ;
@@ -8148,18 +8216,6 @@
         :F-6885,
         :I-6778,
         :W-6509 .
-
-:D-7119 a :Fungicide,
-        :ParallelImport ;
-    rdfs:label "Foscolide" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasExhaustionDeadline "2025-03-24" ;
-    :hasFederalAdmissionNumber "D-7119" ;
-    :hasForeignAdmissionNumber "026499-00/020" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11773> ;
-    :hasSoldoutDeadline "2024-03-24" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-6711 .
 
 :D-7120 a :Fungicide,
         :ParallelImport ;
@@ -8511,9 +8567,11 @@
         :ParallelImport ;
     rdfs:label "Banjo Forte" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "D-7379" ;
     :hasForeignAdmissionNumber " 027012-00" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11594> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-7263 .
 
@@ -8889,7 +8947,8 @@
         :F-5427,
         :I-5093,
         :W-6060,
-        :W-6060-3 .
+        :W-6060-3,
+        :W-6060-4 .
 
 :F-3874 a :Fungicide,
         :ParallelImport ;
@@ -9231,7 +9290,8 @@
         :F-3647,
         :I-5093,
         :W-6060,
-        :W-6060-3 .
+        :W-6060-3,
+        :W-6060-4 .
 
 :F-5433 a :Fungicide,
         :ParallelImport ;
@@ -10432,15 +10492,18 @@
         :F-3647,
         :F-5427,
         :W-6060,
-        :W-6060-3 .
+        :W-6060-3,
+        :W-6060-4 .
 
 :I-5350 a :Fungicide,
         :ParallelImport ;
     rdfs:label "Forum" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "I-5350" ;
     :hasForeignAdmissionNumber "8541" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/10880> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :A-5351,
         :D-4556,
@@ -11772,8 +11835,10 @@
 :W-5498 a :Fungicide ;
     rdfs:label "Frupica SC" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "W-5498" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/267983> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false .
 
 :W-5706 a :Fungicide ;
@@ -11918,7 +11983,8 @@
         :F-3647,
         :F-5427,
         :I-5093,
-        :W-6060-3 .
+        :W-6060-3,
+        :W-6060-4 .
 
 :W-6060-3 a :Fungicide ;
     rdfs:label "Delan WG" ;
@@ -11933,7 +11999,24 @@
         :F-3647,
         :F-5427,
         :I-5093,
-        :W-6060 .
+        :W-6060,
+        :W-6060-4 .
+
+:W-6060-4 a :Fungicide ;
+    rdfs:label "Atollan S" ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasFederalAdmissionNumber "W-6060-4" ;
+    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/267983> ;
+    :isNonProfessionallyAllowed false ;
+    :isSameProductAs :D-3605,
+        :D-4775,
+        :D-6165,
+        :D-6991,
+        :F-3647,
+        :F-5427,
+        :I-5093,
+        :W-6060,
+        :W-6060-3 .
 
 :W-6070 a :Fungicide ;
     rdfs:label "Melody Combi" ;
@@ -12074,8 +12157,10 @@
 :W-6249 a :Fungicide ;
     rdfs:label "Forum" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "W-6249" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/943835> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :A-5351,
         :D-4556,
@@ -12655,16 +12740,6 @@
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :D-6337,
         :D-6586 .
-
-:W-6711 a :Fungicide ;
-    rdfs:label "Profiler" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-03-24" ;
-    :hasFederalAdmissionNumber "W-6711" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/336959> ;
-    :hasSoldoutDeadline "2024-03-24" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :D-7119 .
 
 :W-6721 a :Fungicide ;
     rdfs:label "Cueva" ;
@@ -13587,15 +13662,6 @@
     :isSameProductAs :D-7131,
         :W-7144 .
 
-:W-7146 a :Fungicide ;
-    rdfs:label "Valis F" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-07" ;
-    :hasFederalAdmissionNumber "W-7146" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11356> ;
-    :hasSoldoutDeadline "2024-02-07" ;
-    :isNonProfessionallyAllowed false .
-
 :W-7150 a :Fungicide ;
     rdfs:label "Chamane" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
@@ -13889,8 +13955,10 @@
 :W-7205 a :Fungicide ;
     rdfs:label "Eleto " ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "W-7205" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/267983> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false .
 
 :W-7213 a :Fungicide ;
@@ -13964,8 +14032,10 @@
 :W-7224 a :Fungicide ;
     rdfs:label "MCW 4849" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "W-7224" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/932153> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false .
 
 :W-7225 a :Fungicide ;
@@ -13985,8 +14055,10 @@
 :W-7230 a :Fungicide ;
     rdfs:label "MCW 4849" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "W-7230" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/243472> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false .
 
 :W-7237 a :Fungicide ;
@@ -14066,8 +14138,10 @@
 :W-7263 a :Fungicide ;
     rdfs:label "Banjo Forte" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "W-7263" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/932153> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :D-7379 .
 
@@ -14081,8 +14155,10 @@
 :W-7275 a :Fungicide ;
     rdfs:label "Orvego" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "W-7275" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/943835> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :D-6942,
         :W-7275-1 .
@@ -14090,8 +14166,10 @@
 :W-7275-1 a :Fungicide ;
     rdfs:label "Dominator" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "W-7275-1" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/730369> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :D-6942,
         :W-7275 .
@@ -14113,8 +14191,10 @@
 :W-7285 a :Fungicide ;
     rdfs:label "Banjo Forte" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "W-7285" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/243472> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :A-7177 .
 
@@ -14179,35 +14259,6 @@
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
     :hasFederalAdmissionNumber "W-7342" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/973510> ;
-    :isNonProfessionallyAllowed false .
-
-:W-7348 a :Fungicide ;
-    rdfs:label "Flint HG" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-28" ;
-    :hasFederalAdmissionNumber "W-7348" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/336959> ;
-    :hasSoldoutDeadline "2024-02-29" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7348-1 .
-
-:W-7348-1 a :Fungicide ;
-    rdfs:label "Gesal Universal Pilzschutz" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-28" ;
-    :hasFederalAdmissionNumber "W-7348-1" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/594217> ;
-    :hasSoldoutDeadline "2024-02-29" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7348 .
-
-:W-7355 a :Fungicide ;
-    rdfs:label "Avella" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-21" ;
-    :hasFederalAdmissionNumber "W-7355" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11356> ;
-    :hasSoldoutDeadline "2024-02-21" ;
     :isNonProfessionallyAllowed false .
 
 :W-7365 a :Fungicide ;
@@ -14528,59 +14579,6 @@
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-7479 .
 
-:W-7483 a :Fungicide ;
-    rdfs:label "Cymbal Flow" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-21" ;
-    :hasFederalAdmissionNumber "W-7483" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11356> ;
-    :hasSoldoutDeadline "2024-02-21" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7483-1 .
-
-:W-7483-1 a :Fungicide ;
-    rdfs:label "Costello" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-21" ;
-    :hasFederalAdmissionNumber "W-7483-1" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/730369> ;
-    :hasSoldoutDeadline "2024-02-21" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7483 .
-
-:W-7484 a :Fungicide ;
-    rdfs:label "Cymbal 45" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-07" ;
-    :hasFederalAdmissionNumber "W-7484" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11356> ;
-    :hasSoldoutDeadline "2024-02-07" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7484-1,
-        :W-7484-2 .
-
-:W-7484-1 a :Fungicide ;
-    rdfs:label "Sporex" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-07" ;
-    :hasFederalAdmissionNumber "W-7484-1" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/267983> ;
-    :hasSoldoutDeadline "2024-02-07" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7484,
-        :W-7484-2 .
-
-:W-7484-2 a :Fungicide ;
-    rdfs:label "Cymbal WG " ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-07" ;
-    :hasFederalAdmissionNumber "W-7484-2" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/106909> ;
-    :hasSoldoutDeadline "2024-02-07" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7484,
-        :W-7484-1 .
-
 :W-7496 a :Fungicide ;
     rdfs:label "Diagonal" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
@@ -14886,24 +14884,6 @@
         :I-5445,
         :W-4701 .
 
-:A-4143 a :Herbicide,
-        :ParallelImport ;
-    rdfs:label "Debut" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/AUT> ;
-    :hasExhaustionDeadline "2025-04-01" ;
-    :hasFederalAdmissionNumber "A-4143" ;
-    :hasForeignAdmissionNumber "2521-0" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11910> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :D-7262,
-        :F-4141,
-        :F-7259,
-        :F-7260,
-        :F-7261,
-        :I-4145,
-        :W-7294 .
-
 :A-4268 a :Herbicide,
         :ParallelImport ;
     rdfs:label "Pampa" ;
@@ -15206,24 +15186,6 @@
         :W-6003-1,
         :W-6003-2 .
 
-:D-4565 a :Herbicide,
-        :ParallelImport ;
-    rdfs:label "Dual Gold" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "D-4565" ;
-    :hasForeignAdmissionNumber "024587-00" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/7179> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :D-4780,
-        :D-4781,
-        :F-5400,
-        :F-7057,
-        :W-5651,
-        :W-5651-1,
-        :W-5651-2 .
-
 :D-4596 a :Herbicide,
         :ParallelImport ;
     rdfs:label "Kerb Flo" ;
@@ -15272,54 +15234,6 @@
         :W-6168,
         :W-6168-1,
         :W-6168-2 .
-
-:D-4780 a :Herbicide,
-        :ParallelImport ;
-    rdfs:label "Metola Gold" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "D-4780" ;
-    :hasForeignAdmissionNumber "024587-00/003" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11071> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :D-4565,
-        :D-4781,
-        :F-5400,
-        :F-7057,
-        :W-5651,
-        :W-5651-1,
-        :W-5651-2 .
-
-:D-4781 a :Herbicide,
-        :ParallelImport ;
-    rdfs:label "Metola Gold" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "D-4781" ;
-    :hasForeignAdmissionNumber "024587-00/004" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11071> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :D-4565,
-        :D-4780,
-        :F-5400,
-        :F-7057,
-        :W-5651,
-        :W-5651-1,
-        :W-5651-2 .
-
-:D-4783 a :Herbicide,
-        :ParallelImport ;
-    rdfs:label "Mairel Gold" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "D-4783" ;
-    :hasForeignAdmissionNumber "024613-00/041" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11116> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-6286 .
 
 :D-4862 a :Herbicide,
         :ParallelImport ;
@@ -15991,7 +15905,7 @@
     rdfs:label "Landmaster Supreme 480 TF" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
     :hasFederalAdmissionNumber "D-6622" ;
-    :hasForeignAdmissionNumber "006923-61" ;
+    :hasForeignAdmissionNumber "026923-61" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11757> ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :A-7127,
@@ -16551,24 +16465,6 @@
         :D-6660,
         :W-7298 .
 
-:D-7262 a :Herbicide,
-        :ParallelImport ;
-    rdfs:label "Kaskad" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasExhaustionDeadline "2025-04-01" ;
-    :hasFederalAdmissionNumber "D-7262" ;
-    :hasForeignAdmissionNumber "00A502-00" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11846> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :A-4143,
-        :F-4141,
-        :F-7259,
-        :F-7260,
-        :F-7261,
-        :I-4145,
-        :W-7294 .
-
 :D-7276 a :Herbicide,
         :ParallelImport ;
     rdfs:label "Primus" ;
@@ -16627,9 +16523,11 @@
         :ParallelImport ;
     rdfs:label "Quickdown" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasExhaustionDeadline "2025-09-13" ;
     :hasFederalAdmissionNumber "D-7291" ;
     :hasForeignAdmissionNumber "005693-00" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11612> ;
+    :hasSoldoutDeadline "2025-09-12" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :F-6061,
         :I-6060,
@@ -16762,18 +16660,6 @@
         :W-7320-2,
         :W-7320-3,
         :W-7320-4 .
-
-:D-7388 a :Herbicide,
-        :ParallelImport ;
-    rdfs:label "Debut Duo Active" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasExhaustionDeadline "2025-04-01" ;
-    :hasFederalAdmissionNumber "D-7388" ;
-    :hasForeignAdmissionNumber "008231-00" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11348> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7383 .
 
 :D-7393 a :Herbicide,
         :ParallelImport ;
@@ -17266,24 +17152,6 @@
         :I-5445,
         :W-4701 .
 
-:F-4141 a :Herbicide,
-        :ParallelImport ;
-    rdfs:label "Safari" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasExhaustionDeadline "2025-04-01" ;
-    :hasFederalAdmissionNumber "F-4141" ;
-    :hasForeignAdmissionNumber "9200073" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11419> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :A-4143,
-        :D-7262,
-        :F-7259,
-        :F-7260,
-        :F-7261,
-        :I-4145,
-        :W-7294 .
-
 :F-4201 a :Herbicide,
         :ParallelImport ;
     rdfs:label "Centurion R" ;
@@ -17402,24 +17270,6 @@
         :W-6023,
         :W-6023-1,
         :W-6023-2 .
-
-:F-5400 a :Herbicide,
-        :ParallelImport ;
-    rdfs:label "Mercantor Gold" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "F-5400" ;
-    :hasForeignAdmissionNumber "9800182" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11609> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :D-4565,
-        :D-4780,
-        :D-4781,
-        :F-7057,
-        :W-5651,
-        :W-5651-1,
-        :W-5651-2 .
 
 :F-5429 a :Herbicide,
         :ParallelImport ;
@@ -17635,9 +17485,11 @@
         :ParallelImport ;
     rdfs:label "Sorcier" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasExhaustionDeadline "2025-09-13" ;
     :hasFederalAdmissionNumber "F-6061" ;
     :hasForeignAdmissionNumber "2110101" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11617> ;
+    :hasSoldoutDeadline "2025-09-12" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :D-7291,
         :I-6060,
@@ -18079,7 +17931,6 @@
         :W-6403,
         :W-6403-1,
         :W-6403-2,
-        :W-6403-3,
         :W-6403-4 .
 
 :F-6699 a :Herbicide,
@@ -18097,7 +17948,6 @@
         :W-6403,
         :W-6403-1,
         :W-6403-2,
-        :W-6403-3,
         :W-6403-4 .
 
 :F-6700 a :Herbicide,
@@ -18115,7 +17965,6 @@
         :W-6403,
         :W-6403-1,
         :W-6403-2,
-        :W-6403-3,
         :W-6403-4 .
 
 :F-6701 a :Herbicide,
@@ -18133,7 +17982,6 @@
         :W-6403,
         :W-6403-1,
         :W-6403-2,
-        :W-6403-3,
         :W-6403-4 .
 
 :F-6702 a :Herbicide,
@@ -18151,7 +17999,6 @@
         :W-6403,
         :W-6403-1,
         :W-6403-2,
-        :W-6403-3,
         :W-6403-4 .
 
 :F-6709 a :Herbicide,
@@ -18333,24 +18180,6 @@
         :I-6073,
         :W-7454 .
 
-:F-7057 a :Herbicide,
-        :ParallelImport ;
-    rdfs:label "S-Metolastar" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "F-7057" ;
-    :hasForeignAdmissionNumber "2160479" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11444> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :D-4565,
-        :D-4780,
-        :D-4781,
-        :F-5400,
-        :W-5651,
-        :W-5651-1,
-        :W-5651-2 .
-
 :F-7241 a :Herbicide,
         :ParallelImport ;
     rdfs:label "Nero" ;
@@ -18376,60 +18205,6 @@
         :W-6837,
         :W-6837-1,
         :W-6837-3 .
-
-:F-7259 a :Herbicide,
-        :ParallelImport ;
-    rdfs:label "Trek" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "F-7259" ;
-    :hasForeignAdmissionNumber "2200275" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11846> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :A-4143,
-        :D-7262,
-        :F-4141,
-        :F-7260,
-        :F-7261,
-        :I-4145,
-        :W-7294 .
-
-:F-7260 a :Herbicide,
-        :ParallelImport ;
-    rdfs:label "Nairoby" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasExhaustionDeadline "2025-04-01" ;
-    :hasFederalAdmissionNumber "F-7260" ;
-    :hasForeignAdmissionNumber "2200275" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11846> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :A-4143,
-        :D-7262,
-        :F-4141,
-        :F-7259,
-        :F-7261,
-        :I-4145,
-        :W-7294 .
-
-:F-7261 a :Herbicide,
-        :ParallelImport ;
-    rdfs:label "Kaskad" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasExhaustionDeadline "2025-04-01" ;
-    :hasFederalAdmissionNumber "F-7261" ;
-    :hasForeignAdmissionNumber "2200275" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11846> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :A-4143,
-        :D-7262,
-        :F-4141,
-        :F-7259,
-        :F-7260,
-        :I-4145,
-        :W-7294 .
 
 :F-7376 a :Herbicide,
         :ParallelImport ;
@@ -18821,24 +18596,6 @@
         :W-4571-1,
         :W-4571-2 .
 
-:I-4145 a :Herbicide,
-        :ParallelImport ;
-    rdfs:label "Safari" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
-    :hasExhaustionDeadline "2026-07-01" ;
-    :hasFederalAdmissionNumber "I-4145" ;
-    :hasForeignAdmissionNumber "8886" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11618> ;
-    :hasSoldoutDeadline "2025-07-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :A-4143,
-        :D-7262,
-        :F-4141,
-        :F-7259,
-        :F-7260,
-        :F-7261,
-        :W-7294 .
-
 :I-4251 a :Herbicide,
         :ParallelImport ;
     rdfs:label "Chikara 25 WG" ;
@@ -19143,9 +18900,11 @@
         :ParallelImport ;
     rdfs:label "Piramax EC" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
+    :hasExhaustionDeadline "2025-09-13" ;
     :hasFederalAdmissionNumber "I-6060" ;
     :hasForeignAdmissionNumber "015062" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11545> ;
+    :hasSoldoutDeadline "2025-09-12" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :D-7291,
         :F-6061,
@@ -19156,9 +18915,11 @@
         :ParallelImport ;
     rdfs:label "Evolution" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
+    :hasExhaustionDeadline "2025-09-13" ;
     :hasFederalAdmissionNumber "I-6062" ;
     :hasForeignAdmissionNumber "015071" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11613> ;
+    :hasSoldoutDeadline "2025-09-12" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :D-7291,
         :F-6061,
@@ -19517,8 +19278,10 @@
 :W-1698 a :Herbicide ;
     rdfs:label "Asulox" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-07-01" ;
     :hasFederalAdmissionNumber "W-1698" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/393743> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false .
 
 :W-2070 a :Herbicide ;
@@ -19643,8 +19406,10 @@
 :W-4034 a :Herbicide ;
     rdfs:label "Asulam" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-07-01" ;
     :hasFederalAdmissionNumber "W-4034" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1634453> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false .
 
 :W-4162 a :Herbicide ;
@@ -20098,54 +19863,6 @@
     :isSameProductAs :W-5638,
         :W-5638-1,
         :W-5638-3 .
-
-:W-5651 a :Herbicide ;
-    rdfs:label "Dual Gold" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "W-5651" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/393743> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :D-4565,
-        :D-4780,
-        :D-4781,
-        :F-5400,
-        :F-7057,
-        :W-5651-1,
-        :W-5651-2 .
-
-:W-5651-1 a :Herbicide ;
-    rdfs:label "Frontex" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "W-5651-1" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/106909> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :D-4565,
-        :D-4780,
-        :D-4781,
-        :F-5400,
-        :F-7057,
-        :W-5651,
-        :W-5651-2 .
-
-:W-5651-2 a :Herbicide ;
-    rdfs:label "Calado" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "W-5651-2" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/267983> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :D-4565,
-        :D-4780,
-        :D-4781,
-        :F-5400,
-        :F-7057,
-        :W-5651,
-        :W-5651-1 .
 
 :W-5687 a :Herbicide ;
     rdfs:label "Grid" ;
@@ -20955,16 +20672,6 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/730369> ;
     :isNonProfessionallyAllowed false .
 
-:W-6286 a :Herbicide ;
-    rdfs:label "Gardo Gold" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "W-6286" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/393743> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :D-4783 .
-
 :W-6307 a :Herbicide ;
     rdfs:label "Goltix compact" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
@@ -21128,7 +20835,6 @@
         :F-6702,
         :W-6403-1,
         :W-6403-2,
-        :W-6403-3,
         :W-6403-4 .
 
 :W-6403-1 a :Herbicide ;
@@ -21144,7 +20850,6 @@
         :F-6702,
         :W-6403,
         :W-6403-2,
-        :W-6403-3,
         :W-6403-4 .
 
 :W-6403-2 a :Herbicide ;
@@ -21160,25 +20865,6 @@
         :F-6702,
         :W-6403,
         :W-6403-1,
-        :W-6403-3,
-        :W-6403-4 .
-
-:W-6403-3 a :Herbicide ;
-    rdfs:label "Deserpan Xtra" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-01-26" ;
-    :hasFederalAdmissionNumber "W-6403-3" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/393743> ;
-    :hasSoldoutDeadline "2024-01-26" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :F-6698,
-        :F-6699,
-        :F-6700,
-        :F-6701,
-        :F-6702,
-        :W-6403,
-        :W-6403-1,
-        :W-6403-2,
         :W-6403-4 .
 
 :W-6403-4 a :Herbicide ;
@@ -21194,8 +20880,7 @@
         :F-6702,
         :W-6403,
         :W-6403-1,
-        :W-6403-2,
-        :W-6403-3 .
+        :W-6403-2 .
 
 :W-6418 a :Herbicide ;
     rdfs:label "Successor 600" ;
@@ -21234,26 +20919,6 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/336959> ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :F-6491 .
-
-:W-6454 a :Herbicide ;
-    rdfs:label "Lumax" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "W-6454" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/393743> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-6454-1 .
-
-:W-6454-1 a :Herbicide ;
-    rdfs:label "Lumax" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "W-6454-1" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/106909> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-6454 .
 
 :W-6463 a :Herbicide ;
     rdfs:label "Successor T" ;
@@ -22113,15 +21778,6 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/106909> ;
     :isNonProfessionallyAllowed false .
 
-:W-6733 a :Herbicide ;
-    rdfs:label "Camix" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "W-6733" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/393743> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false .
-
 :W-6734 a :Herbicide ;
     rdfs:label "Ethofol 500 SC" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
@@ -22872,8 +22528,10 @@
 :W-6997 a :Herbicide ;
     rdfs:label "Asulam" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-07-01" ;
     :hasFederalAdmissionNumber "W-6997" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/840339> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-6997-1,
         :W-6997-2,
@@ -22883,8 +22541,10 @@
 :W-6997-1 a :Herbicide ;
     rdfs:label "Ruman" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-07-01" ;
     :hasFederalAdmissionNumber "W-6997-1" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/730369> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-6997,
         :W-6997-2,
@@ -22894,8 +22554,10 @@
 :W-6997-2 a :Herbicide ;
     rdfs:label "Trifulox" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-07-01" ;
     :hasFederalAdmissionNumber "W-6997-2" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/267983> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-6997,
         :W-6997-1,
@@ -22905,8 +22567,10 @@
 :W-6997-3 a :Herbicide ;
     rdfs:label "Asulam S" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-07-01" ;
     :hasFederalAdmissionNumber "W-6997-3" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1118792> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-6997,
         :W-6997-1,
@@ -22916,8 +22580,10 @@
 :W-6997-4 a :Herbicide ;
     rdfs:label "Asulam LG" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-07-01" ;
     :hasFederalAdmissionNumber "W-6997-4" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/106909> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-6997,
         :W-6997-1,
@@ -23063,8 +22729,10 @@
 :W-7104 a :Herbicide ;
     rdfs:label "Asulam" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-07-01" ;
     :hasFederalAdmissionNumber "W-7104" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/973510> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false .
 
 :W-7107 a :Herbicide ;
@@ -23173,26 +22841,6 @@
     :hasFederalAdmissionNumber "W-7138" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/106909> ;
     :isNonProfessionallyAllowed false .
-
-:W-7145 a :Herbicide ;
-    rdfs:label "Lentagran WP" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-21" ;
-    :hasFederalAdmissionNumber "W-7145" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11356> ;
-    :hasSoldoutDeadline "2024-02-21" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7145-1 .
-
-:W-7145-1 a :Herbicide ;
-    rdfs:label "Herbasan" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-21" ;
-    :hasFederalAdmissionNumber "W-7145-1" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/730369> ;
-    :hasSoldoutDeadline "2024-02-21" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7145 .
 
 :W-7148 a :Herbicide ;
     rdfs:label "Biathlon 4D" ;
@@ -23357,15 +23005,6 @@
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :D-6148,
         :W-7195 .
-
-:W-7196 a :Herbicide ;
-    rdfs:label "Lentagran 600 EC" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-13" ;
-    :hasFederalAdmissionNumber "W-7196" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11356> ;
-    :hasSoldoutDeadline "2024-02-13" ;
-    :isNonProfessionallyAllowed false .
 
 :W-7198 a :Herbicide ;
     rdfs:label "Spark" ;
@@ -23666,22 +23305,6 @@
     :isSameProductAs :D-5307,
         :D-6190 .
 
-:W-7294 a :Herbicide ;
-    rdfs:label "Debut" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-04-01" ;
-    :hasFederalAdmissionNumber "W-7294" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1303044> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :A-4143,
-        :D-7262,
-        :F-4141,
-        :F-7259,
-        :F-7260,
-        :F-7261,
-        :I-4145 .
-
 :W-7296 a :Herbicide ;
     rdfs:label "Express Max SX " ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
@@ -23802,15 +23425,6 @@
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
     :hasFederalAdmissionNumber "W-7310" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/973510> ;
-    :isNonProfessionallyAllowed false .
-
-:W-7311 a :Herbicide ;
-    rdfs:label "Lumax H" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "W-7311" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/393743> ;
-    :hasSoldoutDeadline "2024-10-01" ;
     :isNonProfessionallyAllowed false .
 
 :W-7313 a :Herbicide ;
@@ -24234,16 +23848,6 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/870785> ;
     :isNonProfessionallyAllowed false .
 
-:W-7383 a :Herbicide ;
-    rdfs:label "Debut DuoActive" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-04-01" ;
-    :hasFederalAdmissionNumber "W-7383" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1303044> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :D-7388 .
-
 :W-7388 a :Herbicide ;
     rdfs:label "Cerelex" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
@@ -24263,15 +23867,6 @@
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
     :hasFederalAdmissionNumber "W-7390" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/393743> ;
-    :isNonProfessionallyAllowed false .
-
-:W-7392 a :Herbicide ;
-    rdfs:label "Total" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "W-7392" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/973510> ;
-    :hasSoldoutDeadline "2024-10-01" ;
     :isNonProfessionallyAllowed false .
 
 :W-7399 a :Herbicide ;
@@ -24667,15 +24262,6 @@
         :D-7201,
         :W-7455 .
 
-:W-7466 a :Herbicide ;
-    rdfs:label "Deluge" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-01-01" ;
-    :hasFederalAdmissionNumber "W-7466" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1118792> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false .
-
 :W-7471 a :Herbicide ;
     rdfs:label "Natrel Garden Spray" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
@@ -24744,26 +24330,6 @@
     :hasFederalAdmissionNumber "W-7510" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/106909> ;
     :isNonProfessionallyAllowed false .
-
-:W-7511 a :Herbicide ;
-    rdfs:label "Shiro 500" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-04-01" ;
-    :hasFederalAdmissionNumber "W-7511" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/840339> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7511-1 .
-
-:W-7511-1 a :Herbicide ;
-    rdfs:label "Shiro" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-04-01" ;
-    :hasFederalAdmissionNumber "W-7511-1" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/106909> ;
-    :hasSoldoutDeadline "2024-10-01" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7511 .
 
 :W-7522 a :Herbicide ;
     rdfs:label "Traxos 50 EC" ;
@@ -24892,7 +24458,8 @@
     :hasFederalAdmissionNumber "W-7610" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/267983> ;
     :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7610-1 .
+    :isSameProductAs :W-7610-1,
+        :W-7610-2 .
 
 :W-7610-1 a :Herbicide ;
     rdfs:label "Heading perfectLawn" ;
@@ -24900,7 +24467,17 @@
     :hasFederalAdmissionNumber "W-7610-1" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1190792> ;
     :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7610 .
+    :isSameProductAs :W-7610,
+        :W-7610-2 .
+
+:W-7610-2 a :Herbicide ;
+    rdfs:label "Proclean Turf Duo" ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasFederalAdmissionNumber "W-7610-2" ;
+    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/267983> ;
+    :isNonProfessionallyAllowed false ;
+    :isSameProductAs :W-7610,
+        :W-7610-1 .
 
 :W-7628 a :Herbicide ;
     rdfs:label "Bio Unkrautfrei" ;
@@ -26633,29 +26210,11 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/106909> ;
     :isNonProfessionallyAllowed false .
 
-:W-7049 a :Insecticide ;
-    rdfs:label "Fibro" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-21" ;
-    :hasFederalAdmissionNumber "W-7049" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11356> ;
-    :hasSoldoutDeadline "2024-02-21" ;
-    :isNonProfessionallyAllowed false .
-
 :W-7106 a :Insecticide ;
     rdfs:label "Cypermethrin" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
     :hasFederalAdmissionNumber "W-7106" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/973510> ;
-    :isNonProfessionallyAllowed false .
-
-:W-7120 a :Insecticide ;
-    rdfs:label "Ovitex" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-21" ;
-    :hasFederalAdmissionNumber "W-7120" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11356> ;
-    :hasSoldoutDeadline "2024-02-21" ;
     :isNonProfessionallyAllowed false .
 
 :W-7133 a :Insecticide ;
@@ -26664,20 +26223,7 @@
     :hasFederalAdmissionNumber "W-7133" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/730369> ;
     :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7133-1,
-        :W-7133-2,
-        :W-7133-3 .
-
-:W-7133-1 a :Insecticide ;
-    rdfs:label "Gesal Käfer- und Raupen-Stop" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-13" ;
-    :hasFederalAdmissionNumber "W-7133-1" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/594217> ;
-    :hasSoldoutDeadline "2024-02-13" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7133,
-        :W-7133-2,
+    :isSameProductAs :W-7133-2,
         :W-7133-3 .
 
 :W-7133-2 a :Insecticide ;
@@ -26687,7 +26233,6 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/393743> ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-7133,
-        :W-7133-1,
         :W-7133-3 .
 
 :W-7133-3 a :Insecticide ;
@@ -26697,7 +26242,6 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1190792> ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :W-7133,
-        :W-7133-1,
         :W-7133-2 .
 
 :W-7142 a :Insecticide,
@@ -26761,21 +26305,7 @@
     :hasFederalAdmissionNumber "W-7273" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/730369> ;
     :isNonProfessionallyAllowed true ;
-    :isSameProductAs :W-7273-1,
-        :W-7273-2,
-        :W-7273-3,
-        :W-7273-4 .
-
-:W-7273-1 a :Insecticide ;
-    rdfs:label "Sanoplant Dipel" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-07" ;
-    :hasFederalAdmissionNumber "W-7273-1" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/393743> ;
-    :hasSoldoutDeadline "2024-02-07" ;
-    :isNonProfessionallyAllowed true ;
-    :isSameProductAs :W-7273,
-        :W-7273-2,
+    :isSameProductAs :W-7273-2,
         :W-7273-3,
         :W-7273-4 .
 
@@ -26786,7 +26316,6 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/393743> ;
     :isNonProfessionallyAllowed true ;
     :isSameProductAs :W-7273,
-        :W-7273-1,
         :W-7273-3,
         :W-7273-4 .
 
@@ -26797,7 +26326,6 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/594217> ;
     :isNonProfessionallyAllowed true ;
     :isSameProductAs :W-7273,
-        :W-7273-1,
         :W-7273-2,
         :W-7273-4 .
 
@@ -26808,29 +26336,8 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1335753> ;
     :isNonProfessionallyAllowed true ;
     :isSameProductAs :W-7273,
-        :W-7273-1,
         :W-7273-2,
         :W-7273-3 .
-
-:W-7274 a :Insecticide ;
-    rdfs:label "Blocker " ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-21" ;
-    :hasFederalAdmissionNumber "W-7274" ;
-    :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11356> ;
-    :hasSoldoutDeadline "2024-02-21" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7274-1 .
-
-:W-7274-1 a :Insecticide ;
-    rdfs:label "Blocker" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-02-21" ;
-    :hasFederalAdmissionNumber "W-7274-1" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/730369> ;
-    :hasSoldoutDeadline "2024-02-21" ;
-    :isNonProfessionallyAllowed false ;
-    :isSameProductAs :W-7274 .
 
 :W-7284 a :Insecticide ;
     rdfs:label "KENDO GOLD XTRA" ;
@@ -27412,7 +26919,16 @@
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
     :hasFederalAdmissionNumber "W-5510" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1634453> ;
-    :isNonProfessionallyAllowed false .
+    :isNonProfessionallyAllowed false ;
+    :isSameProductAs :W-5510-1 .
+
+:W-5510-1 a :Molluscicide ;
+    rdfs:label "Schneckenkorn Longlife" ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasFederalAdmissionNumber "W-5510-1" ;
+    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1118792> ;
+    :isNonProfessionallyAllowed false ;
+    :isSameProductAs :W-5510 .
 
 :W-6138 a :Molluscicide ;
     rdfs:label "Gastrotox 6%" ;
@@ -27834,7 +27350,8 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/973510> ;
     :isNonProfessionallyAllowed true ;
     :isSameProductAs :W-7553-1,
-        :W-7553-2 .
+        :W-7553-2,
+        :W-7553-3 .
 
 :W-7553-1 a :Molluscicide ;
     rdfs:label "Jardin Royal Schneckenkorn" ;
@@ -27843,7 +27360,8 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/267983> ;
     :isNonProfessionallyAllowed true ;
     :isSameProductAs :W-7553,
-        :W-7553-2 .
+        :W-7553-2,
+        :W-7553-3 .
 
 :W-7553-2 a :Molluscicide ;
     rdfs:label "GO/ON Schneckenkorn " ;
@@ -27852,7 +27370,18 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/267983> ;
     :isNonProfessionallyAllowed true ;
     :isSameProductAs :W-7553,
-        :W-7553-1 .
+        :W-7553-1,
+        :W-7553-3 .
+
+:W-7553-3 a :Molluscicide ;
+    rdfs:label "Gesal Schneckenkorn " ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasFederalAdmissionNumber "W-7553-3" ;
+    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/594217> ;
+    :isNonProfessionallyAllowed true ;
+    :isSameProductAs :W-7553,
+        :W-7553-1,
+        :W-7553-2 .
 
 :W-7611 a :Molluscicide ;
     rdfs:label "Meta Gold" ;
@@ -27876,9 +27405,11 @@
         :ParallelImport ;
     rdfs:label "Bion 50 WG" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "F-5963" ;
     :hasForeignAdmissionNumber "9600526" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/11609> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :I-5964,
         :W-5370 .
@@ -27887,9 +27418,11 @@
         :ParallelImport ;
     rdfs:label "Bion 50 WG" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "I-5964" ;
     :hasForeignAdmissionNumber "11062" ;
     :hasPermissionHolder <https://agriculture.ld.admin.ch/plant-protection/company/7182> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :F-5963,
         :W-5370 .
@@ -27897,8 +27430,10 @@
 :W-5370 a :NaturalDefenseStimulator ;
     rdfs:label "Bion" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasExhaustionDeadline "2026-01-01" ;
     :hasFederalAdmissionNumber "W-5370" ;
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/393743> ;
+    :hasSoldoutDeadline "2025-07-01" ;
     :isNonProfessionallyAllowed false ;
     :isSameProductAs :F-5963,
         :I-5964 .
@@ -28392,15 +27927,6 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/973510> ;
     :isNonProfessionallyAllowed false .
 
-:W-7279 a :SeedDressing ;
-    rdfs:label "Redigo Pro" ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
-    :hasExhaustionDeadline "2025-03-13" ;
-    :hasFederalAdmissionNumber "W-7279" ;
-    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/336959> ;
-    :hasSoldoutDeadline "2024-03-13" ;
-    :isNonProfessionallyAllowed false .
-
 :W-7308 a :SeedDressing ;
     rdfs:label "Maxim Quattro" ;
     :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
@@ -28534,7 +28060,8 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1410761> ;
     :isNonProfessionallyAllowed true ;
     :isSameProductAs :W-6107-1,
-        :W-6107-2 .
+        :W-6107-2,
+        :W-6107-3 .
 
 :W-6107-1 a :SoapProduct ;
     rdfs:label "BIOHOP DelMON" ;
@@ -28543,7 +28070,8 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/1190792> ;
     :isNonProfessionallyAllowed true ;
     :isSameProductAs :W-6107,
-        :W-6107-2 .
+        :W-6107-2,
+        :W-6107-3 .
 
 :W-6107-2 a :SoapProduct ;
     rdfs:label "LOTIQ" ;
@@ -28552,7 +28080,18 @@
     :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/393743> ;
     :isNonProfessionallyAllowed true ;
     :isSameProductAs :W-6107,
-        :W-6107-1 .
+        :W-6107-1,
+        :W-6107-3 .
+
+:W-6107-3 a :SoapProduct ;
+    rdfs:label "Oecoplan Schädlingsfrei" ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/CHE> ;
+    :hasFederalAdmissionNumber "W-6107-3" ;
+    :hasPermissionHolder <https://register.ld.admin.ch/zefix/company/721898> ;
+    :isNonProfessionallyAllowed true ;
+    :isSameProductAs :W-6107,
+        :W-6107-1,
+        :W-6107-2 .
 
 :W-6158 a :SoapProduct ;
     rdfs:label "Coop Oecoplan Biocontrol Insectizid" ;

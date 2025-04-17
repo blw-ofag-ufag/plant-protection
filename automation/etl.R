@@ -12,6 +12,14 @@ library(rdfhelper) # install from <https://github.com/damian-oswald/rdfhelper>
 # ------------------------------------------------------------------
 
 base <- "https://agriculture.ld.admin.ch/plant-protection/"
+prefixes <- sprintf("@prefix : <%s> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix schema: <http://schema.org/> .
+@prefix zefix: <https://register.ld.admin.ch/zefix/company/> .
+", base)
 
 # ------------------------------------------------------------------
 # DEFINE HELPER FUNCTIONS
@@ -72,6 +80,7 @@ parallel_imports[,"isParallelImport"] = TRUE
 
 # merge the two tables
 products = rbind(swiss_products, parallel_imports)
+rm(swiss_products, parallel_imports)
 products = as.data.frame(products)
 products[products==""] <- NA
 
@@ -84,13 +93,7 @@ products = products[order(products$pNbr),]
 # open file
 sink("rdf/products.ttl")
 
-cat("
-@prefix : <https://agriculture.ld.admin.ch/plant-protection/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-")
+cat(prefixes)
 
 # write triples
 for (i in 1:nrow(products)) {
@@ -201,16 +204,7 @@ companies$zefixIRI <- zefix_company[companies[,"IRI"],"IRI"]
 # open file
 sink("rdf/companies.ttl")
 
-cat("
-@prefix : <https://agriculture.ld.admin.ch/foag/plant-protection#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix wd: <http://www.wikidata.org/entity/> .
-@prefix schema: <http://schema.org/> .
-@prefix zefix: <https://register.ld.admin.ch/zefix/company/> .
-
-")
+cat(prefixes)
 
 # loop over every company
 for (i in 1:nrow(companies)) {
@@ -255,13 +249,7 @@ rm(CodeR, CodeS)
 
 sink("rdf/hazard-statements.ttl")
 
-cat("
-@prefix : <https://agriculture.ld.admin.ch/plant-protection/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-")
+cat(prefixes)
 
 for (i in 1:nrow(codes)) {
   subject = uri(file.path("code", codes[i,1]),base)
@@ -284,40 +272,36 @@ sink()
 # ------------------------------------------------------------------
 
 # Find all Detail nodes within the Culture MetaData
-crops_xml <- xml_find_all(XML, ".//MetaData[@name='Culture']/Detail")
-parent_ids = crops_xml |> xml_find_all("Parent") |> xml_attr("primaryKey")
+convert <- function(x) {
+  pks   <- sapply(x[names(x)=="Parent"], attr, "primaryKey")
+  pks   <- c(pks, NA, NA)[1:2]
+  descs <- x[names(x)=="Description"]
+  lang <- sapply(descs, attr, "language")
+  vals  <- sapply(descs, attr, "value")
+  c(id = attr(x, "primaryKey"),
+    parent1   = unname(pks[1]),
+    parent2   = unname(pks[2]),
+    setNames(vals, lang)
+  )
+}
 
-# Read JSON file about crops
-crops <- jsonlite::read_json("mapping-tables/crops.json")
-crops <- lapply(crops, function(x) {
-  for (i in c("wikidata-iri", "srppp-parent-id")) x[[i]] <- unlist(x[[i]])
-  x$label <- lapply(x$label, unlist)
-  return(x)
-})
-
-# See if any crops are *not* in JSON file (if FALSE, add the crop with additional info)
-all(xml_attr(crops_xml, "primaryKey") %in% unlist(lapply(crops, function(x) x[["srppp-id"]])))
+# Read all crops
+crops = xml_find_all(XML, "//MetaData[@name='Culture']/Detail") |>
+  as_list() |> lapply(convert)
 
 # Write Turtle file
-sink("data/crops.ttl")
-cat("
-@prefix : <https://agriculture.ld.admin.ch/foag/plant-protection#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix wd: <https://www.wikidata.org/wiki/> .
-
-")
-for (x in crops) {
-  iri = IRI("5", x[["srppp-id"]])
-  triple(iri, "a", ":CropGroup")
-  for (i in c("de", "en")) triple(iri,"rdfs:label",literal(x[["label"]][[i]][1],lang=i))
-  for (i in c("de", "en")) triple(iri,"rdfs:comment",literal(x[["comment"]][[i]][1],lang=i))
-  if(!is.null(x[["srppp-parent-id"]])) for(i in x[["srppp-parent-id"]]) {
-    triple(iri,":hasParentCropGroup",IRI("5", i))
-    triple(IRI("5", i),":hasChildCropGroup",iri)
+sink("rdf/crops.ttl")
+cat(prefixes)
+for (crop in crops) {
+  subject <- uri(file.path("crop",crop["id"]), base)
+  triple(subject, "a", ":CropGroup")
+  for (lang in c("de","fr","it","en")) {
+    label <- crop[lang]
+    if(label!=""&!is.na(label)) {
+      triple(subject, "rdfs:label", langstring(crop[lang], lang))
+    }
   }
-  if(!is.null(x[["wikidata-iri"]])) for(i in x[["wikidata-iri"]]) triple(iri,":cropIsRelatedToBiologicalTaxon",paste0("wd:",i))
+  if(!is.na(crop["parent1"])) triple(subject, ":hasParentCropGroup", uri(file.path("crop", crop["parent1"]), base))
 }
 sink()
 
