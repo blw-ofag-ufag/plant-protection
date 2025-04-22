@@ -562,6 +562,14 @@ srppp:isNonProfessionallyAllowed a owl:DatatypeProperty ;
     rdfs:range xsd:boolean ;
     rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/2010/340/de#art_64> .
 
+srppp:iupac a owl:DatatypeProperty ;
+    rdfs:label "IUPAC-Name"@de,
+        "IUPAC name"@en ;
+    rdfs:comment "Systematische Bezeichnung der chemischen Verbindung gemäss den Regeln der IUPAC‑Nomenklatur."@de,
+        "The systematic IUPAC name of the chemical substance, following IUPAC nomenclature rules."@en ;
+    rdfs:domain srppp:Substance ;
+    rdfs:range xsd:string .
+
 srppp:latestBBCH a owl:DatatypeProperty ;
     rdfs:label "Spätestes BBCH-Stadium der Kulturpflanze"@de,
         "Latest BBCH stage of the crop"@en ;
@@ -877,7 +885,8 @@ srppp:involves a owl:ObjectProperty ;
     rdfs:label "involviert"@de,
         "involves"@en ;
     rdfs:domain srppp:Treatment ;
-    rdfs:range srppp:Product .
+    rdfs:range srppp:Product ;
+    owl:inverseOf srppp:isInvolvedIn .
 
 srppp:isAffectedBy a owl:ObjectProperty ;
     rdfs:label "ist betroffen von"@de,
@@ -928,6 +937,13 @@ srppp:isDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:label "ist definiert durch das biologische Taxon"@de,
         "is defined by biological taxon"@en ;
     rdfs:range wd:Q16521 .
+
+srppp:isInvolvedIn a owl:ObjectProperty ;
+    rdfs:label "ist involviert in"@de,
+        "is involved in"@en ;
+    rdfs:domain srppp:Product ;
+    rdfs:range srppp:Treatment ;
+    owl:inverseOf srppp:involves .
 
 srppp:isLimitedBy a owl:ObjectProperty ;
     rdfs:label "wird eingeschränkt durch"@de,

@@ -35,10 +35,14 @@ from otsrdflib import OrderedTurtleSerializer
 # ---------------------------------------------------------------------------
 
 CUSTOM_NAMESPACES = {
-    "schema": "http://schema.org/",
-    "srppp":  "https://agriculture.ld.admin.ch/plant-protection/",
-    "crop":   "https://agriculture.ld.admin.ch/plant-protection/crop/",
-    "pest":   "https://agriculture.ld.admin.ch/plant-protection/pest/"
+    "schema":    "http://schema.org/",
+    "srppp":     "https://agriculture.ld.admin.ch/plant-protection/",
+    "crop":      "https://agriculture.ld.admin.ch/plant-protection/crop/",
+    "pest":      "https://agriculture.ld.admin.ch/plant-protection/pest/",
+    "substance": "https://agriculture.ld.admin.ch/plant-protection/substance/",
+    "company":   "https://agriculture.ld.admin.ch/plant-protection/company/",
+    "code":      "https://agriculture.ld.admin.ch/plant-protection/code/",
+    "note":      "https://agriculture.ld.admin.ch/plant-protection/note/"
 }
 
 SCHEMA = Namespace(CUSTOM_NAMESPACES["schema"])
