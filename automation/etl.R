@@ -441,6 +441,7 @@ for (object in L) {
   uuid = uuid::UUIDfromName("acdb7485-3f2b-45f0-a783-01133f235c2a", paste0(object,collapse = "-"))
   subject = uri(uuid, base)
   product = uri(paste0("W-", object$id), base)
+  triple(subject, "a", ":Treatment")
   triple(subject, ":involves", product)
   for (obligation in object$obligations) {
     triple(subject, ":isConcernedBy", uri(file.path("note",obligation), base))
