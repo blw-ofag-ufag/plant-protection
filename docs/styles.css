@@ -33,12 +33,30 @@
     padding: 2.5rem 3rem;
     animation: fade .4s ease;
   }
+
+    /* make all lists in the card align with the H2 text */
+.card ul {
+    margin: 0.5rem 0;        /* a bit of vertical breathing room */
+    padding-inline-start: 1.5rem;  /* line up the bullets exactly under the heading text */
+    list-style-position: outside;
+}
+
   @keyframes fade {
     from { opacity: 0; transform: translateY(8px); }
     to   { opacity: 1; transform: none; }
   }
   
   /* Typography --------------------------------------------------------- */
+
+  /* put this in style.css */
+.card ul a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  .card ul a:hover {
+    text-decoration: underline;
+  }
+  
   h1 {
     font-size: 2rem;
     font-weight: 600;

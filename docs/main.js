@@ -1,24 +1,42 @@
+// script.js
+
 (async function(){
   const $loading = document.getElementById('loading');
   const $card    = document.getElementById('card');
 
-  // Get ?id=…
-  const qs = new URLSearchParams(window.location.search);
-  const id = qs.get('id');
-  if (!id) {
-    $loading.innerHTML = `
-      <div class="error">
-        Missing URL parameter <code>?id=…</code>.
-        Try <a href="${location.pathname}?id=W-4495-1">?id=W-4495-1</a>
-      </div>`;
-    return;
+  // Helper to run a SPARQL query
+  async function fetchSparql(query) {
+    const res = await fetch('https://lindas.admin.ch/query', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/sparql-query',
+        'Accept': 'application/sparql-results+json'
+      },
+      body: query
+    });
+    if (!res.ok) throw new Error(res.status + ' ' + res.statusText);
+    return res.json();
   }
 
-  const endpoint = 'https://lindas.admin.ch/query';
-  const sparql = `
+  try {
+    // 1) Read URL param
+    const qs = new URLSearchParams(window.location.search);
+    const id = qs.get('id');
+    if (!id) {
+      $loading.innerHTML = `
+        <div class="error">
+          Missing URL parameter <code>?id=…</code>.
+          Try <a href="${location.pathname}?id=W-4495-1">?id=W-4495-1</a>
+        </div>`;
+      return;
+    }
+
+    // 2) Fetch product data
+    const sparqlProduct = `
 PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
 PREFIX schema: <http://schema.org/>
-SELECT *
+SELECT ?productName ?federalNo ?foreignNo ?countryName ?company
+       ?producttypeLabel ?sameProduct ?sameProductName
 WHERE {
   VALUES ?product { <https://agriculture.ld.admin.ch/plant-protection/${id}> }
   ?product a ?producttype ;
@@ -27,75 +45,152 @@ WHERE {
            :hasCountryOfOrigin ?country ;
            :hasPermissionHolder ?company ;
            :isSameProductAs ?sameProduct .
+  OPTIONAL { ?product :hasForeignAdmissionNumber ?foreignNo . }
   OPTIONAL {
     ?producttype schema:name ?producttypeLabel .
-    FILTER (lang(?producttypeLabel)='de')
+    FILTER(lang(?producttypeLabel)='de')
   }
   OPTIONAL {
     ?country schema:name ?countryName .
-    FILTER (lang(?countryName)='de')
+    FILTER(lang(?countryName)='de')
   }
-  OPTIONAL { ?company schema:name ?companyName . }
   OPTIONAL { ?sameProduct schema:name ?sameProductName . }
-  OPTIONAL { ?product :hasForeignAdmissionNumber ?foreignAdmissionNumber }
+}
+`;
+    const prodJson = await fetchSparql(sparqlProduct);
+    const prodData = prodJson.results.bindings;
+    if (!prodData.length) throw new Error('No data for id=' + id);
+
+    const firstRow    = prodData.find(r => r.productName && r.federalNo) || prodData[0];
+    const productName = firstRow.productName.value;
+    const federalNo   = firstRow.federalNo.value;
+    const foreignNo   = firstRow.foreignNo?.value || null;
+    const countryName = firstRow.countryName?.value || '—';
+    const companyIRI  = firstRow.company.value;
+
+    const productTypes = [...new Set(
+      prodData.map(r => r.producttypeLabel?.value).filter(Boolean)
+    )];
+
+    const sameMap = new Map();
+    prodData.forEach(r => {
+      if (r.sameProduct && r.sameProductName) {
+        sameMap.set(r.sameProduct.value, r.sameProductName.value);
+      }
+    });
+    const sameProducts = [...sameMap.entries()]
+      .sort((a, b) => a[1].localeCompare(b[1], 'de'));
+
+    // 3) Fetch company & hazards in parallel
+    const sparqlCompany = `
+PREFIX schema: <http://schema.org/>
+SELECT ?name ?streetAddress ?postalCode ?addressLocality
+       ?telephone ?email ?fax
+WHERE {
+  VALUES ?company { <${companyIRI}> }
+  ?company schema:name ?name .
+  OPTIONAL {
+    ?company schema:address ?address .
+    ?address schema:streetAddress ?streetAddress .
+    ?address schema:postalCode ?postalCode .
+    ?address schema:addressLocality ?addressLocality .
+  }
+  OPTIONAL { ?company schema:telephone ?telephone . }
+  OPTIONAL { ?company schema:email ?email . }
+  OPTIONAL { ?company schema:fax ?fax . }
 }
 `;
 
-  try {
-    const res = await fetch(endpoint, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/sparql-query',
-        'Accept': 'application/sparql-results+json'
-      },
-      body: sparql
+    const sparqlHazards = `
+PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
+PREFIX schema: <http://schema.org/>
+SELECT ?statementName ?codeIRI WHERE {
+  VALUES ?product { <https://agriculture.ld.admin.ch/plant-protection/${id}> }
+  ?product :hasHazardStatement ?stmt .
+  ?stmt schema:name ?statementName .
+  FILTER(lang(?statementName)='de')
+  OPTIONAL { ?stmt :hasHazardStatementCode ?codeIRI . }
+}
+`;
+
+    const [compJson, hazJson] = await Promise.all([
+      fetchSparql(sparqlCompany),
+      fetchSparql(sparqlHazards)
+    ]);
+
+    // Company data
+    const compData = compJson.results.bindings[0] || {};
+
+    // Hazard data
+    const hazData = hazJson.results.bindings;
+    const hazardMap = new Map();
+    hazData.forEach(r => {
+      const txt = r.statementName.value;
+      const iri = r.codeIRI?.value;
+      if (!hazardMap.has(txt)) hazardMap.set(txt, iri);
     });
-    if (!res.ok) throw new Error(res.status + ' ' + res.statusText);
-    const json = await res.json();
-    const data = json.results.bindings;
-    if (!data.length) throw new Error('No data for id=' + id);
+    const hazards = Array.from(hazardMap, ([name, codeIRI]) => ({ name, codeIRI }));
 
-    // Pick first row for main fields
-    const first = data.find(r => r.productName && r.federalNo) || data[0];
-    const productName = first.productName.value;
-    const federalNo   = first.federalNo.value;
-    const countryName = first.countryName?.value || '—';
-    const companyIRI  = first.company?.value || null;
-    const companyName = first.companyName?.value || companyIRI || '—';
-
-    // Distinct product types
-    const classes = [...new Set(
-      data.map(r => r.producttypeLabel?.value).filter(Boolean)
-    )];
-
-    // Distinct same-products
-    const sameProductsMap = new Map();
-    data.forEach(r => {
-      if (r.sameProduct && r.sameProductName) {
-        sameProductsMap.set(r.sameProduct.value, r.sameProductName.value);
-      }
-    });
-    const sameProducts = [...sameProductsMap.entries()]
-      .sort((a, b) => a[1].localeCompare(b[1], 'de'));
-
-    // Build card
+    // 4) Build and render
     const el = document.createElement('div');
-    el.innerHTML = `
+    let html = `
       <header>
         <h1>${productName}</h1>
         <p class="subtitle">Eingetragenes Pflanzenschutzmittel</p>
-        <div>${classes.map(c => `<span class="tag">${c}</span>`).join('')}</div>
+        <div>${productTypes.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
       </header>
+
       <h2>Schnelle Fakten</h2>
       <dl>
         <dt>Eidgenössische Zulassungsnummer</dt><dd>${federalNo}</dd>
+        ${foreignNo ? `<dt>Ausländische Zulassungsnummer</dt><dd>${foreignNo}</dd>` : ''}
         <dt>Herkunftsland</dt><dd>${countryName}</dd>
-        <dt>Bewilligungsinhaber</dt>
-        <dd>${companyIRI
-          ? `<a href="${companyIRI}" target="_blank" rel="noopener">${companyName}</a>`
-          : companyName}
-        </dd>
       </dl>
+
+      <h2>Bewilligungsinhaber</h2>
+      <dl>
+        ${compData.name ? `
+          <dt>Firma</dt>
+          <dd><a href="${companyIRI}" target="_blank" rel="noopener">${compData.name.value}</a></dd>
+        ` : ''}
+        ${(compData.streetAddress || compData.postalCode || compData.addressLocality) ? `
+          <dt>Adresse</dt>
+          <dd>
+            ${[compData.streetAddress?.value, compData.postalCode?.value, compData.addressLocality?.value]
+               .filter(Boolean).join(', ')}
+          </dd>
+        ` : ''}
+        ${compData.telephone ? `
+          <dt>Telefon</dt>
+          <dd><a href="${compData.telephone.value}">${compData.telephone.value.replace('tel:', '')}</a></dd>
+        ` : ''}
+        ${compData.email ? `
+          <dt>Email</dt>
+          <dd><a href="mailto:${compData.email.value}">${compData.email.value}</a></dd>
+        ` : ''}
+        ${compData.fax ? `
+          <dt>Fax</dt>
+          <dd><a href="${compData.fax.value}">${compData.fax.value.replace('tel:', '')}</a></dd>
+        ` : ''}
+      </dl>
+
+      <h2>Gefahrenhinweise</h2>
+      ${hazards.length
+        ? `<ul>
+            ${hazards.map(h => {
+              if (h.codeIRI) {
+                const codeText = h.codeIRI.substring(h.codeIRI.lastIndexOf('/') + 1);
+                return `<li>
+                          <a href="${h.codeIRI}" target="_blank" rel="noopener">${codeText}:</a> ${h.name}
+                        </li>`;
+              } else {
+                return `<li>${h.name}</li>`;
+              }
+            }).join('')}
+           </ul>`
+        : `<p>Keine Gefahrenhinweise verfügbar.</p>`
+      }
+
       <h2>Gleichwertige Produkte unter anderem Namen</h2>
       <p style="margin:.6rem 0 1rem;color:#6b7280;font-size:.85rem">
         Die folgenden Produkte werden zwar unter anderem Namen verkauft,
@@ -103,9 +198,10 @@ WHERE {
       </p>
       <div id="sameProducts"></div>
     `;
+    el.innerHTML = html;
     $card.appendChild(el);
 
-    // Render same-product badges
+    // same-product badges
     const $same = $card.querySelector('#sameProducts');
     const tpl   = document.getElementById('badge-template');
     sameProducts.forEach(([iri, name]) => {
@@ -116,7 +212,7 @@ WHERE {
       $same.appendChild(a);
     });
 
-    // Show
+    // 5) Show
     $loading.classList.add('hidden');
     $card.classList.remove('hidden');
 
