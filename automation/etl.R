@@ -39,6 +39,47 @@ nodeset_to_dataframe <- function(nodeset) {
   return(df)
 }
 
+# functions to help deal with lists constructed from XML
+getLabels = function(x) {
+  descs <- x[names(x)=="Description"]
+  lang <- sapply(descs, attr, "language")
+  vals  <- sapply(descs, attr, "value")
+  setNames(as.list(vals), lang)
+}
+
+getPK = function(x) {
+  attr(x, "primaryKey")
+}
+
+getFK = function(x, variable, key = "primaryKey") {
+  unname(sapply(x[names(x)==variable], attr, key))
+}
+
+printLabels <- function(x) {
+  for (lang in c("de","fr","it","en","lt")) {
+    label <- x[[lang]]
+    if(!is.null(label) && !is.na(label) && label!="") {
+      triple(x[["subject"]], "rdfs:label", langstring(gsub("\"", "'", label), lang))
+    }
+  }
+}
+
+printProperty = function(x, property) {
+  for (i in x[[property]]) {
+    triple(x[["subject"]], property, i)
+  }
+}
+
+printList <- function(L, subjectclass, properties = NULL) {
+  for (i in L) {
+    triple(i[["subject"]], "a", subjectclass)
+    printLabels(i)
+    for (property in properties) {
+      printProperty(i, property)
+    }
+  }
+}
+
 # ------------------------------------------------------------------
 # DOWNLOAD THE SWISS PLANT PROTECTION REGISTRY AS AN XML FILE
 # ------------------------------------------------------------------
@@ -178,7 +219,6 @@ XML |>
   sapply(convert) |>
   t() |> data.frame(row.names = 1) -> cities
 
-
 # extract company elements from XML file
 company_xml <- xml_find_all(XML, "//PermissionHolder")
 
@@ -285,63 +325,42 @@ sink()
 
 # Function to convert *one* crop object to a better processable list
 convert <- function(x) {
-  parents <- sapply(x[names(x)=="Parent"], attr, "primaryKey")
-  descs <- x[names(x)=="Description"]
-  lang <- sapply(descs, attr, "language")
-  vals  <- sapply(descs, attr, "value")
   c(list(
-      id = attr(x, "primaryKey"),
-      parents = unname(parents)
-    ),
-    setNames(as.list(vals), lang)
+      subject = uri(file.path("crop",getPK(x)), base),
+      `:hasParentCropGroup` = uri(file.path("crop", getFK(x, "Parent")), base)
+    ), getLabels(x)
   )
 }
-
-# Read all crops
-crops = xml_find_all(XML, "//MetaData[@name='Culture']/Detail") |>
-  as_list() |> lapply(convert)
 
 # Write Turtle file
 sink("rdf/crops.ttl")
 cat(prefixes)
-for (crop in crops) {
-  subject <- uri(file.path("crop",crop[["id"]]), base)
-  triple(subject, "a", ":CropGroup")
-  for (lang in c("de","fr","it","en")) {
-    label <- crop[lang]
-    if(label!=""&!is.na(label)) {
-      triple(subject, "rdfs:label", langstring(label, lang))
-    }
-  }
-  for (parent in crop[["parents"]]) {
-    triple(subject, ":hasParentCropGroup", uri(file.path("crop", parent), base))
-  }
-}
+XML |>
+  xml_find_all("//MetaData[@name='Culture']/Detail") |>
+  as_list() |>
+  lapply(convert) |>
+  printList(":CropGroup", ":hasParentCropGroup")
 sink()
 
 # ------------------------------------------------------------------
 # Write data about pests
 # ------------------------------------------------------------------
 
-# extract all pests (we can re-use the convert function from before)
-pests <- xml_find_all(XML, "//MetaData[@name='Pest']/Detail") |>
-  as_list() |> lapply(convert)
+# Function to convert *one* crop object to a better processable list
+convert <- function(x) {
+  c(list(subject = uri(file.path("pest",getPK(x)), base)),
+    getLabels(x)
+  )
+}
 
 # Write Turtle file
 sink("rdf/pests.ttl")
 cat(prefixes)
-for (pest in pests) {
-  subject <- uri(file.path("pest",pest[["id"]]), base)
-  triple(subject, "a", ":CropStressor")
-  for (lang in c("de","fr","it","en", "lt")) {
-    label <- pest[lang]
-    if(label!=""&!is.na(label)) {
-      triple(subject, "rdfs:label", langstring(gsub("\"", "'", label), lang))
-    }
-  }
-}
+XML |>
+  xml_find_all("//MetaData[@name='Pest']/Detail") |>
+  as_list() |> lapply(convert) |>
+  printList(":CropStressor")
 sink()
-
 
 # ------------------------------------------------------------------
 # Write data about substances
@@ -349,37 +368,21 @@ sink()
 
 # Function to convert *one* crop object to a better processable list
 convert <- function(x) {
-  descs <- x[names(x)=="Description"]
-  lang <- sapply(descs, attr, "language")
-  vals  <- sapply(descs, attr, "value")
   c(list(
-    id = attr(x, "primaryKey"),
-    iupac = attr(x, "iupacName")
-  ),
-  setNames(as.list(vals), lang)
+    subject = uri(file.path("substance",getPK(x)), base),
+    `:iupac` = literal(attr(x, "iupacName"))
+  ), getLabels(x)
   )
 }
 
-# extract all substances (we can re-use the convert function from before)
-substances <- xml_find_all(XML, "//MetaData[@name='Substance']/Detail") |>
-  as_list() |> lapply(convert)
-
-# Write Turtle file
 sink("rdf/substances.ttl")
 cat(prefixes)
-for (substance in substances) {
-  subject <- uri(file.path("substance", substance[["id"]]), base)
-  triple(subject, "a", ":Substance")
-  for (lang in c("de","fr","it","en", "lt")) {
-    label <- substance[lang]
-    if(label!=""&!is.na(label)) {
-      triple(subject, "rdfs:label", langstring(gsub("\"", "'", label), lang))
-    }
-  }
-  triple(subject, ":iupac", literal(substance[["iupac"]]))
-}
+XML |>
+  xml_find_all("//MetaData[@name='Substance']/Detail") |>
+  as_list() |>
+  lapply(convert) |>
+  printList(":Substance", ":iupac")
 sink()
-
 
 # ------------------------------------------------------------------
 # Write data about Application comments and 
@@ -387,71 +390,53 @@ sink()
 
 # Function to convert *one* crop object to a better processable list
 convert <- function(x) {
-  descs <- x[names(x)=="Description"]
-  lang <- sapply(descs, attr, "language")
-  vals  <- sapply(descs, attr, "value")
-  c(list(
-    id = attr(x, "primaryKey"),
-    iupac = attr(x, "iupacName")
-  ),
-  setNames(as.list(vals), lang)
-  )
+  c(list(subject = uri(file.path("note", getPK(x)), base)), getLabels(x))
 }
-
-# extract all substances (we can re-use the convert function from before)
-L <- xml_find_all(XML, "//MetaData[@name='Obligation']/Detail") |>
-  as_list() |>
-  lapply(convert)
 
 # Write Turtle file
 sink("rdf/obligations.ttl")
 cat(prefixes)
-for (object in L) {
-  subject <- uri(file.path("note", object[["id"]]), base)
-  triple(subject, "a", ":ActionNotice, :Obligation")
-  for (lang in c("de","fr","it","en")) {
-    label <- object[[lang]]
-    if(label!="" & !is.na(label) & !is.null(label)) {
-      triple(subject, "rdfs:label", langstring(gsub("\"", "'", label), lang))
-    }
-  }
-}
+XML |> xml_find_all("//MetaData[@name='Obligation']/Detail") |>
+  as_list() |>
+  lapply(convert) |>
+  printList(":ActionNotice, :Obligation")
 sink()
 
 # ------------------------------------------------------------------
 # Write data about indications
 # ------------------------------------------------------------------
 
-convert = function(x) {
+convert = function(x, parallelimport = FALSE) {
+  
+  # save indications
   indication = x$ProductInformation$Indication
+  
+  # generate an anonymous hash-uuid-URI that will always be the same from the same attributes
+  subject = uri(uuid::UUIDfromName("acdb7485-3f2b-45f0-a783-01133f235c2a", rlang::hash(indication)), base)
+  
   list(
-    id = attr(x, "wNbr"),
-    obligations = unname(sapply(indication[names(indication)=="Obligation"], attr, "primaryKey")),
-    pests = unname(sapply(indication[names(indication)=="Pest"], attr, "primaryKey")),
-    crops = unname(sapply(indication[names(indication)=="Culture"], attr, "primaryKey"))
+    subject          = subject,
+    `:involves`      = if(parallelimport) {
+      uri(attr(x, "id"), base)
+    } else {
+      uri(paste0("W-",attr(x, "wNbr")), base)
+    },
+    `:isConcernedBy` = uri(file.path("note",getFK(indication, "Obligation")), base),
+    `:mitigates`     = uri(file.path("pest",getFK(indication, "Pest")), base),
+    `:protects`      = uri(file.path("crop",getFK(indication, "Culture")), base)
   )
 }
 
-L <- xml_find_all(XML, "//Product") |>
-  as_list() |> lapply(convert)
-
 sink("rdf/indications.ttl")
 cat(prefixes)
-for (object in L) {
-  uuid = uuid::UUIDfromName("acdb7485-3f2b-45f0-a783-01133f235c2a", paste0(object,collapse = "-"))
-  subject = uri(uuid, base)
-  product = uri(paste0("W-", object$id), base)
-  triple(subject, "a", ":Treatment")
-  triple(subject, ":involves", product)
-  for (obligation in object$obligations) {
-    triple(subject, ":isConcernedBy", uri(file.path("note",obligation), base))
-  }
-  for (pest in object$pests) {
-    triple(subject, ":mitigates", uri(file.path("pest",pest), base))
-  }
-  for (crop in object$crops) {
-    triple(subject, ":protects", uri(file.path("crop",crop), base))
-  }
-}
+XML |>
+  xml_find_all("//Product") |>
+  as_list() |>
+  lapply(convert) |>
+  printList(":Treatment", properties = c(":involves", ":isConcernedBy", ":mitigates", ":protects"))
+XML |>
+  xml_find_all("//Parallelimport") |>
+  as_list() |>
+  lapply(convert, TRUE) |>
+  printList(":Treatment", properties = c(":involves", ":isConcernedBy", ":mitigates", ":protects"))
 sink()
-
