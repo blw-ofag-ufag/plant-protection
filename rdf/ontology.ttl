@@ -161,6 +161,7 @@ srppp:BioticStressor a owl:Class ;
 srppp:ChemicalCropProtectionProduct a owl:Class ;
     rdfs:label "Chemisches Pflanzenschutzmittel"@de,
         "Chemical crop protection product"@en ;
+    rdfs:subClassOf srppp:CropProtectionProduct, srppp:ChemicalProduct ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( srppp:CropProtectionProduct srppp:ChemicalProduct ) ] .
 
