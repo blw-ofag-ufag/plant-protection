@@ -440,3 +440,7 @@ XML |>
   lapply(convert, TRUE) |>
   printList(":Treatment", properties = c(":involves", ":isConcernedBy", ":mitigates", ":protects"))
 sink()
+
+
+
+

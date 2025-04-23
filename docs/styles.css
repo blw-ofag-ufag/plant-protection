@@ -1,0 +1,132 @@
+/* style.css */
+
+/* Reset & base ------------------------------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    background: #f9fafb;
+    color: #111827;
+    line-height: 1.45;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 3rem 1rem;
+  }
+  :root {
+    --brand: #047857;          /* emerald 600 */
+    --brand-light: #d1fae5;    /* emerald 100 */
+    --stroke: #e5e7eb;         /* zinc 200 */
+    --card-bg: #ffffff;
+  }
+  
+  /* Card --------------------------------------------------------------- */
+  .card {
+    width: min(60rem, 100%);
+    background: var(--card-bg);
+    border: 1px solid var(--stroke);
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,.04);
+    padding: 2.5rem 3rem;
+    animation: fade .4s ease;
+  }
+  @keyframes fade {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: none; }
+  }
+  
+  /* Typography --------------------------------------------------------- */
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    color: var(--brand);
+  }
+  .subtitle {
+    color: #6b7280;
+    font-size: .95rem;
+    margin-bottom: 1.5rem;
+  }
+  h2 {
+    margin-top: 2.5rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: .02em;
+    color: #374151;
+  }
+  
+  /* Tag / badge -------------------------------------------------------- */
+  .tag, .badge {
+    display: inline-block;
+    border-radius: 9999px;
+    padding: .25rem .75rem;
+    font-size: .8rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin: .25rem .35rem .35rem 0;
+    white-space: nowrap;
+  }
+  .tag {
+    background: var(--brand-light);
+    color: var(--brand);
+  }
+  .badge {
+    background: #e0e7ff;
+    color: #3730a3;
+    transition: .15s;
+  }
+  .badge:hover {
+    background: #c7d2fe;
+    color: #312e81;
+  }
+  
+  /* Definition list grid ---------------------------------------------- */
+  dl {
+    display: grid;
+    grid-template-columns: 11rem 1fr;
+    row-gap: .75rem;
+    column-gap: 1.5rem;
+    margin-top: 1.75rem;
+  }
+  dt {
+    color: #4b5563;
+    font-weight: 500;
+  }
+  dd a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  dd a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Utility ------------------------------------------------------------ */
+  #loading {
+    font-size: 1rem;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+  #loading svg {
+    width: 20px;
+    height: 20px;
+    animation: spin .8s linear infinite;
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  .hidden {
+    display: none !important;
+  }
+  .error {
+    color: #b91c1c;
+    background: #fef2f2;
+    padding: 1rem 1.25rem;
+    border: 1px solid #fecaca;
+    border-radius: .75rem;
+  }
+  

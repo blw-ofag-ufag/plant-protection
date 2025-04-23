@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Plant-Protection Product Profile</title>
+
+  <!-- Google Font ------------------------------------------------------ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet ------------------------------------------------- -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Loading indicator ------------------------------------------------- -->
+  <div id="loading">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10" opacity=".25"/>
+      <path d="M22 12a10 10 0 0 1-10 10"/>
+    </svg>
+    Loading product …
+  </div>
+
+  <!-- Main card (injected via JS) -------------------------------------- -->
+  <article class="card hidden" id="card"></article>
+
+  <!-- Template helper --------------------------------------------------- -->
+  <template id="badge-template">
+    <a class="badge" target="_self"></a>
+  </template>
+
+  <!-- Script ------------------------------------------------------------- -->
+  <script src="main.js"></script>
+</body>
+</html>
