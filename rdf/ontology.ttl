@@ -838,16 +838,28 @@ srppp:hasComponentSubstance a owl:ObjectProperty ;
     rdfs:range srppp:Substance .
 
 srppp:hasCountryOfOrigin a owl:ObjectProperty ;
-    rdfs:label "hat Herkunftsland"@de,
-        "has country of origin"@en ;
+    rdfs:label "Herkunftsland"@de,
+        "Country of origin"@en ;
     rdfs:comment "Diese Eigenschaft gibt das Land an, aus dem das Produkt stammt."@de,
         "This property indicates the country where the product originates."@en ;
     rdfs:domain srppp:Product ;
     rdfs:range <https://schema.org/Country> .
 
+srppp:hasDangerSymbol a owl:ObjectProperty ;
+    rdfs:label "Gefahrensymbol"@de,
+        "Danger symbol"@en ;
+    rdfs:domain srppp:Product ;
+    rdfs:range srppp:DangerSymbol .
+
+srppp:hasFormulationCode a owl:ObjectProperty ;
+    rdfs:label "Formulierungscode"@de,
+        "Formulation code"@en ;
+    rdfs:domain srppp:FormulationCode ;
+    rdfs:range srppp:Product .
+
 srppp:hasHazardStatement a owl:ObjectProperty ;
-    rdfs:label "hat Sicherheitshinweis für Gefahrenstoff"@de,
-        "has hazard statements"@en ;
+    rdfs:label "Sicherheitshinweis für Gefahrenstoff"@de,
+        "Hazard statement"@en ;
     rdfs:domain srppp:Product ;
     rdfs:range srppp:HazardStatement .
 
@@ -858,13 +870,19 @@ srppp:hasParentCropGroup a owl:ObjectProperty ;
     rdfs:range srppp:CropGroup .
 
 srppp:hasPermissionHolder a owl:ObjectProperty ;
-    rdfs:label "hat Verkaufsbewilligungshalter"@de,
-        "has permission holder"@en ;
+    rdfs:label "Verkaufsbewilligungshalter"@de,
+        "Permission holder"@en ;
     rdfs:comment "Diese Eigenschaft verknüpft ein Produkt mit der Firma, die berechtigt ist, es zu verkaufen."@de,
         "This property links a product to the company authorized to sell it."@en ;
     rdfs:domain srppp:Product ;
     rdfs:range <https://schema.org/Organization> ;
     owl:inverseOf srppp:holdsPermissionToSell .
+
+srppp:hasSignalWords a owl:ObjectProperty ;
+    rdfs:label "Signalwort"@de,
+        "Signal word"@en ;
+    rdfs:domain srppp:Product ;
+    rdfs:range srppp:SignalWord .
 
 srppp:hasUnit a owl:ObjectProperty ;
     rdfs:label "hat Einheit"@de,
@@ -941,8 +959,8 @@ srppp:isDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:range wd:Q16521 .
 
 srppp:isInvolvedIn a owl:ObjectProperty ;
-    rdfs:label "ist involviert in"@de,
-        "is involved in"@en ;
+    rdfs:label "Behandlung"@de,
+        "Treatment"@en ;
     rdfs:domain srppp:Product ;
     rdfs:range srppp:Treatment ;
     owl:inverseOf srppp:involves .
