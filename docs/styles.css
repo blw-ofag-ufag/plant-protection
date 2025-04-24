@@ -97,9 +97,19 @@
     transition: .15s;
   }
   .badge:hover {
-    background: #c7d2fe;
-    color: #312e81;
+    background: #312e81;
+    color: #ffffff;
   }
+
+  /* Darken tags on hover like badges */
+.tag {
+  transition: background .15s, color .15s;
+}
+.tag:hover {
+  background: var(--brand);
+  color: #ffffff;
+}
+
   
   /* Definition list grid ---------------------------------------------- */
   dl {
@@ -147,4 +157,5 @@
     border: 1px solid #fecaca;
     border-radius: .75rem;
   }
+  
   

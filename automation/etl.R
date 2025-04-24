@@ -196,8 +196,40 @@ for (i in 1:nrow(products)) {
     }
   }
 }
-
 sink()
+rm(i,j,predicate,subject,object,company,classes)
+
+# other product information (not in SRPPP package)
+convert = function(x, parallelimport = FALSE) {
+  PI = x[["ProductInformation"]]
+  list(
+    subject = if(parallelimport) {
+      uri(attr(x, "id"), base)
+    } else {
+      uri(paste0("W-",attr(x, "wNbr")), base)
+    },
+    `:hasFormulationCode` = uri(file.path("code", getFK(PI, "FormulationCode")), base),
+    `:hasHazardStatement` = c(uri(file.path("code", getFK(PI, "CodeR")), base),
+                              uri(file.path("code", getFK(PI, "CodeS")), base)),
+    `:hasDangerSymbol`    = uri(file.path("code", getFK(PI, "DangerSymbol")), base),
+    `:hasSignalWords`     = uri(file.path("code", getFK(PI, "SignalWords")), base)
+  )
+}
+
+sink("rdf/products.ttl", append = T)
+cat(prefixes)
+XML |>
+  xml_find_all("//Product") |>
+  as_list() |>
+  lapply(convert) |>
+  printList(":Product", properties = c(":hasFormulationCode", ":hasHazardStatement", ":hasDangerSymbol", ":hasSignalWords"))
+XML |>
+  xml_find_all("//Parallelimport") |>
+  as_list() |>
+  lapply(convert, TRUE) |>
+  printList(":Product", properties = c(":hasFormulationCode", ":hasHazardStatement", ":hasDangerSymbol", ":hasSignalWords"))
+sink()
+
 
 # ------------------------------------------------------------------
 # WRITE COMPANY (PERMISSION HOLDER) INFORMATION
@@ -285,38 +317,73 @@ for (i in 1:nrow(companies)) {
   }
   
 }
-
 sink()
+rm(companies, cities, company_xml, email_from_fax, email_from_phone, email_regex, address)
 
 # ------------------------------------------------------------------
 # Write data about hazard codes (Code R and Code S)
 # ------------------------------------------------------------------
 
-CodeR = unique(SRPPP$CodeR[,-1])
-colnames(CodeR) <- c("id", "code", "de", "fr", "it", "en")
-CodeS = unique(SRPPP$CodeS[,-1])
-colnames(CodeS) <- c("id", "code", "de", "fr", "it", "en")
-codes = data.frame(rbind(CodeR, CodeS), type = c(rep(":CodeR", nrow(CodeR)), rep(":CodeS", nrow(CodeS))))
-rm(CodeR, CodeS)
+# CodeR = unique(SRPPP$CodeR[,-1])
+# colnames(CodeR) <- c("id", "code", "de", "fr", "it", "en")
+# CodeS = unique(SRPPP$CodeS[,-1])
+# colnames(CodeS) <- c("id", "code", "de", "fr", "it", "en")
+# codes = data.frame(rbind(CodeR, CodeS), type = c(rep(":CodeR", nrow(CodeR)), rep(":CodeS", nrow(CodeS))))
+# rm(CodeR, CodeS)
+# 
+# sink("rdf/codes.ttl")
+# cat(prefixes)
+# for (i in 1:nrow(codes)) {
+#   subject = uri(file.path("code", codes[i,1]),base)
+#   triple(subject, "a", codes[i,"type"])
+#   if(!is.na(codes[i,2])) triple(subject, ":hasHazardStatementCode", literal(codes[i,2]))
+#   for (lang in c("de","fr","it","en")) {
+#     label = codes[i,lang]
+#     if(label!="") triple(subject, "rdfs:label", langstring(label, lang = lang))
+#   }
+#   J = products[products$pNbr %in% unlist(SRPPP$CodeR[SRPPP$CodeR$desc_pk==as.numeric(codes[i,1]),"pNbr"]),"hasFederalAdmissionNumber"]
+#   for (j in J) {
+#     triple(subject, ":appliesToProduct", uri(j, base))
+#   }
+# }
+# sink()
+# rm(codes,i,j,J,label,lang,property,subject,x)
 
-sink("rdf/hazard-statements.ttl")
+# ------------------------------------------------------------------
+# WRITE VARIOUS CODES
+# ------------------------------------------------------------------
 
-cat(prefixes)
-
-for (i in 1:nrow(codes)) {
-  subject = uri(file.path("code", codes[i,1]),base)
-  triple(subject, "a", codes[i,"type"])
-  if(!is.na(codes[i,2])) triple(subject, ":hasHazardStatementCode", literal(codes[i,2]))
-  for (lang in c("de","fr","it","en")) {
-    label = codes[i,lang]
-    if(label!="") triple(subject, "rdfs:label", langstring(label, lang = lang))
-  }
-  J = products[products$pNbr %in% unlist(SRPPP$CodeR[SRPPP$CodeR$desc_pk==as.numeric(codes[i,1]),"pNbr"]),"hasFederalAdmissionNumber"]
-  for (j in J) {
-    triple(subject, ":appliesToProduct", uri(j, base))
-  }
+# Function to convert *one* crop object to a better processable list
+convert <- function(x) {
+  c(list(
+    subject = uri(file.path("code", getPK(x)), base)),
+    `:hasHazardStatementCode` = literal(attr(x$Description$Code, "value")),
+    getLabels(x))
 }
 
+# Write Turtle file
+sink("rdf/codes.ttl")
+cat(prefixes)
+XML |> xml_find_all("//MetaData[@name='CodeR']/Detail") |>
+  as_list() |>
+  lapply(convert) |>
+  printList(":CodeR", properties = ":hasHazardStatementCode")
+XML |> xml_find_all("//MetaData[@name='CodeS']/Detail") |>
+  as_list() |>
+  lapply(convert) |>
+  printList(":CodeS", properties = ":hasHazardStatementCode")
+XML |> xml_find_all("//MetaData[@name='FormulationCode']/Detail") |>
+  as_list() |>
+  lapply(convert) |>
+  printList(":FormulationCode")
+XML |> xml_find_all("//MetaData[@name='DangerSymbol']/Detail") |>
+  as_list() |>
+  lapply(convert) |>
+  printList(":DangerSymbol", properties = ":hasHazardStatementCode")
+XML |> xml_find_all("//MetaData[@name='SignalWords']/Detail") |>
+  as_list() |>
+  lapply(convert) |>
+  printList(":SignalWords")
 sink()
 
 # ------------------------------------------------------------------
@@ -440,7 +507,4 @@ XML |>
   lapply(convert, TRUE) |>
   printList(":Treatment", properties = c(":involves", ":isConcernedBy", ":mitigates", ":protects"))
 sink()
-
-
-
 
