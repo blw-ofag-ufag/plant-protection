@@ -1,2751 +1,2751 @@
+@prefix : <https://agriculture.ld.admin.ch/plant-protection/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix srppp: <https://agriculture.ld.admin.ch/plant-protection/> .
 @prefix substance: <https://agriculture.ld.admin.ch/plant-protection/substance/> .
 
-substance:1025 a srppp:Substance ;
+substance:1025 a :Substance ;
     rdfs:label "Piperonyl butoxid"@de,
         "pipéronyl butoxide"@fr,
         "Piperonilbutossido"@it ;
-    srppp:iupac "2-(2-butoxyethoxy)ethyl 6-propypiperonyl ether" .
+    :iupac "2-(2-butoxyethoxy)ethyl 6-propypiperonyl ether" .
 
-substance:1027 a srppp:Substance ;
+substance:1027 a :Substance ;
     rdfs:label "Paraffinöl"@de,
         "huile de paraffine"@fr,
         "Olio di paraffina"@it .
 
-substance:1034 a srppp:Substance ;
+substance:1034 a :Substance ;
     rdfs:label "Metaldehyd"@de,
         "métaldéhyde"@fr,
         "Metaldeide"@it ;
-    srppp:iupac "r-2,c-4,c-6,c-8-tetramethyl-1,3,5,7-tetroxocane" .
+    :iupac "r-2,c-4,c-6,c-8-tetramethyl-1,3,5,7-tetroxocane" .
 
-substance:106 a srppp:Substance ;
+substance:106 a :Substance ;
     rdfs:label "Clethodim"@de,
         "cléthodime"@fr,
         "Clethodim"@it ;
-    srppp:iupac "(+/-)-2-[(E)-1-[(E)-3-chloroallyloxyimino]propyl]-5-[2-(ethylthio)propyl]-3-hydroxycyclohex-2-enone" .
+    :iupac "(+/-)-2-[(E)-1-[(E)-3-chloroallyloxyimino]propyl]-5-[2-(ethylthio)propyl]-3-hydroxycyclohex-2-enone" .
 
-substance:1067 a srppp:Substance ;
+substance:1067 a :Substance ;
     rdfs:label "MCPB"@de,
         "MCPB"@fr,
         "MCPB"@it ;
-    srppp:iupac "4-(4-chloro-o-tolyloxy)butyric acid" .
+    :iupac "4-(4-chloro-o-tolyloxy)butyric acid" .
 
-substance:1069 a srppp:Substance ;
+substance:1069 a :Substance ;
     rdfs:label "Metazachlor"@de,
         "Metazachlor"@en,
         "métazachlore"@fr,
         "Metazaclor"@it ;
-    srppp:iupac "2-chloro-N-(pyrazol-1-ylmethyl)acet-2',6'-xylidide" .
+    :iupac "2-chloro-N-(pyrazol-1-ylmethyl)acet-2',6'-xylidide" .
 
-substance:107 a srppp:Substance ;
+substance:107 a :Substance ;
     rdfs:label "Clofentezine"@de,
         "clofentézine"@fr,
         "Clofentezine"@it ;
-    srppp:iupac "3,6-bis(2-chlorophenyl)-1,2,4,5-tetrazine" .
+    :iupac "3,6-bis(2-chlorophenyl)-1,2,4,5-tetrazine" .
 
-substance:1071 a srppp:Substance ;
+substance:1071 a :Substance ;
     rdfs:label "Metobromuron"@de,
         "métobromuron"@fr,
         "Metobromuron"@it ;
-    srppp:iupac "3-(4-bromophenyl)-1-methoxy-1-methylurea" .
+    :iupac "3-(4-bromophenyl)-1-methoxy-1-methylurea" .
 
-substance:1075 a srppp:Substance ;
+substance:1075 a :Substance ;
     rdfs:label "Pyridate"@de,
         "pyridate"@fr,
         "Piridato"@it ;
-    srppp:iupac "6-chloro-3-phenylpyridazin-4-yl S-octyl thiocarbonate" .
+    :iupac "6-chloro-3-phenylpyridazin-4-yl S-octyl thiocarbonate" .
 
-substance:108 a srppp:Substance ;
+substance:108 a :Substance ;
     rdfs:label "Clomazone"@de,
         "clomazone"@fr,
         "Clomazone"@it ;
-    srppp:iupac "2-(2-chlorobenzyl)-4,4-dimethyl-1,2-oxazolidin-3-one" .
+    :iupac "2-(2-chlorobenzyl)-4,4-dimethyl-1,2-oxazolidin-3-one" .
 
-substance:1098 a srppp:Substance ;
+substance:1098 a :Substance ;
     rdfs:label "Z9-12 Ac"@de,
         "Z9-12 Ac"@fr,
         "Z9-12 Ac"@it ;
-    srppp:iupac "(Z)-dodec-9-en-1-yl acetate" .
+    :iupac "(Z)-dodec-9-en-1-yl acetate" .
 
-substance:110 a srppp:Substance ;
+substance:110 a :Substance ;
     rdfs:label "Clopyralid"@de,
         "clopyralide"@fr,
         "Clopiralid"@it ;
-    srppp:iupac "3,6-dichloropyridine-2-carboxylic acid" .
+    :iupac "3,6-dichloropyridine-2-carboxylic acid" .
 
-substance:1106 a srppp:Substance ;
+substance:1106 a :Substance ;
     rdfs:label "1-Naphthylacetamid"@de,
         "1-Naphthylacetamide (1-NAD)"@en,
         "1-naphthyleacétamide"@fr,
         "1-naftilacetammide"@it ;
-    srppp:iupac "2-(1-naphthyl)acetamide" .
+    :iupac "2-(1-naphthyl)acetamide" .
 
-substance:1109 a srppp:Substance ;
+substance:1109 a :Substance ;
     rdfs:label "Aluminiumfosetyl (Fosetyl-Al)"@de,
         "fosétyl-aluminium"@fr,
         "Fosetil alluminio (Fosetyl-Al)"@it ;
-    srppp:iupac "Aluminium-tris-(O-ethylphosphonat)" .
+    :iupac "Aluminium-tris-(O-ethylphosphonat)" .
 
-substance:1110 a srppp:Substance ;
+substance:1110 a :Substance ;
     rdfs:label "Aluminiumphosphid"@de,
         "phosphure d'aluminium"@fr,
         "Fosfuro di alluminio"@it ;
-    srppp:iupac "aluminium phosphide" .
+    :iupac "aluminium phosphide" .
 
-substance:1137 a srppp:Substance ;
+substance:1137 a :Substance ;
     rdfs:label "Cloquintocet-mexyl"@de,
         "cloquintocet-mexyl"@fr,
         "Cloquintocet-mexyl"@it ;
-    srppp:iupac "1-methylhexyl (5-chloroquinolin-8-yloxy)acetate" .
+    :iupac "1-methylhexyl (5-chloroquinolin-8-yloxy)acetate" .
 
-substance:1138 a srppp:Substance ;
+substance:1138 a :Substance ;
     rdfs:label "Cycloxydim"@de,
         "cycloxydime"@fr,
         "Ciclossidim"@it ;
-    srppp:iupac "(+/-)-2-[1-(ethoxyimino)butyl]-3-hydroxy-5-thian-3-ylcyclohex-2-enone" .
+    :iupac "(+/-)-2-[1-(ethoxyimino)butyl]-3-hydroxy-5-thian-3-ylcyclohex-2-enone" .
 
-substance:114 a srppp:Substance ;
+substance:114 a :Substance ;
     rdfs:label "Cymoxanil"@de,
         "cymoxanil"@fr,
         "Cimoxanil"@it ;
-    srppp:iupac "1-(2-cyano-2-methoxyiminoacetyl)-3-ethylurea" .
+    :iupac "1-(2-cyano-2-methoxyiminoacetyl)-3-ethylurea" .
 
-substance:1147 a srppp:Substance ;
+substance:1147 a :Substance ;
     rdfs:label "Diflufenican"@de,
         "diflufénican"@fr,
         "Diflufenican"@it ;
-    srppp:iupac "2',4'-difluoro-2-(alpha,alpha,alpha-trifluoro-m-tolyloxy)nicotinanilide" .
+    :iupac "2',4'-difluoro-2-(alpha,alpha,alpha-trifluoro-m-tolyloxy)nicotinanilide" .
 
-substance:115 a srppp:Substance ;
+substance:115 a :Substance ;
     rdfs:label "Cypermethrin"@de,
         "cyperméthrine"@fr,
         "Cipermetrina"@it ;
-    srppp:iupac "(RS)-alpha-cyano-3-phenoxybenzyl (1RS,3RS,1RS,3SR)-3-(2,2-dichlorovinyl)-2,2-dimethylcyclopropanecarboxylate" .
+    :iupac "(RS)-alpha-cyano-3-phenoxybenzyl (1RS,3RS,1RS,3SR)-3-(2,2-dichlorovinyl)-2,2-dimethylcyclopropanecarboxylate" .
 
-substance:1155 a srppp:Substance ;
+substance:1155 a :Substance ;
     rdfs:label "Dithianon"@de,
         "dithianon"@fr,
         "Ditianon"@it ;
-    srppp:iupac "5,10-dihydro-5,10-dioxonaphtho[2,3-b]-1,4-dithi-in-2,3-dicarbonitrile" .
+    :iupac "5,10-dihydro-5,10-dioxonaphtho[2,3-b]-1,4-dithi-in-2,3-dicarbonitrile" .
 
-substance:1162 a srppp:Substance ;
+substance:1162 a :Substance ;
     rdfs:label "Fenpyroximate"@de,
         "fenpyroximate"@fr,
         "Fenpiroximate"@it ;
-    srppp:iupac "tert-butyl (E)-alpha-(1,3-dimethyl-5-phenoxypyrazol-4-ylmethyleneamino-oxy)-p-toluate" .
+    :iupac "tert-butyl (E)-alpha-(1,3-dimethyl-5-phenoxypyrazol-4-ylmethyleneamino-oxy)-p-toluate" .
 
-substance:1164 a srppp:Substance ;
+substance:1164 a :Substance ;
     rdfs:label "Fettsäuren (Kaliumsalze)"@de,
         "acides gras (sous forme du sels de potassium)"@fr,
         "Acidi grassi (sali di potassio)"@it ;
-    srppp:iupac "fatty acids" .
+    :iupac "fatty acids" .
 
-substance:1168 a srppp:Substance ;
+substance:1168 a :Substance ;
     rdfs:label "Flurochloridon"@de,
         "flurochloridone"@fr,
         "Flurocloridone"@it ;
-    srppp:iupac "2-Pyrrolidon-3-chloro-4-chloromethyl-1-(3-trifluoromethylphenyl)" .
+    :iupac "2-Pyrrolidon-3-chloro-4-chloromethyl-1-(3-trifluoromethylphenyl)" .
 
-substance:1184 a srppp:Substance ;
+substance:1184 a :Substance ;
     rdfs:label "Kupfer (als Kalkpräparat, Bordeaux-Brühe)"@de,
         "cuivre (sous forme de bouillie bordelaise)"@fr,
         "Rame (sotto forma di preparati a base di calce, poltiglia bordolese)"@it ;
-    srppp:iupac "A mixture of calcium hydroxide and copper(II) sulfate" .
+    :iupac "A mixture of calcium hydroxide and copper(II) sulfate" .
 
-substance:1187 a srppp:Substance ;
+substance:1187 a :Substance ;
     rdfs:label "Lambda-Cyhalothrin"@de,
         "lambda-cyhalothrine"@fr,
         "Lambda-Cialotrina"@it ;
-    srppp:iupac "alpha-cyano-3-phenoxybenzyl 3-(2-chloro-3,3,3-trifluoropropenyl)-2,2- dimethylcyclopropanecarboxylate, a 1:1 mixture of the (Z)-(1R,3R), S-ester and (Z)-(1S, 3S),  R-ester" .
+    :iupac "alpha-cyano-3-phenoxybenzyl 3-(2-chloro-3,3,3-trifluoropropenyl)-2,2- dimethylcyclopropanecarboxylate, a 1:1 mixture of the (Z)-(1R,3R), S-ester and (Z)-(1S, 3S),  R-ester" .
 
-substance:1189 a srppp:Substance ;
+substance:1189 a :Substance ;
     rdfs:label "Magnesiumphosphid"@de,
         "phosphure de magnésium"@fr,
         "Magnesio fosfuro"@it ;
-    srppp:iupac "-" .
+    :iupac "-" .
 
-substance:119 a srppp:Substance ;
+substance:119 a :Substance ;
     rdfs:label "Daminozide"@de,
         "daminozide"@fr,
         "Daminozide"@it ;
-    srppp:iupac "N-dimethylaminosuccinamic acid" .
+    :iupac "N-dimethylaminosuccinamic acid" .
 
-substance:1196 a srppp:Substance ;
+substance:1196 a :Substance ;
     rdfs:label "Metsulfuron-methyl"@de,
         "metsulfuron-méthyl"@fr,
         "Metsulfuron-metile"@it ;
-    srppp:iupac "methyl-2-[[[[(4-methoxy-6-methyl-1,3,5-triazin-zyl)-amino]carbonyl]amino]sulfonil]benzoate" .
+    :iupac "methyl-2-[[[[(4-methoxy-6-methyl-1,3,5-triazin-zyl)-amino]carbonyl]amino]sulfonil]benzoate" .
 
-substance:1200 a srppp:Substance ;
+substance:1200 a :Substance ;
     rdfs:label "Napropamide"@de,
         "napropamide"@fr,
         "Napropamide"@it ;
-    srppp:iupac "(RS)-N,N-diethyl-2-(1-naphthyloxy)propionamide" .
+    :iupac "(RS)-N,N-diethyl-2-(1-naphthyloxy)propionamide" .
 
-substance:1204 a srppp:Substance ;
+substance:1204 a :Substance ;
     rdfs:label "Netz- und Haftmittel"@de,
         "mouillants et adhésifs"@fr,
         "umidificante e adesivante"@it ;
-    srppp:iupac "-" .
+    :iupac "-" .
 
-substance:1218 a srppp:Substance ;
+substance:1218 a :Substance ;
     rdfs:label "Clodinafop-propargyl"@de,
         "clodinafop-propargyl"@fr,
         "Clodinafop-propargyl"@it ;
-    srppp:iupac "prop-2-ynyl (R)-2-[4-(5-chloro-3-fluoropyridin-2-yloxy)phenoxypropionate" .
+    :iupac "prop-2-ynyl (R)-2-[4-(5-chloro-3-fluoropyridin-2-yloxy)phenoxypropionate" .
 
-substance:1221 a srppp:Substance ;
+substance:1221 a :Substance ;
     rdfs:label "Prosulfocarb"@de,
         "prosulfocarbe"@fr,
         "Prosulfocarb"@it ;
-    srppp:iupac "S-benzyl dipropylthiocarbamate" .
+    :iupac "S-benzyl dipropylthiocarbamate" .
 
-substance:1224 a srppp:Substance ;
+substance:1224 a :Substance ;
     rdfs:label "Quassiaextrakt"@de,
         "extrait de quassia"@fr,
         "Estratto di quassia"@it ;
-    srppp:iupac "-" .
+    :iupac "-" .
 
-substance:1226 a srppp:Substance ;
+substance:1226 a :Substance ;
     rdfs:label "Rapsöl"@de,
         "huile de colza"@fr,
         "Olio di colza"@it ;
-    srppp:iupac "rapeseed oil" .
+    :iupac "rapeseed oil" .
 
-substance:1239 a srppp:Substance ;
+substance:1239 a :Substance ;
     rdfs:label "Tebufenpyrad"@de,
         "tébufenpyrad"@fr,
         "Tebufenpirad"@it ;
-    srppp:iupac "N-(4-tert-butylbenzyl)-4-chloro-3-ethyl-1-methylpyrazole-5-carboxamide" .
+    :iupac "N-(4-tert-butylbenzyl)-4-chloro-3-ethyl-1-methylpyrazole-5-carboxamide" .
 
-substance:124 a srppp:Substance ;
+substance:124 a :Substance ;
     rdfs:label "Dicamba"@de,
         "dicamba"@fr,
         "Dicamba"@it ;
-    srppp:iupac "3,6-dichloro-o-anisic acid" .
+    :iupac "3,6-dichloro-o-anisic acid" .
 
-substance:1245 a srppp:Substance ;
+substance:1245 a :Substance ;
     rdfs:label "Terbuthylazine"@de,
         "terbuthylazine"@fr,
         "Terbutilazina"@it ;
-    srppp:iupac "N2-tert-butyl-6-chloro-N4-ethyl-1,3,5-triazine-2,4-diamine" .
+    :iupac "N2-tert-butyl-6-chloro-N4-ethyl-1,3,5-triazine-2,4-diamine" .
 
-substance:1248 a srppp:Substance ;
+substance:1248 a :Substance ;
     rdfs:label "Thifensulfuron-methyl"@de,
         "thifensulfuron-méthyl"@fr,
         "Tifensulfuron-metile"@it ;
-    srppp:iupac "3-(4-methoxy-6-methyl-1,3,5-triazin-2-ylcarbamoylsulamoyl)thiophen-2-carboxylic acid" .
+    :iupac "3-(4-methoxy-6-methyl-1,3,5-triazin-2-ylcarbamoylsulamoyl)thiophen-2-carboxylic acid" .
 
-substance:1254 a srppp:Substance ;
+substance:1254 a :Substance ;
     rdfs:label "Triclopyr"@de,
         "triclopyr"@fr,
         "Triclopir"@it ;
-    srppp:iupac "3,5,6-trichloro-2-pyridyloxyacetic acid" .
+    :iupac "3,5,6-trichloro-2-pyridyloxyacetic acid" .
 
-substance:1257 a srppp:Substance ;
+substance:1257 a :Substance ;
     rdfs:label "Trinexapac-ethyl"@de,
         "trinexapac-éthyl"@fr,
         "Trinexapac-etile"@it ;
-    srppp:iupac "ethyl 4-cyclopropyl(hydroxy)methylene-3,5-dioxocyclohexanecarboxylate" .
+    :iupac "ethyl 4-cyclopropyl(hydroxy)methylene-3,5-dioxocyclohexanecarboxylate" .
 
-substance:1260 a srppp:Substance ;
+substance:1260 a :Substance ;
     rdfs:label "Ziram"@de,
         "zirame"@fr,
         "Ziram"@it ;
-    srppp:iupac "zinc bis(dimethyldithiocarbamate)" .
+    :iupac "zinc bis(dimethyldithiocarbamate)" .
 
-substance:1261 a srppp:Substance ;
+substance:1261 a :Substance ;
     rdfs:label "Metaphycus helvolus"@de,
         "Metaphycus helvolus"@fr,
         "Metaphycus helvolus"@it ;
-    srppp:iupac "imenottero parassita" .
+    :iupac "imenottero parassita" .
 
-substance:1263 a srppp:Substance ;
+substance:1263 a :Substance ;
     rdfs:label "Carfentrazone-ethyl"@de,
         "carfentrazone-éthyle"@fr,
         "Carfentrazone-etile"@it ;
-    srppp:iupac "Ethyl 2-chloro-3-(2-chloro-4-fluoro-5-[4-(difluoromethyl)-4,5,dihydro-3-methyl-5-oxo-1H 1,2,4,triazol-1-yl]phenyl)propanoate" .
+    :iupac "Ethyl 2-chloro-3-(2-chloro-4-fluoro-5-[4-(difluoromethyl)-4,5,dihydro-3-methyl-5-oxo-1H 1,2,4,triazol-1-yl]phenyl)propanoate" .
 
-substance:1264 a srppp:Substance ;
+substance:1264 a :Substance ;
     rdfs:label "Stratiolaelaps scimitus (vormals bekannt als Hypoaspis miles)"@de,
         "Stratiolaelaps scimitus (anciennement connu comme Hypoaspis miles)"@fr,
         "Stratiolaelaps scimitus (preced. conosciuto come Hypoaspis miles)"@it ;
-    srppp:iupac "Raubmilbe / acarien prédateur / acaro predatore" .
+    :iupac "Raubmilbe / acarien prédateur / acaro predatore" .
 
-substance:1265 a srppp:Substance ;
+substance:1265 a :Substance ;
     rdfs:label "Azadirachtin A"@de,
         "azadirachtine A"@fr,
         "Azadiractina A"@it .
 
-substance:1267 a srppp:Substance ;
+substance:1267 a :Substance ;
     rdfs:label "Sulfosulfuron"@de,
         "sulfosulfuron"@fr,
         "Sulfosulfuron"@it ;
-    srppp:iupac "1-(4,6-dimethoxypyrimidin-2-yl)-3-(2-ethylsulfonylimidazo[1,2-a]pyridin-3-yl-sulfonylurea" .
+    :iupac "1-(4,6-dimethoxypyrimidin-2-yl)-3-(2-ethylsulfonylimidazo[1,2-a]pyridin-3-yl-sulfonylurea" .
 
-substance:1268 a srppp:Substance ;
+substance:1268 a :Substance ;
     rdfs:label "Quinmerac"@de,
         "quinmérac"@fr,
         "Quinmerac"@it ;
-    srppp:iupac "7-chloro-3-methylquinoline-8-carboxylic acid" .
+    :iupac "7-chloro-3-methylquinoline-8-carboxylic acid" .
 
-substance:1271 a srppp:Substance ;
+substance:1271 a :Substance ;
     rdfs:label "Ampelomyces quisqualis"@de,
         "Ampelomyces quisqualis"@fr,
         "Ampelomyces quisqualis"@it ;
-    srppp:iupac "Ampelomyces quisqualis" .
+    :iupac "Ampelomyces quisqualis" .
 
-substance:1274 a srppp:Substance ;
+substance:1274 a :Substance ;
     rdfs:label "Alkoholethoxylat"@de,
         "éthoxylate d'alcool"@fr,
         "Etossilato d'alcol"@it ;
-    srppp:iupac "alpha-isodecyl omega-hydroxypoly(oxyethylene)" .
+    :iupac "alpha-isodecyl omega-hydroxypoly(oxyethylene)" .
 
-substance:1277 a srppp:Substance ;
+substance:1277 a :Substance ;
     rdfs:label "Kaliumphosphonat"@de,
         "potassium phosphonates"@en,
         "phosphonate de potassium"@fr,
         "potassio fosfato bibasico anidro"@it ;
-    srppp:iupac "KH2PO3 und K2HPO3" .
+    :iupac "KH2PO3 und K2HPO3" .
 
-substance:1283 a srppp:Substance ;
+substance:1283 a :Substance ;
     rdfs:label "Ipsdienol"@de,
         "ipsdiénol"@fr,
         "Ipsdienol"@it ;
-    srppp:iupac "2-Methyl-6-methylene-2,7-octadien-4-ol" .
+    :iupac "2-Methyl-6-methylene-2,7-octadien-4-ol" .
 
-substance:1289 a srppp:Substance ;
+substance:1289 a :Substance ;
     rdfs:label "(S)-cis-Verbenol"@de,
         "(S)-cis-Verbenol"@fr,
         "(S)-cis-Verbenol"@it ;
-    srppp:iupac "[S-(1alpha,2alpha,5alpha)]-4,6,6-trimethylbicyclo-[3,1,1]-hept-3-en-2-ol" .
+    :iupac "[S-(1alpha,2alpha,5alpha)]-4,6,6-trimethylbicyclo-[3,1,1]-hept-3-en-2-ol" .
 
-substance:1298 a srppp:Substance ;
+substance:1298 a :Substance ;
     rdfs:label "Acibenzolar-S-methyl"@de,
         "acibenzolar-S-méthyle"@fr,
         "Acibenzolar-S-metile"@it ;
-    srppp:iupac "7-S-methyl-1,2,3-benzothiadoazolethioate" .
+    :iupac "7-S-methyl-1,2,3-benzothiadoazolethioate" .
 
-substance:1299 a srppp:Substance ;
+substance:1299 a :Substance ;
     rdfs:label "Metalaxyl-M"@de,
         "métalaxyle-M"@fr,
         "Metalaxil-M"@it ;
-    srppp:iupac "methyl N-(methocyacetyl)-N-2,6-xylyl-D-alaninate" .
+    :iupac "methyl N-(methocyacetyl)-N-2,6-xylyl-D-alaninate" .
 
-substance:13 a srppp:Substance ;
+substance:13 a :Substance ;
     rdfs:label "Aclonifen"@de,
         "aclonifène"@fr,
         "Aclonifen"@it ;
-    srppp:iupac "2-chloro-6-nitro-3-phenoxyaniline" .
+    :iupac "2-chloro-6-nitro-3-phenoxyaniline" .
 
-substance:1301 a srppp:Substance ;
+substance:1301 a :Substance ;
     rdfs:label "Metconazole"@de,
         "metconazole"@fr,
         "Metconazolo"@it ;
-    srppp:iupac "(1RS,5RS,1RS,5SR)-5-(4-chlorobenzyl)-2,2-dimethyl-1-(1H-1,2,4-triazol-1ylmethyl)cyclopentanol" .
+    :iupac "(1RS,5RS,1RS,5SR)-5-(4-chlorobenzyl)-2,2-dimethyl-1-(1H-1,2,4-triazol-1ylmethyl)cyclopentanol" .
 
-substance:1304 a srppp:Substance ;
+substance:1304 a :Substance ;
     rdfs:label "Kupfer (als Octanoat)"@de,
         "cuivre (sous forme d'octanate)"@fr,
         "Rame (sotto forma di ottanoato)"@it ;
-    srppp:iupac "copper octanoate" .
+    :iupac "copper octanoate" .
 
-substance:1305 a srppp:Substance ;
+substance:1305 a :Substance ;
     rdfs:label "E7Z9-12 Ac"@de,
         "E7Z9-12 Ac"@fr,
         "E7Z9-12 Ac"@it ;
-    srppp:iupac "(7E, 9Z)-dodeca-7,9-dien-1-yl acetate" .
+    :iupac "(7E, 9Z)-dodeca-7,9-dien-1-yl acetate" .
 
-substance:1306 a srppp:Substance ;
+substance:1306 a :Substance ;
     rdfs:label "Rapsölmethylester"@de,
         "huile de colza (ester méthylique)"@fr,
         "Estere metilico di olio di colza"@it .
 
-substance:1312 a srppp:Substance ;
+substance:1312 a :Substance ;
     rdfs:label "12 OH (1-dodecanol)"@de,
         "12 OH (1-dodecanol)"@en,
         "12 OH (1-dodecanol)"@fr,
         "12 OH (1-dodecanol)"@it ;
-    srppp:iupac "Dodecan-1-ol" .
+    :iupac "Dodecan-1-ol" .
 
-substance:1313 a srppp:Substance ;
+substance:1313 a :Substance ;
     rdfs:label "14 OH (1-tetradecanol)"@de,
         "14 OH (1-tetradecanol)"@en,
         "14 OH (1-tetradecanol)"@fr,
         "14 OH (1-tetradecanol)"@it ;
-    srppp:iupac "tetradecan-1-ol" .
+    :iupac "tetradecan-1-ol" .
 
-substance:1314 a srppp:Substance ;
+substance:1314 a :Substance ;
     rdfs:label "Macrolophus pygmaeus (vormals bekannt als Macrolophus caliginosus)"@de,
         "Macrolophus caliginosus (anciennement connu comme Macrolophus caliginosus)"@fr,
         "Macrolophus caliginosus (preced. conosciuto come Macrolophus caliginosus)"@it ;
-    srppp:iupac "Räuberische Wanze / punaises prédatrices / cimici predatrici" .
+    :iupac "Räuberische Wanze / punaises prédatrices / cimici predatrici" .
 
-substance:1315 a srppp:Substance ;
+substance:1315 a :Substance ;
     rdfs:label "Microterys flavus"@de,
         "Microterys flavus"@fr,
         "Microterys flavus"@it .
 
-substance:1316 a srppp:Substance ;
+substance:1316 a :Substance ;
     rdfs:label "Pseudaphycus maculipennis"@de,
         "Pseudaphycus maculipennis"@fr,
         "Pseudaphycus maculipennis"@it .
 
-substance:1317 a srppp:Substance ;
+substance:1317 a :Substance ;
     rdfs:label "Kresoxim-methyl"@de,
         "krésoxim-méthyle"@fr,
         "Kresoxim-metile"@it ;
-    srppp:iupac "methyl (E)-2-methoxyimino-[2-(o-tolyloxymethyl)phenyl]acetate" .
+    :iupac "methyl (E)-2-methoxyimino-[2-(o-tolyloxymethyl)phenyl]acetate" .
 
-substance:1319 a srppp:Substance ;
+substance:1319 a :Substance ;
     rdfs:label "Azoxystrobin"@de,
         "azoxystrobine"@fr,
         "Azossistrobina"@it ;
-    srppp:iupac "methyl (E)-2-{2[6-(2-cyanophenoxy)pyrimidin-4-yloxy]phenyl}-3-methoxyacrylate" .
+    :iupac "methyl (E)-2-{2[6-(2-cyanophenoxy)pyrimidin-4-yloxy]phenyl}-3-methoxyacrylate" .
 
-substance:1324 a srppp:Substance ;
+substance:1324 a :Substance ;
     rdfs:label "Amblyseius californicus"@de,
         "Amblyseius californicus"@fr,
         "Amblyseius californicus"@it ;
-    srppp:iupac "Raubmilben / acariens prédateurs / acari predatori" .
+    :iupac "Raubmilben / acariens prédateurs / acari predatori" .
 
-substance:1325 a srppp:Substance ;
+substance:1325 a :Substance ;
     rdfs:label "Aphidius ervi"@de,
         "Aphidius ervi"@fr,
         "Aphidius ervi"@it ;
-    srppp:iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
+    :iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
 
-substance:1331 a srppp:Substance ;
+substance:1331 a :Substance ;
     rdfs:label "Schachtelhalmextrakt"@de,
         "extrait de prèle"@fr,
         "Estratto di equiseto"@it ;
-    srppp:iupac "Equisetum-Extrakt" .
+    :iupac "Equisetum-Extrakt" .
 
-substance:1342 a srppp:Substance ;
+substance:1342 a :Substance ;
     rdfs:label "Schwefelsaure Tonerde"@de,
         "acide sulfurique sur terre argileuse"@fr,
         "Acido solforico argilla"@it ;
-    srppp:iupac "Aluminiumsulfat" .
+    :iupac "Aluminiumsulfat" .
 
-substance:1350 a srppp:Substance ;
+substance:1350 a :Substance ;
     rdfs:label "Acetamiprid"@de,
         "acétamipride"@fr,
         "Acetamiprid"@it ;
-    srppp:iupac "(E)-N1-[(6-chloro-3-pyridyl)methyl]-N2-cyano-N1-methylacetamidine" .
+    :iupac "(E)-N1-[(6-chloro-3-pyridyl)methyl]-N2-cyano-N1-methylacetamidine" .
 
-substance:1351 a srppp:Substance ;
+substance:1351 a :Substance ;
     rdfs:label "Eretmocerus mundus"@de,
         "Eretmocerus mundus"@en,
         "Eretmocerus mundus"@fr,
         "Eretmocerus mundus"@it ;
-    srppp:iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti " .
+    :iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti " .
 
-substance:1352 a srppp:Substance ;
+substance:1352 a :Substance ;
     rdfs:label "Chrysoperla carnea"@de,
         "Chrysoperla carnea"@fr,
         "Chrysoperla carnea"@it ;
-    srppp:iupac "Räuberische Netzflügler/névroptères prédateurs/Neurotteri predatori" .
+    :iupac "Räuberische Netzflügler/névroptères prédateurs/Neurotteri predatori" .
 
-substance:1359 a srppp:Substance ;
+substance:1359 a :Substance ;
     rdfs:label "Fettsäuren"@de,
         "fatty acids C7-C18"@en,
         "acides gras"@fr,
         "Acidi grassi"@it ;
-    srppp:iupac "fatty acids" .
+    :iupac "fatty acids" .
 
-substance:1360 a srppp:Substance ;
+substance:1360 a :Substance ;
     rdfs:label "Essigsäure"@de,
         "acide acétique"@fr,
         "Acido acetico"@it ;
-    srppp:iupac "Acidum aceticum" .
+    :iupac "Acidum aceticum" .
 
-substance:1363 a srppp:Substance ;
+substance:1363 a :Substance ;
     rdfs:label "Prohexadione-Calcium"@de,
         "prohexadione calcium"@fr,
         "Calcio-proesadione"@it ;
-    srppp:iupac "calcium 3-oxido-5-oxo-4-propionylcyclohex-3-enecarboxylate" .
+    :iupac "calcium 3-oxido-5-oxo-4-propionylcyclohex-3-enecarboxylate" .
 
-substance:1364 a srppp:Substance ;
+substance:1364 a :Substance ;
     rdfs:label "Trifloxystrobin"@de,
         "trifloxystrobine"@fr,
         "Trifloxystrobin"@it ;
-    srppp:iupac "(E,E)-methoxyimino-{2-[1-(3-trifluoromethyl-phenyl)-ethylideneaminooxymethyl]-phenyl}-acetic acid methyl ester" .
+    :iupac "(E,E)-methoxyimino-{2-[1-(3-trifluoromethyl-phenyl)-ethylideneaminooxymethyl]-phenyl}-acetic acid methyl ester" .
 
-substance:1366 a srppp:Substance ;
+substance:1366 a :Substance ;
     rdfs:label "Fenhexamid"@de,
         "fenhexamide"@fr,
         "Fenhexamid"@it ;
-    srppp:iupac "1-Methyl-cyclohexanecarboxyloic acid 2,3-dichloro-4-hydroxy-phenyl)-amide" .
+    :iupac "1-Methyl-cyclohexanecarboxyloic acid 2,3-dichloro-4-hydroxy-phenyl)-amide" .
 
-substance:1367 a srppp:Substance ;
+substance:1367 a :Substance ;
     rdfs:label "Spiroxamine"@de,
         "spiroxamine"@fr,
         "Spiroxamina"@it ;
-    srppp:iupac "8-tert-butyl-1,4-dioxaspiro[4.5]decan-2-ylmethyl(ethyl)(propyl)amine" .
+    :iupac "8-tert-butyl-1,4-dioxaspiro[4.5]decan-2-ylmethyl(ethyl)(propyl)amine" .
 
-substance:1368 a srppp:Substance ;
+substance:1368 a :Substance ;
     rdfs:label "Florasulam"@de,
         "florasulame"@fr,
         "Florasulam"@it ;
-    srppp:iupac "2,6,8-trifluoro-5-methoxy[1,2,4]triazolo[1,5-c]pyrimidine-2-sulfonanilide" .
+    :iupac "2,6,8-trifluoro-5-methoxy[1,2,4]triazolo[1,5-c]pyrimidine-2-sulfonanilide" .
 
-substance:1369 a srppp:Substance ;
+substance:1369 a :Substance ;
     rdfs:label "Pseudomonas chlororaphis"@de,
         "Pseudomonas chlororaphis"@en,
         "Pseudomonas chlororaphis"@fr,
         "Pseudomonas chlororaphis"@it .
 
-substance:1371 a srppp:Substance ;
+substance:1371 a :Substance ;
     rdfs:label "Adalia bipunctata"@de,
         "Adalia bipunctata"@fr,
         "Adalia bipunctata"@it ;
-    srppp:iupac "Räuberische Käfer / coléoptères prédateurs / coleotteri predatori" .
+    :iupac "Räuberische Käfer / coléoptères prédateurs / coleotteri predatori" .
 
-substance:1376 a srppp:Substance ;
+substance:1376 a :Substance ;
     rdfs:label "Coniothyrium minitans"@de,
         "Coniothyrium minitans"@fr,
         "Coniothyrium minitans"@it ;
-    srppp:iupac "Coniothyrium minitans conidia" .
+    :iupac "Coniothyrium minitans conidia" .
 
-substance:1384 a srppp:Substance ;
+substance:1384 a :Substance ;
     rdfs:label "Steinernema carpocapsae all strain"@de,
         "Steinernema carpocapse all strain"@fr,
         "Steinernema carpocapsae all strain"@it ;
-    srppp:iupac "Entomopathogene Nematoden / nématode entomopathogène / nematodi entomoparassiti" .
+    :iupac "Entomopathogene Nematoden / nématode entomopathogène / nematodi entomoparassiti" .
 
-substance:1391 a srppp:Substance ;
+substance:1391 a :Substance ;
     rdfs:label "Benzoesäure"@de,
         "acide benzoïque"@fr,
         "Acido benzoico"@it ;
-    srppp:iupac "Acidium benzoicum" .
+    :iupac "Acidium benzoicum" .
 
-substance:1395 a srppp:Substance ;
+substance:1395 a :Substance ;
     rdfs:label "Fettsäuren"@de,
         "acides gras "@fr,
         "Acidi grassi"@it ;
-    srppp:iupac "Ölsäure" .
+    :iupac "Ölsäure" .
 
-substance:1396 a srppp:Substance ;
+substance:1396 a :Substance ;
     rdfs:label "Sesamöl raffiniert"@de,
         "huile de sésame raffinée"@fr,
         "Olio di sesamo raffinato"@it ;
-    srppp:iupac "fatty acid glycerol ester" .
+    :iupac "fatty acid glycerol ester" .
 
-substance:1397 a srppp:Substance ;
+substance:1397 a :Substance ;
     rdfs:label "Thiencarbazon"@de,
         "thiencarbazone"@en,
         "thiencarbazone"@fr,
         "thiencarbazone"@it ;
-    srppp:iupac "methyl 4-[(4,5-dihydro-3-methoxy-4-methyl-5-oxo-1H-1,2,4-triazol-1-yl)carbonylsulfamoyl]-5-methylthiophene-3-carboxylic acid" .
+    :iupac "methyl 4-[(4,5-dihydro-3-methoxy-4-methyl-5-oxo-1H-1,2,4-triazol-1-yl)carbonylsulfamoyl]-5-methylthiophene-3-carboxylic acid" .
 
-substance:1398 a srppp:Substance ;
+substance:1398 a :Substance ;
     rdfs:label "Proteine"@de,
         "protéines"@fr,
         "Proteine"@it .
 
-substance:1400 a srppp:Substance ;
+substance:1400 a :Substance ;
     rdfs:label "Flufenacet"@de,
         "flufénacet"@fr,
         "Flufenacet"@it ;
-    srppp:iupac "N-(4-fluoro-phenyl)-N-isopropyl-2-(5-trifluoro-methyl-[1,3,4]thiadiazol-2-yloxy)-acetamide" .
+    :iupac "N-(4-fluoro-phenyl)-N-isopropyl-2-(5-trifluoro-methyl-[1,3,4]thiadiazol-2-yloxy)-acetamide" .
 
-substance:1404 a srppp:Substance ;
+substance:1404 a :Substance ;
     rdfs:label "Zoxamid"@de,
         "zoxamide"@fr,
         "Zoxamid"@it ;
-    srppp:iupac "3,5-Dichloro-N-(3-chloro-1-ethyl-1methyl-2-oxopropyl)-4-methylbenzamide" .
+    :iupac "3,5-Dichloro-N-(3-chloro-1-ethyl-1methyl-2-oxopropyl)-4-methylbenzamide" .
 
-substance:1405 a srppp:Substance ;
+substance:1405 a :Substance ;
     rdfs:label "Iodosulfuron-methyl-Natrium"@de,
         "iodosulfuron-méthyl-sodium"@fr,
         "Iodosulfuron-metile-sodio"@it ;
-    srppp:iupac "methyl 4-iodo-2-[3-(4-methoxy-6-methyl-1,2,5-triazin-2-yl)ureidosulfonyl]benzoate, sodium salt" .
+    :iupac "methyl 4-iodo-2-[3-(4-methoxy-6-methyl-1,2,5-triazin-2-yl)ureidosulfonyl]benzoate, sodium salt" .
 
-substance:1406 a srppp:Substance ;
+substance:1406 a :Substance ;
     rdfs:label "Flumioxazin"@de,
         "Flumioxazine"@fr,
         "Flumiossazina"@it ;
-    srppp:iupac "7-fluoro-6-[(3,4,5,6-tetrahydro)phtalimido]-4-(2-propynyl)-1,4-benzoxazion-3(2H)-one" .
+    :iupac "7-fluoro-6-[(3,4,5,6-tetrahydro)phtalimido]-4-(2-propynyl)-1,4-benzoxazion-3(2H)-one" .
 
-substance:1407 a srppp:Substance ;
+substance:1407 a :Substance ;
     rdfs:label "Etofenprox"@de,
         "Etofenprox"@en,
         "etofenprox"@fr,
         "Etofenprox"@it ;
-    srppp:iupac "2-(4-ethoxyphenyl)-2-methylpropyl 3-phenoxybenzyl ether" .
+    :iupac "2-(4-ethoxyphenyl)-2-methylpropyl 3-phenoxybenzyl ether" .
 
-substance:1408 a srppp:Substance ;
+substance:1408 a :Substance ;
     rdfs:label "Mefenpyr-Diethyl"@de,
         "méfenpyr diéthyl"@fr,
         "Mefenpir-dietile"@it ;
-    srppp:iupac "diethyl (RS)-1-(2,4-dichlororphenyl)-5-methyl-2-pyrazoline-3,5-dicarboxylate" .
+    :iupac "diethyl (RS)-1-(2,4-dichlororphenyl)-5-methyl-2-pyrazoline-3,5-dicarboxylate" .
 
-substance:1410 a srppp:Substance ;
+substance:1410 a :Substance ;
     rdfs:label "Eisen-III-Phosphat"@de,
         "phospate de fer III"@fr,
         "Fosfato di ferro III"@it ;
-    srppp:iupac "ferric phosphate" .
+    :iupac "ferric phosphate" .
 
-substance:1413 a srppp:Substance ;
+substance:1413 a :Substance ;
     rdfs:label "Heterorhabditis bacteriophora"@de,
         "Heterorhabditis bacteriophora"@fr,
         "Heterorhabditis bacteriophora"@it ;
-    srppp:iupac "Entomopathogene Nematoden / nématode entomopathogène / nematodi entomoparassiti" .
+    :iupac "Entomopathogene Nematoden / nématode entomopathogène / nematodi entomoparassiti" .
 
-substance:1414 a srppp:Substance ;
+substance:1414 a :Substance ;
     rdfs:label "Photorhabdus luminescens"@de,
         "Photorhabdus luminescens"@fr,
         "Photorhabdus luminescens"@it ;
-    srppp:iupac "Entomopathogenes Bakterium / bactérie entomopathogène / batterio entomopatogeno" .
+    :iupac "Entomopathogenes Bakterium / bactérie entomopathogène / batterio entomopatogeno" .
 
-substance:1416 a srppp:Substance ;
+substance:1416 a :Substance ;
     rdfs:label "Isoxaflutole"@de,
         "isoxaflutole"@fr,
         "Isoxaflutole"@it ;
-    srppp:iupac "5-cyclopropyl-1,2-oxazol-4-yl alpha,alpha,alpha-trifluoro-2-mesyl-p-tolyl ketone" .
+    :iupac "5-cyclopropyl-1,2-oxazol-4-yl alpha,alpha,alpha-trifluoro-2-mesyl-p-tolyl ketone" .
 
-substance:1418 a srppp:Substance ;
+substance:1418 a :Substance ;
     rdfs:label "Verbissmittel (Grundkörper)"@de,
         "répulsif du gibier (matière de base)"@fr,
         "Repellente contro la brucatura della selvaggina (materia di base)"@it .
 
-substance:1421 a srppp:Substance ;
+substance:1421 a :Substance ;
     rdfs:label "Spinosad"@de,
         "spinosad"@en,
         "spinosad"@fr,
         "Spinosad"@it ;
-    srppp:iupac "mixture of 50-95% spinosyn A and 5-50% spinosyn D" .
+    :iupac "mixture of 50-95% spinosyn A and 5-50% spinosyn D" .
 
-substance:1422 a srppp:Substance ;
+substance:1422 a :Substance ;
     rdfs:label "Mesotrione"@de,
         "mésotrione"@fr,
         "Mesotrione"@it ;
-    srppp:iupac "2-(4-mesyl-2-nitrobenzoyl)cyclohexane-1,3-dione" .
+    :iupac "2-(4-mesyl-2-nitrobenzoyl)cyclohexane-1,3-dione" .
 
-substance:1423 a srppp:Substance ;
+substance:1423 a :Substance ;
     rdfs:label "Dimethenamid-P"@de,
         "diméthénamide-P"@fr,
         "Dimethenamid-P"@it ;
-    srppp:iupac "S-2-chloro-N-(2,4-dimethyl-3-thienyl)-N-(2-methoxy-1-methylethyl)-acetamide" .
+    :iupac "S-2-chloro-N-(2,4-dimethyl-3-thienyl)-N-(2-methoxy-1-methylethyl)-acetamide" .
 
-substance:1425 a srppp:Substance ;
+substance:1425 a :Substance ;
     rdfs:label "Pyraclostrobin"@de,
         "pyraclostrobine"@fr,
         "Pyraclostrobin"@it ;
-    srppp:iupac "methyl N-(2-{[1-(4-chlorophenyl)-1H-pyrazol-3-yl]oxymethyl}phenyl) N-methoxy carbamate" .
+    :iupac "methyl N-(2-{[1-(4-chlorophenyl)-1H-pyrazol-3-yl]oxymethyl}phenyl) N-methoxy carbamate" .
 
-substance:1428 a srppp:Substance ;
+substance:1428 a :Substance ;
     rdfs:label "Iprovalicarb"@de,
         "iprovalicarbe"@fr,
         "Iprovalicarb"@it ;
-    srppp:iupac "{2-Methyl-1-[1-(4-methylphenyl)-ethylcarbonyl]-propyl}-carbamic acid isopropyl ester" .
+    :iupac "{2-Methyl-1-[1-(4-methylphenyl)-ethylcarbonyl]-propyl}-carbamic acid isopropyl ester" .
 
-substance:1430 a srppp:Substance ;
+substance:1430 a :Substance ;
     rdfs:label "Schwefelkalk (Calciumpolysulfid)"@de,
         "lime sulfur (calcium polysulfide)"@en,
         "polysulfure de calcium"@fr,
         "zolfo calcico"@it ;
-    srppp:iupac "calcium polysulfide" .
+    :iupac "calcium polysulfide" .
 
-substance:1434 a srppp:Substance ;
+substance:1434 a :Substance ;
     rdfs:label "Imazamox"@de,
         "imazamox"@fr,
         "Imazamox"@it ;
-    srppp:iupac "(R/S)-2-(4-isopropyl-4-methyl-5-oxo-2-imidazolin-2-yl)-5-methoxymethylnicotinic acid" .
+    :iupac "(R/S)-2-(4-isopropyl-4-methyl-5-oxo-2-imidazolin-2-yl)-5-methoxymethylnicotinic acid" .
 
-substance:1439 a srppp:Substance ;
+substance:1439 a :Substance ;
     rdfs:label "Methylbutenol"@de,
         "méthylbutenol"@fr,
         "Metilbutenolo"@it ;
-    srppp:iupac "2-methyl-3-buten-2-ol" .
+    :iupac "2-methyl-3-buten-2-ol" .
 
-substance:1442 a srppp:Substance ;
+substance:1442 a :Substance ;
     rdfs:label "Xenorhabdus bovienii"@de,
         "Xenorhabdus bovienii"@fr,
         "Xenorhabdus bovienii"@it ;
-    srppp:iupac "Entomopathogenes Bakterium / bactérie enthomopathogène / batterio entomopatogeno" .
+    :iupac "Entomopathogenes Bakterium / bactérie enthomopathogène / batterio entomopatogeno" .
 
-substance:1444 a srppp:Substance ;
+substance:1444 a :Substance ;
     rdfs:label "Propoxycarbazone-sodium"@de,
         "propoxycarbazone-sodium"@fr,
         "Propoxicarbazona-sodio"@it ;
-    srppp:iupac "2-[(4-methyl-5-oxo-3-propoxy-4,5-dihydro-[1,2,4]triazole-1-carbonyl)-sulfamoyl]-benzoicacid methylester, sodium salt" .
+    :iupac "2-[(4-methyl-5-oxo-3-propoxy-4,5-dihydro-[1,2,4]triazole-1-carbonyl)-sulfamoyl]-benzoicacid methylester, sodium salt" .
 
-substance:1456 a srppp:Substance ;
+substance:1456 a :Substance ;
     rdfs:label "Pyraflufen-ethyl"@de,
         "pyraflufen éthyle"@fr,
         "Pyraflufen-etile"@it ;
-    srppp:iupac "ethyl 2-chloro-5-(4-chloro-5-difluoromethoxy-1-methylpyrazol-3-yl)-4-fluorophenoxyacetate" .
+    :iupac "ethyl 2-chloro-5-(4-chloro-5-difluoromethoxy-1-methylpyrazol-3-yl)-4-fluorophenoxyacetate" .
 
-substance:1457 a srppp:Substance ;
+substance:1457 a :Substance ;
     rdfs:label "Foramsulfuron"@de,
         "foramsulfurone"@fr,
         "Foramsulfuron"@it ;
-    srppp:iupac "1-(4, 6-dimethoxypyrimidin-2yl)-3-(2-dimethylcarbamoyl-5-formamidophenylsulfonyl)urea" .
+    :iupac "1-(4, 6-dimethoxypyrimidin-2yl)-3-(2-dimethylcarbamoyl-5-formamidophenylsulfonyl)urea" .
 
-substance:1464 a srppp:Substance ;
+substance:1464 a :Substance ;
     rdfs:label "Isoxadifen-ethyl"@de,
         "isoxadifen-éthyle"@fr,
         "Isoxadifen-etile"@it ;
-    srppp:iupac "Ethyl 5,5-diphenyl-2-isoxazoline-3-carboxylate" .
+    :iupac "Ethyl 5,5-diphenyl-2-isoxazoline-3-carboxylate" .
 
-substance:1465 a srppp:Substance ;
+substance:1465 a :Substance ;
     rdfs:label "Anthocoris nemoralis"@de,
         "Anthocoris nemoralis"@fr,
         "Anthocoris nemoralis"@it ;
-    srppp:iupac "Räuberische Wanze / punaises prédatrices / cimici predatrici" .
+    :iupac "Räuberische Wanze / punaises prédatrices / cimici predatrici" .
 
-substance:1466 a srppp:Substance ;
+substance:1466 a :Substance ;
     rdfs:label "Mesosulfuron-methyl"@de,
         "mesosulfuron-methyl"@en,
         "mesosulfuron-methyl"@fr,
         "mesosulfuron-metil"@it ;
-    srppp:iupac "methyl 2-[(4,6-dimethoxypyrimidin-2-ylcarbamoyl)sulfamoyl]-(alpha)-(methanesulfonamido)-p-toluate" .
+    :iupac "methyl 2-[(4,6-dimethoxypyrimidin-2-ylcarbamoyl)sulfamoyl]-(alpha)-(methanesulfonamido)-p-toluate" .
 
-substance:1467 a srppp:Substance ;
+substance:1467 a :Substance ;
     rdfs:label "Benthiavalicarb-isopropyl"@de,
         "benthiavalicarb-isopropyl"@en,
         "benthiavalicarbe-isopropyle"@fr,
         "Bentiavalicarb-isopropile"@it ;
-    srppp:iupac "Isopropyl[(S)-1-{[(1R)-1-(6-fluoro-1,3-benzothiazol-2-yl)ethyl]carbamoyl}-2-methylpropyl]carbamate" .
+    :iupac "Isopropyl[(S)-1-{[(1R)-1-(6-fluoro-1,3-benzothiazol-2-yl)ethyl]carbamoyl}-2-methylpropyl]carbamate" .
 
-substance:1468 a srppp:Substance ;
+substance:1468 a :Substance ;
     rdfs:label "Boscalid"@de,
         "boscalide"@fr,
         "Boscalid"@it ;
-    srppp:iupac "2-Chloro-N-(4'-chlorobiphenyl-2-yl)nicotinamide" .
+    :iupac "2-Chloro-N-(4'-chlorobiphenyl-2-yl)nicotinamide" .
 
-substance:1469 a srppp:Substance ;
+substance:1469 a :Substance ;
     rdfs:label "Cyazofamid"@de,
         "cyazofamide"@fr,
         "Ciazofamid"@it ;
-    srppp:iupac "4-chloro-2-cyano-N,N-dimethyl-5-P-tolylimidazol-1-sulfonamide" .
+    :iupac "4-chloro-2-cyano-N,N-dimethyl-5-P-tolylimidazol-1-sulfonamide" .
 
-substance:1472 a srppp:Substance ;
+substance:1472 a :Substance ;
     rdfs:label "Feltiella acarisuga"@de,
         "Feltiella acarisuga"@fr,
         "Feltiella acarisuga"@it ;
-    srppp:iupac "Räuberische Gallmücke / cecidomia predatrice" .
+    :iupac "Räuberische Gallmücke / cecidomia predatrice" .
 
-substance:1475 a srppp:Substance ;
+substance:1475 a :Substance ;
     rdfs:label "Pethoxamid"@de,
         "pethoxamide"@fr,
         "Petoxamide"@it ;
-    srppp:iupac "2-chloro-N-(2-ethoxyethyl)-N-(2-methyl-1-phenylprop-1-enyl)acetamide" .
+    :iupac "2-chloro-N-(2-ethoxyethyl)-N-(2-methyl-1-phenylprop-1-enyl)acetamide" .
 
-substance:1476 a srppp:Substance ;
+substance:1476 a :Substance ;
     rdfs:label "Prothioconazole"@de,
         "Prothioconazole"@en,
         "prothioconazole"@fr,
         "Protioconazolo"@it ;
-    srppp:iupac "(RS)-2-[2-(1-chlorocyclopropyl)-3-(2-chlorophenyl)-2-hydroxypropyl]-2,4-dihydro-1,2,4-triazole-3-thione" .
+    :iupac "(RS)-2-[2-(1-chlorocyclopropyl)-3-(2-chlorophenyl)-2-hydroxypropyl]-2,4-dihydro-1,2,4-triazole-3-thione" .
 
-substance:1479 a srppp:Substance ;
+substance:1479 a :Substance ;
     rdfs:label "Heterorhabditis megidis"@de,
         "Heterorhabditis megidis"@fr,
         "Heterorhabditis megidis"@it ;
-    srppp:iupac "Entomopathogene Nematoden / nématode entomopathogène / nematodi entomoparassiti" .
+    :iupac "Entomopathogene Nematoden / nématode entomopathogène / nematodi entomoparassiti" .
 
-substance:1480 a srppp:Substance ;
+substance:1480 a :Substance ;
     rdfs:label "Z9-14Ac"@de,
         "Z9-14Ac"@fr,
         "Z9-14 Ac"@it ;
-    srppp:iupac "(Z)-tetradec-9-en-1-yl acetate" .
+    :iupac "(Z)-tetradec-9-en-1-yl acetate" .
 
-substance:1481 a srppp:Substance ;
+substance:1481 a :Substance ;
     rdfs:label "Flutolanil"@de,
         "flutolanil"@en,
         "flutolanil"@fr,
         "flutolanil"@it ;
-    srppp:iupac "alpha,alpha,alpha-trifluoro-3'-isopropoxy-o-toluanilide" .
+    :iupac "alpha,alpha,alpha-trifluoro-3'-isopropoxy-o-toluanilide" .
 
-substance:1482 a srppp:Substance ;
+substance:1482 a :Substance ;
     rdfs:label "Fluoxastrobin"@de,
         "fluoxastrobin"@en,
         "fluoxastrobine"@fr,
         "Fluoxastrobin"@it ;
-    srppp:iupac "(E)-{2-[6-(2-chlorophenoxy)-5-fluoropyrimidin-4-yloxy]phenyl}(5,6-dihydro-1,4,2-dioxazin-3-yl)methanone O-methyloxime" .
+    :iupac "(E)-{2-[6-(2-chlorophenoxy)-5-fluoropyrimidin-4-yloxy]phenyl}(5,6-dihydro-1,4,2-dioxazin-3-yl)methanone O-methyloxime" .
 
-substance:1483 a srppp:Substance ;
+substance:1483 a :Substance ;
     rdfs:label "Polyalkyleneoxide modified Heptamethyltrisiloxane"@de,
         "polyalkyleneoxide modified Heptamethyltrisiloxane"@fr,
         "Polyalkyleneoxide modified Heptamethyltrisiloxane"@it .
 
-substance:1486 a srppp:Substance ;
+substance:1486 a :Substance ;
     rdfs:label "Eretmocerus eremicus (syn. californicus)"@de,
         "Eretmocerus eremicus (syn. californicus)"@fr,
         "Eretmocerus eremicus (sin. californicus)"@it ;
-    srppp:iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
+    :iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
 
-substance:1487 a srppp:Substance ;
+substance:1487 a :Substance ;
     rdfs:label "E3Z13-18Ac "@de,
         "E3Z13-18Ac"@en,
         "E3Z13-18Ac"@fr,
         "E3Z13-18Ac"@it ;
-    srppp:iupac "octadeca-3,13-dien-1-yl acetate" .
+    :iupac "octadeca-3,13-dien-1-yl acetate" .
 
-substance:1488 a srppp:Substance ;
+substance:1488 a :Substance ;
     rdfs:label "Magermilchpulver"@de,
         "lait écrémé en poudre"@fr,
         "latte magro in polvere"@it .
 
-substance:1492 a srppp:Substance ;
+substance:1492 a :Substance ;
     rdfs:label "E2Z13-18Ac"@de,
         "E2Z13-18Ac"@en,
         "E2Z13-18Ac"@fr,
         "E2Z13-18Ac"@it ;
-    srppp:iupac "octadeca-2,13-dien-1-yl acetate" .
+    :iupac "octadeca-2,13-dien-1-yl acetate" .
 
-substance:1494 a srppp:Substance ;
+substance:1494 a :Substance ;
     rdfs:label "Acequinocyl"@de,
         "acequinocyl"@en,
         "acéquinocyl"@fr,
         "Acechinocil"@it ;
-    srppp:iupac "3-dodecyl-1,4-dihydro-1,4-dioxo-2-naphthyl acetate" .
+    :iupac "3-dodecyl-1,4-dihydro-1,4-dioxo-2-naphthyl acetate" .
 
-substance:1500 a srppp:Substance ;
+substance:1500 a :Substance ;
     rdfs:label "Proquinazid"@de,
         "proquinazid"@en,
         "proquinazid"@fr,
         "Proquinazid"@it ;
-    srppp:iupac "6-iodo-2-propoxy-3-propylquinazolin-4(3H)-one" .
+    :iupac "6-iodo-2-propoxy-3-propylquinazolin-4(3H)-one" .
 
-substance:1501 a srppp:Substance ;
+substance:1501 a :Substance ;
     rdfs:label "1-methylcyclopropene / 1-MCP"@de,
         "1-méthylcyclopropène / 1-MCP"@fr,
         "1-metilciclopropene/ 1-MCP"@it .
 
-substance:1507 a srppp:Substance ;
+substance:1507 a :Substance ;
     rdfs:label "Cyflufenamid"@de,
         "Cyflfenamid"@en,
         "cyflufenamid"@fr,
         "Ciflufenamid"@it ;
-    srppp:iupac "(Z)-N-[alpha-(cyclopropylmethoxyimino)-2,3-difluoro-6-(trifluoromethyl)benzyl]-2-phenyl-acetamide" .
+    :iupac "(Z)-N-[alpha-(cyclopropylmethoxyimino)-2,3-difluoro-6-(trifluoromethyl)benzyl]-2-phenyl-acetamide" .
 
-substance:1508 a srppp:Substance ;
+substance:1508 a :Substance ;
     rdfs:label "Tritosulfuron"@de,
         "Tritosulfuron"@en,
         "tritosulfuron"@fr,
         "Tritosulfuron"@it ;
-    srppp:iupac "1-(4-methoxy-6-trifluoromethyl-1,3,5-triazin-2-yl)-3-(2-trifluoromethylbenzenesulfonyl)urea" .
+    :iupac "1-(4-methoxy-6-trifluoromethyl-1,3,5-triazin-2-yl)-3-(2-trifluoromethylbenzenesulfonyl)urea" .
 
-substance:1509 a srppp:Substance ;
+substance:1509 a :Substance ;
     rdfs:label "Metrafenone"@de,
         "Metrafenone"@en,
         "métrafénone"@fr,
         "Metrafenone"@it ;
-    srppp:iupac "3'-bromo-2,3,4,6'-tetramethoxy-2',6-dimethylbenzophenone" .
+    :iupac "3'-bromo-2,3,4,6'-tetramethoxy-2',6-dimethylbenzophenone" .
 
-substance:1510 a srppp:Substance ;
+substance:1510 a :Substance ;
     rdfs:label "Pelargonsäure"@de,
         "pelargonic acid"@en,
         "acide pélargonique"@fr,
         "Acido pelargonico"@it ;
-    srppp:iupac "nonanoic acid" .
+    :iupac "nonanoic acid" .
 
-substance:1517 a srppp:Substance ;
+substance:1517 a :Substance ;
     rdfs:label "Z3Z13-18Ac"@de,
         "(Z,Z)-3,13-octadecadienyl acetate"@en,
         "Z3Z13-18AC"@fr,
         "Z3Z13-18AC"@it ;
-    srppp:iupac "(Z,Z)-3,13-Octadecadien-1-yl acetate" .
+    :iupac "(Z,Z)-3,13-Octadecadien-1-yl acetate" .
 
-substance:152 a srppp:Substance ;
+substance:152 a :Substance ;
     rdfs:label "Dodine"@de,
         "dodine"@fr,
         "Dodina"@it ;
-    srppp:iupac "1-dodecylguanidinium acetate" .
+    :iupac "1-dodecylguanidinium acetate" .
 
-substance:1522 a srppp:Substance ;
+substance:1522 a :Substance ;
     rdfs:label "Trichogramma cacoeciae"@de,
         "Trichogramma cacoeciae"@en,
         "Trichogramma cacoeciae"@fr,
         "Trichogramma cacoeciae"@it ;
-    srppp:iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti " .
+    :iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti " .
 
-substance:1526 a srppp:Substance ;
+substance:1526 a :Substance ;
     rdfs:label "Amblyseius andersoni"@de,
         "Amblyseius andersoni"@en,
         "Amblyseius andersoni"@fr,
         "Amblyseius andersoni"@it ;
-    srppp:iupac "Raubmilbe / acarien prédateur / acaro predatore" .
+    :iupac "Raubmilbe / acarien prédateur / acaro predatore" .
 
-substance:1527 a srppp:Substance ;
+substance:1527 a :Substance ;
     rdfs:label "Milbemectin"@de,
         "Milbemectin"@en,
         "milbemectine"@fr,
         "Milbemectin"@it .
 
-substance:1528 a srppp:Substance ;
+substance:1528 a :Substance ;
     rdfs:label "Fluopicolide"@de,
         "Fluopicolide"@en,
         "fluopicolide"@fr,
         "Fluopicolide"@it ;
-    srppp:iupac "2,6-dichloro-N-[3-chloro-5-(trifluoromethyl)-2-pyridylmethyl]benzamide" .
+    :iupac "2,6-dichloro-N-[3-chloro-5-(trifluoromethyl)-2-pyridylmethyl]benzamide" .
 
-substance:1529 a srppp:Substance ;
+substance:1529 a :Substance ;
     rdfs:label "Pinoxaden"@de,
         "pinoxaden"@en,
         "pinoxaden"@fr,
         "pinoxaden"@it ;
-    srppp:iupac "8-(2,6-diethyl-p-tolyl)-1,2,4,5-tetrahydro-7-oxo-7H-pyrazolo[1,2-d][1,4,5]oxadiazepin-9-yl 2,2-dimethylpropionate" .
+    :iupac "8-(2,6-diethyl-p-tolyl)-1,2,4,5-tetrahydro-7-oxo-7H-pyrazolo[1,2-d][1,4,5]oxadiazepin-9-yl 2,2-dimethylpropionate" .
 
-substance:1531 a srppp:Substance ;
+substance:1531 a :Substance ;
     rdfs:label "Kaolin"@de,
         "kaolin"@en,
         "caolin"@fr,
         "Caolino"@it .
 
-substance:1532 a srppp:Substance ;
+substance:1532 a :Substance ;
     rdfs:label "Kaliumhydrogencarbonat"@de,
         "Hydrogéncarbonate de potassium"@fr,
         "Idrogencarbonato di potassio"@it ;
-    srppp:iupac "potassium hydrogen carbonate" .
+    :iupac "potassium hydrogen carbonate" .
 
-substance:1533 a srppp:Substance ;
+substance:1533 a :Substance ;
     rdfs:label "Laminarin"@de,
         "laminarin"@fr,
         "Laminarin"@it ;
-    srppp:iupac "(1->3)-beta-D-glucan" .
+    :iupac "(1->3)-beta-D-glucan" .
 
-substance:1535 a srppp:Substance ;
+substance:1535 a :Substance ;
     rdfs:label "Amblyseius degenerans"@de,
         "Amblyseius degenerans"@en,
         "Amblyseius degenerans"@fr,
         "Amblyseius degenerans"@it .
 
-substance:1539 a srppp:Substance ;
+substance:1539 a :Substance ;
     rdfs:label "Schafsfett"@de,
         "Mutton fat"@en,
         "Gras de mouton"@fr,
         "Grasso di pecora"@it .
 
-substance:1541 a srppp:Substance ;
+substance:1541 a :Substance ;
     rdfs:label "Benalaxyl-M"@de,
         "bénalaxyl-M"@fr,
         "Benalaxil-M"@it ;
-    srppp:iupac "methyl N-phenylacetyl-N-2,6-xylyl-D-alaninate" .
+    :iupac "methyl N-phenylacetyl-N-2,6-xylyl-D-alaninate" .
 
-substance:1542 a srppp:Substance ;
+substance:1542 a :Substance ;
     rdfs:label "6-benzyladenine"@de,
         "6-benzyladenine"@en,
         "6-benzyladenine"@fr,
         "6-benziladenina"@it ;
-    srppp:iupac "6-benzyladenine" .
+    :iupac "6-benzyladenine" .
 
-substance:1543 a srppp:Substance ;
+substance:1543 a :Substance ;
     rdfs:label "Flonicamid"@de,
         "Flonicamide"@en,
         "Flonicamide"@fr,
         "Flonicamide"@it ;
-    srppp:iupac "N-cyanomethyl-4-(trifluoromethyl)nicotinamide" .
+    :iupac "N-cyanomethyl-4-(trifluoromethyl)nicotinamide" .
 
-substance:1546 a srppp:Substance ;
+substance:1546 a :Substance ;
     rdfs:label "Tembotrione"@de,
         "tembotrione"@en,
         "tembotrione"@fr,
         "tembotrione"@it ;
-    srppp:iupac "2-{2-chloro-4-mesyl-3-[(2,2,2-trifluoroethoxy)methyl]benzoyl}cyclohexane-1,3-dione" .
+    :iupac "2-{2-chloro-4-mesyl-3-[(2,2,2-trifluoroethoxy)methyl]benzoyl}cyclohexane-1,3-dione" .
 
-substance:1547 a srppp:Substance ;
+substance:1547 a :Substance ;
     rdfs:label "Aureobasidium pullulans"@de,
         "Aureobasidium pullulans"@en,
         "Aureobasidium pullulans"@fr,
         "Aureobasidium pullulans"@it ;
-    srppp:iupac "Aureobasidium pullulans DSM 14940 / DSM 14941" .
+    :iupac "Aureobasidium pullulans DSM 14940 / DSM 14941" .
 
-substance:1548 a srppp:Substance ;
+substance:1548 a :Substance ;
     rdfs:label "Trichogramma evanescens"@de,
         "Trichogramma evanescens"@en,
         "Trichogramma evanescens"@fr,
         "Trichogramma evanescens"@it ;
-    srppp:iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti " .
+    :iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti " .
 
-substance:1549 a srppp:Substance ;
+substance:1549 a :Substance ;
     rdfs:label "Habrobracon hebetor"@de,
         "Habrobracon hebetor"@en,
         "Habrobracon hebetor"@fr,
         "Habrobracon hebetor"@it .
 
-substance:1550 a srppp:Substance ;
+substance:1550 a :Substance ;
     rdfs:label "Lariophagus distinguendus"@de,
         "Lariophagus distinguendus"@en,
         "Lariophagus distinguendus"@fr,
         "Lariophagus distinguendus"@it ;
-    srppp:iupac "Parasitische Hymenopteren / hymenoptères parasites / imenottero parassita" .
+    :iupac "Parasitische Hymenopteren / hymenoptères parasites / imenottero parassita" .
 
-substance:1552 a srppp:Substance ;
+substance:1552 a :Substance ;
     rdfs:label "Mepiquatchlorid"@de,
         "Mepiquat chloride"@en,
         "Mepiquat-chlorure"@fr,
         "mepiquat cloruro"@it ;
-    srppp:iupac "1,1-dimethylpiperidinium chloride" .
+    :iupac "1,1-dimethylpiperidinium chloride" .
 
-substance:1554 a srppp:Substance ;
+substance:1554 a :Substance ;
     rdfs:label "Mandipropamid"@de,
         "Mandipropamid"@en,
         "Mandipropamid"@fr,
         "Mandipropamid"@it ;
-    srppp:iupac "(RS)-2-(4-chlorophenyl)-N-[3-methoxy-4-(prop-2-ynyloxy)phenethyl]-2-(prop-2-ynyloxy)acetamide" .
+    :iupac "(RS)-2-(4-chlorophenyl)-N-[3-methoxy-4-(prop-2-ynyloxy)phenethyl]-2-(prop-2-ynyloxy)acetamide" .
 
-substance:1556 a srppp:Substance ;
+substance:1556 a :Substance ;
     rdfs:label "Cyprosulfamid"@de,
         "cyprosulfamide"@en,
         "cyprosulfamide"@fr,
         "cyprosulfamide"@it ;
-    srppp:iupac "N-[4-(cyclopropylcarbamoyl)phenylsulfonyl]-o-anisamide" .
+    :iupac "N-[4-(cyclopropylcarbamoyl)phenylsulfonyl]-o-anisamide" .
 
-substance:1560 a srppp:Substance ;
+substance:1560 a :Substance ;
     rdfs:label "Amisulbrom"@de,
         "Amisulbrom"@en,
         "Amisulbrom"@fr,
         "Amisulbrom"@it ;
-    srppp:iupac "3-(3-bromo-6-fluoro-2-methylindol-1-ylsulfonyl)-N,N-dimethyl-1,2,4-triazole-1-sulfonamide " .
+    :iupac "3-(3-bromo-6-fluoro-2-methylindol-1-ylsulfonyl)-N,N-dimethyl-1,2,4-triazole-1-sulfonamide " .
 
-substance:1562 a srppp:Substance ;
+substance:1562 a :Substance ;
     rdfs:label "Sulfurylfluorid"@de,
         "sulfuryl fluoride"@en,
         "Sulfuryl Fluoride"@fr,
         "Floruro di solforile"@it ;
-    srppp:iupac "sulfuryl fluoride" .
+    :iupac "sulfuryl fluoride" .
 
-substance:1563 a srppp:Substance ;
+substance:1563 a :Substance ;
     rdfs:label "Zinkphosphid"@de,
         "Zinc phosphide"@en,
         "Phosphure de zinc"@fr,
         "Fosfuro di zinco"@it ;
-    srppp:iupac "trizinc diphosphide" .
+    :iupac "trizinc diphosphide" .
 
-substance:1564 a srppp:Substance ;
+substance:1564 a :Substance ;
     rdfs:label "Pyroxsulam"@de,
         "Pyroxsulam"@en,
         "Pyroxsulam"@fr,
         "Pyroxsulam"@it ;
-    srppp:iupac "N-(5,7-dimethoxy[1,2,4]triazolo[1,5-a]pyrimidin-2-yl)-2-methoxy-4-(trifluoromethyl)pyridine-3-sulfonamide" .
+    :iupac "N-(5,7-dimethoxy[1,2,4]triazolo[1,5-a]pyrimidin-2-yl)-2-methoxy-4-(trifluoromethyl)pyridine-3-sulfonamide" .
 
-substance:1565 a srppp:Substance ;
+substance:1565 a :Substance ;
     rdfs:label "Typhlodromips swirskii"@de,
         "Typhlodromips swirskii"@en,
         "Typhlodromips swirskii"@fr,
         "Typhlodromips swirskii"@it ;
-    srppp:iupac "Raubmilben / acariens prédateurs / acari predatori" .
+    :iupac "Raubmilben / acariens prédateurs / acari predatori" .
 
-substance:1566 a srppp:Substance ;
+substance:1566 a :Substance ;
     rdfs:label "Polyethermodifiziertes Trisiloxan"@de,
         "trisiloxane, polyether modificated"@en,
         "polyéther modifié trisiloxane"@fr,
         "trisiloxane, polietere modificato"@it .
 
-substance:1567 a srppp:Substance ;
+substance:1567 a :Substance ;
     rdfs:label "Bifenazat"@de,
         "bifenazate"@en,
         "bifénazate"@fr,
         "bifenazato"@it ;
-    srppp:iupac "isopropyl 2-(4-methoxybiphenyl-3-yl)hydrazinoformate" .
+    :iupac "isopropyl 2-(4-methoxybiphenyl-3-yl)hydrazinoformate" .
 
-substance:1568 a srppp:Substance ;
+substance:1568 a :Substance ;
     rdfs:label "Spirotetramat"@de,
         "spirotetramat"@en,
         "spirotetramat"@fr,
         "spirotetramat"@it ;
-    srppp:iupac "cis-4-(ethoxycarbonyloxy)-8-methoxy-3-(2,5-xylyl)-1-azaspiro[4.5]dec-3-en-2-one" .
+    :iupac "cis-4-(ethoxycarbonyloxy)-8-methoxy-3-(2,5-xylyl)-1-azaspiro[4.5]dec-3-en-2-one" .
 
-substance:1569 a srppp:Substance ;
+substance:1569 a :Substance ;
     rdfs:label "Anisopteromalus calandrae"@de,
         "Anisopteromalus calandrae"@en,
         "Anisopteromalus calandrae"@fr,
         "Anisopteromalus calandrae"@it .
 
-substance:1570 a srppp:Substance ;
+substance:1570 a :Substance ;
     rdfs:label "Aminopyralid"@de,
         "aminopyralid"@en,
         "aminopyralid"@fr,
         "aminopyralid"@it ;
-    srppp:iupac "4-amino-3,6-dichloropyridine-2-carboxylic acid or 4-amino-3,6-dichloropicolinic acid" .
+    :iupac "4-amino-3,6-dichloropyridine-2-carboxylic acid or 4-amino-3,6-dichloropicolinic acid" .
 
-substance:1571 a srppp:Substance ;
+substance:1571 a :Substance ;
     rdfs:label "Synthetischer Latex"@de,
         "synthetic latex"@en,
         "Latex synthétique"@fr,
         "Lattice sintetico"@it ;
-    srppp:iupac "Anionic Emulsion of Carboxy Modified Styrene Butadiene Polymer" .
+    :iupac "Anionic Emulsion of Carboxy Modified Styrene Butadiene Polymer" .
 
-substance:1572 a srppp:Substance ;
+substance:1572 a :Substance ;
     rdfs:label "Xanthan"@de,
         "xanthan gum"@en,
         "xanthane"@fr,
         "xanthan"@it .
 
-substance:1573 a srppp:Substance ;
+substance:1573 a :Substance ;
     rdfs:label "Alkylpolyglycosid"@de,
         "Alkylpolyglycoside"@en,
         "alkyl polyglycoside"@fr,
         "alchil poliglicossido"@it .
 
-substance:1574 a srppp:Substance ;
+substance:1574 a :Substance ;
     rdfs:label "Emamectinbenzoat"@de,
         "emamectin benzoate"@en,
         "émamectine benzoate"@fr,
         "emamectina benzoato"@it ;
-    srppp:iupac "(4''R)-4''-deoxy-4''-(methylamino)avermectin B1 (CAS name)" .
+    :iupac "(4''R)-4''-deoxy-4''-(methylamino)avermectin B1 (CAS name)" .
 
-substance:1575 a srppp:Substance ;
+substance:1575 a :Substance ;
     rdfs:label "Chlorantraniliprol"@de,
         "Chlorantraniliprole"@en,
         "chlorantraniliprole"@fr,
         "chlorantraniliprole"@it ;
-    srppp:iupac "3-bromo-4'-chloro-1-(3-chloro-2-pyridyl)-2'-methyl-6'-(methylcarbamoyl)pyrazole-5-carboxanilide" .
+    :iupac "3-bromo-4'-chloro-1-(3-chloro-2-pyridyl)-2'-methyl-6'-(methylcarbamoyl)pyrazole-5-carboxanilide" .
 
-substance:1579 a srppp:Substance ;
+substance:1579 a :Substance ;
     rdfs:label "Valifenalate"@de,
         "Valifenalate"@fr,
         "Valifenalate"@it ;
-    srppp:iupac "methyl N-(isopropoxycarbonyl)-L-valyl-(3RS)-3-(4-chlorophenyl)-ß-alaninate" .
+    :iupac "methyl N-(isopropoxycarbonyl)-L-valyl-(3RS)-3-(4-chlorophenyl)-ß-alaninate" .
 
-substance:1581 a srppp:Substance ;
+substance:1581 a :Substance ;
     rdfs:label "Bixafen"@de,
         "Bixafen"@en,
         "Bixafen"@fr,
         "Bixafen"@it ;
-    srppp:iupac "N-(3',4'-dichloro-5-fluorobiphenyl-2-yl)-3-(difluoromethyl)-1-methylpyrazole-4-carboxamide" .
+    :iupac "N-(3',4'-dichloro-5-fluorobiphenyl-2-yl)-3-(difluoromethyl)-1-methylpyrazole-4-carboxamide" .
 
-substance:1583 a srppp:Substance ;
+substance:1583 a :Substance ;
     rdfs:label "Fluopyram"@de,
         "Fluopyram"@en,
         "Fluopyram"@fr,
         "Fluopyram"@it ;
-    srppp:iupac "N-{2-[3-chloro-5-(trifluoromethyl)-2-pyridyl]ethyl}-alpha,alpha,alpha-trifluoro-o-toluamide" .
+    :iupac "N-{2-[3-chloro-5-(trifluoromethyl)-2-pyridyl]ethyl}-alpha,alpha,alpha-trifluoro-o-toluamide" .
 
-substance:1584 a srppp:Substance ;
+substance:1584 a :Substance ;
     rdfs:label "Pseudomonas sp. Stamm DSMZ 13134"@de,
         "Pseudomonas sp. strain DSMZ 13134"@en,
         "Pseudomonas sp. souche DSMZ 13134"@fr,
         "Pseudomonas sp. ceppo DSMZ 13134"@it .
 
-substance:1585 a srppp:Substance ;
+substance:1585 a :Substance ;
     rdfs:label "Baumwollkapselwurm-Nukleopolyedervirus (Helicoverpa armigera-NPV, HearNPV)"@de,
         "Helicoverpa nuclear polyhedrosis virus (Helicoverpa armigera-NPV, HearNPV)"@en,
         "Helicoverpa nuclear polyhedrosis virus (Helicoverpa armigera-NPV, HearNPV)"@fr,
         "Helicoverpa nuclear polyhedrosis virus (Helicoverpa armigera-NPV, HearNPV)"@it ;
-    srppp:iupac "Helicoverpa nucleopolyhedrosis virus " .
+    :iupac "Helicoverpa nucleopolyhedrosis virus " .
 
-substance:1588 a srppp:Substance ;
+substance:1588 a :Substance ;
     rdfs:label "Spinetoram"@de,
         "spinetoram"@en,
         "spinetoram"@fr,
         "spinetoram"@it ;
-    srppp:iupac "(2R,3aR,5aR,5bS,9S,13S,14R,16aS,16bR)-2-(6-deoxy-3-O-ethyl-2,4-di-O-methyl-alpha-L-mannopyranosyloxy)-13-[(2R,5S,6R)-5--(dimethylamino)tetrahydro-6-methylpyran-2-yloxy]-9-ethyl-2,3,3a,4,5,5a,5b,6,9,10,11,12,13,14,16a,16b-hexadecahydro-14-methyl-1H-as-in..." .
+    :iupac "(2R,3aR,5aR,5bS,9S,13S,14R,16aS,16bR)-2-(6-deoxy-3-O-ethyl-2,4-di-O-methyl-alpha-L-mannopyranosyloxy)-13-[(2R,5S,6R)-5--(dimethylamino)tetrahydro-6-methylpyran-2-yloxy]-9-ethyl-2,3,3a,4,5,5a,5b,6,9,10,11,12,13,14,16a,16b-hexadecahydro-14-methyl-1H-as-in..." .
 
-substance:1589 a srppp:Substance ;
+substance:1589 a :Substance ;
     rdfs:label "Penthiopyrad"@de,
         "Penthiopyrad"@en,
         "Penthiopyrad"@fr,
         "Penthiopyrad"@it ;
-    srppp:iupac "(RS)-N-[2-(1,3-dimethylbutyl)-3-thienyl]-1-methyl-3-(trifluoromethyl)pyrazole-4-carboxamide" .
+    :iupac "(RS)-N-[2-(1,3-dimethylbutyl)-3-thienyl]-1-methyl-3-(trifluoromethyl)pyrazole-4-carboxamide" .
 
-substance:1593 a srppp:Substance ;
+substance:1593 a :Substance ;
     rdfs:label "Penoxsulam"@de,
         "penoxsulam"@en,
         "penoxsulam"@fr,
         "penoxsulam"@it ;
-    srppp:iupac "3-(2,2-difluoroethoxy)-N-(5,8-dimethoxy[1,2,4]triazolo[1,5-c]pyrimidin-2-yl)-alpha,alpha,alpha-trifluorotoluene-2-sulfonamide" .
+    :iupac "3-(2,2-difluoroethoxy)-N-(5,8-dimethoxy[1,2,4]triazolo[1,5-c]pyrimidin-2-yl)-alpha,alpha,alpha-trifluorotoluene-2-sulfonamide" .
 
-substance:1598 a srppp:Substance ;
+substance:1598 a :Substance ;
     rdfs:label "Purpureocillium lilacinum"@de,
         "Purpureocillium lilacinum"@en,
         "Purpureocillium lilacinum"@fr,
         "Purpureocillium lilacinum"@it .
 
-substance:162 a srppp:Substance ;
+substance:162 a :Substance ;
     rdfs:label "Ethephon"@de,
         "éthéphon"@fr,
         "Etefon"@it ;
-    srppp:iupac "2-Chloroethylphosphonic acid" .
+    :iupac "2-Chloroethylphosphonic acid" .
 
-substance:165 a srppp:Substance ;
+substance:165 a :Substance ;
     rdfs:label "Ethofumesate"@de,
         "éthofumésate"@fr,
         "Etofumesate"@it ;
-    srppp:iupac "(+/-)-2-ethoxy-2,3-dihydro-3,3-dimethylbenzofuran-5-yl methanesufonate" .
+    :iupac "(+/-)-2-ethoxy-2,3-dihydro-3,3-dimethylbenzofuran-5-yl methanesufonate" .
 
-substance:1656 a srppp:Substance ;
+substance:1656 a :Substance ;
     rdfs:label "Gliocladium catenulatum"@de,
         "Gliocladium catenulatum"@en,
         "Gliocladium catenulatum"@fr,
         "Gliocladium catenulatum"@it .
 
-substance:1659 a srppp:Substance ;
+substance:1659 a :Substance ;
     rdfs:label "Orangenöl"@de,
         "Orange oil"@en,
         "Huile d'orange"@fr,
         "Olio d'aranci"@it ;
-    srppp:iupac "(R)-4-Isopropenyl-1-methylcyclohexen oder p-mentha-1,8-diene" .
+    :iupac "(R)-4-Isopropenyl-1-methylcyclohexen oder p-mentha-1,8-diene" .
 
-substance:1660 a srppp:Substance ;
+substance:1660 a :Substance ;
     rdfs:label "Maltodextrin"@de,
         "maltodextrin"@en,
         "maltodextrine"@fr,
         "maltodestrina"@it .
 
-substance:1661 a srppp:Substance ;
+substance:1661 a :Substance ;
     rdfs:label "Fenpyrazamin"@de,
         "fenpyrazamine"@en,
         "fenpyrazamine"@fr,
         "fenpyrazamine"@it ;
-    srppp:iupac "S-allyl 5-amino-2,3-dihydro-2-isopropyl-3-oxo-4-(o-tolyl)pyrazole-1-carbothioate" .
+    :iupac "S-allyl 5-amino-2,3-dihydro-2-isopropyl-3-oxo-4-(o-tolyl)pyrazole-1-carbothioate" .
 
-substance:1662 a srppp:Substance ;
+substance:1662 a :Substance ;
     rdfs:label "1-Decanol"@de,
         "1-decanol"@en,
         "1-décanol"@fr,
         "1-Decanol"@it ;
-    srppp:iupac "Decan-1-ol" .
+    :iupac "Decan-1-ol" .
 
-substance:1665 a srppp:Substance ;
+substance:1665 a :Substance ;
     rdfs:label "Cyclohexanone"@de,
         "Cyclohexanone"@fr,
         "Cicloesanone"@it .
 
-substance:1666 a srppp:Substance ;
+substance:1666 a :Substance ;
     rdfs:label "Xylol"@de,
         "Xylène"@fr,
         "Xilene"@it .
 
-substance:1667 a srppp:Substance ;
+substance:1667 a :Substance ;
     rdfs:label "4-Chlor-o-kresol"@de,
         "4-Chlor-o-crésol"@fr,
         "4-cloro-o-cresolo"@it .
 
-substance:1668 a srppp:Substance ;
+substance:1668 a :Substance ;
     rdfs:label "2-Methyl-2H-isothiazol-3-on"@de,
         "2-méthyl-2H-isothiazole-3-one"@fr,
         "2-metil-2H-isotiazolin-3-one"@it .
 
-substance:1671 a srppp:Substance ;
+substance:1671 a :Substance ;
     rdfs:label "Solvent Naphtha"@de,
         "Solvant Naphtha"@fr,
         "Naftasolvente"@it .
 
-substance:1672 a srppp:Substance ;
+substance:1672 a :Substance ;
     rdfs:label "Docusatnatrium"@de,
         "docusate sodium"@en,
         "docusate sodique"@fr,
         "docusato sodico"@it .
 
-substance:1673 a srppp:Substance ;
+substance:1673 a :Substance ;
     rdfs:label "N-Methyl-2-pyrrolidone"@de,
         "N-méthyl-2-pyrrolidone"@fr,
         "N-metil 2 pirrolidone"@it .
 
-substance:1678 a srppp:Substance ;
+substance:1678 a :Substance ;
     rdfs:label "Ethylenglycol"@de,
         "Ethylèneglycol"@fr,
         "Etilenglicolo"@it .
 
-substance:1679 a srppp:Substance ;
+substance:1679 a :Substance ;
     rdfs:label "Propan-2-ol"@de,
         "Isopropanol (Propan-2-ol)"@fr,
         "Propano-2-ol"@it .
 
-substance:1682 a srppp:Substance ;
+substance:1682 a :Substance ;
     rdfs:label "Isobutanol"@de,
         "isobutanol"@fr,
         "isobutanolo"@it .
 
-substance:1683 a srppp:Substance ;
+substance:1683 a :Substance ;
     rdfs:label "Natriumhydroxid"@de,
         "Hydroxyde de sodium"@fr,
         "Idrossido di sodio"@it .
 
-substance:1685 a srppp:Substance ;
+substance:1685 a :Substance ;
     rdfs:label "Lösungsmittelnaphtha (Erdöl), leichte aromatische"@de,
         "Solvants naphta (pétrole), aromatiques légers (pétrole) "@fr,
         "Naftasolvente (petrolio), aromatici leggeri"@it .
 
-substance:1687 a srppp:Substance ;
+substance:1687 a :Substance ;
     rdfs:label "Kaliumhydroxid"@de,
         "Hydroxyde de potassium"@fr,
         "Idrossido di potassio"@it .
 
-substance:1689 a srppp:Substance ;
+substance:1689 a :Substance ;
     rdfs:label "1,2-Benzisothiazol-3(2H)-on"@de,
         "1,2-benzisothiazol-3(2H)-on"@fr,
         "1,2-benzisotiazol-3(2H)-on"@it ;
-    srppp:iupac "1,2-Benzisothiazol-3(2H)-on" .
+    :iupac "1,2-Benzisothiazol-3(2H)-on" .
 
-substance:1693 a srppp:Substance ;
+substance:1693 a :Substance ;
     rdfs:label "Ethanol"@de,
         "Ethanol"@fr,
         "Etanolo"@it .
 
-substance:1695 a srppp:Substance ;
+substance:1695 a :Substance ;
     rdfs:label "Destillate (Erdöl)"@de,
         "distillates (pétrole)"@fr,
         "distillati (petrolio)"@it .
 
-substance:1698 a srppp:Substance ;
+substance:1698 a :Substance ;
     rdfs:label "Pentanol, verzweigt und linear"@de,
         "Pentanol, ramifié et linéaire"@fr,
         "Pentanol,  ramificato e lineare"@it .
 
-substance:1699 a srppp:Substance ;
+substance:1699 a :Substance ;
     rdfs:label "Naphtalin"@de,
         "Naphtalène"@fr,
         "Naftil"@it .
 
-substance:1703 a srppp:Substance ;
+substance:1703 a :Substance ;
     rdfs:label "Tetranatriumpyrophosphat"@de,
         "Tetrasodium pyrophosphate"@en,
         "Pyrophosphate de tétrasodium"@fr,
         "Pirofosfato di tetrasodio"@it .
 
-substance:1704 a srppp:Substance ;
+substance:1704 a :Substance ;
     rdfs:label "poly(oxy-1,2-ethanediyl),alphaisotridecyl-omegahydroxy"@de,
         "poly(oxy-1,2-ethanediyl),alphaisotridecyl-omegahydroxy"@fr,
         "poly(oxy-1,2-ethanediyl),alphaisotridecyl-omegahydroxy"@it .
 
-substance:1710 a srppp:Substance ;
+substance:1710 a :Substance ;
     rdfs:label "Natriumdiisopropylnaphtalinsulfonat"@de,
         "sodium diisopropylnaphthalenesulphonate"@en,
         "Di-Isopropylnaphtalènesulfonate de Sodium"@fr,
         "Di-Isopropilnaftilsulfonato di sodio"@it .
 
-substance:1711 a srppp:Substance ;
+substance:1711 a :Substance ;
     rdfs:label "Decanamide, N, N- dimethyl "@de,
         "Decanamide, N, N- dimethyl "@en,
         "N,N-diméthyldécanamides"@fr,
         "N,N-Diméthyldécanamide"@it .
 
-substance:1714 a srppp:Substance ;
+substance:1714 a :Substance ;
     rdfs:label "Benzolsulfonsäure, Mono-C11-13-verzweigte Alkylderivate, Calciumsalze"@de,
         "Acide benzènesulfonique (C11.13), sels de calcium"@fr,
         "Acide benzènesulfonique (C11.13), sels de calcium"@it .
 
-substance:1716 a srppp:Substance ;
+substance:1716 a :Substance ;
     rdfs:label "Benzylalkohol"@de,
         "alcool benzylique"@fr,
         "alcol benzilico"@it .
 
-substance:1719 a srppp:Substance ;
+substance:1719 a :Substance ;
     rdfs:label "1-Octyl-2-pyrrolidon"@de,
         "1-octyl-2-pyrrolidone"@fr,
         "1-ottil-2-pirollidone"@it .
 
-substance:1722 a srppp:Substance ;
+substance:1722 a :Substance ;
     rdfs:label "Natrium-di-butyl-naphtalinsulfonat"@de,
         "Sulfonate di-butylnaphtalène de sodium"@fr,
         "Dibutile con naftilsolfonato sodico"@it .
 
-substance:1727 a srppp:Substance ;
+substance:1727 a :Substance ;
     rdfs:label "Gamma Butyrolacton"@de,
         "Gamma Butyrolactone"@fr,
         "Gamma butirrolattone"@it .
 
-substance:1730 a srppp:Substance ;
+substance:1730 a :Substance ;
     rdfs:label "Natriumnitrat"@de,
         "Nitrate de sodium"@fr,
         "Nitrato di sodio"@it .
 
-substance:1731 a srppp:Substance ;
+substance:1731 a :Substance ;
     rdfs:label "Calciumchlorid"@de,
         "chlorure de calcium"@fr,
         "Cloruro di calcio"@it .
 
-substance:1733 a srppp:Substance ;
+substance:1733 a :Substance ;
     rdfs:label "Polyglykolether"@de,
         "Ether de polyglycol"@fr,
         "Etere di poliglicoli"@it .
 
-substance:1739 a srppp:Substance ;
+substance:1739 a :Substance ;
     rdfs:label "Fluxapyroxad"@de,
         "fluxapyroxad"@en,
         "fluxapyroxade"@fr,
         "Fluxapyroxade"@it ;
-    srppp:iupac "3-(difluoromethyl)-1-methyl-N-(3',4',5'-trifluorobiphenyl-2-yl)pyrazole-4-carboxamide" .
+    :iupac "3-(difluoromethyl)-1-methyl-N-(3',4',5'-trifluorobiphenyl-2-yl)pyrazole-4-carboxamide" .
 
-substance:1740 a srppp:Substance ;
+substance:1740 a :Substance ;
     rdfs:label "Kaliumaluminiumsulfat "@de,
         "Aluminium potassium sulphate"@en,
         "Sulfate d'aluminium potassique "@fr,
         "Solfato di alluminio e potassio "@it .
 
-substance:1744 a srppp:Substance ;
+substance:1744 a :Substance ;
     rdfs:label "Ephedrus cerasicola"@de,
         "Ephedrus cerasicola"@en,
         "Ephedrus cerasicola"@fr,
         "Ephedrus cerasicola"@it ;
-    srppp:iupac "Parasitische Hymenopteren / hyménoptères parasites / imenotteri parassiti " .
+    :iupac "Parasitische Hymenopteren / hyménoptères parasites / imenotteri parassiti " .
 
-substance:1746 a srppp:Substance ;
+substance:1746 a :Substance ;
     rdfs:label "Praon volucre"@de,
         "Praon volucre"@en,
         "Praon volucre"@fr,
         "Praon volucre"@it ;
-    srppp:iupac "Parasitische Hymenopteren / hyménoptères parasites / imenotteri parassiti " .
+    :iupac "Parasitische Hymenopteren / hyménoptères parasites / imenotteri parassiti " .
 
-substance:1747 a srppp:Substance ;
+substance:1747 a :Substance ;
     rdfs:label "C14-C16-Alkanehydroxysulfonic acids sodium salts"@de,
         "C14-C16-Alkanehydroxysulfonic acids sodium salts"@en,
         "C14-C16-Alkanehydroxysulfonic acids sodium salts"@fr,
         "C14-C16-Alkanehydroxysulfonic acids sodium salts"@it .
 
-substance:1748 a srppp:Substance ;
+substance:1748 a :Substance ;
     rdfs:label "Bacillus amyloliquefaciens ssp. plantarum"@de,
         "Bacillus amyloliquefaciens ssp. plantarum"@en,
         "Bacillus amyloliquefaciens ssp. plantarum"@fr,
         "Bacillus amyloliquefaciens ssp. plantarum"@it .
 
-substance:1753 a srppp:Substance ;
+substance:1753 a :Substance ;
     rdfs:label "Chlormequat"@de,
         "Chlormequat"@en,
         "Chlorméquat"@fr,
         "Clormequat"@it ;
-    srppp:iupac "2-chloroethyltrimethylammonium (chlormequat)" .
+    :iupac "2-chloroethyltrimethylammonium (chlormequat)" .
 
-substance:1755 a srppp:Substance ;
+substance:1755 a :Substance ;
     rdfs:label "Ethylen"@de,
         "Ethylene"@en,
         "Éthylène"@fr,
         "Etilene"@it ;
-    srppp:iupac "Ethylene" .
+    :iupac "Ethylene" .
 
-substance:1756 a srppp:Substance ;
+substance:1756 a :Substance ;
     rdfs:label "Calciumcarbonat"@de,
         "Calcium carbonate"@en,
         "Carbonate de calcium"@fr,
         "Carbonato di calcio"@it ;
-    srppp:iupac "calcium carbonate " .
+    :iupac "calcium carbonate " .
 
-substance:1760 a srppp:Substance ;
+substance:1760 a :Substance ;
     rdfs:label "COS-OGA"@de,
         "COS-OGA"@en,
         "COS-OGA"@fr,
         "COS-OGA"@it ;
-    srppp:iupac "Lineares Copolymer aus alpha-1,4-D- Galactopyranosyluronsäuren und methylveresterten Galactopyranosyluronsäuren (9 bis 20 Einheiten) mit dem linearen Copolymer beta-1,4-verknüpfte 2-Amino-2-deoxy-D-glucopyranose und 2-Acetamid-2-deoxy-D-glucopyranose ..." .
+    :iupac "Lineares Copolymer aus alpha-1,4-D- Galactopyranosyluronsäuren und methylveresterten Galactopyranosyluronsäuren (9 bis 20 Einheiten) mit dem linearen Copolymer beta-1,4-verknüpfte 2-Amino-2-deoxy-D-glucopyranose und 2-Acetamid-2-deoxy-D-glucopyranose ..." .
 
-substance:1762 a srppp:Substance ;
+substance:1762 a :Substance ;
     rdfs:label "Z11-14OH"@de,
         "Z11-14OH"@en,
         "Z11-14OH"@fr,
         "Z11-14OH"@it ;
-    srppp:iupac "(Z)-tetradec-11-en-1-ol" .
+    :iupac "(Z)-tetradec-11-en-1-ol" .
 
-substance:1766 a srppp:Substance ;
+substance:1766 a :Substance ;
     rdfs:label "Diphenylmethandiisocyanate"@de,
         "Methylene diphenyl diisocyanate"@en,
         "4,4'-diisocyanate de diphénylméthylène"@fr,
         "difenilmetano diisocianato "@it ;
-    srppp:iupac "polymeric diphenylmethane diisocyanate (MDI)" .
+    :iupac "polymeric diphenylmethane diisocyanate (MDI)" .
 
-substance:1769 a srppp:Substance ;
+substance:1769 a :Substance ;
     rdfs:label "Natriumdodecylsulfat"@de,
         "Sodium dodecylsulfate"@en,
         "dodécylsulfate de sodium "@fr,
         "sodio dodecilsolfato"@it .
 
-substance:1771 a srppp:Substance ;
+substance:1771 a :Substance ;
     rdfs:label "5-Chloro-2-methyl-3(2H)-isothiazolone mixt. with 2-methyl-3(2H)-isothiazolone"@de,
         "5-Chloro-2-methyl-3(2H)-isothiazolone mixt. with 2-methyl-3(2H)-isothiazolone"@en,
         "5-Chloro-2-methyl-3(2H)-isothiazolone mixt. with 2-methyl-3(2H)-isothiazolone"@fr,
         "5-Chloro-2-methyl-3(2H)-isothiazolone mixt. with 2-methyl-3(2H)-isothiazolone"@it ;
-    srppp:iupac "5-Chloro-2-methyl-3(2H)-isothiazolone mixt. with 2-methyl-3(2H)-isothiazolone" .
+    :iupac "5-Chloro-2-methyl-3(2H)-isothiazolone mixt. with 2-methyl-3(2H)-isothiazolone" .
 
-substance:1776 a srppp:Substance ;
+substance:1776 a :Substance ;
     rdfs:label "Sodium Lauryl Ether Sulfate"@de,
         "Sodium Lauryl Ether Sulfate"@en,
         "Sodium Lauryl Ether Sulfate"@fr,
         "Sodium Lauryl Ether Sulfate"@it .
 
-substance:1782 a srppp:Substance ;
+substance:1782 a :Substance ;
     rdfs:label "Hydrocarbons, C10, aromatics, <1% naphthalene"@de,
         "Hydrocarbons, C10, aromatics, <1% naphthalene"@en,
         "Hydrocarbons, C10, aromatics, <1% naphthalene"@fr,
         "Hydrocarbons, C10, aromatics, <1% naphthalene"@it .
 
-substance:1788 a srppp:Substance ;
+substance:1788 a :Substance ;
     rdfs:label "Alkane C9-C12-Iso"@de,
         "Alcanes C9-C12-Iso"@fr,
         "Alcani C9-C12-Iso"@it .
 
-substance:1789 a srppp:Substance ;
+substance:1789 a :Substance ;
     rdfs:label "Grüne-Minze-Öl"@de,
         "spearmint oil"@en,
         "huile de menthe verte"@fr,
         "olio di menta verde"@it .
 
-substance:1790 a srppp:Substance ;
+substance:1790 a :Substance ;
     rdfs:label "2-Ethylhexyllaktat"@de,
         "2-Ethylhexyl lactate"@en,
         "2-Ethylhexyl lactate"@fr,
         "2-Ethylhexyl lactate"@it ;
-    srppp:iupac "Propanoic acid, 2-hydroxy-, 2-ethylhexyl ester" .
+    :iupac "Propanoic acid, 2-hydroxy-, 2-ethylhexyl ester" .
 
-substance:1791 a srppp:Substance ;
+substance:1791 a :Substance ;
     rdfs:label "Propyllaktat"@de,
         "propyl (2S)-2-hydroxypropanoate"@en,
         "propyl (2S)-2-hydroxypropanoate"@fr,
         "propyl (2S)-2-hydroxypropanoate"@it .
 
-substance:1793 a srppp:Substance ;
+substance:1793 a :Substance ;
     rdfs:label "Halauxifen-methyl"@de,
         "halauxifen-methyl"@en,
         "Halauxifen-methyl"@fr,
         "Halauxifen-methyl"@it ;
-    srppp:iupac "methyl 4-amino-3-chloro-6-(4-chloro-2-fluoro-3-methoxyphenyl)pyridine-2-carboxylate" .
+    :iupac "methyl 4-amino-3-chloro-6-(4-chloro-2-fluoro-3-methoxyphenyl)pyridine-2-carboxylate" .
 
-substance:1795 a srppp:Substance ;
+substance:1795 a :Substance ;
     rdfs:label "Benzovindiflupyr"@de,
         "benzovindiflupyr"@en,
         "benzovindiflupyr"@fr,
         "benzovindiflupyr"@it ;
-    srppp:iupac "N-[(1RS,4SR)-9-(dichloromethylene)-1,2,3,4-tetrahydro-1,4-methanonaphthalen-5-yl]-3-(difluoromethyl)-1-methylpyrazole-4-carboxamide" .
+    :iupac "N-[(1RS,4SR)-9-(dichloromethylene)-1,2,3,4-tetrahydro-1,4-methanonaphthalen-5-yl]-3-(difluoromethyl)-1-methylpyrazole-4-carboxamide" .
 
-substance:1798 a srppp:Substance ;
+substance:1798 a :Substance ;
     rdfs:label "Calcium Dodecylbenzene Sulfonate"@de,
         "Calcium Dodecylbenzene Sulfonate"@en,
         "Calcium dodecylbenzene sulfonate"@fr,
         "Calcium Dodecylbenzene Sulfonate"@it .
 
-substance:1800 a srppp:Substance ;
+substance:1800 a :Substance ;
     rdfs:label "Ametoctradin"@de,
         "Ametoctradin"@en,
         "Ametoctradine"@fr,
         "Ametoctradina"@it ;
-    srppp:iupac "5-ethyl-6-octyl[1,2,4]triazolo[1,5-a]pyrimidin-7-amine" .
+    :iupac "5-ethyl-6-octyl[1,2,4]triazolo[1,5-a]pyrimidin-7-amine" .
 
-substance:1801 a srppp:Substance ;
+substance:1801 a :Substance ;
     rdfs:label "Benzolsulfonsäure, 4-C10-13-sec-Alkylderivate"@de,
         "Dodecylbenzenesulfonic acid, 4-C10-13-sec-alkyl derivs"@en,
         "acide benzènesulfonique, dérivés sec-alkyl-4 en C10-13"@fr,
         "Acido benzensolfonico, 4-C10-13-sec-alchilderivati"@it .
 
-substance:1806 a srppp:Substance ;
+substance:1806 a :Substance ;
     rdfs:label "Anionische Tenside"@de,
         "Anionic surfactant"@en,
         "Tensioactifs anioniques"@fr,
         "Tensioattivi anionici"@it .
 
-substance:1807 a srppp:Substance ;
+substance:1807 a :Substance ;
     rdfs:label "Nichtionische Tenside"@de,
         "Nonionic surfactants"@en,
         "Tensioactifs non ioniques"@fr,
         "Tensioattivi non ionici"@it .
 
-substance:1814 a srppp:Substance ;
+substance:1814 a :Substance ;
     rdfs:label "Ammonium nitrate"@de,
         "Ammonium nitrate"@en,
         "Ammonium nitrate"@fr,
         "Ammonium nitrate"@it .
 
-substance:1815 a srppp:Substance ;
+substance:1815 a :Substance ;
     rdfs:label "Pepinomosaikvirus, Stamm CH2, Isolat 1906"@de,
         "virus de la mosaïque du pépino, souche CH2, isolat 1906"@fr,
         "virus del mosaico del cetriolo, ceppo CH2, isolato 1906"@it .
 
-substance:1819 a srppp:Substance ;
+substance:1819 a :Substance ;
     rdfs:label "Polyethylene glycerol esters of fatty acids"@de,
         "Polyethylene glycerol esters of fatty acids"@en,
         "Polyethylene glycerol esters of fatty acids"@fr,
         "Polyethylene glycerol esters of fatty acids"@it .
 
-substance:1820 a srppp:Substance ;
+substance:1820 a :Substance ;
     rdfs:label "Sulfonated aromatic polymer, sodiumsalt"@de,
         "Sulfonated aromatic polymer, sodiumsalt"@en,
         "Sulfonated aromatic polymer, sodiumsalt"@fr,
         "Sulfonated aromatic polymer, sodiumsalt"@it .
 
-substance:1830 a srppp:Substance ;
+substance:1830 a :Substance ;
     rdfs:label "Phenolsulfonic acid - phenol - formaldehyde - urea condensate, sodium salt "@de,
         "Phenolsulfonic acid - phenol - formaldehyde - urea condensate, sodium salt "@en,
         "Phenolsulfonic acid - phenol - formaldehyde - urea condensate, sodium salt "@fr,
         "Phenolsulfonic acid - phenol - formaldehyde - urea condensate, sodium salt "@it .
 
-substance:1831 a srppp:Substance ;
+substance:1831 a :Substance ;
     rdfs:label "Alcohols, C12-15, ethoxylated "@de,
         "Alcohols, C12-15, ethoxylated "@en,
         "Alcohols, C12-15, ethoxylated "@fr,
         "Alcohols, C12-15, ethoxylated "@it .
 
-substance:1832 a srppp:Substance ;
+substance:1832 a :Substance ;
     rdfs:label "Alcohols, C9-11, ethoxylated"@de,
         "Alcohols, C9-11, ethoxylated"@en,
         "Alcohols, C9-11, ethoxylated"@fr,
         "Alcohols, C9-11, ethoxylated"@it .
 
-substance:1833 a srppp:Substance ;
+substance:1833 a :Substance ;
     rdfs:label "2,6-Di-tert-butyl-p-kresol"@de,
         "2,6-di-tert-butyl-p-cresol"@en,
         "2,6-di-tert-butyl-p-crésol"@fr,
         "2,6-di-terz-butil-p-cresolo"@it .
 
-substance:1837 a srppp:Substance ;
+substance:1837 a :Substance ;
     rdfs:label "Alcohols, C9-11-iso-, C10-rich, ethoxylated"@de,
         "alcohols, c9-11-iso-, c10-rich, ethoxylated"@en,
         "alcohols, C9-11-iso-, C10-rich, ethoxylated"@fr,
         "Alcohols, C9-11-iso-, C10-rich, ethoxylated"@it .
 
-substance:1838 a srppp:Substance ;
+substance:1838 a :Substance ;
     rdfs:label "1-Butanol"@de,
         "1-Butanol"@en,
         "butan-1-ol"@fr,
         "1-butanolo "@it .
 
-substance:1840 a srppp:Substance ;
+substance:1840 a :Substance ;
     rdfs:label "alcohols, (c12-14), ethoxylated, monoethers with sulfuric acid, sodium salts"@de,
         "alcohols, (c12-14), ethoxylated, monoethers with sulfuric acid, sodium salts"@en,
         "alcohols, (c12-14), ethoxylated, monoethers with sulfuric acid, sodium salts"@fr,
         "alcohols, (c12-14), ethoxylated, monoethers with sulfuric acid, sodium salts"@it .
 
-substance:1841 a srppp:Substance ;
+substance:1841 a :Substance ;
     rdfs:label "2,2',2''-(hexahydro-1,3,5-triazine-1,3,5-triyl)triethanol / 1,3,5-tris(2-hydroxyethyl)hexahydro-1,3,5-triazine"@de,
         "2,2',2''-(hexahydro-1,3,5-triazine-1,3,5-triyl)triethanol / 1,3,5-tris(2-hydroxyethyl)hexahydro-1,3,5-triazine"@en,
         "2,2',2''-(hexahydro-1,3,5-triazine-1,3,5-triyl)triethanol / 1,3,5-tris(2-hydroxyethyl)hexahydro-1,3,5-triazine"@fr,
         "2,2',2''-(hexahydro-1,3,5-triazine-1,3,5-triyl)triethanol / 1,3,5-tris(2-hydroxyethyl)hexahydro-1,3,5-triazine"@it .
 
-substance:1844 a srppp:Substance ;
+substance:1844 a :Substance ;
     rdfs:label "Polyethylene-polypropylene glycol"@de,
         "Polyethylene-polypropylene glycol"@en,
         "Polyethylene-polypropylene glycol"@fr,
         "Polyethylene-polypropylene glycol"@it .
 
-substance:1845 a srppp:Substance ;
+substance:1845 a :Substance ;
     rdfs:label "Dinatriumphosphonat"@de,
         "disodium phosphonate"@en,
         "phosphonate de disodium"@fr,
         "fosfonato di disodio"@it ;
-    srppp:iupac "Phosphonic acid, disodium salt" .
+    :iupac "Phosphonic acid, disodium salt" .
 
-substance:1846 a srppp:Substance ;
+substance:1846 a :Substance ;
     rdfs:label "2-hydroxy-4-n-octyloxybenzophenone"@de,
         "2-hydroxy-4-n-octyloxybenzophenone"@en,
         "2-hydroxy-4-n-octyloxybenzophenone"@fr,
         "2-hydroxy-4-n-octyloxybenzophenone"@it .
 
-substance:1850 a srppp:Substance ;
+substance:1850 a :Substance ;
     rdfs:label "Dipenten; Limonen"@de,
         "dipentene; limonene"@en,
         "dipentène; limonène"@fr,
         "Dipentene; Limonene"@it ;
-    srppp:iupac "1-Methyl-4-(1-methylethenyl)-cyclohexene" .
+    :iupac "1-Methyl-4-(1-methylethenyl)-cyclohexene" .
 
-substance:1851 a srppp:Substance ;
+substance:1851 a :Substance ;
     rdfs:label "Estragol"@de,
         "estragole"@en,
         "estragol"@fr,
         "Estragolo"@it ;
-    srppp:iupac "1-allyl-4-methoxybenzene; 4-allylanisole" .
+    :iupac "1-allyl-4-methoxybenzene; 4-allylanisole" .
 
-substance:1853 a srppp:Substance ;
+substance:1853 a :Substance ;
     rdfs:label "Pin-2(3)-en"@de,
         "pin-2(3)-en"@en,
         "pin-2(3)-en"@fr,
         "Pin-2(3)-en"@it ;
-    srppp:iupac "2,6,6-Trimethylbicyclo-[3.1.1]hept-2-en" .
+    :iupac "2,6,6-Trimethylbicyclo-[3.1.1]hept-2-en" .
 
-substance:1855 a srppp:Substance ;
+substance:1855 a :Substance ;
     rdfs:label "Disodium maleate"@de,
         "Disodium maleate"@en,
         "Disodium maleate"@fr,
         "Disodium maleate"@it .
 
-substance:1860 a srppp:Substance ;
+substance:1860 a :Substance ;
     rdfs:label "Propan-1-ol"@de,
         "Propan-1-ol"@en,
         "Propane-1-ol"@fr,
         "Propan-1-olo"@it .
 
-substance:1861 a srppp:Substance ;
+substance:1861 a :Substance ;
     rdfs:label "Dodecylbenzolsulfonsäure, Verbindung mit 2-Aminoethanol (1:1)"@de,
         "dodecylbenzenesulphonic acid, compound with 2-aminoethanol (1:1)"@en,
         "acide dodécylbenzènesulfonique, composé avec 2-aminoéthanol (1:1)"@fr,
         "acido dodecilbenzensolfonico, composto con 2-amminoetanolo (1:1)"@it .
 
-substance:1863 a srppp:Substance ;
+substance:1863 a :Substance ;
     rdfs:label "Fettalkoholpolyglykolether"@de,
         "Fatty alcohol polyglycol ether"@en,
         "Ether polyglycolique d'alcools gras"@fr,
         "alcol grasso poliglicoletere"@it .
 
-substance:1864 a srppp:Substance ;
+substance:1864 a :Substance ;
     rdfs:label "Ethoxyliertes Rizinusöl"@de,
         "Castor oil ethoxylated"@en,
         "éthoxylate d'huile de ricin"@fr,
         "olio di ricino etossilato"@it .
 
-substance:1869 a srppp:Substance ;
+substance:1869 a :Substance ;
     rdfs:label "Benzolsulfonsäure"@de,
         "Acide benzènesulfonique"@fr,
         "Acido benzensolfonico"@it .
 
-substance:1870 a srppp:Substance ;
+substance:1870 a :Substance ;
     rdfs:label "Poly(ethylene glycol)(18)tridecyl ether"@de,
         "Poly(ethylene glycol)(18)tridecyl ether"@fr,
         "Poly(ethylene glycol)(18)tridecyl ether"@it .
 
-substance:1871 a srppp:Substance ;
+substance:1871 a :Substance ;
     rdfs:label "Naphtha (Erdoel), schwere Alkylat- [Enthält weniger als 0.1 % Benzol]"@de,
         "Naphtha (petroleum), heavy alkylate [contains less than 0,1 % w/w benzene]"@en,
         "naphta lourd (pétrole), alkylation [contient moins de 0,1 % poids/poids de benzène]"@fr,
         "nafta (petrolio), frazioni pesanti di alchilazione [contiene benzene in percentuale inferiore allo 0,1 % di peso/peso]"@it .
 
-substance:1875 a srppp:Substance ;
+substance:1875 a :Substance ;
     rdfs:label "Fettsäuren C7-C18"@de,
         "Acides gras en C7-C18"@fr,
         "Acidi grassi C7-C18"@it .
 
-substance:1876 a srppp:Substance ;
+substance:1876 a :Substance ;
     rdfs:label "Naphthalenesulfonic acid, methyl-, polymer with formaldehyde, sodium salt"@de,
         "Naphthalenesulfonic acid, methyl-, polymer with formaldehyde, sodium salt"@fr,
         "Naphthalenesulfonic acid, methyl-, polymer with formaldehyde, sodium salt"@it .
 
-substance:1877 a srppp:Substance ;
+substance:1877 a :Substance ;
     rdfs:label "1,4-Dimethylnaphthalin"@de,
         "1,4-dimethylnaphthalene"@en,
         " 1,4-diméthylnaphtalène"@fr,
         "1,4-dimetilnaftalene"@it ;
-    srppp:iupac "1,4-dimethylnaphthalene" .
+    :iupac "1,4-dimethylnaphthalene" .
 
-substance:1878 a srppp:Substance ;
+substance:1878 a :Substance ;
     rdfs:label "Pyriofenon"@de,
         "Pyriofenon"@en,
         "Pyriofenone"@fr,
         "Pyriofenone"@it ;
-    srppp:iupac "(5-chloro-2-methoxy-4-methyl-3-pyridyl)(4,5,6-trimethoxy-o-tolyl)methanone" .
+    :iupac "(5-chloro-2-methoxy-4-methyl-3-pyridyl)(4,5,6-trimethoxy-o-tolyl)methanone" .
 
-substance:1879 a srppp:Substance ;
+substance:1879 a :Substance ;
     rdfs:label "1,2-benzisothiazol-3(2H)-one; 1,2-benzisothiazolin-1 3-one"@de,
         "1,2-benzisothiazol-3(2H)-one; 1,2-benzisothiazolin-1 3-one"@en,
         "1,2-benzisothiazol-3(2H)-one; 1,2-benzisothiazolin-1 3-one"@fr,
         "1,2-benzisothiazol-3(2H)-one; 1,2-benzisothiazolin-1 3-one"@it .
 
-substance:1883 a srppp:Substance ;
+substance:1883 a :Substance ;
     rdfs:label "dodecanol, ethoxylated, monoether with sulfuric acid, ammonium salt"@de,
         "dodecanol, ethoxylated, monoether with sulfuric acid, ammonium salt"@en,
         "dodecanol, ethoxylated, monoether with sulfuric acid, ammonium salt"@fr,
         "dodecanol, ethoxylated, monoether with sulfuric acid, ammonium salt"@it .
 
-substance:1884 a srppp:Substance ;
+substance:1884 a :Substance ;
     rdfs:label "2-methylpentane-2,4-diol"@de,
         "2-methylpentane-2,4-diol"@en,
         "2-methylpentane-2,4-diol"@fr,
         "2-methylpentane-2,4-diol"@it .
 
-substance:1887 a srppp:Substance ;
+substance:1887 a :Substance ;
     rdfs:label "Saccharomyces cerevisiae"@de,
         "Saccharomyces cerevisiae"@en,
         "Saccharomyces cerevisiae"@fr,
         "Saccharomyces cerevisiae"@it .
 
-substance:1890 a srppp:Substance ;
+substance:1890 a :Substance ;
     rdfs:label "Hydrocarbons, C10-C13, aromatics, <1% naphthalene"@de,
         "Hydrocarbons, C10-C13, aromatics, <1% naphthalene"@en,
         "Hydrocarbons, C10-C13, aromatics, <1% naphthalene"@fr,
         "Hydrocarbons, C10-C13, aromatics, <1% naphthalene"@it .
 
-substance:1891 a srppp:Substance ;
+substance:1891 a :Substance ;
     rdfs:label "alcohols, c11-15-secondary, ethoxylated"@de,
         "alcohols, c11-15-secondary, ethoxylated"@en,
         "alcohols, c11-15-secondary, ethoxylated"@fr,
         "alcohols, c11-15-secondary, ethoxylated"@it .
 
-substance:1892 a srppp:Substance ;
+substance:1892 a :Substance ;
     rdfs:label "isobutyl methacrylate"@de,
         "isobutyl methacrylate"@en,
         "méthacrylate d'isobutyle"@fr,
         "metacrilato di isobutile"@it .
 
-substance:1894 a srppp:Substance ;
+substance:1894 a :Substance ;
     rdfs:label "Weisses Mineralöl (Petroleum)"@de,
         "White mineral oil (petroleum)"@en,
         "huile minérale blanche (pétrole)"@fr,
         "Olio di vaselina (petrolio)"@it .
 
-substance:1895 a srppp:Substance ;
+substance:1895 a :Substance ;
     rdfs:label "Dodecylbenzolsulfonat, verzweigt, Kalziumsalz"@de,
         "Dodecylbenzenesulfonate Calcium, branched"@fr,
         "Dodecylbenzenesulfonate Calcium, branched"@it .
 
-substance:1896 a srppp:Substance ;
+substance:1896 a :Substance ;
     rdfs:label "Dimethylamin"@de,
         "Dimethylamine"@en,
         "Diméthylamine"@fr,
         "Dimetilammina"@it ;
-    srppp:iupac "N-Methylmethanamine" .
+    :iupac "N-Methylmethanamine" .
 
-substance:1897 a srppp:Substance ;
+substance:1897 a :Substance ;
     rdfs:label "Dodecan-1-ol, ethoxyliert "@de,
         "Dodecan-1-ol, ethoxylé "@fr,
         "Dodecan-1-ol, ethoxylizzato"@it .
 
-substance:1898 a srppp:Substance ;
+substance:1898 a :Substance ;
     rdfs:label "Tetrahydrofurfuryl-Alkohol"@de,
         "Alcool tétrahydrofurfurylique"@fr,
         "Alcol tetrahydrofurfurylico"@it .
 
-substance:1899 a srppp:Substance ;
+substance:1899 a :Substance ;
     rdfs:label "Gemisch aus: 2-Ethylhexyl-mono-D-glucopyranosid und 2-Ethylhexyl-di-D-glucopyranosid"@de,
         "Mélange de: 2-éthylhexyle-mono-glucopyranoside et 2-éthylhexyle-di-D-glucopyranoside."@fr,
         "Miscela di: 2-etilesil-mono-D-glucopiranoside e 2-ethylesil-di-D-glucopyranoside."@it .
 
-substance:190 a srppp:Substance ;
+substance:190 a :Substance ;
     rdfs:label "Folpet"@de,
         "folpet"@fr,
         "Folpet"@it ;
-    srppp:iupac "N-(trichloromethylthio)phthalimide" .
+    :iupac "N-(trichloromethylthio)phthalimide" .
 
-substance:1900 a srppp:Substance ;
+substance:1900 a :Substance ;
     rdfs:label "Oleylamin ethoxyliert, Dodecylbenzensulfonsalz"@de,
         "Ethoxylated oleil amine, dodecylbenzenesulphonic salt"@en,
         "Amine oleyle éthoxylé, sel de dodecylbenzenesulfone"@fr,
         "Ethoxylated oleil amine, dodecylbenzenesulphonic salt"@it .
 
-substance:1902 a srppp:Substance ;
+substance:1902 a :Substance ;
     rdfs:label "Benzolsulfonsäure, C10-13-Alkylderivate, Calciumsalze"@de,
         "Benzenesulfonic acid, C10-13-alkyl derivs., calcium salts"@en,
         "acide benzènesulfonique, dérivés alkyles en C10-13, sels de calcium"@fr,
         "acido benzensolfonico, C10-13-alchil derivati, sali di calcio"@it .
 
-substance:1903 a srppp:Substance ;
+substance:1903 a :Substance ;
     rdfs:label "L-Carvon"@de,
         "L-Carvon"@en,
         "L-Carvone"@fr,
         "L-Carvone"@it ;
-    srppp:iupac "(5R)-2-methyl-5-prop-1-en-2-ylcyclohex-2-en-1-one" .
+    :iupac "(5R)-2-methyl-5-prop-1-en-2-ylcyclohex-2-en-1-one" .
 
-substance:1904 a srppp:Substance ;
+substance:1904 a :Substance ;
     rdfs:label "Triisobutylphosphat"@de,
         "Triisobutyl phosphate "@en,
         "Phosphate de triisobutyle"@fr,
         "Fosfato di triisobutile"@it .
 
-substance:1905 a srppp:Substance ;
+substance:1905 a :Substance ;
     rdfs:label "Benzenesulfonic acid, 4-c10-14-alkyl derivatives, calcium salts"@de,
         "Benzenesulfonic acid, 4-c10-14-alkyl derivatives, calcium salts"@en,
         "Benzenesulfonic acid, 4-c10-14-alkyl derivatives, calcium salts"@fr,
         "Benzenesulfonic acid, 4-c10-14-alkyl derivatives, calcium salts"@it .
 
-substance:1906 a srppp:Substance ;
+substance:1906 a :Substance ;
     rdfs:label "Ammoniumcarbamat"@de,
         "carbamate d'ammonium"@fr,
         "carbammato di ammonio"@it .
 
-substance:1909 a srppp:Substance ;
+substance:1909 a :Substance ;
     rdfs:label "Benzolsulfonsäure"@de,
         "Sodium alkylbenzene sulfonate"@en,
         "Sodium alkylbenzene sulfonate"@fr,
         "Sodium alkylbenzene sulfonate"@it .
 
-substance:1910 a srppp:Substance ;
+substance:1910 a :Substance ;
     rdfs:label "1,2-benzisothiazol-3(2H)-one; 1,2-benzisothiazolin-3-one"@de,
         "1,2-benzisothiazol-3(2H)-one; 1,2-benzisothiazolin-3-one"@en,
         "1,2-benzisothiazol-3(2H)-one; 1,2-benzisothiazolin-3-one"@fr,
         "1,2-benzisothiazol-3(2H)-one; 1,2-benzisothiazolin-3-one"@it .
 
-substance:1911 a srppp:Substance ;
+substance:1911 a :Substance ;
     rdfs:label "Terpineol"@de,
         "Terpinoel"@en,
         "Terpineol"@fr,
         "Terpineol"@it .
 
-substance:1912 a srppp:Substance ;
+substance:1912 a :Substance ;
     rdfs:label "Solvent naphtha (petroleum), heavy arom.; Kerosine - unspecified"@de,
         "Solvent naphtha (petroleum), heavy arom.; Kerosine - unspecified"@en,
         "Solvent naphtha (petroleum), heavy arom.; Kerosine - unspecified"@fr,
         "Solvent naphtha (petroleum), heavy arom.; Kerosine - unspecified"@it .
 
-substance:1917 a srppp:Substance ;
+substance:1917 a :Substance ;
     rdfs:label "Hydrocarbons, C9, aromatics"@de,
         "Hydrocarbons, C9, aromatics"@en,
         "Hydrocarbons, C9, aromatics"@fr,
         "Hydrocarbons, C9, aromatics"@it .
 
-substance:1919 a srppp:Substance ;
+substance:1919 a :Substance ;
     rdfs:label "Kohlenwasserstoffe, C10, Aromaten"@de,
         "Hydrocarbons, C10, aromatics"@en,
         "Hydrocarbures, C10, aromatiques"@fr,
         "Idrocarburi, C10, aromatici"@it .
 
-substance:1922 a srppp:Substance ;
+substance:1922 a :Substance ;
     rdfs:label "Kupfer (als Tribasisches Kupfersulfat)"@de,
         "Tribasic copper sulphate"@en,
         "cuivre (sous forme sulfate de cuivre tribasique)"@fr,
         "Rame (sotto forma di sulfato di rame tribasico)"@it .
 
-substance:1927 a srppp:Substance ;
+substance:1927 a :Substance ;
     rdfs:label "Fettsäuren C7-C20 (Kaliumsalze)"@de,
         "Acides gras en C7-C20 (sous forme du sels de potassium)"@fr,
         "Acidi grassi C7-C20 (sali di potassio) "@it .
 
-substance:1928 a srppp:Substance ;
+substance:1928 a :Substance ;
     rdfs:label "Ethoxyliertes Sojabohnenöl"@de,
         "Ethoxylated soybean oil"@en,
         "Huile de soja éthoxylée"@fr,
         "Olio di soia etossilato"@it .
 
-substance:1930 a srppp:Substance ;
+substance:1930 a :Substance ;
     rdfs:label "(Z)-9-Octadecen-1-ol ethoxylated"@de,
         "(Z)-9-Octadecen-1-ol ethoxylated"@en,
         "(Z)-9-Octadecen-1-ol ethoxylated"@fr,
         "(Z)-9-Octadecen-1-ol ethoxylated"@it .
 
-substance:1933 a srppp:Substance ;
+substance:1933 a :Substance ;
     rdfs:label "Mefentrifluconazole"@de,
         "Mefentrifluconazole"@en,
         "Mefentrifluconazole"@fr,
         "Mefentrifluconazole"@it ;
-    srppp:iupac "(2RS)-2-[4-(4-chlorophenoxy)-2-(trifluoromethyl)phenyl]-1-(1H-1,2,4-triazol-1-yl)propan-2-ol" .
+    :iupac "(2RS)-2-[4-(4-chlorophenoxy)-2-(trifluoromethyl)phenyl]-1-(1H-1,2,4-triazol-1-yl)propan-2-ol" .
 
-substance:1936 a srppp:Substance ;
+substance:1936 a :Substance ;
     rdfs:label "Fischöl"@de,
         "fish oil"@en,
         "Huile de poisson"@fr,
         "Olio di pesce"@it ;
-    srppp:iupac "fish oil" .
+    :iupac "fish oil" .
 
-substance:1937 a srppp:Substance ;
+substance:1937 a :Substance ;
     rdfs:label "Methenamin; Hexamethylenetetramin"@de,
         "méthénamine; hexaméthylènetétramine"@fr,
         "Metenamina; Esametilentetrammina"@it ;
-    srppp:iupac "1,3,5,7-Tetraazatricyclo[3.3.1.1]decane" .
+    :iupac "1,3,5,7-Tetraazatricyclo[3.3.1.1]decane" .
 
-substance:1938 a srppp:Substance ;
+substance:1938 a :Substance ;
     rdfs:label "polyoxyethylene trimethyldecyl alcohol"@de,
         "polyoxyethylene trimethyldecyl alcohol"@en,
         "polyoxyethylene trimethyldecyl alcohol"@fr,
         "polyoxyethylene trimethyldecyl alcohol"@it .
 
-substance:1939 a srppp:Substance ;
+substance:1939 a :Substance ;
     rdfs:label "Bacillus amyloliquefaciens"@de,
         "Bacillus amyloliquefaciens"@en,
         "Bacillus amyloliquefaciens"@fr,
         "Bacillus amyloliquefaciens"@it .
 
-substance:1942 a srppp:Substance ;
+substance:1942 a :Substance ;
     rdfs:label "Reaktionsgemisch, bestehend aus 5-Chlor-2-methyl-2H-isothiazol-3-on und 2-Methyl-2H-isothiazol-3-on (3:1)"@de,
         "reaction mass of: 5-chloro-2-methyl-4-isothiazolin-3-one and 2-Methyl-2H-isothiazol-3-one (3:1)"@en,
         "mélange de: 5-chloro-2-méthyl-2H-isothiazol-3-one et 2-methyl-2H-isothiazol-3-one (3:1)"@fr,
         "Miscela di: 5-cloro-2-metil-2H-isotiazol-3-one e 2-metil-2H-isotiazol-3-one (3:1)"@it .
 
-substance:1951 a srppp:Substance ;
+substance:1951 a :Substance ;
     rdfs:label "2-Ethylhexyl-S-Lactat"@de,
         "2-ethylhexyl-S-lactate"@en,
         "2-ethyl-hexyl-S-lactate"@fr,
         "2-ethyl-hexyl-S-lactate"@it ;
-    srppp:iupac "2-ethylhexyl (2S)-2-hydroxypropanoate" .
+    :iupac "2-ethylhexyl (2S)-2-hydroxypropanoate" .
 
-substance:1954 a srppp:Substance ;
+substance:1954 a :Substance ;
     rdfs:label "Encarsia citrina"@de,
         "Encarsia citrina"@en,
         "Encarsia citrina"@fr,
         "Encarsia citrina"@it ;
-    srppp:iupac "Parasitische Hymenopteren / hyménoptères parasites / imenotteri parassiti" .
+    :iupac "Parasitische Hymenopteren / hyménoptères parasites / imenotteri parassiti" .
 
-substance:1956 a srppp:Substance ;
+substance:1956 a :Substance ;
     rdfs:label "Rodolia cardinalis"@de,
         "Rodolia cardinalis"@en,
         "Rodolia cardinalis"@fr,
         "Rodolia cardinalis"@it ;
-    srppp:iupac "Räuberische Käfer / coléoptères prédateurs / coleotteri predatori" .
+    :iupac "Räuberische Käfer / coléoptères prédateurs / coleotteri predatori" .
 
-substance:1957 a srppp:Substance ;
+substance:1957 a :Substance ;
     rdfs:label "Gibberellin "@de,
         "gibberilline"@fr,
         "Gibberellina"@it ;
-    srppp:iupac "(3S,3aR,4S,4aR,7R,9aR,9bR,12S)-12-hydroxy-3-methyl-6-methylene-2-oxoperhydro-4a,7-methano-(3,9b-propanoazuleno/9b,3-propenoazuleno)[1,2-b]furan-4-carboxylic acid" .
+    :iupac "(3S,3aR,4S,4aR,7R,9aR,9bR,12S)-12-hydroxy-3-methyl-6-methylene-2-oxoperhydro-4a,7-methano-(3,9b-propanoazuleno/9b,3-propenoazuleno)[1,2-b]furan-4-carboxylic acid" .
 
-substance:196 a srppp:Substance ;
+substance:196 a :Substance ;
     rdfs:label "Fosetyl"@de,
         "fosétyl"@fr,
         "Fosetil"@it ;
-    srppp:iupac "ethyl hydrogen phosphonate" .
+    :iupac "ethyl hydrogen phosphonate" .
 
-substance:1961 a srppp:Substance ;
+substance:1961 a :Substance ;
     rdfs:label "Calciumformiat"@de,
         "Calcium formate"@en,
         "formiate de calcium"@fr,
         "formiato di calcio"@it .
 
-substance:1964 a srppp:Substance ;
+substance:1964 a :Substance ;
     rdfs:label "Hydroxypropylstärke"@de,
         "Hydroxypropyl starch"@en,
         "amidon hydroxypropylé "@fr,
         "amido idrossipropilato "@it .
 
-substance:1974 a srppp:Substance ;
+substance:1974 a :Substance ;
     rdfs:label "Coccophagus scutellaris"@de,
         "Coccophagus scutellaris"@en,
         "Coccophagus scutellaris"@fr,
         "Coccophagus scutellaris"@it ;
-    srppp:iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
+    :iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
 
-substance:1977 a srppp:Substance ;
+substance:1977 a :Substance ;
     rdfs:label "Anagyrus vladimiri (vormals bekannt als Anagyrus pseudococci)"@de,
         "Anagyrus vladimiri (vormals bekannt als Anagyrus pseudococci)"@en,
         "Anagyrus vladimiri (vormals bekannt als Anagyrus pseudococci)"@fr,
         "Anagyrus vladimiri (vormals bekannt als Anagyrus pseudococci)"@it ;
-    srppp:iupac "Parasitische Hymenopteren / hyménoptères parasites / Imenottero parassita" .
+    :iupac "Parasitische Hymenopteren / hyménoptères parasites / Imenottero parassita" .
 
-substance:1978 a srppp:Substance ;
+substance:1978 a :Substance ;
     rdfs:label "Trichopria drosophilae"@de,
         "Trichopria drosophilae"@en,
         "Trichopria drosophilae"@fr,
         "Trichopria drosophilae"@it ;
-    srppp:iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
+    :iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
 
-substance:1979 a srppp:Substance ;
+substance:1979 a :Substance ;
     rdfs:label "Cephalonomia tarsalis"@de,
         "Cephalonomia tarsalis"@en,
         "Cephalonomia tarsalis"@fr,
         "Cephalonomia tarsalis"@it ;
-    srppp:iupac "Parasitische Hymenopteren / hyménoptères parasites / Imenottero parassita" .
+    :iupac "Parasitische Hymenopteren / hyménoptères parasites / Imenottero parassita" .
 
-substance:199 a srppp:Substance ;
+substance:199 a :Substance ;
     rdfs:label "Glyphosat"@de,
         "glyphosate"@fr,
         "Glifosato"@it ;
-    srppp:iupac "N-(phosphonomethyl)glycine" .
+    :iupac "N-(phosphonomethyl)glycine" .
 
-substance:1990 a srppp:Substance ;
+substance:1990 a :Substance ;
     rdfs:label "Eupeodes corollae"@de,
         "Eupeodes corollae"@en,
         "Eupeodes corollae"@fr,
         "Eupeodes corollae"@it ;
-    srppp:iupac "Räuberische Dipteren / diptères prédateurs / dittero predatore" .
+    :iupac "Räuberische Dipteren / diptères prédateurs / dittero predatore" .
 
-substance:1993 a srppp:Substance ;
+substance:1993 a :Substance ;
     rdfs:label "Heterorhabditis downesi"@de,
         "Heterorhabditis downesi"@en,
         "Heterorhabditis downesi"@fr,
         "Heterorhabditis downesi"@it ;
-    srppp:iupac "Entomopathogene Nematoden / nématode entomopathogène / nematodi entomoparassiti" .
+    :iupac "Entomopathogene Nematoden / nématode entomopathogène / nematodi entomoparassiti" .
 
-substance:1995 a srppp:Substance ;
+substance:1995 a :Substance ;
     rdfs:label "Ammoniak, wässrige Lösung"@de,
         "ammonia, aqueous solution"@en,
         "ammoniac, solution aqueuse"@fr,
         "ammoniaca, soluzione acquosa"@it .
 
-substance:1999 a srppp:Substance ;
+substance:1999 a :Substance ;
     rdfs:label "Anastatus bifasciatus"@de,
         "Anastatus bifasciatus"@en,
         "Anastatus bifasciatus"@fr,
         "Anastatus bifasciatus"@it ;
-    srppp:iupac "Parasitische Hymenopteren / hyménoptères parasites / imenottero parassita" .
+    :iupac "Parasitische Hymenopteren / hyménoptères parasites / imenottero parassita" .
 
-substance:2000 a srppp:Substance ;
+substance:2000 a :Substance ;
     rdfs:label "Transeius montdorensis"@de,
         "Transeius montdorensis"@en,
         "Transeius montdorensis"@fr,
         "Transeius montdorensis"@it ;
-    srppp:iupac "Raubmilbe / acarien prédateur / acaro predatore" .
+    :iupac "Raubmilbe / acarien prédateur / acaro predatore" .
 
-substance:2001 a srppp:Substance ;
+substance:2001 a :Substance ;
     rdfs:label "Sphaerophoria rueppellii"@de,
         "Sphaerophoria rueppellii"@en,
         "Sphaerophoria rueppellii"@fr,
         "Sphaerophoria rueppellii"@it ;
-    srppp:iupac "Räuberische Dipteren / diptères prédateurs / dittero predatore" .
+    :iupac "Räuberische Dipteren / diptères prédateurs / dittero predatore" .
 
-substance:2012 a srppp:Substance ;
+substance:2012 a :Substance ;
     rdfs:label "Gibberellinsäure"@de,
         "Acide gibbérellique"@fr,
         "Acido gibberellico"@it ;
-    srppp:iupac "(3S,3aS,4S,4aS,7S,9aR,9bR,12S)-7,12-dihydroxy-3-methyl-6-methylene-2-oxoperhydro-4a,7-methano-9b,3-propeno[1,2-b]furan-4-carboxylic acid " .
+    :iupac "(3S,3aS,4S,4aS,7S,9aR,9bR,12S)-7,12-dihydroxy-3-methyl-6-methylene-2-oxoperhydro-4a,7-methano-9b,3-propeno[1,2-b]furan-4-carboxylic acid " .
 
-substance:2014 a srppp:Substance ;
+substance:2014 a :Substance ;
     rdfs:label "1-Heptanol, 2-propyl-, 7EO"@de,
         "1-Heptanol, 2-propyl- , 7EO"@en,
         "1-Heptanol, 2-propyl-, 7EO"@fr,
         "1-Heptanol, 2-propyl-, 7EO"@it .
 
-substance:2015 a srppp:Substance ;
+substance:2015 a :Substance ;
     rdfs:label "Alcohols, C12-15, branched and linear, ethoxylated"@de,
         "Alcohols, C12-15, branched and linear, ethoxylated"@en,
         "Alcohols, C12-15, branched and linear, ethoxylated"@fr,
         "Alcohols, C12-15, branched and linear, ethoxylated"@it .
 
-substance:2016 a srppp:Substance ;
+substance:2016 a :Substance ;
     rdfs:label "Exochomus quadripustulatus"@de,
         "Pine ladybug"@en,
         "Exochomus quadripustulatus"@fr,
         "Exochomus quadripustulatus"@it ;
-    srppp:iupac "Räuberische Käfer / coléoptères prédateurs / coleotteri predatori" .
+    :iupac "Räuberische Käfer / coléoptères prédateurs / coleotteri predatori" .
 
-substance:2019 a srppp:Substance ;
+substance:2019 a :Substance ;
     rdfs:label "Trissolcus basalis"@de,
         "Trissolcus basalis"@en,
         "Trissolcus basalis"@fr,
         "Trissolcus basalis"@it ;
-    srppp:iupac "Parasitische Hymenopteren / hyménoptères parasites / imenotteri parassiti" .
+    :iupac "Parasitische Hymenopteren / hyménoptères parasites / imenotteri parassiti" .
 
-substance:2023 a srppp:Substance ;
+substance:2023 a :Substance ;
     rdfs:label "Terpen-Oligomere"@de,
         "Terpene oligomers"@en,
         "Oligomères terpéniques"@fr,
         "Oligomeri terpenici"@it ;
-    srppp:iupac "6,6-dimethyl-4-methyllidenebicyclo[3.1.1]heptane;4,6,6-trimethylbicyclo[3.1.1]hept-3-ene" .
+    :iupac "6,6-dimethyl-4-methyllidenebicyclo[3.1.1]heptane;4,6,6-trimethylbicyclo[3.1.1]hept-3-ene" .
 
-substance:2024 a srppp:Substance ;
+substance:2024 a :Substance ;
     rdfs:label "Pronematus ubiquitus"@de,
         "Pronematus ubiquitus"@en,
         "Pronematus ubiquitus"@fr,
         "Pronematus ubiquitus"@it ;
-    srppp:iupac "Raubmilben / acariens prédateurs / acari predatori" .
+    :iupac "Raubmilben / acariens prédateurs / acari predatori" .
 
-substance:2027 a srppp:Substance ;
+substance:2027 a :Substance ;
     rdfs:label "Mischung aus SiO2 und Al2O3"@de,
         "Mélange de SiO2 et d'Al2O3"@fr,
         "Miscela di SiO2 e Al2O3"@it .
 
-substance:2028 a srppp:Substance ;
+substance:2028 a :Substance ;
     rdfs:label "Alcohols C9-11, ethoxylated propoxylated"@de,
         "Alcohols C9-11, ethoxylated propoxylated"@fr,
         "Alcohols C9-11, ethoxylated propoxylated"@it .
 
-substance:2032 a srppp:Substance ;
+substance:2032 a :Substance ;
     rdfs:label "pentanoic acid, 5-(dimethylamino)-2-methyl-5-oxo-, methyl ester "@de,
         "pentanoic acid, 5-(dimethylamino)-2-methyl-5-oxo-, methyl ester "@en,
         "pentanoic acid, 5-(dimethylamino)-2-methyl-5-oxo-, methyl ester "@fr,
         "pentanoic acid, 5-(dimethylamino)-2-methyl-5-oxo-, methyl ester "@it ;
-    srppp:iupac "Pentanoic acid, 5-(dimethylamino)-2-methyl-5-oxo-,methyl ester; Methyl 5-(dimethylamino)-2-methyl-5-oxopentanoate" .
+    :iupac "Pentanoic acid, 5-(dimethylamino)-2-methyl-5-oxo-,methyl ester; Methyl 5-(dimethylamino)-2-methyl-5-oxopentanoate" .
 
-substance:2034 a srppp:Substance ;
+substance:2034 a :Substance ;
     rdfs:label "Trinatriumphosphat als Dodecahydrat"@de,
         "phosphoric acid, trisodium salt, dodecahydrate "@en,
         "phosphate trisodique, dodécahydrate"@fr,
         "fosfato trisodico, dodecaidrato"@it .
 
-substance:2037 a srppp:Substance ;
+substance:2037 a :Substance ;
     rdfs:label "3,6-Dimethyl-4-octin-3,6-diol"@de,
         "3,6-diméthyle-4-octyne-3,6-diol"@fr,
         "3,6-dimetilott-4-in-3,6-diolo"@it .
 
-substance:2040 a srppp:Substance ;
+substance:2040 a :Substance ;
     rdfs:label "lignin, alkali, reaction products with formaldehyde and sodium bisulfite"@de,
         "lignin, alkali, reaction products with formaldehyde and sodium bisulfite"@fr,
         "lignin, alkali, reaction products with formaldehyde and sodium bisulfite"@it .
 
-substance:2041 a srppp:Substance ;
+substance:2041 a :Substance ;
     rdfs:label "Ethylenediamine, ethoxylated and propoxylated"@de,
         "Ethylenediamine, ethoxylated and propoxylated"@fr,
         "Ethylenediamine, ethoxylated and propoxylated"@it ;
-    srppp:iupac "Ethylenediamine, ethoxylated and propoxylated" .
+    :iupac "Ethylenediamine, ethoxylated and propoxylated" .
 
-substance:2042 a srppp:Substance ;
+substance:2042 a :Substance ;
     rdfs:label "Kieselgur (Diatomeenerde)"@de,
         "Kieselgur (diatomaceous earth)"@en,
         "Kieselgur (terre à dietomées)"@fr,
         "Kieselgur (terra diatomacea)"@it .
 
-substance:205 a srppp:Substance ;
+substance:205 a :Substance ;
     rdfs:label "Hexythiazox"@de,
         "hexythiazox"@fr,
         "Essitiazox"@it ;
-    srppp:iupac "(4RS5RS)-5-(4-chlorophenyl)-N-cyclohexyl-4-methyl-2-oxothiazolidine-3-carboxamide" .
+    :iupac "(4RS5RS)-5-(4-chlorophenyl)-N-cyclohexyl-4-methyl-2-oxothiazolidine-3-carboxamide" .
 
-substance:2056 a srppp:Substance ;
+substance:2056 a :Substance ;
     rdfs:label "N,N-Dimethyloctanamide"@de,
         "N,N-dimethyloctanamide"@en,
         "N,N-diméthyloctanamide"@fr,
         "N,N-dimetiloctanammide"@it .
 
-substance:2058 a srppp:Substance ;
+substance:2058 a :Substance ;
     rdfs:label "Kolophonium"@de,
         "Rosin"@en,
         "Colophane"@fr,
         "Colofonia"@it .
 
-substance:2059 a srppp:Substance ;
+substance:2059 a :Substance ;
     rdfs:label "Quarz"@de,
         "Quartz"@en,
         "Quartz"@fr,
         "Quarzo"@it .
 
-substance:2070 a srppp:Substance ;
+substance:2070 a :Substance ;
     rdfs:label "Anethol (1-methoxyl-(1-Propenyl) benzen)"@de,
         "Anethole (1-methoxyl-(1-propenyl) benzene)"@en,
         "Anéthol (1-méthoxyl-(1-propényl)benzène)"@fr,
         "Anetolo (1-metossil-(1-propenil) benzene)"@it .
 
-substance:2071 a srppp:Substance ;
+substance:2071 a :Substance ;
     rdfs:label "linalyl alcohol"@de,
         "linalyl alcohol"@fr,
         "linalyl alcohol"@it .
 
-substance:2072 a srppp:Substance ;
+substance:2072 a :Substance ;
     rdfs:label "Alcohols, C16-18, ethoxylated"@de,
         "Alcohols, C16-18, ethoxylated"@en,
         "Alcohols, C16-18, ethoxylated"@fr,
         "Alcohols, C16-18, ethoxylated"@it .
 
-substance:2074 a srppp:Substance ;
+substance:2074 a :Substance ;
     rdfs:label "Alcohols, C11-14-iso-, C13-rich, ethoxylated (6 EO), methylated"@de,
         "Alcohols, C11-14-iso-, C13-rich, ethoxylated (6 EO), methylated"@en,
         "Alcohols, C11-14-iso-, C13-rich, ethoxylated (6 EO), methylated"@fr,
         "Alcohols, C11-14-iso-, C13-rich, ethoxylated (6 EO), methylated"@it .
 
-substance:2076 a srppp:Substance ;
+substance:2076 a :Substance ;
     rdfs:label "2-methylaminoethanol"@de,
         "2-methylaminoethanol"@en,
         "2-methylaminoethanol"@fr,
         "2-methylaminoethanol"@it .
 
-substance:26 a srppp:Substance ;
+substance:26 a :Substance ;
     rdfs:label "Amidosulfuron"@de,
         "amidosulfuron"@fr,
         "Amidosulfuron"@it ;
-    srppp:iupac "1-(4,6-dimethoxypyrimidin-2-yl)-3-mesyl(methyl)sulfamoylurea" .
+    :iupac "1-(4,6-dimethoxypyrimidin-2-yl)-3-mesyl(methyl)sulfamoylurea" .
 
-substance:269 a srppp:Substance ;
+substance:269 a :Substance ;
     rdfs:label "Nicosulfuron"@de,
         "nicosulfuron"@fr,
         "Nicosulfuron"@it ;
-    srppp:iupac "2-(4,6-dimethoxypyrimidin-2-ylcarbamoylsulfamoyl)-N,N-dimethylnicotinamide" .
+    :iupac "2-(4,6-dimethoxypyrimidin-2-ylcarbamoylsulfamoyl)-N,N-dimethylnicotinamide" .
 
-substance:284 a srppp:Substance ;
+substance:284 a :Substance ;
     rdfs:label "Paclobutrazol"@de,
         "paclobutrazole"@fr,
         "Paclobutrazolo"@it ;
-    srppp:iupac "(2RS,3RS)-1-(4-chlorophenyl)-4,4-dimethyl-2-(1H-1,2,4-triazol-1-yl) pentan-3-ol" .
+    :iupac "(2RS,3RS)-1-(4-chlorophenyl)-4,4-dimethyl-2-(1H-1,2,4-triazol-1-yl) pentan-3-ol" .
 
-substance:286 a srppp:Substance ;
+substance:286 a :Substance ;
     rdfs:label "Penconazole"@de,
         "penconazole"@fr,
         "Penconazolo"@it ;
-    srppp:iupac "1-(2,4-dichloro-beta-propylphenethyl)-1H-1,2,4-triazole" .
+    :iupac "1-(2,4-dichloro-beta-propylphenethyl)-1H-1,2,4-triazole" .
 
-substance:287 a srppp:Substance ;
+substance:287 a :Substance ;
     rdfs:label "Pendimethalin"@de,
         "pendiméthaline"@fr,
         "Pendimetalin"@it ;
-    srppp:iupac "N-(1-ethylpropyl)-2,6-dinitro-3,4-xylidine" .
+    :iupac "N-(1-ethylpropyl)-2,6-dinitro-3,4-xylidine" .
 
-substance:291 a srppp:Substance ;
+substance:291 a :Substance ;
     rdfs:label "Phenmedipham"@de,
         "phenmedipham"@fr,
         "Fenmedifam"@it ;
-    srppp:iupac "methyl 3-(3-methylcarbaniloyloxy)carbanilate" .
+    :iupac "methyl 3-(3-methylcarbaniloyloxy)carbanilate" .
 
-substance:299 a srppp:Substance ;
+substance:299 a :Substance ;
     rdfs:label "Picloram"@de,
         "piclorame"@fr,
         "Picloram"@it ;
-    srppp:iupac "4-amino-3,5,6-trichloropyridine-2-carboxylic acid" .
+    :iupac "4-amino-3,5,6-trichloropyridine-2-carboxylic acid" .
 
-substance:3 a srppp:Substance ;
+substance:3 a :Substance ;
     rdfs:label "1-Naphthylacetic acid"@de,
         "1-naphtyl acide acétique"@fr,
         "Acido 1-naftilacetico"@it ;
-    srppp:iupac "1-naphthylacetic acid" .
+    :iupac "1-naphthylacetic acid" .
 
-substance:301 a srppp:Substance ;
+substance:301 a :Substance ;
     rdfs:label "Pirimicarb"@de,
         "pirimicarbe"@fr,
         "Pirimicarb"@it ;
-    srppp:iupac "2-dimethylamino-5,6-dimethylpyrimidin-4-yl dimethylcarbamate" .
+    :iupac "2-dimethylamino-5,6-dimethylpyrimidin-4-yl dimethylcarbamate" .
 
-substance:311 a srppp:Substance ;
+substance:311 a :Substance ;
     rdfs:label "Propamocarb"@de,
         "propamocarbe"@fr,
         "Propamocarb"@it ;
-    srppp:iupac "propyl 3-(dimethylamino)propylcarbamate" .
+    :iupac "propyl 3-(dimethylamino)propylcarbamate" .
 
-substance:312 a srppp:Substance ;
+substance:312 a :Substance ;
     rdfs:label "Propaquizafop"@de,
         "propaquizafop"@fr,
         "Propaquizafop"@it ;
-    srppp:iupac "2-isopropylideneamino-oxyethyl (R)-2-[4-(6-chloroquinoxalin-2-yloxy)phenoxy]propionate" .
+    :iupac "2-isopropylideneamino-oxyethyl (R)-2-[4-(6-chloroquinoxalin-2-yloxy)phenoxy]propionate" .
 
-substance:323 a srppp:Substance ;
+substance:323 a :Substance ;
     rdfs:label "Pyrethrine"@de,
         "pyréthrines"@fr,
         "Piretrine"@it ;
-    srppp:iupac "Pyrethrins" .
+    :iupac "Pyrethrins" .
 
-substance:338 a srppp:Substance ;
+substance:338 a :Substance ;
     rdfs:label "Schwefel"@de,
         "soufre"@fr,
         "Zolfo"@it ;
-    srppp:iupac "sulfur" .
+    :iupac "sulfur" .
 
-substance:344 a srppp:Substance ;
+substance:344 a :Substance ;
     rdfs:label "Tefluthrin"@de,
         "Tefluthrin"@en,
         "téfluthrine"@fr,
         "Teflutrin"@it ;
-    srppp:iupac "2,3,5,6-tetrafluoro-4-methylbenzyl (Z)-(1RS,3RS)-3-(2-chloro-3,3,3-trifluoroprop-1-enyl)-2,2-dimethylcyclopropanecarboxylate" .
+    :iupac "2,3,5,6-tetrafluoro-4-methylbenzyl (Z)-(1RS,3RS)-3-(2-chloro-3,3,3-trifluoroprop-1-enyl)-2,2-dimethylcyclopropanecarboxylate" .
 
-substance:35 a srppp:Substance ;
+substance:35 a :Substance ;
     rdfs:label "Asulam"@de,
         "asulame"@fr,
         "Asulame"@it ;
-    srppp:iupac "methyl 4-aminophenylsulfonylcarbamate" .
+    :iupac "methyl 4-aminophenylsulfonylcarbamate" .
 
-substance:4 a srppp:Substance ;
+substance:4 a :Substance ;
     rdfs:label "2,4-D"@de,
         "2,4-D"@fr,
         "2,4-D"@it ;
-    srppp:iupac "(2,4-dichlorophenoxy)acetic acid" .
+    :iupac "(2,4-dichlorophenoxy)acetic acid" .
 
-substance:451 a srppp:Substance ;
+substance:451 a :Substance ;
     rdfs:label "Dazomet (DMTT)"@de,
         "dazomet (DMTT)"@fr,
         "Dazomet (DMTT)"@it ;
-    srppp:iupac "3,5-dimethyl-1,3,5-thiadiazinane-2-thione" .
+    :iupac "3,5-dimethyl-1,3,5-thiadiazinane-2-thione" .
 
-substance:453 a srppp:Substance ;
+substance:453 a :Substance ;
     rdfs:label "Deltamethrin"@de,
         "deltaméthrine"@fr,
         "Deltametrina"@it ;
-    srppp:iupac "(S)-alpha-cyano-3-phenoxybenzyl (1R,3R)-3-(2,2-dibromovinyl)-2,2-dimethylcyclopropanecarboxylate" .
+    :iupac "(S)-alpha-cyano-3-phenoxybenzyl (1R,3R)-3-(2,2-dibromovinyl)-2,2-dimethylcyclopropanecarboxylate" .
 
-substance:50 a srppp:Substance ;
+substance:50 a :Substance ;
     rdfs:label "Bentazon"@de,
         "bentazone"@fr,
         "Bentazone"@it ;
-    srppp:iupac "3-isopropyl-1H-2,1,3-benzothiadiazin-4(3H)-one 2,2-dioxide" .
+    :iupac "3-isopropyl-1H-2,1,3-benzothiadiazin-4(3H)-one 2,2-dioxide" .
 
-substance:564 a srppp:Substance ;
+substance:564 a :Substance ;
     rdfs:label "Flazasulfuron"@de,
         "flazasulfuron"@fr,
         "Flazasulfuron"@it ;
-    srppp:iupac "1-(4,6-dimethoxypyrimidin-2-yl)-3-(3-trifluoromethyl-2-pyridylsulfonyl)urea" .
+    :iupac "1-(4,6-dimethoxypyrimidin-2-yl)-3-(3-trifluoromethyl-2-pyridylsulfonyl)urea" .
 
-substance:701 a srppp:Substance ;
+substance:701 a :Substance ;
     rdfs:label "Metiram"@de,
         "métirame"@fr,
         "Metiram"@it ;
-    srppp:iupac "zinc ammoniate ethylenebis(dithiocarbamate) - poly(ethylenethiuram disulfide)" .
+    :iupac "zinc ammoniate ethylenebis(dithiocarbamate) - poly(ethylenethiuram disulfide)" .
 
-substance:706 a srppp:Substance ;
+substance:706 a :Substance ;
     rdfs:label "Metribuzin"@de,
         "métribuzine"@fr,
         "Metribuzin"@it ;
-    srppp:iupac "4-amino-6-tert-butyl-4,5-dihydro-3-methylthio-1,2,4-triazin-5-one" .
+    :iupac "4-amino-6-tert-butyl-4,5-dihydro-3-methylthio-1,2,4-triazin-5-one" .
 
-substance:71 a srppp:Substance ;
+substance:71 a :Substance ;
     rdfs:label "Bupirimate"@de,
         "bupirimate"@fr,
         "Bupirimate"@it ;
-    srppp:iupac "5-butyl-2-ethylamino-6-methylpyrimidin-4-yl dimethylsulfamate" .
+    :iupac "5-butyl-2-ethylamino-6-methylpyrimidin-4-yl dimethylsulfamate" .
 
-substance:72 a srppp:Substance ;
+substance:72 a :Substance ;
     rdfs:label "Buprofezin"@de,
         "buprofézine"@fr,
         "Buprofezin"@it ;
-    srppp:iupac "2-tert-butylimino-3-isopropyl-5-phenyl-1,3,5-thiadiazinan-4-one)" .
+    :iupac "2-tert-butylimino-3-isopropyl-5-phenyl-1,3,5-thiadiazinan-4-one)" .
 
-substance:79 a srppp:Substance ;
+substance:79 a :Substance ;
     rdfs:label "Captan"@de,
         "captan"@fr,
         "Captano"@it ;
-    srppp:iupac "N-(trichloromethylthio)cyclohex-4-ene-1,2-dicarboximide" .
+    :iupac "N-(trichloromethylthio)cyclohex-4-ene-1,2-dicarboximide" .
 
-substance:799 a srppp:Substance ;
+substance:799 a :Substance ;
     rdfs:label "Tribenuron"@de,
         "tribénuron"@fr,
         "Tribenuron"@it ;
-    srppp:iupac "2-[4-methoxy-6-methyl-1,3,5-triazin-2-yl(methyl)carbamoylsulfamoyl]benzoic acid" .
+    :iupac "2-[4-methoxy-6-methyl-1,3,5-triazin-2-yl(methyl)carbamoylsulfamoyl]benzoic acid" .
 
-substance:8 a srppp:Substance ;
+substance:8 a :Substance ;
     rdfs:label "Abamectin"@de,
         "abamectine"@fr,
         "Abamectina"@it ;
-    srppp:iupac "avermectin B1" .
+    :iupac "avermectin B1" .
 
-substance:813 a srppp:Substance ;
+substance:813 a :Substance ;
     rdfs:label "2-(1-naphthyl) Acetamide"@de,
         "2-(1-naphthyl)acétamide"@fr,
         "2-(1-naftil) acetammide"@it ;
-    srppp:iupac "2-(1-naphthyl)acetamide" .
+    :iupac "2-(1-naphthyl)acetamide" .
 
-substance:832 a srppp:Substance ;
+substance:832 a :Substance ;
     rdfs:label "Encarsia formosa"@de,
         "Encarsia formosa"@fr,
         "Encarsia formosa"@it ;
-    srppp:iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
+    :iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
 
-substance:834 a srppp:Substance ;
+substance:834 a :Substance ;
     rdfs:label "Cydia pomonella Granulovirus (Apfelwicklergranulose-Virus, CpGV)"@de,
         "Cydia pomonella Granulovirus (Virus de la granulose du carpocase des pommes, CpGV)"@fr,
         "Cydia pomonella Granulovirus (Virus della granulosi della carpocapsa, CpGV)"@it ;
-    srppp:iupac "Entomopathogenes Virus / virus entomopathogène / virus entomopatogeno" .
+    :iupac "Entomopathogenes Virus / virus entomopathogène / virus entomopatogeno" .
 
-substance:835 a srppp:Substance ;
+substance:835 a :Substance ;
     rdfs:label "Amblyseius cucumeris (synonym: Neoseiulus cucumeris)"@de,
         "Amblyseius cucumeris (synonym: Neoseiulus cucumeris)"@fr,
         "Amblyseius cucumeris (synonym: Neoseiulus cucumeris)"@it ;
-    srppp:iupac "Raubmilben / acariens prédateurs / acari predatori" .
+    :iupac "Raubmilben / acariens prédateurs / acari predatori" .
 
-substance:836 a srppp:Substance ;
+substance:836 a :Substance ;
     rdfs:label "Aphelinus abdominalis"@de,
         "Aphelinus abdominalis"@fr,
         "Aphelinus abdominalis"@it ;
-    srppp:iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
+    :iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
 
-substance:837 a srppp:Substance ;
+substance:837 a :Substance ;
     rdfs:label "Aphidius matricariae"@de,
         "Aphidius matricariae"@fr,
         "Aphidius matricariae"@it ;
-    srppp:iupac "Parasitische Hymenopteren / hyménoptères parasites / imenotteri parassiti" .
+    :iupac "Parasitische Hymenopteren / hyménoptères parasites / imenotteri parassiti" .
 
-substance:838 a srppp:Substance ;
+substance:838 a :Substance ;
     rdfs:label "Aphidoletes aphidimyza"@de,
         "Aphidoletes aphidimyza"@fr,
         "Aphidoletes aphidimyza"@it ;
-    srppp:iupac "Gallmücken / cécidomyies / cecidomie" .
+    :iupac "Gallmücken / cécidomyies / cecidomie" .
 
-substance:839 a srppp:Substance ;
+substance:839 a :Substance ;
     rdfs:label "Cryptolaemus montrouzieri"@de,
         "Cryptolaemus montrouzieri"@fr,
         "Cryptolaemus montrouzieri"@it ;
-    srppp:iupac "Räuberische Käfer / coléoptères prédateurs / coleotteri predatori" .
+    :iupac "Räuberische Käfer / coléoptères prédateurs / coleotteri predatori" .
 
-substance:840 a srppp:Substance ;
+substance:840 a :Substance ;
     rdfs:label "Dacnusa sibirica"@de,
         "Dacnusa sibirica"@fr,
         "Dacnusa sibirica"@it ;
-    srppp:iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
+    :iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
 
-substance:841 a srppp:Substance ;
+substance:841 a :Substance ;
     rdfs:label "Diglyphus isaea"@de,
         "Diglyphus isaea"@fr,
         "Diglyphus isaea"@it ;
-    srppp:iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
+    :iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
 
-substance:843 a srppp:Substance ;
+substance:843 a :Substance ;
     rdfs:label "Streptomyces griseoviridis"@de,
         "Streptomyces griseoviridis"@fr,
         "Streptomyces griseoviridis"@it ;
-    srppp:iupac "Streptomyces griseoviridis" .
+    :iupac "Streptomyces griseoviridis" .
 
-substance:845 a srppp:Substance ;
+substance:845 a :Substance ;
     rdfs:label "Orius laevigatus"@de,
         "Orius laevigatus"@fr,
         "Orius laevigatus"@it ;
-    srppp:iupac "Räuberische Wanze / punaises prédatrices / cimice predatrice " .
+    :iupac "Räuberische Wanze / punaises prédatrices / cimice predatrice " .
 
-substance:846 a srppp:Substance ;
+substance:846 a :Substance ;
     rdfs:label "Orius majusculus"@de,
         "Orius majusculus"@fr,
         "Orius majusculus"@it ;
-    srppp:iupac "Räuberische Wanze / punaises prédatrices / cimice predatrice" .
+    :iupac "Räuberische Wanze / punaises prédatrices / cimice predatrice" .
 
-substance:847 a srppp:Substance ;
+substance:847 a :Substance ;
     rdfs:label "Phytoseiulus persimilis"@de,
         "Phytoseiulus persimilis"@fr,
         "Phytoseiulus persimilis"@it ;
-    srppp:iupac "Raubmilben / acariens prédateurs / acari predatori" .
+    :iupac "Raubmilben / acariens prédateurs / acari predatori" .
 
-substance:849 a srppp:Substance ;
+substance:849 a :Substance ;
     rdfs:label "Beauveria brongniartii"@de,
         "Beauveria brongniartii"@fr,
         "Beauveria brongniartii"@it ;
-    srppp:iupac "Entomopathogener Pilz / champignon entomopathogène / fungo entomopatogeno" .
+    :iupac "Entomopathogener Pilz / champignon entomopathogène / fungo entomopatogeno" .
 
-substance:851 a srppp:Substance ;
+substance:851 a :Substance ;
     rdfs:label "Schalenwicklergranulose-Virus"@de,
         "virus de la granulose de la tordeuse de la pelure"@fr,
         "Virus della granulosi della capua"@it ;
-    srppp:iupac "Entomopathogenes Virus / virus entomopathogène / virus entomopatogeno" .
+    :iupac "Entomopathogenes Virus / virus entomopathogène / virus entomopatogeno" .
 
-substance:852 a srppp:Substance ;
+substance:852 a :Substance ;
     rdfs:label "Steinernema carpocapsae"@de,
         "Steinernema carpocapsae"@fr,
         "Steinernema carpocapsae"@it ;
-    srppp:iupac "Entomopathogene Nematoden / nématode entomopathogène / nematodi entomoparassiti" .
+    :iupac "Entomopathogene Nematoden / nématode entomopathogène / nematodi entomoparassiti" .
 
-substance:853 a srppp:Substance ;
+substance:853 a :Substance ;
     rdfs:label "Steinernema feltiae"@de,
         "Steinernema feltiae"@fr,
         "Steinernema feltiae"@it ;
-    srppp:iupac "Entomopathogene Nematoden / nématode entomopathogène / nematodi entomoparassiti" .
+    :iupac "Entomopathogene Nematoden / nématode entomopathogène / nematodi entomoparassiti" .
 
-substance:854 a srppp:Substance ;
+substance:854 a :Substance ;
     rdfs:label "Trichogramma brassicae Bezdenko"@de,
         "Trichogramma brassicae Bezdenko"@fr,
         "Trichogramma brassicae Bezdenko"@it ;
-    srppp:iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
+    :iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
 
-substance:863 a srppp:Substance ;
+substance:863 a :Substance ;
     rdfs:label "Propyzamid"@de,
         "propyzamide"@fr,
         "Propizamide"@it ;
-    srppp:iupac "3,5-dichloro-N-(1,1-dimethylpropynyl)benzamide" .
+    :iupac "3,5-dichloro-N-(1,1-dimethylpropynyl)benzamide" .
 
-substance:872 a srppp:Substance ;
+substance:872 a :Substance ;
     rdfs:label "Fenoxaprop-P-ethyl"@de,
         "fénoxaprop-P-éthyle"@fr,
         "Fenossaprop-P-etile"@it ;
-    srppp:iupac "(R)-2-[4-(6-chloro-2-benzoxazol-2-yloxy)phenoxy]propionate" .
+    :iupac "(R)-2-[4-(6-chloro-2-benzoxazol-2-yloxy)phenoxy]propionate" .
 
-substance:873 a srppp:Substance ;
+substance:873 a :Substance ;
     rdfs:label "Dimethachlor"@de,
         "diméthachlore"@fr,
         "Dimetaclor"@it ;
-    srppp:iupac "2-chloro-N-(2-methoxyethyl)aceto-2',6'-xylidide" .
+    :iupac "2-chloro-N-(2-methoxyethyl)aceto-2',6'-xylidide" .
 
-substance:875 a srppp:Substance ;
+substance:875 a :Substance ;
     rdfs:label "Fluroxypyr"@de,
         "fluroxypyr"@fr,
         "Fluroxypyr"@it ;
-    srppp:iupac "4-amino-3,5-dichloro-6-fluoro-2-pyridyloxyacetic acid" .
+    :iupac "4-amino-3,5-dichloro-6-fluoro-2-pyridyloxyacetic acid" .
 
-substance:876 a srppp:Substance ;
+substance:876 a :Substance ;
     rdfs:label "Lenacil"@de,
         "lénacile"@fr,
         "Lenacil"@it ;
-    srppp:iupac "3-cyclohexyl-1,5,6,7-tetrahydrocyclopentapyrimidine-2,4(3H)-dione" .
+    :iupac "3-cyclohexyl-1,5,6,7-tetrahydrocyclopentapyrimidine-2,4(3H)-dione" .
 
-substance:877 a srppp:Substance ;
+substance:877 a :Substance ;
     rdfs:label "Mecoprop-P"@de,
         "mécoprop-P"@fr,
         "Mecoprop-P"@it ;
-    srppp:iupac "(R)-2-(4-chloro-o-tolyloxy)propionic acid" .
+    :iupac "(R)-2-(4-chloro-o-tolyloxy)propionic acid" .
 
-substance:879 a srppp:Substance ;
+substance:879 a :Substance ;
     rdfs:label "MCPA"@de,
         "MCPA"@fr,
         "MCPA"@it ;
-    srppp:iupac "(4-chloro-2-methylphenoxy)acetic acid" .
+    :iupac "(4-chloro-2-methylphenoxy)acetic acid" .
 
-substance:880 a srppp:Substance ;
+substance:880 a :Substance ;
     rdfs:label "Metamitron"@de,
         "métamitron"@fr,
         "Metamitron"@it ;
-    srppp:iupac "4-amino-4,5-dihydro-3-methyl-6-phenyl-1,2,4-triazin-5-one" .
+    :iupac "4-amino-4,5-dihydro-3-methyl-6-phenyl-1,2,4-triazin-5-one" .
 
-substance:881 a srppp:Substance ;
+substance:881 a :Substance ;
     rdfs:label "Chlorotoluron"@de,
         "chlortoluron"@fr,
         "Clorotoluron"@it ;
-    srppp:iupac "3-(3-chloro-p-tolyl)-1,1-dimethylurea" .
+    :iupac "3-(3-chloro-p-tolyl)-1,1-dimethylurea" .
 
-substance:890 a srppp:Substance ;
+substance:890 a :Substance ;
     rdfs:label "Rimsulfuron"@de,
         "rimsulfuron"@fr,
         "Rimsulfuron"@it ;
-    srppp:iupac "1-(4,6-dimethoxypyrimidin-2-yl)-3-(etylsulfonyl-2-pyridylsulfonyl)urea" .
+    :iupac "1-(4,6-dimethoxypyrimidin-2-yl)-3-(etylsulfonyl-2-pyridylsulfonyl)urea" .
 
-substance:893 a srppp:Substance ;
+substance:893 a :Substance ;
     rdfs:label "Tebuconazole"@de,
         "tébuconazole"@fr,
         "Tebuconazolo"@it ;
-    srppp:iupac "(RS)-1-p-chlorophenyl-4,4-dimethyl-3-(1H-1,2,4-triazol-1-ylmethyl)pentan-3-ol" .
+    :iupac "(RS)-1-p-chlorophenyl-4,4-dimethyl-3-(1H-1,2,4-triazol-1-ylmethyl)pentan-3-ol" .
 
-substance:894 a srppp:Substance ;
+substance:894 a :Substance ;
     rdfs:label "Difenoconazol"@de,
         "Difenoconazole"@en,
         "difénoconazole"@fr,
         "Difenoconazolo"@it ;
-    srppp:iupac "cis,trans-3-chloro-4-[4-methyl-2-(1H-1,2,4-triazol-1-ylmethyl)-1,3-dioxolan-2-yl]phenyl 4-chlorophenyl ether" .
+    :iupac "cis,trans-3-chloro-4-[4-methyl-2-(1H-1,2,4-triazol-1-ylmethyl)-1,3-dioxolan-2-yl]phenyl 4-chlorophenyl ether" .
 
-substance:896 a srppp:Substance ;
+substance:896 a :Substance ;
     rdfs:label "Fluazinam"@de,
         "fluazinam"@fr,
         "Fluazinam"@it ;
-    srppp:iupac "3-chloro-N-(3-chloro-5-trifluoromethyl-2-pyridyl)-alpha,alpha,alpha-trifluoro-2,6-dinitro-p-toluidine" .
+    :iupac "3-chloro-N-(3-chloro-5-trifluoromethyl-2-pyridyl)-alpha,alpha,alpha-trifluoro-2,6-dinitro-p-toluidine" .
 
-substance:897 a srppp:Substance ;
+substance:897 a :Substance ;
     rdfs:label "Kupfer (als Hydroxid)"@de,
         "cuivre (sous forme d'hydroxyde)"@fr,
         "Rame (sotto forma di idrossido)"@it ;
-    srppp:iupac "copper hydroxide" .
+    :iupac "copper hydroxide" .
 
-substance:898 a srppp:Substance ;
+substance:898 a :Substance ;
     rdfs:label "Kupfer (als Oxychlorid)"@de,
         "cuivre (sous forme d'oxychlorure)"@fr,
         "Rame (sotto forma di ossicloruro) "@it ;
-    srppp:iupac "dicopper chloride trihydroxide" .
+    :iupac "dicopper chloride trihydroxide" .
 
-substance:912 a srppp:Substance ;
+substance:912 a :Substance ;
     rdfs:label "Dimethomorph"@de,
         "diméthomorphe"@fr,
         "Dimetomorf"@it ;
-    srppp:iupac "(E,Z 4-[3-(4-chlorophenyl)-3-(3,4-dimethoxyphenyl)acryloyl]morpholine" .
+    :iupac "(E,Z 4-[3-(4-chlorophenyl)-3-(3,4-dimethoxyphenyl)acryloyl]morpholine" .
 
-substance:918 a srppp:Substance ;
+substance:918 a :Substance ;
     rdfs:label "Oleum foeniculi"@de,
         "oleum foeniculi"@fr,
         "Oleum foeniculi (Olio di finocchio)"@it ;
-    srppp:iupac "Fenchelöl / huile de fenouil / olio di finocchio" .
+    :iupac "Fenchelöl / huile de fenouil / olio di finocchio" .
 
-substance:920 a srppp:Substance ;
+substance:920 a :Substance ;
     rdfs:label "Thiabendazole"@de,
         "thiabendazole"@fr,
         "Tiabendazolo"@it ;
-    srppp:iupac "2-(thiazol-4-yl)benzimidazole" .
+    :iupac "2-(thiazol-4-yl)benzimidazole" .
 
-substance:924 a srppp:Substance ;
+substance:924 a :Substance ;
     rdfs:label "Imazalil"@de,
         "imazalil"@fr,
         "Imazalil"@it ;
-    srppp:iupac "(+/-)-1-(beta-allyloxy-2,4-dichlorophenylethyl)imidazole" .
+    :iupac "(+/-)-1-(beta-allyloxy-2,4-dichlorophenylethyl)imidazole" .
 
-substance:925 a srppp:Substance ;
+substance:925 a :Substance ;
     rdfs:label "Hymexazol"@de,
         "hymexazole"@fr,
         "Hymexazol"@it ;
-    srppp:iupac "5-methylisoxazol-3-ol" .
+    :iupac "5-methylisoxazol-3-ol" .
 
-substance:928 a srppp:Substance ;
+substance:928 a :Substance ;
     rdfs:label "Triticonazole"@de,
         "triticonazole"@fr,
         "Triticonazolo"@it ;
-    srppp:iupac "(+/-)-(E)-5+(4-chlorobenzylidene)-2,2-dimethyl-1-(1H-1,2,4-triazol-1-methyl)cyclopentanol" .
+    :iupac "(+/-)-(E)-5+(4-chlorobenzylidene)-2,2-dimethyl-1-(1H-1,2,4-triazol-1-methyl)cyclopentanol" .
 
-substance:935 a srppp:Substance ;
+substance:935 a :Substance ;
     rdfs:label "Bacillus thuringiensis var. israeliensis"@de,
         "Bacillus thuringiensis var. israeliensis"@fr,
         "Bacillus thuringiensis var. israeliensis"@it ;
-    srppp:iupac "Bacillus thuringiensis var. israeliensis" .
+    :iupac "Bacillus thuringiensis var. israeliensis" .
 
-substance:937 a srppp:Substance ;
+substance:937 a :Substance ;
     rdfs:label "Bacillus thuringiensis var. aizawai"@de,
         "Bacillus thuringiensis var. aizawai"@fr,
         "Bacillus thuringiensis var. aizawai"@it ;
-    srppp:iupac "Bacillus thuringiensis var. aizawai" .
+    :iupac "Bacillus thuringiensis var. aizawai" .
 
-substance:939 a srppp:Substance ;
+substance:939 a :Substance ;
     rdfs:label "Bacillus thuringiensis var. kurstaki"@de,
         "Bacillus thuringiensis var. kurstaki"@fr,
         "Bacillus thuringiensis var. kurstaki"@it ;
-    srppp:iupac "Bacillus thuringiensis var. kurstaki" .
+    :iupac "Bacillus thuringiensis var. kurstaki" .
 
-substance:942 a srppp:Substance ;
+substance:942 a :Substance ;
     rdfs:label "Quizalofop-P-ethyl"@de,
         "quizalofop-P-éthyle"@fr,
         "Quizalofop-P-etile"@it ;
-    srppp:iupac "ethyl (R)-2-[4-(6-chlorquinoxalin-2-yloxy) phenoxy] propionate" .
+    :iupac "ethyl (R)-2-[4-(6-chlorquinoxalin-2-yloxy) phenoxy] propionate" .
 
-substance:943 a srppp:Substance ;
+substance:943 a :Substance ;
     rdfs:label "Fluazifop-P-butyl"@de,
         "fluazifop-P-butyle"@fr,
         "Fluazifop-P-butile"@it ;
-    srppp:iupac "butyl-(R)-2-[4-(5-trifluormethyl-2-pyridyloxy)phenoxy]propionat" .
+    :iupac "butyl-(R)-2-[4-(5-trifluormethyl-2-pyridyloxy)phenoxy]propionat" .
 
-substance:946 a srppp:Substance ;
+substance:946 a :Substance ;
     rdfs:label "Fenpropidin"@de,
         "fenpropidine"@fr,
         "Fenpropidin"@it ;
-    srppp:iupac "(RS)-1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine" .
+    :iupac "(RS)-1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine" .
 
-substance:948 a srppp:Substance ;
+substance:948 a :Substance ;
     rdfs:label "Tebufenozide"@de,
         "tébufénozide"@fr,
         "Tebufenozide"@it ;
-    srppp:iupac "N-tert-butyl-N'-(4-ethylbenzoyl)-3,5-dimethylbenzohydrazide" .
+    :iupac "N-tert-butyl-N'-(4-ethylbenzoyl)-3,5-dimethylbenzohydrazide" .
 
-substance:950 a srppp:Substance ;
+substance:950 a :Substance ;
     rdfs:label "E8E10-12 OH (E,E-8.10-dodecadien-1-ol; Codlemone)"@de,
         "E8E10-12 OH (E,E-8.10-dodecadien-1-ol; Codlemone)"@en,
         "E8E10-12 OH (E,E-8.10-dodecadien-1-ol; Codlemone)"@fr,
         "E8E10-12 OH (E,E-8.10-dodecadien-1-ol; Codlemone)"@it ;
-    srppp:iupac "(E,E)-dodeca-8,10-dien-1-ol" .
+    :iupac "(E,E)-dodeca-8,10-dien-1-ol" .
 
-substance:951 a srppp:Substance ;
+substance:951 a :Substance ;
     rdfs:label "Z11-14 Ac"@de,
         "Z11-14 Ac"@fr,
         "Z11-14 Ac"@it ;
-    srppp:iupac "(Z)-tetradec-11-en-1-yl acetate" .
+    :iupac "(Z)-tetradec-11-en-1-yl acetate" .
 
-substance:952 a srppp:Substance ;
+substance:952 a :Substance ;
     rdfs:label "Cyprodinil"@de,
         "cyprodinil"@fr,
         "Ciprodinil"@it ;
-    srppp:iupac "4-cyclopropyl-6-methyl-N-phenylpyrimidin-2-amine" .
+    :iupac "4-cyclopropyl-6-methyl-N-phenylpyrimidin-2-amine" .
 
-substance:955 a srppp:Substance ;
+substance:955 a :Substance ;
     rdfs:label "Aphidius colemani"@de,
         "Aphidius colemani"@fr,
         "Aphidius colemani"@it ;
-    srppp:iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
+    :iupac "Parasitische Schlupfwespen / hyménoptères parasites / imenotteri parassiti" .
 
-substance:960 a srppp:Substance ;
+substance:960 a :Substance ;
     rdfs:label "Metarhizium anisopliae"@de,
         "Metarhizium anisopliae"@fr,
         "Metarhizium anisopliae"@it ;
-    srppp:iupac "Entomopathogener Pilz / champignon entomopathogène / fungo entomopatogeno" .
+    :iupac "Entomopathogener Pilz / champignon entomopathogène / fungo entomopatogeno" .
 
-substance:961 a srppp:Substance ;
+substance:961 a :Substance ;
     rdfs:label "Maleinsäurehydrazid"@de,
         "maleic hydrazide"@en,
         "Hydrazide maléique"@fr,
         "Idrazide maleica"@it ;
-    srppp:iupac "6-Hydroxy-2H-pyridazin-3-on" .
+    :iupac "6-Hydroxy-2H-pyridazin-3-on" .
 
-substance:970 a srppp:Substance ;
+substance:970 a :Substance ;
     rdfs:label "Bacillus thuringiensis var. tenebrionis"@de,
         "Bacillus thuringiensis var. tenebrionis"@fr,
         "Bacillus thuringiensis var. tenebrionis"@it ;
-    srppp:iupac "Bacillus thuringiensis var. tenebrionis" .
+    :iupac "Bacillus thuringiensis var. tenebrionis" .
 
-substance:972 a srppp:Substance ;
+substance:972 a :Substance ;
     rdfs:label "Beauveria bassiana"@de,
         "Beauveria bassiana"@fr,
         "Beauveria bassiana"@it ;
-    srppp:iupac "Entomopathogener Pilz / champignon entomopathogène / fungo entomopatogeno" .
+    :iupac "Entomopathogener Pilz / champignon entomopathogène / fungo entomopatogeno" .
 
-substance:974 a srppp:Substance ;
+substance:974 a :Substance ;
     rdfs:label "Phasmarhabditis hermaphrodita"@de,
         "Phasmarhabditis hermaphrodita"@fr,
         "Phasmarhabditis hermaphrodita"@it .
 
-substance:975 a srppp:Substance ;
+substance:975 a :Substance ;
     rdfs:label "Z8-12Ac"@de,
         "Z8-12Ac"@fr,
         "Z8-12Ac"@it ;
-    srppp:iupac "(Z)-dodec-8-en-1-yl acetate" .
+    :iupac "(Z)-dodec-8-en-1-yl acetate" .
 
-substance:976 a srppp:Substance ;
+substance:976 a :Substance ;
     rdfs:label "E8-12Ac"@de,
         "E8-12Ac"@fr,
         "E8-12Ac"@it ;
-    srppp:iupac "(E)-dodec-8-en-1-yl acetate" .
+    :iupac "(E)-dodec-8-en-1-yl acetate" .
 
-substance:977 a srppp:Substance ;
+substance:977 a :Substance ;
     rdfs:label "Z8-12OH ((Z)-8-dodecen-1-ol)"@de,
         "Z8-12OH ((Z)-8-Dodécén-1-ol)"@fr,
         "Z8-12OH ((Z)-8-dodecen-1-olo)"@it ;
-    srppp:iupac "(Z)-dodec-8-en-1-ol" .
+    :iupac "(Z)-dodec-8-en-1-ol" .
 
-substance:980 a srppp:Substance ;
+substance:980 a :Substance ;
     rdfs:label "Pyrimethanil"@de,
         "pyriméthanil"@fr,
         "Pyrimethanil"@it ;
-    srppp:iupac "N-(4,6-dimethylpyrimidin-2-yl)aniline" .
+    :iupac "N-(4,6-dimethylpyrimidin-2-yl)aniline" .
 
-substance:981 a srppp:Substance ;
+substance:981 a :Substance ;
     rdfs:label "Mepanipyrim"@de,
         "mépanipyrim"@fr,
         "Mepanipyrim"@it ;
-    srppp:iupac "N-(4-methyl-6-prop-1-ynylpyrimidin-2-yl)aniline" .
+    :iupac "N-(4-methyl-6-prop-1-ynylpyrimidin-2-yl)aniline" .
 
-substance:982 a srppp:Substance ;
+substance:982 a :Substance ;
     rdfs:label "Fludioxonil"@de,
         "fludioxonil"@fr,
         "Fludioxonil"@it ;
-    srppp:iupac "4-(2,2-difluoro-1,3-benzodioxol-4-yl)pyrrole-3-carbonitrile" .
+    :iupac "4-(2,2-difluoro-1,3-benzodioxol-4-yl)pyrrole-3-carbonitrile" .
 
-substance:984 a srppp:Substance ;
+substance:984 a :Substance ;
     rdfs:label "Phlebia gigantea"@de,
         "Phlebia gigantea"@fr,
         "Phlebia gigantea"@it ;
-    srppp:iupac "Phlebia gigantea" .
+    :iupac "Phlebia gigantea" .
 
-substance:988 a srppp:Substance ;
+substance:988 a :Substance ;
     rdfs:label "Sojalecithin"@de,
         "lécithine de soja"@fr,
         "Lecitina di soia"@it ;
-    srppp:iupac "1,2-diacyl-sn-glycero-3-phosphorylcholine" .
+    :iupac "1,2-diacyl-sn-glycero-3-phosphorylcholine" .
 
-substance:998 a srppp:Substance ;
+substance:998 a :Substance ;
     rdfs:label "Leptomastidea abnormis"@de,
         "Leptomastidea abnormis"@fr,
         "Leptomastidea abnormis"@it .
 
-substance:999 a srppp:Substance ;
+substance:999 a :Substance ;
     rdfs:label "Leptomastix dactylopii"@de,
         "Leptomastix dactylopii"@fr,
         "Leptomastix dactylopii"@it .

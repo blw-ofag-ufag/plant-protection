@@ -26,59 +26,7 @@ prefixes <- sprintf("@prefix : <%s> .
 # DEFINE HELPER FUNCTIONS
 # ------------------------------------------------------------------
 
-# Function to extract attributes and create a data frame
-nodeset_to_dataframe <- function(nodeset) {
-  data <- lapply(nodeset, function(node) {
-    attrs <- as.list(xml_attrs(node))
-    children <- xml_children(node)
-    children_data <- sapply(children, function(child) xml_text(child))
-    names(children_data) <- xml_name(children)
-    c(attrs, children_data)
-  })
-  df <- bind_rows(data)
-  return(df)
-}
-
-# functions to help deal with lists constructed from XML
-getLabels = function(x) {
-  descs <- x[names(x)=="Description"]
-  lang <- sapply(descs, attr, "language")
-  vals  <- sapply(descs, attr, "value")
-  setNames(as.list(vals), lang)
-}
-
-getPK = function(x) {
-  attr(x, "primaryKey")
-}
-
-getFK = function(x, variable, key = "primaryKey") {
-  unname(sapply(x[names(x)==variable], attr, key))
-}
-
-printLabels <- function(x) {
-  for (lang in c("de","fr","it","en","lt")) {
-    label <- x[[lang]]
-    if(!is.null(label) && !is.na(label) && label!="") {
-      triple(x[["subject"]], "rdfs:label", langstring(gsub("\"", "'", label), lang))
-    }
-  }
-}
-
-printProperty = function(x, property) {
-  for (i in x[[property]]) {
-    triple(x[["subject"]], property, i)
-  }
-}
-
-printList <- function(L, subjectclass, properties = NULL) {
-  for (i in L) {
-    triple(i[["subject"]], "a", subjectclass)
-    printLabels(i)
-    for (property in properties) {
-      printProperty(i, property)
-    }
-  }
-}
+source("automation/helpers.R")
 
 # ------------------------------------------------------------------
 # DOWNLOAD THE SWISS PLANT PROTECTION REGISTRY AS AN XML FILE
@@ -320,37 +268,9 @@ for (i in 1:nrow(companies)) {
 sink()
 rm(companies, cities, company_xml, email_from_fax, email_from_phone, email_regex, address)
 
-# ------------------------------------------------------------------
-# Write data about hazard codes (Code R and Code S)
-# ------------------------------------------------------------------
-
-# CodeR = unique(SRPPP$CodeR[,-1])
-# colnames(CodeR) <- c("id", "code", "de", "fr", "it", "en")
-# CodeS = unique(SRPPP$CodeS[,-1])
-# colnames(CodeS) <- c("id", "code", "de", "fr", "it", "en")
-# codes = data.frame(rbind(CodeR, CodeS), type = c(rep(":CodeR", nrow(CodeR)), rep(":CodeS", nrow(CodeS))))
-# rm(CodeR, CodeS)
-# 
-# sink("rdf/codes.ttl")
-# cat(prefixes)
-# for (i in 1:nrow(codes)) {
-#   subject = uri(file.path("code", codes[i,1]),base)
-#   triple(subject, "a", codes[i,"type"])
-#   if(!is.na(codes[i,2])) triple(subject, ":hasHazardStatementCode", literal(codes[i,2]))
-#   for (lang in c("de","fr","it","en")) {
-#     label = codes[i,lang]
-#     if(label!="") triple(subject, "rdfs:label", langstring(label, lang = lang))
-#   }
-#   J = products[products$pNbr %in% unlist(SRPPP$CodeR[SRPPP$CodeR$desc_pk==as.numeric(codes[i,1]),"pNbr"]),"hasFederalAdmissionNumber"]
-#   for (j in J) {
-#     triple(subject, ":appliesToProduct", uri(j, base))
-#   }
-# }
-# sink()
-# rm(codes,i,j,J,label,lang,property,subject,x)
 
 # ------------------------------------------------------------------
-# WRITE VARIOUS CODES
+# WRITE VARIOUS CODES/ENUMERATED LISTS
 # ------------------------------------------------------------------
 
 # Function to convert *one* crop object to a better processable list
@@ -364,26 +284,32 @@ convert <- function(x) {
 # Write Turtle file
 sink("rdf/codes.ttl")
 cat(prefixes)
-XML |> xml_find_all("//MetaData[@name='CodeR']/Detail") |>
-  as_list() |>
-  lapply(convert) |>
-  printList(":CodeR", properties = ":hasHazardStatementCode")
-XML |> xml_find_all("//MetaData[@name='CodeS']/Detail") |>
-  as_list() |>
-  lapply(convert) |>
-  printList(":CodeS", properties = ":hasHazardStatementCode")
-XML |> xml_find_all("//MetaData[@name='FormulationCode']/Detail") |>
-  as_list() |>
-  lapply(convert) |>
-  printList(":FormulationCode")
-XML |> xml_find_all("//MetaData[@name='DangerSymbol']/Detail") |>
-  as_list() |>
-  lapply(convert) |>
-  printList(":DangerSymbol", properties = ":hasHazardStatementCode")
-XML |> xml_find_all("//MetaData[@name='SignalWords']/Detail") |>
-  as_list() |>
-  lapply(convert) |>
-  printList(":SignalWords")
+for (varname in c("CodeR", "CodeS", "DangerSymbol", "SignalWords")) {
+  XML |> xml_find_all(sprintf("//MetaData[@name='%s']/Detail", varname)) |>
+    as_list() |>
+    lapply(convert) |>
+    printList(sprintf(":%s", varname), properties = ":hasHazardStatementCode")
+}
+sink()
+
+
+# Function to convert *one* crop object to a better processable list
+convert <- function(x) {
+  c(list(
+    subject = uri(file.path("code", getPK(x)), base)),
+    `:code` = literal(attr(x$Description$Code, "value")),
+    getLabels(x))
+}
+
+# Write Turtle file
+sink("rdf/codes.ttl", append = TRUE)
+cat(prefixes)
+for (varname in c("FormulationCode", "ApplicationArea", "CultureForm", "Measure", "TimeMeasure")) {
+  XML |> xml_find_all(sprintf("//MetaData[@name='%s']/Detail", varname)) |>
+    as_list() |>
+    lapply(convert) |>
+    printList(sprintf(":%s", varname), properties = ":code")
+}
 sink()
 
 # ------------------------------------------------------------------
@@ -452,7 +378,7 @@ XML |>
 sink()
 
 # ------------------------------------------------------------------
-# Write data about Application comments and 
+# Write data about Application comments and obligations
 # ------------------------------------------------------------------
 
 # Function to convert *one* crop object to a better processable list
@@ -461,50 +387,59 @@ convert <- function(x) {
 }
 
 # Write Turtle file
-sink("rdf/obligations.ttl")
+sink("rdf/notes.ttl")
 cat(prefixes)
 XML |> xml_find_all("//MetaData[@name='Obligation']/Detail") |>
   as_list() |>
   lapply(convert) |>
   printList(":ActionNotice, :Obligation")
+XML |> xml_find_all("//MetaData[@name='ApplicationComment']/Detail") |>
+  as_list() |>
+  lapply(convert) |>
+  printList(":ActionNotice, :ApplicationComment")
 sink()
 
 # ------------------------------------------------------------------
 # Write data about indications
 # ------------------------------------------------------------------
 
-convert = function(x, parallelimport = FALSE) {
+describe = function(x, parallelimport = FALSE) {
   
   # save indications
-  indication = x$ProductInformation$Indication
+  indications = x$ProductInformation[names(x$ProductInformation)=="Indication"]
   
-  # generate an anonymous hash-uuid-URI that will always be the same from the same attributes
-  subject = uri(uuid::UUIDfromName("acdb7485-3f2b-45f0-a783-01133f235c2a", rlang::hash(indication)), base)
-  
-  list(
-    subject          = subject,
-    `:involves`      = if(parallelimport) {
+  for (indication in indications) {
+    
+    # generate an anonymous hash-uuid-URI that will always be the same from the same attributes
+    subject = uri(uuid::UUIDfromName("acdb7485-3f2b-45f0-a783-01133f235c2a", rlang::hash(indication)), base)
+    
+    
+    triple(subject, ":involves", if(parallelimport) {
       uri(attr(x, "id"), base)
     } else {
       uri(paste0("W-",attr(x, "wNbr")), base)
-    },
-    `:isConcernedBy` = uri(file.path("note",getFK(indication, "Obligation")), base),
-    `:mitigates`     = uri(file.path("pest",getFK(indication, "Pest")), base),
-    `:protects`      = uri(file.path("crop",getFK(indication, "Culture")), base)
-  )
+    })
+    
+    triple(subject, "a", ":Treatment")
+    triple(subject, ":minimumTreatmentDosage", literal(attr(indication, "dosageFrom")))
+    triple(subject, ":maximumTreatmentDosage", literal(attr(indication, "dosageTo")))
+    triple(subject, ":hasApplicationArea", uri(file.path("code", getFK(indication, "ApplicationArea")), base))
+    triple(subject, ":hasApplicationComment", uri(file.path("note", getFK(indication, "Obligation")), base))
+    triple(subject, ":isConcernedBy", uri(file.path("note",getFK(indication, "Obligation")), base))
+    triple(subject, ":mitigates", uri(file.path("pest",getFK(indication, "Pest")), base))
+    triple(subject, ":protects", uri(file.path("crop",getFK(indication, "Culture")), base))
+  }
 }
 
 sink("rdf/indications.ttl")
 cat(prefixes)
-XML |>
+L = XML |>
   xml_find_all("//Product") |>
-  as_list() |>
-  lapply(convert) |>
-  printList(":Treatment", properties = c(":involves", ":isConcernedBy", ":mitigates", ":protects"))
-XML |>
+  as_list()
+for (x in L) describe(x)
+L = XML |>
   xml_find_all("//Parallelimport") |>
-  as_list() |>
-  lapply(convert, TRUE) |>
-  printList(":Treatment", properties = c(":involves", ":isConcernedBy", ":mitigates", ":protects"))
+  as_list()
+for (x in L) describe(x)
 sink()
 

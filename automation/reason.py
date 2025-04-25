@@ -36,7 +36,7 @@ from otsrdflib import OrderedTurtleSerializer
 
 CUSTOM_NAMESPACES = {
     "schema":    "http://schema.org/",
-    "srppp":     "https://agriculture.ld.admin.ch/plant-protection/",
+    "":     "https://agriculture.ld.admin.ch/plant-protection/",
     "crop":      "https://agriculture.ld.admin.ch/plant-protection/crop/",
     "pest":      "https://agriculture.ld.admin.ch/plant-protection/pest/",
     "substance": "https://agriculture.ld.admin.ch/plant-protection/substance/",

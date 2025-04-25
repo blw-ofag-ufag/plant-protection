@@ -1,11 +1,11 @@
+@prefix : <https://agriculture.ld.admin.ch/plant-protection/> .
 @prefix company: <https://agriculture.ld.admin.ch/plant-protection/company/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix schema: <http://schema.org/> .
-@prefix srppp: <https://agriculture.ld.admin.ch/plant-protection/> .
 @prefix zefix: <https://register.ld.admin.ch/zefix/company/> .
 
 company:10011 a schema:Organization ;
-    schema:address srppp:9343115b-385a-59a5-82b6-0eabc0f2ef38 ;
+    schema:address :9343115b-385a-59a5-82b6-0eabc0f2ef38 ;
     schema:faxNumber <tel:+41-62-917-50-06> ;
     schema:legalName "Andermatt Biocontrol Suisse AG" ;
     schema:name "Andermatt Biocontrol Suisse AG" ;
@@ -13,7 +13,7 @@ company:10011 a schema:Organization ;
     owl:sameAs zefix:1410761 .
 
 company:10019 a schema:Organization ;
-    schema:address srppp:aa880957-f953-5e91-9246-e7fd81751a9e ;
+    schema:address :aa880957-f953-5e91-9246-e7fd81751a9e ;
     schema:email <mailto:stephan.schwarzmueller@basf.com> ;
     schema:legalName "BASF Schweiz AG" ;
     schema:name "BASF Schweiz AG" ;
@@ -21,35 +21,35 @@ company:10019 a schema:Organization ;
     owl:sameAs zefix:943835 .
 
 company:10023 a schema:Organization ;
-    schema:address srppp:a2a48407-2f8b-5b96-9ebe-0b5cdee64d15 ;
+    schema:address :a2a48407-2f8b-5b96-9ebe-0b5cdee64d15 ;
     schema:legalName "Blaser Swisslube AG" ;
     schema:name "Blaser Swisslube AG" ;
     schema:telephone <tel:+41-34-460-03-05> ;
     owl:sameAs zefix:337817 .
 
 company:10035 a schema:Organization ;
-    schema:address srppp:97bd54ed-631a-56fc-974e-e3a1c749997a ;
+    schema:address :97bd54ed-631a-56fc-974e-e3a1c749997a ;
     schema:legalName "Coop Genossenschaft" ;
     schema:name "Coop Genossenschaft" ;
     schema:telephone <tel:+41-62-206-33-95> ;
     owl:sameAs zefix:1138887 .
 
 company:10038 a schema:Organization ;
-    schema:address srppp:6f081948-79e4-5f38-abe7-0bf693c1e6d7 ;
+    schema:address :6f081948-79e4-5f38-abe7-0bf693c1e6d7 ;
     schema:legalName "Desinfecta AG" ;
     schema:name "Desinfecta AG" ;
     schema:telephone <tel:+41-61-633-13-13> ;
     owl:sameAs zefix:986343 .
 
 company:10050 a schema:Organization ;
-    schema:address srppp:5ee4bc84-f806-5df1-ac87-90f9a461809f ;
+    schema:address :5ee4bc84-f806-5df1-ac87-90f9a461809f ;
     schema:legalName "Leu + Gygax AG" ;
     schema:name "Leu + Gygax AG" ;
     schema:telephone <tel:+41-56-201-45-45> ;
     owl:sameAs zefix:106909 .
 
 company:10051 a schema:Organization ;
-    schema:address srppp:b8b88689-c9e0-5afa-a177-603a517dbad3 ;
+    schema:address :b8b88689-c9e0-5afa-a177-603a517dbad3 ;
     schema:faxNumber <tel:+41-41-917-17-76> ;
     schema:legalName "Läubli Feuerwerk AG" ;
     schema:name "Läubli Feuerwerk AG" ;
@@ -57,7 +57,7 @@ company:10051 a schema:Organization ;
     owl:sameAs zefix:1145091 .
 
 company:10053 a schema:Organization ;
-    schema:address srppp:b9a65785-aeb4-5b6f-a27c-a834a8a6bcb6 ;
+    schema:address :b9a65785-aeb4-5b6f-a27c-a834a8a6bcb6 ;
     schema:faxNumber <tel:+41-79-817-44-70> ;
     schema:legalName "Arxada AG" ;
     schema:name "Arxada AG" ;
@@ -65,14 +65,14 @@ company:10053 a schema:Organization ;
     owl:sameAs zefix:1390097 .
 
 company:10054 a schema:Organization ;
-    schema:address srppp:2a98afa2-2af6-5436-8fe2-4a80040a0c6a ;
+    schema:address :2a98afa2-2af6-5436-8fe2-4a80040a0c6a ;
     schema:legalName "Syngenta Agro AG " ;
     schema:name "Syngenta Agro AG " ;
     schema:telephone <tel:+41-61-323-56-70> ;
     owl:sameAs zefix:393743 .
 
 company:10056 a schema:Organization ;
-    schema:address srppp:2c824f23-2ea0-5142-a862-e827cec01e47 ;
+    schema:address :2c824f23-2ea0-5142-a862-e827cec01e47 ;
     schema:faxNumber <tel:+41-27-746-33-24> ;
     schema:legalName "Méoc SA" ;
     schema:name "Méoc SA" ;
@@ -80,13 +80,13 @@ company:10056 a schema:Organization ;
     owl:sameAs zefix:117076 .
 
 company:10057 a schema:Organization ;
-    schema:address srppp:13051718-ffe9-594c-b496-e613477ed518 ;
+    schema:address :13051718-ffe9-594c-b496-e613477ed518 ;
     schema:legalName "Migros-Genossenschafts-Bund" ;
     schema:name "Migros-Genossenschafts-Bund" ;
     owl:sameAs zefix:119283 .
 
 company:10065 a schema:Organization ;
-    schema:address srppp:328cdaa2-726f-5a69-a95e-32f0c03b3d65 ;
+    schema:address :328cdaa2-726f-5a69-a95e-32f0c03b3d65 ;
     schema:faxNumber <tel:+41-62-893-28-84> ;
     schema:legalName "Racroc AG" ;
     schema:name "Racroc AG" ;
@@ -94,14 +94,14 @@ company:10065 a schema:Organization ;
     owl:sameAs zefix:142062 .
 
 company:10073 a schema:Organization ;
-    schema:address srppp:3fbd9628-d161-5ca5-b98d-5e2babf49911 ;
+    schema:address :3fbd9628-d161-5ca5-b98d-5e2babf49911 ;
     schema:legalName "Schneiter Agro AG" ;
     schema:name "Schneiter Agro AG" ;
     schema:telephone <tel:+41-56-201-45-45> ;
     owl:sameAs zefix:1118792 .
 
 company:10079 a schema:Organization ;
-    schema:address srppp:15abf9ed-abe3-5777-b2e7-21343f4b0dd7 ;
+    schema:address :15abf9ed-abe3-5777-b2e7-21343f4b0dd7 ;
     schema:faxNumber <tel:+41-62-398-57-55> ;
     schema:legalName "Sintagro M. Eggen" ;
     schema:name "Sintagro M. Eggen" ;
@@ -109,7 +109,7 @@ company:10079 a schema:Organization ;
     owl:sameAs zefix:1634453 .
 
 company:10087 a schema:Organization ;
-    schema:address srppp:d3f58aeb-b14a-55f4-ad76-7eceeb9b6ec2 ;
+    schema:address :d3f58aeb-b14a-55f4-ad76-7eceeb9b6ec2 ;
     schema:faxNumber <tel:+41-32-387-70-79> ;
     schema:legalName "Matox AG" ;
     schema:name "Matox AG" ;
@@ -117,27 +117,27 @@ company:10087 a schema:Organization ;
     owl:sameAs zefix:199051 .
 
 company:10093 a schema:Organization ;
-    schema:address srppp:85178607-d0b9-53cf-a052-3c9f4e9dad43 ;
+    schema:address :85178607-d0b9-53cf-a052-3c9f4e9dad43 ;
     schema:legalName "A. Ziegler AG" ;
     schema:name "A. Ziegler AG" ;
     schema:telephone <tel:+41-43-466-10-00> ;
     owl:sameAs zefix:212584 .
 
 company:10095 a schema:Organization ;
-    schema:address srppp:29567354-ccb1-5068-9bed-e9dd553edced ;
+    schema:address :29567354-ccb1-5068-9bed-e9dd553edced ;
     schema:legalName "Bio-Agrar-Counsel GmbH" ;
     schema:name "Bio-Agrar-Counsel GmbH" ;
     schema:telephone <tel:+41-33-827-02-83> ;
     owl:sameAs zefix:233474 .
 
 company:10096 a schema:Organization ;
-    schema:address srppp:bba07692-0d6d-5db1-91db-e1b0e7daacf6 ;
+    schema:address :bba07692-0d6d-5db1-91db-e1b0e7daacf6 ;
     schema:legalName "Cemag Handels AG" ;
     schema:name "Cemag Handels AG" ;
     owl:sameAs zefix:243472 .
 
 company:10105 a schema:Organization ;
-    schema:address srppp:fc2d4f26-ba1f-550a-9427-328850599dae ;
+    schema:address :fc2d4f26-ba1f-550a-9427-328850599dae ;
     schema:faxNumber <tel:+41-32-389-10-12> ;
     schema:legalName "Hauert HBG Dünger AG" ;
     schema:name "Hauert HBG Dünger AG" ;
@@ -145,14 +145,14 @@ company:10105 a schema:Organization ;
     owl:sameAs zefix:761673 .
 
 company:10106 a schema:Organization ;
-    schema:address srppp:badca180-5647-5a32-8b69-1dd7f675814b ;
+    schema:address :badca180-5647-5a32-8b69-1dd7f675814b ;
     schema:faxNumber <tel:+41-62-896-12-65> ;
     schema:legalName "Hauri AG" ;
     schema:name "Hauri AG" ;
     schema:telephone <tel:+41-62-896-12-65> .
 
 company:10115 a schema:Organization ;
-    schema:address srppp:bdaa41bb-f5e4-5dcc-af34-e66276fcb147 ;
+    schema:address :bdaa41bb-f5e4-5dcc-af34-e66276fcb147 ;
     schema:faxNumber <tel:+41-58-220-36-71> ;
     schema:legalName "Medol" ;
     schema:name "Medol" ;
@@ -160,7 +160,7 @@ company:10115 a schema:Organization ;
     owl:sameAs zefix:219348 .
 
 company:10125 a schema:Organization ;
-    schema:address srppp:5b5b04ce-40c4-5ed2-a91b-71d69c12a5cd ;
+    schema:address :5b5b04ce-40c4-5ed2-a91b-71d69c12a5cd ;
     schema:email <mailto:patrick.sauder@renovita.ch> ;
     schema:legalName "Renovita Wilen GmbH" ;
     schema:name "Renovita Wilen GmbH" ;
@@ -168,7 +168,7 @@ company:10125 a schema:Organization ;
     owl:sameAs zefix:1190792 .
 
 company:10127 a schema:Organization ;
-    schema:address srppp:4ca784c4-fb54-5b0d-8c8f-31105deaf7a5 ;
+    schema:address :4ca784c4-fb54-5b0d-8c8f-31105deaf7a5 ;
     schema:faxNumber <tel:+41-33-227-57-58> ;
     schema:legalName "Eric Schweizer AG" ;
     schema:name "Eric Schweizer AG" ;
@@ -176,46 +176,46 @@ company:10127 a schema:Organization ;
     owl:sameAs zefix:166432 .
 
 company:10128 a schema:Organization ;
-    schema:address srppp:adae6a03-3fbf-5f11-be8b-6bc38fd52a9e ;
+    schema:address :adae6a03-3fbf-5f11-be8b-6bc38fd52a9e ;
     schema:legalName "Sofbey SA" ;
     schema:name "Sofbey SA" ;
     schema:telephone <tel:+41-91-223-10-90> ;
     owl:sameAs zefix:1096353 .
 
 company:10141 a schema:Organization ;
-    schema:address srppp:a4f37142-e042-5b85-a098-4587e027a1f1 ;
+    schema:address :a4f37142-e042-5b85-a098-4587e027a1f1 ;
     schema:legalName "AGROLINE Bioprotect" ;
     schema:name "AGROLINE Bioprotect" .
 
 company:10213 a schema:Organization ;
-    schema:address srppp:cb5e7685-ef02-5dd7-ac99-1e9561720e7c ;
+    schema:address :cb5e7685-ef02-5dd7-ac99-1e9561720e7c ;
     schema:legalName "Omya (Schweiz) AG" ;
     schema:name "Omya (Schweiz) AG" ;
     owl:sameAs zefix:730369 .
 
 company:10271 a schema:Organization ;
-    schema:address srppp:e50ab3ce-aeea-5305-b20a-e8fb1cdb5c75 ;
+    schema:address :e50ab3ce-aeea-5305-b20a-e8fb1cdb5c75 ;
     schema:legalName "Diachem SPA" ;
     schema:name "Diachem SPA" .
 
 company:10281 a schema:Organization ;
-    schema:address srppp:a2f4a7ac-c8b0-57f1-9a0e-31b01f6fdd24 ;
+    schema:address :a2f4a7ac-c8b0-57f1-9a0e-31b01f6fdd24 ;
     schema:legalName "BASF AG" ;
     schema:name "BASF AG" .
 
 company:10285 a schema:Organization ;
-    schema:address srppp:4b24a845-b4d7-5b01-b4f4-065ba74527da ;
+    schema:address :4b24a845-b4d7-5b01-b4f4-065ba74527da ;
     schema:legalName "Koppert Deutschland GmbH " ;
     schema:name "Koppert Deutschland GmbH " ;
     owl:sameAs zefix:1169237 .
 
 company:10297 a schema:Organization ;
-    schema:address srppp:6a6a5363-97a9-5ba9-9f32-579fa340ed24 ;
+    schema:address :6a6a5363-97a9-5ba9-9f32-579fa340ed24 ;
     schema:legalName "BASF France" ;
     schema:name "BASF France" .
 
 company:10310 a schema:Organization ;
-    schema:address srppp:609bacc3-19e3-593b-ae18-28bcdd2eeb3e ;
+    schema:address :609bacc3-19e3-593b-ae18-28bcdd2eeb3e ;
     schema:faxNumber <tel:+41-32-623-17-06> ;
     schema:legalName "Amreco AG" ;
     schema:name "Amreco AG" ;
@@ -223,33 +223,33 @@ company:10310 a schema:Organization ;
     owl:sameAs zefix:339512 .
 
 company:10340 a schema:Organization ;
-    schema:address srppp:f6063710-8295-53cd-b5c4-974fb7182fab ;
+    schema:address :f6063710-8295-53cd-b5c4-974fb7182fab ;
     schema:faxNumber <tel:+41-53663065> ;
     schema:legalName "De Sangosse" ;
     schema:name "De Sangosse" ;
     schema:telephone <tel:+41-53693630> .
 
 company:10367 a schema:Organization ;
-    schema:address srppp:02d5f06a-b14d-5132-955a-170aec5592e8 ;
+    schema:address :02d5f06a-b14d-5132-955a-170aec5592e8 ;
     schema:faxNumber <tel:+49-7381-935454> ;
     schema:legalName "Biofa AG" ;
     schema:name "Biofa AG" ;
     schema:telephone <tel:+49-7381-93540> .
 
 company:10388 a schema:Organization ;
-    schema:address srppp:5571ee46-d9ec-539a-8bba-83ff3fba5caa ;
+    schema:address :5571ee46-d9ec-539a-8bba-83ff3fba5caa ;
     schema:legalName "Syngenta Agro AG" ;
     schema:name "Syngenta Agro AG" ;
     schema:telephone <tel:+41-61-323-56-70> ;
     owl:sameAs zefix:393743 .
 
 company:10392 a schema:Organization ;
-    schema:address srppp:09b4b197-3604-5699-b099-08e838829af6 ;
+    schema:address :09b4b197-3604-5699-b099-08e838829af6 ;
     schema:legalName "Corteva Agriscience France S.A.S" ;
     schema:name "Corteva Agriscience France S.A.S" .
 
 company:10445 a schema:Organization ;
-    schema:address srppp:cf397f47-1afd-5912-bc22-3325113d4be3 ;
+    schema:address :cf397f47-1afd-5912-bc22-3325113d4be3 ;
     schema:faxNumber <tel:+41-79-126-94-77> ;
     schema:legalName "Hans Müller Gärtnerei AG" ;
     schema:name "Hans Müller Gärtnerei AG" ;
@@ -257,70 +257,70 @@ company:10445 a schema:Organization ;
     owl:sameAs zefix:123783 .
 
 company:10446 a schema:Organization ;
-    schema:address srppp:63e70ec2-aeef-5337-ae06-7dfe8a309d65 ;
+    schema:address :63e70ec2-aeef-5337-ae06-7dfe8a309d65 ;
     schema:legalName "FMC Europe NV" ;
     schema:name "FMC Europe NV" .
 
 company:10489 a schema:Organization ;
-    schema:address srppp:a79bb6e6-5a60-5c0e-816a-211a39237645 ;
+    schema:address :a79bb6e6-5a60-5c0e-816a-211a39237645 ;
     schema:legalName "W. Neudorff GmbH KG" ;
     schema:name "W. Neudorff GmbH KG" .
 
 company:10504 a schema:Organization ;
-    schema:address srppp:2c081d57-3b8f-59e8-956e-6496bf092c89 ;
+    schema:address :2c081d57-3b8f-59e8-956e-6496bf092c89 ;
     schema:legalName "industrias químicas del vallés, s.a." ;
     schema:name "industrias químicas del vallés, s.a." .
 
 company:10555 a schema:Organization ;
-    schema:address srppp:f7b685d9-e99f-5e90-8e7d-6b329c206a27 ;
+    schema:address :f7b685d9-e99f-5e90-8e7d-6b329c206a27 ;
     schema:faxNumber <tel:+45-96-90-96-91> ;
     schema:legalName "Cheminova Agro A/S" ;
     schema:name "Cheminova Agro A/S" ;
     schema:telephone <tel:+45-96-90-96-90> .
 
 company:10570 a schema:Organization ;
-    schema:address srppp:0b266bf5-337a-5810-b600-bd07ef501619 ;
+    schema:address :0b266bf5-337a-5810-b600-bd07ef501619 ;
     schema:legalName "Corteva Agriscience International Sàrl" ;
     schema:name "Corteva Agriscience International Sàrl" ;
     schema:telephone <tel:+41-22-717-58-68> ;
     owl:sameAs zefix:685971 .
 
 company:10595 a schema:Organization ;
-    schema:address srppp:a1828cb6-2ae4-5dd1-8bd7-208b19121a1d ;
+    schema:address :a1828cb6-2ae4-5dd1-8bd7-208b19121a1d ;
     schema:faxNumber <tel:+32-4-385-97-49> ;
     schema:legalName "Arysta LifeScience Ougrée Production sprl" ;
     schema:name "Arysta LifeScience Ougrée Production sprl" ;
     schema:telephone <tel:+32-4-385-97-11> .
 
 company:10606 a schema:Organization ;
-    schema:address srppp:eae51d52-0aa3-54da-b370-adf9dbf40c66 ;
+    schema:address :eae51d52-0aa3-54da-b370-adf9dbf40c66 ;
     schema:faxNumber <tel:+41-61-486-20-01> ;
     schema:legalName "COMPO Jardin AG" ;
     schema:name "COMPO Jardin AG" ;
     owl:sameAs zefix:594217 .
 
 company:10618 a schema:Organization ;
-    schema:address srppp:5493b81e-2cc4-5b7a-81ad-8ab48ccddfb8 ;
+    schema:address :5493b81e-2cc4-5b7a-81ad-8ab48ccddfb8 ;
     schema:legalName "Bayer S.p.A." ;
     schema:name "Bayer S.p.A." .
 
 company:10619 a schema:Organization ;
-    schema:address srppp:144919b1-9e4c-5c29-9615-61c944eb2c38 ;
+    schema:address :144919b1-9e4c-5c29-9615-61c944eb2c38 ;
     schema:legalName "Isagro S.p.A." ;
     schema:name "Isagro S.p.A." .
 
 company:10635 a schema:Organization ;
-    schema:address srppp:a4866721-0916-5f19-9004-fa45767fc41c ;
+    schema:address :a4866721-0916-5f19-9004-fa45767fc41c ;
     schema:legalName "Cheminova A/S" ;
     schema:name "Cheminova A/S" .
 
 company:10639 a schema:Organization ;
-    schema:address srppp:78a23d27-5a8d-509c-ba1f-6313f24d33a7 ;
+    schema:address :78a23d27-5a8d-509c-ba1f-6313f24d33a7 ;
     schema:legalName "BASF Aktiengesellschaft" ;
     schema:name "BASF Aktiengesellschaft" .
 
 company:10661 a schema:Organization ;
-    schema:address srppp:e4f392f1-052b-5fbe-ace9-adc45bb3614b ;
+    schema:address :e4f392f1-052b-5fbe-ace9-adc45bb3614b ;
     schema:faxNumber <tel:+41-31-869-23-39> ;
     schema:legalName "Bayer (Schweiz) AG" ;
     schema:name "Bayer (Schweiz) AG" ;
@@ -328,26 +328,26 @@ company:10661 a schema:Organization ;
     owl:sameAs zefix:336959 .
 
 company:10662 a schema:Organization ;
-    schema:address srppp:a6689ebf-9dd7-56a5-935d-e103406e9581 ;
+    schema:address :a6689ebf-9dd7-56a5-935d-e103406e9581 ;
     schema:faxNumber <tel:+49-2173-383735> ;
     schema:legalName "Bayer CropScience AG" ;
     schema:name "Bayer CropScience AG" ;
     schema:telephone <tel:+49-2173-383374> .
 
 company:10664 a schema:Organization ;
-    schema:address srppp:25d19972-d423-5b7a-b61c-b01ecc81317b ;
+    schema:address :25d19972-d423-5b7a-b61c-b01ecc81317b ;
     schema:faxNumber <tel:+49-5155-6247122> ;
     schema:legalName "W. Neudorff GmbH KG" ;
     schema:name "W. Neudorff GmbH KG" ;
     schema:telephone <tel:+49-5155-624126> .
 
 company:10679 a schema:Organization ;
-    schema:address srppp:8966c81c-662d-5958-89ec-e30fec15f8e8 ;
+    schema:address :8966c81c-662d-5958-89ec-e30fec15f8e8 ;
     schema:legalName "Bayer CropScience S.A." ;
     schema:name "Bayer CropScience S.A." .
 
 company:10686 a schema:Organization ;
-    schema:address srppp:e4cdc49c-2a9b-5473-9e75-00101622092a ;
+    schema:address :e4cdc49c-2a9b-5473-9e75-00101622092a ;
     schema:faxNumber <tel:+41-22-990-21-29> ;
     schema:legalName "SCAE - Valent BioSciences Sàrl (Switzerland)" ;
     schema:name "SCAE - Valent BioSciences Sàrl (Switzerland)" ;
@@ -355,71 +355,71 @@ company:10686 a schema:Organization ;
     owl:sameAs zefix:512743 .
 
 company:10709 a schema:Organization ;
-    schema:address srppp:dafba3bc-7bbf-5515-8c4e-956d5830347a ;
+    schema:address :dafba3bc-7bbf-5515-8c4e-956d5830347a ;
     schema:faxNumber <tel:+49-69-3053826> ;
     schema:legalName "Bayer CropScience AG" ;
     schema:name "Bayer CropScience AG" ;
     schema:telephone <tel:+49-69-3053763> .
 
 company:10711 a schema:Organization ;
-    schema:address srppp:6244b3bf-e823-5291-b1cb-0cb1972aaead ;
+    schema:address :6244b3bf-e823-5291-b1cb-0cb1972aaead ;
     schema:legalName "SIPCAM OXON S.p.A." ;
     schema:name "SIPCAM OXON S.p.A." .
 
 company:10712 a schema:Organization ;
-    schema:address srppp:0daf828b-b474-54fb-92e6-aee84a959234 ;
+    schema:address :0daf828b-b474-54fb-92e6-aee84a959234 ;
     schema:faxNumber <tel:+41-62-746-80-08> ;
     schema:legalName "Stähler Suisse SA" ;
     schema:name "Stähler Suisse SA" ;
     owl:sameAs zefix:267983 .
 
 company:10716 a schema:Organization ;
-    schema:address srppp:83930b9e-bccc-5c81-92fc-c6c45d49e894 ;
+    schema:address :83930b9e-bccc-5c81-92fc-c6c45d49e894 ;
     schema:faxNumber <tel:+31-11681565> ;
     schema:legalName "GLOBACHEM NV" ;
     schema:name "GLOBACHEM NV" ;
     schema:telephone <tel:+32-11-78-57-17> .
 
 company:10717 a schema:Organization ;
-    schema:address srppp:dbc8ed1b-d64c-5820-a62c-635cfc12553d ;
+    schema:address :dbc8ed1b-d64c-5820-a62c-635cfc12553d ;
     schema:legalName "Bayer CropScience GmbH" ;
     schema:name "Bayer CropScience GmbH" .
 
 company:10727 a schema:Organization ;
-    schema:address srppp:a63df699-ef87-582f-82f9-03f17af2ae62 ;
+    schema:address :a63df699-ef87-582f-82f9-03f17af2ae62 ;
     schema:legalName "Bayer CropScience SA" ;
     schema:name "Bayer CropScience SA" .
 
 company:10745 a schema:Organization ;
-    schema:address srppp:f4a100c9-9edf-576b-8700-86e5261b3af6 ;
+    schema:address :f4a100c9-9edf-576b-8700-86e5261b3af6 ;
     schema:legalName "Phyteurop S.A." ;
     schema:name "Phyteurop S.A." .
 
 company:10746 a schema:Organization ;
-    schema:address srppp:4ded97bc-a97c-51e5-9fd1-86ff523c9761 ;
+    schema:address :4ded97bc-a97c-51e5-9fd1-86ff523c9761 ;
     schema:legalName "Andermatt Biogarten AG" ;
     schema:name "Andermatt Biogarten AG" ;
     owl:sameAs zefix:721898 .
 
 company:10763 a schema:Organization ;
-    schema:address srppp:53888f7f-4e6e-5e30-9c97-93e60144bc19 ;
+    schema:address :53888f7f-4e6e-5e30-9c97-93e60144bc19 ;
     schema:email <mailto:florence.pineda@isk.be> ;
     schema:legalName "ISK Biosciences (Schweiz) GmbH" ;
     schema:name "ISK Biosciences (Schweiz) GmbH" ;
     owl:sameAs zefix:760292 .
 
 company:10767 a schema:Organization ;
-    schema:address srppp:eca8d8a5-7f15-5254-98b7-698f14f7b20f ;
+    schema:address :eca8d8a5-7f15-5254-98b7-698f14f7b20f ;
     schema:legalName "United Phosphorus Limited" ;
     schema:name "United Phosphorus Limited" .
 
 company:10796 a schema:Organization ;
-    schema:address srppp:5edafd46-c287-5ac4-a592-37d5f1aa1b19 ;
+    schema:address :5edafd46-c287-5ac4-a592-37d5f1aa1b19 ;
     schema:legalName "Arysta Lifescience" ;
     schema:name "Arysta Lifescience" .
 
 company:10859 a schema:Organization ;
-    schema:address srppp:193e924e-6080-5c67-929e-758ef9f10096 ;
+    schema:address :193e924e-6080-5c67-929e-758ef9f10096 ;
     schema:faxNumber <tel:+41-76-210-20-05> ;
     schema:legalName "808 Schweiz AG" ;
     schema:name "808 Schweiz AG" ;
@@ -427,71 +427,71 @@ company:10859 a schema:Organization ;
     owl:sameAs zefix:457133 .
 
 company:10868 a schema:Organization ;
-    schema:address srppp:27db1e11-27af-5e31-8de1-05c93b7fdb7e ;
+    schema:address :27db1e11-27af-5e31-8de1-05c93b7fdb7e ;
     schema:legalName "ISK Biosciences Europe N.V." ;
     schema:name "ISK Biosciences Europe N.V." .
 
 company:10873 a schema:Organization ;
-    schema:address srppp:e957bff4-6b2a-53ac-8b34-94e8ac8ca34f ;
+    schema:address :e957bff4-6b2a-53ac-8b34-94e8ac8ca34f ;
     schema:legalName "Belchim Crop Protection N.V." ;
     schema:name "Belchim Crop Protection N.V." .
 
 company:10874 a schema:Organization ;
-    schema:address srppp:4788f717-898a-5331-972b-5c5943502aaa ;
+    schema:address :4788f717-898a-5331-972b-5c5943502aaa ;
     schema:faxNumber <tel:+39-363-320-589> ;
     schema:legalName "Corteva Agriscience Italia s.r.l" ;
     schema:name "Corteva Agriscience Italia s.r.l" ;
     schema:telephone <tel:+39-363-320-474> .
 
 company:10876 a schema:Organization ;
-    schema:address srppp:1cb1162a-0e19-5a97-a849-decc42a5e838 ;
+    schema:address :1cb1162a-0e19-5a97-a849-decc42a5e838 ;
     schema:legalName "WASGOM" ;
     schema:name "WASGOM" ;
     schema:telephone <tel:+41-79-426-98-04> .
 
 company:10880 a schema:Organization ;
-    schema:address srppp:e64f3385-4a36-5ed6-8a4b-909056c313cf ;
+    schema:address :e64f3385-4a36-5ed6-8a4b-909056c313cf ;
     schema:legalName "BASF Italia SpA" ;
     schema:name "BASF Italia SpA" .
 
 company:10885 a schema:Organization ;
-    schema:address srppp:ba599bf0-f2c6-5c10-9808-13edc10bd408 ;
+    schema:address :ba599bf0-f2c6-5c10-9808-13edc10bd408 ;
     schema:legalName "Agro-Stulln GmbH" ;
     schema:name "Agro-Stulln GmbH" .
 
 company:10889 a schema:Organization ;
-    schema:address srppp:1d74120f-1f38-5bae-9a20-6165dcf071e7 ;
+    schema:address :1d74120f-1f38-5bae-9a20-6165dcf071e7 ;
     schema:legalName "SAN Agrow Holding GmbH" ;
     schema:name "SAN Agrow Holding GmbH" ;
     schema:telephone <tel:+43-2782-83300> .
 
 company:10918 a schema:Organization ;
-    schema:address srppp:6d56da89-9e88-59be-a5d8-b58ecfe9939e ;
+    schema:address :6d56da89-9e88-59be-a5d8-b58ecfe9939e ;
     schema:legalName "UPL -United Phosphorous Ltd." ;
     schema:name "UPL -United Phosphorous Ltd." .
 
 company:10962 a schema:Organization ;
-    schema:address srppp:e97d9824-e0d2-5acf-b1f4-734212dfbe52 ;
+    schema:address :e97d9824-e0d2-5acf-b1f4-734212dfbe52 ;
     schema:legalName "BASF Belgium S.A." ;
     schema:name "BASF Belgium S.A." .
 
 company:10965 a schema:Organization ;
-    schema:address srppp:967ec720-af27-5b32-a887-fc3e47dcfe83 ;
+    schema:address :967ec720-af27-5b32-a887-fc3e47dcfe83 ;
     schema:legalName "Syngenta Crop Protection N.V." ;
     schema:name "Syngenta Crop Protection N.V." .
 
 company:10976 a schema:Organization ;
-    schema:address srppp:99372c3d-7243-5889-a817-1a96f1f2d859 ;
+    schema:address :99372c3d-7243-5889-a817-1a96f1f2d859 ;
     schema:legalName "Irvita Plant Protection N.V." ;
     schema:name "Irvita Plant Protection N.V." .
 
 company:10980 a schema:Organization ;
-    schema:address srppp:99f03823-37c5-5941-8fa7-b06534039ac2 ;
+    schema:address :99f03823-37c5-5941-8fa7-b06534039ac2 ;
     schema:legalName "Nufarm Deutschland GmbH" ;
     schema:name "Nufarm Deutschland GmbH" .
 
 company:10989 a schema:Organization ;
-    schema:address srppp:958f0b66-8b7a-510a-aba8-af8bedb361a1 ;
+    schema:address :958f0b66-8b7a-510a-aba8-af8bedb361a1 ;
     schema:faxNumber <tel:+41-26-663-51-32> ;
     schema:legalName "Seydoux Grains Sàrl" ;
     schema:name "Seydoux Grains Sàrl" ;
@@ -499,18 +499,18 @@ company:10989 a schema:Organization ;
     owl:sameAs zefix:661514 .
 
 company:10993 a schema:Organization ;
-    schema:address srppp:c4e7c83d-1c9f-5a05-b3e1-df8de22fef45 ;
+    schema:address :c4e7c83d-1c9f-5a05-b3e1-df8de22fef45 ;
     schema:legalName "Regaber Holding AG" ;
     schema:name "Regaber Holding AG" ;
     owl:sameAs zefix:321145 .
 
 company:11009 a schema:Organization ;
-    schema:address srppp:9fcb66d1-9cb0-5051-897d-6f0e4c093d04 ;
+    schema:address :9fcb66d1-9cb0-5051-897d-6f0e4c093d04 ;
     schema:legalName "Fine Agrochemicals Limited" ;
     schema:name "Fine Agrochemicals Limited" .
 
 company:11028 a schema:Organization ;
-    schema:address srppp:649adb5e-29e2-512f-82b7-7a38641ed91d ;
+    schema:address :649adb5e-29e2-512f-82b7-7a38641ed91d ;
     schema:email <mailto:ricardo@rovagro.ch> ;
     schema:faxNumber <tel:+41-21-866-79-14> ;
     schema:legalName "Rovagro SA" ;
@@ -518,47 +518,47 @@ company:11028 a schema:Organization ;
     owl:sameAs zefix:1132670 .
 
 company:11036 a schema:Organization ;
-    schema:address srppp:7f05e3b0-5cd5-55a2-8941-36b1c60a3f8e ;
+    schema:address :7f05e3b0-5cd5-55a2-8941-36b1c60a3f8e ;
     schema:legalName "Nufarm Suisse Sàrl" ;
     schema:name "Nufarm Suisse Sàrl" ;
     schema:telephone <tel:+43-732-69182773> .
 
 company:11037 a schema:Organization ;
-    schema:address srppp:cbc48733-6631-5a2f-bad8-a1b9ecd1b33f ;
+    schema:address :cbc48733-6631-5a2f-bad8-a1b9ecd1b33f ;
     schema:legalName "GNS Consult AG" ;
     schema:name "GNS Consult AG" ;
     owl:sameAs zefix:907877 .
 
 company:11044 a schema:Organization ;
-    schema:address srppp:e30d0abb-d181-5cc6-9550-1361444f589c ;
+    schema:address :e30d0abb-d181-5cc6-9550-1361444f589c ;
     schema:legalName "Sumitomo Chemical Agro Europe SAS" ;
     schema:name "Sumitomo Chemical Agro Europe SAS" .
 
 company:11049 a schema:Organization ;
-    schema:address srppp:2d4ab346-d3da-55da-acb7-c18aca926107 ;
+    schema:address :2d4ab346-d3da-55da-acb7-c18aca926107 ;
     schema:legalName "ADAMA Agriculture Swiss AG" ;
     schema:name "ADAMA Agriculture Swiss AG" ;
     owl:sameAs zefix:932153 .
 
 company:11065 a schema:Organization ;
-    schema:address srppp:5f7b33ac-6e27-5d68-9ab8-cd6053ae9c7f ;
+    schema:address :5f7b33ac-6e27-5d68-9ab8-cd6053ae9c7f ;
     schema:legalName "Albaugh Europe Sàrl" ;
     schema:name "Albaugh Europe Sàrl" ;
     schema:telephone <tel:+41-21-799-91-30> ;
     owl:sameAs zefix:773824 .
 
 company:11066 a schema:Organization ;
-    schema:address srppp:2d4fe063-bc50-5141-bda6-46e70f7290bb ;
+    schema:address :2d4fe063-bc50-5141-bda6-46e70f7290bb ;
     schema:legalName "Valent Biosciences" ;
     schema:name "Valent Biosciences" .
 
 company:11071 a schema:Organization ;
-    schema:address srppp:aa0665aa-12ec-59e3-a799-d275afd38213 ;
+    schema:address :aa0665aa-12ec-59e3-a799-d275afd38213 ;
     schema:legalName "Agro Trade GMBH" ;
     schema:name "Agro Trade GMBH" .
 
 company:11074 a schema:Organization ;
-    schema:address srppp:bd66c474-e1dd-5ae9-99b8-78be6d90da24 ;
+    schema:address :bd66c474-e1dd-5ae9-99b8-78be6d90da24 ;
     schema:faxNumber <tel:+41-44-322-20-15> ;
     schema:legalName "Insektol AG Pest Control" ;
     schema:name "Insektol AG Pest Control" ;
@@ -566,59 +566,59 @@ company:11074 a schema:Organization ;
     owl:sameAs zefix:99141 .
 
 company:11080 a schema:Organization ;
-    schema:address srppp:3e6b45d5-4bbd-5714-b4e2-eb586465bac3 ;
+    schema:address :3e6b45d5-4bbd-5714-b4e2-eb586465bac3 ;
     schema:legalName "Novozymes Switzerland AG" ;
     schema:name "Novozymes Switzerland AG" ;
     owl:sameAs zefix:415183 .
 
 company:11096 a schema:Organization ;
-    schema:address srppp:2dd68944-9b8d-5012-8033-ae800049b211 ;
+    schema:address :2dd68944-9b8d-5012-8033-ae800049b211 ;
     schema:legalName "Bayer CropScience " ;
     schema:name "Bayer CropScience " .
 
 company:11116 a schema:Organization ;
-    schema:address srppp:88572cff-626f-5a09-a232-d2c9f9d71163 ;
+    schema:address :88572cff-626f-5a09-a232-d2c9f9d71163 ;
     schema:legalName "Menora GmbH" ;
     schema:name "Menora GmbH" .
 
 company:11117 a schema:Organization ;
-    schema:address srppp:05235818-3fe7-5374-9612-d3ccc62444b4 ;
+    schema:address :05235818-3fe7-5374-9612-d3ccc62444b4 ;
     schema:legalName "Taminco N.V." ;
     schema:name "Taminco N.V." .
 
 company:11119 a schema:Organization ;
-    schema:address srppp:5b980437-f31e-52da-b2ba-e0e62141605b ;
+    schema:address :5b980437-f31e-52da-b2ba-e0e62141605b ;
     schema:email <mailto:alb@kreglinger.com> ;
     schema:legalName "Kreglinger International AG" ;
     schema:name "Kreglinger International AG" ;
     owl:sameAs zefix:190273 .
 
 company:11121 a schema:Organization ;
-    schema:address srppp:45bcc756-da10-58da-9db1-af67c3c8e6e1 ;
+    schema:address :45bcc756-da10-58da-9db1-af67c3c8e6e1 ;
     schema:faxNumber <tel:+41-31-328-35-40> ;
     schema:legalName "Sharda Swiss Sàrl" ;
     schema:name "Sharda Swiss Sàrl" ;
     owl:sameAs zefix:973510 .
 
 company:11123 a schema:Organization ;
-    schema:address srppp:c24e1fe8-1300-56d4-9034-93e686f420a0 ;
+    schema:address :c24e1fe8-1300-56d4-9034-93e686f420a0 ;
     schema:legalName "Sharda Worldwide Export Private Ltd." ;
     schema:name "Sharda Worldwide Export Private Ltd." .
 
 company:11131 a schema:Organization ;
-    schema:address srppp:9071c43d-45df-5ed8-a35f-62dd85a05c5f ;
+    schema:address :9071c43d-45df-5ed8-a35f-62dd85a05c5f ;
     schema:legalName "Danstar Ferment AG" ;
     schema:name "Danstar Ferment AG" ;
     schema:telephone <tel:+358-50-5435547> ;
     owl:sameAs zefix:41947 .
 
 company:11141 a schema:Organization ;
-    schema:address srppp:7342805d-1bc0-51b6-b0d6-1d7a6ddfcf39 ;
+    schema:address :7342805d-1bc0-51b6-b0d6-1d7a6ddfcf39 ;
     schema:legalName "DuPont de Nemours (France) S.A." ;
     schema:name "DuPont de Nemours (France) S.A." .
 
 company:11158 a schema:Organization ;
-    schema:address srppp:3d944b31-5192-5150-9202-ac71aab15c59 ;
+    schema:address :3d944b31-5192-5150-9202-ac71aab15c59 ;
     schema:email <mailto:alexander.ruecker@upl-ltd.com> ;
     schema:legalName "UPL Switzerland AG" ;
     schema:name "UPL Switzerland AG" ;
@@ -626,99 +626,99 @@ company:11158 a schema:Organization ;
     owl:sameAs zefix:840339 .
 
 company:11168 a schema:Organization ;
-    schema:address srppp:65e7ebbe-1971-5c35-9e75-e0dbb634a19d ;
+    schema:address :65e7ebbe-1971-5c35-9e75-e0dbb634a19d ;
     schema:legalName "Sharda Europe b.v.b.a." ;
     schema:name "Sharda Europe b.v.b.a." .
 
 company:11169 a schema:Organization ;
-    schema:address srppp:bbde877b-62a0-5d37-9629-a58bd31d0851 ;
+    schema:address :bbde877b-62a0-5d37-9629-a58bd31d0851 ;
     schema:legalName "CBC (Europe) Ltd" ;
     schema:name "CBC (Europe) Ltd" .
 
 company:11189 a schema:Organization ;
-    schema:address srppp:6967a3fc-bf07-531d-8743-edf781823c3e ;
+    schema:address :6967a3fc-bf07-531d-8743-edf781823c3e ;
     schema:legalName "Nisso Chemical Europe GmbH" ;
     schema:name "Nisso Chemical Europe GmbH" .
 
 company:11190 a schema:Organization ;
-    schema:address srppp:f1af8450-f6e5-545d-a51e-1170283296c6 ;
+    schema:address :f1af8450-f6e5-545d-a51e-1170283296c6 ;
     schema:legalName "Globachem NV" ;
     schema:name "Globachem NV" .
 
 company:11209 a schema:Organization ;
-    schema:address srppp:81afbe8f-7baa-5adb-afc1-936752e7ab6e ;
+    schema:address :81afbe8f-7baa-5adb-afc1-936752e7ab6e ;
     schema:legalName "Proplan Plant Protection Company S.L." ;
     schema:name "Proplan Plant Protection Company S.L." .
 
 company:11210 a schema:Organization ;
-    schema:address srppp:56181d99-e098-5167-98e0-9fe64fd0afa9 ;
+    schema:address :56181d99-e098-5167-98e0-9fe64fd0afa9 ;
     schema:legalName "Nufarm Italia S.R.L." ;
     schema:name "Nufarm Italia S.R.L." .
 
 company:11235 a schema:Organization ;
-    schema:address srppp:1327b231-a81d-509a-8a9c-194d13da4446 ;
+    schema:address :1327b231-a81d-509a-8a9c-194d13da4446 ;
     schema:legalName "Industrias Afrasa S.A" ;
     schema:name "Industrias Afrasa S.A" .
 
 company:11257 a schema:Organization ;
-    schema:address srppp:cfb5556b-129d-565c-b3c5-0949fa7144fd ;
+    schema:address :cfb5556b-129d-565c-b3c5-0949fa7144fd ;
     schema:legalName "Linde Gas Schweiz AG" ;
     schema:name "Linde Gas Schweiz AG" ;
     owl:sameAs zefix:132246 .
 
 company:11262 a schema:Organization ;
-    schema:address srppp:b107b53d-163e-5127-b443-0ec490b26cfc ;
+    schema:address :b107b53d-163e-5127-b443-0ec490b26cfc ;
     schema:email <mailto:chiara.perazzolo@lkc-ltd.com> ;
     schema:legalName "LKC Switzerland Ltd." ;
     schema:name "LKC Switzerland Ltd." ;
     owl:sameAs zefix:870785 .
 
 company:11275 a schema:Organization ;
-    schema:address srppp:be629faa-f036-53b2-be10-67bc05c64e7c ;
+    schema:address :be629faa-f036-53b2-be10-67bc05c64e7c ;
     schema:legalName "ISK Biosciences Europe S.A." ;
     schema:name "ISK Biosciences Europe S.A." .
 
 company:11284 a schema:Organization ;
-    schema:address srppp:d6530149-a889-5e21-892f-68fc17748413 ;
+    schema:address :d6530149-a889-5e21-892f-68fc17748413 ;
     schema:legalName "FytoFend S.A." ;
     schema:name "FytoFend S.A." .
 
 company:11313 a schema:Organization ;
-    schema:address srppp:de2b322e-b38a-5e58-b8cb-6518128fcdf1 ;
+    schema:address :de2b322e-b38a-5e58-b8cb-6518128fcdf1 ;
     schema:legalName "Oleon NV" ;
     schema:name "Oleon NV" .
 
 company:11324 a schema:Organization ;
-    schema:address srppp:765cafc3-5c92-5ccb-998c-34bfd53395f6 ;
+    schema:address :765cafc3-5c92-5ccb-998c-34bfd53395f6 ;
     schema:legalName "Kanesho Soil Treatment SPRL/BVBA" ;
     schema:name "Kanesho Soil Treatment SPRL/BVBA" .
 
 company:11348 a schema:Organization ;
-    schema:address srppp:444b726f-bd42-5606-ac9a-47a0888ee6c9 ;
+    schema:address :444b726f-bd42-5606-ac9a-47a0888ee6c9 ;
     schema:faxNumber <tel:+49-4141-92049248> ;
     schema:legalName "Cheminova Deutschland GmbH & Co. KG" ;
     schema:name "Cheminova Deutschland GmbH & Co. KG" ;
     schema:telephone <tel:+49-4141-9204248> .
 
 company:11350 a schema:Organization ;
-    schema:address srppp:393528e2-2772-5267-b030-1242037a2326 ;
+    schema:address :393528e2-2772-5267-b030-1242037a2326 ;
     schema:faxNumber <tel:+49-4141-92049248> ;
     schema:legalName "BASF" ;
     schema:name "BASF" ;
     schema:telephone <tel:+49-4141-9204248> .
 
 company:11356 a schema:Organization ;
-    schema:address srppp:fe5bdc68-ea47-579b-a675-86cca19281f4 ;
+    schema:address :fe5bdc68-ea47-579b-a675-86cca19281f4 ;
     schema:legalName "Belchim Crop Protection Switzerland GmbH" ;
     schema:name "Belchim Crop Protection Switzerland GmbH" .
 
 company:11400 a schema:Organization ;
-    schema:address srppp:6711a281-c34e-5607-b145-84a19bdf7d2e ;
+    schema:address :6711a281-c34e-5607-b145-84a19bdf7d2e ;
     schema:legalName "Tilco-Alginure GmbH" ;
     schema:name "Tilco-Alginure GmbH" .
 
 company:11401 a schema:Organization ;
-    schema:address srppp:2f96b757-137f-55b4-a1ba-9cc05ad837c0 ;
+    schema:address :2f96b757-137f-55b4-a1ba-9cc05ad837c0 ;
     schema:faxNumber <tel:+41-41-448-21-89> ;
     schema:legalName "Amstutz-Produkte AG" ;
     schema:name "Amstutz-Produkte AG" ;
@@ -726,423 +726,423 @@ company:11401 a schema:Organization ;
     owl:sameAs zefix:404360 .
 
 company:11414 a schema:Organization ;
-    schema:address srppp:816a63a1-f0a3-5b56-b15b-0cda955ba96e ;
+    schema:address :816a63a1-f0a3-5b56-b15b-0cda955ba96e ;
     schema:legalName "Bayer SAS" ;
     schema:name "Bayer SAS" .
 
 company:11416 a schema:Organization ;
-    schema:address srppp:9c9b1441-2d0e-5555-9433-fc8fad2640b1 ;
+    schema:address :9c9b1441-2d0e-5555-9433-fc8fad2640b1 ;
     schema:legalName "Sharda Cropchem Ltd." ;
     schema:name "Sharda Cropchem Ltd." .
 
 company:11434 a schema:Organization ;
-    schema:address srppp:24a72d18-6315-5394-ba56-1525433b1796 ;
+    schema:address :24a72d18-6315-5394-ba56-1525433b1796 ;
     schema:legalName "BASF SE" ;
     schema:name "BASF SE" .
 
 company:11438 a schema:Organization ;
-    schema:address srppp:c9282968-dd11-56a7-b589-b25daaa6acce ;
+    schema:address :c9282968-dd11-56a7-b589-b25daaa6acce ;
     schema:legalName "Schneider Formulations Consulting" ;
     schema:name "Schneider Formulations Consulting" ;
     schema:telephone <tel:+41-61-599-46-03> ;
     owl:sameAs zefix:1119898 .
 
 company:11441 a schema:Organization ;
-    schema:address srppp:d62f3b56-a1b5-51ab-9281-475b066b7a3f ;
+    schema:address :d62f3b56-a1b5-51ab-9281-475b066b7a3f ;
     schema:legalName "ADAMA Agan Ltd" ;
     schema:name "ADAMA Agan Ltd" .
 
 company:11444 a schema:Organization ;
-    schema:address srppp:6df02bfb-b466-52fd-9099-33791413c430 ;
+    schema:address :6df02bfb-b466-52fd-9099-33791413c430 ;
     schema:legalName "Life Scientific Ltd" ;
     schema:name "Life Scientific Ltd" .
 
 company:11447 a schema:Organization ;
-    schema:address srppp:81663d01-a076-5388-8701-9c719d0369fe ;
+    schema:address :81663d01-a076-5388-8701-9c719d0369fe ;
     schema:legalName "Rotam Agrochemical Europe Ltd" ;
     schema:name "Rotam Agrochemical Europe Ltd" .
 
 company:11451 a schema:Organization ;
-    schema:address srppp:cfc29847-8b9a-536e-afe4-aaf750679118 ;
+    schema:address :cfc29847-8b9a-536e-afe4-aaf750679118 ;
     schema:legalName "Cosaco GmbH" ;
     schema:name "Cosaco GmbH" ;
     schema:telephone <tel:+49-40-236520> .
 
 company:11452 a schema:Organization ;
-    schema:address srppp:cbb9c25d-da74-5712-8570-4bbe28f5c073 ;
+    schema:address :cbb9c25d-da74-5712-8570-4bbe28f5c073 ;
     schema:legalName "Belchim Crop Protection" ;
     schema:name "Belchim Crop Protection" .
 
 company:11453 a schema:Organization ;
-    schema:address srppp:78b6fdca-72ab-54d7-aac2-5e764d8a602f ;
+    schema:address :78b6fdca-72ab-54d7-aac2-5e764d8a602f ;
     schema:legalName "Bayer CropScience N.V." ;
     schema:name "Bayer CropScience N.V." .
 
 company:11467 a schema:Organization ;
-    schema:address srppp:47390d26-57f9-5386-b26f-2ffda34f5216 ;
+    schema:address :47390d26-57f9-5386-b26f-2ffda34f5216 ;
     schema:legalName "DU PONT DE NEMOURS ITALIANA S.R.L." ;
     schema:name "DU PONT DE NEMOURS ITALIANA S.R.L." .
 
 company:11471 a schema:Organization ;
-    schema:address srppp:64ab0cef-b10a-5a30-a4aa-99d5ef38ae48 ;
+    schema:address :64ab0cef-b10a-5a30-a4aa-99d5ef38ae48 ;
     schema:legalName "Luxembourg Pamol (Cyprus) LTD." ;
     schema:name "Luxembourg Pamol (Cyprus) LTD." .
 
 company:11522 a schema:Organization ;
-    schema:address srppp:32c72302-2140-5f4c-9c9f-9cc9077690da ;
+    schema:address :32c72302-2140-5f4c-9c9f-9cc9077690da ;
     schema:legalName "Dormfresh Limited, Perth (UK)" ;
     schema:name "Dormfresh Limited, Perth (UK)" ;
     owl:sameAs zefix:1241466 .
 
 company:11524 a schema:Organization ;
-    schema:address srppp:5df9a9d1-0c96-560c-b61a-52b0f28434c0 ;
+    schema:address :5df9a9d1-0c96-560c-b61a-52b0f28434c0 ;
     schema:email <mailto:femeapu@agrofresh.com> ;
     schema:legalName "AGFS Switzerland GmbH" ;
     schema:name "AGFS Switzerland GmbH" ;
     owl:sameAs zefix:1211870 .
 
 company:11528 a schema:Organization ;
-    schema:address srppp:02d7d8e8-5339-542f-81e9-250d58f169d4 ;
+    schema:address :02d7d8e8-5339-542f-81e9-250d58f169d4 ;
     schema:legalName "IFR Associés SA" ;
     schema:name "IFR Associés SA" ;
     owl:sameAs zefix:750545 .
 
 company:11530 a schema:Organization ;
-    schema:address srppp:99ec61c2-fcf5-5223-b911-ebc80da869af ;
+    schema:address :99ec61c2-fcf5-5223-b911-ebc80da869af ;
     schema:legalName "Dr. Knoell Consult Schweiz GmbH" ;
     schema:name "Dr. Knoell Consult Schweiz GmbH" ;
     owl:sameAs zefix:876144 .
 
 company:11545 a schema:Organization ;
-    schema:address srppp:d792ba62-2a41-53dd-9753-97b335275acf ;
+    schema:address :d792ba62-2a41-53dd-9753-97b335275acf ;
     schema:legalName "Certis Belchim B.V." ;
     schema:name "Certis Belchim B.V." .
 
 company:11594 a schema:Organization ;
-    schema:address srppp:e18be3c9-cec9-50ef-b892-86080ea423ea ;
+    schema:address :e18be3c9-cec9-50ef-b892-86080ea423ea ;
     schema:legalName "ADAMA Deutschland GmbH" ;
     schema:name "ADAMA Deutschland GmbH" .
 
 company:11596 a schema:Organization ;
-    schema:address srppp:d6fa9fba-f2df-5fde-83c7-026028956125 ;
+    schema:address :d6fa9fba-f2df-5fde-83c7-026028956125 ;
     schema:legalName "Douglas Switzerland GmbH" ;
     schema:name "Douglas Switzerland GmbH" ;
     schema:telephone <tel:+41-41-726-82-00> ;
     owl:sameAs zefix:1266400 .
 
 company:11601 a schema:Organization ;
-    schema:address srppp:a75294f3-ad41-5d03-952e-376d0b157300 ;
+    schema:address :a75294f3-ad41-5d03-952e-376d0b157300 ;
     schema:legalName "Bernbeck LLP" ;
     schema:name "Bernbeck LLP" .
 
 company:11605 a schema:Organization ;
-    schema:address srppp:2c0e1947-bde5-50a7-95c2-e4c381fbbdab ;
+    schema:address :2c0e1947-bde5-50a7-95c2-e4c381fbbdab ;
     schema:legalName "Arysta LifeScience Germany GmbH" ;
     schema:name "Arysta LifeScience Germany GmbH" .
 
 company:11609 a schema:Organization ;
-    schema:address srppp:dee28f83-ba10-5f9e-bd44-f9a9e7745958 ;
+    schema:address :dee28f83-ba10-5f9e-bd44-f9a9e7745958 ;
     schema:legalName "Syngenta France SAS" ;
     schema:name "Syngenta France SAS" .
 
 company:11611 a schema:Organization ;
-    schema:address srppp:9664c4a5-0713-5e03-8e36-167d7731cd92 ;
+    schema:address :9664c4a5-0713-5e03-8e36-167d7731cd92 ;
     schema:legalName "UPL Italia S.R.L." ;
     schema:name "UPL Italia S.R.L." .
 
 company:11612 a schema:Organization ;
-    schema:address srppp:211f6366-7a7a-55cd-8e47-b257193730b6 ;
+    schema:address :211f6366-7a7a-55cd-8e47-b257193730b6 ;
     schema:legalName "Nichino Europ Co LTD" ;
     schema:name "Nichino Europ Co LTD" .
 
 company:11613 a schema:Organization ;
-    schema:address srppp:2be48e21-64c4-5a10-b04a-facc7bbee0bc ;
+    schema:address :2be48e21-64c4-5a10-b04a-facc7bbee0bc ;
     schema:legalName "Sipcam Italia S.P.A." ;
     schema:name "Sipcam Italia S.P.A." .
 
 company:11614 a schema:Organization ;
-    schema:address srppp:967e6d7d-2f66-5468-914d-bbc5ee131928 ;
+    schema:address :967e6d7d-2f66-5468-914d-bbc5ee131928 ;
     schema:legalName "Bayer SAS" ;
     schema:name "Bayer SAS" .
 
 company:11615 a schema:Organization ;
-    schema:address srppp:d4876bfe-f813-5a54-a6d4-51d344fba78d ;
+    schema:address :d4876bfe-f813-5a54-a6d4-51d344fba78d ;
     schema:legalName "Du Pont De Nemours Italiana" ;
     schema:name "Du Pont De Nemours Italiana" .
 
 company:11616 a schema:Organization ;
-    schema:address srppp:583d600f-6533-581d-9e42-28cd99479dea ;
+    schema:address :583d600f-6533-581d-9e42-28cd99479dea ;
     schema:faxNumber <tel:+49-2173-2076451> ;
     schema:legalName "Monsanto Agrar Deutschland GmbH" ;
     schema:name "Monsanto Agrar Deutschland GmbH" ;
     schema:telephone <tel:+49-2173-2076569> .
 
 company:11617 a schema:Organization ;
-    schema:address srppp:dbc5c1b7-5d7e-5e98-83b3-e82f03eb6ec3 ;
+    schema:address :dbc5c1b7-5d7e-5e98-83b3-e82f03eb6ec3 ;
     schema:legalName "Philagro France" ;
     schema:name "Philagro France" .
 
 company:11618 a schema:Organization ;
-    schema:address srppp:1f3cc082-08a5-56a8-a0c3-2d76a6626f27 ;
+    schema:address :1f3cc082-08a5-56a8-a0c3-2d76a6626f27 ;
     schema:legalName "Cheminova Agro Italia S.R.L." ;
     schema:name "Cheminova Agro Italia S.R.L." .
 
 company:11622 a schema:Organization ;
-    schema:address srppp:f48bb036-ea10-5a23-bff1-f37d8dff27ae ;
+    schema:address :f48bb036-ea10-5a23-bff1-f37d8dff27ae ;
     schema:legalName "Scam SPA" ;
     schema:name "Scam SPA" .
 
 company:11629 a schema:Organization ;
-    schema:address srppp:e731a731-3c76-5903-8f17-78f7e8227d36 ;
+    schema:address :e731a731-3c76-5903-8f17-78f7e8227d36 ;
     schema:legalName "Arysta Lifescience Benelux SPRL" ;
     schema:name "Arysta Lifescience Benelux SPRL" .
 
 company:11633 a schema:Organization ;
-    schema:address srppp:4b0d771a-473b-5421-9327-b59b98ae91b2 ;
+    schema:address :4b0d771a-473b-5421-9327-b59b98ae91b2 ;
     schema:legalName "Albaugh TKI d.o.o." ;
     schema:name "Albaugh TKI d.o.o." .
 
 company:11644 a schema:Organization ;
-    schema:address srppp:79e6511d-3c0a-5618-b351-d132cedd07e4 ;
+    schema:address :79e6511d-3c0a-5618-b351-d132cedd07e4 ;
     schema:legalName "SBM Life Science SA" ;
     schema:name "SBM Life Science SA" ;
     owl:sameAs zefix:1279862 .
 
 company:11695 a schema:Organization ;
-    schema:address srppp:2ac88734-18a7-596f-9ae8-ae58fd89ca3f ;
+    schema:address :2ac88734-18a7-596f-9ae8-ae58fd89ca3f ;
     schema:faxNumber <tel:+34-977-52-46-51> ;
     schema:legalName "Azufrera y Fertilizantes Pallares, S.A." ;
     schema:name "Azufrera y Fertilizantes Pallares, S.A." ;
     schema:telephone <tel:+34-977-52-46-50> .
 
 company:11696 a schema:Organization ;
-    schema:address srppp:1f47c5e6-1eb2-5497-98ef-32d4adc22e49 ;
+    schema:address :1f47c5e6-1eb2-5497-98ef-32d4adc22e49 ;
     schema:legalName "OGET Innovations GmbH " ;
     schema:name "OGET Innovations GmbH " .
 
 company:11699 a schema:Organization ;
-    schema:address srppp:1685dd9f-c45a-5ccf-a587-1d2c38455919 ;
+    schema:address :1685dd9f-c45a-5ccf-a587-1d2c38455919 ;
     schema:legalName "HMWC SARL" ;
     schema:name "HMWC SARL" ;
     schema:telephone <tel:+33-6-08-89-37-27> .
 
 company:11705 a schema:Organization ;
-    schema:address srppp:0750529e-7d7f-5a8b-a4ea-23248f174784 ;
+    schema:address :0750529e-7d7f-5a8b-a4ea-23248f174784 ;
     schema:legalName "BASF SE" ;
     schema:name "BASF SE" .
 
 company:11706 a schema:Organization ;
-    schema:address srppp:8e5d818d-6d81-5b0b-abf1-a100d29766f5 ;
+    schema:address :8e5d818d-6d81-5b0b-abf1-a100d29766f5 ;
     schema:legalName "I.B.G. S.R.L." ;
     schema:name "I.B.G. S.R.L." .
 
 company:11712 a schema:Organization ;
-    schema:address srppp:e606e5fb-a143-5764-9f9b-40553eca40f1 ;
+    schema:address :e606e5fb-a143-5764-9f9b-40553eca40f1 ;
     schema:legalName "Phoenix-Del S.R.L." ;
     schema:name "Phoenix-Del S.R.L." .
 
 company:11722 a schema:Organization ;
-    schema:address srppp:dfacc140-bdbb-5ea1-b59f-4e4a75ea5a9f ;
+    schema:address :dfacc140-bdbb-5ea1-b59f-4e4a75ea5a9f ;
     schema:legalName "UPL Europe Ltd" ;
     schema:name "UPL Europe Ltd" .
 
 company:11730 a schema:Organization ;
-    schema:address srppp:0c543628-05b4-565c-a906-857962dcfd41 ;
+    schema:address :0c543628-05b4-565c-a906-857962dcfd41 ;
     schema:legalName "agrostulln GmbH" ;
     schema:name "agrostulln GmbH" .
 
 company:11733 a schema:Organization ;
-    schema:address srppp:1f2c9731-4092-5a87-a3e0-5339b7d5da0b ;
+    schema:address :1f2c9731-4092-5a87-a3e0-5339b7d5da0b ;
     schema:legalName "FMC International Switzerland Sàrl" ;
     schema:name "FMC International Switzerland Sàrl" ;
     owl:sameAs zefix:1303044 .
 
 company:11734 a schema:Organization ;
-    schema:address srppp:bce2bfe9-b1d0-5844-aeb1-6895f2e510b5 ;
+    schema:address :bce2bfe9-b1d0-5844-aeb1-6895f2e510b5 ;
     schema:legalName "Nissan Chemical Europe S.A.S." ;
     schema:name "Nissan Chemical Europe S.A.S." .
 
 company:11738 a schema:Organization ;
-    schema:address srppp:0dff2f13-e843-5819-bd46-b04cb3f1e1ef ;
+    schema:address :0dff2f13-e843-5819-bd46-b04cb3f1e1ef ;
     schema:legalName "Bayer AG" ;
     schema:name "Bayer AG" .
 
 company:11753 a schema:Organization ;
-    schema:address srppp:b1e5895b-19a4-5f0b-948f-cb491d456f4e ;
+    schema:address :b1e5895b-19a4-5f0b-948f-cb491d456f4e ;
     schema:legalName "Crop Chem Handelsgesellschaft GmbH" ;
     schema:name "Crop Chem Handelsgesellschaft GmbH" .
 
 company:11757 a schema:Organization ;
-    schema:address srppp:498067f2-8555-574b-88a2-69413a2d9026 ;
+    schema:address :498067f2-8555-574b-88a2-69413a2d9026 ;
     schema:legalName "Albaugh UK Limited" ;
     schema:name "Albaugh UK Limited" .
 
 company:11759 a schema:Organization ;
-    schema:address srppp:3e2dc2a6-0f69-5366-a026-4009d6f096c0 ;
+    schema:address :3e2dc2a6-0f69-5366-a026-4009d6f096c0 ;
     schema:legalName "Gowan Crop Protection Ltd." ;
     schema:name "Gowan Crop Protection Ltd." .
 
 company:11761 a schema:Organization ;
-    schema:address srppp:ac5b754c-9d81-5057-8c91-566d083e66c4 ;
+    schema:address :ac5b754c-9d81-5057-8c91-566d083e66c4 ;
     schema:legalName "Adama France SAS" ;
     schema:name "Adama France SAS" .
 
 company:11762 a schema:Organization ;
-    schema:address srppp:4cec4e60-e38e-5c2d-bb42-4e68fe72197f ;
+    schema:address :4cec4e60-e38e-5c2d-bb42-4e68fe72197f ;
     schema:legalName "ISK Biosciences Europe S.A. (B)" ;
     schema:name "ISK Biosciences Europe S.A. (B)" .
 
 company:11770 a schema:Organization ;
-    schema:address srppp:bd210d5f-74e3-5fda-b2cc-c69f7c21eba6 ;
+    schema:address :bd210d5f-74e3-5fda-b2cc-c69f7c21eba6 ;
     schema:legalName "ADAMA Italia srl" ;
     schema:name "ADAMA Italia srl" .
 
 company:11773 a schema:Organization ;
-    schema:address srppp:cbf9710c-801a-536f-a10e-452449d11ada ;
+    schema:address :cbf9710c-801a-536f-a10e-452449d11ada ;
     schema:legalName "Agrimotion S. A. " ;
     schema:name "Agrimotion S. A. " .
 
 company:11776 a schema:Organization ;
-    schema:address srppp:e2f61b98-1d1f-5960-94a1-e07bef2d8192 ;
+    schema:address :e2f61b98-1d1f-5960-94a1-e07bef2d8192 ;
     schema:legalName "Mitsui Agriscience Int." ;
     schema:name "Mitsui Agriscience Int." .
 
 company:11777 a schema:Organization ;
-    schema:address srppp:28c6309b-0848-5735-aeeb-c9942ec5bb00 ;
+    schema:address :28c6309b-0848-5735-aeeb-c9942ec5bb00 ;
     schema:legalName "Helm Swiss GmbH" ;
     schema:name "Helm Swiss GmbH" ;
     schema:telephone <tel:+49-173-3569531> ;
     owl:sameAs zefix:878487 .
 
 company:11807 a schema:Organization ;
-    schema:address srppp:398045be-5a45-5cb8-8572-213bafc13f38 ;
+    schema:address :398045be-5a45-5cb8-8572-213bafc13f38 ;
     schema:legalName "Sumitomo Chemical Italia" ;
     schema:name "Sumitomo Chemical Italia" .
 
 company:11808 a schema:Organization ;
-    schema:address srppp:432aa7a2-a847-5666-8b9a-771a3112831d ;
+    schema:address :432aa7a2-a847-5666-8b9a-771a3112831d ;
     schema:legalName "JT Agro Ltd" ;
     schema:name "JT Agro Ltd" .
 
 company:11810 a schema:Organization ;
-    schema:address srppp:10cec7d4-e653-5018-b557-060de1e27b44 ;
+    schema:address :10cec7d4-e653-5018-b557-060de1e27b44 ;
     schema:legalName "Quimetal internacional" ;
     schema:name "Quimetal internacional" .
 
 company:11811 a schema:Organization ;
-    schema:address srppp:b9ccca6e-b8c5-591e-97ba-787a422b5948 ;
+    schema:address :b9ccca6e-b8c5-591e-97ba-787a422b5948 ;
     schema:legalName "Maschinenring Graubünden" ;
     schema:name "Maschinenring Graubünden" .
 
 company:11829 a schema:Organization ;
-    schema:address srppp:a038de8b-9856-5de4-b147-3249480305d3 ;
+    schema:address :a038de8b-9856-5de4-b147-3249480305d3 ;
     schema:legalName "Tessenderlo Groupe" ;
     schema:name "Tessenderlo Groupe" .
 
 company:11830 a schema:Organization ;
-    schema:address srppp:fccc868a-da2c-5e75-a05a-b438b21070d5 ;
+    schema:address :fccc868a-da2c-5e75-a05a-b438b21070d5 ;
     schema:legalName "Bayer CropScience Deutschland GmbH" ;
     schema:name "Bayer CropScience Deutschland GmbH" .
 
 company:11831 a schema:Organization ;
-    schema:address srppp:6fea949a-b088-5943-a4e0-84b54e55050a ;
+    schema:address :6fea949a-b088-5943-a4e0-84b54e55050a ;
     schema:legalName "Bayer CropScience S.r.l." ;
     schema:name "Bayer CropScience S.r.l." .
 
 company:11833 a schema:Organization ;
-    schema:address srppp:d225b112-b08b-5334-a95b-7cf970faeaf5 ;
+    schema:address :d225b112-b08b-5334-a95b-7cf970faeaf5 ;
     schema:legalName "Nufarm SAS" ;
     schema:name "Nufarm SAS" .
 
 company:11842 a schema:Organization ;
-    schema:address srppp:d2f6474d-a136-51dc-a627-0861206f4074 ;
+    schema:address :d2f6474d-a136-51dc-a627-0861206f4074 ;
     schema:legalName "Sharda Cropchem Espana S.L." ;
     schema:name "Sharda Cropchem Espana S.L." .
 
 company:11843 a schema:Organization ;
-    schema:address srppp:3ca4b3ea-5b7e-5746-9146-fa1c4957f1d5 ;
+    schema:address :3ca4b3ea-5b7e-5746-9146-fa1c4957f1d5 ;
     schema:legalName "Pan Amenity Ltd" ;
     schema:name "Pan Amenity Ltd" .
 
 company:11846 a schema:Organization ;
-    schema:address srppp:ed152be0-7ce1-51de-86a2-38381236f4b2 ;
+    schema:address :ed152be0-7ce1-51de-86a2-38381236f4b2 ;
     schema:legalName "Life Scientific Ltd" ;
     schema:name "Life Scientific Ltd" .
 
 company:11854 a schema:Organization ;
-    schema:address srppp:562b64b4-79ac-5530-a6bb-12da45f8a554 ;
+    schema:address :562b64b4-79ac-5530-a6bb-12da45f8a554 ;
     schema:legalName "Ascenza Agro S.A." ;
     schema:name "Ascenza Agro S.A." .
 
 company:11890 a schema:Organization ;
-    schema:address srppp:1ed8bb7e-c588-55b2-8531-609ed08a8349 ;
+    schema:address :1ed8bb7e-c588-55b2-8531-609ed08a8349 ;
     schema:legalName "Agrostar SARL" ;
     schema:name "Agrostar SARL" .
 
 company:11902 a schema:Organization ;
-    schema:address srppp:a60f7e1e-ddcb-5c35-83c1-d269406306be ;
+    schema:address :a60f7e1e-ddcb-5c35-83c1-d269406306be ;
     schema:legalName "Agrifutur Srl, Alfaniello" ;
     schema:name "Agrifutur Srl, Alfaniello" ;
     owl:sameAs zefix:1498134 .
 
 company:11904 a schema:Organization ;
-    schema:address srppp:0864ecf6-6a25-52ff-8558-c21160acf93d ;
+    schema:address :0864ecf6-6a25-52ff-8558-c21160acf93d ;
     schema:legalName "Ascenza Italia S.r.l." ;
     schema:name "Ascenza Italia S.r.l." .
 
 company:11906 a schema:Organization ;
-    schema:address srppp:b818daf2-aa89-5e8e-b1ac-aa431781f1d6 ;
+    schema:address :b818daf2-aa89-5e8e-b1ac-aa431781f1d6 ;
     schema:legalName "Evergreen Garden Care Österreich GmbH" ;
     schema:name "Evergreen Garden Care Österreich GmbH" .
 
 company:11907 a schema:Organization ;
-    schema:address srppp:97b7e273-1595-5f73-b60c-9f684c760acd ;
+    schema:address :97b7e273-1595-5f73-b60c-9f684c760acd ;
     schema:legalName "UPL Benelux B.V." ;
     schema:name "UPL Benelux B.V." .
 
 company:11908 a schema:Organization ;
-    schema:address srppp:7b5b0254-5099-58d8-ae0e-065d27b1b0fe ;
+    schema:address :7b5b0254-5099-58d8-ae0e-065d27b1b0fe ;
     schema:legalName "Corteva Agriscience Germany GmbH" ;
     schema:name "Corteva Agriscience Germany GmbH" .
 
 company:11909 a schema:Organization ;
-    schema:address srppp:5d413675-5c16-59d6-9e49-81de3f15491b ;
+    schema:address :5d413675-5c16-59d6-9e49-81de3f15491b ;
     schema:legalName "SFP Europe SA" ;
     schema:name "SFP Europe SA" ;
     owl:sameAs zefix:968176 .
 
 company:11911 a schema:Organization ;
-    schema:address srppp:5e5e0bc2-26d9-5c91-97e5-277e48f34229 ;
+    schema:address :5e5e0bc2-26d9-5c91-97e5-277e48f34229 ;
     schema:legalName "ICL Italia Treviso srl" ;
     schema:name "ICL Italia Treviso srl" .
 
 company:11932 a schema:Organization ;
-    schema:address srppp:fcbd0f40-5ed8-58fe-aa1b-62f7a9d6afeb ;
+    schema:address :fcbd0f40-5ed8-58fe-aa1b-62f7a9d6afeb ;
     schema:legalName "Sharda Cropchem Ltd." ;
     schema:name "Sharda Cropchem Ltd." .
 
 company:11947 a schema:Organization ;
-    schema:address srppp:dc7b2cd3-6f25-5d63-84ae-81e0405c874d ;
+    schema:address :dc7b2cd3-6f25-5d63-84ae-81e0405c874d ;
     schema:legalName "KRONI AG" ;
     schema:name "KRONI AG" ;
     owl:sameAs zefix:273573 .
 
 company:11959 a schema:Organization ;
-    schema:address srppp:8cbae8ee-1f9a-5975-aee4-55d8a18b04a6 ;
+    schema:address :8cbae8ee-1f9a-5975-aee4-55d8a18b04a6 ;
     schema:legalName "MR Personal und Service GmbH" ;
     schema:name "MR Personal und Service GmbH" ;
     schema:telephone <tel:+41-81-925-38-38> ;
     owl:sameAs zefix:926935 .
 
 company:11968 a schema:Organization ;
-    schema:address srppp:863cf085-2bca-591d-94e7-5b31a2a4a486 ;
+    schema:address :863cf085-2bca-591d-94e7-5b31a2a4a486 ;
     schema:legalName "UFA-Samen PROFI GRÜN" ;
     schema:name "UFA-Samen PROFI GRÜN" ;
     schema:telephone <tel:+41-58-433-76-76> ;
     owl:sameAs zefix:321790 .
 
 company:11982 a schema:Organization ;
-    schema:address srppp:713a250d-e3c2-5ef1-97f4-b18a2063659b ;
+    schema:address :713a250d-e3c2-5ef1-97f4-b18a2063659b ;
     schema:email <mailto:nadine.brinkmann@mycosolutions.ch> ;
     schema:legalName "MycoSolutions AG" ;
     schema:name "MycoSolutions AG" ;
@@ -1150,17 +1150,17 @@ company:11982 a schema:Organization ;
     owl:sameAs zefix:777788 .
 
 company:11995 a schema:Organization ;
-    schema:address srppp:9725e4c3-b486-52ad-8f43-cea14573dc9a ;
+    schema:address :9725e4c3-b486-52ad-8f43-cea14573dc9a ;
     schema:legalName "Agrimotion Deutschland Gmbh" ;
     schema:name "Agrimotion Deutschland Gmbh" .
 
 company:11997 a schema:Organization ;
-    schema:address srppp:be3aae6c-0db3-53f8-8809-1969556cd2e2 ;
+    schema:address :be3aae6c-0db3-53f8-8809-1969556cd2e2 ;
     schema:legalName "You Solution" ;
     schema:name "You Solution" .
 
 company:12015 a schema:Organization ;
-    schema:address srppp:020ca123-1397-551c-88ea-581d83f1f8dc ;
+    schema:address :020ca123-1397-551c-88ea-581d83f1f8dc ;
     schema:faxNumber <tel:+41-44-855-60-13> ;
     schema:legalName "Westland Schweiz GmbH " ;
     schema:name "Westland Schweiz GmbH " ;
@@ -1168,1240 +1168,1240 @@ company:12015 a schema:Organization ;
     owl:sameAs zefix:1335753 .
 
 company:12027 a schema:Organization ;
-    schema:address srppp:ea28ec77-b4df-5d69-8173-a1adcd78ab8c ;
+    schema:address :ea28ec77-b4df-5d69-8173-a1adcd78ab8c ;
     schema:legalName "Agrocare Chemicals KFT " ;
     schema:name "Agrocare Chemicals KFT " .
 
 company:12028 a schema:Organization ;
-    schema:address srppp:a7112c4b-e7fe-5942-a053-4c360ad827bf ;
+    schema:address :a7112c4b-e7fe-5942-a053-4c360ad827bf ;
     schema:legalName "Kregliner Europe nv" ;
     schema:name "Kregliner Europe nv" .
 
 company:12029 a schema:Organization ;
-    schema:address srppp:079c3752-930e-5b33-8b32-45856e799555 ;
+    schema:address :079c3752-930e-5b33-8b32-45856e799555 ;
     schema:legalName "FMC AGRO ITALIA S.R.L." ;
     schema:name "FMC AGRO ITALIA S.R.L." .
 
 company:12030 a schema:Organization ;
-    schema:address srppp:72678b5c-47be-5b32-9013-503681b05e0b ;
+    schema:address :72678b5c-47be-5b32-9013-503681b05e0b ;
     schema:legalName "FMC France" ;
     schema:name "FMC France" .
 
 company:7009 a schema:Organization ;
-    schema:address srppp:68dc13f6-85fe-5439-9744-17ef411d517b ;
+    schema:address :68dc13f6-85fe-5439-9744-17ef411d517b ;
     schema:legalName "Agrimix S.R.L." ;
     schema:name "Agrimix S.R.L." .
 
 company:7032 a schema:Organization ;
-    schema:address srppp:d105cd18-c27a-544c-864c-2a29d9132018 ;
+    schema:address :d105cd18-c27a-544c-864c-2a29d9132018 ;
     schema:legalName "BASF Agro SAS" ;
     schema:name "BASF Agro SAS" .
 
 company:7034 a schema:Organization ;
-    schema:address srppp:804f6731-0b6e-5174-9c16-a9751ebc70c1 ;
+    schema:address :804f6731-0b6e-5174-9c16-a9751ebc70c1 ;
     schema:legalName "Bayer Austria GmbH Geschäftsbereich für Pflanzenschutz" ;
     schema:name "Bayer Austria GmbH Geschäftsbereich für Pflanzenschutz" .
 
 company:7048 a schema:Organization ;
-    schema:address srppp:c616a8b6-d4c5-5212-a871-e106965f27a6 ;
+    schema:address :c616a8b6-d4c5-5212-a871-e106965f27a6 ;
     schema:legalName "Certis Europe BV" ;
     schema:name "Certis Europe BV" .
 
 company:7056 a schema:Organization ;
-    schema:address srppp:ab5f61d4-9d78-5d7f-ab69-26231033dea9 ;
+    schema:address :ab5f61d4-9d78-5d7f-ab69-26231033dea9 ;
     schema:legalName "COMPO Italia Srl" ;
     schema:name "COMPO Italia Srl" .
 
 company:7070 a schema:Organization ;
-    schema:address srppp:4451ab11-8472-5ade-b164-86f97b58bcdd ;
+    schema:address :4451ab11-8472-5ade-b164-86f97b58bcdd ;
     schema:legalName "DU PONT DE NEMOURS (FRANCE) S.A." ;
     schema:name "DU PONT DE NEMOURS (FRANCE) S.A." .
 
 company:7080 a schema:Organization ;
-    schema:address srppp:2bc32527-39f0-53dc-a202-cc71a9a9d44a ;
+    schema:address :2bc32527-39f0-53dc-a202-cc71a9a9d44a ;
     schema:legalName "Eurofyto" ;
     schema:name "Eurofyto" .
 
 company:7100 a schema:Organization ;
-    schema:address srppp:d35563d3-c1ab-5a92-b892-cbc2fc21f082 ;
+    schema:address :d35563d3-c1ab-5a92-b892-cbc2fc21f082 ;
     schema:legalName "Helm AG" ;
     schema:name "Helm AG" .
 
 company:7126 a schema:Organization ;
-    schema:address srppp:ffbfb927-542c-5967-8b5c-2fb3374bd86a ;
+    schema:address :ffbfb927-542c-5967-8b5c-2fb3374bd86a ;
     schema:legalName "Milentus BV" ;
     schema:name "Milentus BV" .
 
 company:7127 a schema:Organization ;
-    schema:address srppp:29fe4b97-038e-5d34-b0a9-85d98508905b ;
+    schema:address :29fe4b97-038e-5d34-b0a9-85d98508905b ;
     schema:legalName "Monsanto Agrar Deutschland GmbH" ;
     schema:name "Monsanto Agrar Deutschland GmbH" .
 
 company:7143 a schema:Organization ;
-    schema:address srppp:a14bd8c6-30ee-577a-a906-df6c7ba3510a ;
+    schema:address :a14bd8c6-30ee-577a-a906-df6c7ba3510a ;
     schema:legalName "Phyto - Service" ;
     schema:name "Phyto - Service" .
 
 company:7151 a schema:Organization ;
-    schema:address srppp:0708b524-800b-5243-81ea-3a7917222c48 ;
+    schema:address :0708b524-800b-5243-81ea-3a7917222c48 ;
     schema:legalName "Quene Plant Protection N.V." ;
     schema:name "Quene Plant Protection N.V." .
 
 company:7162 a schema:Organization ;
-    schema:address srppp:453e9bd7-39ba-55cf-9cb8-fed63367dd02 ;
+    schema:address :453e9bd7-39ba-55cf-9cb8-fed63367dd02 ;
     schema:legalName "Scam S.P.A." ;
     schema:name "Scam S.P.A." .
 
 company:7170 a schema:Organization ;
-    schema:address srppp:e9c4cc50-7a5d-5b7e-9d4d-7c0f3eb6b678 ;
+    schema:address :e9c4cc50-7a5d-5b7e-9d4d-7c0f3eb6b678 ;
     schema:legalName "Societe financiere de Pontarlier" ;
     schema:name "Societe financiere de Pontarlier" .
 
 company:7174 a schema:Organization ;
-    schema:address srppp:12006ab2-1731-57b2-9df2-59dc01479f35 ;
+    schema:address :12006ab2-1731-57b2-9df2-59dc01479f35 ;
     schema:legalName "STAR Agro Handels GmbH" ;
     schema:name "STAR Agro Handels GmbH" .
 
 company:7179 a schema:Organization ;
-    schema:address srppp:2d75d911-d6d9-519a-b0a4-2d7fae21bc9a ;
+    schema:address :2d75d911-d6d9-519a-b0a4-2d7fae21bc9a ;
     schema:legalName "Syngenta Agro GmbH" ;
     schema:name "Syngenta Agro GmbH" .
 
 company:7180 a schema:Organization ;
-    schema:address srppp:658fb5f6-a927-5096-af1e-fba90a2bf4a2 ;
+    schema:address :658fb5f6-a927-5096-af1e-fba90a2bf4a2 ;
     schema:legalName "Syngenta Agro GmbH" ;
     schema:name "Syngenta Agro GmbH" .
 
 company:7182 a schema:Organization ;
-    schema:address srppp:62cd30cd-c6ec-5dbf-8b50-b9d30ea2f60f ;
+    schema:address :62cd30cd-c6ec-5dbf-8b50-b9d30ea2f60f ;
     schema:legalName "Syngenta Italia S.P.A." ;
     schema:name "Syngenta Italia S.P.A." .
 
 company:7183 a schema:Organization ;
-    schema:address srppp:5eacb805-8942-529d-bec2-d37661aeb222 ;
+    schema:address :5eacb805-8942-529d-bec2-d37661aeb222 ;
     schema:legalName "TBH Agrochemie GmbH" ;
     schema:name "TBH Agrochemie GmbH" .
 
-srppp:020ca123-1397-551c-88ea-581d83f1f8dc schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:020ca123-1397-551c-88ea-581d83f1f8dc schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Dielsdorf" ;
     schema:postalCode "4439" ;
     schema:streetAddress "Rudolf-Maag-Strasse 5" .
 
-srppp:02d5f06a-b14d-5132-955a-170aec5592e8 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:02d5f06a-b14d-5132-955a-170aec5592e8 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Münsingen" ;
     schema:postalCode "5294" ;
     schema:streetAddress "Rudolf-Diesel-Strasse 2" .
 
-srppp:02d7d8e8-5339-542f-81e9-250d58f169d4 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:02d7d8e8-5339-542f-81e9-250d58f169d4 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Genève" ;
     schema:postOfficeBoxNumber " C.P. 1468" ;
     schema:postalCode "13339" ;
     schema:streetAddress "Rue du Mont-Blanc 9" .
 
-srppp:05235818-3fe7-5374-9612-d3ccc62444b4 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:05235818-3fe7-5374-9612-d3ccc62444b4 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "B - 9000 Gent" ;
     schema:postalCode "5853" ;
     schema:streetAddress "Pantserschipstraat 207" .
 
-srppp:0708b524-800b-5243-81ea-3a7917222c48 schema:addressCountry <https://ld.admin.ch/country/NLD> ;
+:0708b524-800b-5243-81ea-3a7917222c48 schema:addressCountry <https://ld.admin.ch/country/NLD> ;
     schema:addressLocality "CURACAO (ANTILLE  NL)" ;
     schema:postalCode "5680" ;
     schema:streetAddress "Kaya W.F.G. (Jombi) Mensing 34 P.O. Box 403" .
 
-srppp:0750529e-7d7f-5a8b-a4ea-23248f174784 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:0750529e-7d7f-5a8b-a4ea-23248f174784 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Limburgerhof" ;
     schema:postOfficeBoxNumber "67117" ;
     schema:postalCode "5257" ;
     schema:streetAddress "Speyerer Straße 2" .
 
-srppp:079c3752-930e-5b33-8b32-45856e799555 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:079c3752-930e-5b33-8b32-45856e799555 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Bergamo" ;
     schema:postOfficeBoxNumber "32/28" ;
     schema:postalCode "5436" ;
     schema:streetAddress "Via F.lli Bronzetti" .
 
-srppp:0864ecf6-6a25-52ff-8558-c21160acf93d schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:0864ecf6-6a25-52ff-8558-c21160acf93d schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Saronno (VA)" ;
     schema:postalCode "15215" ;
     schema:streetAddress "Via Varese 25/G" .
 
-srppp:09b4b197-3604-5699-b099-08e838829af6 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:09b4b197-3604-5699-b099-08e838829af6 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Cernay Cedex" ;
     schema:postalCode "5154" ;
     schema:streetAddress "82, Rue de Wittelsheim" .
 
-srppp:0b266bf5-337a-5810-b600-bd07ef501619 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:0b266bf5-337a-5810-b600-bd07ef501619 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Versoix" ;
     schema:postalCode "15015" ;
     schema:streetAddress "Route de Suisse 160" .
 
-srppp:0c543628-05b4-565c-a906-857962dcfd41 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:0c543628-05b4-565c-a906-857962dcfd41 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Stulln" ;
     schema:postalCode "5527" ;
     schema:streetAddress "Werksweg 2" .
 
-srppp:0daf828b-b474-54fb-92e6-aee84a959234 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:0daf828b-b474-54fb-92e6-aee84a959234 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Zofingen" ;
     schema:postalCode "3285" ;
     schema:streetAddress "Henzmannstrasse 17A" .
 
-srppp:0dff2f13-e843-5819-bd46-b04cb3f1e1ef schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:0dff2f13-e843-5819-bd46-b04cb3f1e1ef schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Leverkusen " ;
     schema:postOfficeBoxNumber "51373 " ;
     schema:postalCode "14459" ;
     schema:streetAddress "Kaiser-Wilhelm-Allee 1 " .
 
-srppp:10cec7d4-e653-5018-b557-060de1e27b44 schema:addressCountry <https://ld.admin.ch/country/ESP> ;
+:10cec7d4-e653-5018-b557-060de1e27b44 schema:addressCountry <https://ld.admin.ch/country/ESP> ;
     schema:addressLocality "Madrid" ;
     schema:postalCode "5876" ;
     schema:streetAddress "Calle Torneros 14" .
 
-srppp:12006ab2-1731-57b2-9df2-59dc01479f35 schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+:12006ab2-1731-57b2-9df2-59dc01479f35 schema:addressCountry <https://ld.admin.ch/country/AUT> ;
     schema:addressLocality "Allerheiligen " ;
     schema:postalCode "5693" ;
     schema:streetAddress "Europapark 1" .
 
-srppp:13051718-ffe9-594c-b496-e613477ed518 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:13051718-ffe9-594c-b496-e613477ed518 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Zürich" ;
     schema:postOfficeBoxNumber "Postfach" ;
     schema:postalCode "4366" ;
     schema:streetAddress "Limmatstrasse 152" .
 
-srppp:1327b231-a81d-509a-8a9c-194d13da4446 schema:addressCountry <https://ld.admin.ch/country/ESP> ;
+:1327b231-a81d-509a-8a9c-194d13da4446 schema:addressCountry <https://ld.admin.ch/country/ESP> ;
     schema:addressLocality "Paterna (Valencia)" ;
     schema:postalCode "5808" ;
     schema:streetAddress "Pol. Ind. Fuente del Jarro, Ciudad de Sevilla, 53" .
 
-srppp:144919b1-9e4c-5c29-9615-61c944eb2c38 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:144919b1-9e4c-5c29-9615-61c944eb2c38 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Milano" ;
     schema:postalCode "5281" ;
     schema:streetAddress "Via Caldera, 21" .
 
-srppp:15abf9ed-abe3-5777-b2e7-21343f4b0dd7 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:15abf9ed-abe3-5777-b2e7-21343f4b0dd7 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Langenthal" ;
     schema:postalCode "3296" ;
     schema:streetAddress "Chasseralstrasse 1-3" .
 
-srppp:1685dd9f-c45a-5ccf-a587-1d2c38455919 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:1685dd9f-c45a-5ccf-a587-1d2c38455919 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Montsuzain" ;
     schema:postOfficeBoxNumber "10150 " ;
     schema:postalCode "14219" ;
     schema:streetAddress "8 voie vallon" .
 
-srppp:193e924e-6080-5c67-929e-758ef9f10096 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:193e924e-6080-5c67-929e-758ef9f10096 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Zürich" ;
     schema:postalCode "13846" ;
     schema:streetAddress "Tichelrütistrasse 6" .
 
-srppp:1cb1162a-0e19-5a97-a849-decc42a5e838 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:1cb1162a-0e19-5a97-a849-decc42a5e838 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Schafhausen" ;
     schema:postalCode "5517" ;
     schema:streetAddress "Wydimattstrasse 22" .
 
-srppp:1d74120f-1f38-5bae-9a20-6165dcf071e7 schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+:1d74120f-1f38-5bae-9a20-6165dcf071e7 schema:addressCountry <https://ld.admin.ch/country/AUT> ;
     schema:addressLocality "Herzogenburg" ;
     schema:postalCode "14982" ;
     schema:streetAddress " " .
 
-srppp:1ed8bb7e-c588-55b2-8531-609ed08a8349 schema:addressCountry <https://ld.admin.ch/country/LUX> ;
+:1ed8bb7e-c588-55b2-8531-609ed08a8349 schema:addressCountry <https://ld.admin.ch/country/LUX> ;
     schema:addressLocality "Wasserbillig" ;
     schema:postalCode "15156" ;
     schema:streetAddress "Rte. D'Echternac 15" .
 
-srppp:1f2c9731-4092-5a87-a3e0-5339b7d5da0b schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:1f2c9731-4092-5a87-a3e0-5339b7d5da0b schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Vernier" ;
     schema:postalCode "1755" ;
     schema:streetAddress "Chemin de Blandonnet 8" .
 
-srppp:1f3cc082-08a5-56a8-a0c3-2d76a6626f27 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:1f3cc082-08a5-56a8-a0c3-2d76a6626f27 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Bergamo" ;
     schema:postalCode "5436" ;
     schema:streetAddress "Via F. lli Bronzetti, 32/38" .
 
-srppp:1f47c5e6-1eb2-5497-98ef-32d4adc22e49 schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+:1f47c5e6-1eb2-5497-98ef-32d4adc22e49 schema:addressCountry <https://ld.admin.ch/country/AUT> ;
     schema:addressLocality "Allerheiligen " ;
     schema:postOfficeBoxNumber "8412" ;
     schema:postalCode "5693" ;
     schema:streetAddress "Europapark 1" .
 
-srppp:211f6366-7a7a-55cd-8e47-b257193730b6 schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+:211f6366-7a7a-55cd-8e47-b257193730b6 schema:addressCountry <https://ld.admin.ch/country/GBR> ;
     schema:addressLocality "Cambridge" ;
     schema:postalCode "13856" ;
     schema:streetAddress "5 Pionee Court, Vision Park Histon" .
 
-srppp:24a72d18-6315-5394-ba56-1525433b1796 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:24a72d18-6315-5394-ba56-1525433b1796 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Ludwigshafen" ;
     schema:postalCode "5264" ;
     schema:streetAddress "Carl-Bosch-Strasse 38 " .
 
-srppp:25d19972-d423-5b7a-b61c-b01ecc81317b schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:25d19972-d423-5b7a-b61c-b01ecc81317b schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Emmerthal" ;
     schema:postalCode "5187" ;
     schema:streetAddress "An der Mühle 3" .
 
-srppp:27db1e11-27af-5e31-8de1-05c93b7fdb7e schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:27db1e11-27af-5e31-8de1-05c93b7fdb7e schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Diegem" ;
     schema:postalCode "5870" ;
     schema:streetAddress "Pegasus Park / De Kleetlaan 12B" .
 
-srppp:28c6309b-0848-5735-aeeb-c9942ec5bb00 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:28c6309b-0848-5735-aeeb-c9942ec5bb00 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Zürich" ;
     schema:postalCode "12826" ;
     schema:streetAddress "Bodmerstrasse 7" .
 
-srppp:29567354-ccb1-5068-9bed-e9dd553edced schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:29567354-ccb1-5068-9bed-e9dd553edced schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Interlaken " ;
     schema:postalCode "2898" ;
     schema:streetAddress "Rosenstrasse 2" .
 
-srppp:29fe4b97-038e-5d34-b0a9-85d98508905b schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:29fe4b97-038e-5d34-b0a9-85d98508905b schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Düsseldorf" ;
     schema:postalCode "5664" ;
     schema:streetAddress "Vogelsanger Weg 91" .
 
-srppp:2a98afa2-2af6-5436-8fe2-4a80040a0c6a schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:2a98afa2-2af6-5436-8fe2-4a80040a0c6a schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Stein" ;
     schema:postOfficeBoxNumber "Postfach " ;
     schema:postalCode "3133" ;
     schema:streetAddress "Schaffhauserstr. 101" .
 
-srppp:2ac88734-18a7-596f-9ae8-ae58fd89ca3f schema:addressCountry <https://ld.admin.ch/country/ESP> ;
+:2ac88734-18a7-596f-9ae8-ae58fd89ca3f schema:addressCountry <https://ld.admin.ch/country/ESP> ;
     schema:addressLocality "Costanti" ;
     schema:postalCode "15075" ;
     schema:streetAddress "Av. Europa parcela 1-7, poligino de Costanti" .
 
-srppp:2bc32527-39f0-53dc-a202-cc71a9a9d44a schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:2bc32527-39f0-53dc-a202-cc71a9a9d44a schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Ieper" ;
     schema:postalCode "5631" ;
     schema:streetAddress "Industrielaan 6 B" .
 
-srppp:2be48e21-64c4-5a10-b04a-facc7bbee0bc schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:2be48e21-64c4-5a10-b04a-facc7bbee0bc schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Milano" ;
     schema:postalCode "13857" ;
     schema:streetAddress "Via Carroccio, 8" .
 
-srppp:2c081d57-3b8f-59e8-956e-6496bf092c89 schema:addressCountry <https://ld.admin.ch/country/ESP> ;
+:2c081d57-3b8f-59e8-956e-6496bf092c89 schema:addressCountry <https://ld.admin.ch/country/ESP> ;
     schema:addressLocality "Barcelona" ;
     schema:postalCode "5572" ;
     schema:streetAddress "Av. de Rafael Casanova, 81 Molle del Valles" .
 
-srppp:2c0e1947-bde5-50a7-95c2-e4c381fbbdab schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:2c0e1947-bde5-50a7-95c2-e4c381fbbdab schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Düsseldorf" ;
     schema:postalCode "13815" ;
     schema:streetAddress "Elisabethstrasse 44" .
 
-srppp:2c824f23-2ea0-5142-a862-e827cec01e47 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:2c824f23-2ea0-5142-a862-e827cec01e47 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Charrat" ;
     schema:postOfficeBoxNumber "C P 48" ;
     schema:postalCode "2224" ;
     schema:streetAddress "Route du Léman 10" .
 
-srppp:2d4ab346-d3da-55da-acb7-c18aca926107 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:2d4ab346-d3da-55da-acb7-c18aca926107 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Schaffhausen" ;
     schema:postalCode "4461" ;
     schema:streetAddress "Spitalstrasse 5" .
 
-srppp:2d4fe063-bc50-5141-bda6-46e70f7290bb schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:2d4fe063-bc50-5141-bda6-46e70f7290bb schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Saint Didier Au Mont d'Or" ;
     schema:postalCode "5813" ;
     schema:streetAddress "PARC D'AFFAIRES DE CRECY 2, RUE CLAUDE CHAPPE" .
 
-srppp:2d75d911-d6d9-519a-b0a4-2d7fae21bc9a schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:2d75d911-d6d9-519a-b0a4-2d7fae21bc9a schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Maintal" ;
     schema:postalCode "5696" ;
     schema:streetAddress "am Technologiepark 1 - 5" .
 
-srppp:2dd68944-9b8d-5012-8033-ae800049b211 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:2dd68944-9b8d-5012-8033-ae800049b211 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Leverkusen" ;
     schema:postalCode "5519" .
 
-srppp:2f96b757-137f-55b4-a1ba-9cc05ad837c0 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:2f96b757-137f-55b4-a1ba-9cc05ad837c0 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Eschenbach" ;
     schema:postalCode "12781" ;
     schema:streetAddress "Luzernstrasse 11" .
 
-srppp:328cdaa2-726f-5a69-a95e-32f0c03b3d65 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:328cdaa2-726f-5a69-a95e-32f0c03b3d65 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Seon" ;
     schema:postalCode "5791" ;
     schema:streetAddress "Industrie Birren 30" .
 
-srppp:32c72302-2140-5f4c-9c9f-9cc9077690da schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:32c72302-2140-5f4c-9c9f-9cc9077690da schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Basel" ;
     schema:postalCode "3052" ;
     schema:streetAddress "Steinenschanze 6" .
 
-srppp:393528e2-2772-5267-b030-1242037a2326 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:393528e2-2772-5267-b030-1242037a2326 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Limburgerhof" ;
     schema:postalCode "5257" ;
     schema:streetAddress "Carl-Bosch-Str. 64" .
 
-srppp:398045be-5a45-5cb8-8572-213bafc13f38 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:398045be-5a45-5cb8-8572-213bafc13f38 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Milano" ;
     schema:postalCode "5281" ;
     schema:streetAddress "Via Caldera 21" .
 
-srppp:3ca4b3ea-5b7e-5746-9146-fa1c4957f1d5 schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+:3ca4b3ea-5b7e-5746-9146-fa1c4957f1d5 schema:addressCountry <https://ld.admin.ch/country/GBR> ;
     schema:addressLocality "Cambridgeshire" ;
     schema:postOfficeBoxNumber "PE27 5HJ" ;
     schema:postalCode "14970" ;
     schema:streetAddress "8 Cromwell Mews" .
 
-srppp:3d944b31-5192-5150-9202-ac71aab15c59 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:3d944b31-5192-5150-9202-ac71aab15c59 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Rotkreuz " ;
     schema:postalCode "3717" ;
     schema:streetAddress "Blegi 3" .
 
-srppp:3e2dc2a6-0f69-5366-a026-4009d6f096c0 schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+:3e2dc2a6-0f69-5366-a026-4009d6f096c0 schema:addressCountry <https://ld.admin.ch/country/GBR> ;
     schema:addressLocality "Berkshire" ;
     schema:postalCode "14620" ;
     schema:streetAddress "Highlands House Reading Basingstoke Road, Spencers" .
 
-srppp:3e6b45d5-4bbd-5714-b4e2-eb586465bac3 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:3e6b45d5-4bbd-5714-b4e2-eb586465bac3 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Aesch" ;
     schema:postalCode "11408" ;
     schema:streetAddress "Gewerbestrasse 7A " .
 
-srppp:3fbd9628-d161-5ca5-b98d-5e2babf49911 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:3fbd9628-d161-5ca5-b98d-5e2babf49911 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Seon" ;
     schema:postalCode "5791" ;
     schema:streetAddress "Birren 30" .
 
-srppp:432aa7a2-a847-5666-8b9a-771a3112831d schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+:432aa7a2-a847-5666-8b9a-771a3112831d schema:addressCountry <https://ld.admin.ch/country/GBR> ;
     schema:addressLocality "Berkshire" ;
     schema:postalCode "14620" ;
     schema:streetAddress "1 Bell Street, Maidenhead" .
 
-srppp:444b726f-bd42-5606-ac9a-47a0888ee6c9 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:444b726f-bd42-5606-ac9a-47a0888ee6c9 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Stade" ;
     schema:postalCode "5447" ;
     schema:streetAddress "Stader Elbstrasse 26-28" .
 
-srppp:4451ab11-8472-5ade-b164-86f97b58bcdd schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:4451ab11-8472-5ade-b164-86f97b58bcdd schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Paris Cedex 07" ;
     schema:postalCode "5622" ;
     schema:streetAddress "137, Rue de l'université" .
 
-srppp:453e9bd7-39ba-55cf-9cb8-fed63367dd02 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:453e9bd7-39ba-55cf-9cb8-fed63367dd02 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "S.Maria Mugano" ;
     schema:postalCode "5686" ;
     schema:streetAddress "Via Bellaria 164" .
 
-srppp:45bcc756-da10-58da-9db1-af67c3c8e6e1 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:45bcc756-da10-58da-9db1-af67c3c8e6e1 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Bern" ;
     schema:postalCode "2554" ;
     schema:streetAddress "Kochergasse 6" .
 
-srppp:47390d26-57f9-5386-b26f-2ffda34f5216 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:47390d26-57f9-5386-b26f-2ffda34f5216 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Mailand" ;
     schema:postalCode "13054" ;
     schema:streetAddress "VIA PONTACCIO, 10" .
 
-srppp:4788f717-898a-5331-972b-5c5943502aaa schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:4788f717-898a-5331-972b-5c5943502aaa schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Mozzanica, Bergamo" ;
     schema:postalCode "5515" ;
     schema:streetAddress "S.S. n° 11, Km 190,2" .
 
-srppp:498067f2-8555-574b-88a2-69413a2d9026 schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+:498067f2-8555-574b-88a2-69413a2d9026 schema:addressCountry <https://ld.admin.ch/country/GBR> ;
     schema:addressLocality "London" ;
     schema:postalCode "14618" ;
     schema:streetAddress "1 Northumberland Ave, Westminster" .
 
-srppp:4b0d771a-473b-5421-9327-b59b98ae91b2 schema:addressCountry <https://ld.admin.ch/country/SVN> ;
+:4b0d771a-473b-5421-9327-b59b98ae91b2 schema:addressCountry <https://ld.admin.ch/country/SVN> ;
     schema:addressLocality "Race" ;
     schema:postalCode "12246" ;
     schema:streetAddress "Grajski trg 21" .
 
-srppp:4b24a845-b4d7-5b01-b4f4-065ba74527da schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:4b24a845-b4d7-5b01-b4f4-065ba74527da schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Sissach" ;
     schema:postalCode "13478" ;
     schema:streetAddress "Gewerbestrasse 12" .
 
-srppp:4ca784c4-fb54-5b0d-8c8f-31105deaf7a5 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:4ca784c4-fb54-5b0d-8c8f-31105deaf7a5 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Steffisburg" ;
     schema:postalCode "5754" ;
     schema:streetAddress "Maienstrasse 8" .
 
-srppp:4cec4e60-e38e-5c2d-bb42-4e68fe72197f schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:4cec4e60-e38e-5c2d-bb42-4e68fe72197f schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Brüssel" ;
     schema:postalCode "5143" ;
     schema:streetAddress "Tour Itt., Avenue Louise 480, boite 12" .
 
-srppp:4ded97bc-a97c-51e5-9fd1-86ff523c9761 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:4ded97bc-a97c-51e5-9fd1-86ff523c9761 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Grossdietwil" ;
     schema:postalCode "3622" ;
     schema:streetAddress "Stahlermatten 6" .
 
-srppp:53888f7f-4e6e-5e30-9c97-93e60144bc19 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:53888f7f-4e6e-5e30-9c97-93e60144bc19 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Bern" ;
     schema:postalCode "15155" ;
     schema:streetAddress "Archivstrasse 18" .
 
-srppp:5493b81e-2cc4-5b7a-81ad-8ab48ccddfb8 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:5493b81e-2cc4-5b7a-81ad-8ab48ccddfb8 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Milano" ;
     schema:postalCode "5280" ;
     schema:streetAddress "Viale Certosa 126-130" .
 
-srppp:5571ee46-d9ec-539a-8bba-83ff3fba5caa schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:5571ee46-d9ec-539a-8bba-83ff3fba5caa schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Stein" ;
     schema:postOfficeBoxNumber "Postfach " ;
     schema:postalCode "3133" ;
     schema:streetAddress "Schaffhauserstr. 101 " .
 
-srppp:56181d99-e098-5167-98e0-9fe64fd0afa9 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:56181d99-e098-5167-98e0-9fe64fd0afa9 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Milano" ;
     schema:postalCode "11662" ;
     schema:streetAddress "Viale Luigi Majno 17/A" .
 
-srppp:562b64b4-79ac-5530-a6bb-12da45f8a554 schema:addressCountry <https://ld.admin.ch/country/PRT> ;
+:562b64b4-79ac-5530-a6bb-12da45f8a554 schema:addressCountry <https://ld.admin.ch/country/PRT> ;
     schema:addressLocality "Setúbal" ;
     schema:postalCode "12680" ;
     schema:streetAddress "Avnida do Rio Tejo, Herdade das Praias" .
 
-srppp:583d600f-6533-581d-9e42-28cd99479dea schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:583d600f-6533-581d-9e42-28cd99479dea schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Langenfeld" ;
     schema:postalCode "5762" ;
     schema:streetAddress "Elisabeth- Selbert- Straße 4a" .
 
-srppp:5b5b04ce-40c4-5ed2-a91b-71d69c12a5cd schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:5b5b04ce-40c4-5ed2-a91b-71d69c12a5cd schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Wilen b. Wil" ;
     schema:postOfficeBoxNumber " " ;
     schema:postalCode "5906" ;
     schema:streetAddress "Weidstrasse 11" .
 
-srppp:5b980437-f31e-52da-b2ba-e0e62141605b schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:5b980437-f31e-52da-b2ba-e0e62141605b schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Basel" ;
     schema:postalCode "3053" ;
     schema:streetAddress "Picassoplatz 8" .
 
-srppp:5d413675-5c16-59d6-9e49-81de3f15491b schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:5d413675-5c16-59d6-9e49-81de3f15491b schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Schaffhausen" ;
     schema:postalCode "4461" ;
     schema:streetAddress "Spitalstrasse 5" .
 
-srppp:5df9a9d1-0c96-560c-b61a-52b0f28434c0 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:5df9a9d1-0c96-560c-b61a-52b0f28434c0 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Zürich" ;
     schema:postalCode "4349" ;
     schema:streetAddress "Bahnhofstrasse 70" .
 
-srppp:5e5e0bc2-26d9-5c91-97e5-277e48f34229 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:5e5e0bc2-26d9-5c91-97e5-277e48f34229 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Treviso" ;
     schema:postalCode "13233" ;
     schema:streetAddress "Via Monterumici 8" .
 
-srppp:5eacb805-8942-529d-bec2-d37661aeb222 schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+:5eacb805-8942-529d-bec2-d37661aeb222 schema:addressCountry <https://ld.admin.ch/country/AUT> ;
     schema:addressLocality "Allerheiligen " ;
     schema:postalCode "5693" ;
     schema:streetAddress "Grossfeiting 16a" .
 
-srppp:5edafd46-c287-5ac4-a592-37d5f1aa1b19 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:5edafd46-c287-5ac4-a592-37d5f1aa1b19 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Noguères" ;
     schema:postalCode "5443" ;
     schema:streetAddress "Route d'Artix" .
 
-srppp:5ee4bc84-f806-5df1-ac87-90f9a461809f schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:5ee4bc84-f806-5df1-ac87-90f9a461809f schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Birmenstorf" ;
     schema:postalCode "3440" ;
     schema:streetAddress "Fellstrasse 1" .
 
-srppp:5f7b33ac-6e27-5d68-9ab8-cd6053ae9c7f schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:5f7b33ac-6e27-5d68-9ab8-cd6053ae9c7f schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Lausanne" ;
     schema:postalCode "13390" ;
     schema:streetAddress "Avenue Gratta-Paille 2" .
 
-srppp:609bacc3-19e3-593b-ae18-28bcdd2eeb3e schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:609bacc3-19e3-593b-ae18-28bcdd2eeb3e schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Solothurn" ;
     schema:postalCode "3195" .
 
-srppp:6244b3bf-e823-5291-b1cb-0cb1972aaead schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:6244b3bf-e823-5291-b1cb-0cb1972aaead schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Salerano su Lambro (Lo)" ;
     schema:postalCode "5353" ;
     schema:streetAddress "Via Vittorio Veneto 81" .
 
-srppp:62cd30cd-c6ec-5dbf-8b50-b9d30ea2f60f schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:62cd30cd-c6ec-5dbf-8b50-b9d30ea2f60f schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Milano" ;
     schema:postalCode "5281" ;
     schema:streetAddress "Via Gallarate, 139" .
 
-srppp:63e70ec2-aeef-5337-ae06-7dfe8a309d65 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:63e70ec2-aeef-5337-ae06-7dfe8a309d65 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Bruxelles" ;
     schema:postalCode "5144" ;
     schema:streetAddress "Boulevard de la Plaine 9/3" .
 
-srppp:649adb5e-29e2-512f-82b7-7a38641ed91d schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:649adb5e-29e2-512f-82b7-7a38641ed91d schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Oulens-sous-Echallens" ;
     schema:postalCode "5788" ;
     schema:streetAddress "Route de Bettens 19" .
 
-srppp:64ab0cef-b10a-5a30-a4aa-99d5ef38ae48 schema:addressCountry <https://ld.admin.ch/country/CYP> ;
+:64ab0cef-b10a-5a30-a4aa-99d5ef38ae48 schema:addressCountry <https://ld.admin.ch/country/CYP> ;
     schema:addressLocality "Nikosia" ;
     schema:postalCode "13074" ;
     schema:streetAddress "3 Demetriou Vikella Street" .
 
-srppp:658fb5f6-a927-5096-af1e-fba90a2bf4a2 schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+:658fb5f6-a927-5096-af1e-fba90a2bf4a2 schema:addressCountry <https://ld.admin.ch/country/AUT> ;
     schema:addressLocality "Wien" ;
     schema:postalCode "5757" ;
     schema:streetAddress "Anton-Baumgartner-Strasse 125" .
 
-srppp:65e7ebbe-1971-5c35-9e75-e0dbb634a19d schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:65e7ebbe-1971-5c35-9e75-e0dbb634a19d schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Asse" ;
     schema:postalCode "5580" ;
     schema:streetAddress "Heedstraat 58" .
 
-srppp:6711a281-c34e-5607-b145-84a19bdf7d2e schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:6711a281-c34e-5607-b145-84a19bdf7d2e schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Rheienfeld" ;
     schema:postalCode "12765" ;
     schema:streetAddress "Holländerkoppel 1a" .
 
-srppp:68dc13f6-85fe-5439-9744-17ef411d517b schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:68dc13f6-85fe-5439-9744-17ef411d517b schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Pomezia (Roma)" ;
     schema:postalCode "12807" ;
     schema:streetAddress "Via Campobello, 1" .
 
-srppp:6967a3fc-bf07-531d-8743-edf781823c3e schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:6967a3fc-bf07-531d-8743-edf781823c3e schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Düsseldorf" ;
     schema:postalCode "5664" ;
     schema:streetAddress "Berliner Allee 42" .
 
-srppp:6a6a5363-97a9-5ba9-9f32-579fa340ed24 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:6a6a5363-97a9-5ba9-9f32-579fa340ed24 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Levallois-Perret Cedex" ;
     schema:postalCode "5254" ;
     schema:streetAddress "49, avenue Georges-Pompidou" .
 
-srppp:6d56da89-9e88-59be-a5d8-b58ecfe9939e schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+:6d56da89-9e88-59be-a5d8-b58ecfe9939e schema:addressCountry <https://ld.admin.ch/country/GBR> ;
     schema:addressLocality "Sandbach Cheshire" ;
     schema:postalCode "5557" ;
     schema:streetAddress "Hall Lane, Rookery Bridge" .
 
-srppp:6df02bfb-b466-52fd-9099-33791413c430 schema:addressCountry <https://ld.admin.ch/country/IRL> ;
+:6df02bfb-b466-52fd-9099-33791413c430 schema:addressCountry <https://ld.admin.ch/country/IRL> ;
     schema:addressLocality "Dublin 4" ;
     schema:postalCode "14977" ;
     schema:streetAddress "Nova UCD, Belfield Innovation Park , UCD Belfield" .
 
-srppp:6f081948-79e4-5f38-abe7-0bf693c1e6d7 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:6f081948-79e4-5f38-abe7-0bf693c1e6d7 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Deisswil b. Stettlen" ;
     schema:postalCode "2585" ;
     schema:streetAddress "Bernapark 23" .
 
-srppp:6fea949a-b088-5943-a4e0-84b54e55050a schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:6fea949a-b088-5943-a4e0-84b54e55050a schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Milano" ;
     schema:postalCode "5280" ;
     schema:streetAddress "Viale Certosa 130" .
 
-srppp:713a250d-e3c2-5ef1-97f4-b18a2063659b schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:713a250d-e3c2-5ef1-97f4-b18a2063659b schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "St. Gallen" ;
     schema:postalCode "15518" ;
     schema:streetAddress "Lerchenfeldstrasse 3" .
 
-srppp:72678b5c-47be-5b32-9013-503681b05e0b schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:72678b5c-47be-5b32-9013-503681b05e0b schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Lyon" ;
     schema:postOfficeBoxNumber "11" ;
     schema:postalCode "14632" ;
     schema:streetAddress "bis quai Perrache" .
 
-srppp:7342805d-1bc0-51b6-b0d6-1d7a6ddfcf39 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:7342805d-1bc0-51b6-b0d6-1d7a6ddfcf39 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Puteaux Cédex" ;
     schema:postalCode "5571" ;
     schema:streetAddress "23/25 rue Delarivière-Lefoullon, La Défense 9" .
 
-srppp:765cafc3-5c92-5ccb-998c-34bfd53395f6 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:765cafc3-5c92-5ccb-998c-34bfd53395f6 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Brüssel" ;
     schema:postalCode "5143" ;
     schema:streetAddress "Avenue de Tervueren 270" .
 
-srppp:78a23d27-5a8d-509c-ba1f-6313f24d33a7 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:78a23d27-5a8d-509c-ba1f-6313f24d33a7 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Ludwigshafen" ;
     schema:postalCode "5264" ;
     schema:streetAddress "Carl Bosch Strasse 38" .
 
-srppp:78b6fdca-72ab-54d7-aac2-5e764d8a602f schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:78b6fdca-72ab-54d7-aac2-5e764d8a602f schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Diegem" ;
     schema:postalCode "13012" ;
     schema:streetAddress "J.E.Mommertslaan 14" .
 
-srppp:79e6511d-3c0a-5618-b351-d132cedd07e4 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:79e6511d-3c0a-5618-b351-d132cedd07e4 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Freiburg" ;
     schema:postalCode "2081" ;
     schema:streetAddress "Rue des Pilettes 3" .
 
-srppp:7b5b0254-5099-58d8-ae0e-065d27b1b0fe schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:7b5b0254-5099-58d8-ae0e-065d27b1b0fe schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "München" ;
     schema:postalCode "5490" ;
     schema:streetAddress "Riedenburger Str. 7" .
 
-srppp:7f05e3b0-5cd5-55a2-8941-36b1c60a3f8e schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:7f05e3b0-5cd5-55a2-8941-36b1c60a3f8e schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Nyon" ;
     schema:postalCode "1791" ;
     schema:streetAddress "Chemin du Canal 5" .
 
-srppp:804f6731-0b6e-5174-9c16-a9751ebc70c1 schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+:804f6731-0b6e-5174-9c16-a9751ebc70c1 schema:addressCountry <https://ld.admin.ch/country/AUT> ;
     schema:addressLocality "Wien" ;
     schema:postalCode "5403" ;
     schema:streetAddress "Lerchenfelder Gürtel 9-11" .
 
-srppp:81663d01-a076-5388-8701-9c719d0369fe schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+:81663d01-a076-5388-8701-9c719d0369fe schema:addressCountry <https://ld.admin.ch/country/GBR> ;
     schema:addressLocality "London" ;
     schema:postalCode "5795" ;
     schema:streetAddress "Hamilton House, Mobledon Place" .
 
-srppp:816a63a1-f0a3-5b56-b15b-0cda955ba96e schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:816a63a1-f0a3-5b56-b15b-0cda955ba96e schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Lyon Cedex 09" ;
     schema:postalCode "5269" ;
     schema:streetAddress "16, rue Jean-Marie Leclair - CS 90106" .
 
-srppp:81afbe8f-7baa-5adb-afc1-936752e7ab6e schema:addressCountry <https://ld.admin.ch/country/ESP> ;
+:81afbe8f-7baa-5adb-afc1-936752e7ab6e schema:addressCountry <https://ld.admin.ch/country/ESP> ;
     schema:addressLocality "La Rozas, Madrid" ;
     schema:postalCode "11661" ;
     schema:streetAddress "Valle del Roncal 12-1 Pl Oficina N. 7" .
 
-srppp:83930b9e-bccc-5c81-92fc-c6c45d49e894 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:83930b9e-bccc-5c81-92fc-c6c45d49e894 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Sint-Truiden" ;
     schema:postalCode "5366" ;
     schema:streetAddress "Leeuwerweg 138" .
 
-srppp:85178607-d0b9-53cf-a052-3c9f4e9dad43 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:85178607-d0b9-53cf-a052-3c9f4e9dad43 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Obernau" ;
     schema:postalCode "11418" ;
     schema:streetAddress "Rengglochstrasse 38" .
 
-srppp:863cf085-2bca-591d-94e7-5b31a2a4a486 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:863cf085-2bca-591d-94e7-5b31a2a4a486 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Winterthur" ;
     schema:postalCode "15488" ;
     schema:streetAddress "In der Euelwies 34" .
 
-srppp:88572cff-626f-5a09-a232-d2c9f9d71163 schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+:88572cff-626f-5a09-a232-d2c9f9d71163 schema:addressCountry <https://ld.admin.ch/country/AUT> ;
     schema:addressLocality "Graz" ;
     schema:postalCode "5852" ;
     schema:streetAddress "Metahofgasse 30" .
 
-srppp:8966c81c-662d-5958-89ec-e30fec15f8e8 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:8966c81c-662d-5958-89ec-e30fec15f8e8 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Lyon Cedex 09" ;
     schema:postalCode "5267" ;
     schema:streetAddress "14-20 Rue Pierre Baizet" .
 
-srppp:8cbae8ee-1f9a-5975-aee4-55d8a18b04a6 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:8cbae8ee-1f9a-5975-aee4-55d8a18b04a6 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Cazis" ;
     schema:postalCode "14809" ;
     schema:streetAddress "Italienische Strasse 126" .
 
-srppp:8e5d818d-6d81-5b0b-abf1-a100d29766f5 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:8e5d818d-6d81-5b0b-abf1-a100d29766f5 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Genua " ;
     schema:postOfficeBoxNumber "16121 " ;
     schema:postalCode "14225" ;
     schema:streetAddress "Via B. Bosco 57/3" .
 
-srppp:9071c43d-45df-5ed8-a35f-62dd85a05c5f schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:9071c43d-45df-5ed8-a35f-62dd85a05c5f schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Zug " ;
     schema:postalCode "3696" ;
     schema:streetAddress "Poststrasse 30" .
 
-srppp:9343115b-385a-59a5-82b6-0eabc0f2ef38 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:9343115b-385a-59a5-82b6-0eabc0f2ef38 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Grossdietwil" ;
     schema:postalCode "3622" ;
     schema:streetAddress "Stahlermatten 6" .
 
-srppp:958f0b66-8b7a-510a-aba8-af8bedb361a1 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:958f0b66-8b7a-510a-aba8-af8bedb361a1 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Cheyres" ;
     schema:postalCode "1924" ;
     schema:streetAddress "Le Ferrajoz 4" .
 
-srppp:9664c4a5-0713-5e03-8e36-167d7731cd92 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:9664c4a5-0713-5e03-8e36-167d7731cd92 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "S. Carlo di Cesena (FC)" ;
     schema:postalCode "13855" ;
     schema:streetAddress "Via Terni 275" .
 
-srppp:967e6d7d-2f66-5468-914d-bbc5ee131928 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:967e6d7d-2f66-5468-914d-bbc5ee131928 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Méréville" ;
     schema:postalCode "13858" ;
     schema:streetAddress "14 Rue de la Pierre Follege " .
 
-srppp:967ec720-af27-5b32-a887-fc3e47dcfe83 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:967ec720-af27-5b32-a887-fc3e47dcfe83 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Ruisbroek" ;
     schema:postalCode "5738" ;
     schema:streetAddress "Humaniteitslaan 65" .
 
-srppp:9725e4c3-b486-52ad-8f43-cea14573dc9a schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:9725e4c3-b486-52ad-8f43-cea14573dc9a schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Troisdorf" ;
     schema:postalCode "15622" ;
     schema:streetAddress "Carl-Diem-Str. 3" .
 
-srppp:97b7e273-1595-5f73-b60c-9f684c760acd schema:addressCountry <https://ld.admin.ch/country/NLD> ;
+:97b7e273-1595-5f73-b60c-9f684c760acd schema:addressCountry <https://ld.admin.ch/country/NLD> ;
     schema:addressLocality "CP Breda" ;
     schema:postalCode "15217" ;
     schema:streetAddress "Claudius Prinsenlaan 144 a," .
 
-srppp:97bd54ed-631a-56fc-974e-e3a1c749997a schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:97bd54ed-631a-56fc-974e-e3a1c749997a schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Wangen bei Olten" ;
     schema:postOfficeBoxNumber "Postfach" ;
     schema:postalCode "14011" ;
     schema:streetAddress "Industriestrasse 17" .
 
-srppp:99372c3d-7243-5889-a817-1a96f1f2d859 schema:addressCountry <https://ld.admin.ch/country/NLD> ;
+:99372c3d-7243-5889-a817-1a96f1f2d859 schema:addressCountry <https://ld.admin.ch/country/NLD> ;
     schema:addressLocality "CURACAO (ANTILLE  NL)" ;
     schema:postalCode "5680" ;
     schema:streetAddress "Kaya SFG (Jombi) Mensing 34 " .
 
-srppp:99ec61c2-fcf5-5223-b911-ebc80da869af schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:99ec61c2-fcf5-5223-b911-ebc80da869af schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Basel" ;
     schema:postalCode "3059" ;
     schema:streetAddress "Riehenstrasse 43" .
 
-srppp:99f03823-37c5-5941-8fa7-b06534039ac2 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:99f03823-37c5-5941-8fa7-b06534039ac2 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Köln" ;
     schema:postalCode "5751" ;
     schema:streetAddress "Im MediaPark 4 d" .
 
-srppp:9c9b1441-2d0e-5555-9433-fc8fad2640b1 schema:addressCountry <https://ld.admin.ch/country/IND> ;
+:9c9b1441-2d0e-5555-9433-fc8fad2640b1 schema:addressCountry <https://ld.admin.ch/country/IND> ;
     schema:addressLocality "Mumbai" ;
     schema:postalCode "5760" ;
     schema:streetAddress "Dashrathlal Joshi Road, Vile Parle (West)" .
 
-srppp:9fcb66d1-9cb0-5051-897d-6f0e4c093d04 schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+:9fcb66d1-9cb0-5051-897d-6f0e4c093d04 schema:addressCountry <https://ld.admin.ch/country/GBR> ;
     schema:addressLocality "Worcester" ;
     schema:postOfficeBoxNumber "WR 2 5AA" ;
     schema:postalCode "5774" ;
     schema:streetAddress "3, The Bull Ring" .
 
-srppp:a038de8b-9856-5de4-b147-3249480305d3 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:a038de8b-9856-5de4-b147-3249480305d3 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Bruxelles" ;
     schema:postalCode "5735" ;
     schema:streetAddress "rue du Trone 130" .
 
-srppp:a14bd8c6-30ee-577a-a906-df6c7ba3510a schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:a14bd8c6-30ee-577a-a906-df6c7ba3510a schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Maves" ;
     schema:postalCode "5675" ;
     schema:streetAddress "15, rue du Pont, Pontijou - RD 924" .
 
-srppp:a1828cb6-2ae4-5dd1-8bd7-208b19121a1d schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:a1828cb6-2ae4-5dd1-8bd7-208b19121a1d schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Ougrée" ;
     schema:postalCode "5318" ;
     schema:streetAddress "Rue de Renory, 26/2" .
 
-srppp:a2a48407-2f8b-5b96-9ebe-0b5cdee64d15 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:a2a48407-2f8b-5b96-9ebe-0b5cdee64d15 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Hasle-Rüegsau " ;
     schema:postalCode "2738" ;
     schema:streetAddress "Winterseistrasse" .
 
-srppp:a2f4a7ac-c8b0-57f1-9a0e-31b01f6fdd24 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:a2f4a7ac-c8b0-57f1-9a0e-31b01f6fdd24 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Limburgerhof" ;
     schema:postOfficeBoxNumber "PF 120" ;
     schema:postalCode "5257" .
 
-srppp:a4866721-0916-5f19-9004-fa45767fc41c schema:addressCountry <https://ld.admin.ch/country/DNK> ;
+:a4866721-0916-5f19-9004-fa45767fc41c schema:addressCountry <https://ld.admin.ch/country/DNK> ;
     schema:addressLocality "Harboore" ;
     schema:postalCode "5214" ;
     schema:streetAddress "Thyboronvej 78" .
 
-srppp:a4f37142-e042-5b85-a098-4587e027a1f1 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:a4f37142-e042-5b85-a098-4587e027a1f1 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Aesch" ;
     schema:postalCode "11408" ;
     schema:streetAddress "Nordring 4" .
 
-srppp:a60f7e1e-ddcb-5c35-83c1-d269406306be schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:a60f7e1e-ddcb-5c35-83c1-d269406306be schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Lugano " ;
     schema:postalCode "3992" ;
     schema:streetAddress "Via Greina 3" .
 
-srppp:a63df699-ef87-582f-82f9-03f17af2ae62 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:a63df699-ef87-582f-82f9-03f17af2ae62 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Lyon Cedex 09" ;
     schema:postOfficeBoxNumber "CP 106" ;
     schema:postalCode "5267" ;
     schema:streetAddress "16 rue Jean-Marie Leclair" .
 
-srppp:a6689ebf-9dd7-56a5-935d-e103406e9581 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:a6689ebf-9dd7-56a5-935d-e103406e9581 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Monheim am Rhein" ;
     schema:postalCode "5458" ;
     schema:streetAddress "Alfred-Nobel-Str. 50" .
 
-srppp:a7112c4b-e7fe-5942-a053-4c360ad827bf schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:a7112c4b-e7fe-5942-a053-4c360ad827bf schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Antwerpen" ;
     schema:postOfficeBoxNumber "7" ;
     schema:postalCode "15836" ;
     schema:streetAddress "Grote Mark" .
 
-srppp:a75294f3-ad41-5d03-952e-376d0b157300 schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+:a75294f3-ad41-5d03-952e-376d0b157300 schema:addressCountry <https://ld.admin.ch/country/GBR> ;
     schema:addressLocality "London" ;
     schema:postalCode "13769" ;
     schema:streetAddress "26-28 Bedford Row" .
 
-srppp:a79bb6e6-5a60-5c0e-816a-211a39237645 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:a79bb6e6-5a60-5c0e-816a-211a39237645 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Lüneburg" ;
     schema:postalCode "5266" ;
     schema:streetAddress "Otto-Brenner-Str. 13-15" .
 
-srppp:aa0665aa-12ec-59e3-a799-d275afd38213 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:aa0665aa-12ec-59e3-a799-d275afd38213 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Lauschied" ;
     schema:postalCode "5817" ;
     schema:streetAddress "Bärweiler Strasse 55" .
 
-srppp:aa880957-f953-5e91-9246-e7fd81751a9e schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:aa880957-f953-5e91-9246-e7fd81751a9e schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Basel" ;
     schema:postalCode "13212" ;
     schema:streetAddress "Klybeckstrasse 161" .
 
-srppp:ab5f61d4-9d78-5d7f-ab69-26231033dea9 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:ab5f61d4-9d78-5d7f-ab69-26231033dea9 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Cesena Maderno" ;
     schema:postalCode "5611" ;
     schema:streetAddress "Via Marvonato 8" .
 
-srppp:ac5b754c-9d81-5057-8c91-566d083e66c4 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:ac5b754c-9d81-5057-8c91-566d083e66c4 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Suresnes" ;
     schema:postalCode "14622" ;
     schema:streetAddress "33 Rue de Verdun" .
 
-srppp:adae6a03-3fbf-5f11-be8b-6bc38fd52a9e schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:adae6a03-3fbf-5f11-be8b-6bc38fd52a9e schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Mendrisio" ;
     schema:postalCode "3974" ;
     schema:streetAddress "Via San Martino 16 a" .
 
-srppp:b107b53d-163e-5127-b443-0ec490b26cfc schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:b107b53d-163e-5127-b443-0ec490b26cfc schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Füllinsdorf" ;
     schema:postalCode "12064" ;
     schema:streetAddress "Hauptstrasse 10" .
 
-srppp:b1e5895b-19a4-5f0b-948f-cb491d456f4e schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:b1e5895b-19a4-5f0b-948f-cb491d456f4e schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Lauschied" ;
     schema:postalCode "5817" ;
     schema:streetAddress "Bärweilerstrasse 55" .
 
-srppp:b818daf2-aa89-5e8e-b1ac-aa431781f1d6 schema:addressCountry <https://ld.admin.ch/country/AUT> ;
+:b818daf2-aa89-5e8e-b1ac-aa431781f1d6 schema:addressCountry <https://ld.admin.ch/country/AUT> ;
     schema:addressLocality "Wals-Siezenheim" ;
     schema:postalCode "15216" ;
     schema:streetAddress "Franz-Brötzner-Straße 11-13" .
 
-srppp:b8b88689-c9e0-5afa-a177-603a517dbad3 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:b8b88689-c9e0-5afa-a177-603a517dbad3 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Aesch" ;
     schema:postalCode "3691" ;
     schema:streetAddress "Mosenstrasse 32" .
 
-srppp:b9a65785-aeb4-5b6f-a27c-a834a8a6bcb6 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:b9a65785-aeb4-5b6f-a27c-a834a8a6bcb6 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Visp" ;
     schema:postalCode "2958" ;
     schema:streetAddress "Lonzastrasse 2" .
 
-srppp:b9ccca6e-b8c5-591e-97ba-787a422b5948 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:b9ccca6e-b8c5-591e-97ba-787a422b5948 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Cazis" ;
     schema:postalCode "14809" ;
     schema:streetAddress "Italienische Strasse 126" .
 
-srppp:ba599bf0-f2c6-5c10-9808-13edc10bd408 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:ba599bf0-f2c6-5c10-9808-13edc10bd408 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Stulln" ;
     schema:postalCode "5527" ;
     schema:streetAddress "Werksweg 2" .
 
-srppp:badca180-5647-5a32-8b69-1dd7f675814b schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:badca180-5647-5a32-8b69-1dd7f675814b schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Mägenwil" ;
     schema:postalCode "3470" ;
     schema:streetAddress "Eichlistr. 9" .
 
-srppp:bba07692-0d6d-5db1-91db-e1b0e7daacf6 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:bba07692-0d6d-5db1-91db-e1b0e7daacf6 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Birmenstorf" ;
     schema:postalCode "3440" ;
     schema:streetAddress "Fellstrasse 1" .
 
-srppp:bbde877b-62a0-5d37-9629-a58bd31d0851 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:bbde877b-62a0-5d37-9629-a58bd31d0851 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Mailand" ;
     schema:postalCode "5899" ;
     schema:streetAddress "Via E.Majorana  2" .
 
-srppp:bce2bfe9-b1d0-5844-aeb1-6895f2e510b5 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:bce2bfe9-b1d0-5844-aeb1-6895f2e510b5 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Saint Didier Au Mont d'Or" ;
     schema:postalCode "5813" ;
     schema:streetAddress "10A, rue de la Voie Lactée" .
 
-srppp:bd210d5f-74e3-5fda-b2cc-c69f7c21eba6 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:bd210d5f-74e3-5fda-b2cc-c69f7c21eba6 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Grassobbio (Bergamo)" ;
     schema:postalCode "14637" ;
     schema:streetAddress "Via Zanica, 19" .
 
-srppp:bd66c474-e1dd-5ae9-99b8-78be6d90da24 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:bd66c474-e1dd-5ae9-99b8-78be6d90da24 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Zürich" ;
     schema:postalCode "4386" ;
     schema:streetAddress "Ueberlandstrasse 341" .
 
-srppp:bdaa41bb-f5e4-5dcc-af34-e66276fcb147 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:bdaa41bb-f5e4-5dcc-af34-e66276fcb147 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Murten / Morat" ;
     schema:postalCode "2687" ;
     schema:streetAddress "Pra Pury 7 d" .
 
-srppp:be3aae6c-0db3-53f8-8809-1969556cd2e2 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:be3aae6c-0db3-53f8-8809-1969556cd2e2 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Köln" ;
     schema:postalCode "5793" ;
     schema:streetAddress "Nattermannallee 1" .
 
-srppp:be629faa-f036-53b2-be10-67bc05c64e7c schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:be629faa-f036-53b2-be10-67bc05c64e7c schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Selm" ;
     schema:postalCode "12129" ;
     schema:streetAddress "Olfener Str. 36" .
 
-srppp:c24e1fe8-1300-56d4-9034-93e686f420a0 schema:addressCountry <https://ld.admin.ch/country/IND> ;
+:c24e1fe8-1300-56d4-9034-93e686f420a0 schema:addressCountry <https://ld.admin.ch/country/IND> ;
     schema:addressLocality "Mumbai 400 050" ;
     schema:postalCode "5858" ;
     schema:streetAddress "Domnic Road 29th, Bandra West" .
 
-srppp:c4e7c83d-1c9f-5a05-b3e1-df8de22fef45 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:c4e7c83d-1c9f-5a05-b3e1-df8de22fef45 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Zug" ;
     schema:postalCode "3697" ;
     schema:streetAddress "Industriestrasse 9" .
 
-srppp:c616a8b6-d4c5-5212-a871-e106965f27a6 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:c616a8b6-d4c5-5212-a871-e106965f27a6 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Guyancourt" ;
     schema:postalCode "5606" ;
     schema:streetAddress "5 rue Galilée" .
 
-srppp:c9282968-dd11-56a7-b589-b25daaa6acce schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:c9282968-dd11-56a7-b589-b25daaa6acce schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Pfeffingen" ;
     schema:postalCode "12987" ;
     schema:streetAddress "Moosackerweg 28" .
 
-srppp:cb5e7685-ef02-5dd7-ac99-1e9561720e7c schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:cb5e7685-ef02-5dd7-ac99-1e9561720e7c schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Oftringen" ;
     schema:postalCode "3272" ;
     schema:streetAddress "Baslerstrasse 42" .
 
-srppp:cbb9c25d-da74-5712-8570-4bbe28f5c073 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:cbb9c25d-da74-5712-8570-4bbe28f5c073 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Londerzeel" ;
     schema:postalCode "5514" ;
     schema:streetAddress "Technologielann 7" .
 
-srppp:cbc48733-6631-5a2f-bad8-a1b9ecd1b33f schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:cbc48733-6631-5a2f-bad8-a1b9ecd1b33f schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Tägerwilen " ;
     schema:postalCode "4518" ;
     schema:streetAddress "Konstanzerstrasse 19" .
 
-srppp:cbf9710c-801a-536f-a10e-452449d11ada schema:addressCountry <https://ld.admin.ch/country/POL> ;
+:cbf9710c-801a-536f-a10e-452449d11ada schema:addressCountry <https://ld.admin.ch/country/POL> ;
     schema:addressLocality "Bydgoszcz" ;
     schema:postalCode "14644" ;
     schema:streetAddress "ul Bydgoskich Przemyslowcow 6" .
 
-srppp:cf397f47-1afd-5912-bc22-3325113d4be3 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:cf397f47-1afd-5912-bc22-3325113d4be3 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Kradolf" ;
     schema:postalCode "4951" ;
     schema:streetAddress "Oberfeldstr. 5" .
 
-srppp:cfb5556b-129d-565c-b3c5-0949fa7144fd schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:cfb5556b-129d-565c-b3c5-0949fa7144fd schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Dagmersellen" ;
     schema:postalCode "11986" ;
     schema:streetAddress "Industriepark 10" .
 
-srppp:cfc29847-8b9a-536e-afe4-aaf750679118 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:cfc29847-8b9a-536e-afe4-aaf750679118 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Hamburg" ;
     schema:postalCode "15341" ;
     schema:streetAddress "Singapurstrasse 1" .
 
-srppp:d105cd18-c27a-544c-864c-2a29d9132018 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:d105cd18-c27a-544c-864c-2a29d9132018 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Ecully CEDEX" ;
     schema:postalCode "5688" ;
     schema:streetAddress "21, chemin de la Sauvegard" .
 
-srppp:d225b112-b08b-5334-a95b-7cf970faeaf5 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:d225b112-b08b-5334-a95b-7cf970faeaf5 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Colombes" ;
     schema:postalCode "5163" ;
     schema:streetAddress "11 rue du Débarcadère" .
 
-srppp:d2f6474d-a136-51dc-a627-0861206f4074 schema:addressCountry <https://ld.admin.ch/country/ESP> ;
+:d2f6474d-a136-51dc-a627-0861206f4074 schema:addressCountry <https://ld.admin.ch/country/ESP> ;
     schema:addressLocality "Murcia" ;
     schema:postalCode "14966" ;
     schema:streetAddress "Carril Condomina n°3" .
 
-srppp:d35563d3-c1ab-5a92-b892-cbc2fc21f082 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:d35563d3-c1ab-5a92-b892-cbc2fc21f082 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Hamburg" ;
     schema:postalCode "5546" ;
     schema:streetAddress "Nordkanalstrasse 28" .
 
-srppp:d3f58aeb-b14a-55f4-ad76-7eceeb9b6ec2 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:d3f58aeb-b14a-55f4-ad76-7eceeb9b6ec2 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Lyss" ;
     schema:postOfficeBoxNumber "Postfach 61" ;
     schema:postalCode "2668" ;
     schema:streetAddress "Werkstrasse 39" .
 
-srppp:d4876bfe-f813-5a54-a6d4-51d344fba78d schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:d4876bfe-f813-5a54-a6d4-51d344fba78d schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Cernusco sul Naviglio (MI)" ;
     schema:postalCode "13859" ;
     schema:streetAddress "Centro Direzionale Villa Fiorita - Via Piero Gobet" .
 
-srppp:d62f3b56-a1b5-51ab-9281-475b066b7a3f schema:addressCountry <https://ld.admin.ch/country/ISR> ;
+:d62f3b56-a1b5-51ab-9281-475b066b7a3f schema:addressCountry <https://ld.admin.ch/country/ISR> ;
     schema:addressLocality "Ashdod" ;
     schema:postalCode "5120" ;
     schema:streetAddress "P.O. Box 262" .
 
-srppp:d6530149-a889-5e21-892f-68fc17748413 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:d6530149-a889-5e21-892f-68fc17748413 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Isnes" ;
     schema:postalCode "12189" ;
     schema:streetAddress "Rue Georges Legrand 6" .
 
-srppp:d6fa9fba-f2df-5fde-83c7-026028956125 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:d6fa9fba-f2df-5fde-83c7-026028956125 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Zug " ;
     schema:postalCode "3696" ;
     schema:streetAddress "Zählerweg 6" .
 
-srppp:d792ba62-2a41-53dd-9753-97b335275acf schema:addressCountry <https://ld.admin.ch/country/NLD> ;
+:d792ba62-2a41-53dd-9753-97b335275acf schema:addressCountry <https://ld.admin.ch/country/NLD> ;
     schema:addressLocality "AZ Utrecht" ;
     schema:postalCode "14796" ;
     schema:streetAddress "Stadsplateau 16" .
 
-srppp:dafba3bc-7bbf-5515-8c4e-956d5830347a schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:dafba3bc-7bbf-5515-8c4e-956d5830347a schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Frankfurt Griesheim" ;
     schema:postalCode "5200" .
 
-srppp:dbc5c1b7-5d7e-5e98-83b3-e82f03eb6ec3 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:dbc5c1b7-5d7e-5e98-83b3-e82f03eb6ec3 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Baccon" ;
     schema:postalCode "13860" ;
     schema:streetAddress "VILCERY" .
 
-srppp:dbc8ed1b-d64c-5820-a62c-635cfc12553d schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:dbc8ed1b-d64c-5820-a62c-635cfc12553d schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Frankfurt am Main" ;
     schema:postalCode "5199" .
 
-srppp:dc7b2cd3-6f25-5d63-84ae-81e0405c874d schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:dc7b2cd3-6f25-5d63-84ae-81e0405c874d schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Altstätten" ;
     schema:postalCode "15392" ;
     schema:streetAddress "Bafflesstrasse 5" .
 
-srppp:de2b322e-b38a-5e58-b8cb-6518128fcdf1 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:de2b322e-b38a-5e58-b8cb-6518128fcdf1 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Ertvelde" ;
     schema:postalCode "12343" ;
     schema:streetAddress "Assenedestraat 2" .
 
-srppp:dee28f83-ba10-5f9e-bd44-f9a9e7745958 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:dee28f83-ba10-5f9e-bd44-f9a9e7745958 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Saint-Sauveur" ;
     schema:postalCode "13854" ;
     schema:streetAddress "12 Che de l'Hobit" .
 
-srppp:dfacc140-bdbb-5ea1-b59f-4e4a75ea5a9f schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+:dfacc140-bdbb-5ea1-b59f-4e4a75ea5a9f schema:addressCountry <https://ld.admin.ch/country/GBR> ;
     schema:addressLocality "Warrington, Cheshire " ;
     schema:postalCode "14251" ;
     schema:streetAddress "Birchwood Park" .
 
-srppp:e18be3c9-cec9-50ef-b892-86080ea423ea schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:e18be3c9-cec9-50ef-b892-86080ea423ea schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "51149 Köln" ;
     schema:postalCode "5832" ;
     schema:streetAddress "Edmund-Rumpler-Str. 6" .
 
-srppp:e2f61b98-1d1f-5960-94a1-e07bef2d8192 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:e2f61b98-1d1f-5960-94a1-e07bef2d8192 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Brüssel" ;
     schema:postalCode "14655" ;
     schema:streetAddress "Boulevard de la Woluwe 60" .
 
-srppp:e30d0abb-d181-5cc6-9550-1361444f589c schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:e30d0abb-d181-5cc6-9550-1361444f589c schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Saint Didier Au Mont d'Or" ;
     schema:postalCode "5813" ;
     schema:streetAddress "10a, rue de la Voie Lactée" .
 
-srppp:e4cdc49c-2a9b-5473-9e75-00101622092a schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:e4cdc49c-2a9b-5473-9e75-00101622092a schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Nyon" ;
     schema:postalCode "1791" ;
     schema:streetAddress "Rue de la Gare 36" .
 
-srppp:e4f392f1-052b-5fbe-ace9-adc45bb3614b schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:e4f392f1-052b-5fbe-ace9-adc45bb3614b schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Basel" ;
     schema:postOfficeBoxNumber " " ;
     schema:postalCode "3053" ;
     schema:streetAddress "Peter-Merian-Strasse 84" .
 
-srppp:e50ab3ce-aeea-5305-b20a-e8fb1cdb5c75 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:e50ab3ce-aeea-5305-b20a-e8fb1cdb5c75 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Albano" ;
     schema:postalCode "5115" ;
     schema:streetAddress "Via Tonale 15" .
 
-srppp:e606e5fb-a143-5764-9f9b-40553eca40f1 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:e606e5fb-a143-5764-9f9b-40553eca40f1 schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Padova" ;
     schema:postOfficeBoxNumber "30131" ;
     schema:postalCode "14233" ;
     schema:streetAddress "Via Venezia, 9/A" .
 
-srppp:e64f3385-4a36-5ed6-8a4b-909056c313cf schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:e64f3385-4a36-5ed6-8a4b-909056c313cf schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Cesano Maderno" ;
     schema:postalCode "5155" ;
     schema:streetAddress "Via Marconato" .
 
-srppp:e731a731-3c76-5903-8f17-78f7e8227d36 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:e731a731-3c76-5903-8f17-78f7e8227d36 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Ougrée" ;
     schema:postalCode "5318" ;
     schema:streetAddress "Rue de Renory 26/1" .
 
-srppp:e957bff4-6b2a-53ac-8b34-94e8ac8ca34f schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:e957bff4-6b2a-53ac-8b34-94e8ac8ca34f schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Londerzeel" ;
     schema:postalCode "5514" ;
     schema:streetAddress "Neringstraat 15" .
 
-srppp:e97d9824-e0d2-5acf-b1f4-734212dfbe52 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:e97d9824-e0d2-5acf-b1f4-734212dfbe52 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "Bruxelles" ;
     schema:postalCode "5735" ;
     schema:streetAddress "Chaussée de la Hulpe 178" .
 
-srppp:e9c4cc50-7a5d-5b7e-9d4d-7c0f3eb6b678 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:e9c4cc50-7a5d-5b7e-9d4d-7c0f3eb6b678 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Aix-en-Provence" ;
     schema:postalCode "5691" ;
     schema:streetAddress "VILLA CELONY, 1175 MONTEE D'AVIGNON" .
 
-srppp:ea28ec77-b4df-5d69-8173-a1adcd78ab8c schema:addressCountry <https://ld.admin.ch/country/HUN> ;
+:ea28ec77-b4df-5d69-8173-a1adcd78ab8c schema:addressCountry <https://ld.admin.ch/country/HUN> ;
     schema:addressLocality "Remeteszolos" ;
     schema:postOfficeBoxNumber "140" ;
     schema:postalCode "15835" ;
     schema:streetAddress "Patak setany 140, 2090 Remeteszolos, HU" .
 
-srppp:eae51d52-0aa3-54da-b370-adf9dbf40c66 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:eae51d52-0aa3-54da-b370-adf9dbf40c66 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Allschwil" ;
     schema:postalCode "3076" ;
     schema:streetAddress "Hegenheimermattweg 65" .
 
-srppp:eca8d8a5-7f15-5254-98b7-698f14f7b20f schema:addressCountry <https://ld.admin.ch/country/GBR> ;
+:eca8d8a5-7f15-5254-98b7-698f14f7b20f schema:addressCountry <https://ld.admin.ch/country/GBR> ;
     schema:addressLocality "Warrington" ;
     schema:postalCode "11769" ;
     schema:streetAddress "Birchwood Park" .
 
-srppp:ed152be0-7ce1-51de-86a2-38381236f4b2 schema:addressCountry <https://ld.admin.ch/country/IRL> ;
+:ed152be0-7ce1-51de-86a2-38381236f4b2 schema:addressCountry <https://ld.admin.ch/country/IRL> ;
     schema:addressLocality "Dublin 4" ;
     schema:postalCode "14977" ;
     schema:streetAddress "Nova UCD Belfield Innovation Park , UCD Belfield" .
 
-srppp:f1af8450-f6e5-545d-a51e-1170283296c6 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
+:f1af8450-f6e5-545d-a51e-1170283296c6 schema:addressCountry <https://ld.admin.ch/country/BEL> ;
     schema:addressLocality "St. Truiden" ;
     schema:postalCode "5648" ;
     schema:streetAddress "Lichtenberglaan 2019" .
 
-srppp:f48bb036-ea10-5a23-bff1-f37d8dff27ae schema:addressCountry <https://ld.admin.ch/country/ITA> ;
+:f48bb036-ea10-5a23-bff1-f37d8dff27ae schema:addressCountry <https://ld.admin.ch/country/ITA> ;
     schema:addressLocality "Turin" ;
     schema:postalCode "13863" ;
     schema:streetAddress "Corso Orbassano 368/18" .
 
-srppp:f4a100c9-9edf-576b-8700-86e5261b3af6 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:f4a100c9-9edf-576b-8700-86e5261b3af6 schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Levallois-Perret" ;
     schema:postalCode "5253" ;
     schema:streetAddress "53 rue Raspail" .
 
-srppp:f6063710-8295-53cd-b5c4-974fb7182fab schema:addressCountry <https://ld.admin.ch/country/FRA> ;
+:f6063710-8295-53cd-b5c4-974fb7182fab schema:addressCountry <https://ld.admin.ch/country/FRA> ;
     schema:addressLocality "Pont-du-Casse" ;
     schema:postOfficeBoxNumber "B P 5" ;
     schema:postalCode "5338" ;
     schema:streetAddress "Bonnel" .
 
-srppp:f7b685d9-e99f-5e90-8e7d-6b329c206a27 schema:addressCountry <https://ld.admin.ch/country/DNK> ;
+:f7b685d9-e99f-5e90-8e7d-6b329c206a27 schema:addressCountry <https://ld.admin.ch/country/DNK> ;
     schema:addressLocality "Lemvig" ;
     schema:postOfficeBoxNumber "P.O. Box 9" ;
     schema:postalCode "5251" .
 
-srppp:fc2d4f26-ba1f-550a-9427-328850599dae schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:fc2d4f26-ba1f-550a-9427-328850599dae schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Grossaffoltern " ;
     schema:postalCode "2675" ;
     schema:streetAddress "Dorfstrasse 12" .
 
-srppp:fcbd0f40-5ed8-58fe-aa1b-62f7a9d6afeb schema:addressCountry <https://ld.admin.ch/country/IND> ;
+:fcbd0f40-5ed8-58fe-aa1b-62f7a9d6afeb schema:addressCountry <https://ld.admin.ch/country/IND> ;
     schema:addressLocality "Mumbai" ;
     schema:postalCode "5760" ;
     schema:streetAddress "29th Road, Bandra (West)" .
 
-srppp:fccc868a-da2c-5e75-a05a-b438b21070d5 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
+:fccc868a-da2c-5e75-a05a-b438b21070d5 schema:addressCountry <https://ld.admin.ch/country/DEU> ;
     schema:addressLocality "Langenfeld" ;
     schema:postalCode "5762" ;
     schema:streetAddress "Elisabeth-Selbert-Straße 4a " .
 
-srppp:fe5bdc68-ea47-579b-a675-86cca19281f4 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
+:fe5bdc68-ea47-579b-a675-86cca19281f4 schema:addressCountry <https://ld.admin.ch/country/CHE> ;
     schema:addressLocality "Muttenz" ;
     schema:postalCode "3081" ;
     schema:streetAddress "Hofackerstrasse 3a" .
 
-srppp:ffbfb927-542c-5967-8b5c-2fb3374bd86a schema:addressCountry <https://ld.admin.ch/country/NLD> ;
+:ffbfb927-542c-5967-8b5c-2fb3374bd86a schema:addressCountry <https://ld.admin.ch/country/NLD> ;
     schema:addressLocality "AT Muiden" ;
     schema:postalCode "5663" .
 

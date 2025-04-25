@@ -54,3 +54,4 @@ ORDER BY ?class
 ## Other queries
 
 - [Number of obligations per indication](https://s.zazuko.com/3BQAbAA)
+- [Count number of indications per application area](https://s.zazuko.com/2w3CpY4)
