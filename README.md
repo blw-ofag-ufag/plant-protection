@@ -26,3 +26,31 @@ WHERE {
 GROUP BY ?company
 ORDER BY DESC(?N)
 ```
+
+## Get all subclasses of `:Product` with names and descriptions
+
+```sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
+
+SELECT ?label ?comment
+
+WHERE
+{
+  ?class rdfs:subClassOf* :Product ;
+    rdfs:label ?label ;
+    rdfs:comment ?comment .
+
+  VALUES ?lang { "en" }
+  FILTER (
+    LANG(?label) = ?lang &&
+    LANG(?comment) = ?lang 
+  )
+}
+
+ORDER BY ?class
+```
+
+## Other queries
+
+- [Number of obligations per indication](https://s.zazuko.com/3BQAbAA)
