@@ -209,8 +209,8 @@ convert = function(x, parallelimport = FALSE) {
       uri(paste0("W-",attr(x, "wNbr")), base)
     },
     `:hasFormulationCode` = uri(file.path("code", getFK(PI, "FormulationCode")), base),
-    `:hasHazardStatement` = c(uri(file.path("code", getFK(PI, "CodeR")), base),
-                              uri(file.path("code", getFK(PI, "CodeS")), base)),
+    `:hasCodeR`           = uri(file.path("code", getFK(PI, "CodeR")), base),
+    `:hasCodeS`           = uri(file.path("code", getFK(PI, "CodeS")), base),
     `:hasDangerSymbol`    = uri(file.path("code", getFK(PI, "DangerSymbol")), base),
     `:hasSignalWords`     = uri(file.path("code", getFK(PI, "SignalWords")), base)
   )
@@ -222,12 +222,12 @@ XML |>
   xml_find_all("//Product") |>
   as_list() |>
   lapply(convert) |>
-  printList(":Product", properties = c(":hasFormulationCode", ":hasHazardStatement", ":hasDangerSymbol", ":hasSignalWords"))
+  printList(":Product", properties = c(":hasFormulationCode", ":hasCodeR", ":hasCodeS", ":hasDangerSymbol", ":hasSignalWords"))
 XML |>
   xml_find_all("//Parallelimport") |>
   as_list() |>
   lapply(convert, TRUE) |>
-  printList(":Product", properties = c(":hasFormulationCode", ":hasHazardStatement", ":hasDangerSymbol", ":hasSignalWords"))
+  printList(":Product", properties = c(":hasFormulationCode", ":hasCodeR", ":hasCodeS", ":hasDangerSymbol", ":hasSignalWords"))
 sink()
 
 

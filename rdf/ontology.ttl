@@ -497,6 +497,18 @@ srppp:emoji a owl:DatatypeProperty ;
     rdfs:scopeNote "Gedacht für die Verwendung bei Instanzen von Klassen, die sich wie Codelisten verhalten."@de,
         "Intended for use with instances of classes that function similarly to enumerated types."@en .
 
+srppp:hasCodeR a owl:DatatypeProperty ;
+    rdfs:label "R-Satz"@de,
+        "R phrase"@en ;
+    rdfs:domain srppp:Product ;
+    rdfs:range xsd:CodeR .
+
+srppp:hasCodeS a owl:DatatypeProperty ;
+    rdfs:label "S-Satz"@de,
+        "S phrase"@en ;
+    rdfs:domain srppp:Product ;
+    rdfs:range xsd:CodeS .
+
 srppp:hasDamageThreshold a owl:DatatypeProperty ;
     rdfs:label "hat Schadschwelle"@de,
         "has damage threshold"@en ;
