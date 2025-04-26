@@ -4,7 +4,8 @@ A repository to convert the Swiss registry of plant protection products to linke
 
 ## Companies that sell product applicable agains potato late blight
 
-```sparql
+```rq
+PREFIX aschema: <https://schema.ld.admin.ch/>
 PREFIX schema: <http://schema.org/>
 PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
 
@@ -14,13 +15,13 @@ SELECT
 (COUNT(?product) AS ?Number)
 
 WHERE {
-  ?product a :Product ;
-    schema:name ?name ;
+  ?product schema:name ?name ;
     :hasPermissionHolder/schema:legalName ?company ;
-    :isInvolvedIn ?indication ;
-    :hasFederalAdmissionNumber ?WNbr .
-  ?indication :protects/schema:name "Kartoffeln"@de ;
-    :mitigates/schema:name "Kraut- und Knollenfäule"@de .
+    :hasFederalAdmissionNumber ?WNbr ;
+    :isInvolvedIn [
+      :protects/schema:name "Kartoffeln"@de ;
+      :mitigates/schema:name "Kraut- und Knollenfäule"@de
+  	] .
 }
 
 GROUP BY ?company
@@ -29,7 +30,7 @@ ORDER BY DESC(?N)
 
 ## Get all subclasses of `:Product` with names and descriptions
 
-```sparql
+```rq
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
 
@@ -53,5 +54,5 @@ ORDER BY ?class
 
 ## Other queries
 
-- [Number of obligations per indication](https://s.zazuko.com/3BQAbAA)
+- [What insecticide indication has most obligations?](https://s.zazuko.com/3b3h8CL)
 - [Count number of indications per application area](https://s.zazuko.com/2w3CpY4)
