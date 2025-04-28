@@ -52,7 +52,7 @@ WHERE
 ORDER BY ?class
 ```
 
-## Federated query: Get all taxon names, ranks and authors from Wikidata
+## Federated query: Get all taxon names + authors for pests that belong to the order of *Lepidoptera*
 
 ```rq
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -68,10 +68,10 @@ SELECT  * WHERE {
     :bioticStressorIsDefinedByBiologicalTaxon ?taxon .
   
   FILTER(LANG(?name) = "de" && LANG(?latinName) = "lt")
-  SERVICE <https://query.wikidata.org/sparql> {
+  SERVICE <https://qlever.cs.uni-freiburg.de/api/wikidata> {
     ?taxon wdt:P225 ?taxonname ;
       wdt:P3031 ?eppo ;
-      wdt:P105/rdfs:label ?rank .
+      wdt:P171*/wdt:P225 "Lepidoptera" .
     OPTIONAL {
       ?taxon prop:P225/qualifier:P405/wdt:P1559 ?author .
     }
