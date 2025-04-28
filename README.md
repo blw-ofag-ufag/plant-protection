@@ -75,7 +75,6 @@ SELECT  * WHERE {
     OPTIONAL {
       ?taxon prop:P225/qualifier:P405/wdt:P1559 ?author .
     }
-    FILTER(LANG(?rank)="de")
   }
 }
 ```
