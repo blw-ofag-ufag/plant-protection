@@ -7,8 +7,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix srppp: <https://agriculture.ld.admin.ch/plant-protection/> .
-@prefix wd: <http://www.wikidata.org/entity/> .
 @prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 chebi:24431 a owl:Class ;
@@ -17,7 +17,7 @@ chebi:24431 a owl:Class ;
     rdfs:comment "Eine chemische Entität, wie in der CheBI-Ontologie definiert, dient als Referenzpunkt zur Identifizierung und Klassifizierung von Substanzen."@de,
         "A chemical entity as defined in the CheBI ontology, serving as a reference point for identifying and classifying substances."@en .
 
-wd:Q16521 a owl:Class ;
+wikidata:Q16521 a owl:Class ;
     rdfs:label "Biologisches Taxon"@de,
         "Biological taxon"@en ;
     rdfs:comment "Gruppe von einem oder mehreren Organismen, die ein Taxonom als Einheit betrachtet."@de,
@@ -28,7 +28,7 @@ wd:Q16521 a owl:Class ;
         "Abiotic crop stressor"@en ;
     rdfs:comment "Negative Auswirkungen nicht lebender Faktoren auf die Kulturpflanze in einer bestimmten Umgebung."@de,
         "Negative impact of non-living factors on the crop in a specific environment."@en ;
-    rdfs:isDefinedBy wd:Q4667893 ;
+    rdfs:isDefinedBy wikidata:Q4667893 ;
     rdfs:seeAlso <https://w.wiki/CJnE> ;
     rdfs:subClassOf :CropStressor,
         :EnvironmentalCondition ;
@@ -155,7 +155,7 @@ wd:Q16521 a owl:Class ;
         "Biotic crop stressor"@en ;
     rdfs:comment "Biologische Schädigung einer Kulturpflanze."@de,
         "Biological harm to a crop."@en ;
-    rdfs:isDefinedBy wd:Q3500367 ;
+    rdfs:isDefinedBy wikidata:Q3500367 ;
     rdfs:seeAlso <https://w.wiki/Byym> ;
     rdfs:subClassOf :CropStressor .
 
@@ -716,8 +716,8 @@ wdt:P171 a owl:ObjectProperty ;
         "has parent taxon"@en ;
     rdfs:comment "Nächsthöheres Taxon nach einem bestimmten taxonomischen Gesichtspunkt. Da es mehrere taxonomische Gesichtspunkte gibt, ist mehr als ein übergeordnetes Taxon möglich."@de,
         "Next higher taxon according to a certain taxonomic viewpoint. As multiple taxonomic viewpoints exist, more than one parent taxon is possible."@en ;
-    rdfs:domain wd:Q16521 ;
-    rdfs:range wd:Q16521 .
+    rdfs:domain wikidata:Q16521 ;
+    rdfs:range wikidata:Q16521 .
 
 :BCAisDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:label "ist definiert durch das biologische Taxon"@de,
@@ -725,14 +725,14 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:comment "Ein Organismus für die biologische Schädlingsbekämpfung gehört zu einem bestimmten biologischen Taxon."@de,
         "A biological control agent belongs to a certain biological taxon."@en ;
     rdfs:domain :BiologicalControlAgent ;
-    rdfs:range wd:Q16521 ;
+    rdfs:range wikidata:Q16521 ;
     rdfs:subPropertyOf :isDefinedByBiologicalTaxon .
 
 :NonTargetOrganismIsDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:label "ist definiert durch das biologische Taxon"@de,
         "is defined by biological taxon"@en ;
     rdfs:domain :nonTargetOrganism ;
-    rdfs:range wd:Q16521 ;
+    rdfs:range wikidata:Q16521 ;
     rdfs:subPropertyOf :isDefinedByBiologicalTaxon .
 
 :affects a owl:ObjectProperty ;
@@ -756,7 +756,7 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:comment "Diese Eigenschaft verknüpft einen biotischen Stressor mit dem biologischen Taxon, das ihn definiert."@de,
         "This property links a biotic stressor to the biological taxon that defines it."@en ;
     rdfs:domain :BioticStressor ;
-    rdfs:range wd:Q16521 ;
+    rdfs:range wikidata:Q16521 ;
     rdfs:subPropertyOf :isDefinedByBiologicalTaxon .
 
 :causes a owl:ObjectProperty ;
@@ -799,7 +799,7 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:comment "Diese Eigenschaft verknüpft eine landwirtschaftliche Kultur mit dem biologischen Taxon, mit dem sie verbunden ist."@de,
         "This property links a crop to the biological taxon it is associated with."@en ;
     rdfs:domain :CropGroup ;
-    rdfs:range wd:Q16521 ;
+    rdfs:range wikidata:Q16521 ;
     rdfs:subPropertyOf :isDefinedByBiologicalTaxon .
 
 :damages a owl:ObjectProperty ;
@@ -969,7 +969,7 @@ wdt:P171 a owl:ObjectProperty ;
 :isDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:label "ist definiert durch das biologische Taxon"@de,
         "is defined by biological taxon"@en ;
-    rdfs:range wd:Q16521 .
+    rdfs:range wikidata:Q16521 .
 
 :isInvolvedIn a owl:ObjectProperty ;
     rdfs:label "Behandlung"@de,

@@ -5,6 +5,7 @@
 library(xml2)
 library(dplyr)
 library(srppp)
+library(jsonlite)
 library(rdfhelper) # install from <https://github.com/damian-oswald/rdfhelper>
 
 # ------------------------------------------------------------------
@@ -340,19 +341,38 @@ sink()
 # ------------------------------------------------------------------
 
 # Function to convert *one* crop object to a better processable list
-convert <- function(x) {
-  c(list(subject = uri(file.path("pest",getPK(x)), base)),
-    getLabels(x)
-  )
+data <- read_json("tables/mapping/crop-stressors.json")
+describe <- function(x) {
+  
+  i = which(sapply(data, function(x) x[["srppp-id"]])==getPK(x))
+  subject = uri(file.path("pest",getPK(x)), base)
+  
+  if(length(i)>0) {
+    if(data[[i]][["type"]]=="biotic") {
+      triple(subject, "a", c(":CropStressor", ":BioticStressor"))
+    } else if (data[[i]][["type"]]=="abiotic") {
+      triple(subject, "a", c(":CropStressor", ":AbioticStressor"))
+    } else {
+      triple(subject, "a", ":CropStressor")
+    }
+    Q = data[[i]][["wikidata-iri"]]
+    if(!is.null(Q)) {
+      triple(subject, uri("bioticStressorIsDefinedByBiologicalTaxon",base), uri(Q, "http://www.wikidata.org/entity/"))
+    }
+  }
+  
+  # print labels
+  printLabels(c(list(subject = subject), getLabels(x)))
 }
 
 # Write Turtle file
 sink("rdf/pests.ttl")
 cat(prefixes)
-XML |>
-  xml_find_all("//MetaData[@name='Pest']/Detail") |>
-  as_list() |> lapply(convert) |>
-  printList(":CropStressor")
+invisible({
+  XML |>
+    xml_find_all("//MetaData[@name='Pest']/Detail") |>
+    as_list() |> lapply(describe)
+})
 sink()
 
 # ------------------------------------------------------------------
