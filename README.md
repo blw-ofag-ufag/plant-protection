@@ -52,6 +52,34 @@ WHERE
 ORDER BY ?class
 ```
 
+## Federated query: Get all taxon names, ranks and authors from Wikidata
+
+```rq
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX prop: <http://www.wikidata.org/prop/>
+PREFIX qualifier: <http://www.wikidata.org/prop/qualifier/>
+PREFIX schema: <http://schema.org/>
+PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
+SELECT  * WHERE {
+  ?pest a :BioticStressor ;
+    schema:name ?name ;
+    schema:name ?latinName ;
+    :bioticStressorIsDefinedByBiologicalTaxon ?taxon .
+  
+  FILTER(LANG(?name) = "de" && LANG(?latinName) = "lt")
+  SERVICE <https://query.wikidata.org/sparql> {
+    ?taxon wdt:P225 ?taxonname ;
+      wdt:P3031 ?eppo ;
+      wdt:P105/rdfs:label ?rank .
+    OPTIONAL {
+      ?taxon prop:P225/qualifier:P405/wdt:P1559 ?author .
+    }
+    FILTER(LANG(?rank)="de")
+  }
+}
+```
+
 ## Other queries
 
 - [What insecticide indication has most obligations?](https://s.zazuko.com/3b3h8CL)
