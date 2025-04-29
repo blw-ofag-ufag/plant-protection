@@ -61,13 +61,19 @@ PREFIX prop: <http://www.wikidata.org/prop/>
 PREFIX qualifier: <http://www.wikidata.org/prop/qualifier/>
 PREFIX schema: <http://schema.org/>
 PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
-SELECT  * WHERE {
+PREFIX pest: <https://agriculture.ld.admin.ch/plant-protection/pest/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+
+SELECT ?pest ?name ?taxon ?eppo ?author ?taxonname (COUNT(?product) AS ?products)
+
+WHERE {
+  ?product a :Product ;
+    :isInvolvedIn/:mitigates ?pest .
   ?pest a :BioticStressor ;
     schema:name ?name ;
-    schema:name ?latinName ;
-    :bioticStressorIsDefinedByBiologicalTaxon ?taxon .
+    :isDefinedByBiologicalTaxon ?taxon .
+  FILTER(LANG(?name) = "de")
   
-  FILTER(LANG(?name) = "de" && LANG(?latinName) = "lt")
   SERVICE <https://qlever.cs.uni-freiburg.de/api/wikidata> {
     ?taxon wdt:P225 ?taxonname ;
       wdt:P3031 ?eppo ;
@@ -77,9 +83,13 @@ SELECT  * WHERE {
     }
   }
 }
+GROUP BY ?pest ?name ?taxon ?eppo ?author ?taxonname
+ORDER BY DESC(?products)
+LIMIT 10
 ```
 
 ## Other queries
 
 - [What insecticide indication has most obligations?](https://s.zazuko.com/3b3h8CL)
 - [Count number of indications per application area](https://s.zazuko.com/2w3CpY4)
+- [Get all class and property labels and comments](https://s.zazuko.com/aJyrxh)
