@@ -589,13 +589,15 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:label "R-Satz"@de,
         "R phrase"@en ;
     rdfs:domain :Product ;
-    rdfs:range :CodeR .
+    rdfs:range :CodeR ;
+    rdfs:subPropertyOf :hasHazardStatement .
 
 :hasCodeS a owl:DatatypeProperty ;
     rdfs:label "S-Satz"@de,
         "S phrase"@en ;
     rdfs:domain :Product ;
-    rdfs:range :CodeS .
+    rdfs:range :CodeS ;
+    rdfs:subPropertyOf :hasHazardStatement .
 
 :hasDamageThreshold a owl:DatatypeProperty ;
     rdfs:label "hat Schadschwelle"@de,
@@ -752,22 +754,6 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:domain schema:PostalAddress ;
     rdfs:range schema:Country .
 
-:BCAisDefinedByBiologicalTaxon a owl:ObjectProperty ;
-    rdfs:label "Biologisches Taxon"@de,
-        "Biological taxon"@en ;
-    rdfs:comment "Ein Organismus für die biologische Schädlingsbekämpfung gehört zu einem bestimmten biologischen Taxon."@de,
-        "A biological control agent belongs to a certain biological taxon."@en ;
-    rdfs:domain :BiologicalControlAgent ;
-    rdfs:range wikidata:Q16521 ;
-    rdfs:subPropertyOf :isDefinedByBiologicalTaxon .
-
-:NonTargetOrganismIsDefinedByBiologicalTaxon a owl:ObjectProperty ;
-    rdfs:label "ist definiert durch das biologische Taxon"@de,
-        "is defined by biological taxon"@en ;
-    rdfs:domain :nonTargetOrganism ;
-    rdfs:range wikidata:Q16521 ;
-    rdfs:subPropertyOf :isDefinedByBiologicalTaxon .
-
 :affects a owl:ObjectProperty ;
     rdfs:label "betrifft Indikation"@de,
         "affects Indication"@en ;
@@ -782,15 +768,6 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:domain :HazardStatement ;
     rdfs:range :Product ;
     owl:inverseOf :hasHazardStatement .
-
-:bioticStressorIsDefinedByBiologicalTaxon a owl:ObjectProperty ;
-    rdfs:label "ist definiert durch das biologische Taxon"@de,
-        "is defined by biological taxon"@en ;
-    rdfs:comment "Diese Eigenschaft verknüpft einen biotischen Stressor mit dem biologischen Taxon, das ihn definiert."@de,
-        "This property links a biotic stressor to the biological taxon that defines it."@en ;
-    rdfs:domain :BioticStressor ;
-    rdfs:range wikidata:Q16521 ;
-    rdfs:subPropertyOf :isDefinedByBiologicalTaxon .
 
 :causes a owl:ObjectProperty ;
     rdfs:label "verursacht"@de,
@@ -825,15 +802,6 @@ schema:addressCountry a owl:ObjectProperty ;
         "This property links a chemical product to pure chemical substances. It exists for simple checks wether a chemical product contains a certain pure chemical substance."@en ;
     rdfs:domain :ChemicalProduct ;
     rdfs:range :PureSubstance .
-
-:cropIsRelatedToBiologicalTaxon a owl:ObjectProperty ;
-    rdfs:label "hängt zusammen mit dem biologischen Taxon"@de,
-        "is related to biological taxon"@en ;
-    rdfs:comment "Diese Eigenschaft verknüpft eine landwirtschaftliche Kultur mit dem biologischen Taxon, mit dem sie verbunden ist."@de,
-        "This property links a crop to the biological taxon it is associated with."@en ;
-    rdfs:domain :CropGroup ;
-    rdfs:range wikidata:Q16521 ;
-    rdfs:subPropertyOf :isDefinedByBiologicalTaxon .
 
 :damages a owl:ObjectProperty ;
     rdfs:label "beschädigt"@de,

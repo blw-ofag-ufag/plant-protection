@@ -357,7 +357,7 @@ describe <- function(x) {
     }
     Q = data[[i]][["wikidata-iri"]]
     if(!is.null(Q)) {
-      triple(subject, uri("bioticStressorIsDefinedByBiologicalTaxon",base), uri(Q, "http://www.wikidata.org/entity/"))
+      triple(subject, uri("isDefinedByBiologicalTaxon",base), uri(Q, "http://www.wikidata.org/entity/"))
     }
   }
   

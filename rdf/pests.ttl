@@ -8,14 +8,14 @@ pest:10800 a :AbioticStressor,
     rdfs:label "Gegen Rötel"@de,
         "contre le rougissement précoce"@fr,
         "Contro l'arrossamento"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10875 a :AbioticStressor,
         :CropStressor ;
     rdfs:label "Mechanische Verletzungen"@de,
         "blessures dues à des causes mécaniques"@fr,
         "Danni meccanici"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:11139 a :AbioticStressor,
         :CropStressor ;
@@ -23,7 +23,7 @@ pest:11139 a :AbioticStressor,
         "grillures (PLS)"@fr,
         "Bruciature fogliari (PLS)"@it,
         "PLS=physiological leaf spots"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10349 a :BioticStressor,
         :CropStressor ;
@@ -31,7 +31,7 @@ pest:10349 a :BioticStressor,
         "alternarioses"@fr,
         "Alternaria spp."@it,
         "Alternaria spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q133266 .
+    :isDefinedByBiologicalTaxon wikidata:Q133266 .
 
 pest:10351 a :BioticStressor,
         :CropStressor ;
@@ -39,7 +39,7 @@ pest:10351 a :BioticStressor,
         "monocotylédones"@fr,
         "Monocotiledoni (malerbe)"@it,
         "Monocotyledona"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q14847257 .
+    :isDefinedByBiologicalTaxon wikidata:Q14847257 .
 
 pest:10360 a :BioticStressor,
         :CropStressor ;
@@ -47,7 +47,7 @@ pest:10360 a :BioticStressor,
         "nématodes cécidogènes des racines"@fr,
         "Anguillula radicicola"@it,
         "Meloidogyne spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2215256 .
+    :isDefinedByBiologicalTaxon wikidata:Q2215256 .
 
 pest:10366 a :BioticStressor,
         :CropStressor ;
@@ -56,7 +56,7 @@ pest:10366 a :BioticStressor,
         "tavelure des arbres fruitiers à pépins"@fr,
         "Ticchiolatura della frutta a granelli"@it,
         "Venturia inaequalis, Venturia pirina, Venturia nashicola"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10675708,
+    :isDefinedByBiologicalTaxon wikidata:Q10675708,
         wikidata:Q10714040,
         wikidata:Q84312977 .
 
@@ -67,7 +67,7 @@ pest:10367 a :BioticStressor,
         "moucheture bactérienne"@fr,
         "Batteriosi "@it,
         "Pseudomonas syringae pv. tomato"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q21399463 .
+    :isDefinedByBiologicalTaxon wikidata:Q21399463 .
 
 pest:10369 a :BioticStressor,
         :CropStressor ;
@@ -75,7 +75,7 @@ pest:10369 a :BioticStressor,
         "mildiou de l'oignon"@fr,
         "Peronospora della cipolla"@it,
         "Peronospora destructor"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3900048 .
+    :isDefinedByBiologicalTaxon wikidata:Q3900048 .
 
 pest:10373 a :BioticStressor,
         :CropStressor ;
@@ -83,7 +83,7 @@ pest:10373 a :BioticStressor,
         "pourriture grise (Botrytis cinerea)"@fr,
         "Marciume grigio (Botrytis cinerea)"@it,
         "Botrytis cinerea"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1135851 .
+    :isDefinedByBiologicalTaxon wikidata:Q1135851 .
 
 pest:10375 a :BioticStressor,
         :CropStressor ;
@@ -91,7 +91,7 @@ pest:10375 a :BioticStressor,
         "thrips"@fr,
         "Tripidi"@it,
         "Thripidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1977089 .
+    :isDefinedByBiologicalTaxon wikidata:Q1977089 .
 
 pest:10376 a :BioticStressor,
         :CropStressor ;
@@ -100,7 +100,7 @@ pest:10376 a :BioticStressor,
         "thrips de Californie"@fr,
         "Tripide occidentale dei fiori (Frankliniella occidentalis)"@it,
         "Frankliniella occidentalis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q135374 .
+    :isDefinedByBiologicalTaxon wikidata:Q135374 .
 
 pest:10377 a :BioticStressor,
         :CropStressor ;
@@ -109,7 +109,7 @@ pest:10377 a :BioticStressor,
         "thrips de l'oignon"@fr,
         "Tripide della cipolla"@it,
         "Thrips tabaci"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2386245 .
+    :isDefinedByBiologicalTaxon wikidata:Q2386245 .
 
 pest:10379 a :BioticStressor,
         :CropStressor ;
@@ -118,7 +118,7 @@ pest:10379 a :BioticStressor,
         "acariens tétranyques"@fr,
         "Ragnetti"@it,
         "Tetranychidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q676204 .
+    :isDefinedByBiologicalTaxon wikidata:Q676204 .
 
 pest:10381 a :BioticStressor,
         :CropStressor ;
@@ -126,7 +126,7 @@ pest:10381 a :BioticStressor,
         "tarsonèmes"@fr,
         "Tarsonemidi"@it,
         "Tarsonemidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q4357993 .
+    :isDefinedByBiologicalTaxon wikidata:Q4357993 .
 
 pest:10383 a :BioticStressor,
         :CropStressor ;
@@ -134,7 +134,7 @@ pest:10383 a :BioticStressor,
         "acarien jaune commun"@fr,
         "Ragnetto giallo comune"@it,
         "Tetranychus urticae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1335549 .
+    :isDefinedByBiologicalTaxon wikidata:Q1335549 .
 
 pest:10384 a :BioticStressor,
         :CropStressor ;
@@ -142,7 +142,7 @@ pest:10384 a :BioticStressor,
         "acarien rouge"@fr,
         "Ragnetto rosso"@it,
         "Panonychus ulmi"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q640085 .
+    :isDefinedByBiologicalTaxon wikidata:Q640085 .
 
 pest:10385 a :BioticStressor,
         :CropStressor ;
@@ -150,7 +150,7 @@ pest:10385 a :BioticStressor,
         "pyrales"@fr,
         "Piralidi"@it,
         "Pyralidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q248425 .
+    :isDefinedByBiologicalTaxon wikidata:Q248425 .
 
 pest:10388 a :BioticStressor,
         :CropStressor ;
@@ -158,7 +158,7 @@ pest:10388 a :BioticStressor,
         "chrysomélidés"@fr,
         "Crisomelidi"@it,
         "Chrysomelidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q193407 .
+    :isDefinedByBiologicalTaxon wikidata:Q193407 .
 
 pest:10389 a :BioticStressor,
         :CropStressor ;
@@ -166,7 +166,7 @@ pest:10389 a :BioticStressor,
         "altises de la betterave"@fr,
         "Altiche della barbabietola"@it,
         "Chaetocnema concinna, C. tibialis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1634711,
+    :isDefinedByBiologicalTaxon wikidata:Q1634711,
         wikidata:Q2222304 .
 
 pest:10390 a :BioticStressor,
@@ -175,7 +175,7 @@ pest:10390 a :BioticStressor,
         "doryphore"@fr,
         "Dorifora della patata"@it,
         "Leptinotarsa decemlineata"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q156954 .
+    :isDefinedByBiologicalTaxon wikidata:Q156954 .
 
 pest:10391 a :BioticStressor,
         :CropStressor ;
@@ -184,7 +184,7 @@ pest:10391 a :BioticStressor,
         "hanneton commun"@fr,
         "Maggiolino"@it,
         "Melolontha melolontha"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q28175 .
+    :isDefinedByBiologicalTaxon wikidata:Q28175 .
 
 pest:10396 a :BioticStressor,
         :CropStressor ;
@@ -192,7 +192,7 @@ pest:10396 a :BioticStressor,
         "punaises"@fr,
         "Cimici"@it,
         "Heteroptera"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q27191 .
+    :isDefinedByBiologicalTaxon wikidata:Q27191 .
 
 pest:10397 a :BioticStressor,
         :CropStressor ;
@@ -200,7 +200,7 @@ pest:10397 a :BioticStressor,
         "altises"@fr,
         "Altiche"@it,
         "Halticinae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q33141702 .
+    :isDefinedByBiologicalTaxon wikidata:Q33141702 .
 
 pest:10398 a :BioticStressor,
         :CropStressor ;
@@ -208,7 +208,7 @@ pest:10398 a :BioticStressor,
         "pucerons du feuillage"@fr,
         "Afidi "@it,
         "Aphididae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1354085 .
+    :isDefinedByBiologicalTaxon wikidata:Q1354085 .
 
 pest:10403 a :BioticStressor,
         :CropStressor ;
@@ -216,7 +216,7 @@ pest:10403 a :BioticStressor,
         "cochenilles"@fr,
         "Cocciniglie"@it,
         "Coccoidea"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q209602 .
+    :isDefinedByBiologicalTaxon wikidata:Q209602 .
 
 pest:10404 a :BioticStressor,
         :CropStressor ;
@@ -224,7 +224,7 @@ pest:10404 a :BioticStressor,
         "cochenilles lécanines"@fr,
         "Cocciniglie del genere lecanio"@it,
         "Coccidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1632202 .
+    :isDefinedByBiologicalTaxon wikidata:Q1632202 .
 
 pest:10405 a :BioticStressor,
         :CropStressor ;
@@ -232,7 +232,7 @@ pest:10405 a :BioticStressor,
         "cochenilles farineuses"@fr,
         "Cocciniglie cotonose"@it,
         "Pseudococcidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q143569 .
+    :isDefinedByBiologicalTaxon wikidata:Q143569 .
 
 pest:10406 a :BioticStressor,
         :CropStressor ;
@@ -240,7 +240,7 @@ pest:10406 a :BioticStressor,
         "cochenilles diaspines"@fr,
         "Cocciniglie diaspine"@it,
         "Diaspididae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q373290 .
+    :isDefinedByBiologicalTaxon wikidata:Q373290 .
 
 pest:10410 a :BioticStressor,
         :CropStressor ;
@@ -248,7 +248,7 @@ pest:10410 a :BioticStressor,
         "mouches blanches"@fr,
         "Aleurodidi"@it,
         "Aleyrodidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q815617 .
+    :isDefinedByBiologicalTaxon wikidata:Q815617 .
 
 pest:10412 a :BioticStressor,
         :CropStressor ;
@@ -256,7 +256,7 @@ pest:10412 a :BioticStressor,
         "puceron du melon et du cotonnier"@fr,
         "Afide delle Malvacee e del cotone"@it,
         "Aphis gossypii"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2557995 .
+    :isDefinedByBiologicalTaxon wikidata:Q2557995 .
 
 pest:10413 a :BioticStressor,
         :CropStressor ;
@@ -264,7 +264,7 @@ pest:10413 a :BioticStressor,
         "puceron noir de la fève"@fr,
         "Afide nero della fava"@it,
         "Aphis fabae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1532970 .
+    :isDefinedByBiologicalTaxon wikidata:Q1532970 .
 
 pest:10414 a :BioticStressor,
         :CropStressor ;
@@ -272,7 +272,7 @@ pest:10414 a :BioticStressor,
         "puceron cendré du chou"@fr,
         "Afide ceroso del cavolo"@it,
         "Brevicoryne brassicae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2634837 .
+    :isDefinedByBiologicalTaxon wikidata:Q2634837 .
 
 pest:10415 a :BioticStressor,
         :CropStressor ;
@@ -280,7 +280,7 @@ pest:10415 a :BioticStressor,
         "puceron des racines de la laitue"@fr,
         "Afide radicicolo della lattuga"@it,
         "Pemphigus bursarius"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2589115 .
+    :isDefinedByBiologicalTaxon wikidata:Q2589115 .
 
 pest:10416 a :BioticStressor,
         :CropStressor ;
@@ -288,7 +288,7 @@ pest:10416 a :BioticStressor,
         "psylle de la carotte"@fr,
         "Psilla della carota"@it,
         "Trioza apicalis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10704098 .
+    :isDefinedByBiologicalTaxon wikidata:Q10704098 .
 
 pest:10417 a :BioticStressor,
         :CropStressor ;
@@ -296,7 +296,7 @@ pest:10417 a :BioticStressor,
         "Aleurode du tabac"@fr,
         "Aleurode delle solanacee"@it,
         "Bemisia tabaci"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1303946 .
+    :isDefinedByBiologicalTaxon wikidata:Q1303946 .
 
 pest:10420 a :BioticStressor,
         :CropStressor ;
@@ -304,7 +304,7 @@ pest:10420 a :BioticStressor,
         "noctuelle du chou"@fr,
         "Nottua del cavolo"@it,
         "Mamestra brassicae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1045638 .
+    :isDefinedByBiologicalTaxon wikidata:Q1045638 .
 
 pest:10421 a :BioticStressor,
         :CropStressor ;
@@ -312,7 +312,7 @@ pest:10421 a :BioticStressor,
         "noctuelles"@fr,
         "Larve di nottue"@it,
         "Noctuidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q459180 .
+    :isDefinedByBiologicalTaxon wikidata:Q459180 .
 
 pest:10423 a :BioticStressor,
         :CropStressor ;
@@ -320,7 +320,7 @@ pest:10423 a :BioticStressor,
         "phalènes"@fr,
         "Falene"@it,
         "Geometridae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q45559 .
+    :isDefinedByBiologicalTaxon wikidata:Q45559 .
 
 pest:10425 a :BioticStressor,
         :CropStressor ;
@@ -328,7 +328,7 @@ pest:10425 a :BioticStressor,
         "cécidomyie des siliques du colza"@fr,
         "Cecidomia delle silique delle crocifere"@it,
         "Dasineura brassicae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q4957943 .
+    :isDefinedByBiologicalTaxon wikidata:Q4957943 .
 
 pest:10426 a :BioticStressor,
         :CropStressor ;
@@ -336,7 +336,7 @@ pest:10426 a :BioticStressor,
         "mineuses"@fr,
         "Minatrici"@it,
         "Gracillariidae, Lyonetiidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1596502,
+    :isDefinedByBiologicalTaxon wikidata:Q1596502,
         wikidata:Q721100 .
 
 pest:10427 a :BioticStressor,
@@ -345,7 +345,7 @@ pest:10427 a :BioticStressor,
         "lymantridés"@fr,
         "Limantridi"@it,
         "Lymantriidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q162734 .
+    :isDefinedByBiologicalTaxon wikidata:Q162734 .
 
 pest:10429 a :BioticStressor,
         :CropStressor ;
@@ -353,7 +353,7 @@ pest:10429 a :BioticStressor,
         "Pieridae"@fr,
         "Cavolaie"@it,
         "Pieridae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q41559 .
+    :isDefinedByBiologicalTaxon wikidata:Q41559 .
 
 pest:10430 a :BioticStressor,
         :CropStressor ;
@@ -361,7 +361,7 @@ pest:10430 a :BioticStressor,
         "mouches mineuses"@fr,
         "Minatrici"@it,
         "Agromyzidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1422663 .
+    :isDefinedByBiologicalTaxon wikidata:Q1422663 .
 
 pest:10434 a :BioticStressor,
         :CropStressor ;
@@ -369,7 +369,7 @@ pest:10434 a :BioticStressor,
         "sciarides, mouches du terreau"@fr,
         "Sciaridi"@it,
         "Sciaridae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q582991 .
+    :isDefinedByBiologicalTaxon wikidata:Q582991 .
 
 pest:10435 a :BioticStressor,
         :CropStressor ;
@@ -377,7 +377,7 @@ pest:10435 a :BioticStressor,
         "cécidomyies"@fr,
         "Cecidomie"@it,
         "Cecidomyiidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q768519 .
+    :isDefinedByBiologicalTaxon wikidata:Q768519 .
 
 pest:10436 a :BioticStressor,
         :CropStressor ;
@@ -385,7 +385,7 @@ pest:10436 a :BioticStressor,
         "tipules"@fr,
         "Tipulidi"@it,
         "Tipulidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q474636 .
+    :isDefinedByBiologicalTaxon wikidata:Q474636 .
 
 pest:10442 a :BioticStressor,
         :CropStressor ;
@@ -393,7 +393,7 @@ pest:10442 a :BioticStressor,
         "vers fil de fer"@fr,
         "Elateridi"@it,
         "Elateridae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q28457 .
+    :isDefinedByBiologicalTaxon wikidata:Q28457 .
 
 pest:10445 a :BioticStressor,
         :CropStressor ;
@@ -401,7 +401,7 @@ pest:10445 a :BioticStressor,
         "charançon de la tige du chou"@fr,
         "Punteruolo degli steli di cavoli"@it,
         "Ceutorhynchus quadridens"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q16536334 .
+    :isDefinedByBiologicalTaxon wikidata:Q16536334 .
 
 pest:10447 a :BioticStressor,
         :CropStressor ;
@@ -409,7 +409,7 @@ pest:10447 a :BioticStressor,
         "charançon gallicole du chou"@fr,
         "Punteruolo delle galle dei cavoli"@it,
         "Ceutorhynchus pleurostigma"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q16537267 .
+    :isDefinedByBiologicalTaxon wikidata:Q16537267 .
 
 pest:10448 a :BioticStressor,
         :CropStressor ;
@@ -417,7 +417,7 @@ pest:10448 a :BioticStressor,
         "apions du trèfle"@fr,
         "Apioni dei capolini del trifoglio"@it,
         "Apion spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q11832425 .
+    :isDefinedByBiologicalTaxon wikidata:Q11832425 .
 
 pest:10450 a :BioticStressor,
         :CropStressor ;
@@ -425,7 +425,7 @@ pest:10450 a :BioticStressor,
         "courtilière"@fr,
         "Grillotalpa"@it,
         "Gryllotalpa gryllotalpa"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q476326 .
+    :isDefinedByBiologicalTaxon wikidata:Q476326 .
 
 pest:10451 a :BioticStressor,
         :CropStressor ;
@@ -433,7 +433,7 @@ pest:10451 a :BioticStressor,
         "mirides"@fr,
         "Miridi"@it,
         "Miridae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q864705 .
+    :isDefinedByBiologicalTaxon wikidata:Q864705 .
 
 pest:10452 a :BioticStressor,
         :CropStressor ;
@@ -441,7 +441,7 @@ pest:10452 a :BioticStressor,
         "tenthrèdes"@fr,
         "Tentredini"@it,
         "Tenthredinidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1280932 .
+    :isDefinedByBiologicalTaxon wikidata:Q1280932 .
 
 pest:10455 a :BioticStressor,
         :CropStressor ;
@@ -449,7 +449,7 @@ pest:10455 a :BioticStressor,
         "puceron lanigère du pommier"@fr,
         "Afide lanigero del melo"@it,
         "Eriosoma lanigerum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q618315 .
+    :isDefinedByBiologicalTaxon wikidata:Q618315 .
 
 pest:10458 a :BioticStressor,
         :CropStressor ;
@@ -457,7 +457,7 @@ pest:10458 a :BioticStressor,
         "teigne des crucifères (Plutella xylostella)"@fr,
         "Tignola delle Crocifere"@it,
         "Plutella xylostella"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1050343 .
+    :isDefinedByBiologicalTaxon wikidata:Q1050343 .
 
 pest:10459 a :BioticStressor,
         :CropStressor ;
@@ -465,7 +465,7 @@ pest:10459 a :BioticStressor,
         "teigne du poireau"@fr,
         "Tignola del porro"@it,
         "Acrolepiopsis assectella"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1032508 .
+    :isDefinedByBiologicalTaxon wikidata:Q1032508 .
 
 pest:10460 a :BioticStressor,
         :CropStressor ;
@@ -473,7 +473,7 @@ pest:10460 a :BioticStressor,
         "criocère de l'asperge"@fr,
         "Criocera dell'asparago"@it,
         "Crioceris asparagi"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1187084 .
+    :isDefinedByBiologicalTaxon wikidata:Q1187084 .
 
 pest:10461 a :BioticStressor,
         :CropStressor ;
@@ -481,7 +481,7 @@ pest:10461 a :BioticStressor,
         "criocère à douze points de l'asperge"@fr,
         "Criocera a dodici punti"@it,
         "Crioceris duodecimpunctata"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q245242 .
+    :isDefinedByBiologicalTaxon wikidata:Q245242 .
 
 pest:10463 a :BioticStressor,
         :CropStressor ;
@@ -489,7 +489,7 @@ pest:10463 a :BioticStressor,
         "sitone du pois"@fr,
         "Sitone del pisello"@it,
         "Sitona lineatus"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1513447 .
+    :isDefinedByBiologicalTaxon wikidata:Q1513447 .
 
 pest:10464 a :BioticStressor,
         :CropStressor ;
@@ -497,7 +497,7 @@ pest:10464 a :BioticStressor,
         "cécidomyie du chou"@fr,
         "Cecidomia del cavolo"@it,
         "Contarinia nasturtii"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1778497 .
+    :isDefinedByBiologicalTaxon wikidata:Q1778497 .
 
 pest:10465 a :BioticStressor,
         :CropStressor ;
@@ -505,7 +505,7 @@ pest:10465 a :BioticStressor,
         "mouche du chou"@fr,
         "Mosca del cavolo"@it,
         "Delia radicum, D. floralis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q4260197,
+    :isDefinedByBiologicalTaxon wikidata:Q4260197,
         wikidata:Q761689 .
 
 pest:10466 a :BioticStressor,
@@ -514,7 +514,7 @@ pest:10466 a :BioticStressor,
         "mouche de l'asperge"@fr,
         "Mosca dell'asparago"@it,
         "Platyparea poeciloptera"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3325393 .
+    :isDefinedByBiologicalTaxon wikidata:Q3325393 .
 
 pest:10469 a :BioticStressor,
         :CropStressor ;
@@ -522,7 +522,7 @@ pest:10469 a :BioticStressor,
         "mouche de la betterave"@fr,
         "Mosca della barbabietola"@it,
         "Pegomya betae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q12145842 .
+    :isDefinedByBiologicalTaxon wikidata:Q12145842 .
 
 pest:10470 a :BioticStressor,
         :CropStressor ;
@@ -530,7 +530,7 @@ pest:10470 a :BioticStressor,
         "mouche de la carotte"@fr,
         "Mosca della carota"@it,
         "Psila rosae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10332580 .
+    :isDefinedByBiologicalTaxon wikidata:Q10332580 .
 
 pest:10472 a :BioticStressor,
         :CropStressor ;
@@ -539,14 +539,14 @@ pest:10472 a :BioticStressor,
         "oïdium du pommier/du poirier"@fr,
         "Oidio della mela/pera"@it,
         "Podosphaera leucotricha"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2315947 .
+    :isDefinedByBiologicalTaxon wikidata:Q2315947 .
 
 pest:10474 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Einjährige Monocotyledonen (Ungräser)"@de,
         "monocotylédones annuelles"@fr,
         "Monocotiledoni annuali (malerbe)."@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q14847257 .
+    :isDefinedByBiologicalTaxon wikidata:Q14847257 .
 
 pest:10477 a :BioticStressor,
         :CropStressor ;
@@ -554,7 +554,7 @@ pest:10477 a :BioticStressor,
         "entomosporiose du cognassier"@fr,
         "Entomosporiosi del cotogno"@it,
         "Entomosporium mespili"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5279832 .
+    :isDefinedByBiologicalTaxon wikidata:Q5279832 .
 
 pest:10478 a :BioticStressor,
         :CropStressor ;
@@ -562,7 +562,7 @@ pest:10478 a :BioticStressor,
         "chlorops"@fr,
         "Cloropo del grano"@it,
         "Chlorops pumilionis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3647385 .
+    :isDefinedByBiologicalTaxon wikidata:Q3647385 .
 
 pest:10479 a :BioticStressor,
         :CropStressor ;
@@ -571,7 +571,7 @@ pest:10479 a :BioticStressor,
         "pourriture de la mouche des pommes (Botrytis cinerea)"@fr,
         "Marciume (Botrytis cinerea)"@it,
         "Botrytis cinerea (Kelchfäule)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1135851 .
+    :isDefinedByBiologicalTaxon wikidata:Q1135851 .
 
 pest:10481 a :BioticStressor,
         :CropStressor ;
@@ -580,7 +580,7 @@ pest:10481 a :BioticStressor,
         "moniliose des fleurs et des rameaux"@fr,
         "Monilia dei rami e dei fiori"@it,
         "Monilia laxa"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10588231 .
+    :isDefinedByBiologicalTaxon wikidata:Q10588231 .
 
 pest:10482 a :BioticStressor,
         :CropStressor ;
@@ -589,7 +589,7 @@ pest:10482 a :BioticStressor,
         "tavelure noire du pêcher"@fr,
         "Ticchiolatura del pesco"@it,
         "Venturia carpophila"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7920446 .
+    :isDefinedByBiologicalTaxon wikidata:Q7920446 .
 
 pest:10483 a :BioticStressor,
         :CropStressor ;
@@ -598,7 +598,7 @@ pest:10483 a :BioticStressor,
         "maladie criblée des Prunus"@fr,
         "Vaiolatura della frutta a nocciolo"@it,
         "Wilsonomyces carpophilus (syn. Stigmina carpophila)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q54371230 .
+    :isDefinedByBiologicalTaxon wikidata:Q54371230 .
 
 pest:10485 a :BioticStressor,
         :CropStressor ;
@@ -607,7 +607,7 @@ pest:10485 a :BioticStressor,
         "chancre bactérien du cerisier"@fr,
         "Batteriosi del ciliegio"@it,
         "Pseudomonas syringae pv. morsprunorum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q131499414 .
+    :isDefinedByBiologicalTaxon wikidata:Q131499414 .
 
 pest:10486 a :BioticStressor,
         :CropStressor ;
@@ -616,7 +616,7 @@ pest:10486 a :BioticStressor,
         "pourriture amère des cerises"@fr,
         "Antracnosi del ciliegio"@it,
         "Glomerella cingulata"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3772404 .
+    :isDefinedByBiologicalTaxon wikidata:Q3772404 .
 
 pest:10487 a :BioticStressor,
         :CropStressor ;
@@ -625,7 +625,7 @@ pest:10487 a :BioticStressor,
         "cylindrosporiose du cerisier"@fr,
         "Cilindrosporiosi del ciliegio"@it,
         "Blumeriella jaapii"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10431598 .
+    :isDefinedByBiologicalTaxon wikidata:Q10431598 .
 
 pest:10488 a :BioticStressor,
         :CropStressor ;
@@ -634,7 +634,7 @@ pest:10488 a :BioticStressor,
         "rouille du prunier"@fr,
         "Ruggine del susino"@it,
         "Tranzschelia discolor, Tranzschelia pruni-spinosae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10701362,
+    :isDefinedByBiologicalTaxon wikidata:Q10701362,
         wikidata:Q7835510 .
 
 pest:10489 a :BioticStressor,
@@ -643,7 +643,7 @@ pest:10489 a :BioticStressor,
         "cloque du pêcher"@fr,
         "Bolla del pesco"@it,
         "Taphrina deformans"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2022500 .
+    :isDefinedByBiologicalTaxon wikidata:Q2022500 .
 
 pest:10490 a :BioticStressor,
         :CropStressor ;
@@ -652,7 +652,7 @@ pest:10490 a :BioticStressor,
         "oïdium du pêcher"@fr,
         "Oidio della pesca"@it,
         "Podosphaera pannosa"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1281116 .
+    :isDefinedByBiologicalTaxon wikidata:Q1281116 .
 
 pest:10491 a :BioticStressor,
         :CropStressor ;
@@ -661,7 +661,7 @@ pest:10491 a :BioticStressor,
         "oïdium de l'abricotier"@fr,
         "Oidio dell'albicocca"@it,
         "Podosphaera tridactyla"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7207073 .
+    :isDefinedByBiologicalTaxon wikidata:Q7207073 .
 
 pest:10492 a :BioticStressor,
         :CropStressor ;
@@ -670,7 +670,7 @@ pest:10492 a :BioticStressor,
         "maladie des pochettes du prunier"@fr,
         "Bozzacchioni del susino"@it,
         "Taphrina pruni"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1621708 .
+    :isDefinedByBiologicalTaxon wikidata:Q1621708 .
 
 pest:10493 a :BioticStressor,
         :CropStressor ;
@@ -678,7 +678,7 @@ pest:10493 a :BioticStressor,
         "oïdium du fraisier"@fr,
         "Oidio della fragola"@it,
         "Podosphaera aphanis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10635260 .
+    :isDefinedByBiologicalTaxon wikidata:Q10635260 .
 
 pest:10495 a :BioticStressor,
         :CropStressor ;
@@ -686,7 +686,7 @@ pest:10495 a :BioticStressor,
         "taches pourpres du fraisier"@fr,
         "Vaiolatura rossa della fragola"@it,
         "Diplocarpon earlianum, Mycosphaerella fragariae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5279833,
+    :isDefinedByBiologicalTaxon wikidata:Q5279833,
         wikidata:Q6947195 .
 
 pest:10496 a :BioticStressor,
@@ -696,7 +696,7 @@ pest:10496 a :BioticStressor,
         "mildiou du fraisier"@fr,
         "Marciume delle fragole"@it,
         "Phytophthora cactorum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2230727 .
+    :isDefinedByBiologicalTaxon wikidata:Q2230727 .
 
 pest:10497 a :BioticStressor,
         :CropStressor ;
@@ -705,7 +705,7 @@ pest:10497 a :BioticStressor,
         "racines rouges du fraisier"@fr,
         "Marciume radicale della fragola"@it,
         "Phytophthora fragariae var. fragariae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7189817 .
+    :isDefinedByBiologicalTaxon wikidata:Q7189817 .
 
 pest:10498 a :BioticStressor,
         :CropStressor ;
@@ -714,7 +714,7 @@ pest:10498 a :BioticStressor,
         "coeur brun du fraisier"@fr,
         "Fitoftora della fragola"@it,
         "Phytophthora cactorum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2230727 .
+    :isDefinedByBiologicalTaxon wikidata:Q2230727 .
 
 pest:10499 a :BioticStressor,
         :CropStressor ;
@@ -723,7 +723,7 @@ pest:10499 a :BioticStressor,
         "criocères des céréales"@fr,
         "Criocere dei cereali"@it,
         "Oulema melanopus, O. lichenis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1301591,
+    :isDefinedByBiologicalTaxon wikidata:Q1301591,
         wikidata:Q143459 .
 
 pest:10501 a :BioticStressor,
@@ -733,7 +733,7 @@ pest:10501 a :BioticStressor,
         "maladies des rameaux des ronces"@fr,
         "Cancri del fusto della mora di rovo"@it,
         "Didymella applanata, Leptosphaeria coniothyrium, Septocyta ruborum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5274261,
+    :isDefinedByBiologicalTaxon wikidata:Q5274261,
         wikidata:Q6528392,
         wikidata:Q7452330 .
 
@@ -743,7 +743,7 @@ pest:10502 a :BioticStressor,
         "dépérissement des racines du framboisier"@fr,
         "Marciume radicale del lampone"@it,
         "Phytophthora fragariae var. rubi"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q48847073 .
+    :isDefinedByBiologicalTaxon wikidata:Q48847073 .
 
 pest:10503 a :BioticStressor,
         :CropStressor ;
@@ -752,7 +752,7 @@ pest:10503 a :BioticStressor,
         "rouille des espèces de Ribes"@fr,
         "Ruggine delle specie di ribes"@it,
         "Cronartium ribicola, Puccinia ribis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1369189,
+    :isDefinedByBiologicalTaxon wikidata:Q1369189,
         wikidata:Q2301438 .
 
 pest:10504 a :BioticStressor,
@@ -762,7 +762,7 @@ pest:10504 a :BioticStressor,
         "anthracnose des espèces de Ribes"@fr,
         "Seccume delle specie di ribes "@it,
         "Drepanopeziza ribis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10476632 .
+    :isDefinedByBiologicalTaxon wikidata:Q10476632 .
 
 pest:10505 a :BioticStressor,
         :CropStressor ;
@@ -771,7 +771,7 @@ pest:10505 a :BioticStressor,
         "oïdium des Ribes"@fr,
         "Oidio delle varietà di ribes"@it,
         "Podosphaera mors-uvae (Sphaerotheca mors-uvae)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10635270 .
+    :isDefinedByBiologicalTaxon wikidata:Q10635270 .
 
 pest:10506 a :BioticStressor,
         :CropStressor ;
@@ -780,7 +780,7 @@ pest:10506 a :BioticStressor,
         "mildiou de la vigne"@fr,
         "Peronospora della vite"@it,
         "Plasmopara viticola"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q622010 .
+    :isDefinedByBiologicalTaxon wikidata:Q622010 .
 
 pest:10507 a :BioticStressor,
         :CropStressor ;
@@ -789,7 +789,7 @@ pest:10507 a :BioticStressor,
         "oïdium de la vigne"@fr,
         "Oidio della vite"@it,
         "Uncinula (=Erysiphe) necator"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2267811 .
+    :isDefinedByBiologicalTaxon wikidata:Q2267811 .
 
 pest:10508 a :BioticStressor,
         :CropStressor ;
@@ -798,7 +798,7 @@ pest:10508 a :BioticStressor,
         "rougeot parasitaire de la vigne"@fr,
         "Rossore parassitario"@it,
         "Pseudopeziza tracheiphila"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q59547823 .
+    :isDefinedByBiologicalTaxon wikidata:Q59547823 .
 
 pest:10509 a :BioticStressor,
         :CropStressor ;
@@ -807,7 +807,7 @@ pest:10509 a :BioticStressor,
         "coître de la vigne"@fr,
         "Marciume bianco dell'uva"@it,
         "Coniella diplodiella"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1765768 .
+    :isDefinedByBiologicalTaxon wikidata:Q1765768 .
 
 pest:10510 a :BioticStressor,
         :CropStressor ;
@@ -815,7 +815,7 @@ pest:10510 a :BioticStressor,
         "ravageurs des denrées stockées"@fr,
         "Parassiti delle scorte alimentari"@it,
         "Vorratsschädlinge"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1390 .
+    :isDefinedByBiologicalTaxon wikidata:Q1390 .
 
 pest:10511 a :BioticStressor,
         :CropStressor ;
@@ -824,7 +824,7 @@ pest:10511 a :BioticStressor,
         "excoriose de la vigne"@fr,
         "Escoriosi della vite"@it,
         "Phomopsis viticola"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3901665 .
+    :isDefinedByBiologicalTaxon wikidata:Q3901665 .
 
 pest:10513 a :BioticStressor,
         :CropStressor ;
@@ -833,7 +833,7 @@ pest:10513 a :BioticStressor,
         "Pourriture noire (black rot) de la vigne"@fr,
         "Marciume nero"@it,
         "Guignardia bidwellii"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q604793 .
+    :isDefinedByBiologicalTaxon wikidata:Q604793 .
 
 pest:10516 a :BioticStressor,
         :CropStressor ;
@@ -841,7 +841,7 @@ pest:10516 a :BioticStressor,
         "anthracnose du haricot"@fr,
         "Antracnosi del fagiolo"@it,
         "Colletotrichum lindemuthianum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2853020 .
+    :isDefinedByBiologicalTaxon wikidata:Q2853020 .
 
 pest:10517 a :BioticStressor,
         :CropStressor ;
@@ -849,7 +849,7 @@ pest:10517 a :BioticStressor,
         "graisse du haricot"@fr,
         "Grassume del fagiolo"@it,
         "Pseudomonas syringae pv. phaseolicola"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q21399451 .
+    :isDefinedByBiologicalTaxon wikidata:Q21399451 .
 
 pest:10518 a :BioticStressor,
         :CropStressor ;
@@ -857,7 +857,7 @@ pest:10518 a :BioticStressor,
         "rouille du haricot"@fr,
         "Ruggine del fagiolo"@it,
         "Uromyces appendiculatus"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2377614 .
+    :isDefinedByBiologicalTaxon wikidata:Q2377614 .
 
 pest:10519 a :BioticStressor,
         :CropStressor ;
@@ -865,7 +865,7 @@ pest:10519 a :BioticStressor,
         "taches angulaires"@fr,
         "Maculature angolari"@it,
         "Pseudomonas syringae pv. lacrymans"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q110420353 .
+    :isDefinedByBiologicalTaxon wikidata:Q110420353 .
 
 pest:10521 a :BioticStressor,
         :CropStressor ;
@@ -873,7 +873,7 @@ pest:10521 a :BioticStressor,
         "mildiou des cucurbitacées"@fr,
         "Peronospora delle Cucurbitacee"@it,
         "Pseudoperonospora cubensis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3924916 .
+    :isDefinedByBiologicalTaxon wikidata:Q3924916 .
 
 pest:10523 a :BioticStressor,
         :CropStressor ;
@@ -881,7 +881,7 @@ pest:10523 a :BioticStressor,
         "alternariose de la carotte"@fr,
         "Altenariosi delle carote"@it,
         "Alternaria dauci Alternaria radicina"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3021774,
+    :isDefinedByBiologicalTaxon wikidata:Q3021774,
         wikidata:Q4736354 .
 
 pest:10524 a :BioticStressor,
@@ -890,7 +890,7 @@ pest:10524 a :BioticStressor,
         "mildiou de la laitue"@fr,
         "Peronospora della lattuga"@it,
         "Bremia lactucae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q621790 .
+    :isDefinedByBiologicalTaxon wikidata:Q621790 .
 
 pest:10528 a :BioticStressor,
         :CropStressor ;
@@ -898,7 +898,7 @@ pest:10528 a :BioticStressor,
         "maladie des taches noires du chou"@fr,
         "Maculatura anulare nera del cavolo"@it,
         "Alternaria brassicae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q4736348 .
+    :isDefinedByBiologicalTaxon wikidata:Q4736348 .
 
 pest:10530 a :BioticStressor,
         :CropStressor ;
@@ -906,7 +906,7 @@ pest:10530 a :BioticStressor,
         "anthracnose de la laitue"@fr,
         "Marciume della lattuga"@it,
         "Marssonina panattoniana"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q84832098 .
+    :isDefinedByBiologicalTaxon wikidata:Q84832098 .
 
 pest:10531 a :BioticStressor,
         :CropStressor ;
@@ -915,7 +915,7 @@ pest:10531 a :BioticStressor,
         "septoriose du céleri"@fr,
         "Septoriosi del sedano"@it,
         "Septoria apiicola"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10665919 .
+    :isDefinedByBiologicalTaxon wikidata:Q10665919 .
 
 pest:10532 a :BioticStressor,
         :CropStressor ;
@@ -924,7 +924,7 @@ pest:10532 a :BioticStressor,
         "cladosporiose de la tomate"@fr,
         "Ticchiolatura del pomodoro"@it,
         "Mycovellosiella fulva, Fulvia fulva, Cladosporium fulvum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2084190 .
+    :isDefinedByBiologicalTaxon wikidata:Q2084190 .
 
 pest:10533 a :BioticStressor,
         :CropStressor ;
@@ -932,7 +932,7 @@ pest:10533 a :BioticStressor,
         "Botrytis spp."@fr,
         "Botrytis spp."@it,
         "Botrytis spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q134284 .
+    :isDefinedByBiologicalTaxon wikidata:Q134284 .
 
 pest:10534 a :BioticStressor,
         :CropStressor ;
@@ -940,7 +940,7 @@ pest:10534 a :BioticStressor,
         "pourriture blanche des Allium"@fr,
         "Marciume bianco della cipolla"@it,
         "Sclerotium cepivorum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q59578558 .
+    :isDefinedByBiologicalTaxon wikidata:Q59578558 .
 
 pest:10535 a :BioticStressor,
         :CropStressor ;
@@ -948,7 +948,7 @@ pest:10535 a :BioticStressor,
         "cercosporiose et ramulariose"@fr,
         "Cercosporiosi e ramulariosi"@it,
         "Cercospora spp., Ramularia spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2066868,
+    :isDefinedByBiologicalTaxon wikidata:Q2066868,
         wikidata:Q7290354 .
 
 pest:10536 a :BioticStressor,
@@ -958,7 +958,7 @@ pest:10536 a :BioticStressor,
         "oïdium des cucurbitacées"@fr,
         "Oidio delle Cucurbitacee"@it,
         "Podosphaera xanthii Golovinomyces orontii "@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10507042,
+    :isDefinedByBiologicalTaxon wikidata:Q10507042,
         wikidata:Q7207076 .
 
 pest:10537 a :BioticStressor,
@@ -967,7 +967,7 @@ pest:10537 a :BioticStressor,
         "rouille blanche de la scorsonère"@fr,
         "Ruggine bianca della scorzonera"@it,
         "Albugo tragopogonis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q4712742 .
+    :isDefinedByBiologicalTaxon wikidata:Q4712742 .
 
 pest:10538 a :BioticStressor,
         :CropStressor ;
@@ -975,7 +975,7 @@ pest:10538 a :BioticStressor,
         "septoriose de la tomate/aubergine"@fr,
         "Septoriosi del pomodoro/della melanzana"@it,
         "Septoria lycopersici"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2084213 .
+    :isDefinedByBiologicalTaxon wikidata:Q2084213 .
 
 pest:10539 a :BioticStressor,
         :CropStressor ;
@@ -983,7 +983,7 @@ pest:10539 a :BioticStressor,
         "brûlure des feuilles de l'asperge"@fr,
         "Bruciatura delle foglie dell'asparago"@it,
         "Stemphylium vesicarium"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q146566 .
+    :isDefinedByBiologicalTaxon wikidata:Q146566 .
 
 pest:10540 a :BioticStressor,
         :CropStressor ;
@@ -991,7 +991,7 @@ pest:10540 a :BioticStressor,
         "alternariose"@fr,
         "Alternariosi delle solanacee"@it,
         "Alternaria spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q133266 .
+    :isDefinedByBiologicalTaxon wikidata:Q133266 .
 
 pest:10544 a :BioticStressor,
         :CropStressor ;
@@ -999,7 +999,7 @@ pest:10544 a :BioticStressor,
         "carie naine"@fr,
         "Carie nana"@it,
         "Tilletia controversa"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7802811 .
+    :isDefinedByBiologicalTaxon wikidata:Q7802811 .
 
 pest:10545 a :BioticStressor,
         :CropStressor ;
@@ -1007,7 +1007,7 @@ pest:10545 a :BioticStressor,
         "carie ordinaire"@fr,
         "Carie"@it,
         "Tilletia caries, T. laevis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1634854,
+    :isDefinedByBiologicalTaxon wikidata:Q1634854,
         wikidata:Q7802813 .
 
 pest:10546 a :BioticStressor,
@@ -1016,7 +1016,7 @@ pest:10546 a :BioticStressor,
         "charbon nu du blé"@fr,
         "Carbone del grano"@it,
         "Ustilago tritici"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2708559 .
+    :isDefinedByBiologicalTaxon wikidata:Q2708559 .
 
 pest:10549 a :BioticStressor,
         :CropStressor ;
@@ -1024,7 +1024,7 @@ pest:10549 a :BioticStressor,
         "charbon nu de l'orge"@fr,
         "Carbone nudo dell'orzo"@it,
         "Ustilago nuda"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q6676009 .
+    :isDefinedByBiologicalTaxon wikidata:Q6676009 .
 
 pest:10550 a :BioticStressor,
         :CropStressor ;
@@ -1032,7 +1032,7 @@ pest:10550 a :BioticStressor,
         "charbon couvert de l'orge"@fr,
         "Carbone coperto dell'orzo"@it,
         "Ustilago hordei"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10711324 .
+    :isDefinedByBiologicalTaxon wikidata:Q10711324 .
 
 pest:10551 a :BioticStressor,
         :CropStressor ;
@@ -1040,7 +1040,7 @@ pest:10551 a :BioticStressor,
         "maladie striée de l'orge"@fr,
         "Striatura bruna dell'orzo"@it,
         "Pyrenophora graminea (Anam. Drechslera graminea)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7263462 .
+    :isDefinedByBiologicalTaxon wikidata:Q7263462 .
 
 pest:10554 a :BioticStressor,
         :CropStressor ;
@@ -1048,7 +1048,7 @@ pest:10554 a :BioticStressor,
         "altise d'hiver du colza"@fr,
         "Altica della colza"@it,
         "Psylliodes chrysocephala"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q50772526 .
+    :isDefinedByBiologicalTaxon wikidata:Q50772526 .
 
 pest:10555 a :BioticStressor,
         :CropStressor ;
@@ -1056,7 +1056,7 @@ pest:10555 a :BioticStressor,
         "rhizoctone"@fr,
         "Rizottonia"@it,
         "Thanatephorus cucumeris (Anam. Rhizoctonia solani)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q149125,
+    :isDefinedByBiologicalTaxon wikidata:Q149125,
         wikidata:Q30906964 .
 
 pest:10556 a :BioticStressor,
@@ -1065,7 +1065,7 @@ pest:10556 a :BioticStressor,
         "charbon nu de l'avoine"@fr,
         "Carbone nudo dell'avena"@it,
         "Ustilago avenae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q612789 .
+    :isDefinedByBiologicalTaxon wikidata:Q612789 .
 
 pest:10559 a :BioticStressor,
         :CropStressor ;
@@ -1073,7 +1073,7 @@ pest:10559 a :BioticStressor,
         "pied noir de la betterave"@fr,
         "Mal del piede della barbabietola"@it,
         "Aphanomyces spp., Phoma spp., Pythium spp., Rhizoctonia spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2066891,
+    :isDefinedByBiologicalTaxon wikidata:Q2066891,
         wikidata:Q2699011,
         wikidata:Q2716477,
         wikidata:Q2858202 .
@@ -1085,7 +1085,7 @@ pest:10560 a :BioticStressor,
         "Piétin-verse du blé"@fr,
         "Mal del piede dei cereali"@it,
         "Pseudocercosporella herpotrichoides (syn. Oculimacula yallundae)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7684552 .
+    :isDefinedByBiologicalTaxon wikidata:Q7684552 .
 
 pest:10561 a :BioticStressor,
         :CropStressor ;
@@ -1094,7 +1094,7 @@ pest:10561 a :BioticStressor,
         "oïdium des céréales"@fr,
         "Oidio dei cereali"@it,
         "Blumeria graminis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q337796 .
+    :isDefinedByBiologicalTaxon wikidata:Q337796 .
 
 pest:10562 a :BioticStressor,
         :CropStressor ;
@@ -1102,7 +1102,7 @@ pest:10562 a :BioticStressor,
         "rouille jaune"@fr,
         "Ruggine gialla"@it,
         "Puccinia striiformis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1499415 .
+    :isDefinedByBiologicalTaxon wikidata:Q1499415 .
 
 pest:10563 a :BioticStressor,
         :CropStressor ;
@@ -1111,7 +1111,7 @@ pest:10563 a :BioticStressor,
         "rouille brune"@fr,
         "Ruggine bruna"@it,
         "Puccinia recondita"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q24268 .
+    :isDefinedByBiologicalTaxon wikidata:Q24268 .
 
 pest:10565 a :BioticStressor,
         :CropStressor ;
@@ -1119,7 +1119,7 @@ pest:10565 a :BioticStressor,
         "fusarioses de l'épi"@fr,
         "Fusariosi della spiga"@it,
         "Fusarium spp., Gerlachia nivalis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q104978214,
+    :isDefinedByBiologicalTaxon wikidata:Q104978214,
         wikidata:Q131672 .
 
 pest:10566 a :BioticStressor,
@@ -1129,7 +1129,7 @@ pest:10566 a :BioticStressor,
         "helminthosporiose de l'orge"@fr,
         "Macchie reticolate dell'orzo"@it,
         "Pyrenophora teres (Anam. Drechslera teres)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q15633687,
+    :isDefinedByBiologicalTaxon wikidata:Q15633687,
         wikidata:Q7263460 .
 
 pest:10567 a :BioticStressor,
@@ -1139,7 +1139,7 @@ pest:10567 a :BioticStressor,
         "rhynchosporiose"@fr,
         "Rincosporiosi"@it,
         "Rhynchosporium secalis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7321729 .
+    :isDefinedByBiologicalTaxon wikidata:Q7321729 .
 
 pest:10569 a :BioticStressor,
         :CropStressor ;
@@ -1147,7 +1147,7 @@ pest:10569 a :BioticStressor,
         "mildiou de la tomate"@fr,
         "Peronospora del pomodoro"@it,
         "Phytophthora infestans"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q149072 .
+    :isDefinedByBiologicalTaxon wikidata:Q149072 .
 
 pest:10570 a :BioticStressor,
         :CropStressor ;
@@ -1155,7 +1155,7 @@ pest:10570 a :BioticStressor,
         "chenilles processionnaires"@fr,
         "Taumatopea"@it,
         "Thaumetopoeidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1892046 .
+    :isDefinedByBiologicalTaxon wikidata:Q1892046 .
 
 pest:10571 a :BioticStressor,
         :CropStressor ;
@@ -1163,7 +1163,7 @@ pest:10571 a :BioticStressor,
         "taupes (fam.)"@fr,
         "Talpidi (fam.)"@it,
         "Talpidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q104825 .
+    :isDefinedByBiologicalTaxon wikidata:Q104825 .
 
 pest:10572 a :BioticStressor,
         :CropStressor ;
@@ -1171,7 +1171,7 @@ pest:10572 a :BioticStressor,
         "mildiou du tabac"@fr,
         "Peronospora del tabacco"@it,
         "Peronospora tabacina"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3900047 .
+    :isDefinedByBiologicalTaxon wikidata:Q3900047 .
 
 pest:10574 a :BioticStressor,
         :CropStressor ;
@@ -1179,7 +1179,7 @@ pest:10574 a :BioticStressor,
         "maladies fongiques des feuilles"@fr,
         "Maculature fogliari"@it,
         "Species ex Genus Alternaria spp., Apiognomonia spp., Ascochyta spp., Cercospora spp. aut Septoria spp., Gloeosporium sp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q133266,
+    :isDefinedByBiologicalTaxon wikidata:Q133266,
         wikidata:Q2066868,
         wikidata:Q310475,
         wikidata:Q3772399,
@@ -1192,7 +1192,7 @@ pest:10575 a :BioticStressor,
         "champignons pathogènes du sol (fonte ou toile des semis)"@fr,
         "Malattie causate da funghi patogeni del suolo"@it,
         "B.cinerea, Chalara spp., Fusarium spp., Penicillium spp., Pythium spp., Rhizoctonia spp., Sclerotinia spp., etc."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10448077,
+    :isDefinedByBiologicalTaxon wikidata:Q10448077,
         wikidata:Q1135851,
         wikidata:Q131672,
         wikidata:Q1969330,
@@ -1206,7 +1206,7 @@ pest:10579 a :BioticStressor,
         "charançon des siliques"@fr,
         "Punteruolo delle silique delle crocifere"@it,
         "Ceutorhynchus assimilis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1778703 .
+    :isDefinedByBiologicalTaxon wikidata:Q1778703 .
 
 pest:10580 a :BioticStressor,
         :CropStressor ;
@@ -1214,7 +1214,7 @@ pest:10580 a :BioticStressor,
         "oscinie"@fr,
         "Mosca frit"@it,
         "Oscinella frit"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1465179 .
+    :isDefinedByBiologicalTaxon wikidata:Q1465179 .
 
 pest:10584 a :BioticStressor,
         :CropStressor ;
@@ -1222,7 +1222,7 @@ pest:10584 a :BioticStressor,
         "septoriose du chrysanthème"@fr,
         "Necrosi fogliare del crisantemo"@it,
         "Septoria chrysanthemella"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10665947 .
+    :isDefinedByBiologicalTaxon wikidata:Q10665947 .
 
 pest:10589 a :BioticStressor,
         :CropStressor ;
@@ -1230,7 +1230,7 @@ pest:10589 a :BioticStressor,
         "cloque des azalées"@fr,
         "Bolla dell'azalea"@it,
         "Exobasidium vaccinii var. japonicum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q108599739 .
+    :isDefinedByBiologicalTaxon wikidata:Q108599739 .
 
 pest:10590 a :BioticStressor,
         :CropStressor ;
@@ -1238,7 +1238,7 @@ pest:10590 a :BioticStressor,
         "brûlure des bourgeons des rhododendrons"@fr,
         "Disseccamento dei bottoni fiorali del rododendro"@it,
         "Pycnostysanus azaleae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7262937 .
+    :isDefinedByBiologicalTaxon wikidata:Q7262937 .
 
 pest:10593 a :BioticStressor,
         :CropStressor ;
@@ -1247,7 +1247,7 @@ pest:10593 a :BioticStressor,
         "maladie des taches noires du rosier"@fr,
         "Ticchiolatura della rosa"@it,
         "Diplocarpon rosae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1608118 .
+    :isDefinedByBiologicalTaxon wikidata:Q1608118 .
 
 pest:10594 a :BioticStressor,
         :CropStressor ;
@@ -1255,7 +1255,7 @@ pest:10594 a :BioticStressor,
         "hétérosporiose de l'oeillet"@fr,
         "Vaiolo del garofano"@it,
         "Mycosphaerella dianthi"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q80820723 .
+    :isDefinedByBiologicalTaxon wikidata:Q80820723 .
 
 pest:10597 a :BioticStressor,
         :CropStressor ;
@@ -1263,7 +1263,7 @@ pest:10597 a :BioticStressor,
         "dépérissement des bourgeons du sapin bleu"@fr,
         "Disseccamento delle gemme del abete del Colorado"@it,
         "Gemmamyces piceae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q70483904 .
+    :isDefinedByBiologicalTaxon wikidata:Q70483904 .
 
 pest:10599 a :BioticStressor,
         :CropStressor ;
@@ -1271,7 +1271,7 @@ pest:10599 a :BioticStressor,
         "oïdium du houblon"@fr,
         "Oidio del luppolo"@it,
         "Podosphaera macularis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7207071 .
+    :isDefinedByBiologicalTaxon wikidata:Q7207071 .
 
 pest:10605 a :BioticStressor,
         :CropStressor ;
@@ -1279,7 +1279,7 @@ pest:10605 a :BioticStressor,
         "capselle bourse-à-pasteur"@fr,
         "Borsa di pastore"@it,
         "Capsella bursa-pastoris"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q27264 .
+    :isDefinedByBiologicalTaxon wikidata:Q27264 .
 
 pest:10609 a :BioticStressor,
         :CropStressor ;
@@ -1287,7 +1287,7 @@ pest:10609 a :BioticStressor,
         "vergerette du Canada"@fr,
         "Saeppola canadese"@it,
         "Erigeron canadensis, i.e. Conyza canadensis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q21874197 .
+    :isDefinedByBiologicalTaxon wikidata:Q21874197 .
 
 pest:10614 a :BioticStressor,
         :CropStressor ;
@@ -1295,7 +1295,7 @@ pest:10614 a :BioticStressor,
         "gaillet gratteron"@fr,
         "Caglio asprello"@it,
         "Galium aparine"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q161581 .
+    :isDefinedByBiologicalTaxon wikidata:Q161581 .
 
 pest:10620 a :BioticStressor,
         :CropStressor ;
@@ -1303,7 +1303,7 @@ pest:10620 a :BioticStressor,
         "oxalis raide"@fr,
         "Acetosella dei boschi"@it,
         "Oxalis stricta"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q158332 .
+    :isDefinedByBiologicalTaxon wikidata:Q158332 .
 
 pest:10622 a :BioticStressor,
         :CropStressor ;
@@ -1311,7 +1311,7 @@ pest:10622 a :BioticStressor,
         "renouée des oiseaux"@fr,
         "Poligono centinodia"@it,
         "Polygonum aviculare"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q242573 .
+    :isDefinedByBiologicalTaxon wikidata:Q242573 .
 
 pest:10634 a :BioticStressor,
         :CropStressor ;
@@ -1319,7 +1319,7 @@ pest:10634 a :BioticStressor,
         "bugle rampante"@fr,
         "Bugola"@it,
         "Ajuga reptans"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q157249 .
+    :isDefinedByBiologicalTaxon wikidata:Q157249 .
 
 pest:10635 a :BioticStressor,
         :CropStressor ;
@@ -1327,7 +1327,7 @@ pest:10635 a :BioticStressor,
         "pâquerette"@fr,
         "Pratolina comune"@it,
         "Bellis perennis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q26158 .
+    :isDefinedByBiologicalTaxon wikidata:Q26158 .
 
 pest:10636 a :BioticStressor,
         :CropStressor ;
@@ -1335,7 +1335,7 @@ pest:10636 a :BioticStressor,
         "liseron des haies"@fr,
         "Vilucchio bianco"@it,
         "Calystegia sepium, i.e. Convolvulus sepium"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q161704 .
+    :isDefinedByBiologicalTaxon wikidata:Q161704 .
 
 pest:10638 a :BioticStressor,
         :CropStressor ;
@@ -1343,7 +1343,7 @@ pest:10638 a :BioticStressor,
         "chardon ou cirse des champs"@fr,
         "Stoppione"@it,
         "Cirsium arvense"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q341600 .
+    :isDefinedByBiologicalTaxon wikidata:Q341600 .
 
 pest:10640 a :BioticStressor,
         :CropStressor ;
@@ -1351,7 +1351,7 @@ pest:10640 a :BioticStressor,
         "liseron des champs"@fr,
         "Vilucchio comune"@it,
         "Convolvulus arvensis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q111346 .
+    :isDefinedByBiologicalTaxon wikidata:Q111346 .
 
 pest:10641 a :BioticStressor,
         :CropStressor ;
@@ -1359,7 +1359,7 @@ pest:10641 a :BioticStressor,
         "lierre terrestre"@fr,
         "Ellera terrestre comune"@it,
         "Glechoma hederacea"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q162544 .
+    :isDefinedByBiologicalTaxon wikidata:Q162544 .
 
 pest:10643 a :BioticStressor,
         :CropStressor ;
@@ -1367,7 +1367,7 @@ pest:10643 a :BioticStressor,
         "plantain lancéolé"@fr,
         "Piantaggine lanciuola"@it,
         "Plantago lanceolata"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q157408 .
+    :isDefinedByBiologicalTaxon wikidata:Q157408 .
 
 pest:10644 a :BioticStressor,
         :CropStressor ;
@@ -1375,7 +1375,7 @@ pest:10644 a :BioticStressor,
         "oseille des prés"@fr,
         "Romice acetosa"@it,
         "Rumex acetosa"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q26297 .
+    :isDefinedByBiologicalTaxon wikidata:Q26297 .
 
 pest:10645 a :BioticStressor,
         :CropStressor ;
@@ -1383,7 +1383,7 @@ pest:10645 a :BioticStressor,
         "rumex à feuilles obtuses"@fr,
         "Romice comune"@it,
         "Rumex obtusifolius"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q162800 .
+    :isDefinedByBiologicalTaxon wikidata:Q162800 .
 
 pest:10647 a :BioticStressor,
         :CropStressor ;
@@ -1391,7 +1391,7 @@ pest:10647 a :BioticStressor,
         "dent-de-lion"@fr,
         "Tarassaco"@it,
         "Taraxacum officinale"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q131219 .
+    :isDefinedByBiologicalTaxon wikidata:Q131219 .
 
 pest:10648 a :BioticStressor,
         :CropStressor ;
@@ -1399,7 +1399,7 @@ pest:10648 a :BioticStressor,
         "trèfle rampant, trèfle blanc"@fr,
         "Trifoglio bianco"@it,
         "Trifolium repens"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q148675 .
+    :isDefinedByBiologicalTaxon wikidata:Q148675 .
 
 pest:10649 a :BioticStressor,
         :CropStressor ;
@@ -1407,7 +1407,7 @@ pest:10649 a :BioticStressor,
         "ortie dioïque"@fr,
         "Ortica dioica"@it,
         "Urtica dioica"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q155909 .
+    :isDefinedByBiologicalTaxon wikidata:Q155909 .
 
 pest:10650 a :BioticStressor,
         :CropStressor ;
@@ -1415,7 +1415,7 @@ pest:10650 a :BioticStressor,
         "véronique petit-chêne, fausse germandrée"@fr,
         "Veronica comune"@it,
         "Veronica chamaedrys"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q157343 .
+    :isDefinedByBiologicalTaxon wikidata:Q157343 .
 
 pest:10651 a :BioticStressor,
         :CropStressor ;
@@ -1423,7 +1423,7 @@ pest:10651 a :BioticStressor,
         "véronique filiforme"@fr,
         "Veronica filiforme"@it,
         "Veronica filiformis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q158321 .
+    :isDefinedByBiologicalTaxon wikidata:Q158321 .
 
 pest:10652 a :BioticStressor,
         :CropStressor ;
@@ -1431,7 +1431,7 @@ pest:10652 a :BioticStressor,
         "véronique à feuilles de serpolet"@fr,
         "Veronica a foglie di serpillo"@it,
         "Veronica serpyllifolia"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q159724 .
+    :isDefinedByBiologicalTaxon wikidata:Q159724 .
 
 pest:10653 a :BioticStressor,
         :CropStressor ;
@@ -1439,7 +1439,7 @@ pest:10653 a :BioticStressor,
         "chiendent rampant"@fr,
         "Gramigna"@it,
         "Agropyron repens (Elymus repens)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q276262 .
+    :isDefinedByBiologicalTaxon wikidata:Q276262 .
 
 pest:10657 a :BioticStressor,
         :CropStressor ;
@@ -1448,7 +1448,7 @@ pest:10657 a :BioticStressor,
         "agrostis jouet du vent"@fr,
         "agrostide annuale (spica venti)"@it,
         "Apera spica-venti (Agrostis spica-venti)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q164230 .
+    :isDefinedByBiologicalTaxon wikidata:Q164230 .
 
 pest:10659 a :BioticStressor,
         :CropStressor ;
@@ -1456,7 +1456,7 @@ pest:10659 a :BioticStressor,
         "pâturin annuel"@fr,
         "Poa annua"@it,
         "Poa annua"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q157571 .
+    :isDefinedByBiologicalTaxon wikidata:Q157571 .
 
 pest:10660 a :BioticStressor,
         :CropStressor ;
@@ -1464,7 +1464,7 @@ pest:10660 a :BioticStressor,
         "silvain"@fr,
         "Silvano surinamense"@it,
         "Oryzaephilus  surinamensis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q779905 .
+    :isDefinedByBiologicalTaxon wikidata:Q779905 .
 
 pest:10662 a :BioticStressor,
         :CropStressor ;
@@ -1473,7 +1473,7 @@ pest:10662 a :BioticStressor,
         "maladies des rameaux du framboisier"@fr,
         "Cancri del fusto del lampone"@it,
         "Didymella applanata, Leptosphaeria coniothyrium"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5274261,
+    :isDefinedByBiologicalTaxon wikidata:Q5274261,
         wikidata:Q6528392 .
 
 pest:10667 a :BioticStressor,
@@ -1483,7 +1483,7 @@ pest:10667 a :BioticStressor,
         "tavelure tardive des pommes"@fr,
         "Ticchiolatura tardiva del melo"@it,
         "Venturia inaequalis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10675708 .
+    :isDefinedByBiologicalTaxon wikidata:Q10675708 .
 
 pest:10668 a :BioticStressor,
         :CropStressor ;
@@ -1492,7 +1492,7 @@ pest:10668 a :BioticStressor,
         "pourriture lenticellaire (pommier)"@fr,
         "Marciume lenticellare delle mele"@it,
         "Pezicula malicorticis, Pezicula alba"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q28674074,
+    :isDefinedByBiologicalTaxon wikidata:Q28674074,
         wikidata:Q6992815 .
 
 pest:10669 a :BioticStressor,
@@ -1502,7 +1502,7 @@ pest:10669 a :BioticStressor,
         "moniliose des fruits"@fr,
         "Monilia dei frutti"@it,
         "Monilia sp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3320779 .
+    :isDefinedByBiologicalTaxon wikidata:Q3320779 .
 
 pest:10671 a :BioticStressor,
         :CropStressor ;
@@ -1511,7 +1511,7 @@ pest:10671 a :BioticStressor,
         "oïdium du cognassier"@fr,
         "Oidio del cotogno"@it,
         "Podosphaera clandestina"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q108687355 .
+    :isDefinedByBiologicalTaxon wikidata:Q108687355 .
 
 pest:10678 a :BioticStressor,
         :CropStressor ;
@@ -1519,7 +1519,7 @@ pest:10678 a :BioticStressor,
         "méligèthe des crucifères"@fr,
         "Meligete della colza"@it,
         "Meligethes aeneus"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1564671 .
+    :isDefinedByBiologicalTaxon wikidata:Q1564671 .
 
 pest:10679 a :BioticStressor,
         :CropStressor ;
@@ -1527,7 +1527,7 @@ pest:10679 a :BioticStressor,
         "fil rouge du gazon"@fr,
         "Filo rosso del tappeto erboso"@it,
         "Laetisaria  fuciformis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3216059 .
+    :isDefinedByBiologicalTaxon wikidata:Q3216059 .
 
 pest:10680 a :BioticStressor,
         :CropStressor ;
@@ -1535,7 +1535,7 @@ pest:10680 a :BioticStressor,
         "ériophyides libres"@fr,
         "Eriofidi rugginosi"@it,
         "Eriophyidae, Phytoptidae, Diptilomiopidae (freilebende)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10473981,
+    :isDefinedByBiologicalTaxon wikidata:Q10473981,
         wikidata:Q18539312,
         wikidata:Q841786 .
 
@@ -1545,7 +1545,7 @@ pest:10681 a :BioticStressor,
         "phytopte du poirier"@fr,
         "Eriofide del pero"@it,
         "Phytoptus pyri"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q4356998 .
+    :isDefinedByBiologicalTaxon wikidata:Q4356998 .
 
 pest:10683 a :BioticStressor,
         :CropStressor ;
@@ -1553,7 +1553,7 @@ pest:10683 a :BioticStressor,
         "acariose de la vigne"@fr,
         "Acariosi della vite"@it,
         "Calepitrimerus vitis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10439574 .
+    :isDefinedByBiologicalTaxon wikidata:Q10439574 .
 
 pest:10684 a :BioticStressor,
         :CropStressor ;
@@ -1562,7 +1562,7 @@ pest:10684 a :BioticStressor,
         "érinose de la vigne"@fr,
         "Eriofide della vite"@it,
         "Colomerus vitis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10457178 .
+    :isDefinedByBiologicalTaxon wikidata:Q10457178 .
 
 pest:10685 a :BioticStressor,
         :CropStressor ;
@@ -1570,7 +1570,7 @@ pest:10685 a :BioticStressor,
         "ériophyide des ronces"@fr,
         "Eriofide delle more"@it,
         "Eriophyes essigi"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q4358160 .
+    :isDefinedByBiologicalTaxon wikidata:Q4358160 .
 
 pest:10686 a :BioticStressor,
         :CropStressor ;
@@ -1578,7 +1578,7 @@ pest:10686 a :BioticStressor,
         "tarsonème du fraisier"@fr,
         "Tarsonemide della fragola"@it,
         "Phytonemus pallidus"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q21224679 .
+    :isDefinedByBiologicalTaxon wikidata:Q21224679 .
 
 pest:10690 a :BioticStressor,
         :CropStressor ;
@@ -1586,7 +1586,7 @@ pest:10690 a :BioticStressor,
         "mouche de la cerise"@fr,
         "Mosca della ciliegia"@it,
         "Rhagoletis cerasi"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1743610 .
+    :isDefinedByBiologicalTaxon wikidata:Q1743610 .
 
 pest:10693 a :BioticStressor,
         :CropStressor ;
@@ -1594,7 +1594,7 @@ pest:10693 a :BioticStressor,
         "anthonome du pommier"@fr,
         "Antonomo del melo"@it,
         "Anthonomus pomorum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q240929 .
+    :isDefinedByBiologicalTaxon wikidata:Q240929 .
 
 pest:10696 a :BioticStressor,
         :CropStressor ;
@@ -1602,7 +1602,7 @@ pest:10696 a :BioticStressor,
         "otiorhynques"@fr,
         "Oziorrinchi"@it,
         "Otiorhynchus spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1210088 .
+    :isDefinedByBiologicalTaxon wikidata:Q1210088 .
 
 pest:10697 a :BioticStressor,
         :CropStressor ;
@@ -1610,7 +1610,7 @@ pest:10697 a :BioticStressor,
         "anthonome du fraisier ou du framboisier"@fr,
         "Antonomo delle fragole o dei lamponi"@it,
         "Anthonomus rubi"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1348959 .
+    :isDefinedByBiologicalTaxon wikidata:Q1348959 .
 
 pest:10698 a :BioticStressor,
         :CropStressor ;
@@ -1619,7 +1619,7 @@ pest:10698 a :BioticStressor,
         "ver des framboises"@fr,
         "Verme del lampone"@it,
         "Byturus tomentosus"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1447372 .
+    :isDefinedByBiologicalTaxon wikidata:Q1447372 .
 
 pest:10699 a :BioticStressor,
         :CropStressor ;
@@ -1627,7 +1627,7 @@ pest:10699 a :BioticStressor,
         "scolytes"@fr,
         "Scolitidi"@it,
         "Scolytidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q12379653 .
+    :isDefinedByBiologicalTaxon wikidata:Q12379653 .
 
 pest:10701 a :BioticStressor,
         :CropStressor ;
@@ -1635,7 +1635,7 @@ pest:10701 a :BioticStressor,
         "sclérotiniose"@fr,
         "Mal dello sclerozio"@it,
         "Sclerotinia spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1969330 .
+    :isDefinedByBiologicalTaxon wikidata:Q1969330 .
 
 pest:10702 a :BioticStressor,
         :CropStressor ;
@@ -1644,7 +1644,7 @@ pest:10702 a :BioticStressor,
         "Phytophthora spp."@fr,
         "Phytophthora spp."@it,
         "Phytophthora spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q311294 .
+    :isDefinedByBiologicalTaxon wikidata:Q311294 .
 
 pest:10703 a :BioticStressor,
         :CropStressor ;
@@ -1652,7 +1652,7 @@ pest:10703 a :BioticStressor,
         "hoplocampes"@fr,
         "Tentredini"@it,
         "Hoplocampa spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3140391 .
+    :isDefinedByBiologicalTaxon wikidata:Q3140391 .
 
 pest:10704 a :BioticStressor,
         :CropStressor ;
@@ -1660,7 +1660,7 @@ pest:10704 a :BioticStressor,
         "charançon du riz"@fr,
         "Punteruolo del riso"@it,
         "Sitophilus oryzae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q219224 .
+    :isDefinedByBiologicalTaxon wikidata:Q219224 .
 
 pest:10705 a :BioticStressor,
         :CropStressor ;
@@ -1668,7 +1668,7 @@ pest:10705 a :BioticStressor,
         "puceron cendré du poirier"@fr,
         "Afide sanguigno del pero"@it,
         "Dysaphis pyri"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q13565566 .
+    :isDefinedByBiologicalTaxon wikidata:Q13565566 .
 
 pest:10706 a :BioticStressor,
         :CropStressor ;
@@ -1676,7 +1676,7 @@ pest:10706 a :BioticStressor,
         "puceron cendré du pommier"@fr,
         "Afide grigio - rosa del melo"@it,
         "Dysaphis plantaginea"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3410512 .
+    :isDefinedByBiologicalTaxon wikidata:Q3410512 .
 
 pest:10707 a :BioticStressor,
         :CropStressor ;
@@ -1684,7 +1684,7 @@ pest:10707 a :BioticStressor,
         "puceron noir du cerisier"@fr,
         "Afide nerastro del ciliegio"@it,
         "Myzus cerasi"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q998226 .
+    :isDefinedByBiologicalTaxon wikidata:Q998226 .
 
 pest:10708 a :BioticStressor,
         :CropStressor ;
@@ -1692,7 +1692,7 @@ pest:10708 a :BioticStressor,
         "puceron vert du pêcher"@fr,
         "Afide verde del pesco"@it,
         "Myzus persicae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q668208 .
+    :isDefinedByBiologicalTaxon wikidata:Q668208 .
 
 pest:10714 a :BioticStressor,
         :CropStressor ;
@@ -1700,7 +1700,7 @@ pest:10714 a :BioticStressor,
         "cochenille virgule"@fr,
         "Cocciniglia virgola"@it,
         "Lepidosaphes ulmi"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1972523 .
+    :isDefinedByBiologicalTaxon wikidata:Q1972523 .
 
 pest:10716 a :BioticStressor,
         :CropStressor ;
@@ -1708,7 +1708,7 @@ pest:10716 a :BioticStressor,
         "psylle printanier du pommier"@fr,
         "Psilla primaverile del melo"@it,
         "Cacopsylla mali"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10439063 .
+    :isDefinedByBiologicalTaxon wikidata:Q10439063 .
 
 pest:10720 a :BioticStressor,
         :CropStressor ;
@@ -1717,7 +1717,7 @@ pest:10720 a :BioticStressor,
         "phylloxéra de la vigne"@fr,
         "Filossera della vite "@it,
         "Viteus vitifoliae (syn. Dactylosphaera vitifolii)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q14705283 .
+    :isDefinedByBiologicalTaxon wikidata:Q14705283 .
 
 pest:10721 a :BioticStressor,
         :CropStressor ;
@@ -1726,7 +1726,7 @@ pest:10721 a :BioticStressor,
         "pyrale du maïs"@fr,
         "Piralide del mais"@it,
         "Ostrinia nubilalis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1049481 .
+    :isDefinedByBiologicalTaxon wikidata:Q1049481 .
 
 pest:10722 a :BioticStressor,
         :CropStressor ;
@@ -1734,7 +1734,7 @@ pest:10722 a :BioticStressor,
         "charançon du blé"@fr,
         "Punteruolo del grano"@it,
         "Sitophilus granarius"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q217350 .
+    :isDefinedByBiologicalTaxon wikidata:Q217350 .
 
 pest:10723 a :BioticStressor,
         :CropStressor ;
@@ -1742,7 +1742,7 @@ pest:10723 a :BioticStressor,
         "cicadelle verte de la vigne"@fr,
         "Cicalina verde della vite"@it,
         "Empoasca vitis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2972260 .
+    :isDefinedByBiologicalTaxon wikidata:Q2972260 .
 
 pest:10725 a :BioticStressor,
         :CropStressor ;
@@ -1750,7 +1750,7 @@ pest:10725 a :BioticStressor,
         "punaises des fruits"@fr,
         "Cimici dei frutti"@it,
         "Calocoris spp., Lygus spp., Plesicocoris spp., Psallus spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10641403,
+    :isDefinedByBiologicalTaxon wikidata:Q10641403,
         wikidata:Q2934344,
         wikidata:Q3024203 .
 
@@ -1760,7 +1760,7 @@ pest:10730 a :BioticStressor,
         "carpocapse des pommes, poires et abricots"@fr,
         "Carpocapsa delle mele"@it,
         "Cydia pomonella"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q45262 .
+    :isDefinedByBiologicalTaxon wikidata:Q45262 .
 
 pest:10731 a :BioticStressor,
         :CropStressor ;
@@ -1768,7 +1768,7 @@ pest:10731 a :BioticStressor,
         "gale argentée de la pomme de terre"@fr,
         "Tigna argentata della patata"@it,
         "Helminthosporium solani"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1117479 .
+    :isDefinedByBiologicalTaxon wikidata:Q1117479 .
 
 pest:10733 a :BioticStressor,
         :CropStressor ;
@@ -1776,7 +1776,7 @@ pest:10733 a :BioticStressor,
         "petite tordeuse des fruits"@fr,
         "Piccola tortrice dei frutti"@it,
         "Grapholita lobarzewskii"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q13375975 .
+    :isDefinedByBiologicalTaxon wikidata:Q13375975 .
 
 pest:10736 a :BioticStressor,
         :CropStressor ;
@@ -1784,7 +1784,7 @@ pest:10736 a :BioticStressor,
         "tordeuses de la pelure"@fr,
         "Tortrici ricamatrici"@it,
         "Adoxophyes orana, Pandemis heparana, Archips podanus"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1301905,
+    :isDefinedByBiologicalTaxon wikidata:Q1301905,
         wikidata:Q136322,
         wikidata:Q898337 .
 
@@ -1794,7 +1794,7 @@ pest:10738 a :BioticStressor,
         "mousses (bryophytes)"@fr,
         "Muschi (Briofite)"@it,
         "Bryophyta"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q25347 .
+    :isDefinedByBiologicalTaxon wikidata:Q25347 .
 
 pest:10739 a :BioticStressor,
         :CropStressor ;
@@ -1802,7 +1802,7 @@ pest:10739 a :BioticStressor,
         "vers de la grappe"@fr,
         "Tignole della vite (Eupoecilia ambiguella, Lobesia botrana)"@it,
         "Eupoecilia ambiguella, Lobesia botrana"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1077812,
+    :isDefinedByBiologicalTaxon wikidata:Q1077812,
         wikidata:Q815051 .
 
 pest:10740 a :BioticStressor,
@@ -1811,7 +1811,7 @@ pest:10740 a :BioticStressor,
         "cochylis"@fr,
         "Tignola della vite"@it,
         "Eupoecilia ambiguella"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1077812 .
+    :isDefinedByBiologicalTaxon wikidata:Q1077812 .
 
 pest:10741 a :BioticStressor,
         :CropStressor ;
@@ -1819,7 +1819,7 @@ pest:10741 a :BioticStressor,
         "eudémis"@fr,
         "Tignoletta dell'uva"@it,
         "Lobesia botrana"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q815051 .
+    :isDefinedByBiologicalTaxon wikidata:Q815051 .
 
 pest:10742 a :BioticStressor,
         :CropStressor ;
@@ -1827,7 +1827,7 @@ pest:10742 a :BioticStressor,
         "pyrale de la vigne"@fr,
         "Tortrice della vite"@it,
         "Sparganothis pilleriana"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1259351 .
+    :isDefinedByBiologicalTaxon wikidata:Q1259351 .
 
 pest:10743 a :BioticStressor,
         :CropStressor ;
@@ -1835,7 +1835,7 @@ pest:10743 a :BioticStressor,
         "lichens"@fr,
         "Licheni"@it,
         "Lichenes"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q43142 .
+    :isDefinedByBiologicalTaxon wikidata:Q43142 .
 
 pest:10744 a :BioticStressor,
         :CropStressor ;
@@ -1843,7 +1843,7 @@ pest:10744 a :BioticStressor,
         "carpocapse des prunes"@fr,
         "Tortrice delle susine"@it,
         "Grapholita funebrana"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q74842 .
+    :isDefinedByBiologicalTaxon wikidata:Q74842 .
 
 pest:10745 a :BioticStressor,
         :CropStressor ;
@@ -1851,7 +1851,7 @@ pest:10745 a :BioticStressor,
         "tordeuse orientale du pêcher (Laspeyresia molesta)"@fr,
         "Tortrice orientale del pesco"@it,
         "Grapholita molesta"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1106356 .
+    :isDefinedByBiologicalTaxon wikidata:Q1106356 .
 
 pest:10746 a :BioticStressor,
         :CropStressor ;
@@ -1859,7 +1859,7 @@ pest:10746 a :BioticStressor,
         "hyponomeutes"@fr,
         "Tignole"@it,
         "Yponomeutidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1049713 .
+    :isDefinedByBiologicalTaxon wikidata:Q1049713 .
 
 pest:10754 a :BioticStressor,
         :CropStressor ;
@@ -1867,7 +1867,7 @@ pest:10754 a :BioticStressor,
         "pyrale des fruits secs"@fr,
         "Tignola fasciata"@it,
         "Plodia interpunctella"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q779383 .
+    :isDefinedByBiologicalTaxon wikidata:Q779383 .
 
 pest:10755 a :BioticStressor,
         :CropStressor ;
@@ -1875,7 +1875,7 @@ pest:10755 a :BioticStressor,
         "cheimatobies"@fr,
         "Falene"@it,
         "Operophtera brumata"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q164002 .
+    :isDefinedByBiologicalTaxon wikidata:Q164002 .
 
 pest:10756 a :BioticStressor,
         :CropStressor ;
@@ -1883,7 +1883,7 @@ pest:10756 a :BioticStressor,
         "boarmie des bourgeons sur vigne"@fr,
         "Boarmia"@it,
         "Boarmia rhomboidaria"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q33472 .
+    :isDefinedByBiologicalTaxon wikidata:Q33472 .
 
 pest:10757 a :BioticStressor,
         :CropStressor ;
@@ -1891,7 +1891,7 @@ pest:10757 a :BioticStressor,
         "atomaire de la betterave"@fr,
         "Atomaria della barbabietola"@it,
         "Atomaria linearis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2332344 .
+    :isDefinedByBiologicalTaxon wikidata:Q2332344 .
 
 pest:10759 a :BioticStressor,
         :CropStressor ;
@@ -1899,7 +1899,7 @@ pest:10759 a :BioticStressor,
         "noctuelles terricoles ou vers gris"@fr,
         "Nottue terricole o vermi grigi"@it,
         "Agrotis spp., Euxoa spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1315870,
+    :isDefinedByBiologicalTaxon wikidata:Q1315870,
         wikidata:Q779695 .
 
 pest:10760 a :BioticStressor,
@@ -1908,14 +1908,14 @@ pest:10760 a :BioticStressor,
         "tordeuses"@fr,
         "Tortrici"@it,
         "Tortricidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q28953 .
+    :isDefinedByBiologicalTaxon wikidata:Q28953 .
 
 pest:10762 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Bakteriosen"@de,
         "bactérioses"@fr,
         "Batteriosi"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10876 .
+    :isDefinedByBiologicalTaxon wikidata:Q10876 .
 
 pest:10763 a :BioticStressor,
         :CropStressor ;
@@ -1923,7 +1923,7 @@ pest:10763 a :BioticStressor,
         "algues"@fr,
         "Alghe"@it,
         "Algae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q37868 .
+    :isDefinedByBiologicalTaxon wikidata:Q37868 .
 
 pest:10765 a :BioticStressor,
         :CropStressor ;
@@ -1931,21 +1931,21 @@ pest:10765 a :BioticStressor,
         "cicadelles"@fr,
         "Cicaline nane"@it,
         "Jassidae (syn. Cicadellidae)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q244452 .
+    :isDefinedByBiologicalTaxon wikidata:Q244452 .
 
 pest:10770 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Mehrjährige Ehrenpreis-Arten"@de,
         "véroniques vivaces"@fr,
         "Varietà pluriennali di veronica"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7216874 .
+    :isDefinedByBiologicalTaxon wikidata:Q7216874 .
 
 pest:10774 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Mehrjährige Monocotyledonen (Ungräser)"@de,
         "monocotylédones vivaces"@fr,
         "Monocotiledoni perenni (malerbe)"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q14847257 .
+    :isDefinedByBiologicalTaxon wikidata:Q14847257 .
 
 pest:10779 a :BioticStressor,
         :CropStressor ;
@@ -1953,7 +1953,7 @@ pest:10779 a :BioticStressor,
         "campagnol terrestre"@fr,
         "Arvicola terrestre"@it,
         "Arvicola terrestris"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q20980531 .
+    :isDefinedByBiologicalTaxon wikidata:Q20980531 .
 
 pest:10784 a :BioticStressor,
         :CropStressor ;
@@ -1961,7 +1961,7 @@ pest:10784 a :BioticStressor,
         "tenthrèdes et hoplocampes"@fr,
         "Tentredini"@it,
         "Tenthredinidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1280932 .
+    :isDefinedByBiologicalTaxon wikidata:Q1280932 .
 
 pest:10785 a :BioticStressor,
         :CropStressor ;
@@ -1969,7 +1969,7 @@ pest:10785 a :BioticStressor,
         "phytoptes"@fr,
         "Eriofidi"@it,
         "Phytoptus sp. u.a."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q4356998 .
+    :isDefinedByBiologicalTaxon wikidata:Q4356998 .
 
 pest:10786 a :BioticStressor,
         :CropStressor ;
@@ -1977,7 +1977,7 @@ pest:10786 a :BioticStressor,
         "mildiou du houblon"@fr,
         "Peronospora del luppolo"@it,
         "Pseudoperonospora humuli"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7255252 .
+    :isDefinedByBiologicalTaxon wikidata:Q7255252 .
 
 pest:10806 a :BioticStressor,
         :CropStressor ;
@@ -1985,7 +1985,7 @@ pest:10806 a :BioticStressor,
         "typographe"@fr,
         "Tipografo"@it,
         "Ips typographus"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q794323 .
+    :isDefinedByBiologicalTaxon wikidata:Q794323 .
 
 pest:10823 a :BioticStressor,
         :CropStressor ;
@@ -1993,7 +1993,7 @@ pest:10823 a :BioticStressor,
         "limaces du genre Arion"@fr,
         "Limacce del genere Arion"@it,
         "Arionidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q915669 .
+    :isDefinedByBiologicalTaxon wikidata:Q915669 .
 
 pest:10825 a :BioticStressor,
         :CropStressor ;
@@ -2001,7 +2001,7 @@ pest:10825 a :BioticStressor,
         "limaces du genre Deroceras"@fr,
         "Limacce del genere Deroceras"@it,
         "Deroceras spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q293311 .
+    :isDefinedByBiologicalTaxon wikidata:Q293311 .
 
 pest:10834 a :BioticStressor,
         :CropStressor ;
@@ -2009,7 +2009,7 @@ pest:10834 a :BioticStressor,
         "cochenilles diaspines"@fr,
         "Cocciniglie ostreiformi"@it,
         "Quadraspidiotus spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q21231860 .
+    :isDefinedByBiologicalTaxon wikidata:Q21231860 .
 
 pest:10836 a :BioticStressor,
         :CropStressor ;
@@ -2017,7 +2017,7 @@ pest:10836 a :BioticStressor,
         "rouille du rosier"@fr,
         "Ruggine della rosa"@it,
         "Phragmidium mucronatum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7188038 .
+    :isDefinedByBiologicalTaxon wikidata:Q7188038 .
 
 pest:10837 a :BioticStressor,
         :CropStressor ;
@@ -2025,7 +2025,7 @@ pest:10837 a :BioticStressor,
         "oïdium du rosier"@fr,
         "Oidio delle rose"@it,
         "Sphaerotheca pannosa"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1281116 .
+    :isDefinedByBiologicalTaxon wikidata:Q1281116 .
 
 pest:10838 a :BioticStressor,
         :CropStressor ;
@@ -2033,7 +2033,7 @@ pest:10838 a :BioticStressor,
         "mildiou du rosier"@fr,
         "Peronospora della rosa"@it,
         "Peronospora sparsa"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7169462 .
+    :isDefinedByBiologicalTaxon wikidata:Q7169462 .
 
 pest:10839 a :BioticStressor,
         :CropStressor ;
@@ -2041,7 +2041,7 @@ pest:10839 a :BioticStressor,
         "chancre du rosier"@fr,
         "Cancri rameali da septoria"@it,
         "Coniothyrium sp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3686995 .
+    :isDefinedByBiologicalTaxon wikidata:Q3686995 .
 
 pest:10841 a :BioticStressor,
         :CropStressor ;
@@ -2049,7 +2049,7 @@ pest:10841 a :BioticStressor,
         "botrytis des feuilles de l'oignon"@fr,
         "Botrite della cipolla (Botrytis squamosa)"@it,
         "Botryotinia squamosa (Syn. Botrytis squamosa, Sclerotinia squamosa)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10433870 .
+    :isDefinedByBiologicalTaxon wikidata:Q10433870 .
 
 pest:10848 a :BioticStressor,
         :CropStressor ;
@@ -2057,7 +2057,7 @@ pest:10848 a :BioticStressor,
         "psylles du poirier"@fr,
         "Psille del pero"@it,
         "Cacopsylla spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10439002 .
+    :isDefinedByBiologicalTaxon wikidata:Q10439002 .
 
 pest:10850 a :BioticStressor,
         :CropStressor ;
@@ -2065,7 +2065,7 @@ pest:10850 a :BioticStressor,
         "dicotylédones et monocotylédones"@fr,
         "Dicotiledoni e monocotiledoni (malerbe)"@it,
         "Dicotyledona, Monocotyledona"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q14847257,
+    :isDefinedByBiologicalTaxon wikidata:Q14847257,
         wikidata:Q8316 .
 
 pest:10853 a :BioticStressor,
@@ -2074,21 +2074,21 @@ pest:10853 a :BioticStressor,
         "dicotylédones"@fr,
         "Dicotiledoni (malerbe)"@it,
         "Dicotyledona"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q8316 .
+    :isDefinedByBiologicalTaxon wikidata:Q8316 .
 
 pest:10854 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Mehrjährige Dicotyledonen (Unkräuter)"@de,
         "dicotylédones vivaces"@fr,
         "Dicotiledoni pluriennali (malerbe)"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q8316 .
+    :isDefinedByBiologicalTaxon wikidata:Q8316 .
 
 pest:10855 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Einjährige Dicotyledonen (Unkräuter)"@de,
         "dicotylédones annuelles"@fr,
         "Dicotiledoni annuali (malerbe)"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q14847257 .
+    :isDefinedByBiologicalTaxon wikidata:Q14847257 .
 
 pest:10856 a :BioticStressor,
         :CropStressor ;
@@ -2096,7 +2096,7 @@ pest:10856 a :BioticStressor,
         "puceron à strie verte de la pomme de terre (Macrosiphum euphorbiae)"@fr,
         "Afide della patata"@it,
         "Macrosiphum euphorbiae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3274988 .
+    :isDefinedByBiologicalTaxon wikidata:Q3274988 .
 
 pest:10858 a :BioticStressor,
         :CropStressor ;
@@ -2104,14 +2104,14 @@ pest:10858 a :BioticStressor,
         "charbon des feuilles du chardon bleu"@fr,
         "Necrosi fogliare del cardo azzurro"@it,
         "Entyloma eryngii"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10485035 .
+    :isDefinedByBiologicalTaxon wikidata:Q10485035 .
 
 pest:10859 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Hirsen"@de,
         "millets"@fr,
         "Tipi di miglio"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q163527 .
+    :isDefinedByBiologicalTaxon wikidata:Q163527 .
 
 pest:10862 a :BioticStressor,
         :CropStressor ;
@@ -2119,14 +2119,14 @@ pest:10862 a :BioticStressor,
         "prêles (Equisetaceae)"@fr,
         "Equiseti"@it,
         "Equisetaceae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q517643 .
+    :isDefinedByBiologicalTaxon wikidata:Q517643 .
 
 pest:10863 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Einjährige Ehrenpreis-Arten"@de,
         "véroniques annuelles"@fr,
         "Varietà annuali di veronica"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7216874 .
+    :isDefinedByBiologicalTaxon wikidata:Q7216874 .
 
 pest:10864 a :BioticStressor,
         :CropStressor ;
@@ -2134,21 +2134,21 @@ pest:10864 a :BioticStressor,
         "rumex"@fr,
         "Specie di romice"@it,
         "Rumex spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q157264 .
+    :isDefinedByBiologicalTaxon wikidata:Q157264 .
 
 pest:10865 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Sträucher"@de,
         "buissons"@fr,
         "Arbusti"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q27133 .
+    :isDefinedByBiologicalTaxon wikidata:Q27133 .
 
 pest:10868 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Ausfallgetreide"@de,
         "repousses de céréales"@fr,
         "Ricacci di cereali"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q43238 .
+    :isDefinedByBiologicalTaxon wikidata:Q43238 .
 
 pest:10871 a :BioticStressor,
         :CropStressor ;
@@ -2157,14 +2157,14 @@ pest:10871 a :BioticStressor,
         "dollar spot des graminées"@fr,
         "Agente della macchia a forma di dollaro"@it,
         "Sclerotinia homoeocarpa"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1235677 .
+    :isDefinedByBiologicalTaxon wikidata:Q1235677 .
 
 pest:10882 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Gegen das Durchtreiben der Zwiebeln"@de,
         "contre la germination des oignons (bulbes)"@fr,
         "Contro la germinazione delle cipolle"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q23485 .
+    :isDefinedByBiologicalTaxon wikidata:Q23485 .
 
 pest:10883 a :BioticStressor,
         :CropStressor ;
@@ -2172,7 +2172,7 @@ pest:10883 a :BioticStressor,
         "lymexylons"@fr,
         "Limexilonidi"@it,
         "Lymexylonidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q749983 .
+    :isDefinedByBiologicalTaxon wikidata:Q749983 .
 
 pest:10885 a :BioticStressor,
         :CropStressor ;
@@ -2180,7 +2180,7 @@ pest:10885 a :BioticStressor,
         "taches annulaires du chou"@fr,
         "Maculatura anulare del cavolo "@it,
         "Mycosphaerella brassicicola"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7990362 .
+    :isDefinedByBiologicalTaxon wikidata:Q7990362 .
 
 pest:10886 a :BioticStressor,
         :CropStressor ;
@@ -2188,7 +2188,7 @@ pest:10886 a :BioticStressor,
         "cylindrosporiose des Brassica"@fr,
         "Pyrenopeziza brassicae"@it,
         "Pyrenopeziza brassicae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5226308 .
+    :isDefinedByBiologicalTaxon wikidata:Q5226308 .
 
 pest:10887 a :BioticStressor,
         :CropStressor ;
@@ -2197,7 +2197,7 @@ pest:10887 a :BioticStressor,
         "nécrose du collet du colza"@fr,
         "Marciume da phoma delle crocifere"@it,
         "Leptosphaeria maculans (Anam. Phoma lingam)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q6528396,
+    :isDefinedByBiologicalTaxon wikidata:Q6528396,
         wikidata:Q84841011 .
 
 pest:10888 a :BioticStressor,
@@ -2206,7 +2206,7 @@ pest:10888 a :BioticStressor,
         "taches pourpres ou alternariose des allium"@fr,
         "Alternariosi (Alternaria porri)"@it,
         "Alternaria porri"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10406928 .
+    :isDefinedByBiologicalTaxon wikidata:Q10406928 .
 
 pest:10889 a :BioticStressor,
         :CropStressor ;
@@ -2214,7 +2214,7 @@ pest:10889 a :BioticStressor,
         "cladosporiose de l'oignon"@fr,
         "Ticchiolatura della cipolla"@it,
         "Cladosporium allii-cepae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q84826165 .
+    :isDefinedByBiologicalTaxon wikidata:Q84826165 .
 
 pest:10890 a :BioticStressor,
         :CropStressor ;
@@ -2222,7 +2222,7 @@ pest:10890 a :BioticStressor,
         "rouille des Allium"@fr,
         "Ruggine delle Agliacee (Puccinia allii)"@it,
         "Puccinia allii"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2116610 .
+    :isDefinedByBiologicalTaxon wikidata:Q2116610 .
 
 pest:10891 a :BioticStressor,
         :CropStressor ;
@@ -2231,7 +2231,7 @@ pest:10891 a :BioticStressor,
         "anthracnose"@fr,
         "Antracnosi "@it,
         "Glomerella cingulata"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3772404 .
+    :isDefinedByBiologicalTaxon wikidata:Q3772404 .
 
 pest:10894 a :BioticStressor,
         :CropStressor ;
@@ -2239,7 +2239,7 @@ pest:10894 a :BioticStressor,
         "rouille du poireau"@fr,
         "Ruggine del porro "@it,
         "Puccinia porri, Puccinia allii"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1422236,
+    :isDefinedByBiologicalTaxon wikidata:Q1422236,
         wikidata:Q2116610 .
 
 pest:10897 a :BioticStressor,
@@ -2249,7 +2249,7 @@ pest:10897 a :BioticStressor,
         "helminthosporiose des céréales (DTR)"@fr,
         "Pyrenophora tritici-repentis (DTR)"@it,
         "Pyrenophora tritici-repentis (Anam. Drechslera  tritici-repentis)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q289074,
+    :isDefinedByBiologicalTaxon wikidata:Q289074,
         wikidata:Q84857640 .
 
 pest:10900 a :BioticStressor,
@@ -2258,7 +2258,7 @@ pest:10900 a :BioticStressor,
         "fougère impériale"@fr,
         "Felce maggiore"@it,
         "Pteridium aquilinum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q213548 .
+    :isDefinedByBiologicalTaxon wikidata:Q213548 .
 
 pest:10901 a :BioticStressor,
         :CropStressor ;
@@ -2266,7 +2266,7 @@ pest:10901 a :BioticStressor,
         "cochenille farineuse du citronnier"@fr,
         "Cocciniglia cotonosa"@it,
         "Planococcus citri"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q206556 .
+    :isDefinedByBiologicalTaxon wikidata:Q206556 .
 
 pest:10905 a :BioticStressor,
         :CropStressor ;
@@ -2274,7 +2274,7 @@ pest:10905 a :BioticStressor,
         "fontes des semis"@fr,
         "Malattie parassitarie dei germogli"@it,
         "Gemüsebau: Alternaria spp., Fusarium spp., Phoma spp., Pythium spp., Rhizoctonia solani, Ascochyta spp. Mais: Fusarium spp., Pythium ultimum, Rhizoctonia spp. Eiweisserbsen, Ackerbohne, Lein, Lupine: Ascochyta spp., Pythium spp, Phoma spp.,"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q131672,
+    :isDefinedByBiologicalTaxon wikidata:Q131672,
         wikidata:Q133266,
         wikidata:Q2066891,
         wikidata:Q2699011,
@@ -2289,14 +2289,14 @@ pest:10906 a :BioticStressor,
         "pourriture rouge"@fr,
         "Marciume rosso"@it,
         "Heterobasidion annosum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1411830 .
+    :isDefinedByBiologicalTaxon wikidata:Q1411830 .
 
 pest:10910 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Blattfressende Raupen"@de,
         "chenilles défoliatrices"@fr,
         "Larve defogliatrici"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q28319 .
+    :isDefinedByBiologicalTaxon wikidata:Q28319 .
 
 pest:10912 a :BioticStressor,
         :CropStressor ;
@@ -2304,7 +2304,7 @@ pest:10912 a :BioticStressor,
         "rumex des Alpes, rhubarbe des moines"@fr,
         "Romice alpino"@it,
         "Rumex alpinus"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q159084 .
+    :isDefinedByBiologicalTaxon wikidata:Q159084 .
 
 pest:10917 a :BioticStressor,
         :CropStressor ;
@@ -2312,21 +2312,21 @@ pest:10917 a :BioticStressor,
         "teigne de la farine"@fr,
         "Tignola grigia delle provviste alimentari"@it,
         "Ephestia kühniella"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q13608938 .
+    :isDefinedByBiologicalTaxon wikidata:Q13608938 .
 
 pest:10919 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Wildverbiss"@de,
         "abroutissement par le gibier"@fr,
         "Brucatura da selvaggina"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q23390 .
+    :isDefinedByBiologicalTaxon wikidata:Q23390 .
 
 pest:10925 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Fegen"@de,
         "frayure"@fr,
         "Fregone"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q23390 .
+    :isDefinedByBiologicalTaxon wikidata:Q23390 .
 
 pest:10927 a :BioticStressor,
         :CropStressor ;
@@ -2334,7 +2334,7 @@ pest:10927 a :BioticStressor,
         "rouille des betteraves"@fr,
         "Ruggine delle barbabietole"@it,
         "Uromyces beticola"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7900893 .
+    :isDefinedByBiologicalTaxon wikidata:Q7900893 .
 
 pest:10930 a :BioticStressor,
         :CropStressor ;
@@ -2342,7 +2342,7 @@ pest:10930 a :BioticStressor,
         "gommose des Cucurbitacées"@fr,
         "Cancro gommoso"@it,
         "Didymella bryoniae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q149490 .
+    :isDefinedByBiologicalTaxon wikidata:Q149490 .
 
 pest:10931 a :BioticStressor,
         :CropStressor ;
@@ -2350,28 +2350,28 @@ pest:10931 a :BioticStressor,
         "vératre blanc"@fr,
         "Veratro comune"@it,
         "Veratrum album"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q157547 .
+    :isDefinedByBiologicalTaxon wikidata:Q157547 .
 
 pest:10932 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Einjährige Disteln"@de,
         "chardons annuels"@fr,
         "Cardi annuali"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q25400 .
+    :isDefinedByBiologicalTaxon wikidata:Q25400 .
 
 pest:10933 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Mehrjährige Disteln"@de,
         "chardons vivaces"@fr,
         "Cardi perenni"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q25400 .
+    :isDefinedByBiologicalTaxon wikidata:Q25400 .
 
 pest:10934 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Zweijährige Disteln"@de,
         "chardons bisannuels"@fr,
         "Cardi biennali"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q25400 .
+    :isDefinedByBiologicalTaxon wikidata:Q25400 .
 
 pest:10935 a :BioticStressor,
         :CropStressor ;
@@ -2379,7 +2379,7 @@ pest:10935 a :BioticStressor,
         "thrips des Dracaena"@fr,
         "Tripide della Dracaena"@it,
         "Parthenothrips dracaenae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10621350 .
+    :isDefinedByBiologicalTaxon wikidata:Q10621350 .
 
 pest:10937 a :BioticStressor,
         :CropStressor ;
@@ -2387,7 +2387,7 @@ pest:10937 a :BioticStressor,
         "cochenille du caféier (Saissetia coffeae)"@fr,
         "Cocciniglia emisferica delle piante ornamentali"@it,
         "Saissetia coffeae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10660209 .
+    :isDefinedByBiologicalTaxon wikidata:Q10660209 .
 
 pest:10939 a :BioticStressor,
         :CropStressor ;
@@ -2395,21 +2395,21 @@ pest:10939 a :BioticStressor,
         "cladosporiose"@fr,
         "Ticchiolatura"@it,
         "Cladosporium spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q134055 .
+    :isDefinedByBiologicalTaxon wikidata:Q134055 .
 
 pest:10940 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Einjährige Hahnenfussgewächse"@de,
         "renonculacées annuelles"@fr,
         "Ranuncoli annuali"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q145869 .
+    :isDefinedByBiologicalTaxon wikidata:Q145869 .
 
 pest:10941 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Mehrjährige Hahnenfussgewächse"@de,
         "renoncules vivaces"@fr,
         "Ranuncoli pluriennali"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q145869 .
+    :isDefinedByBiologicalTaxon wikidata:Q145869 .
 
 pest:10943 a :BioticStressor,
         :CropStressor ;
@@ -2417,7 +2417,7 @@ pest:10943 a :BioticStressor,
         "cladosporiose des oignons"@fr,
         "Cladosporiosi degli ortaggi a bulbo"@it,
         "Cladosporium allii"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q49607119 .
+    :isDefinedByBiologicalTaxon wikidata:Q49607119 .
 
 pest:10948 a :BioticStressor,
         :CropStressor ;
@@ -2425,7 +2425,7 @@ pest:10948 a :BioticStressor,
         "pourriture des racines"@fr,
         "Mal del piede (Fusarium culmorum)"@it,
         "Fusarium culmorum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2712591 .
+    :isDefinedByBiologicalTaxon wikidata:Q2712591 .
 
 pest:10950 a :BioticStressor,
         :CropStressor ;
@@ -2433,7 +2433,7 @@ pest:10950 a :BioticStressor,
         "nervures noires du chou"@fr,
         "Nervazione nera delle Crocifere"@it,
         "Xanthomonas campestris. pv campestris"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q8043055 .
+    :isDefinedByBiologicalTaxon wikidata:Q8043055 .
 
 pest:10951 a :BioticStressor,
         :CropStressor ;
@@ -2441,7 +2441,7 @@ pest:10951 a :BioticStressor,
         "brûlure bactérienne du haricot"@fr,
         "Antracnosi del fagiolo"@it,
         "Xanthomonas campestris pv. phaseoli"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q131469754 .
+    :isDefinedByBiologicalTaxon wikidata:Q131469754 .
 
 pest:10952 a :BioticStressor,
         :CropStressor ;
@@ -2449,7 +2449,7 @@ pest:10952 a :BioticStressor,
         "chancre bactérien de la tomate"@fr,
         "Avvizzimento batterico del pomodoro"@it,
         "Clavibacter michiganensis pv. michiganensis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q21383092 .
+    :isDefinedByBiologicalTaxon wikidata:Q21383092 .
 
 pest:10956 a :BioticStressor,
         :CropStressor ;
@@ -2457,7 +2457,7 @@ pest:10956 a :BioticStressor,
         "dryoptéris"@fr,
         "Felce maschio"@it,
         "Dryopteris filix-mas"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q322994 .
+    :isDefinedByBiologicalTaxon wikidata:Q322994 .
 
 pest:10959 a :BioticStressor,
         :CropStressor ;
@@ -2465,7 +2465,7 @@ pest:10959 a :BioticStressor,
         "pseudococcus viburni"@fr,
         "Pseudococcus viburni"@it,
         "Pseudococcus viburni"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q14621706 .
+    :isDefinedByBiologicalTaxon wikidata:Q14621706 .
 
 pest:10965 a :BioticStressor,
         :CropStressor ;
@@ -2473,7 +2473,7 @@ pest:10965 a :BioticStressor,
         "feu bactérien"@fr,
         "Fuoco batterico"@it,
         "Erwinia amylovora"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q866091 .
+    :isDefinedByBiologicalTaxon wikidata:Q866091 .
 
 pest:10966 a :BioticStressor,
         :CropStressor ;
@@ -2481,14 +2481,14 @@ pest:10966 a :BioticStressor,
         "ronces"@fr,
         "Rovi"@it,
         "Rubus spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q602740 .
+    :isDefinedByBiologicalTaxon wikidata:Q602740 .
 
 pest:10968 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Lagerfäulen"@de,
         "maladies de conservation"@fr,
         "Deperimento di ortofrutticoli in deposito"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10970 a :BioticStressor,
         :CropStressor ;
@@ -2496,7 +2496,7 @@ pest:10970 a :BioticStressor,
         "altises du tabac"@fr,
         "Lasioderma"@it,
         "Lasioderma serricorne"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q133538 .
+    :isDefinedByBiologicalTaxon wikidata:Q133538 .
 
 pest:10972 a :BioticStressor,
         :CropStressor ;
@@ -2504,7 +2504,7 @@ pest:10972 a :BioticStressor,
         "renoncules"@fr,
         "Specie di ranuncoli"@it,
         "Ranunculus spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q146130 .
+    :isDefinedByBiologicalTaxon wikidata:Q146130 .
 
 pest:10974 a :BioticStressor,
         :CropStressor ;
@@ -2512,7 +2512,7 @@ pest:10974 a :BioticStressor,
         "liserons"@fr,
         "Convolvulaceae"@it,
         "Convolvulaceae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q145777 .
+    :isDefinedByBiologicalTaxon wikidata:Q145777 .
 
 pest:10975 a :BioticStressor,
         :CropStressor ;
@@ -2520,7 +2520,7 @@ pest:10975 a :BioticStressor,
         "chardons"@fr,
         "Specie di cardi"@it,
         "Cirsium spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1638558 .
+    :isDefinedByBiologicalTaxon wikidata:Q1638558 .
 
 pest:10976 a :BioticStressor,
         :CropStressor ;
@@ -2528,7 +2528,7 @@ pest:10976 a :BioticStressor,
         "véroniques"@fr,
         "Varietà di veronica"@it,
         "Veronica spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7216874 .
+    :isDefinedByBiologicalTaxon wikidata:Q7216874 .
 
 pest:10979 a :BioticStressor,
         :CropStressor ;
@@ -2536,7 +2536,7 @@ pest:10979 a :BioticStressor,
         "teigne du cacao sur tabac"@fr,
         "Tignola del cacao e del tabacco"@it,
         "Ephestia elutella"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q928458 .
+    :isDefinedByBiologicalTaxon wikidata:Q928458 .
 
 pest:10980 a :BioticStressor,
         :CropStressor ;
@@ -2544,7 +2544,7 @@ pest:10980 a :BioticStressor,
         "septoriose du persil"@fr,
         "Necrosi fogliare del prezzemolo"@it,
         "Septoria petroselini, Septoria apiicola"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10665919,
+    :isDefinedByBiologicalTaxon wikidata:Q10665919,
         wikidata:Q10666044 .
 
 pest:10981 a :BioticStressor,
@@ -2553,7 +2553,7 @@ pest:10981 a :BioticStressor,
         "mildiou des ronces"@fr,
         "Peronospora della mora"@it,
         "Peronospora sparsa"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7169462 .
+    :isDefinedByBiologicalTaxon wikidata:Q7169462 .
 
 pest:10982 a :BioticStressor,
         :CropStressor ;
@@ -2561,7 +2561,7 @@ pest:10982 a :BioticStressor,
         "rouille grillagée du poirier"@fr,
         "Ruggine del pero"@it,
         "Gymnosporangium fuscum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q54365385 .
+    :isDefinedByBiologicalTaxon wikidata:Q54365385 .
 
 pest:10983 a :BioticStressor,
         :CropStressor ;
@@ -2569,7 +2569,7 @@ pest:10983 a :BioticStressor,
         "maladie de la suie des pommes et des poires"@fr,
         "Macchie nere delle mele e delle pere"@it,
         "Gleodes pomigena"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7188488 .
+    :isDefinedByBiologicalTaxon wikidata:Q7188488 .
 
 pest:10984 a :BioticStressor,
         :CropStressor ;
@@ -2578,7 +2578,7 @@ pest:10984 a :BioticStressor,
         "septorioses foliaires (S. tritici ou S. nodorum)"@fr,
         "Septoriosi fogliare (S. tritici o S. nodorum)"@it,
         "Phaeosphaeria nodorum , Mycosphaerella graminicola (Anam. Septoria nodorum, Septoria tritici)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q103817219,
+    :isDefinedByBiologicalTaxon wikidata:Q103817219,
         wikidata:Q138622,
         wikidata:Q4314880,
         wikidata:Q84855498 .
@@ -2589,7 +2589,7 @@ pest:10985 a :BioticStressor,
         "flétrissement bactérien du poirier"@fr,
         "Batteriosi del pero"@it,
         "Pseudomonas syringae pv. syringae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q21399457 .
+    :isDefinedByBiologicalTaxon wikidata:Q21399457 .
 
 pest:10986 a :BioticStressor,
         :CropStressor ;
@@ -2597,7 +2597,7 @@ pest:10986 a :BioticStressor,
         "anthracnose du gazon"@fr,
         "Colletotrichum graminicola"@it,
         "Colletotrichum graminicola"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q80936789 .
+    :isDefinedByBiologicalTaxon wikidata:Q80936789 .
 
 pest:10988 a :BioticStressor,
         :CropStressor ;
@@ -2605,7 +2605,7 @@ pest:10988 a :BioticStressor,
         "taches de feuilles"@fr,
         "Elmintosporiosi"@it,
         "Drechslera spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5306823 .
+    :isDefinedByBiologicalTaxon wikidata:Q5306823 .
 
 pest:10990 a :BioticStressor,
         :CropStressor ;
@@ -2614,7 +2614,7 @@ pest:10990 a :BioticStressor,
         "Ophiosphaerella herpotricha"@fr,
         "Ophiosphaerella herpotricha"@it,
         "Ophiosphaerella herpotricha"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10610673 .
+    :isDefinedByBiologicalTaxon wikidata:Q10610673 .
 
 pest:10991 a :BioticStressor,
         :CropStressor ;
@@ -2622,7 +2622,7 @@ pest:10991 a :BioticStressor,
         "taches d'été"@fr,
         "Macchie estive"@it,
         "Magnaporthe poae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q6731294 .
+    :isDefinedByBiologicalTaxon wikidata:Q6731294 .
 
 pest:10992 a :BioticStressor,
         :CropStressor ;
@@ -2630,7 +2630,7 @@ pest:10992 a :BioticStressor,
         "Gaeumannomyces graminis var. avenae (gazon)"@fr,
         "Mal del piede dei cereali var. avena (tappeto erboso)"@it,
         "Gaeumannomyces graminis var. avenae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5516728 .
+    :isDefinedByBiologicalTaxon wikidata:Q5516728 .
 
 pest:10993 a :BioticStressor,
         :CropStressor ;
@@ -2638,7 +2638,7 @@ pest:10993 a :BioticStressor,
         "bostryche des graines"@fr,
         "Punteruolo dei cereali"@it,
         "Rhizoperta dominica"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1312676 .
+    :isDefinedByBiologicalTaxon wikidata:Q1312676 .
 
 pest:10995 a :BioticStressor,
         :CropStressor ;
@@ -2647,7 +2647,7 @@ pest:10995 a :BioticStressor,
         "moisissure des neiges"@fr,
         "Muffa delle nevi "@it,
         "Microdochium majus (auf Weizen), Microdochium nivale (auf Roggen, Triticale, Dinkel, Gerste, Zier- und Sportrasen), Typhula incarnata, Typhula ishikariensis (auf Zier- und Sportrasen)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q104978214,
+    :isDefinedByBiologicalTaxon wikidata:Q104978214,
         wikidata:Q10584312,
         wikidata:Q7861358,
         wikidata:Q7861360 .
@@ -2658,7 +2658,7 @@ pest:10998 a :BioticStressor,
         "dessèchement du feuillage des fraises"@fr,
         "Septoriosi e marciume della fragola"@it,
         "Gnomonia fructicola"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5574380 .
+    :isDefinedByBiologicalTaxon wikidata:Q5574380 .
 
 pest:11001 a :BioticStressor,
         :CropStressor ;
@@ -2666,7 +2666,7 @@ pest:11001 a :BioticStressor,
         "puceron à taches vertes"@fr,
         "Afide a macchie verdi della patata"@it,
         "Aulacorthum solani"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2871755 .
+    :isDefinedByBiologicalTaxon wikidata:Q2871755 .
 
 pest:11002 a :BioticStressor,
         :CropStressor ;
@@ -2674,7 +2674,7 @@ pest:11002 a :BioticStressor,
         "rouille de l'asperge"@fr,
         "Ruggine dell'asparago"@it,
         "Puccinia asparagi"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7258185 .
+    :isDefinedByBiologicalTaxon wikidata:Q7258185 .
 
 pest:11003 a :BioticStressor,
         :CropStressor ;
@@ -2682,7 +2682,7 @@ pest:11003 a :BioticStressor,
         "vanesse de l'artichaut"@fr,
         "Vanessa del cardo"@it,
         "Vanessa cardui"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q158603 .
+    :isDefinedByBiologicalTaxon wikidata:Q158603 .
 
 pest:11004 a :BioticStressor,
         :CropStressor ;
@@ -2691,7 +2691,7 @@ pest:11004 a :BioticStressor,
         "Pythium spp."@fr,
         "Pythium spp."@it,
         "Pythium spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2699011 .
+    :isDefinedByBiologicalTaxon wikidata:Q2699011 .
 
 pest:11006 a :BioticStressor,
         :CropStressor ;
@@ -2699,7 +2699,7 @@ pest:11006 a :BioticStressor,
         "colletotrichum"@fr,
         "Antracnosi"@it,
         "Colletotrichum acutatum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5147068 .
+    :isDefinedByBiologicalTaxon wikidata:Q5147068 .
 
 pest:11007 a :BioticStressor,
         :CropStressor ;
@@ -2707,7 +2707,7 @@ pest:11007 a :BioticStressor,
         "tenthrède de la rave"@fr,
         "Tentredine delle crocifere"@it,
         "Athalia rosae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1680271 .
+    :isDefinedByBiologicalTaxon wikidata:Q1680271 .
 
 pest:11008 a :BioticStressor,
         :CropStressor ;
@@ -2715,7 +2715,7 @@ pest:11008 a :BioticStressor,
         "gros charançon de la tige du colza"@fr,
         "Punteruolo degli steli della colza"@it,
         "Ceutorhynchus napi"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1548922 .
+    :isDefinedByBiologicalTaxon wikidata:Q1548922 .
 
 pest:11011 a :BioticStressor,
         :CropStressor ;
@@ -2723,7 +2723,7 @@ pest:11011 a :BioticStressor,
         "Fusarium spp."@fr,
         "Fusarium spp."@it,
         "Fusarium spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q131672 .
+    :isDefinedByBiologicalTaxon wikidata:Q131672 .
 
 pest:11013 a :BioticStressor,
         :CropStressor ;
@@ -2731,7 +2731,7 @@ pest:11013 a :BioticStressor,
         "mildiou de la pomme de terre"@fr,
         "Peronospora della patata"@it,
         "Phytophthora infestans"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q149072 .
+    :isDefinedByBiologicalTaxon wikidata:Q149072 .
 
 pest:11014 a :BioticStressor,
         :CropStressor ;
@@ -2739,7 +2739,7 @@ pest:11014 a :BioticStressor,
         "maladies de stockage"@fr,
         "Malattie da stoccaggio"@it,
         "Venturia spp. und Lagerfäulen / et maladies de conservation / e deperimento di ortofrutticoli in deposito"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:11015 a :BioticStressor,
         :CropStressor ;
@@ -2747,7 +2747,7 @@ pest:11015 a :BioticStressor,
         "sésie du pommier"@fr,
         "Sesia del melo"@it,
         "Synanthedon myopaeformis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q618307 .
+    :isDefinedByBiologicalTaxon wikidata:Q618307 .
 
 pest:11016 a :BioticStressor,
         :CropStressor ;
@@ -2755,7 +2755,7 @@ pest:11016 a :BioticStressor,
         "Botrytis allii"@fr,
         "Marciume del colletto di cipolla"@it,
         "Botrytis allii"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10433881 .
+    :isDefinedByBiologicalTaxon wikidata:Q10433881 .
 
 pest:11017 a :BioticStressor,
         :CropStressor ;
@@ -2763,7 +2763,7 @@ pest:11017 a :BioticStressor,
         "rouille des framboisiers"@fr,
         "Ruggine del lampone"@it,
         "Phragmidium rubi-idaei"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7188039 .
+    :isDefinedByBiologicalTaxon wikidata:Q7188039 .
 
 pest:11022 a :BioticStressor,
         :CropStressor ;
@@ -2771,7 +2771,7 @@ pest:11022 a :BioticStressor,
         "tordeuse du pois"@fr,
         "Tortrice del pisello"@it,
         "Cydia nigricana"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q848100 .
+    :isDefinedByBiologicalTaxon wikidata:Q848100 .
 
 pest:11023 a :BioticStressor,
         :CropStressor ;
@@ -2779,7 +2779,7 @@ pest:11023 a :BioticStressor,
         "hanneton horticole"@fr,
         "Carruga degli orti"@it,
         "Phyllopertha horticola"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q378023 .
+    :isDefinedByBiologicalTaxon wikidata:Q378023 .
 
 pest:11024 a :BioticStressor,
         :CropStressor ;
@@ -2787,7 +2787,7 @@ pest:11024 a :BioticStressor,
         "maladies liées au sol"@fr,
         "Malattie legate al suolo"@it,
         "Phoma, Plasmodiophora, Phytophthora"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2066891,
+    :isDefinedByBiologicalTaxon wikidata:Q2066891,
         wikidata:Q311294,
         wikidata:Q724130 .
 
@@ -2797,7 +2797,7 @@ pest:11027 a :BioticStressor,
         "Puccinia spp."@fr,
         "Ruggine fogliare (Puccinia spp.)"@it,
         "Puccinia spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q305162 .
+    :isDefinedByBiologicalTaxon wikidata:Q305162 .
 
 pest:11029 a :BioticStressor,
         :CropStressor ;
@@ -2805,7 +2805,7 @@ pest:11029 a :BioticStressor,
         "helminthosporioses"@fr,
         "Elmintosporiosi"@it,
         "Bipolaris spp., Curvularia spp., Drechslera spp., Exserohilum spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10493219,
+    :isDefinedByBiologicalTaxon wikidata:Q10493219,
         wikidata:Q4915492,
         wikidata:Q5196111,
         wikidata:Q5306823 .
@@ -2816,7 +2816,7 @@ pest:11034 a :BioticStressor,
         "rhynchosporiose du gazon"@fr,
         "Rincosporiosi del tappeto erboso"@it,
         "Rhynchosporium orthosporum, Rhynchosporium secalis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10654433,
+    :isDefinedByBiologicalTaxon wikidata:Q10654433,
         wikidata:Q7321729 .
 
 pest:11037 a :BioticStressor,
@@ -2825,7 +2825,7 @@ pest:11037 a :BioticStressor,
         "botrytis des vicia"@fr,
         "Maculatura arancione"@it,
         "Botrytis fabae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10433893 .
+    :isDefinedByBiologicalTaxon wikidata:Q10433893 .
 
 pest:11047 a :BioticStressor,
         :CropStressor ;
@@ -2833,7 +2833,7 @@ pest:11047 a :BioticStressor,
         "septoriose de l'épi (S. nodorum)"@fr,
         "Septoriosi della spiga (S. nodorum)"@it,
         "Phaeosphaeria nodorum (Anam. Septoria nodorum)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q4314880,
+    :isDefinedByBiologicalTaxon wikidata:Q4314880,
         wikidata:Q84855498 .
 
 pest:11048 a :BioticStressor,
@@ -2842,7 +2842,7 @@ pest:11048 a :BioticStressor,
         "tavelure tardive des fruits à pépins"@fr,
         "Ticchiolatura della frutta a granelli"@it,
         "Venturia inaequalis, V. pirina"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10675708,
+    :isDefinedByBiologicalTaxon wikidata:Q10675708,
         wikidata:Q84312977 .
 
 pest:11060 a :BioticStressor,
@@ -2851,7 +2851,7 @@ pest:11060 a :BioticStressor,
         "cladosporiose de l'épinard"@fr,
         "Ticchiolatura dello spinacio"@it,
         "Cladosporium variabile"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q80819881 .
+    :isDefinedByBiologicalTaxon wikidata:Q80819881 .
 
 pest:11062 a :BioticStressor,
         :CropStressor ;
@@ -2859,7 +2859,7 @@ pest:11062 a :BioticStressor,
         "espèces de bromes"@fr,
         "Specie di bromo"@it,
         "Bromus sp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q147621 .
+    :isDefinedByBiologicalTaxon wikidata:Q147621 .
 
 pest:11063 a :BioticStressor,
         :CropStressor ;
@@ -2867,7 +2867,7 @@ pest:11063 a :BioticStressor,
         "rouille blanche"@fr,
         "Ruggine bianca"@it,
         "Albugo candida"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q625190 .
+    :isDefinedByBiologicalTaxon wikidata:Q625190 .
 
 pest:11064 a :BioticStressor,
         :CropStressor ;
@@ -2875,7 +2875,7 @@ pest:11064 a :BioticStressor,
         "Colletotrichum acutatum"@fr,
         "Antracnosi dei piccoli frutti"@it,
         "Colletotrichum acutatum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5147068 .
+    :isDefinedByBiologicalTaxon wikidata:Q5147068 .
 
 pest:11077 a :BioticStressor,
         :CropStressor ;
@@ -2883,7 +2883,7 @@ pest:11077 a :BioticStressor,
         "sésie tipuliforme"@fr,
         "Sesia del ribes"@it,
         "Synanthedon tipuliformis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q513255 .
+    :isDefinedByBiologicalTaxon wikidata:Q513255 .
 
 pest:11087 a :BioticStressor,
         :CropStressor ;
@@ -2891,7 +2891,7 @@ pest:11087 a :BioticStressor,
         "oïdium des betteraves"@fr,
         "Oidio delle barbabietole"@it,
         "Erysiphe betae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1453267 .
+    :isDefinedByBiologicalTaxon wikidata:Q1453267 .
 
 pest:11088 a :BioticStressor,
         :CropStressor ;
@@ -2899,7 +2899,7 @@ pest:11088 a :BioticStressor,
         "oïdium des arbres fruitiers à noyau"@fr,
         "Oidio della frutta a nocciolo"@it,
         "Podosphaera pannosa, P. tridactyla"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1281116,
+    :isDefinedByBiologicalTaxon wikidata:Q1281116,
         wikidata:Q7207073 .
 
 pest:11089 a :BioticStressor,
@@ -2908,7 +2908,7 @@ pest:11089 a :BioticStressor,
         "oïdium de la tomate"@fr,
         "Oidio del pomodoro"@it,
         "Oidium neolycopersici, Leveillula taurica"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10608057,
+    :isDefinedByBiologicalTaxon wikidata:Q10608057,
         wikidata:Q6534980 .
 
 pest:11090 a :BioticStressor,
@@ -2917,7 +2917,7 @@ pest:11090 a :BioticStressor,
         "oïdium des astéracées"@fr,
         "Oidio delle Asteracee"@it,
         "Erysiphe cichoracearum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q48703112 .
+    :isDefinedByBiologicalTaxon wikidata:Q48703112 .
 
 pest:11091 a :BioticStressor,
         :CropStressor ;
@@ -2925,7 +2925,7 @@ pest:11091 a :BioticStressor,
         "oïdium des myrtilles"@fr,
         "Oidio dei mirtilli"@it,
         "Podosphaera myrtillina"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10635271 .
+    :isDefinedByBiologicalTaxon wikidata:Q10635271 .
 
 pest:11093 a :BioticStressor,
         :CropStressor ;
@@ -2933,7 +2933,7 @@ pest:11093 a :BioticStressor,
         "mildiou du tournesol"@fr,
         "Peronospora del girasole"@it,
         "Plasmopara halstedii"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3906344 .
+    :isDefinedByBiologicalTaxon wikidata:Q3906344 .
 
 pest:11094 a :BioticStressor,
         :CropStressor ;
@@ -2941,7 +2941,7 @@ pest:11094 a :BioticStressor,
         "mildiou de l'épinard"@fr,
         "Peronospora dello spinacio"@it,
         "Peronospora farinosa f.sp. spinaciae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q131497743 .
+    :isDefinedByBiologicalTaxon wikidata:Q131497743 .
 
 pest:11095 a :BioticStressor,
         :CropStressor ;
@@ -2949,7 +2949,7 @@ pest:11095 a :BioticStressor,
         "pourriture des racines"@fr,
         "Mal del piede"@it,
         "Phytophthora spp., Pythium spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2699011 .
+    :isDefinedByBiologicalTaxon wikidata:Q2699011 .
 
 pest:11096 a :BioticStressor,
         :CropStressor ;
@@ -2957,14 +2957,14 @@ pest:11096 a :BioticStressor,
         "rhizoctone de la laitue"@fr,
         "Rizottonia della lattuga"@it,
         "Rhizoctonia solani"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q30906964 .
+    :isDefinedByBiologicalTaxon wikidata:Q30906964 .
 
 pest:11103 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Samen- und bodenbürtige Krankheiten"@de,
         "maladies du sol et transmises par les semences"@fr,
         "Malattie trasmesse dal suolo e dalle sementi"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:11111 a :BioticStressor,
         :CropStressor ;
@@ -2973,7 +2973,7 @@ pest:11111 a :BioticStressor,
         "cladosporiose des cucurbitacées"@fr,
         "Cladosporiosi delle cucurbitacee"@it,
         "Cladosporium cucumerinum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5124960 .
+    :isDefinedByBiologicalTaxon wikidata:Q5124960 .
 
 pest:11116 a :BioticStressor,
         :CropStressor ;
@@ -2981,7 +2981,7 @@ pest:11116 a :BioticStressor,
         "phomopsis du tournesol"@fr,
         "Phomopsis del girasole"@it,
         "Diaporthe helianthi (Anam. Phomopsis helianthi)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q108195922,
+    :isDefinedByBiologicalTaxon wikidata:Q108195922,
         wikidata:Q5271812 .
 
 pest:11120 a :BioticStressor,
@@ -2991,7 +2991,7 @@ pest:11120 a :BioticStressor,
         "Pythium ultimum"@fr,
         "Pythium ultimum"@it,
         "Pythium ultimum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7263907 .
+    :isDefinedByBiologicalTaxon wikidata:Q7263907 .
 
 pest:11124 a :BioticStressor,
         :CropStressor ;
@@ -2999,7 +2999,7 @@ pest:11124 a :BioticStressor,
         "flétrissement de l'ombelle"@fr,
         "Avvizzimento dei corimbi del sambuco"@it,
         "Phoma sambuci-nigrae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10432033 .
+    :isDefinedByBiologicalTaxon wikidata:Q10432033 .
 
 pest:11125 a :BioticStressor,
         :CropStressor ;
@@ -3007,7 +3007,7 @@ pest:11125 a :BioticStressor,
         "maladie des baies"@fr,
         "Antracnosi dei piccoli frutti"@it,
         "Colletotrichum acutatum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5147068 .
+    :isDefinedByBiologicalTaxon wikidata:Q5147068 .
 
 pest:11127 a :BioticStressor,
         :CropStressor ;
@@ -3016,7 +3016,7 @@ pest:11127 a :BioticStressor,
         "colchique d'automne"@fr,
         "Colchico d'autunno"@it,
         "Colchicum autumnale"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q152553 .
+    :isDefinedByBiologicalTaxon wikidata:Q152553 .
 
 pest:11129 a :BioticStressor,
         :CropStressor ;
@@ -3024,14 +3024,14 @@ pest:11129 a :BioticStressor,
         "mineuse du chataignier"@fr,
         "Minatrice dell'ippocastano"@it,
         "Cameraria ohridella"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1071848 .
+    :isDefinedByBiologicalTaxon wikidata:Q1071848 .
 
 pest:11131 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Breitblättrige Unkräuter"@de,
         "mauvaises herbes à feuilles larges"@fr,
         "Malerbe a foglia larga"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:11138 a :BioticStressor,
         :CropStressor ;
@@ -3039,7 +3039,7 @@ pest:11138 a :BioticStressor,
         "grillures (PLS+RCC)"@fr,
         "Bruciature fogliari (PLS + RCC)"@it,
         "PLS=physiological leaf spots, RCC=Ramularia collo-cygni"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10649257 .
+    :isDefinedByBiologicalTaxon wikidata:Q10649257 .
 
 pest:11144 a :BioticStressor,
         :CropStressor ;
@@ -3048,7 +3048,7 @@ pest:11144 a :BioticStressor,
         "coquette"@fr,
         "rodilegno giallo"@it,
         "Zeuzera pyrina"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q598541 .
+    :isDefinedByBiologicalTaxon wikidata:Q598541 .
 
 pest:11157 a :BioticStressor,
         :CropStressor ;
@@ -3056,7 +3056,7 @@ pest:11157 a :BioticStressor,
         "séneçons toxiques (Senecio spp.)"@fr,
         "Senecioni tossici (Senecio spp.) "@it,
         "Senecio spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q209596 .
+    :isDefinedByBiologicalTaxon wikidata:Q209596 .
 
 pest:11158 a :BioticStressor,
         :CropStressor ;
@@ -3065,7 +3065,7 @@ pest:11158 a :BioticStressor,
         "Scaphoideus titanus"@fr,
         "Scafoideo"@it,
         "Scaphoideus titanus"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2972256 .
+    :isDefinedByBiologicalTaxon wikidata:Q2972256 .
 
 pest:11159 a :BioticStressor,
         :CropStressor ;
@@ -3073,7 +3073,7 @@ pest:11159 a :BioticStressor,
         "Pucerons vecteurs de virus"@fr,
         "Afidi vettori di virus"@it,
         "Aphididae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1354085 .
+    :isDefinedByBiologicalTaxon wikidata:Q1354085 .
 
 pest:11160 a :BioticStressor,
         :CropStressor ;
@@ -3081,7 +3081,7 @@ pest:11160 a :BioticStressor,
         "ambroisie à feuilles d'armoise (Ambrosia artemisiifolia)"@fr,
         "Ambrosia "@it,
         "Ambrosia artemisiifolia"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q682164 .
+    :isDefinedByBiologicalTaxon wikidata:Q682164 .
 
 pest:11168 a :BioticStressor,
         :CropStressor ;
@@ -3090,7 +3090,7 @@ pest:11168 a :BioticStressor,
         "teigne des aliments (pyrale du cacao/du tabac)"@fr,
         "tignola del tabacco/del cacao"@it,
         "Ephestia elutella"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q928458 .
+    :isDefinedByBiologicalTaxon wikidata:Q928458 .
 
 pest:11169 a :BioticStressor,
         :CropStressor ;
@@ -3099,7 +3099,7 @@ pest:11169 a :BioticStressor,
         "vrillette du pain"@fr,
         "anobio del pane"@it,
         "Stegobium paniceum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q11962 .
+    :isDefinedByBiologicalTaxon wikidata:Q11962 .
 
 pest:11171 a :BioticStressor,
         :CropStressor ;
@@ -3108,7 +3108,7 @@ pest:11171 a :BioticStressor,
         "cucujide des grains oléagineux"@fr,
         "silvano dei mercati "@it,
         "Oryzaephilus mercator"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2410490 .
+    :isDefinedByBiologicalTaxon wikidata:Q2410490 .
 
 pest:11176 a :BioticStressor,
         :CropStressor ;
@@ -3117,7 +3117,7 @@ pest:11176 a :BioticStressor,
         "Phoma"@fr,
         "Phoma"@it,
         "Phoma sp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2066891 .
+    :isDefinedByBiologicalTaxon wikidata:Q2066891 .
 
 pest:11177 a :BioticStressor,
         :CropStressor ;
@@ -3126,7 +3126,7 @@ pest:11177 a :BioticStressor,
         "Phytophthora cryptogea"@fr,
         "Phytophthora cryptogea"@it,
         "Phytophthora cryptogea"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3061909 .
+    :isDefinedByBiologicalTaxon wikidata:Q3061909 .
 
 pest:11178 a :BioticStressor,
         :CropStressor ;
@@ -3135,7 +3135,7 @@ pest:11178 a :BioticStressor,
         "helminthosporiose du riz"@fr,
         "Elmintosporiosi del riso"@it,
         "Helminthosporium oryzae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q105055708 .
+    :isDefinedByBiologicalTaxon wikidata:Q105055708 .
 
 pest:11183 a :BioticStressor,
         :CropStressor ;
@@ -3144,7 +3144,7 @@ pest:11183 a :BioticStressor,
         "charançon du maïs"@fr,
         "punteruolo del mais"@it,
         "Sitophilus zeamais"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3272137 .
+    :isDefinedByBiologicalTaxon wikidata:Q3272137 .
 
 pest:11185 a :BioticStressor,
         :CropStressor ;
@@ -3152,7 +3152,7 @@ pest:11185 a :BioticStressor,
         "piétin-verse des céréales"@fr,
         "Mal del piede dei cereali"@it,
         "Oculimacula yallundae (Anam. Pseudocercosporella herpotrichoides)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7684552,
+    :isDefinedByBiologicalTaxon wikidata:Q7684552,
         wikidata:Q80822823 .
 
 pest:11186 a :BioticStressor,
@@ -3162,7 +3162,7 @@ pest:11186 a :BioticStressor,
         "oïdium des crucifères"@fr,
         "Oidio delle crocifere"@it,
         "Erysiphe cruciferarum (=communis)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5396383 .
+    :isDefinedByBiologicalTaxon wikidata:Q5396383 .
 
 pest:11187 a :BioticStressor,
         :CropStressor ;
@@ -3170,7 +3170,7 @@ pest:11187 a :BioticStressor,
         "pyriculariose du riz"@fr,
         "Brusone del riso"@it,
         "Magnaporthe grisea (Anam. Pyricularia oryzae)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2697099,
+    :isDefinedByBiologicalTaxon wikidata:Q2697099,
         wikidata:Q80973031 .
 
 pest:11188 a :BioticStressor,
@@ -3180,7 +3180,7 @@ pest:11188 a :BioticStressor,
         "Botryosphaeria obtusa (Blackr ot)"@fr,
         "Botryosphaeria obtusa (Black rot)"@it,
         "Botryosphaeria obtusa"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q4948840 .
+    :isDefinedByBiologicalTaxon wikidata:Q4948840 .
 
 pest:11190 a :BioticStressor,
         :CropStressor ;
@@ -3189,14 +3189,14 @@ pest:11190 a :BioticStressor,
         "oïdium de la carotte"@fr,
         "Oidio delle carote"@it,
         "Erysiphe heraclei"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5396389 .
+    :isDefinedByBiologicalTaxon wikidata:Q5396389 .
 
 pest:11191 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Quarantäneschädlinge"@de,
         "Ravageurs de quarantaine"@fr,
         "Organismi animali di quarantena"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:11192 a :BioticStressor,
         :CropStressor ;
@@ -3205,7 +3205,7 @@ pest:11192 a :BioticStressor,
         "panic pied-de-coq"@fr,
         "panico selvatico"@it,
         "Echinochloa crus-galli"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q163527 .
+    :isDefinedByBiologicalTaxon wikidata:Q163527 .
 
 pest:11193 a :BioticStressor,
         :CropStressor ;
@@ -3213,7 +3213,7 @@ pest:11193 a :BioticStressor,
         "Pseudomonas"@fr,
         "Pseudomonas"@it,
         "Pseudomonas sp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q131143 .
+    :isDefinedByBiologicalTaxon wikidata:Q131143 .
 
 pest:11194 a :BioticStressor,
         :CropStressor ;
@@ -3221,7 +3221,7 @@ pest:11194 a :BioticStressor,
         "pourriture molle "@fr,
         "Marciume molle"@it,
         "Erwinia carotovora subsp. carotovora  (Jones) Berey et al. "@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q63123831 .
+    :isDefinedByBiologicalTaxon wikidata:Q63123831 .
 
 pest:11196 a :BioticStressor,
         :CropStressor ;
@@ -3229,7 +3229,7 @@ pest:11196 a :BioticStressor,
         "Fonte des semis des crucifères"@fr,
         "Phoma lingam"@it,
         "Plenodomus lingam (syn. Phoma lingam)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q21398152 .
+    :isDefinedByBiologicalTaxon wikidata:Q21398152 .
 
 pest:11197 a :BioticStressor,
         :CropStressor ;
@@ -3237,14 +3237,14 @@ pest:11197 a :BioticStressor,
         "phytophthora de l'oignon"@fr,
         "Peronospora delle cipolle"@it,
         "Phytophthora porri"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q87273622 .
+    :isDefinedByBiologicalTaxon wikidata:Q87273622 .
 
 pest:11203 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Vogelrepellent (Krähen)"@de,
         "répulsifs pour oiseaux (corneilles)"@fr,
         "Repellente per uccelli (corvi)"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q43365 .
+    :isDefinedByBiologicalTaxon wikidata:Q43365 .
 
 pest:11204 a :BioticStressor,
         :CropStressor ;
@@ -3252,7 +3252,7 @@ pest:11204 a :BioticStressor,
         "mildiou des crucifères"@fr,
         "Peronospora delle crucifere"@it,
         "Peronospora parasitica"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q105060374 .
+    :isDefinedByBiologicalTaxon wikidata:Q105060374 .
 
 pest:11205 a :BioticStressor,
         :CropStressor ;
@@ -3261,7 +3261,7 @@ pest:11205 a :BioticStressor,
         "Myriapode (Mille-pattes)"@fr,
         "Miriapodi (Millepiedi)"@it,
         "Myriapoda"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q25823 .
+    :isDefinedByBiologicalTaxon wikidata:Q25823 .
 
 pest:11206 a :BioticStressor,
         :CropStressor ;
@@ -3270,7 +3270,7 @@ pest:11206 a :BioticStressor,
         "Rouilles des ronces"@fr,
         "Ruggini delle more"@it,
         "Phragmidium violaceum, Kuehneola uredinis    "@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q6441858,
+    :isDefinedByBiologicalTaxon wikidata:Q6441858,
         wikidata:Q7188040 .
 
 pest:11208 a :BioticStressor,
@@ -3279,7 +3279,7 @@ pest:11208 a :BioticStressor,
         "moisissure noire des feuilles du poireau"@fr,
         "Pleospora herbarum"@it,
         "Pleospora herbarum (Stemphylium botryosum)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7204607 .
+    :isDefinedByBiologicalTaxon wikidata:Q7204607 .
 
 pest:11209 a :BioticStressor,
         :CropStressor ;
@@ -3287,7 +3287,7 @@ pest:11209 a :BioticStressor,
         "Oïdium des solanacées."@fr,
         "Oidio delle solanceae"@it,
         "Leveillula taurica"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q6534980 .
+    :isDefinedByBiologicalTaxon wikidata:Q6534980 .
 
 pest:11210 a :BioticStressor,
         :CropStressor ;
@@ -3295,7 +3295,7 @@ pest:11210 a :BioticStressor,
         "oïdiums des plantes ornementales"@fr,
         "Oidio (diverse specie) su piante ornamentali"@it,
         "Erysiphaceae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1755354 .
+    :isDefinedByBiologicalTaxon wikidata:Q1755354 .
 
 pest:11211 a :BioticStressor,
         :CropStressor ;
@@ -3304,7 +3304,7 @@ pest:11211 a :BioticStressor,
         "Puceron de la spirée"@fr,
         "Afide verde degli agrumi"@it,
         "Aphis spiraecola"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10415221 .
+    :isDefinedByBiologicalTaxon wikidata:Q10415221 .
 
 pest:11212 a :BioticStressor,
         :CropStressor ;
@@ -3313,7 +3313,7 @@ pest:11212 a :BioticStressor,
         "Puceron vert du pommier"@fr,
         "Afide verde del melo"@it,
         "Aphis pomi"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2382963 .
+    :isDefinedByBiologicalTaxon wikidata:Q2382963 .
 
 pest:11214 a :BioticStressor,
         :CropStressor ;
@@ -3322,7 +3322,7 @@ pest:11214 a :BioticStressor,
         "oïdium du tabac"@fr,
         "Oidio del tabacco  "@it,
         "Golovinomyces cichoracearum (Anam. Oidium tabaci)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q108117421,
+    :isDefinedByBiologicalTaxon wikidata:Q108117421,
         wikidata:Q2703884 .
 
 pest:11215 a :BioticStressor,
@@ -3331,7 +3331,7 @@ pest:11215 a :BioticStressor,
         "mildiou du pois"@fr,
         "Peronospora del pisello"@it,
         "Peronospora viciae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7169466 .
+    :isDefinedByBiologicalTaxon wikidata:Q7169466 .
 
 pest:11216 a :BioticStressor,
         :CropStressor ;
@@ -3339,7 +3339,7 @@ pest:11216 a :BioticStressor,
         "mildiou du haricot"@fr,
         "Peronospora del fagiolo"@it,
         "Peronospora viciae, Phytophtora phaseoli"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7169466,
+    :isDefinedByBiologicalTaxon wikidata:Q7169466,
         wikidata:Q7189827 .
 
 pest:11217 a :BioticStressor,
@@ -3348,7 +3348,7 @@ pest:11217 a :BioticStressor,
         "mildiou des ombellifères"@fr,
         "Peronospora delle ombrellifere "@it,
         "Plasmopara crustosa"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q107461274 .
+    :isDefinedByBiologicalTaxon wikidata:Q107461274 .
 
 pest:11218 a :BioticStressor,
         :CropStressor ;
@@ -3356,7 +3356,7 @@ pest:11218 a :BioticStressor,
         "mildiou de la mache"@fr,
         "Peronospora della valerianella"@it,
         "Peronospora valerianellae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7169465 .
+    :isDefinedByBiologicalTaxon wikidata:Q7169465 .
 
 pest:11220 a :BioticStressor,
         :CropStressor ;
@@ -3364,7 +3364,7 @@ pest:11220 a :BioticStressor,
         "phytophthora du poireau"@fr,
         "Peronospora del porro"@it,
         "Phytophthora porri"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q87273622 .
+    :isDefinedByBiologicalTaxon wikidata:Q87273622 .
 
 pest:11221 a :BioticStressor,
         :CropStressor ;
@@ -3372,7 +3372,7 @@ pest:11221 a :BioticStressor,
         "mildious des fines herbes"@fr,
         "Peronospora (diverse specie)  su erbette da cucina"@it,
         "Peronosporales"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q621829 .
+    :isDefinedByBiologicalTaxon wikidata:Q621829 .
 
 pest:11222 a :BioticStressor,
         :CropStressor ;
@@ -3380,7 +3380,7 @@ pest:11222 a :BioticStressor,
         "mildious des plantes ornementales"@fr,
         "Peronospora (diverse specie)  su piante ornamentali"@it,
         "Peronosporales"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q621829 .
+    :isDefinedByBiologicalTaxon wikidata:Q621829 .
 
 pest:11223 a :BioticStressor,
         :CropStressor ;
@@ -3388,7 +3388,7 @@ pest:11223 a :BioticStressor,
         "oïdiums des fines herbes"@fr,
         "Oidio (diverse specie) su erbette da cucina"@it,
         "Erysiphaceae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1755354 .
+    :isDefinedByBiologicalTaxon wikidata:Q1755354 .
 
 pest:11225 a :BioticStressor,
         :CropStressor ;
@@ -3396,7 +3396,7 @@ pest:11225 a :BioticStressor,
         "oïdium de l'aubergine"@fr,
         "Oidio della melanzana"@it,
         "Leveillula taurica"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q6534980 .
+    :isDefinedByBiologicalTaxon wikidata:Q6534980 .
 
 pest:11226 a :BioticStressor,
         :CropStressor ;
@@ -3405,7 +3405,7 @@ pest:11226 a :BioticStressor,
         "Mouche de l'olive"@fr,
         "Mosca dell'olivo"@it,
         "Bactrocera oleae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q2207329 .
+    :isDefinedByBiologicalTaxon wikidata:Q2207329 .
 
 pest:11229 a :BioticStressor,
         :CropStressor ;
@@ -3413,7 +3413,7 @@ pest:11229 a :BioticStressor,
         "oïdium des graminées"@fr,
         "Oidio delle graminacee"@it,
         "Blumeria graminis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q337796 .
+    :isDefinedByBiologicalTaxon wikidata:Q337796 .
 
 pest:11233 a :BioticStressor,
         :CropStressor ;
@@ -3422,14 +3422,14 @@ pest:11233 a :BioticStressor,
         "Ver de la capsule"@fr,
         "Elotide del cotone"@it,
         "Helicoverpa armigera (syn. Chloridea armigera, syn. Chloridea obsoleta, syn. Heliothis armigera, syn. Heliothis obsoleta)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q811652 .
+    :isDefinedByBiologicalTaxon wikidata:Q811652 .
 
 pest:11238 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Kontrolle der Durchwuchskartoffel in Nachfolgekulturen"@de,
         "contrôle des repousses de pommes de terre dans les cultures suivantes"@fr,
         "Controllo dei ricacci di patate nelle colture successive"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10998 .
+    :isDefinedByBiologicalTaxon wikidata:Q10998 .
 
 pest:11239 a :BioticStressor,
         :CropStressor ;
@@ -3437,7 +3437,7 @@ pest:11239 a :BioticStressor,
         "Renouée du Japon"@fr,
         "Poligono del Giappone"@it,
         "Fallopia japonica"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q899672 .
+    :isDefinedByBiologicalTaxon wikidata:Q899672 .
 
 pest:11240 a :BioticStressor,
         :CropStressor ;
@@ -3446,7 +3446,7 @@ pest:11240 a :BioticStressor,
         "pyrale du buis"@fr,
         "Piralide del bosso"@it,
         "Glyphodes perspectalis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q21267394 .
+    :isDefinedByBiologicalTaxon wikidata:Q21267394 .
 
 pest:11242 a :BioticStressor,
         :CropStressor ;
@@ -3455,7 +3455,7 @@ pest:11242 a :BioticStressor,
         "processionnaire du chêne"@fr,
         "Processionaria della quercia"@it,
         "Thaumetopoea processionea"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q261008 .
+    :isDefinedByBiologicalTaxon wikidata:Q261008 .
 
 pest:11243 a :BioticStressor,
         :CropStressor ;
@@ -3464,7 +3464,7 @@ pest:11243 a :BioticStressor,
         "Grand charançon du pin"@fr,
         "Ilobio dell'abete"@it,
         "Hylobius abietis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q176864 .
+    :isDefinedByBiologicalTaxon wikidata:Q176864 .
 
 pest:11245 a :BioticStressor,
         :CropStressor ;
@@ -3473,7 +3473,7 @@ pest:11245 a :BioticStressor,
         "Tigne de la tomate"@fr,
         "Tuta absoluta"@it,
         "Tuta absoluta"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q46858 .
+    :isDefinedByBiologicalTaxon wikidata:Q46858 .
 
 pest:11247 a :BioticStressor,
         :CropStressor ;
@@ -3482,7 +3482,7 @@ pest:11247 a :BioticStressor,
         "ériophyde des framboises"@fr,
         "eriofide del lampone"@it,
         "Phyllocoptes gracilis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10629909 .
+    :isDefinedByBiologicalTaxon wikidata:Q10629909 .
 
 pest:11251 a :BioticStressor,
         :CropStressor ;
@@ -3490,7 +3490,7 @@ pest:11251 a :BioticStressor,
         "Chrysomyxa spp., Cronartium spp., Melampsora spp., Phragmidium spp., Puccinia spp., Uromyces spp."@en,
         "rouilles des plantes ornementales "@fr,
         "Ruggini su piante ornamentali"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q305162,
+    :isDefinedByBiologicalTaxon wikidata:Q305162,
         wikidata:Q369337,
         wikidata:Q5114870,
         wikidata:Q5187693,
@@ -3503,7 +3503,7 @@ pest:11252 a :BioticStressor,
         "oïdiums sur mâche"@fr,
         "Oidio (diverse specie) su valerianella "@it,
         "Erysiphe communis (syn. poliphaga)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5396383 .
+    :isDefinedByBiologicalTaxon wikidata:Q5396383 .
 
 pest:11256 a :BioticStressor,
         :CropStressor ;
@@ -3512,7 +3512,7 @@ pest:11256 a :BioticStressor,
         "mouche mineuse des feuilles de colza"@fr,
         "Mosca minatrice della colza"@it,
         "Scaptomyza flava"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q13851757 .
+    :isDefinedByBiologicalTaxon wikidata:Q13851757 .
 
 pest:11257 a :BioticStressor,
         :CropStressor ;
@@ -3521,7 +3521,7 @@ pest:11257 a :BioticStressor,
         "tipule des prairies"@fr,
         "zanzarone degli orti"@it,
         "Tipula paludosa"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q20976 .
+    :isDefinedByBiologicalTaxon wikidata:Q20976 .
 
 pest:11260 a :BioticStressor,
         :CropStressor ;
@@ -3530,7 +3530,7 @@ pest:11260 a :BioticStressor,
         "maladie de l'oeil de paon"@fr,
         "Occhio di pavone"@it,
         "Cycloconium oleaginum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q108471185 .
+    :isDefinedByBiologicalTaxon wikidata:Q108471185 .
 
 pest:11262 a :BioticStressor,
         :CropStressor ;
@@ -3539,7 +3539,7 @@ pest:11262 a :BioticStressor,
         "anthracnose des cucurbitacées"@fr,
         "Antracnosi delle cucurbitacee"@it,
         "Glomerella lagenarium (syn. Colletotrichum lagenarium)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5147091 .
+    :isDefinedByBiologicalTaxon wikidata:Q5147091 .
 
 pest:11263 a :BioticStressor,
         :CropStressor ;
@@ -3548,7 +3548,7 @@ pest:11263 a :BioticStressor,
         "pourriture sèche du glaïeul"@fr,
         "Stromatinia gladioli"@it,
         "Stromatinia gladioli"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10681915 .
+    :isDefinedByBiologicalTaxon wikidata:Q10681915 .
 
 pest:11265 a :BioticStressor,
         :CropStressor ;
@@ -3556,7 +3556,7 @@ pest:11265 a :BioticStressor,
         "taches angulaires du fraisier"@fr,
         "Maculature angolari della fragola"@it,
         "Xanthomonas fragariae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q8043054 .
+    :isDefinedByBiologicalTaxon wikidata:Q8043054 .
 
 pest:11310 a :BioticStressor,
         :CropStressor ;
@@ -3564,7 +3564,7 @@ pest:11310 a :BioticStressor,
         "mouche de la noix"@fr,
         "Mosca della noce"@it,
         "Rhagoletis completa"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1493916 .
+    :isDefinedByBiologicalTaxon wikidata:Q1493916 .
 
 pest:11319 a :BioticStressor,
         :CropStressor ;
@@ -3572,7 +3572,7 @@ pest:11319 a :BioticStressor,
         "rouilles du pois"@fr,
         "Ruggini del pisello"@it,
         "Uromyces pisi-sativi, Uromyces viciae-fabae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1312778,
+    :isDefinedByBiologicalTaxon wikidata:Q1312778,
         wikidata:Q892348 .
 
 pest:11320 a :BioticStressor,
@@ -3581,7 +3581,7 @@ pest:11320 a :BioticStressor,
         "rouille de la fève "@fr,
         "Ruggine della fava "@it,
         "Uromyces viciae-fabae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1312778 .
+    :isDefinedByBiologicalTaxon wikidata:Q1312778 .
 
 pest:11476 a :BioticStressor,
         :CropStressor ;
@@ -3589,7 +3589,7 @@ pest:11476 a :BioticStressor,
         "drosophile du cerisier"@fr,
         "Drosophila suzukii"@it,
         "Drosophila suzukii"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1336450 .
+    :isDefinedByBiologicalTaxon wikidata:Q1336450 .
 
 pest:11684 a :BioticStressor,
         :CropStressor ;
@@ -3598,7 +3598,7 @@ pest:11684 a :BioticStressor,
         "petite mineuse ou teigne du pêcher"@fr,
         "tignola del pesco"@it,
         "Anarsia lineatella"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q790159 .
+    :isDefinedByBiologicalTaxon wikidata:Q790159 .
 
 pest:11707 a :BioticStressor,
         :CropStressor ;
@@ -3606,7 +3606,7 @@ pest:11707 a :BioticStressor,
         "tavelure des arbres et arbustres ornementaux"@fr,
         "Ticchiolatura su alberi e arbusti ornamentali"@it,
         "Venturia sp., Spilocaea sp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q292074,
+    :isDefinedByBiologicalTaxon wikidata:Q292074,
         wikidata:Q3966739 .
 
 pest:11721 a :BioticStressor,
@@ -3615,7 +3615,7 @@ pest:11721 a :BioticStressor,
         "Colletotrichum sur fruits"@fr,
         "Marciume dei frutti da Colletotrichum"@it,
         "Glomerella acutata, Syn: Colletotrichum acutatum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q105054940 .
+    :isDefinedByBiologicalTaxon wikidata:Q105054940 .
 
 pest:11956 a :BioticStressor,
         :CropStressor ;
@@ -3623,7 +3623,7 @@ pest:11956 a :BioticStressor,
         "hanneton européen / hanneton de la Saint-Jean"@fr,
         "Rizotrogo"@it,
         "Amphimallon majalis, A. solstitialis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q14594990,
+    :isDefinedByBiologicalTaxon wikidata:Q14594990,
         wikidata:Q768766 .
 
 pest:11995 a :BioticStressor,
@@ -3632,7 +3632,7 @@ pest:11995 a :BioticStressor,
         "sphingidés"@fr,
         "Sfingi"@it,
         "Sphingidae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q157683 .
+    :isDefinedByBiologicalTaxon wikidata:Q157683 .
 
 pest:12138 a :BioticStressor,
         :CropStressor ;
@@ -3641,7 +3641,7 @@ pest:12138 a :BioticStressor,
         "pourritures sèches des tubercules"@fr,
         "Marciumi secchi dei tuberi"@it,
         "Fusarium spp., Phoma spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q131672,
+    :isDefinedByBiologicalTaxon wikidata:Q131672,
         wikidata:Q2066891 .
 
 pest:12145 a :BioticStressor,
@@ -3651,7 +3651,7 @@ pest:12145 a :BioticStressor,
         "dartrose de la pomme de terre"@fr,
         "'Black dot' della patata"@it,
         "Colletotrichum coccodes"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1310150 .
+    :isDefinedByBiologicalTaxon wikidata:Q1310150 .
 
 pest:12169 a :BioticStressor,
         :CropStressor ;
@@ -3660,14 +3660,14 @@ pest:12169 a :BioticStressor,
         "mildiou de l'artichaut"@fr,
         "Peronospora del carciofo"@it,
         "Bremia lactucae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q621790 .
+    :isDefinedByBiologicalTaxon wikidata:Q621790 .
 
 pest:12329 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Minierende Raupen"@de,
         "chenilles mineuses"@fr,
         "Bruchi minatori"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1071848,
+    :isDefinedByBiologicalTaxon wikidata:Q1071848,
         wikidata:Q46858,
         wikidata:Q793503 .
 
@@ -3677,7 +3677,7 @@ pest:12334 a :BioticStressor,
         "pyrale des haricots"@fr,
         "piralide delle leguminose"@it,
         "Etiella zinckenella"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q557676 .
+    :isDefinedByBiologicalTaxon wikidata:Q557676 .
 
 pest:12339 a :BioticStressor,
         :CropStressor ;
@@ -3685,7 +3685,7 @@ pest:12339 a :BioticStressor,
         "oïdiums des arbres feuillus"@fr,
         "Oidio (diverse specie) su piante latifoglie"@it,
         "Erysiphaceae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1755354 .
+    :isDefinedByBiologicalTaxon wikidata:Q1755354 .
 
 pest:12340 a :BioticStressor,
         :CropStressor ;
@@ -3693,7 +3693,7 @@ pest:12340 a :BioticStressor,
         "noctuelles (défoliatrices)"@fr,
         "Nottue (defogliatrici)"@it,
         "Noctuidae (blattfressend)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q459180 .
+    :isDefinedByBiologicalTaxon wikidata:Q459180 .
 
 pest:12349 a :BioticStressor,
         :CropStressor ;
@@ -3701,7 +3701,7 @@ pest:12349 a :BioticStressor,
         "septoriose des plantules (S. nodorum)"@fr,
         "Septoriosi delle piantule (S. nodorum)"@it,
         "Phaeosphaeria nodorum (Anam. Septoria nodorum)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q103811471,
+    :isDefinedByBiologicalTaxon wikidata:Q103811471,
         wikidata:Q4314880 .
 
 pest:12350 a :BioticStressor,
@@ -3710,7 +3710,7 @@ pest:12350 a :BioticStressor,
         "anthracnose du pois"@fr,
         "Antracnosi del pisello"@it,
         "Ascochyta pisi, Mycosphaerella pinodes, Phoma pinodella"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q4803966,
+    :isDefinedByBiologicalTaxon wikidata:Q4803966,
         wikidata:Q6947210,
         wikidata:Q7187129 .
 
@@ -3720,7 +3720,7 @@ pest:12351 a :BioticStressor,
         "brunissure du lin"@fr,
         "Guignardia fulvida"@it,
         "Guignardia fulvida (syn. Discosphaerina fulvida, veraltete Bezeichnung: Polyspora lini)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5615696 .
+    :isDefinedByBiologicalTaxon wikidata:Q5615696 .
 
 pest:12352 a :BioticStressor,
         :CropStressor ;
@@ -3728,7 +3728,7 @@ pest:12352 a :BioticStressor,
         "pasmo du lin"@fr,
         "Pasmo del lino"@it,
         "Mycosphaerella linicola"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10591378 .
+    :isDefinedByBiologicalTaxon wikidata:Q10591378 .
 
 pest:12353 a :BioticStressor,
         :CropStressor ;
@@ -3736,7 +3736,7 @@ pest:12353 a :BioticStressor,
         "oïdium du lin"@fr,
         "Oidio del lino"@it,
         "Golovinomyces orontii (Anam. Oidium lini)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10507042 .
+    :isDefinedByBiologicalTaxon wikidata:Q10507042 .
 
 pest:12354 a :BioticStressor,
         :CropStressor ;
@@ -3744,7 +3744,7 @@ pest:12354 a :BioticStressor,
         "phoma du tournesol"@fr,
         "Phoma del girasole"@it,
         "Plenodomus lindquistii (Anam. Phoma macdonaldii)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q104989334,
+    :isDefinedByBiologicalTaxon wikidata:Q104989334,
         wikidata:Q108190205 .
 
 pest:12355 a :BioticStressor,
@@ -3753,7 +3753,7 @@ pest:12355 a :BioticStressor,
         "rouille naine de l'orge"@fr,
         "Ruggine nana dell'orzo "@it,
         "Puccinia hordei"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q292264 .
+    :isDefinedByBiologicalTaxon wikidata:Q292264 .
 
 pest:12406 a :BioticStressor,
         :CropStressor ;
@@ -3762,7 +3762,7 @@ pest:12406 a :BioticStressor,
         "gale commune "@fr,
         "Scabbia comune"@it,
         "Streptomyces scabiei"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q26292479 .
+    :isDefinedByBiologicalTaxon wikidata:Q26292479 .
 
 pest:12408 a :BioticStressor,
         :CropStressor ;
@@ -3770,7 +3770,7 @@ pest:12408 a :BioticStressor,
         "mildiou du poivron"@fr,
         "Peronospora del peperone "@it,
         "Phytophtora capsici Peronospora tabacina"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3900047 .
+    :isDefinedByBiologicalTaxon wikidata:Q3900047 .
 
 pest:12409 a :BioticStressor,
         :CropStressor ;
@@ -3778,14 +3778,14 @@ pest:12409 a :BioticStressor,
         "mildiou de l'aubergine"@fr,
         "Peronospora della melanzana"@it,
         "Phytophtora capsici, Phytophthora infestans"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q149072 .
+    :isDefinedByBiologicalTaxon wikidata:Q149072 .
 
 pest:12434 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Abbrennen von Stockausschlägen"@de,
         "Élimination des rejets"@fr,
         "Eliminazione dei ricacci"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:12474 a :BioticStressor,
         :CropStressor ;
@@ -3793,7 +3793,7 @@ pest:12474 a :BioticStressor,
         "cylindrocladium-dépérissement des feuilles et rameaux"@fr,
         "Cylindrocladium buxicola"@it,
         "Cylindrocladium buxicola"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3008672 .
+    :isDefinedByBiologicalTaxon wikidata:Q3008672 .
 
 pest:12476 a :BioticStressor,
         :CropStressor ;
@@ -3801,7 +3801,7 @@ pest:12476 a :BioticStressor,
         "rouille des graminées"@fr,
         "Ruggine delle graminacee"@it,
         "Puccinia spp., Uromyces spp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q305162,
+    :isDefinedByBiologicalTaxon wikidata:Q305162,
         wikidata:Q892455 .
 
 pest:12477 a :BioticStressor,
@@ -3810,7 +3810,7 @@ pest:12477 a :BioticStressor,
         "rhizoctones des graminées"@fr,
         "Rizottonie delle graminacee"@it,
         "Rhizoctonia cerealis, R. oryzae, R. solani, R. zeae "@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q131471650,
+    :isDefinedByBiologicalTaxon wikidata:Q131471650,
         wikidata:Q131471662,
         wikidata:Q30906964,
         wikidata:Q84847330 .
@@ -3821,7 +3821,7 @@ pest:12482 a :BioticStressor,
         "bactériose du noyer"@fr,
         "Batteriosi del noce"@it,
         "Xanthomonas arboricola pv. juglandis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q131506166 .
+    :isDefinedByBiologicalTaxon wikidata:Q131506166 .
 
 pest:12483 a :BioticStressor,
         :CropStressor ;
@@ -3829,7 +3829,7 @@ pest:12483 a :BioticStressor,
         "anthracnose du noyer"@fr,
         "Antracnosi del noce"@it,
         "Gnomonia leptostyla"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q84833084 .
+    :isDefinedByBiologicalTaxon wikidata:Q84833084 .
 
 pest:12484 a :BioticStressor,
         :CropStressor ;
@@ -3837,7 +3837,7 @@ pest:12484 a :BioticStressor,
         "acariens prédateurs"@fr,
         "Acari predatori"@it,
         "Parasitus sp."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7135959 .
+    :isDefinedByBiologicalTaxon wikidata:Q7135959 .
 
 pest:12547 a :BioticStressor,
         :CropStressor ;
@@ -3845,7 +3845,7 @@ pest:12547 a :BioticStressor,
         "ériophyides gallicoles"@fr,
         "Eriofidi gallicoli"@it,
         "Eriophyidae, Phytoptidae, Diptilomiopidae (gallenbildende)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10473981,
+    :isDefinedByBiologicalTaxon wikidata:Q10473981,
         wikidata:Q18539312,
         wikidata:Q841786 .
 
@@ -3855,7 +3855,7 @@ pest:12668 a :BioticStressor,
         "rouilles des salades (Asteraceae) et de la chicorée witloof (chicorée-endive)"@fr,
         "ruggini su insalate (Asteraceae) e su cicoria belga"@it,
         "Puccinia dioicae Magnus, Puccinia opizii, Puccinia cichorii"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10646258,
+    :isDefinedByBiologicalTaxon wikidata:Q10646258,
         wikidata:Q21321918,
         wikidata:Q7258191 .
 
@@ -3866,7 +3866,7 @@ pest:12669 a :BioticStressor,
         "Teigne de la betterave"@fr,
         "tignola della barbabietola"@it,
         "Scrobipalpa ocellatella"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1252923 .
+    :isDefinedByBiologicalTaxon wikidata:Q1252923 .
 
 pest:12711 a :BioticStressor,
         :CropStressor ;
@@ -3874,7 +3874,7 @@ pest:12711 a :BioticStressor,
         "mildious de la camomille"@fr,
         "Peronospora della camomilla "@it,
         "Peronosporales"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q621829 .
+    :isDefinedByBiologicalTaxon wikidata:Q621829 .
 
 pest:12759 a :BioticStressor,
         :CropStressor ;
@@ -3883,7 +3883,7 @@ pest:12759 a :BioticStressor,
         "anthracnose du fraisier"@fr,
         "Antracnosi della fragola"@it,
         "Colletotrichum fragariae Colletotrichum acutatum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q5147068,
+    :isDefinedByBiologicalTaxon wikidata:Q5147068,
         wikidata:Q5147078 .
 
 pest:12923 a :BioticStressor,
@@ -3891,14 +3891,14 @@ pest:12923 a :BioticStressor,
     rdfs:label "Vorratsschädlinge fliegend"@de,
         "ravageurs des denrées stockées volants"@fr,
         "parassiti delle scorte alimentari volanti"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1390 .
+    :isDefinedByBiologicalTaxon wikidata:Q1390 .
 
 pest:12924 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Vorratsschädlinge kriechend"@de,
         "ravageurs des denrées stockées rampants"@fr,
         "parassiti delle scorte alimentari striscianti"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1390 .
+    :isDefinedByBiologicalTaxon wikidata:Q1390 .
 
 pest:13018 a :BioticStressor,
         :CropStressor ;
@@ -3906,7 +3906,7 @@ pest:13018 a :BioticStressor,
         "fusariose des plantules"@fr,
         "Fusariosi delle piantine"@it,
         "Fusarium spp. "@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q131672 .
+    :isDefinedByBiologicalTaxon wikidata:Q131672 .
 
 pest:13140 a :BioticStressor,
         :CropStressor ;
@@ -3914,7 +3914,7 @@ pest:13140 a :BioticStressor,
         "Pepino Mosaic Virus (PepMV)"@en,
         "mosaïque du pépino (PepMV)"@fr,
         "Virus del mosaico del pepino (PepMV)"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q13217466 .
+    :isDefinedByBiologicalTaxon wikidata:Q13217466 .
 
 pest:13360 a :BioticStressor,
         :CropStressor ;
@@ -3923,7 +3923,7 @@ pest:13360 a :BioticStressor,
         "oïdium des Rubus"@fr,
         "Oidio delle verietà di rubus"@it,
         "Podosphaera aphanis (syn. Sphaerotheca aphanis)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10635260 .
+    :isDefinedByBiologicalTaxon wikidata:Q10635260 .
 
 pest:13361 a :BioticStressor,
         :CropStressor ;
@@ -3932,21 +3932,21 @@ pest:13361 a :BioticStressor,
         "Oïdium du Minikiwi (Phyllactinia actinidiae)"@fr,
         "Oidio della Minikiwi (Phyllactinia actinidiae)"@it,
         "Phyllactinia actinidiae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q108198395 .
+    :isDefinedByBiologicalTaxon wikidata:Q108198395 .
 
 pest:13448 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Brennfleckenkrankheit der Linse"@de,
         "anthracnose de la lentille"@fr,
         "Antracnosi della lenticchia"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q74663 .
+    :isDefinedByBiologicalTaxon wikidata:Q74663 .
 
 pest:13449 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Falscher Mehltau der Linse"@de,
         "mildiou de la lentille"@fr,
         "Peronospora della lenticchia"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7169463 .
+    :isDefinedByBiologicalTaxon wikidata:Q7169463 .
 
 pest:13479 a :BioticStressor,
         :CropStressor ;
@@ -3954,7 +3954,7 @@ pest:13479 a :BioticStressor,
         "pied noir / anthracnose de l'épinard (Colletotrichum)"@fr,
         "Mal del piede / Antracnosi dello spinacio (Colletotrichum)"@it,
         "Colletotrichum dematium f. spinaciae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q107582349 .
+    :isDefinedByBiologicalTaxon wikidata:Q107582349 .
 
 pest:13493 a :BioticStressor,
         :CropStressor ;
@@ -3963,7 +3963,7 @@ pest:13493 a :BioticStressor,
         "psylle du prunier"@fr,
         "psilla del prugno"@it,
         "Psylla pruni syn. Cacopsylla pruni"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10439091 .
+    :isDefinedByBiologicalTaxon wikidata:Q10439091 .
 
 pest:13549 a :BioticStressor,
         :CropStressor ;
@@ -3971,7 +3971,7 @@ pest:13549 a :BioticStressor,
         "Fusariose foliaire"@fr,
         "Fusariosi fogliare"@it,
         "Microdochium nivale = Monographella nivalis"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q104978214 .
+    :isDefinedByBiologicalTaxon wikidata:Q104978214 .
 
 pest:13704 a :BioticStressor,
         :CropStressor ;
@@ -3979,7 +3979,7 @@ pest:13704 a :BioticStressor,
         "Oïdium des baies de Goji"@fr,
         "Oidio delle bacche di Goji "@it,
         "Arthrocladiella mougeotti"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q6741484 .
+    :isDefinedByBiologicalTaxon wikidata:Q6741484 .
 
 pest:13821 a :BioticStressor,
         :CropStressor ;
@@ -3988,7 +3988,7 @@ pest:13821 a :BioticStressor,
         "stemphyliose"@fr,
         "Stemphylium botryosum"@it,
         "Pleospora herbarum (syn. Stemphylium botryosum)"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q146566,
+    :isDefinedByBiologicalTaxon wikidata:Q146566,
         wikidata:Q7204611 .
 
 pest:13852 a :BioticStressor,
@@ -3997,7 +3997,7 @@ pest:13852 a :BioticStressor,
         "Anthracnose du lupin"@fr,
         "Antracnosi del lupino"@it,
         "Colletotrichum lupini"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10457059 .
+    :isDefinedByBiologicalTaxon wikidata:Q10457059 .
 
 pest:14147 a :BioticStressor,
         :CropStressor ;
@@ -4005,7 +4005,7 @@ pest:14147 a :BioticStressor,
         "Psylle du buis"@fr,
         "Psilla del bosso"@it,
         "Psylla buxi"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10645270 .
+    :isDefinedByBiologicalTaxon wikidata:Q10645270 .
 
 pest:14259 a :BioticStressor,
         :CropStressor ;
@@ -4014,14 +4014,14 @@ pest:14259 a :BioticStressor,
         "chancre godronien"@fr,
         "cancro del mirtillo"@it,
         "Godronia cassandrae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10506686 .
+    :isDefinedByBiologicalTaxon wikidata:Q10506686 .
 
 pest:14294 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Rispenarten"@de,
         "Espèces de pâturin"@fr,
         "Specie die poa"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q43238 .
+    :isDefinedByBiologicalTaxon wikidata:Q43238 .
 
 pest:14377 a :BioticStressor,
         :CropStressor ;
@@ -4029,7 +4029,7 @@ pest:14377 a :BioticStressor,
         "oïdium du pois"@fr,
         "Oidio del pisello"@it,
         "Erysiphe pisi"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3359256 .
+    :isDefinedByBiologicalTaxon wikidata:Q3359256 .
 
 pest:14737 a :BioticStressor,
         :CropStressor ;
@@ -4038,7 +4038,7 @@ pest:14737 a :BioticStressor,
         "Trichoderma aggressivum"@fr,
         "Trichoderma aggressivum"@it,
         "Trichoderma aggressivum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10702710 .
+    :isDefinedByBiologicalTaxon wikidata:Q10702710 .
 
 pest:14770 a :BioticStressor,
         :CropStressor ;
@@ -4047,14 +4047,14 @@ pest:14770 a :BioticStressor,
         "mort lin"@fr,
         "phoma linicola"@it,
         "Phoma exigua var. linicola"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7187117 .
+    :isDefinedByBiologicalTaxon wikidata:Q7187117 .
 
 pest:14795 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Rostpilze der Küchenkräuter"@de,
         "rouilles des fines herbes"@fr,
         "Ruggini su erbette da cucina"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1130524 .
+    :isDefinedByBiologicalTaxon wikidata:Q1130524 .
 
 pest:14878 a :BioticStressor,
         :CropStressor ;
@@ -4062,7 +4062,7 @@ pest:14878 a :BioticStressor,
         "flétrissement fusarien"@fr,
         "Avvizzimento da fusariosi"@it,
         "Fusarium oxysporum"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q139958 .
+    :isDefinedByBiologicalTaxon wikidata:Q139958 .
 
 pest:14999 a :BioticStressor,
         :CropStressor ;
@@ -4070,7 +4070,7 @@ pest:14999 a :BioticStressor,
         "oïdium du mûrier"@fr,
         "Oidio del moro nero"@it,
         "Phyllactinia moricola"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q11113134 .
+    :isDefinedByBiologicalTaxon wikidata:Q11113134 .
 
 pest:15000 a :BioticStressor,
         :CropStressor ;
@@ -4078,7 +4078,7 @@ pest:15000 a :BioticStressor,
         "oïdium de l'aronie noire"@fr,
         "Oidio del aronia nera"@it,
         "k.A. "@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1755354 .
+    :isDefinedByBiologicalTaxon wikidata:Q1755354 .
 
 pest:15001 a :BioticStressor,
         :CropStressor ;
@@ -4086,7 +4086,7 @@ pest:15001 a :BioticStressor,
         "oïdium du sorbier des oiseleurs"@fr,
         "Oidio del sorbo degli ucellatori"@it,
         "k.A."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1755354 .
+    :isDefinedByBiologicalTaxon wikidata:Q1755354 .
 
 pest:15002 a :BioticStressor,
         :CropStressor ;
@@ -4094,7 +4094,7 @@ pest:15002 a :BioticStressor,
         "oïdium de l'argousier"@fr,
         "Oidio del'olivello spinoso"@it,
         "k.A. "@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1755354 .
+    :isDefinedByBiologicalTaxon wikidata:Q1755354 .
 
 pest:15003 a :BioticStressor,
         :CropStressor ;
@@ -4102,7 +4102,7 @@ pest:15003 a :BioticStressor,
         "oïdium de l'amélavier commun"@fr,
         "Oidio del pero corvino"@it,
         "k.A."@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1755354 .
+    :isDefinedByBiologicalTaxon wikidata:Q1755354 .
 
 pest:15263 a :BioticStressor,
         :CropStressor ;
@@ -4110,7 +4110,7 @@ pest:15263 a :BioticStressor,
         "Root aphids"@en,
         "pucerons des racines"@fr,
         "Afidi delle radici"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q1354085 .
+    :isDefinedByBiologicalTaxon wikidata:Q1354085 .
 
 pest:15310 a :BioticStressor,
         :CropStressor ;
@@ -4118,28 +4118,28 @@ pest:15310 a :BioticStressor,
         "punaise marbrée"@fr,
         "cimice marmorata asiatica"@it,
         "Halyomorpha halys"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q3270185 .
+    :isDefinedByBiologicalTaxon wikidata:Q3270185 .
 
 pest:15445 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Australische Wollschildlaus "@de,
         "Cochenille australienne "@fr,
         "Cocciniglia cotonosa solcata"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q783121 .
+    :isDefinedByBiologicalTaxon wikidata:Q783121 .
 
 pest:15474 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Brennfleckenkrankheit der Ackerbohne"@de,
         "anthracnose de la fève"@fr,
         "Antracnosi della fava"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q15633887 .
+    :isDefinedByBiologicalTaxon wikidata:Q15633887 .
 
 pest:15475 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Falscher Mehltau der Ackerbohne"@de,
         "mildiou de la fève"@fr,
         "Peronospora della fava"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q7169466 .
+    :isDefinedByBiologicalTaxon wikidata:Q7169466 .
 
 pest:15567 a :BioticStressor,
         :CropStressor ;
@@ -4148,7 +4148,7 @@ pest:15567 a :BioticStressor,
         "Chute des feuilles due à Marssonina"@fr,
         "Caduta delle foglie dovuta a Marssonina"@it,
         "Diplocarpon coronariae"@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q107638616 .
+    :isDefinedByBiologicalTaxon wikidata:Q107638616 .
 
 pest:15588 a :BioticStressor,
         :CropStressor ;
@@ -4156,21 +4156,21 @@ pest:15588 a :BioticStressor,
         "Nesidiocoris tenuis"@fr,
         "Nesidiocoris tenuis"@it,
         "Nesidiocoris tenuis "@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q10599388 .
+    :isDefinedByBiologicalTaxon wikidata:Q10599388 .
 
 pest:15703 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Rost der Petersilie"@de,
         "rouille du persil"@fr,
         "Ruggine del prezzemolo"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q21315856 .
+    :isDefinedByBiologicalTaxon wikidata:Q21315856 .
 
 pest:15705 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Rhizoctonia-Fäule"@de,
         "rhizoctone"@fr,
         "Rizottonia"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q30906964 .
+    :isDefinedByBiologicalTaxon wikidata:Q30906964 .
 
 pest:15868 a :BioticStressor,
         :CropStressor ;
@@ -4178,145 +4178,145 @@ pest:15868 a :BioticStressor,
         "Punaise verte ponctuée "@fr,
         "cimice verde"@it,
         "Nezara viridula "@lt ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:Q600498 .
+    :isDefinedByBiologicalTaxon wikidata:Q600498 .
 
 pest:10585 a :CropStressor ;
     rdfs:label "Desinfektion"@de,
         "désinfection"@fr,
         "Disinfezione"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10673 a :CropStressor ;
     rdfs:label "Desikkation, Abbrennen"@de,
         "dessiccation, défanage"@fr,
         "Disseccamento, essiccamento"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10798 a :CropStressor ;
     rdfs:label "Blüten- und Fruchtausdünnung"@de,
         "éclaircissage des fleurs et fruits"@fr,
         "Diradamento dei fiori e dei frutticini"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10799 a :CropStressor ;
     rdfs:label "Brechung der Alternanz (Apfelbaum)"@de,
         "rupture de l'alternance (pommier)"@fr,
         "Interruzione dell'alternanza (melo)"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10802 a :CropStressor ;
     rdfs:label "Erhöhung der Standfestigkeit"@de,
         "augmentation de la résistance à la verse"@fr,
         "Aumento della stabilità"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10803 a :CropStressor ;
     rdfs:label "Hemmung des Längenwachstums (Stauchen)"@de,
         "inhibition de la croissance des organes aériens"@fr,
         "Inibizione della crescita longitudinale"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10804 a :CropStressor ;
     rdfs:label "Bildung von Fruchtholz an nichttragenden Jungbäumen"@de,
         "pour favoriser la formation des branches fruitières des jeunes arbres"@fr,
         "Formazione di ramo fruttifero su alberi giovani "@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10809 a :CropStressor ;
     rdfs:label "Verbesserung des Fruchtansatzes (Bildung von parthenokarpen Früchten)"@de,
         "amélioration de la nouaison  (formation de fruits parthénocarpiques)"@fr,
         "Miglioramento dell'allegagione (formazione di frutti partenocarpici)"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10810 a :CropStressor ;
     rdfs:label "Brechung der Knospenruhe, Förderung des Längenwachstums"@de,
         "levée de la dormance des bourgeons, stimulation de la croissance"@fr,
         "Interruzione della dormienza delle gemme, stimolo della crescita longitudinale"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10861 a :CropStressor ;
     rdfs:label "Keimhemmung"@de,
         "inhibition de la germination"@fr,
         "Inibizione della germinazione"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10873 a :CropStressor ;
     rdfs:label "Wundverschluss"@de,
         "cicatrisation des plaies"@fr,
         "Cicatrizzazione "@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10898 a :CropStressor ;
     rdfs:label "Erhöhung des Netz- und Haftvermögens"@de,
         "augmentation du pouvoir mouillant et adhésif"@fr,
         "Aumento del potere umidificante e adesivante"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10967 a :CropStressor ;
     rdfs:label "Strunkbehandlung gegen Stockausschläge"@de,
         "traitement du tronc contre les rejets"@fr,
         "Trattamento della ceppaia contro i ricacci"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10977 a :CropStressor ;
     rdfs:label "Vorzeitiger Fruchtfall"@de,
         "Chute précoce"@fr,
         "Caduta precoce"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:11005 a :CropStressor ;
     rdfs:label "Wirkungssicherung"@de,
         "maintien de l'efficacité"@fr,
         "Assicurazione dell'efficacia"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:11042 a :CropStressor ;
     rdfs:label "Optimierung der Sortierung"@de,
         "optimisation du triage"@fr,
         "Ottimizzazione della cernita"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:11151 a :CropStressor ;
     rdfs:label "Fruchtausdünnung"@de,
         "éclaircissage des fruits"@fr,
         "Diradamento dei frutticini"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:11162 a :CropStressor ;
     rdfs:label "Reifeverzögerung"@de,
         "retard de la maturité"@fr,
         "Ritardo della maturazione"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:11227 a :CropStressor ;
     rdfs:label "Beschleunigung und Synchronisierung der Fruchtreife"@de,
         "accélération et synchronisation de la maturité des fruits"@fr,
         "Accellerazione e sincronizzazione della maturità dei frutti"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:11264 a :CropStressor ;
     rdfs:label "Seitentriebhemmung"@de,
         "inhibition des pousses latérales "@fr,
         "Inibizione dei germogli laterali"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:12631 a :CropStressor ;
     rdfs:label "Lockerung des Traubenstielgerüsts"@de,
         "Élongation de la rafle et décompactage des grappes de raisin"@fr,
         "Allentamento del grapplo d'uva"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:13677 a :CropStressor ;
     rdfs:label "Hemmung des Triebwachstums"@de,
         "inhibition de la croissance des rameaux"@fr,
         "Inibizione della crescita dei polloni"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:13946 a :CropStressor ;
     rdfs:label "Minderung von Fruchtberostung und Wachstumsrissen"@de,
         "Diminution de la roussissure et des crevasses de croissance sur fruits "@fr,
         "Riduzione della rugginosità della frutta e delle fratture di crescita"@it ;
-    :bioticStressorIsDefinedByBiologicalTaxon wikidata:NULL .
+    :isDefinedByBiologicalTaxon wikidata:NULL .
 
 pest:10710 rdfs:label "Brachfliege"@de,
         "mouche grise des céréales"@fr,
