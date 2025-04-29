@@ -5,17 +5,48 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix srppp: <https://agriculture.ld.admin.ch/plant-protection/> .
-@prefix wdt: <http://www.wikidata.org/prop/direct/> .
 @prefix wikidata: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Product a schema:Product,
+        owl:Class ;
+    rdfs:label "Produkt"@de,
+        "Product"@en ;
+    rdfs:comment "Repräsentiert jedes Element im Rahmen des Pflanzenschutzes, das mit einer eidgenössischen Zulassungsnummer registriert ist und spezifische Berechtigungen hinsichtlich der nicht-beruflichen Verwendung aufweist."@de,
+        "Represents any item within the crop protection framework that is registered with a federal admission number and has specified permissions regarding non-professional use."@en ;
+    rdfs:scopeNote "Diese Klasse ist für die Modellierung aller Pflanzenschutzmittel vorgesehen, die eine eidgenössische Registrierung erfordern und Einschränkungen oder Berechtigungen für die nicht-berufliche Nutzung gemäss den Schweizer Vorschriften aufweisen können."@de,
+        "This class is intended for modeling all crop protection products requiring federal registration and that may have restrictions or allowances for non-professional usage as defined by Swiss regulations."@en ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :isNonProfessionallyAllowed ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :hasFederalAdmissionNumber ] .
 
 chebi:24431 a owl:Class ;
     rdfs:label "Chemische Entität"@de,
         "chemical entity"@en ;
     rdfs:comment "Eine chemische Entität, wie in der CheBI-Ontologie definiert, dient als Referenzpunkt zur Identifizierung und Klassifizierung von Substanzen."@de,
         "A chemical entity as defined in the CheBI ontology, serving as a reference point for identifying and classifying substances."@en .
+
+schema:Country a owl:Class ;
+    rdfs:label "Land"@de,
+        "Country"@en .
+
+schema:Organization a owl:Class ;
+    rdfs:label "Organisation"@de,
+        "Organization"@en ;
+    rdfs:comment "Repräsentiert jede formelle Einheit, wie Unternehmen, Institutionen oder Vereinigungen, die im landwirtschaftlichen Bereich des Pflanzenschutzrahmens tätig sind."@de,
+        "Represents any formal entity, such as companies, institutions, or associations, involved in the agricultural sector within the crop protection framework."@en ;
+    rdfs:scopeNote "Diese Klasse ist zur Modellierung von Organisationen im Pflanzenschutz vorgesehen. Sofern möglich, sollten Instanzen aus dem Schweizer zentralen Firmenindex (Zefix) wiederverwendet werden, um Konsistenz und Integration mit bestehenden Schweizer Organisationsdaten zu gewährleisten."@de,
+        "This class is intended to model organizations involved in crop protection. Whenever possible, instances from the Swiss central company index (Zefix) should be reused to ensure consistency and integration with existing Swiss organizational data."@en .
+
+schema:PostalAddress a owl:Class ;
+    rdfs:label "Postadresse"@de,
+        "Postal address"@en .
 
 wikidata:Q16521 a owl:Class ;
     rdfs:label "Biologisches Taxon"@de,
@@ -77,6 +108,10 @@ wikidata:Q16521 a owl:Class ;
     rdfs:comment "Netz- und Haftmittel sind chemische Produkte, die verwendet werden, um Pflanzenschutzmittel gleichmässig auf Pflanzenoberflächen zu verteilen und deren Anhaftung zu verbessern. Sie erhöhen die Effizienz und Wirksamkeit von Behandlungen."@de,
         "Wetting and adhesion agents are chemical products used to distribute crop protection products evenly on plant surfaces and enhance their adhesion. They improve the efficiency and effectiveness of treatments."@en ;
     rdfs:subClassOf :ChemicalProduct .
+
+:ApplicationArea a owl:Class ;
+    rdfs:label "Anwendungsgebiet"@de,
+        "Application area"@en .
 
 :BBCH a owl:Class ;
     rdfs:label "Anwendungszeitpunkt"@de,
@@ -354,20 +389,6 @@ wikidata:Q16521 a owl:Class ;
         "Phytoregulator"@en ;
     rdfs:subClassOf :ChemicalProduct .
 
-:Product a owl:Class ;
-    rdfs:label "Produkt"@de,
-        "Product"@en ;
-    rdfs:comment "Repräsentiert jedes Element im Rahmen des Pflanzenschutzes, das mit einer eidgenössischen Zulassungsnummer registriert ist und spezifische Berechtigungen hinsichtlich der nicht-beruflichen Verwendung aufweist."@de,
-        "Represents any item within the crop protection framework that is registered with a federal admission number and has specified permissions regarding non-professional use."@en ;
-    rdfs:scopeNote "Diese Klasse ist für die Modellierung aller Pflanzenschutzmittel vorgesehen, die eine eidgenössische Registrierung erfordern und Einschränkungen oder Berechtigungen für die nicht-berufliche Nutzung gemäss den Schweizer Vorschriften aufweisen können."@de,
-        "This class is intended for modeling all crop protection products requiring federal registration and that may have restrictions or allowances for non-professional usage as defined by Swiss regulations."@en ;
-    owl:equivalentClass [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty :isNonProfessionallyAllowed ],
-        [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty :hasFederalAdmissionNumber ] .
-
 :PureSubstance a owl:Class ;
     rdfs:label "Reine Substanz"@de,
         "Pure substance"@en ;
@@ -456,21 +477,87 @@ wikidata:Q16521 a owl:Class ;
     rdfs:comment "Jeder Organismus ausser dem, gegen den das Pestizid angewendet wird."@de,
         "Any organism other than the one against which the pesticide is applied."@en .
 
-<https://schema.org/Country> a owl:Class ;
-    rdfs:label "Land"@de,
-        "Country"@en .
+schema:addressLocality a owl:DatatypeProperty ;
+    rdfs:label "Ortschaft"@de,
+        "Postal locality"@en ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:string .
 
-<https://schema.org/Organization> a owl:Class ;
-    rdfs:label "Organisation"@de,
-        "Organization"@en ;
-    rdfs:comment "Repräsentiert jede formelle Einheit, wie Unternehmen, Institutionen oder Vereinigungen, die im landwirtschaftlichen Bereich des Pflanzenschutzrahmens tätig sind."@de,
-        "Represents any formal entity, such as companies, institutions, or associations, involved in the agricultural sector within the crop protection framework."@en ;
-    rdfs:scopeNote "Diese Klasse ist zur Modellierung von Organisationen im Pflanzenschutz vorgesehen. Sofern möglich, sollten Instanzen aus dem Schweizer zentralen Firmenindex (Zefix) wiederverwendet werden, um Konsistenz und Integration mit bestehenden Schweizer Organisationsdaten zu gewährleisten."@de,
-        "This class is intended to model organizations involved in crop protection. Whenever possible, instances from the Swiss central company index (Zefix) should be reused to ensure consistency and integration with existing Swiss organizational data."@en .
+schema:email a owl:DatatypeProperty ;
+    rdfs:label "Email-Adresse"@de,
+        "Email address"@en ;
+    rdfs:domain schema:Organization ;
+    rdfs:range xsd:string .
 
-<https://schema.org/PostalAddress> a owl:Class ;
-    rdfs:label "Postadresse"@de,
-        "Postal address"@en .
+schema:faxNumber a owl:DatatypeProperty ;
+    rdfs:label "Fax-Nummer"@de,
+        "Fax number"@en,
+        "Numéro de fax"@fr,
+        "Numero di fax"@it ;
+    rdfs:comment """
+        Die Faxnummer des Unternehmens, formatiert gemäss RFC 3966.
+        """@de,
+        """
+        The fax number of the company, formatted as per RFC 3966.
+        """@en,
+        """
+        Le numéro de fax de l'entreprise, formaté selon la norme RFC 3966.
+        """@fr,
+        """
+        Il numero di fax dell'azienda, formattato secondo la RFC 3966.
+        """@it ;
+    rdfs:domain schema:Organization ;
+    rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> ;
+    rdfs:range xsd:string .
+
+schema:legalName a owl:DatatypeProperty ;
+    rdfs:label "Rechtlicher Name"@de,
+        "Legal name"@en,
+        "Nom légal"@fr,
+        "Nome legale"@it ;
+    rdfs:comment """
+        Der offizielle Name der Organisation, z. B. der eingetragene Firmenname.
+        """@de,
+        """
+        The official name of the organization, e.g. the registered company name.
+        """@en,
+        """
+        Le nom officiel de l'organisation, par exemple le nom commercial enregistré.
+        """@fr,
+        """
+        Il nome ufficiale dell'organizzazione, ad esempio il nome commerciale registrato.
+        """@it ;
+    rdfs:domain schema:Organization ;
+    rdfs:range xsd:string .
+
+schema:postOfficeBoxNumber a owl:DatatypeProperty ;
+    rdfs:label "Postfachnummer"@de,
+        "Post office box number"@en ;
+    rdfs:comment "Die Postfachnummer für Postfachadressen."@de,
+        "The post office box number for PO box addresses."@en ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:string .
+
+schema:postalCode a owl:DatatypeProperty ;
+    rdfs:label "Postleitzahl"@de,
+        "Postal code"@en ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:string .
+
+schema:streetAddress a owl:DatatypeProperty ;
+    rdfs:label "Strassenaddresse"@de,
+        "Street address"@en ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:string .
+
+schema:telephone a owl:DatatypeProperty ;
+    rdfs:label "Telefonnummer"@de,
+        "Phone number"@en ;
+    rdfs:comment "Die Telephonnummer des Unternehmens, formatiert gemäss RFC 3966."@de,
+        "The telephone number of the company, formatted as per RFC 3966."@en ;
+    rdfs:domain schema:Organization ;
+    rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> ;
+    rdfs:range xsd:string .
 
 :componentPercentage a owl:DatatypeProperty ;
     rdfs:label "Komponentenprozentsatz"@de,
@@ -502,13 +589,13 @@ wikidata:Q16521 a owl:Class ;
     rdfs:label "R-Satz"@de,
         "R phrase"@en ;
     rdfs:domain :Product ;
-    rdfs:range xsd:CodeR .
+    rdfs:range :CodeR .
 
 :hasCodeS a owl:DatatypeProperty ;
     rdfs:label "S-Satz"@de,
         "S phrase"@en ;
     rdfs:domain :Product ;
-    rdfs:range xsd:CodeS .
+    rdfs:range :CodeS .
 
 :hasDamageThreshold a owl:DatatypeProperty ;
     rdfs:label "hat Schadschwelle"@de,
@@ -653,75 +740,9 @@ wikidata:Q16521 a owl:Class ;
     rdfs:domain :WaitingPeriod ;
     rdfs:range xsd:float .
 
-<https://schema.org/addressLocality> a owl:DatatypeProperty ;
-    rdfs:label "Ortschaft"@de,
-        "Postal locality"@en ;
-    rdfs:domain <https://schema.org/PostalAddress> ;
-    rdfs:range xsd:string .
-
-<https://schema.org/email> a owl:DatatypeProperty ;
-    rdfs:label "Email-Adresse"@de,
-        "Email address"@en ;
-    rdfs:domain <https://schema.org/Organization> ;
-    rdfs:range xsd:string .
-
-<https://schema.org/faxNumber> a owl:DatatypeProperty ;
-    rdfs:label "Fax-Nummer"@de,
-        "Fax number"@en ;
-    rdfs:comment "Die Faxnummer des Unternehmens, formatiert gemäss RFC 3966."@de,
-        "The fax number of the company, formatted as per RFC 3966."@en ;
-    rdfs:domain <https://schema.org/Organization> ;
-    rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> ;
-    rdfs:range xsd:string .
-
-<https://schema.org/legalName> a owl:DatatypeProperty ;
-    rdfs:label "Legaler Name"@de,
-        "Legal name"@en ;
-    rdfs:comment "Der offizielle Name der Organisation, d.h. für Schweizer Unternehmen der eingetragene Firmenname."@de,
-        "The official name of the organization, i.e. for Swiss companies the registered company name."@en ;
-    rdfs:domain <https://schema.org/Organization> ;
-    rdfs:range xsd:string .
-
-<https://schema.org/postOfficeBoxNumber> a owl:DatatypeProperty ;
-    rdfs:label "Postfachnummer"@de,
-        "Post office box number"@en ;
-    rdfs:comment "Die Postfachnummer für Postfachadressen."@de,
-        "The post office box number for PO box addresses."@en ;
-    rdfs:domain <https://schema.org/PostalAddress> ;
-    rdfs:range xsd:string .
-
-<https://schema.org/postalCode> a owl:DatatypeProperty ;
-    rdfs:label "Postleitzahl"@de,
-        "Postal code"@en ;
-    rdfs:domain <https://schema.org/PostalAddress> ;
-    rdfs:range xsd:string .
-
-<https://schema.org/streetAddress> a owl:DatatypeProperty ;
-    rdfs:label "Strassenaddresse"@de,
-        "Street address"@en ;
-    rdfs:domain <https://schema.org/PostalAddress> ;
-    rdfs:range xsd:string .
-
-<https://schema.org/telephone> a owl:DatatypeProperty ;
-    rdfs:label "Telefonnummer"@de,
-        "Phone number"@en ;
-    rdfs:comment "Die Telephonnummer des Unternehmens, formatiert gemäss RFC 3966."@de,
-        "The telephone number of the company, formatted as per RFC 3966."@en ;
-    rdfs:domain <https://schema.org/Organization> ;
-    rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> ;
-    rdfs:range xsd:string .
-
-wdt:P171 a owl:ObjectProperty ;
-    rdfs:label "hat übergeordnetes Taxon"@de,
-        "has parent taxon"@en ;
-    rdfs:comment "Nächsthöheres Taxon nach einem bestimmten taxonomischen Gesichtspunkt. Da es mehrere taxonomische Gesichtspunkte gibt, ist mehr als ein übergeordnetes Taxon möglich."@de,
-        "Next higher taxon according to a certain taxonomic viewpoint. As multiple taxonomic viewpoints exist, more than one parent taxon is possible."@en ;
-    rdfs:domain wikidata:Q16521 ;
-    rdfs:range wikidata:Q16521 .
-
 :BCAisDefinedByBiologicalTaxon a owl:ObjectProperty ;
-    rdfs:label "ist definiert durch das biologische Taxon"@de,
-        "is defined by biological taxon"@en ;
+    rdfs:label "Biologisches Taxon"@de,
+        "Biological taxon"@en ;
     rdfs:comment "Ein Organismus für die biologische Schädlingsbekämpfung gehört zu einem bestimmten biologischen Taxon."@de,
         "A biological control agent belongs to a certain biological taxon."@en ;
     rdfs:domain :BiologicalControlAgent ;
@@ -817,6 +838,15 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:domain :EnvironmentalCondition ;
     rdfs:range :Damage .
 
+:hasApplicationArea a owl:ObjectProperty ;
+    rdfs:label "Anwendungsgebiet"@de,
+        "Application area"@en ;
+    rdfs:range :ApplicationArea .
+
+:hasApplicationComment a owl:ObjectProperty ;
+    rdfs:label "Anwendungsauflage"@de,
+        "Obligation regarding the application"@de .
+
 :hasChebiIdentity a owl:ObjectProperty ;
     rdfs:label "hat CheBI-Identität"@de,
         "has CheBI identity"@en ;
@@ -856,7 +886,7 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:comment "Diese Eigenschaft gibt das Land an, aus dem das Produkt stammt."@de,
         "This property indicates the country where the product originates."@en ;
     rdfs:domain :Product ;
-    rdfs:range <https://schema.org/Country> .
+    rdfs:range schema:Country .
 
 :hasDangerSymbol a owl:ObjectProperty ;
     rdfs:label "Gefahrensymbol"@de,
@@ -877,18 +907,22 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:range :HazardStatement .
 
 :hasParentCropGroup a owl:ObjectProperty ;
-    rdfs:label "hat Übergruppe"@de,
-        "has parent crop group"@en ;
+    rdfs:label "Übergruppe"@de,
+        "Parent crop group"@en ;
     rdfs:domain :CropGroup ;
     rdfs:range :CropGroup .
 
 :hasPermissionHolder a owl:ObjectProperty ;
     rdfs:label "Verkaufsbewilligungshalter"@de,
         "Permission holder"@en ;
-    rdfs:comment "Diese Eigenschaft verknüpft ein Produkt mit der Firma, die berechtigt ist, es zu verkaufen."@de,
-        "This property links a product to the company authorized to sell it."@en ;
+    rdfs:comment """
+        Diese Eigenschaft verknüpft ein Produkt mit der Firma, die berechtigt ist, es zu verkaufen.
+        """@de,
+        """
+        This property links a product to the company authorized to sell it.
+        """@en ;
     rdfs:domain :Product ;
-    rdfs:range <https://schema.org/Organization> ;
+    rdfs:range schema:Organization ;
     owl:inverseOf :holdsPermissionToSell .
 
 :hasSignalWords a owl:ObjectProperty ;
@@ -898,25 +932,54 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:range :SignalWord .
 
 :hasUnit a owl:ObjectProperty ;
-    rdfs:label "hat Einheit"@de,
-        "has Unit"@en ;
+    rdfs:label "Einheit"@de,
+        "Unit"@en ;
     rdfs:domain :TreatmentConstraint .
 
 :holdsPermissionToSell a owl:ObjectProperty ;
-    rdfs:label "hat Bewilligung zum Verkauf von"@de,
-        "holds Permission to sell"@en ;
-    rdfs:domain <https://schema.org/Organization> ;
-    rdfs:range :Product .
+    rdfs:label "PSM-Verkaufsbewilligungen"@de,
+        "PPP selling permission"@en ;
+    rdfs:comment """
+        Diese Eigenschaft verknüpft eine Organisation mit den Produkten, für die sie zum Verkauf berechtigt ist. 
+        """@de,
+        """
+        This property links an organization to the products it is authorized to sell.
+        """@en ;
+    rdfs:domain schema:Organization ;
+    rdfs:range :Product ;
+    owl:inverseOf :hasPermissionHolder .
 
 :interactsWith a owl:ObjectProperty ;
     rdfs:label "interagiert mit"@de,
         "interacts with"@en ;
-    rdfs:comment "Allgemeine Beziehung für physische Dinge, die mit etwas anderem interagieren. Ein Tier *interagiert mit* seiner Nahrung. Ein Pestizid *interagiert mit* dem Zielorganismus."@de,
-        "General relationship for physical thingns that interact with something else. A animal *interacts with* its food. A pesticide *interacts with* the target organism."@en .
+    rdfs:comment """
+        Allgemeine Beziehung für physische Dinge, die mit etwas anderem interagieren.
+        Ein Tier interagiert mit seiner Nahrung.
+        Ein Pestizid interagiert mit dem Zielorganismus.
+        """@de,
+        """
+        General relationship for physical thingns that interact with something else.
+        A animal interacts with its food.
+        A pesticide interacts with the target organism.
+        """@en .
 
 :involves a owl:ObjectProperty ;
-    rdfs:label "involviert"@de,
-        "involves"@en ;
+    rdfs:label "PSM-Produkt"@de,
+        "PPP product"@en,
+        "Produit PPP"@fr,
+        "Prodotto PPP"@it ;
+    rdfs:comment """
+        Verknüpft eine erlaubte Anwendung von PSM-Produkten (Indikation) mit dem jeweiligen Produkt.
+        """@de,
+        """
+        Links an authorized use of PPP products (indication) to the respective product.
+        """@en,
+        """
+        Lie un usage autorisé de produits PPP (indication) au produit correspondant.
+        """@fr,
+        """
+        Collega un uso autorizzato dei prodotti PPP (indicazione) al rispettivo prodotto.
+        """@it ;
     rdfs:domain :Treatment ;
     rdfs:range :Product ;
     owl:inverseOf :isInvolvedIn .
@@ -945,8 +1008,8 @@ wdt:P171 a owl:ObjectProperty ;
     owl:inverseOf :chemicallyDefines .
 
 :isConcernedBy a owl:ObjectProperty ;
-    rdfs:label "ist betroffen von"@de,
-        "is concerned by"@en ;
+    rdfs:label "Hinweis bezüglich der Schutzmassnahme"@de,
+        "Notice concerning the protective action"@en ;
     rdfs:domain :Action ;
     rdfs:range :ActionNotice ;
     owl:inverseOf :concerns .
@@ -1014,8 +1077,8 @@ wdt:P171 a owl:ObjectProperty ;
     owl:inverseOf :mitigates .
 
 :isProtectedBy a owl:ObjectProperty ;
-    rdfs:label "wird geschützt durch"@de,
-        "is protected by"@en ;
+    rdfs:label "Indikationen"@de,
+        "Indications"@en ;
     rdfs:domain :CropGroup ;
     rdfs:range :Action ;
     owl:inverseOf :protects .
@@ -1061,30 +1124,30 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:subPropertyOf :interactsWith .
 
 :mitigates a owl:ObjectProperty ;
-    rdfs:label "mindert"@de,
-        "mitigates"@en ;
+    rdfs:label "Schadverursacher"@de,
+        "Cause of damage"@en ;
     rdfs:comment "Diese Eigenschaft zeigt an, dass eine Handlung bestimmte Schadensarten reduziert oder lindert."@de,
         "This property indicates that an action reduces or alleviates specific types of damage."@en ;
     rdfs:domain :Action ;
     rdfs:range :Damage .
 
 :protects a owl:ObjectProperty ;
-    rdfs:label "schützt"@de,
-        "protects"@en ;
+    rdfs:label "Kulturgruppe"@de,
+        "Crop group"@en ;
     rdfs:domain :Action ;
     rdfs:range :CropGroup .
 
-<https://schema.org/address> a owl:ObjectProperty ;
+<http://schema.org/address> a owl:ObjectProperty ;
     rdfs:label "hat Adresse"@de,
         "has address"@en ;
-    rdfs:domain <https://schema.org/Organization> ;
-    rdfs:range <https://schema.org/PostalAddress> .
+    rdfs:domain schema:Organization ;
+    rdfs:range schema:PostalAddress .
 
-<https://schema.org/addressCountry> a owl:ObjectProperty ;
+<http://schema.org/addressCountry> a owl:ObjectProperty ;
     rdfs:label "befindet sich in Land"@de,
         "is located in country"@en ;
-    rdfs:domain <https://schema.org/PostalAddress> ;
-    rdfs:range <https://schema.org/Country> .
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range schema:Country .
 
 srppp: a owl:Ontology ;
     dcterms:creator "Federal Office for Agriculture" ;
