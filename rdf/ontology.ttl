@@ -628,7 +628,7 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 :hasHazardStatementCode a owl:DatatypeProperty ;
-    rdfs:label "Code bezüglich Sicherheitshinweisen für Gefahrstoffe"@de,
+    rdfs:label "Code bezüglich Gefahrenhinweise"@de,
         "Hazard statement code"@en ;
     rdfs:domain :HazardStatement ;
     rdfs:range xsd:string .
@@ -740,6 +740,18 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:domain :WaitingPeriod ;
     rdfs:range xsd:float .
 
+schema:address a owl:ObjectProperty ;
+    rdfs:label "hat Adresse"@de,
+        "has address"@en ;
+    rdfs:domain schema:Organization ;
+    rdfs:range schema:PostalAddress .
+
+schema:addressCountry a owl:ObjectProperty ;
+    rdfs:label "befindet sich in Land"@de,
+        "is located in country"@en ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range schema:Country .
+
 :BCAisDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:label "Biologisches Taxon"@de,
         "Biological taxon"@en ;
@@ -757,8 +769,8 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:subPropertyOf :isDefinedByBiologicalTaxon .
 
 :affects a owl:ObjectProperty ;
-    rdfs:label "betrifft"@de,
-        "affects"@en ;
+    rdfs:label "betrifft Indikation"@de,
+        "affects Indication"@en ;
     rdfs:domain :Damage ;
     rdfs:range :CropGroup .
 
@@ -856,8 +868,8 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:range chebi:24431 .
 
 :hasChildCropGroup a owl:ObjectProperty ;
-    rdfs:label "hat Untergruppe"@de,
-        "has child crop group"@en ;
+    rdfs:label "Untergruppe"@de,
+        "Cild crop group"@en ;
     rdfs:comment "Diese Eigenschaft zeigt an, dass eine Kulturgruppe eine andere Kulturgruppe als Untergruppe enthält."@de,
         "This property indicates that a crop group includes another crop group as its subgroup."@en ;
     rdfs:domain :CropGroup ;
@@ -1137,24 +1149,13 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:domain :Action ;
     rdfs:range :CropGroup .
 
-<http://schema.org/address> a owl:ObjectProperty ;
-    rdfs:label "hat Adresse"@de,
-        "has address"@en ;
-    rdfs:domain schema:Organization ;
-    rdfs:range schema:PostalAddress .
-
-<http://schema.org/addressCountry> a owl:ObjectProperty ;
-    rdfs:label "befindet sich in Land"@de,
-        "is located in country"@en ;
-    rdfs:domain schema:PostalAddress ;
-    rdfs:range schema:Country .
-
 srppp: a owl:Ontology ;
     dcterms:creator "Federal Office for Agriculture" ;
     dcterms:description "Diese Ontologie veranschaulicht den Wert einer umfassenden und gut strukturierten Ontologieentwicklung für das Bundesamt für Landwirtschaft (und allgemein den Schweizer Agrar- und Lebensmittelsektor). Durch die formale Modellierung der Komplexität des Pflanzenschutzes (mit Schwerpunkt auf zugelassenen Produkten) verbessert sie das Verständnis der aktuellen Regeln und ermöglicht deren effektive Kommunikation über IT-Dienste."@de,
         "This ontology exemplifies the value of comprehensive and well-structured ontology development for the Swiss Federal Office for Agriculture (and more broadly the Swiss agri-food sector). By capturing the complexities of crop protection (with a focus on registered products) in a formal model, it enhances understanding of current rules and allows their effective communication via IT-services."@en ;
     dcterms:title "Eine (demonstrative) Ontologie für den Pflanzenschutz in der Schweiz"@de,
         "A (demonstrative) ontology for crop protection in Switzerland"@en ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/blw-ofag-ufag/plant-protection/refs/heads/main/rdf/ontology.ttl> ;
     owl:versionInfo "0.11" .
 
 :Safener rdfs:label "Safener"@de,
