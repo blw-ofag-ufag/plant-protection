@@ -52,7 +52,7 @@ WHERE
 ORDER BY ?class
 ```
 
-## Federated query: Get all taxon names + authors for pests that belong to the order of *Lepidoptera*
+## [Federated query: Get all taxon names + authors for pests that belong to the order of *Lepidoptera*](https://s.zazuko.com/25ER8Pj)
 
 ```rq
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -67,13 +67,15 @@ PREFIX wd: <http://www.wikidata.org/entity/>
 SELECT ?pest ?name ?taxon ?eppo ?author ?taxonname (COUNT(?product) AS ?products)
 
 WHERE {
-  ?product a :Product ;
-    :isInvolvedIn/:mitigates ?pest .
+  
+  # query LINDAS for pests, their german name, the taxon and any product that is allowed on the pest
   ?pest a :BioticStressor ;
     schema:name ?name ;
-    :isDefinedByBiologicalTaxon ?taxon .
+    :isDefinedByBiologicalTaxon ?taxon ;
+    :isMitigatedBy/:involves ?product .
   FILTER(LANG(?name) = "de")
   
+  # query Wikidata for the 
   SERVICE <https://qlever.cs.uni-freiburg.de/api/wikidata> {
     ?taxon wdt:P225 ?taxonname ;
       wdt:P3031 ?eppo ;
@@ -83,9 +85,9 @@ WHERE {
     }
   }
 }
+
 GROUP BY ?pest ?name ?taxon ?eppo ?author ?taxonname
 ORDER BY DESC(?products)
-LIMIT 10
 ```
 
 ## Other queries

@@ -530,7 +530,7 @@ pest:10470 a :BioticStressor,
         "mouche de la carotte"@fr,
         "Mosca della carota"@it,
         "Psila rosae"@lt ;
-    :isDefinedByBiologicalTaxon wikidata:Q10332580 .
+    :isDefinedByBiologicalTaxon wikidata:Q1808247 .
 
 pest:10472 a :BioticStressor,
         :CropStressor ;
@@ -580,7 +580,7 @@ pest:10481 a :BioticStressor,
         "moniliose des fleurs et des rameaux"@fr,
         "Monilia dei rami e dei fiori"@it,
         "Monilia laxa"@lt ;
-    :isDefinedByBiologicalTaxon wikidata:Q10588231 .
+    :isDefinedByBiologicalTaxon wikidata:Q2313186 .
 
 pest:10482 a :BioticStressor,
         :CropStressor ;
@@ -3446,7 +3446,7 @@ pest:11240 a :BioticStressor,
         "pyrale du buis"@fr,
         "Piralide del bosso"@it,
         "Glyphodes perspectalis"@lt ;
-    :isDefinedByBiologicalTaxon wikidata:Q21267394 .
+    :isDefinedByBiologicalTaxon wikidata:Q175754 .
 
 pest:11242 a :BioticStressor,
         :CropStressor ;
@@ -3744,8 +3744,7 @@ pest:12354 a :BioticStressor,
         "phoma du tournesol"@fr,
         "Phoma del girasole"@it,
         "Plenodomus lindquistii (Anam. Phoma macdonaldii)"@lt ;
-    :isDefinedByBiologicalTaxon wikidata:Q104989334,
-        wikidata:Q108190205 .
+    :isDefinedByBiologicalTaxon wikidata:Q104989334 .
 
 pest:12355 a :BioticStressor,
         :CropStressor ;

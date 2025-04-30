@@ -78,7 +78,7 @@
         "en": ["Carrot fly"],
         "la": ["Psila rosae"]
       },
-      "wikidata-iri": ["Q10332580"],
+      "wikidata-iri": ["Q1808247"],
       "polyphyletic": false,
       "type": "biotic",
       "identical": [null]
@@ -482,9 +482,9 @@
         "fr": ["Phoma du tournesol"],
         "it": ["Phoma del girasole"],
         "en": [null],
-        "la": ["Plenodomus lindquistii", "Phoma macdonaldii"]
+        "la": ["Plenodomus lindquistii"]
       },
-      "wikidata-iri": ["Q104989334", "Q108190205"],
+      "wikidata-iri": ["Q104989334"],
       "polyphyletic": true,
       "type": "biotic",
       "identical": [null]
@@ -596,7 +596,7 @@
         "en": ["Blossom blight"],
         "la": ["Monilia laxa"]
       },
-      "wikidata-iri": ["Q10588231"],
+      "wikidata-iri": ["Q2313186"],
       "polyphyletic": false,
       "type": "biotic",
       "identical": [null]
@@ -3508,7 +3508,7 @@
         "en": ["Box-tree pyralid"],
         "la": ["Glyphodes perspectalis"]
       },
-      "wikidata-iri": ["Q21267394"],
+      "wikidata-iri": ["Q175754"],
       "polyphyletic": false,
       "type": "biotic",
       "identical": [null]
