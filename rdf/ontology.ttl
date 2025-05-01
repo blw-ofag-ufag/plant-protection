@@ -45,7 +45,7 @@
             owl:onProperty :isNonProfessionallyAllowed ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty :hasFederalAdmissionNumber ] .
+            owl:onProperty :federalAdmissionNumber ] .
 
 chebi:24431 a owl:Class ;
     rdfs:label "Chemische Entität"@de,
@@ -208,7 +208,7 @@ wikidata:Q16521 a owl:Class ;
         "Avviso relativo a una misura di protezione"@it ;
     rdfs:subClassOf :GeneralNotice .
 
-:ActiveSubstance a owl:Class ;
+:ActiveIngredient a owl:Class ;
     rdfs:label "Aktivsubstanz"@de,
         "Active substance"@en,
         "Substance active"@fr,
@@ -674,27 +674,82 @@ wikidata:Q16521 a owl:Class ;
 
 :ComponentPortion a owl:Class ;
     rdfs:label "Komponentenportion"@de,
-        "Component portion"@en ;
-    rdfs:comment "Eine Komponentenportion stellt einen einzelnen Bestandteil eines Gemisches dar. Sie legt die Bestandssubstanz und deren Prozentsatz fest. Jede Komponentenportion muss genau eine Bestandssubstanz haben."@de,
-        "A component portion represents a single constituent of a mixture, specifying the component substance and its percentage. Each component portion must have exactly one component substance."@en ;
+        "Component portion"@en,
+        "Portion de composant"@fr,
+        "Porzione di componente"@it ;
+    rdfs:comment """
+        Eine Komponentenportion stellt einen einzelnen Bestandteil eines Gemisches dar.
+        Sie legt die Bestandssubstanz und deren Prozentsatz fest.
+        Jede Komponentenportion muss genau eine Bestandssubstanz haben.
+        """@de,
+        """
+        A component portion represents a single constituent of a mixture, specifying the component substance and its percentage.
+        Each component portion must have exactly one component substance.
+        """@en,
+        """
+        Une portion de composant représente un constituant individuel d'un mélange, en précisant la substance composante et son pourcentage.
+        Chaque portion de composant doit avoir exactement une substance composante.
+        """@fr,
+        """
+        Una porzione di componente rappresenta un singolo costituente di una miscela, specificando la sostanza componente e la sua percentuale.
+        Ogni porzione di componente deve avere esattamente una sostanza componente.
+        """@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty :hasComponentSubstance ] .
 
 :ControlDamageThreshold a owl:Class ;
     rdfs:label "Bekämpfungsschadschwelle"@de,
-        "Control Damage Threshold"@en ;
-    rdfs:comment "Definiert die Schadensschwelle, ab der Massnahmen zur Bekämpfung eines Stressors ergriffen werden sollten, um weiteren Schaden zu verhindern."@de,
-        "Defines the damage threshold at which control measures should be implemented to prevent further harm from a stressor."@en ;
+        "Control Damage Threshold"@en,
+        "Seuil de dommage pour intervention"@fr,
+        "Soglia di danno per l'intervento"@it ;
+    rdfs:comment """
+        Definiert die Schadensschwelle, ab der Massnahmen zur Bekämpfung eines Stressors ergriffen werden sollten, um weiteren Schaden zu verhindern.
+        """@de,
+        """
+        Defines the damage threshold at which control measures should be implemented to prevent further harm from a stressor.
+        """@en,
+        """
+        Définit le seuil de dommage à partir duquel des mesures de lutte doivent être mises en œuvre pour éviter des dommages supplémentaires dus à un facteur de stress.
+        """@fr,
+        """
+        Definisce la soglia di danno oltre la quale devono essere attuate misure di controllo per prevenire ulteriori danni causati da uno stressore.
+        """@it ;
     rdfs:subClassOf :DamageThreshold .
 
 :CropGroup a owl:Class ;
     rdfs:label "Landwirtschaftliche Kultur"@de,
-        "Crop"@en ;
-    rdfs:comment "Repräsentiert eine Kategorie von landwirtschaftlichen Pflanzen, die innerhalb des Pflanzenschutzrahmens gemeinsame Merkmale, Anbaumethoden oder Verwendungszwecke teilen."@de,
-        "Represents a category of agricultural plants that share common characteristics, cultivation methods, or purposes within the crop protection framework."@en ;
-    rdfs:scopeNote "Entwickelt zur Modellierung von Kulturgruppen, die aufgrund von Ähnlichkeiten in ihren biologischen Eigenschaften, Wachstumsanforderungen oder den für ihren Schutz eingesetzten Strategien gemeinsam bewirtschaftet werden."@de,
-        "Designed to model groups of crops that are managed collectively due to similarities in their biological attributes, growth requirements, or the strategies employed for their protection against stressors."@en .
+        "Crop"@en,
+        "Culture agricole"@fr,
+        "Coltura agricola"@it ;
+    rdfs:comment """
+        Repräsentiert eine Kategorie von landwirtschaftlichen Pflanzen, die innerhalb des Pflanzenschutzrahmens gemeinsame Merkmale, Anbaumethoden oder Verwendungszwecke teilen.
+        """@de,
+        """
+        Represents a category of agricultural plants that share common characteristics, cultivation methods, or purposes within the crop protection framework.
+        """@en,
+        """
+        Représente une catégorie de plantes agricoles partageant des caractéristiques, des méthodes de culture ou des usages communs dans le cadre de la protection des cultures.
+        """@fr,
+        """
+        Rappresenta una categoria di piante agricole che condividono caratteristiche comuni, metodi di coltivazione o scopi nell'ambito della protezione delle colture.
+        """@it ;
+    rdfs:scopeNote """
+        Entwickelt zur Modellierung von Kulturgruppen, die aufgrund von Ähnlichkeiten in ihren biologischen Eigenschaften,
+        Wachstumsanforderungen oder den für ihren Schutz eingesetzten Strategien gemeinsam bewirtschaftet werden.
+        """@de,
+        """
+        Designed to model groups of crops that are managed collectively due to similarities in their biological attributes,
+        growth requirements, or the strategies employed for their protection against stressors.
+        """@en,
+        """
+        Conçu pour modéliser des groupes de cultures gérés collectivement en raison de similitudes dans leurs caractéristiques biologiques,
+        leurs exigences de croissance ou les stratégies de protection mises en œuvre.
+        """@fr,
+        """
+        Progettato per modellare gruppi di colture gestiti collettivamente a causa di somiglianze nei loro attributi biologici,
+        nei requisiti di crescita o nelle strategie adottate per proteggerle dagli agenti di stress.
+        """@it .
 
 :CropProtectionProduct a owl:Class ;
     rdfs:label "Pflanzenschutzmittel"@de,
@@ -1060,23 +1115,63 @@ wikidata:Q16521 a owl:Class ;
 
 :Pheromone a owl:Class ;
     rdfs:label "Pheromon"@de,
-        "Pheromone"@en ;
-    rdfs:comment "Pheromone sind chemische Substanzen, die von Insekten abgesondert werden, um mit Artgenossen zu kommunizieren. Sie beeinflussen Verhaltensweisen wie Paarung, Aggregation oder Spurverfolgung. In der Schädlingsbekämpfung werden synthetische Pheromone als Lockstoffe eingesetzt, um Schädlingspopulationen zu überwachen oder zu kontrollieren."@de,
-        "Pheromones are chemical substances secreted by insects to communicate with conspecifics. They influence behaviors such as mating, aggregation, or trail following. In pest management, synthetic pheromones are used as attractants to monitor or control pest populations."@en ;
+        "Pheromone"@en,
+        "Phéromone"@fr,
+        "Feromone"@it ;
+    rdfs:comment """
+        Pheromone sind chemische Substanzen, die von Insekten abgesondert werden, um mit Artgenossen zu kommunizieren.
+        Sie beeinflussen Verhaltensweisen wie Paarung, Aggregation oder Spurverfolgung.
+        In der Schädlingsbekämpfung werden synthetische Pheromone als Lockstoffe eingesetzt, um Schädlingspopulationen zu überwachen oder zu kontrollieren.
+        """@de,
+        """
+        Pheromones are chemical substances secreted by insects to communicate with conspecifics.
+        They influence behaviors such as mating, aggregation, or trail following.
+        In pest management, synthetic pheromones are used as attractants to monitor or control pest populations.
+        """@en,
+        """
+        Les phéromones sont des substances chimiques sécrétées par les insectes pour communiquer avec leurs congénères.
+        Elles influencent des comportements comme l'accouplement, l'agrégation ou le suivi de pistes.
+        En lutte antiparasitaire, des phéromones synthétiques sont utilisées comme attractifs pour surveiller ou contrôler les populations de nuisibles.
+        """@fr,
+        """
+        Le feromoni sono sostanze chimiche secrete dagli insetti per comunicare con i loro simili.
+        Influenzano comportamenti come l'accoppiamento, l'aggregazione o il tracciamento.
+        Nella lotta ai parassiti, i feromoni sintetici sono usati come attrattivi per monitorare o controllare le popolazioni infestanti.
+        """@it ;
     rdfs:subClassOf :Insecticide ;
     skos:altLabel "Insektenlockstoffe"@de,
-        "Insect Attractant"@en .
+        "Insect Attractant"@en,
+        "Attractif pour insectes"@fr,
+        "Attrattivo per insetti"@it .
 
 :Phytoregulator a owl:Class ;
     rdfs:label "Phytoregulator"@de,
-        "Phytoregulator"@en ;
+        "Phytoregulator"@en,
+        "Phytorégulateur"@fr,
+        "Fitorregolatore"@it ;
     rdfs:subClassOf :ChemicalProduct .
 
 :PureSubstance a owl:Class ;
     rdfs:label "Reine Substanz"@de,
-        "Pure substance"@en ;
-    rdfs:comment "Eine reine chemische Substanz ist mit genau einer CheBI-Chemikalie verknüpft und kann kein Gemisch sein. Reine Substanzen und chemische Gemische sind disjunkte Klassen."@de,
-        "A pure chemical substance is associated with exactly one CheBI chemical entity and cannot be a mixture. Pure substances and chemical mixtures are disjoint classes."@en ;
+        "Pure substance"@en,
+        "Substance pure"@fr,
+        "Sostanza pura"@it ;
+    rdfs:comment """
+        Eine reine chemische Substanz ist mit genau einer CheBI-Chemikalie verknüpft und kann kein Gemisch sein.
+        Reine Substanzen und chemische Gemische sind disjunkte Klassen.
+        """@de,
+        """
+        A pure chemical substance is associated with exactly one CheBI chemical entity and cannot be a mixture.
+        Pure substances and chemical mixtures are disjoint classes.
+        """@en,
+        """
+        Une substance chimique pure est associée à exactement une entité chimique CheBI et ne peut pas être un mélange.
+        Les substances pures et les mélanges chimiques sont des classes disjointes.
+        """@fr,
+        """
+        Una sostanza chimica pura è associata a una sola entità chimica CheBI e non può essere una miscela.
+        Le sostanze pure e le miscele chimiche sono classi disgiunte.
+        """@it ;
     rdfs:subClassOf :Substance ;
     owl:disjointWith :Mixture .
 
@@ -1352,6 +1447,54 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:domain :Damage ;
     rdfs:range xsd:float .
 
+:federalAdmissionNumber a owl:DatatypeProperty ;
+    rdfs:label "Eidgenössische Zulassungsnummer"@de,
+        "Federal admission number"@en,
+        "Numéro d'autorisation fédérale"@fr,
+        "Numero di autorizzazione federale"@it ;
+    rdfs:comment """
+        Die eidgenössische Zulassungsnummer identifiziert eine Produktregistrierung eindeutig.
+        Sie ist entweder als W-Nummer im Fall von Bundeszulassungen (z. B. W-18) oder als Parallelimportnummer mit dem Anfangsbuchstaben des Ursprungslandes im Code im Fall von Parallelimporten (z. B. I-2789 für einen Parallelimport aus Italien) aufgebaut. 
+        Nummern mit einem Bindestrich (z. B. W-18-1, W-18-2) stehen für gleichwertige Produkte, die sich im Besitz verschiedener juristischer Personen befinden, während Nummern ohne Bindestrich (z. B. W-18) für die ursprüngliche Registrierung stehen.
+        """@de,
+        """
+        The federal admission number uniquely identifies a product registration.
+        It is either constructed as a W-Number in the case of federal admissions (e.g., W-18) or as a parallel import number with the country of origin's initial letter in the code in the case of parallel imports (e.g., I-2789 for a parallel import from Italy).
+        Numbers with a dash (e.g., W-18-1, W-18-2) represent equivalent products held by different legal entities, while numbers without a dash (e.g., W-18) represent the original registration.
+        """@en,
+        """
+        Le numéro d'autorisation fédérale identifie de manière unique une enregistrement de produit.
+        Il est soit construit comme un numéro W dans le cas des autorisations fédérales (par exemple, W-18), soit comme un numéro d'importation parallèle avec la lettre initiale du pays d'origine dans le code dans le cas des importations parallèles (par exemple, I-2789 pour une importation parallèle en provenance d'Italie).
+        Les numéros avec un tiret (par exemple, W-18-1, W-18-2) représentent des produits équivalents détenus par différentes entités juridiques, tandis que les numéros sans tiret (par exemple, W-18) représentent l'enregistrement original.
+        """@fr,
+        """
+        Il numero di autorizzazione federale identifica in modo univoco una registrazione di prodotto.
+        È costruito come un numero W nel caso di autorizzazioni federali (ad esempio, W-18) o come un numero di importazione parallela con la lettera iniziale del paese di origine nel codice nel caso di importazioni parallele (ad esempio, I-2789 per un'importazione parallela dall'Italia).
+        I numeri con un trattino (ad esempio, W-18-1, W-18-2) rappresentano prodotti equivalenti detenuti da diverse entità giuridiche, mentre i numeri senza trattino (ad esempio, W-18) rappresentano la registrazione originale.
+        """@it ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:NCName .
+
+:foreignAdmissionNumber a owl:DatatypeProperty ;
+    rdfs:label "Ausländische Zulassungsnummer"@de,
+        "Foreign admission number"@en,
+        "Numéro d'autorisation étrangère"@fr,
+        "Numero di autorizzazione estera"@it ;
+    rdfs:comment """
+        Diese Eigenschaft gibt die Zulassungs- oder Registrierungsnummer an, die dem Produkt in seinem Herkunftsland zugewiesen wurde.
+        """@de,
+        """
+        This property specifies the admission or registration number assigned to the product in its country of origin.
+        """@en,
+        """
+        Cette propriété indique le numéro d'autorisation ou d'enregistrement attribué au produit dans son pays d'origine.
+        """@fr,
+        """
+        Questa proprietà specifica il numero di autorizzazione o di registrazione assegnato al prodotto nel paese di origine.
+        """@it ;
+    rdfs:domain :ParallelImport ;
+    rdfs:range xsd:string .
+
 :hasCodeR a owl:DatatypeProperty ;
     rdfs:label "R-Satz"@de,
         "R phrase"@en,
@@ -1398,53 +1541,11 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:domain :Product ;
     rdfs:range xsd:date .
 
-:hasFederalAdmissionNumber a owl:DatatypeProperty ;
-    rdfs:label "Eidgenössische Zulassungsnummer"@de,
-        "Federal admission number"@en,
-        "Numéro d'autorisation fédérale"@fr,
-        "Numero di autorizzazione federale"@it ;
-    rdfs:comment """
-        Die eidgenössische Zulassungsnummer identifiziert eine Produktregistrierung eindeutig.
-        Sie ist entweder als W-Nummer im Fall von Bundeszulassungen (z. B. W-18) oder als Parallelimportnummer mit dem Anfangsbuchstaben des Ursprungslandes im Code im Fall von Parallelimporten (z. B. I-2789 für einen Parallelimport aus Italien) aufgebaut. 
-        Nummern mit einem Bindestrich (z. B. W-18-1, W-18-2) stehen für gleichwertige Produkte, die sich im Besitz verschiedener juristischer Personen befinden, während Nummern ohne Bindestrich (z. B. W-18) für die ursprüngliche Registrierung stehen.
-        """@de,
-        """
-        The federal admission number uniquely identifies a product registration.
-        It is either constructed as a W-Number in the case of federal admissions (e.g., W-18) or as a parallel import number with the country of origin's initial letter in the code in the case of parallel imports (e.g., I-2789 for a parallel import from Italy).
-        Numbers with a dash (e.g., W-18-1, W-18-2) represent equivalent products held by different legal entities, while numbers without a dash (e.g., W-18) represent the original registration.
-        """@en,
-        """
-        Le numéro d'autorisation fédérale identifie de manière unique une enregistrement de produit.
-        Il est soit construit comme un numéro W dans le cas des autorisations fédérales (par exemple, W-18), soit comme un numéro d'importation parallèle avec la lettre initiale du pays d'origine dans le code dans le cas des importations parallèles (par exemple, I-2789 pour une importation parallèle en provenance d'Italie).
-        Les numéros avec un tiret (par exemple, W-18-1, W-18-2) représentent des produits équivalents détenus par différentes entités juridiques, tandis que les numéros sans tiret (par exemple, W-18) représentent l'enregistrement original.
-        """@fr,
-        """
-        Il numero di autorizzazione federale identifica in modo univoco una registrazione di prodotto.
-        È costruito come un numero W nel caso di autorizzazioni federali (ad esempio, W-18) o come un numero di importazione parallela con la lettera iniziale del paese di origine nel codice nel caso di importazioni parallele (ad esempio, I-2789 per un'importazione parallela dall'Italia).
-        I numeri con un trattino (ad esempio, W-18-1, W-18-2) rappresentano prodotti equivalenti detenuti da diverse entità giuridiche, mentre i numeri senza trattino (ad esempio, W-18) rappresentano la registrazione originale.
-        """@it ;
-    rdfs:domain :Product ;
-    rdfs:range xsd:NCName .
-
-:hasForeignAdmissionNumber a owl:DatatypeProperty ;
-    rdfs:label "Ausländische Zulassungsnummer"@de,
-        "Foreign admission number"@en,
-        "Numéro d'autorisation étrangère"@fr,
-        "Numero di autorizzazione estera"@it ;
-    rdfs:comment """
-        Diese Eigenschaft gibt die Zulassungs- oder Registrierungsnummer an, die dem Produkt in seinem Herkunftsland zugewiesen wurde.
-        """@de,
-        """
-        This property specifies the admission or registration number assigned to the product in its country of origin.
-        """@en,
-        """
-        Cette propriété indique le numéro d'autorisation ou d'enregistrement attribué au produit dans son pays d'origine.
-        """@fr,
-        """
-        Questa proprietà specifica il numero di autorizzazione o di registrazione assegnato al prodotto nel paese di origine.
-        """@it ;
-    rdfs:domain :ParallelImport ;
-    rdfs:range xsd:string .
+:hasGrammPerLitre a owl:DatatypeProperty ;
+    rdfs:label "Anteil [g/L]"@de,
+        "Portion [g/L]"@en,
+        "Proportion [g/L]"@fr,
+        "Percentuale [g/L]"@it .
 
 :hasHazardStatementCode a owl:DatatypeProperty ;
     rdfs:label "Code bezüglich Gefahrenhinweise"@de,
@@ -1453,6 +1554,12 @@ schema:telephone a owl:DatatypeProperty ;
         "Codice delle indicazioni di pericolo"@it ;
     rdfs:domain :HazardStatement ;
     rdfs:range xsd:string .
+
+:hasPercentage a owl:DatatypeProperty ;
+    rdfs:label "Anteil [%]"@de,
+        "Portion [%]"@en,
+        "Proportion [%]"@fr,
+        "Percentuale [%]"@it .
 
 :hasSoldoutDeadline a owl:DatatypeProperty ;
     rdfs:label "Ausverkauft-Frist"@de,
@@ -1597,6 +1704,14 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:domain :WaitingPeriod ;
     rdfs:range xsd:float .
 
+:packageInsertNumber a owl:DatatypeProperty ;
+    rdfs:label "Packungsbeilagenummer"@de,
+        "Package insert number"@en,
+        "Numéro de la notice"@fr,
+        "Numero del foglietto illustrativo"@it ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:string .
+
 schema:address a owl:ObjectProperty ;
     rdfs:label "hat Adresse"@de,
         "has address"@en,
@@ -1726,8 +1841,8 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:range :ComponentPortion .
 
 :hasComponentSubstance a owl:ObjectProperty ;
-    rdfs:label "hat Bestandssubstanz"@de,
-        "has component substance"@en ;
+    rdfs:label "Bestandssubstanz"@de,
+        "Component substance"@en ;
     rdfs:comment "Verknüpft eine Komponentenportion mit der spezifischen Substanz, die als Bestandteil in einem Gemisch dient."@de,
         "Links a component portion to the specific substance that serves as a component within a mixture."@en ;
     rdfs:domain :ComponentPortion ;

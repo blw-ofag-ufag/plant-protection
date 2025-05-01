@@ -51,3 +51,37 @@ printList <- function(L, subjectclass, properties = NULL) {
     }
   }
 }
+
+getW <- function(x) paste0("W-", x)
+
+#' Generate a Nano ID
+#'
+#' @param n Integer. Length of the ID to generate.
+#' @param alphabet Character vector. Set of symbols to draw from.
+#'   Defaults to letters, LETTERS, and digits 0–9.
+#' @return A single-character string of length n.
+#' @examples
+#' nano_id(10)
+nano_id <- function(n,
+                    alphabet = c(letters, LETTERS, as.character(0:9))) {
+  if (!is.numeric(n) || length(n) != 1 || n <= 0) {
+    stop("`n` must be a single positive integer")
+  }
+  paste0(sample(alphabet, size = n, replace = TRUE), collapse = "")
+}
+
+
+
+snake_to_camel <- function(x, sep = "_") {
+  # x: character vector
+  # sep: the separator between words (default "_")
+  x <- tolower(x)
+  sapply(x, function(str) {
+    parts <- strsplit(str, sep, fixed = TRUE)[[1]]
+    # capitalize first letter of each part, leave rest as-is
+    parts <- paste0(toupper(substr(parts, 1, 1)), substr(parts, 2, nchar(parts)))
+    paste(parts, collapse = "")
+  }, USE.NAMES = FALSE)
+}
+
+

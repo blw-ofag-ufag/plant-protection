@@ -55,128 +55,110 @@ zefix_company = read.csv("tables/mapping/zefix-company.csv", row.names = 1)
 # WRITE PRODUCT INFORMATION
 # ------------------------------------------------------------------
 
-# pre-process product tables
-swiss_products = SRPPP$products[,c("pNbr", "wNbr", "name", "exhaustionDeadline", "soldoutDeadline", "permission_holder")]
-colnames(swiss_products) = c("pNbr", "hasFederalAdmissionNumber", "rdfs:label", "hasExhaustionDeadline", "hasSoldoutDeadline", "hasPermissionHolder")
-swiss_products[,"hasFederalAdmissionNumber"] = paste0("W-", unlist(swiss_products[,"hasFederalAdmissionNumber"]))
-swiss_products[,"hasCountryOfOrigin"] = "https://ld.admin.ch/country/CHE"
-swiss_products[,"hasForeignAdmissionNumber"] = NA
-swiss_products[,"isParallelImport"] = FALSE
+# transform XML to lists
+L1 = XML |>
+  xml_find_all("//Product") |>
+  as_list()
+L2 = XML |>
+  xml_find_all("//Parallelimport") |>
+  as_list()
 
-# pre-process parallel imports tables
-parallel_imports = SRPPP$parallel_imports[,c("pNbr", "id", "name", "exhaustionDeadline", "soldoutDeadline", "permission_holder", "producingCountryPrimaryKey", "admissionnumber")]
-colnames(parallel_imports) = colnames(swiss_products)
-parallel_imports[,"hasCountryOfOrigin"] = lindas_country[as.character(unlist(parallel_imports[,"hasCountryOfOrigin"])),]
-parallel_imports[,"isParallelImport"] = TRUE
-
-# merge the two tables
-products = rbind(swiss_products, parallel_imports)
-rm(swiss_products, parallel_imports)
-products = as.data.frame(products)
-products[products==""] <- NA
-
-# tag the products that are allowed non-professionally (runn `unique(SRPPP$CodeS[SRPPP$CodeS$desc_pk==13876,]` to check code ID)
-products[,"isNonProfessionallyAllowed"] = products[,"pNbr"] %in% unlist(SRPPP$CodeS[SRPPP$CodeS$desc_pk==13876,"pNbr"])
-
-# sort by product ID (this is important for the "sameProductAs" search)
-products = products[order(products$pNbr),]
-
-# open file
-sink("rdf/products.ttl")
-
-cat(prefixes)
-
-# write triples
-for (i in 1:nrow(products)) {
+# construct a index data frame with the id for unique chemical and brand products
+index = data.frame(
   
-  # save the current row
-  x = as.list(products[i,])
+  # id unique to a chemical product
+  w = c(
+    getW(sub("-.*$", "", sapply(L1, attr, "wNbr"))),
+    getW(sapply(L2, attr, "wNbr"))
+  ),
   
-  # save the current product
-  subject = uri(x$hasFederalAdmissionNumber, base)
-  
-  # save classes as one string
-  classes <- uri(srppp_product_category[as.character(unlist(SRPPP$categories[SRPPP$categories$pNbr==products[i,"pNbr"],2])),1])
-  if(products[i,"isParallelImport"]) classes = c(classes, uri("ParallelImport", base))
-  
-  triple(subject, "a", classes)
-  triple(subject, "rdfs:label", literal(x[["rdfs:label"]]))
-  for (j in setdiff(names(x), c("pNbr","rdfs:label","isParallelImport"))) {
-    
-    # save predicate and object
-    predicate <- paste0(":", j)
-    object <- x[[j]]
-    
-    # check if object is not NA
-    if(!is.na(object)) {
-      
-      # conditionally make statement based on object class
-      if(class(object)=="character") {
-        if(length(grep("https://", object))>0) {
-          triple(subject, predicate, uri(object))
-        } else {
-          triple(subject, predicate, literal(object))
-        }
-      } else if(class(object)=="logical") {
-        triple(subject, predicate, typed(tolower(object), datatype = "boolean"))
-      } else if(class(object)=="Date") {
-        triple(subject, predicate, typed(object, datatype = "date"))
-      }
-    }
-  }
-
-  # find the chemically identical products
-  if(sum(products[,"pNbr"]==products[i,"pNbr"])>1) {
-    for (j in which(products[,"pNbr"]==products[i,"pNbr"])) {
-      if(i != j) {
-        triple(subject, ":isSameProductAs", uri(products[j,"hasFederalAdmissionNumber"], base))
-      }
-    }
-  }
-
-  # reuse existing company from lindas zefix, if possible
-  company <- products[i,"hasPermissionHolder"]
-  if(!is.na(company)) {
-    zefix_iri = zefix_company[as.character(company),"IRI"]
-    if(!is.na(zefix_iri)) {
-      triple(subject, ":hasPermissionHolder", uri(zefix_iri))
-    } else {
-      triple(subject, ":hasPermissionHolder", uri(file.path("company",company), base))
-    }
-  }
-}
-sink()
-rm(i,j,predicate,subject,object,company,classes)
+  # id unique to a product as it is sold (with name and seller)
+  p = c(
+    getW(sapply(L1, attr, "wNbr")),
+    sapply(L2, attr, "id")
+  )
+)
 
 # other product information (not in SRPPP package)
-convert = function(x, parallelimport = FALSE) {
+describe <- function(x, parallelimport = FALSE) {
+  
+  # get the correct IDs (depending on whether product is parallel import or not)
+  if(parallelimport) {
+    p = attr(x, "id")
+    w = getW(attr(x, "wNbr"))
+    subject = uri(p, base)
+    triple(subject, "a", ":ParallelImport")
+  } else {
+    p = getW(attr(x, "wNbr"))
+    w = getW(sub("-.*$", "", attr(x, "wNbr")))
+    subject = uri(p, base)
+    triple(subject, "a", ":Product")
+  }
+  
+  # assign product categories
+  for (i in srppp_product_category[getFK(x[["ProductInformation"]], "ProductCategory"),]) {
+    triple(subject, "a", uri(i))
+  }
+  
+  # product label
+  triple(subject, "rdfs:label", literal(attr(x, "name")))
+  
+  # Numbers for this product
+  triple(subject, ":federalAdmissionNumber", literal(p))
+  triple(subject, ":foreignAdmissionNumber", literal(attr(x, "admissionnumber")))
+  triple(subject, ":packageInsertNumber", literal(attr(x, "packageInsert")))
+  
+  # find the chemically identical products and make the identity explicit
+  for (i in index[index[,"w"]==w,"p"]) {
+    if (i != p) {
+      triple(subject, ":isSameProductAs", uri(i, base))
+    }
+  }
+  
+  # reuse existing company from lindas zefix, if possible; otherwise point at own company
+  companies <- getFK(x[["ProductInformation"]], "PermissionHolderKey")
+  if(length(companies)>0) {
+    for (company in companies) {
+      zefix_iri = zefix_company[as.character(company),"IRI"]
+      if(!is.na(zefix_iri)) {
+        triple(subject, ":hasPermissionHolder", uri(zefix_iri))
+      } else {
+        triple(subject, ":hasPermissionHolder", uri(file.path("company",company), base))
+      }
+    }
+  }
+  
+  # producing country
+  triple(subject, ":hasCountryOfOrigin", uri(lindas_country[attr(x, "producingCountryPrimaryKey"),]))
+  
+  # dates
+  for (variable in c("soldoutDeadline", "exhaustionDeadline")) {
+    triple(subject, paste0(":",variable), typed(attr(x, variable), "date"))
+  }
+  
+  # add diverse links to codes
+  prefix = paste0(base, "code/")
+  for (variable in c("FormulationCode", "CodeR", "CodeS", "DangerSymbol", "SignalWords")) {
+    triple(subject, paste0(":has",variable), uri(getFK(x[["ProductInformation"]], variable), prefix))
+  }
+  
+  # Save the ingredients (here, we work with blank nodes)
   PI = x[["ProductInformation"]]
-  list(
-    subject = if(parallelimport) {
-      uri(attr(x, "id"), base)
-    } else {
-      uri(paste0("W-",attr(x, "wNbr")), base)
-    },
-    `:hasFormulationCode` = uri(file.path("code", getFK(PI, "FormulationCode")), base),
-    `:hasCodeR`           = uri(file.path("code", getFK(PI, "CodeR")), base),
-    `:hasCodeS`           = uri(file.path("code", getFK(PI, "CodeS")), base),
-    `:hasDangerSymbol`    = uri(file.path("code", getFK(PI, "DangerSymbol")), base),
-    `:hasSignalWords`     = uri(file.path("code", getFK(PI, "SignalWords")), base)
-  )
+  prefix = paste0(base, "substance/")
+  for (ingredient in PI[names(PI)=="Ingredient"]) {
+    blank <- paste0("_:", nano_id(24))
+    triple(subject, ":hasComponentPortion", blank)
+    triple(blank, "a", uri(snake_to_camel(unlist(ingredient[["SubstanceType"]])), base))
+    triple(blank, ":hasComponentSubstance", uri(getPK(ingredient[["Substance"]]), prefix))
+    triple(blank, ":hasPercentage", attr(ingredient, "inPercent"))
+    triple(blank, ":hasGrammPerLitre", attr(ingredient, "inGrammPerLitre"))
+  }
 }
 
-sink("rdf/products.ttl", append = T)
+sink("rdf/products.ttl")
 cat(prefixes)
-XML |>
-  xml_find_all("//Product") |>
-  as_list() |>
-  lapply(convert) |>
-  printList(":Product", properties = c(":hasFormulationCode", ":hasCodeR", ":hasCodeS", ":hasDangerSymbol", ":hasSignalWords"))
-XML |>
-  xml_find_all("//Parallelimport") |>
-  as_list() |>
-  lapply(convert, TRUE) |>
-  printList(":Product", properties = c(":hasFormulationCode", ":hasCodeR", ":hasCodeS", ":hasDangerSymbol", ":hasSignalWords"))
+for (x in L1) describe(x, FALSE)
+for (x in L2) describe(x, TRUE)
 sink()
 
 
