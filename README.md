@@ -24,7 +24,7 @@ SELECT
 WHERE {
   ?product schema:name ?name ;
     :hasPermissionHolder/schema:legalName ?company ;
-    :hasFederalAdmissionNumber ?WNbr ;
+    :federalAdmissionNumber ?WNbr ;
     :isInvolvedIn [
       :protects/schema:name "Kartoffeln"@de ;
       :mitigates/schema:name "Kraut- und Knollenfäule"@de
@@ -32,7 +32,7 @@ WHERE {
 }
 
 GROUP BY ?company
-ORDER BY DESC(?N)
+ORDER BY DESC(?Number)
 ```
 
 ## Get all subclasses of `:Product` with names and descriptions
@@ -99,7 +99,8 @@ ORDER BY DESC(?products)
 
 ## Other queries
 
-- [What insecticide indication has most obligations?](https://s.zazuko.com/3b3h8CL)
+- [What insecticide indication has most obligations?](https://s.zazuko.com/2MSLoHB)
 - [Count number of indications per application area](https://s.zazuko.com/2w3CpY4)
 - [Get all class and property labels and comments](https://s.zazuko.com/aJyrxh)
 - [Count the instances per (sub)class](https://s.zazuko.com/j55kjw)
+- [A list of all substances, their IUPAC name, role, average percentages and how many products they are in](https://s.zazuko.com/3ssB5gY)
