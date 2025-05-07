@@ -104,3 +104,4 @@ ORDER BY DESC(?products)
 - [Get all class and property labels and comments](https://s.zazuko.com/aJyrxh)
 - [Count the instances per (sub)class](https://s.zazuko.com/j55kjw)
 - [A list of all substances, their IUPAC name, role, average percentages and how many products they are in](https://s.zazuko.com/3ssB5gY)
+- <https://s.zazuko.com/272TFvJ>
