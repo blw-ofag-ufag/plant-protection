@@ -9,7 +9,7 @@ You can use the browser tool [WebVOWL](https://github.com/VisualDataWeb/WebVOWL)
 
 # Example queries
 
-## Companies that sell product applicable agains potato late blight
+## [Companies that sell product applicable agains potato late blight](https://s.zazuko.com/2cD58BV)
 
 ```rq
 PREFIX aschema: <https://schema.ld.admin.ch/>
@@ -35,7 +35,7 @@ GROUP BY ?company
 ORDER BY DESC(?Number)
 ```
 
-## Get all subclasses of `:Product` with names and descriptions
+## [Get all subclasses of `:Product` with names and descriptions](https://s.zazuko.com/3ktAsV5)
 
 ```rq
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
