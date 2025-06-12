@@ -236,8 +236,8 @@ for (i in 1:nrow(companies)) {
   address = uri(uuid::UUIDfromName("2034115b-8c4e-43a1-960f-c73320210196", companies[i,"IRI"]), base)
   triple(x, "schema:address", address)
   for (property in c("postOfficeBoxNumber","streetAddress","postalCode", "addressLocality")) {
-    if(!is.na(companies[i,property])) {
-      triple(address, uri(property, "http://schema.org/"), literal(companies[i,property]))
+    if(!is.na(unlist(companies[i,property]))) {
+      triple(address, uri(property, "http://schema.org/"), literal(unlist(companies[i,property])))
     }
   }
   triple(address, "schema:addressCountry", uri(companies[i,"addressCountry"]))
@@ -425,6 +425,9 @@ describe = function(x, parallelimport = FALSE) {
     triple(subject, "a", ":Treatment")
     triple(subject, ":minimumTreatmentDosage", literal(attr(indication, "dosageFrom")))
     triple(subject, ":maximumTreatmentDosage", literal(attr(indication, "dosageTo")))
+    triple(subject, ":waitingPeriod", attr(indication, "waitingPeriod"))
+    triple(subject, ":expenditureTo", attr(indication, "expenditureTo"))
+    triple(subject, ":expenditureFrom", attr(indication, "expenditureFrom"))
     triple(subject, ":hasApplicationArea", uri(file.path("code", getFK(indication, "ApplicationArea")), base))
     triple(subject, ":hasApplicationComment", uri(file.path("note", getFK(indication, "Obligation")), base))
     triple(subject, ":isConcernedBy", uri(file.path("note",getFK(indication, "Obligation")), base))
@@ -432,6 +435,7 @@ describe = function(x, parallelimport = FALSE) {
     triple(subject, ":protects", uri(file.path("crop",getFK(indication, "Culture")), base))
   }
 }
+
 
 sink("rdf/indications.ttl")
 cat(prefixes)
@@ -444,4 +448,3 @@ L = XML |>
   as_list()
 for (x in L) describe(x)
 sink()
-
