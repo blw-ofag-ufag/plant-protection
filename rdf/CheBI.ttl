@@ -23,43 +23,43 @@ substance:1075 :hasChebiIdentity chebi:81971 .
 
 substance:108 :hasChebiIdentity chebi:3751 .
 
-substance:1098 rdfs:label "Z9-12 Ac"@de .
+substance:1098 :hasChebiIdentity chebi:179333 .
 
-substance:110 rdfs:label "Clopyralid"@de .
+substance:110 :hasChebiIdentity chebi:62961 .
 
 substance:1106 rdfs:label "1-Naphthylacetamid"@de .
 
 substance:1109 rdfs:label "Aluminiumfosetyl (Fosetyl-Al)"@de .
 
-substance:1110 rdfs:label "Aluminiumphosphid"@de .
+substance:1110 :hasChebiIdentity chebi:38495 .
 
-substance:1137 rdfs:label "Cloquintocet-mexyl"@de .
+substance:1137 :hasChebiIdentity chebi:143152 .
 
-substance:1138 rdfs:label "Cycloxydim"@de .
+substance:1138 :hasChebiIdentity chebi:4033 .
 
-substance:114 rdfs:label "Cymoxanil"@de .
+substance:114 :hasChebiIdentity chebi:81788 .
 
-substance:1147 rdfs:label "Diflufenican"@de .
+substance:1147 :hasChebiIdentity chebi:81824 .
 
-substance:115 rdfs:label "Cypermethrin"@de .
+substance:115 :hasChebiIdentity chebi:4042 .
 
-substance:1155 rdfs:label "Dithianon"@de .
+substance:1155 :hasChebiIdentity chebi:81842 .
 
-substance:1162 rdfs:label "Fenpyroximate"@de .
+substance:1162 :hasChebiIdentity chebi:5011 .
 
 substance:1164 rdfs:label "Fettsäuren (Kaliumsalze)"@de .
 
-substance:1168 rdfs:label "Flurochloridon"@de .
+substance:1168 :hasChebiIdentity chebi:5131 .
 
 substance:1184 rdfs:label "Kupfer (als Kalkpräparat, Bordeaux-Brühe)"@de .
 
-substance:1187 rdfs:label "Lambda-Cyhalothrin"@de .
+substance:1187 :hasChebiIdentity chebi:39325 .
 
 substance:1189 rdfs:label "Magnesiumphosphid"@de .
 
 substance:119 rdfs:label "Daminozide"@de .
 
-substance:1196 rdfs:label "Metsulfuron-methyl"@de .
+substance:1196 :hasChebiIdentity chebi:39678 .
 
 substance:1200 rdfs:label "Napropamide"@de .
 
@@ -73,9 +73,9 @@ substance:1224 rdfs:label "Quassiaextrakt"@de .
 
 substance:1226 rdfs:label "Rapsöl"@de .
 
-substance:1239 rdfs:label "Tebufenpyrad"@de .
+substance:1239 :hasChebiIdentity chebi:9422 .
 
-substance:124 rdfs:label "Dicamba"@de .
+substance:124 :hasChebiIdentity chebi:81856 .
 
 substance:1245 rdfs:label "Terbuthylazine"@de .
 
