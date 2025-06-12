@@ -106,3 +106,4 @@ ORDER BY DESC(?products)
 - [A list of all substances, their IUPAC name, role, average percentages and how many products they are in](https://s.zazuko.com/3ssB5gY)
 - [Count the involved pests and crops per indication](https://s.zazuko.com/272TFvJ)
 - [Product list](https://s.zazuko.com/SLoUx8)
+- [Federated query on CheBI database:](https://s.zazuko.com/qhYq1W) Query the CheBI database via RHEA for chemical entity names, roles, chemical formulas, charge and foreign keys to other databases.
