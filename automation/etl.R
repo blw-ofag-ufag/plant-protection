@@ -149,7 +149,7 @@ describe <- function(x, parallelimport = FALSE) {
     blank <- paste0("_:", nano_id(24))
     triple(subject, ":hasComponentPortion", blank)
     triple(blank, "a", uri(snake_to_camel(unlist(ingredient[["SubstanceType"]])), base))
-    triple(blank, ":hasComponentSubstance", uri(getPK(ingredient[["Substance"]]), prefix))
+    triple(blank, ":substance", uri(getPK(ingredient[["Substance"]]), prefix))
     triple(blank, ":hasPercentage", attr(ingredient, "inPercent"))
     triple(blank, ":hasGrammPerLitre", attr(ingredient, "inGrammPerLitre"))
   }
@@ -416,7 +416,7 @@ describe = function(x, parallelimport = FALSE) {
     subject = uri(uuid::UUIDfromName("acdb7485-3f2b-45f0-a783-01133f235c2a", rlang::hash(indication)), base)
     
     
-    triple(subject, ":involves", if(parallelimport) {
+    triple(subject, ":product", if(parallelimport) {
       uri(attr(x, "id"), base)
     } else {
       uri(paste0("W-",attr(x, "wNbr")), base)
@@ -428,11 +428,11 @@ describe = function(x, parallelimport = FALSE) {
     triple(subject, ":waitingPeriod", attr(indication, "waitingPeriod"))
     triple(subject, ":expenditureTo", attr(indication, "expenditureTo"))
     triple(subject, ":expenditureFrom", attr(indication, "expenditureFrom"))
-    triple(subject, ":hasApplicationArea", uri(file.path("code", getFK(indication, "ApplicationArea")), base))
-    triple(subject, ":hasApplicationComment", uri(file.path("note", getFK(indication, "Obligation")), base))
-    triple(subject, ":isConcernedBy", uri(file.path("note",getFK(indication, "Obligation")), base))
-    triple(subject, ":mitigates", uri(file.path("pest",getFK(indication, "Pest")), base))
-    triple(subject, ":protects", uri(file.path("crop",getFK(indication, "Culture")), base))
+    triple(subject, ":applicationArea", uri(file.path("code", getFK(indication, "ApplicationArea")), base))
+    triple(subject, ":applicationComment", uri(file.path("note", getFK(indication, "applicationComment")), base))
+    triple(subject, ":obligation", uri(file.path("note",getFK(indication, "Obligation")), base))
+    triple(subject, ":cropStressor", uri(file.path("pest",getFK(indication, "Pest")), base))
+    triple(subject, ":cropGroup", uri(file.path("crop",getFK(indication, "Culture")), base))
   }
 }
 

@@ -2,7 +2,6 @@
 @prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -111,8 +110,7 @@ wikidata:Q16521 a owl:Class ;
         """@it ;
     rdfs:isDefinedBy wikidata:Q4667893 ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Abiotic_stress> ;
-    rdfs:subClassOf :CropStressor,
-        :EnvironmentalCondition ;
+    rdfs:subClassOf :CropStressor ;
     owl:disjointWith :BioticStressor .
 
 :Acaricide a owl:Class ;
@@ -132,44 +130,13 @@ wikidata:Q16521 a owl:Class ;
         """
         Un acaricida è un prodotto chimico per la protezione delle colture utilizzato per controllare acari e zecche, che spesso danneggiano le colture agricole.
         """@it ;
-    rdfs:subClassOf :ChemicalCropProtectionProduct .
-
-:Action a owl:Class ;
-    rdfs:label "Schutzmassnahme"@de,
-        "Protective action"@en,
-        "Mesure de protection"@fr,
-        "Misura di protezione"@it ;
-    rdfs:comment """
-        Eine spezifische Massnahme zur Minderung von Schäden an einer landwirtschaftlichen Kultur.
-        """@de,
-        """
-        A specific action taken to mitigate damage done to crops.
-        """@en,
-        """
-        Une mesure spécifique prise pour atténuer les dommages causés aux cultures agricoles.
-        """@fr,
-        """
-        Un'azione specifica intrapresa per mitigare i danni alle colture agricole.
-        """@it ;
-    skos:scopeNote """
-        Diese Klasse ist nur dann zu verwenden, wenn es sich bei der Massnahme ausdrücklich nicht um eine Behandlung handelt, d. h. um die Anwendung von Pflanzenschutzmitteln auf Nutzpflanzen.
-        """@de,
-        """
-        Only use this class when the action is specifically not a treatment; i.e. the application of crop protection products on crops.
-        """@en,
-        """
-        N'utiliser cette classe que lorsque la mesure n'est spécifiquement pas un traitement, c'est-à-dire l'application de produits phytosanitaires sur les cultures.
-        """@fr,
-        """
-        Utilizzare questa classe solo quando la misura non è specificamente un trattamento, cioè l'applicazione di prodotti fitosanitari sulle colture.
-        """@it .
+    rdfs:subClassOf :ChemicalProduct .
 
 :ActionNotice a owl:Class ;
     rdfs:label "Hinweis bezüglich einer Schutzmassnahme"@de,
         "Notice regarding a protective action"@en,
         "Avis concernant une mesure de protection"@fr,
-        "Avviso relativo a una misura di protezione"@it ;
-    rdfs:subClassOf :GeneralNotice .
+        "Avviso relativo a una misura di protezione"@it .
 
 :ActiveIngredient a owl:Class ;
     rdfs:label "Aktivsubstanz"@de,
@@ -258,26 +225,6 @@ wikidata:Q16521 a owl:Class ;
         Classifica l'ambito in cui viene applicata una misura di protezione delle colture, come la coltivazione di bacche, la coltivazione in pieno campo o le aree non coltivate.
         Questa classificazione serve a inquadrare i trattamenti in contesti agricoli, forestali o di altro tipo.
         """@it .
-
-:BBCH a owl:Class ;
-    rdfs:label "Anwendungszeitpunkt"@de,
-        "Application time"@en,
-        "Moment d'application"@fr,
-        "Momento di applicazione"@it ;
-    rdfs:comment """
-        Anwendungszeitpunkt für Behandlungen basierend auf der BBCH-Skala, die die phänologischen Entwicklungsstadien von Pflanzen standardisiert.
-        """@de,
-        """
-        Application time for treatments based on the BBCH scale, which standardizes the phenological development stages of plants.
-        """@en,
-        """
-        Moment d'application des traitements basé sur l'échelle BBCH, qui standardise les stades de développement phénologique des plantes.
-        """@fr,
-        """
-        Momento di applicazione dei trattamenti basato sulla scala BBCH, che standardizza le fasi di sviluppo fenologico delle piante.
-        """@it ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/BBCH-scale> ;
-    rdfs:subClassOf :TreatmentConstraint .
 
 :BCAAgainstFungi a owl:Class ;
     rdfs:label "Produkte gegen Pilze"@de,
@@ -462,7 +409,7 @@ wikidata:Q16521 a owl:Class ;
         Un battericida è un prodotto chimico per la protezione delle colture utilizzato per combattere i patogeni batterici dannosi per le colture agricole.
         Viene spesso impiegato per prevenire o controllare infezioni batteriche come il colpo di fuoco batterico.
         """@it ;
-    rdfs:subClassOf :ChemicalCropProtectionProduct .
+    rdfs:subClassOf :ChemicalProduct .
 
 :BestPracticeRecommendations a owl:Class ;
     rdfs:label "Schutzmassnahmenempfehlung"@de,
@@ -512,7 +459,7 @@ wikidata:Q16521 a owl:Class ;
         Comprende insetti utili, acari, nematodi, funghi, batteri o virus.
         Rappresenta un'alternativa ecologica ai prodotti fitosanitari chimici.
         """@it ;
-    rdfs:subClassOf :CropProtectionProduct ;
+    rdfs:subClassOf :Product ;
     owl:disjointWith :ChemicalProduct .
 
 :BioticStressor a owl:Class ;
@@ -539,32 +486,6 @@ wikidata:Q16521 a owl:Class ;
     rdfs:isDefinedBy wikidata:Q3500367 ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Biotic_stress> ;
     rdfs:subClassOf :CropStressor .
-
-:ChemicalCropProtectionProduct a owl:Class ;
-    rdfs:label "Chemisches Pflanzenschutzmittel"@de,
-        "Chemical crop protection product"@en,
-        "Produit phytosanitaire chimique"@fr,
-        "Prodotto fitosanitario chimico"@it ;
-    rdfs:comment """
-        Chemische Pflanzenschutzmittel sind synthetisch hergestellte Produkte, die zum Schutz von Nutzpflanzen vor Schädlingen, Krankheiten oder Unkräutern eingesetzt werden.
-        Sie umfassen unter anderem Herbizide, Insektizide, Fungizide und Bakterizide.
-        """@de,
-        """
-        Chemical crop protection products are synthetically produced agents used to protect crops from pests, diseases, or weeds.
-        They include herbicides, insecticides, fungicides, and bactericides.
-        """@en,
-        """
-        Les produits phytosanitaires chimiques sont des agents de synthèse utilisés pour protéger les cultures contre les ravageurs, les maladies ou les mauvaises herbes.
-        Ils comprennent notamment les herbicides, insecticides, fongicides et bactéricides.
-        """@fr,
-        """
-        I prodotti fitosanitari chimici sono agenti di sintesi utilizzati per proteggere le colture da parassiti, malattie o infestanti.
-        Includono erbicidi, insetticidi, fungicidi e battericidi.
-        """@it ;
-    rdfs:subClassOf :ChemicalProduct,
-        :CropProtectionProduct ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( :CropProtectionProduct :ChemicalProduct ) ] .
 
 :ChemicalProduct a owl:Class ;
     rdfs:label "Chemisches Produkt"@de,
@@ -636,30 +557,8 @@ wikidata:Q16521 a owl:Class ;
     rdfs:subClassOf :HazardStatement .
 
 :ComponentPortion a owl:Class ;
-    rdfs:label "Komponentenportion"@de,
-        "Component portion"@en,
-        "Portion de composant"@fr,
-        "Porzione di componente"@it ;
-    rdfs:comment """
-        Eine Komponentenportion stellt einen einzelnen Bestandteil eines Gemisches dar.
-        Sie legt die Bestandssubstanz und deren Prozentsatz fest.
-        Jede Komponentenportion muss genau eine Bestandssubstanz haben.
-        """@de,
-        """
-        A component portion represents a single constituent of a mixture, specifying the component substance and its percentage.
-        Each component portion must have exactly one component substance.
-        """@en,
-        """
-        Une portion de composant représente un constituant individuel d'un mélange, en précisant la substance composante et son pourcentage.
-        Chaque portion de composant doit avoir exactement une substance composante.
-        """@fr,
-        """
-        Una porzione di componente rappresenta un singolo costituente di una miscela, specificando la sostanza componente e la sua percentuale.
-        Ogni porzione di componente deve avere esattamente una sostanza componente.
-        """@it ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty :hasComponentSubstance ] .
+    rdfs:label "Component",
+        "Komponent"@de .
 
 :ControlDamageThreshold a owl:Class ;
     rdfs:label "Bekämpfungsschadschwelle"@de,
@@ -714,45 +613,6 @@ wikidata:Q16521 a owl:Class ;
         nei requisiti di crescita o nelle strategie adottate per proteggerle dagli agenti di stress.
         """@it .
 
-:CropProtectionProduct a owl:Class ;
-    rdfs:label "Pflanzenschutzmittel"@de,
-        "Crop protection product"@en,
-        "Produit phytosanitaire"@fr,
-        "Prodotto fitosanitario"@it ;
-    rdfs:comment """
-        Repräsentiert Produkte, die speziell entwickelt wurden, um Pflanzen vor Stressoren, einschliesslich biotischer und abiotischer Faktoren, im landwirtschaftlichen Rahmen zu schützen.
-        """@de,
-        """
-        Represents products specifically designed to protect crops from stressors, including both biotic and abiotic factors, within the agricultural framework.
-        """@en,
-        """
-        Représente des produits spécialement conçus pour protéger les cultures contre les agents stressants, y compris les facteurs biotiques et abiotiques, dans un cadre agricole.
-        """@fr,
-        """
-        Rappresenta prodotti specificamente progettati per proteggere le colture da fattori di stress, inclusi fattori biotici e abiotici, nel contesto agricolo.
-        """@it ;
-    rdfs:scopeNote """
-        Obwohl alle Pflanzenschutzmittel dieser Klasse zugeordnet werden, gehört nicht jedes Produkt zum Pflanzenschutz.
-        Diese Klasse richtet sich speziell an Produkte, die entwickelt wurden, um Stressoren, die Pflanzen beeinträchtigen, zu mindern oder zu verwalten.
-        Dadurch unterscheiden sie sich von anderen Produkten wie Wachstumsregulatoren, die zwar Produkte sind, aber nicht zum Pflanzenschutz gehören.
-        """@de,
-        """
-        While all crop protection products are categorized under this class, not every product falls under plant protection.
-        This class specifically targets products designed to mitigate or manage stressors affecting crops.
-        This distinguishes them from other products like growth regulators which, although they are products, do not fall under plant protection.
-        """@en,
-        """
-        Bien que tous les produits phytosanitaires soient classés dans cette catégorie, tous ne relèvent pas de la protection des plantes.
-        Cette classe vise spécifiquement les produits conçus pour atténuer ou gérer les agents stressants qui affectent les cultures.
-        Cela les distingue d'autres produits comme les régulateurs de croissance, qui sont des produits mais ne relèvent pas de la protection des plantes.
-        """@fr,
-        """
-        Sebbene tutti i prodotti fitosanitari siano classificati in questa categoria, non tutti rientrano nella protezione delle piante.
-        Questa classe si rivolge specificamente ai prodotti progettati per mitigare o gestire i fattori di stress che colpiscono le colture.
-        Ciò li distingue da altri prodotti come i regolatori di crescita, che sono prodotti ma non rientrano nella protezione delle piante.
-        """@it ;
-    rdfs:subClassOf :Product .
-
 :CropStressor a owl:Class ;
     rdfs:label "Schadverursacher"@de,
         "Crop stressor"@en,
@@ -787,61 +647,12 @@ wikidata:Q16521 a owl:Class ;
         Facilita l'identificazione e la gestione dei fattori che compromettono la produttività agricola.
         """@it .
 
-:Damage a owl:Class ;
-    rdfs:label "(Potenzieller) Schaden"@de,
-        "(Potential) Damage"@en,
-        "(Dommage) Potentiel"@fr,
-        "(Danno) Potenziale"@it ;
-    rdfs:comment """
-        Repräsentiert den (potenziellen) Schaden, der einer spezifischen Kultur durch einen spezifischen Stressor zugefügt werden kann.
-        """@de,
-        """
-        Represents the adverse effects or harm (potentially) inflicted upon a specific crop due to a specific stressor.
-        """@en,
-        """
-        Représente les effets néfastes ou les dommages (potentiellement) causés à une culture spécifique par un facteur de stress particulier.
-        """@fr,
-        """
-        Rappresenta gli effetti negativi o i danni (potenzialmente) inflitti a una coltura specifica da uno specifico fattore di stress.
-        """@it .
-
-:DamageThreshold a owl:Class ;
-    rdfs:label "Schadschwelle"@de,
-        "Damage threshold"@en,
-        "Seuil de dommage"@fr,
-        "Soglia di danno"@it ;
-    rdfs:comment """
-        Definiert die Schadensschwelle, ab der ein Stressor eine spezifische Kultur signifikant beeinträchtigt, und Massnahmen zur Reduzierung des Schadens erwogen werden sollten.
-        """@de,
-        """
-        Defines the damage threshold at which a stressor significantly impacts a specific crop, and measures to mitigate the damage should be considered.
-        """@en,
-        """
-        Définit le seuil de dommage à partir duquel un facteur de stress affecte significativement une culture spécifique, et des mesures pour atténuer le dommage doivent être envisagées.
-        """@fr,
-        """
-        Definisce la soglia di danno a partire dalla quale un fattore di stress influisce significativamente su una coltura specifica, e si dovrebbero considerare misure per mitigare il danno.
-        """@it .
-
 :Desinfectant a owl:Class ;
     rdfs:label "Desinfektionsmittel"@de,
         "Desinfectant"@en,
         "Désinfectant"@fr,
         "Disinfettante"@it ;
     rdfs:subClassOf :ChemicalProduct .
-
-:EconomicDamageThreshold a owl:Class ;
-    rdfs:label "Ökonomische Schadschwelle"@de,
-        "Economic Damage Threshold"@en ;
-    rdfs:comment "Definiert die Schadensschwelle, bei der der erwartete wirtschaftliche Schaden durch den Stressor die Kosten der Bekämpfungsmassnahmen übersteigt."@de,
-        "Defines the damage threshold at which the expected economic harm caused by the stressor exceeds the cost of control measures."@en ;
-    rdfs:subClassOf :DamageThreshold .
-
-:EnvironmentalCondition a owl:Class ;
-    rdfs:label "Umweltbedingung"@de,
-        "Environmental condition"@en ;
-    rdfs:comment "Repräsentiert jeden Umweltfaktor oder jede Umweltbedingung, die die Pflanzengesundheit, das Wachstum oder die Bewirtschaftung im landwirtschaftlichen Rahmen beeinflussen kann."@de,
-        "Represents any environmental factor or situation that can influence crop health, growth, or management within agriculture."@en .
 
 :Fungicide a owl:Class ;
     rdfs:label "Fungizid"@de,
@@ -868,7 +679,7 @@ wikidata:Q16521 a owl:Class ;
         Uccide i funghi o ne inibisce la crescita per proteggere la resa e la qualità del raccolto.
         I fungicidi svolgono un ruolo centrale nella protezione integrata delle colture.
         """@it ;
-    rdfs:subClassOf :ChemicalCropProtectionProduct .
+    rdfs:subClassOf :ChemicalProduct .
 
 :HazardStatement a owl:Class ;
     rdfs:label "Sicherheitshinweise für Gefahrstoffe"@de,
@@ -918,7 +729,7 @@ wikidata:Q16521 a owl:Class ;
         Aiuta a inibire la crescita delle erbacce o a eliminarle per proteggere la resa e la qualità delle colture.
         Gli erbicidi sono un componente fondamentale della gestione integrata delle infestanti.
         """@it ;
-    rdfs:subClassOf :ChemicalCropProtectionProduct .
+    rdfs:subClassOf :ChemicalProduct .
 
 :Indication a owl:Class ;
     rdfs:label "Indikation"@de,
@@ -934,29 +745,7 @@ wikidata:Q16521 a owl:Class ;
         "Insecticide"@en,
         "Insecticide"@fr,
         "Insetticida"@it ;
-    rdfs:subClassOf :ChemicalCropProtectionProduct .
-
-:Mixture a owl:Class ;
-    rdfs:label "Chemisches Gemisch"@de,
-        "Chemical mixture"@en,
-        "Mélange chimique"@fr,
-        "Miscela chimica"@it ;
-    rdfs:comment """
-        Ein chemisches Gemisch ist eine Art von Substanz, die aus mindestens zwei Komponentenportionen besteht, von denen jede eine Bestandssubstanz mit einem bestimmten Prozentsatz repräsentiert.
-        """@de,
-        """
-        A chemical mixture is a type of substance that consists of at least two component portions, each representing a constituent substance with a specified percentage.
-        """@en,
-        """
-        Un mélange chimique est un type de substance composé d'au moins deux portions de composants, chacune représentant une substance constitutive avec un pourcentage spécifié.
-        """@fr,
-        """
-        Una miscela chimica è un tipo di sostanza composta da almeno due porzioni componenti, ognuna delle quali rappresenta una sostanza costituente con una percentuale specificata.
-        """@it ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality "2"^^xsd:nonNegativeInteger ;
-            owl:onProperty :hasComponentPortion ],
-        :Substance .
+    rdfs:subClassOf :ChemicalProduct .
 
 :Molluscicide a owl:Class ;
     rdfs:label "Molluskizid"@de,
@@ -979,7 +768,7 @@ wikidata:Q16521 a owl:Class ;
         Un molluschicida è un prodotto fitosanitario chimico usato per controllare i molluschi, in particolare le lumache e le chiocciole.
         Protegge le colture agricole dai danni causati da questi parassiti.
         """@it ;
-    rdfs:subClassOf :ChemicalCropProtectionProduct .
+    rdfs:subClassOf :ChemicalProduct .
 
 :NaturalDefenseStimulator a owl:Class ;
     rdfs:label "Stimulator der natürlichen Abwehrkräfte"@de,
@@ -1025,7 +814,7 @@ wikidata:Q16521 a owl:Class ;
         Un nematicida è un prodotto fitosanitario chimico utilizzato per controllare i nematodi (vermi cilindrici).
         Questi agenti sono fondamentali per proteggere le colture, poiché i nematodi possono danneggiare gravemente i sistemi radicali e ridurre le rese.
         """@it ;
-    rdfs:subClassOf :ChemicalCropProtectionProduct .
+    rdfs:subClassOf :ChemicalProduct .
 
 :Obligation a owl:Class ;
     rdfs:label "Auflage zu Behandlungen"@de,
@@ -1152,43 +941,19 @@ wikidata:Q16521 a owl:Class ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty :federalAdmissionNumber ] .
 
-:PureSubstance a owl:Class ;
-    rdfs:label "Reine Substanz"@de,
-        "Pure substance"@en,
-        "Substance pure"@fr,
-        "Sostanza pura"@it ;
-    rdfs:comment """
-        Eine reine chemische Substanz ist mit genau einer CheBI-Chemikalie verknüpft und kann kein Gemisch sein.
-        Reine Substanzen und chemische Gemische sind disjunkte Klassen.
-        """@de,
-        """
-        A pure chemical substance is associated with exactly one CheBI chemical entity and cannot be a mixture.
-        Pure substances and chemical mixtures are disjoint classes.
-        """@en,
-        """
-        Une substance chimique pure est associée à exactement une entité chimique CheBI et ne peut pas être un mélange.
-        Les substances pures et les mélanges chimiques sont des classes disjointes.
-        """@fr,
-        """
-        Una sostanza chimica pura è associata a una sola entità chimica CheBI e non può essere una miscela.
-        Le sostanze pure e le miscele chimiche sono classi disgiunte.
-        """@it ;
-    rdfs:subClassOf :Substance ;
-    owl:disjointWith :Mixture .
-
 :Rodenticide a owl:Class ;
     rdfs:label "Rodentizid"@de,
         "Rodenticide"@en,
         "Rodenticide"@fr,
         "Rodenticida"@it ;
-    rdfs:subClassOf :ChemicalCropProtectionProduct .
+    rdfs:subClassOf :ChemicalProduct .
 
 :SeedDressing a owl:Class ;
     rdfs:label "Saatbeizmittel"@de,
         "Seed dressing"@en,
         "Traitement des semences"@fr,
         "Concia delle sementi"@it ;
-    rdfs:subClassOf :ChemicalCropProtectionProduct .
+    rdfs:subClassOf :ChemicalProduct .
 
 :SoapProduct a owl:Class ;
     rdfs:label "Seifenpräparat-Insektizide"@de,
@@ -1266,12 +1031,6 @@ wikidata:Q16521 a owl:Class ;
         "Dosaggio"@it ;
     rdfs:subClassOf :TreatmentConstraint .
 
-:TreatmentEfficacy a owl:Class ;
-    rdfs:label "Behandlungswirkung"@de,
-        "Treatment efficacy"@en,
-        "Efficacité du traitement"@fr,
-        "Efficacia del trattamento"@it .
-
 :TreatmentRate a owl:Class ;
     rdfs:label "Anwendungsrate"@de,
         "Application rate"@en ;
@@ -1284,20 +1043,7 @@ wikidata:Q16521 a owl:Class ;
         "Viricide"@en,
         "Virucide"@fr,
         "Viricida"@it ;
-    rdfs:subClassOf :ChemicalCropProtectionProduct .
-
-:WaitingPeriod a owl:Class ;
-    rdfs:label "Wartefrist"@de,
-        "Waiting period"@en ;
-    rdfs:comment "Repräsentiert das erforderliche Zeitintervall nach einer Behandlung, in dem dasselbe Produkt nicht erneut auf dieselbe Kulturpflanze angewendet werden sollte."@de,
-        "Represents the required time interval after a treatment during which the same product should not be applied again to the same crop."@en ;
-    rdfs:subClassOf :TreatmentConstraint .
-
-:nonTargetOrganism a owl:Class ;
-    rdfs:label "Nichtzielorganismus"@de,
-        "Non target organism"@en ;
-    rdfs:comment "Jeder Organismus ausser dem, gegen den das Pestizid angewendet wird."@de,
-        "Any organism other than the one against which the pesticide is applied."@en .
+    rdfs:subClassOf :ChemicalProduct .
 
 schema:addressLocality a owl:DatatypeProperty ;
     rdfs:label "Ortschaft"@de,
@@ -1413,34 +1159,6 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> ;
     rdfs:range xsd:string .
 
-:componentPercentage a owl:DatatypeProperty ;
-    rdfs:label "Komponentenprozentsatz"@de,
-        "Component percentage"@en,
-        "Pourcentage de composant"@fr,
-        "Percentuale del componente"@it ;
-    rdfs:comment """
-        Gibt den Prozentsatz (0% - 100%) der Bestandssubstanz innerhalb eines Gemisches an.
-        """@de,
-        """
-        Specifies the percentage (0% - 100%) of the component substance within a mixture.
-        """@en,
-        """
-        Indique le pourcentage (0 % - 100 %) de la substance composante dans un mélange.
-        """@fr,
-        """
-        Specifica la percentuale (0% - 100%) della sostanza componente all'interno di una miscela.
-        """@it ;
-    rdfs:domain :ComponentPortion ;
-    rdfs:range xsd:float .
-
-:earliesBBCH a owl:DatatypeProperty ;
-    rdfs:label "Frühestes BBCH-Stadium der Kulturpflanze"@de,
-        "Earlies BBCH stage of the crop"@en ;
-    rdfs:comment "Das früheste BBCH-Stadium der Kulturpflanze, bei welcher der Schaden schon auftreten kann."@de,
-        "The earliest BBCH stage of the crop at which the damage can already occur."@en ;
-    rdfs:domain :Damage ;
-    rdfs:range xsd:float .
-
 :federalAdmissionNumber a owl:DatatypeProperty ;
     rdfs:label "Eidgenössische Zulassungsnummer"@de,
         "Federal admission number"@en,
@@ -1507,14 +1225,6 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:range :CodeS ;
     rdfs:subPropertyOf :hasHazardStatement .
 
-:hasDamageThreshold a owl:DatatypeProperty ;
-    rdfs:label "Schadschwelle"@de,
-        "Damage threshold"@en,
-        "Seuil de dommage"@fr,
-        "Soglia di danno"@it ;
-    rdfs:domain :Damage ;
-    rdfs:range :DamageThreshold .
-
 :hasExhaustionDeadline a owl:DatatypeProperty ;
     rdfs:label "Ablaufdatum der Nutzung"@de,
         "Exhaustion deadline"@en,
@@ -1539,7 +1249,9 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:label "Anteil [g/L]"@de,
         "Portion [g/L]"@en,
         "Proportion [g/L]"@fr,
-        "Percentuale [g/L]"@it .
+        "Percentuale [g/L]"@it ;
+    rdfs:domain :ComponentPortion ;
+    rdfs:range xsd:decimal .
 
 :hasHazardStatementCode a owl:DatatypeProperty ;
     rdfs:label "Code bezüglich Gefahrenhinweise"@de,
@@ -1553,7 +1265,9 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:label "Anteil [%]"@de,
         "Portion [%]"@en,
         "Proportion [%]"@fr,
-        "Percentuale [%]"@it .
+        "Percentuale [%]"@it ;
+    rdfs:domain :ComponentPortion ;
+    rdfs:range xsd:decimal .
 
 :hasSoldoutDeadline a owl:DatatypeProperty ;
     rdfs:label "Ausverkauft-Frist"@de,
@@ -1574,20 +1288,6 @@ schema:telephone a owl:DatatypeProperty ;
         """@it ;
     rdfs:domain :Product ;
     rdfs:range xsd:date .
-
-:hasTreatmentEfficacy a owl:DatatypeProperty ;
-    rdfs:label "hat Behandlungswirkung"@de,
-        "has treatment efficacy"@en ;
-    rdfs:domain :Indication ;
-    rdfs:range :TreatmentEfficacy .
-
-:hasUpperDamageLimit a owl:DatatypeProperty ;
-    rdfs:label "Obere Schadenslimite"@de,
-        "Upper damage limit"@en ;
-    rdfs:comment "Gibt die Schadensgrenze in Prozent (0% -100%) an, die ein Stressfaktor für Nutzpflanzen vernünftigerweise verursachen kann."@de,
-        "Indicates the damage limit in percentage (0% -100%) that a crop stressor can reasonably cause."@en ;
-    rdfs:domain :Damage ;
-    rdfs:range xsd:float .
 
 :isNonProfessionallyAllowed a owl:DatatypeProperty ;
     rdfs:label "Erlaubnis für die nicht-berufliche Verwendung"@de,
@@ -1630,74 +1330,6 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:domain :Substance ;
     rdfs:range xsd:string .
 
-:latestBBCH a owl:DatatypeProperty ;
-    rdfs:label "Spätestes BBCH-Stadium der Kulturpflanze"@de,
-        "Latest BBCH stage of the crop"@en ;
-    rdfs:comment "Das späteste BBCH-Stadium der Kulturpflanze, bei welcher der Schaden noch auftreten kann."@de,
-        "The latest BBCH stage of the crop at which the damage can still occur."@en ;
-    rdfs:domain :Damage ;
-    rdfs:range xsd:float .
-
-:maximumBBCHcrop a owl:DatatypeProperty ;
-    rdfs:label "Maximales BBCH-Stadium der Kulturpflanze"@de,
-        "Maximal BBCH stadium of the crop"@en ;
-    rdfs:domain :BBCH ;
-    rdfs:range xsd:float .
-
-:maximumBBCHweed a owl:DatatypeProperty ;
-    rdfs:label "Maximales BBCH-Stadium des Unkrautes"@de,
-        "Maximal BBCH stadium of the weed"@en ;
-    rdfs:domain :BBCH ;
-    rdfs:range xsd:float .
-
-:maximumRate a owl:DatatypeProperty ;
-    rdfs:label "Maximale Anwendungsrate"@de,
-        "Maximal application rate"@en ;
-    rdfs:comment "Gibt an, wie viel von diesem Produkt in einer Saison maximal verwendet werden darf."@de,
-        "Indicates how much of a given product may be maximally applied per season."@en ;
-    rdfs:domain :TreatmentRate ;
-    rdfs:range xsd:float .
-
-:maximumTreatmentDosage a owl:DatatypeProperty ;
-    rdfs:label "Maximale Dosierung"@de,
-        "Maximal dosage"@en ;
-    rdfs:domain :TreatmentDosage ;
-    rdfs:range xsd:float .
-
-:minimumBBCHcrop a owl:DatatypeProperty ;
-    rdfs:label "Minimales BBCH-Stadium der Kulturpflanze"@de,
-        "Minimal BBCH stage of the crop"@en ;
-    rdfs:comment "Das minimale BBCH-Stadium der Kulturpflanze bei der Anwendung des Produktes."@de,
-        "The minimal BBCH stage of the crop when applying the product."@en ;
-    rdfs:domain :BBCH ;
-    rdfs:range xsd:float .
-
-:minimumBBCHweed a owl:DatatypeProperty ;
-    rdfs:label "Minimales BBCH-Stadium der Kulturpflanze"@de,
-        "Minimal BBCH stage of the crop"@en ;
-    rdfs:comment "Das minimale BBCH-Stadium des Zielorganismus (Unkraut) bei der Anwendung des Produktes."@de,
-        "The minimal BBCH stage of the target organism (weed) when applying the product."@en ;
-    rdfs:domain :BBCH ;
-    rdfs:range xsd:float .
-
-:minimumRate a owl:DatatypeProperty ;
-    rdfs:label "Minimale Anwendungsrate"@de,
-        "Minimal application rate"@en ;
-    rdfs:domain :TreatmentRate ;
-    rdfs:range xsd:float .
-
-:minimumTreatmentDosage a owl:DatatypeProperty ;
-    rdfs:label "Minimale Dosierung"@de,
-        "Minimal dosage"@en ;
-    rdfs:domain :TreatmentDosage ;
-    rdfs:range xsd:float .
-
-:minimumWaitingPeriod a owl:DatatypeProperty ;
-    rdfs:label "Minimale Wartezeit"@de,
-        "Minimal waiting period"@en ;
-    rdfs:domain :WaitingPeriod ;
-    rdfs:range xsd:float .
-
 :packageInsertNumber a owl:DatatypeProperty ;
     rdfs:label "Packungsbeilagenummer"@de,
         "Package insert number"@en,
@@ -1705,6 +1337,14 @@ schema:telephone a owl:DatatypeProperty ;
         "Numero del foglietto illustrativo"@it ;
     rdfs:domain :Product ;
     rdfs:range xsd:string .
+
+:waitingPeriod a owl:DatatypeProperty ;
+    rdfs:label "Minimale Wartezeit"@de,
+        "Minimal waiting period"@en ;
+    rdfs:comment "Das minimal erforderliche Zeitintervall nach einer Behandlung, in dem dasselbe Produkt nicht erneut auf dieselbe Kulturpflanze angewendet werden sollte."@de,
+        "The required time interval after a treatment during which the same product should not be applied again to the same crop."@en ;
+    rdfs:domain :Indication ;
+    rdfs:range xsd:float .
 
 schema:address a owl:ObjectProperty ;
     rdfs:label "hat Adresse"@de,
@@ -1722,13 +1362,17 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:domain schema:PostalAddress ;
     rdfs:range schema:Country .
 
-:affects a owl:ObjectProperty ;
-    rdfs:label "betrifft Indikation"@de,
-        "affects indication"@en,
-        "concerne l'indication"@fr,
-        "riguarda l'indicazione"@it ;
-    rdfs:domain :Damage ;
-    rdfs:range :CropGroup .
+:applicationArea a owl:ObjectProperty ;
+    rdfs:label "Anwendungsgebiet"@de,
+        "Application area"@en ;
+    rdfs:domain :Indication ;
+    rdfs:range :ApplicationArea .
+
+:applicationComment a owl:ObjectProperty ;
+    rdfs:comment "Anwendungskommentar"@de,
+        "Application comment"@en ;
+    rdfs:domain :Indication ;
+    rdfs:range :ApplicationComment .
 
 :appliesToProduct a owl:ObjectProperty ;
     rdfs:label "bezieht sich auf das Produkt"@de,
@@ -1751,63 +1395,21 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:range :Product ;
     owl:inverseOf :hasHazardStatement .
 
-:causes a owl:ObjectProperty ;
-    rdfs:label "verursacht"@de,
-        "causes"@en ;
-    rdfs:domain :CropStressor ;
-    rdfs:range :Damage .
+:cropGroup a owl:ObjectProperty ;
+    rdfs:label "Kulturgruppe"@de,
+        "Crop group"@en,
+        "Groupe de cultures"@fr,
+        "Gruppo colturale"@it ;
+    rdfs:domain :Indication ;
+    rdfs:range :CropGroup .
 
-:causesCollateralDamageTo a owl:ObjectProperty ;
-    rdfs:label "führt zu einem Kollateralschaden bei"@de,
-        "causes collateral damage to"@en ;
-    rdfs:comment "Diese Eigenschaft zeigt an, dass die Anwendung eines Produkts unbeabsichtigte Schäden bei Nicht-Zielorganismen verursachen kann."@de,
-        "This property signifies that the application of a product may lead to unintended harm to non-target organisms."@en ;
-    rdfs:domain :Product ;
-    rdfs:range :nonTargetOrganism .
-
-:chemicallyDefines a owl:ObjectProperty ;
-    rdfs:label "definiert chemisch"@de,
-        "chemically defines"@en ;
-    rdfs:domain :Substance ;
-    rdfs:range :ChemicalProduct .
-
-:concerns a owl:ObjectProperty ;
-    rdfs:label "betrifft"@de,
-        "concerns"@en ;
-    rdfs:domain :ActionNotice ;
-    rdfs:range :Action .
-
-:contains a owl:ObjectProperty ;
-    rdfs:label "beinhaltet"@de,
-        "contains"@en ;
-    rdfs:comment "Diese Eigenschaft verknüpft ein chemisches Produkt mit reinen chemischen Substanzen. Sie dient der einfachen Überprüfung, ob ein chemisches Produkt eine bestimmte reine chemische Substanz enthält."@de,
-        "This property links a chemical product to pure chemical substances. It exists for simple checks wether a chemical product contains a certain pure chemical substance."@en ;
-    rdfs:domain :ChemicalProduct ;
-    rdfs:range :PureSubstance .
-
-:damages a owl:ObjectProperty ;
-    rdfs:label "beschädigt"@de,
-        "damages"@en ;
-    rdfs:domain :CropStressor ;
-    rdfs:range :CropGroup ;
-    rdfs:subPropertyOf :interactsWith .
-
-:enables a owl:ObjectProperty ;
-    rdfs:label "ermöglicht"@de,
-        "enables"@en ;
-    rdfs:comment "Diese Eigenschaft zeigt an, dass eine bestimmte Umweltbedingung eine bestimmte Art von Schaden ermöglicht oder verursacht."@de,
-        "This property signifies that a specific environmental condition facilitates or leads to a particular type of damage."@en ;
-    rdfs:domain :EnvironmentalCondition ;
-    rdfs:range :Damage .
-
-:hasApplicationArea a owl:ObjectProperty ;
-    rdfs:label "Anwendungsgebiet"@de,
-        "Application area"@en ;
-    rdfs:range :ApplicationArea .
-
-:hasApplicationComment a owl:ObjectProperty ;
-    rdfs:label "Anwendungsauflage"@de,
-        "Obligation regarding the application"@de .
+:cropStressor a owl:ObjectProperty ;
+    rdfs:label "Schadverursacher"@de,
+        "Cause of damage"@en,
+        "Cause du dommage"@fr,
+        "Causa del danno"@it ;
+    rdfs:domain :Indication ;
+    rdfs:range :CropStressor .
 
 :hasChebiIdentity a owl:ObjectProperty ;
     rdfs:label "CheBI-Identität"@de,
@@ -1831,16 +1433,8 @@ schema:addressCountry a owl:ObjectProperty ;
         "has component portion"@en ;
     rdfs:comment "Verknüpft ein Gemisch mit einer seiner Komponentenportionen, wobei jede Portion eine Bestandssubstanz und deren Prozentsatz angibt."@de,
         "Links a mixture to one of its component portions, each detailing a component substance and its percentage."@en ;
-    rdfs:domain :Mixture ;
+    rdfs:domain :Product ;
     rdfs:range :ComponentPortion .
-
-:hasComponentSubstance a owl:ObjectProperty ;
-    rdfs:label "Bestandssubstanz"@de,
-        "Component substance"@en ;
-    rdfs:comment "Verknüpft eine Komponentenportion mit der spezifischen Substanz, die als Bestandteil in einem Gemisch dient."@de,
-        "Links a component portion to the specific substance that serves as a component within a mixture."@en ;
-    rdfs:domain :ComponentPortion ;
-    rdfs:range :Substance .
 
 :hasCountryOfOrigin a owl:ObjectProperty ;
     rdfs:label "Herkunftsland"@de,
@@ -1952,13 +1546,12 @@ schema:addressCountry a owl:ObjectProperty ;
     owl:inverseOf :hasPermissionHolder .
 
 :indication a owl:ObjectProperty ;
-    rdfs:label "Behandlung"@de,
-        "Treatment"@en,
-        "Traitement"@fr,
-        "Trattamento"@it ;
-    rdfs:domain :Product ;
+    rdfs:label "Indikation"@de,
+        "Indication"@en,
+        "Indication"@fr,
+        "Indicazione"@it ;
     rdfs:range :Indication ;
-    owl:inverseOf :involves .
+    owl:inverseOf :product .
 
 :interactsWith a owl:ObjectProperty ;
     rdfs:label "interagiert mit"@de,
@@ -1986,150 +1579,12 @@ schema:addressCountry a owl:ObjectProperty ;
         Un pesticida interagisce con l'organismo bersaglio.
         """@it .
 
-:involves a owl:ObjectProperty ;
-    rdfs:label "PSM-Produkt"@de,
-        "PPP product"@en,
-        "Produit PPP"@fr,
-        "Prodotto PPP"@it ;
-    rdfs:comment """
-        Verknüpft eine erlaubte Anwendung von PSM-Produkten (Indikation) mit dem jeweiligen Produkt.
-        """@de,
-        """
-        Links an authorized use of PPP products (indication) to the respective product.
-        """@en,
-        """
-        Lie un usage autorisé de produits PPP (indication) au produit correspondant.
-        """@fr,
-        """
-        Collega un uso autorizzato dei prodotti PPP (indicazione) al rispettivo prodotto.
-        """@it ;
-    rdfs:domain :Indication ;
-    rdfs:range :Product ;
-    owl:inverseOf :indication .
-
-:isAffectedBy a owl:ObjectProperty ;
-    rdfs:label "ist betroffen von"@de,
-        "is affected by"@en ;
-    rdfs:domain :CropGroup ;
-    rdfs:range :Damage ;
-    owl:inverseOf :affects .
-
-:isCausedBy a owl:ObjectProperty ;
-    rdfs:label "wird verursacht von"@de,
-        "is caused by"@en ;
-    rdfs:domain :Damage ;
-    rdfs:range :CropStressor ;
-    owl:inverseOf :causes .
-
-:isChemicallyDefinedBy a owl:ObjectProperty ;
-    rdfs:label "ist chemisch definiert durch"@de,
-        "is chemically defined by"@en,
-        "est défini chimiquement par"@fr,
-        "è definito chimicamente da"@it ;
-    rdfs:comment """
-        Diese Eigenschaft verknüpft ein chemisches Produkt mit genau einer Substanz.
-        Sie ermöglicht es, das Produkt in all seine chemischen Bestandteile und die jeweiligen Prozentsätze zu zerlegen.
-        """@de,
-        """
-        This property links a chemical product to exactly one substance.
-        It allows to decompose the product to all its chemical ingredients and the respective percentages.
-        """@en,
-        """
-        Cette propriété relie un produit chimique à une seule substance.
-        Elle permet de décomposer le produit en tous ses composants chimiques et leurs pourcentages respectifs.
-        """@fr,
-        """
-        Questa proprietà collega un prodotto chimico a una sola sostanza.
-        Consente di scomporre il prodotto in tutti i suoi ingredienti chimici e nelle rispettive percentuali.
-        """@it ;
-    rdfs:domain :ChemicalProduct ;
-    rdfs:range :Substance ;
-    owl:inverseOf :chemicallyDefines .
-
-:isConcernedBy a owl:ObjectProperty ;
-    rdfs:label "Hinweis bezüglich der Schutzmassnahme"@de,
-        "Notice concerning the protective action"@en,
-        "Avis concernant la mesure de protection"@fr,
-        "Avviso relativo alla misura di protezione"@it ;
-    rdfs:domain :Action ;
-    rdfs:range :ActionNotice ;
-    owl:inverseOf :concerns .
-
-:isContainedIn a owl:ObjectProperty ;
-    rdfs:label "ist beinhaltet in"@de,
-        "is contained in"@en ;
-    rdfs:domain :PureSubstance ;
-    rdfs:range :ChemicalProduct ;
-    owl:inverseOf :contains .
-
-:isDamagedBy a owl:ObjectProperty ;
-    rdfs:label "wird beschädigt durch"@de,
-        "is damaged by"@en ;
-    rdfs:domain :CropGroup ;
-    rdfs:range :CropStressor ;
-    rdfs:subPropertyOf :interactsWith ;
-    owl:inverseOf :damages .
-
 :isDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:label "Biologische Taxon"@de,
         "Biological taxon"@en,
         "Taxon biologique"@fr,
         "Taxon biologico"@it ;
     rdfs:range wikidata:Q16521 .
-
-:isLimitedBy a owl:ObjectProperty ;
-    rdfs:label "wird eingeschränkt durch"@de,
-        "is limited by"@en,
-        "est limité par"@fr,
-        "è limitato da"@it ;
-    rdfs:domain :Damage ;
-    rdfs:range :CropProtectionProduct ;
-    owl:inverseOf :limits .
-
-:isManagedBy a owl:ObjectProperty ;
-    rdfs:label "wird bekämpft von"@de,
-        "is managed by"@en,
-        "est combattu par"@fr,
-        "è combattuto da"@it ;
-    rdfs:domain :CropStressor ;
-    rdfs:range :CropProtectionProduct ;
-    rdfs:subPropertyOf :interactsWith ;
-    owl:inverseOf :manages .
-
-:isMetabolizedFrom a owl:ObjectProperty ;
-    rdfs:label "wird metabolisiert aus"@de,
-        "is metabolized from"@en,
-        "est métabolisé à partir de"@fr,
-        "è metabolizzato da"@it ;
-    rdfs:domain :PureSubstance ;
-    rdfs:range :PureSubstance ;
-    owl:inverseOf :isMetabolizedTo .
-
-:isMetabolizedTo a owl:ObjectProperty ;
-    rdfs:label "wird metabolisiert zu"@de,
-        "is metabolized to"@en,
-        "est métabolisé en"@fr,
-        "è metabolizzato in"@it ;
-    rdfs:domain :PureSubstance ;
-    rdfs:range :PureSubstance .
-
-:isMitigatedBy a owl:ObjectProperty ;
-    rdfs:label "wird vermindert durch"@de,
-        "is mitigated by"@en,
-        "est atténué par"@fr,
-        "è mitigato da"@it ;
-    rdfs:domain :Damage ;
-    rdfs:range :Action ;
-    owl:inverseOf :mitigates .
-
-:isProtectedBy a owl:ObjectProperty ;
-    rdfs:label "Indikationen"@de,
-        "Indications"@en,
-        "Indications"@fr,
-        "Indicazioni"@it ;
-    rdfs:domain :CropGroup ;
-    rdfs:range :Action ;
-    owl:inverseOf :protects .
 
 :isSameProductAs a owl:ObjectProperty,
         owl:SymmetricProperty ;
@@ -2160,95 +1615,36 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:domain :Product ;
     rdfs:range :Product .
 
-:isSimilarProductAs a owl:ObjectProperty,
-        owl:SymmetricProperty ;
-    rdfs:label "ist ein ähnliches Produkt wie"@de,
-        "is a similar product as"@en,
-        "est un produit similaire à"@fr,
-        "è un prodotto simile a"@it ;
+:obligation a owl:ObjectProperty ;
+    rdfs:label "Anwendungsauflage"@de,
+        "Obligation regarding the application"@de ;
+    rdfs:domain :Indication .
+
+:product a owl:ObjectProperty ;
+    rdfs:label "PSM-Produkt"@de,
+        "PPP product"@en,
+        "Produit PPP"@fr,
+        "Prodotto PPP"@it ;
     rdfs:comment """
-        Gibt an, dass zwei Produkte in ihrer Funktion ähnlich sind, obwohl sie in ihrer chemischen Zusammensetzung oder ihrem Organismus nicht identisch sind.
+        Verknüpft eine erlaubte Anwendung von PSM-Produkten (Indikation) mit dem jeweiligen Produkt.
         """@de,
         """
-        Indicates that two products are similar in their function, although not identical in their chemical composition or their organism.
+        Links an authorized use of PPP products (indication) to the respective product.
         """@en,
         """
-        Indique que deux produits ont une fonction similaire, bien qu'ils ne soient pas identiques dans leur composition chimique ou leur organisme.
+        Lie un usage autorisé de produits PPP (indication) au produit correspondant.
         """@fr,
         """
-        Indica che due prodotti sono simili nella funzione, anche se non identici nella composizione chimica o nell'organismo contenuto.
+        Collega un uso autorizzato dei prodotti PPP (indicazione) al rispettivo prodotto.
         """@it ;
-    rdfs:domain :Product ;
-    rdfs:range :Product .
+    rdfs:range :Product ;
+    owl:inverseOf :indication .
 
-:limits a owl:ObjectProperty ;
-    rdfs:label "schränkt ein"@de,
-        "limits"@en,
-        "limite"@fr,
-        "limita"@it ;
-    rdfs:comment """
-        Diese Eigenschaft zeigt an, dass ein Pflanzenschutzmittel bestimmte Schadensarten reduziert oder mildert.
-        """@de,
-        """
-        This property indicates that a crop protection product reduces or mitigates specific types of damage.
-        """@en,
-        """
-        Cette propriété indique qu’un produit phytosanitaire réduit ou atténue certains types de dommages.
-        """@fr,
-        """
-        Questa proprietà indica che un prodotto fitosanitario riduce o mitiga determinati tipi di danno.
-        """@it ;
-    rdfs:domain :CropProtectionProduct ;
-    rdfs:range :Damage .
-
-:manages a owl:ObjectProperty ;
-    rdfs:label "bekämpft"@de,
-        "manages"@en,
-        "lutte contre"@fr,
-        "combatte"@it ;
-    rdfs:comment """
-        Diese Eigenschaft zeigt an, dass ein Pflanzenschutzmittel verwendet wird, um einen bestimmten Stressor zu bekämpfen.
-        """@de,
-        """
-        This property indicates that a crop protection product is used to control or combat a specific crop stressor.
-        """@en,
-        """
-        Cette propriété indique qu’un produit phytosanitaire est utilisé pour lutter contre un facteur de stress spécifique.
-        """@fr,
-        """
-        Questa proprietà indica che un prodotto fitosanitario viene utilizzato per controllare o combattere uno specifico fattore di stress delle colture.
-        """@it ;
-    rdfs:domain :CropProtectionProduct ;
-    rdfs:range :CropStressor ;
-    rdfs:subPropertyOf :interactsWith .
-
-:mitigates a owl:ObjectProperty ;
-    rdfs:label "Schadverursacher"@de,
-        "Cause of damage"@en,
-        "Cause du dommage"@fr,
-        "Causa del danno"@it ;
-    rdfs:comment """
-        Diese Eigenschaft zeigt an, dass eine Handlung bestimmte Schadensarten reduziert oder lindert.
-        """@de,
-        """
-        This property indicates that an action reduces or alleviates specific types of damage.
-        """@en,
-        """
-        Cette propriété indique qu'une action réduit ou atténue certains types de dommages.
-        """@fr,
-        """
-        Questa proprietà indica che un'azione riduce o attenua determinati tipi di danno.
-        """@it ;
-    rdfs:domain :Action ;
-    rdfs:range :Damage .
-
-:protects a owl:ObjectProperty ;
-    rdfs:label "Kulturgruppe"@de,
-        "Crop group"@en,
-        "Groupe de cultures"@fr,
-        "Gruppo colturale"@it ;
-    rdfs:domain :Action ;
-    rdfs:range :CropGroup .
+:substance a owl:ObjectProperty ;
+    rdfs:label "Substanz"@de,
+        "Substance"@en ;
+    rdfs:domain :ComponentPortion ;
+    rdfs:range :Substance .
 
 srppp: a owl:Ontology ;
     dcterms:creator "Federal Office for Agriculture" ;
