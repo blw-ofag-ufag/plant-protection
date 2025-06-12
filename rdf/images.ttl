@@ -1,0 +1,19 @@
+@prefix code: <https://agriculture.ld.admin.ch/plant-protection/code/> .
+@prefix schema: <http://schema.org/> .
+
+code:8062 schema:image <https://www.psm.admin.ch/images/psm/GHS02.gif> .
+
+code:8063 schema:image <https://www.psm.admin.ch/images/psm/GHS03.gif> .
+
+code:8064 schema:image <https://www.psm.admin.ch/images/psm/GHS04.gif> .
+
+code:8065 schema:image <https://www.psm.admin.ch/images/psm/GHS05.gif> .
+
+code:8066 schema:image <https://www.psm.admin.ch/images/psm/GHS06.gif> .
+
+code:8067 schema:image <https://www.psm.admin.ch/images/psm/GHS07.gif> .
+
+code:8068 schema:image <https://www.psm.admin.ch/images/psm/GHS08.gif> .
+
+code:8069 schema:image <https://www.psm.admin.ch/images/psm/GHS09.gif> .
+

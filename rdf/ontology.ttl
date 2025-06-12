@@ -10,43 +10,6 @@
 @prefix wikidata: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:Product a schema:Product,
-        owl:Class ;
-    rdfs:label "Produkt"@de,
-        "Product"@en,
-        "Produit"@fr,
-        "Prodotto"@it ;
-    rdfs:comment """
-        Repräsentiert jedes Element im Rahmen des Pflanzenschutzes, das mit einer eidgenössischen Zulassungsnummer registriert ist und spezifische Berechtigungen hinsichtlich der nicht-beruflichen Verwendung aufweist.
-        """@de,
-        """
-        Represents any item within the crop protection framework that is registered with a federal admission number and has specified permissions regarding non-professional use.
-        """@en,
-        """
-        Représente tout élément dans le cadre de la protection des cultures, enregistré avec un numéro d'autorisation fédéral et disposant d'autorisations spécifiques pour l'utilisation non professionnelle.
-        """@fr,
-        """
-        Rappresenta qualsiasi elemento nell'ambito della protezione delle colture, registrato con un numero di autorizzazione federale e con specifici permessi per l'uso non professionale.
-        """@it ;
-    rdfs:scopeNote """
-        Diese Klasse ist für die Modellierung aller Pflanzenschutzmittel vorgesehen, die eine eidgenössische Registrierung erfordern und Einschränkungen oder Berechtigungen für die nicht-berufliche Nutzung gemäss den Schweizer Vorschriften aufweisen können.
-        """@de,
-        """
-        This class is intended for modeling all crop protection products requiring federal registration and that may have restrictions or allowances for non-professional usage as defined by Swiss regulations.
-        """@en,
-        """
-        Cette classe est destinée à modéliser tous les produits phytosanitaires nécessitant une autorisation fédérale et pouvant comporter des restrictions ou autorisations pour une utilisation non professionnelle conformément à la réglementation suisse.
-        """@fr,
-        """
-        Questa classe è destinata a modellare tutti i prodotti fitosanitari che richiedono una registrazione federale e che possono avere restrizioni o autorizzazioni per l'uso non professionale secondo le normative svizzere.
-        """@it ;
-    owl:equivalentClass [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty :isNonProfessionallyAllowed ],
-        [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty :federalAdmissionNumber ] .
-
 chebi:24431 a owl:Class ;
     rdfs:label "Chemische Entität"@de,
         "Chemical entity"@en,
@@ -907,12 +870,6 @@ wikidata:Q16521 a owl:Class ;
         """@it ;
     rdfs:subClassOf :ChemicalCropProtectionProduct .
 
-:GeneralNotice a owl:Class ;
-    rdfs:label "Allgemeiner Hinweis"@de,
-        "General Notice"@en,
-        "Avis général"@fr,
-        "Avviso generale"@it .
-
 :HazardStatement a owl:Class ;
     rdfs:label "Sicherheitshinweise für Gefahrstoffe"@de,
         "Hazard statements"@en,
@@ -934,8 +891,7 @@ wikidata:Q16521 a owl:Class ;
         Le frasi di rischio H e le frasi complementari EUH sono descrizioni standardizzate dei pericoli specifici associati a sostanze o miscele chimiche, come la tossicità, l'infiammabilità o i danni ambientali.
         Fanno parte del Sistema Globale Armonizzato (GHS) e garantiscono una comunicazione chiara e uniforme dei pericoli chimici a livello mondiale.
         """@it ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Globally_Harmonized_System_of_Classification_and_Labelling_of_Chemicals> ;
-    rdfs:subClassOf :GeneralNotice .
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Globally_Harmonized_System_of_Classification_and_Labelling_of_Chemicals> .
 
 :Herbicide a owl:Class ;
     rdfs:label "Herbizid"@de,
@@ -963,6 +919,15 @@ wikidata:Q16521 a owl:Class ;
         Gli erbicidi sono un componente fondamentale della gestione integrata delle infestanti.
         """@it ;
     rdfs:subClassOf :ChemicalCropProtectionProduct .
+
+:Indication a owl:Class ;
+    rdfs:label "Indikation"@de,
+        "Indication"@en,
+        "Indication"@fr,
+        "Indicazione"@it ;
+    rdfs:comment """
+       Im Pflanzenschutzmittel ist eine Indikation eine erlaubte Anwendung eines einzigen bestimmten Produktes auf bestimmten Kulturen gegen bestimmte Schadverursacher.
+       """@de .
 
 :Insecticide a owl:Class ;
     rdfs:label "Insektizid"@de,
@@ -1151,6 +1116,42 @@ wikidata:Q16521 a owl:Class ;
         "Fitorregolatore"@it ;
     rdfs:subClassOf :ChemicalProduct .
 
+:Product a owl:Class ;
+    rdfs:label "Produkt"@de,
+        "Product"@en,
+        "Produit"@fr,
+        "Prodotto"@it ;
+    rdfs:comment """
+        Repräsentiert jedes Element im Rahmen des Pflanzenschutzes, das mit einer eidgenössischen Zulassungsnummer registriert ist und spezifische Berechtigungen hinsichtlich der nicht-beruflichen Verwendung aufweist.
+        """@de,
+        """
+        Represents any item within the crop protection framework that is registered with a federal admission number and has specified permissions regarding non-professional use.
+        """@en,
+        """
+        Représente tout élément dans le cadre de la protection des cultures, enregistré avec un numéro d'autorisation fédéral et disposant d'autorisations spécifiques pour l'utilisation non professionnelle.
+        """@fr,
+        """
+        Rappresenta qualsiasi elemento nell'ambito della protezione delle colture, registrato con un numero di autorizzazione federale e con specifici permessi per l'uso non professionale.
+        """@it ;
+    rdfs:scopeNote """
+        Diese Klasse ist für die Modellierung aller Pflanzenschutzmittel vorgesehen, die eine eidgenössische Registrierung erfordern und Einschränkungen oder Berechtigungen für die nicht-berufliche Nutzung gemäss den Schweizer Vorschriften aufweisen können.
+        """@de,
+        """
+        This class is intended for modeling all crop protection products requiring federal registration and that may have restrictions or allowances for non-professional usage as defined by Swiss regulations.
+        """@en,
+        """
+        Cette classe est destinée à modéliser tous les produits phytosanitaires nécessitant une autorisation fédérale et pouvant comporter des restrictions ou autorisations pour une utilisation non professionnelle conformément à la réglementation suisse.
+        """@fr,
+        """
+        Questa classe è destinata a modellare tutti i prodotti fitosanitari che richiedono una registrazione federale e che possono avere restrizioni o autorizzazioni per l'uso non professionale secondo le normative svizzere.
+        """@it ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :isNonProfessionallyAllowed ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :federalAdmissionNumber ] .
+
 :PureSubstance a owl:Class ;
     rdfs:label "Reine Substanz"@de,
         "Pure substance"@en,
@@ -1250,13 +1251,6 @@ wikidata:Q16521 a owl:Class ;
         I sinergetici agiscono inibendo i meccanismi di disintossicazione dei parassiti, aumentando così la tossicità degli insetticidi.
         """@it ;
     rdfs:subClassOf :Substance .
-
-:Treatment a owl:Class ;
-    rdfs:label "Behandlung"@de,
-        "Treatment"@en,
-        "Traitement"@fr,
-        "Trattamento"@it ;
-    rdfs:subClassOf :Action .
 
 :TreatmentConstraint a owl:Class ;
     rdfs:label "Anwendungseinschränkung"@de,
@@ -1584,7 +1578,7 @@ schema:telephone a owl:DatatypeProperty ;
 :hasTreatmentEfficacy a owl:DatatypeProperty ;
     rdfs:label "hat Behandlungswirkung"@de,
         "has treatment efficacy"@en ;
-    rdfs:domain :Treatment ;
+    rdfs:domain :Indication ;
     rdfs:range :TreatmentEfficacy .
 
 :hasUpperDamageLimit a owl:DatatypeProperty ;
@@ -1816,8 +1810,8 @@ schema:addressCountry a owl:ObjectProperty ;
         "Obligation regarding the application"@de .
 
 :hasChebiIdentity a owl:ObjectProperty ;
-    rdfs:label "hat CheBI-Identität"@de,
-        "has CheBI identity"@en ;
+    rdfs:label "CheBI-Identität"@de,
+        "CheBI identity"@en ;
     rdfs:comment "Verknüpft eine Substanz mit der entsprechenden chemischen Entität in der CheBI-Ontologie und erleichtert so eine standardisierte chemische Identifizierung."@de,
         "Associates a substance with its corresponding chemical entity in the CheBI ontology, facilitating standardized chemical identification."@en ;
     rdfs:domain :Substance ;
@@ -1957,6 +1951,15 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:range :Product ;
     owl:inverseOf :hasPermissionHolder .
 
+:indication a owl:ObjectProperty ;
+    rdfs:label "Behandlung"@de,
+        "Treatment"@en,
+        "Traitement"@fr,
+        "Trattamento"@it ;
+    rdfs:domain :Product ;
+    rdfs:range :Indication ;
+    owl:inverseOf :involves .
+
 :interactsWith a owl:ObjectProperty ;
     rdfs:label "interagiert mit"@de,
         "interacts with"@en,
@@ -2000,9 +2003,9 @@ schema:addressCountry a owl:ObjectProperty ;
         """
         Collega un uso autorizzato dei prodotti PPP (indicazione) al rispettivo prodotto.
         """@it ;
-    rdfs:domain :Treatment ;
+    rdfs:domain :Indication ;
     rdfs:range :Product ;
-    owl:inverseOf :isInvolvedIn .
+    owl:inverseOf :indication .
 
 :isAffectedBy a owl:ObjectProperty ;
     rdfs:label "ist betroffen von"@de,
@@ -2073,15 +2076,6 @@ schema:addressCountry a owl:ObjectProperty ;
         "Taxon biologique"@fr,
         "Taxon biologico"@it ;
     rdfs:range wikidata:Q16521 .
-
-:isInvolvedIn a owl:ObjectProperty ;
-    rdfs:label "Behandlung"@de,
-        "Treatment"@en,
-        "Traitement"@fr,
-        "Trattamento"@it ;
-    rdfs:domain :Product ;
-    rdfs:range :Treatment ;
-    owl:inverseOf :involves .
 
 :isLimitedBy a owl:ObjectProperty ;
     rdfs:label "wird eingeschränkt durch"@de,

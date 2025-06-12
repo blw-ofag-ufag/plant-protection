@@ -422,7 +422,7 @@ describe = function(x, parallelimport = FALSE) {
       uri(paste0("W-",attr(x, "wNbr")), base)
     })
     
-    triple(subject, "a", ":Treatment")
+    triple(subject, "a", ":Indication")
     triple(subject, ":minimumTreatmentDosage", literal(attr(indication, "dosageFrom")))
     triple(subject, ":maximumTreatmentDosage", literal(attr(indication, "dosageTo")))
     triple(subject, ":waitingPeriod", attr(indication, "waitingPeriod"))
