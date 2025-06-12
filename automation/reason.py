@@ -46,6 +46,7 @@ CUSTOM_NAMESPACES = {
     "code":      "https://agriculture.ld.admin.ch/plant-protection/code/",
     "note":      "https://agriculture.ld.admin.ch/plant-protection/note/",
     "wikidata":  "http://www.wikidata.org/entity/",
+    "chebi":     "http://purl.obolibrary.org/obo/CHEBI_"
 }
 
 SCHEMA = Namespace(CUSTOM_NAMESPACES["schema"])
