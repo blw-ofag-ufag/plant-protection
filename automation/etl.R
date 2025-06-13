@@ -138,8 +138,9 @@ describe <- function(x, parallelimport = FALSE) {
   
   # add diverse links to codes
   prefix = paste0(base, "code/")
-  for (variable in c("FormulationCode", "CodeR", "CodeS", "DangerSymbol", "SignalWords")) {
-    triple(subject, paste0(":has",variable), uri(getFK(x[["ProductInformation"]], variable), prefix))
+  triple(subject, ":hasFormulationCode", uri(getFK(x[["ProductInformation"]], variable), prefix))
+  for (variable in c("CodeR", "CodeS", "DangerSymbol", "SignalWords")) {
+    triple(subject, ":notice", uri(getFK(x[["ProductInformation"]], variable), prefix))
   }
   
   # Save the ingredients (here, we work with blank nodes)
@@ -288,10 +289,15 @@ convert <- function(x) {
 sink("rdf/codes.ttl", append = TRUE)
 cat(prefixes)
 for (varname in c("FormulationCode", "ApplicationArea", "CultureForm", "Measure", "TimeMeasure")) {
+  class <- if(varname %in% c("Measure","TimeMeasure")) {
+    "Unit"
+  } else {
+    varname
+  }
   XML |> xml_find_all(sprintf("//MetaData[@name='%s']/Detail", varname)) |>
     as_list() |>
     lapply(convert) |>
-    printList(sprintf(":%s", varname), properties = ":code")
+    printList(sprintf(":%s", class), properties = ":code")
 }
 sink()
 
@@ -394,11 +400,11 @@ cat(prefixes)
 XML |> xml_find_all("//MetaData[@name='Obligation']/Detail") |>
   as_list() |>
   lapply(convert) |>
-  printList(":ActionNotice, :Obligation")
+  printList(":Obligation")
 XML |> xml_find_all("//MetaData[@name='ApplicationComment']/Detail") |>
   as_list() |>
   lapply(convert) |>
-  printList(":ActionNotice, :ApplicationComment")
+  printList(":ApplicationComment")
 sink()
 
 # ------------------------------------------------------------------
@@ -414,8 +420,6 @@ describe = function(x, parallelimport = FALSE) {
     
     # generate an anonymous hash-uuid-URI that will always be the same from the same attributes
     subject = uri(uuid::UUIDfromName("acdb7485-3f2b-45f0-a783-01133f235c2a", rlang::hash(indication)), base)
-    
-    
     triple(subject, ":product", if(parallelimport) {
       uri(attr(x, "id"), base)
     } else {
@@ -423,16 +427,41 @@ describe = function(x, parallelimport = FALSE) {
     })
     
     triple(subject, "a", ":Indication")
-    triple(subject, ":minimumTreatmentDosage", literal(attr(indication, "dosageFrom")))
-    triple(subject, ":maximumTreatmentDosage", literal(attr(indication, "dosageTo")))
-    triple(subject, ":waitingPeriod", attr(indication, "waitingPeriod"))
-    triple(subject, ":expenditureTo", attr(indication, "expenditureTo"))
-    triple(subject, ":expenditureFrom", attr(indication, "expenditureFrom"))
     triple(subject, ":applicationArea", uri(file.path("code", getFK(indication, "ApplicationArea")), base))
-    triple(subject, ":applicationComment", uri(file.path("note", getFK(indication, "ApplicationComment")), base))
-    triple(subject, ":obligation", uri(file.path("note",getFK(indication, "Obligation")), base))
+    triple(subject, ":notice", uri(file.path("note", getFK(indication, "ApplicationComment")), base))
+    triple(subject, ":notice", uri(file.path("note",getFK(indication, "Obligation")), base))
     triple(subject, ":cropStressor", uri(file.path("pest",getFK(indication, "Pest")), base))
     triple(subject, ":cropGroup", uri(file.path("crop",getFK(indication, "Culture")), base))
+    
+    # model the quantitative values as blank nodes (in order to attach units)
+    if(!rdfhelper:::is.missing(attr(indication, "waitingPeriod"))) {
+      blank <- paste0("_:", rlang::hash(subject))
+      triple(subject, ":waitingPeriod", blank)
+      triple(blank, "a", "schema:QuantitativeValue")
+      triple(blank, "schema:value", typed(attr(indication, "waitingPeriod"), "integer"))
+      triple(blank, "schema:unitCode", uri(file.path("code",getFK(indication, "TimeMeasure")), base))
+    }
+    mapping <- c(dosageFrom = "dosageFrom",
+                 dosageTo = "dosageTo",
+                 expenditureFrom = "expenditureForm",
+                 expenditureTo = "expenditureTo")
+    
+    for (property in c("dosage", "expenditure")) {
+      
+      unit <- uri(file.path("code",getFK(indication, "Measure")), base)
+      min <- as.numeric(attr(indication, mapping[paste0(property, "From")]))
+      max <- as.numeric(attr(indication, mapping[paste0(property, "To")]))
+      
+      if(!rdfhelper:::is.missing(min) || !rdfhelper:::is.missing(max)) {
+        blank <- paste0("_:", rlang::hash(paste0(rlang::hash(subject), property)))
+        
+        triple( subject,  paste0(":", property),                       blank )
+        triple(   blank,                    "a",  "schema:QuantitativeValue" )
+        triple(   blank,      "schema:minValue",                         min )
+        triple(   blank,      "schema:maxValue",                         max )
+        triple(   blank,      "schema:unitCode",                        unit )
+      }
+    }
   }
 }
 
@@ -448,3 +477,13 @@ L = XML |>
   as_list()
 for (x in L) describe(x)
 sink()
+
+# Remove duplicates (otherwise, new random blank IDs are assigned...)
+L = readLines("rdf/indications.ttl")
+length(L); length(unique(L))
+sink("rdf/indications.ttl")
+for (i in unique(L)) {
+  cat(i, "\n")
+}
+sink()
+

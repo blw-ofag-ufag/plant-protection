@@ -1013,556 +1013,6 @@ code:6501 a :FormulationCode ;
         "Miscela delle formulazioni CS e SC"@it ;
     :code "ZC" .
 
-code:11425 a :Measure ;
-    rdfs:label "Million(en)/ha"@de,
-        "millions/ha"@fr,
-        "milione/ha"@it .
-
-code:11546 a :Measure ;
-    rdfs:label "ml/t Getreide"@de,
-        "ml/t céréales"@fr,
-        "ml/t cereali"@it ;
-    :code "ml/t Getreide" .
-
-code:11621 a :Measure ;
-    rdfs:label "ml/10m²"@de,
-        "ml/10m²"@en,
-        "ml/10m²"@fr,
-        "ml/10m²"@it ;
-    :code "ml/10m²" .
-
-code:11636 a :Measure ;
-    rdfs:label "Individuen / m2"@de,
-        "individus / m2"@fr,
-        "individui /m2"@it ;
-    :code "ind" .
-
-code:11645 a :Measure ;
-    rdfs:label "Pellets pro 3-10 m Ganglänge"@de,
-        "Pellets par 3-10 m longueur de la galerie"@fr,
-        "pellets per 3-10 m lunghezza della galleria"@it .
-
-code:11797 a :Measure ;
-    rdfs:label "l/20m²"@de,
-        "l/20m²"@en,
-        "l/20m²"@fr,
-        "l/20m²"@it ;
-    :code "l/20m²" .
-
-code:11954 a :Measure ;
-    rdfs:label "ml/Topf"@de,
-        "ml/pot"@fr,
-        "ml/vaso"@it .
-
-code:12016 a :Measure ;
-    rdfs:label "ml/1000 Pflanzen"@de,
-        "ml/1000 plantes"@fr,
-        "ml/1000 piante"@it .
-
-code:12119 a :Measure ;
-    rdfs:label "g pro 40-75 m3"@de,
-        "g pour 40-75 m3"@fr,
-        "g per 40-75 m3"@it .
-
-code:12120 a :Measure ;
-    rdfs:label "g pro 50-120 m3"@de,
-        "g pour 50-120 m3"@fr,
-        "g per 50-120 m3"@it .
-
-code:12121 a :Measure ;
-    rdfs:label "g pro 50-70 m3"@de,
-        "g pour 50-70 m3"@fr,
-        "g per 50-70 m3"@it .
-
-code:12148 a :Measure ;
-    rdfs:label "Klicks pro 300 cm2 Blattoberfläche"@de,
-        "clics pour 300 cm2 de surface foliaire"@fr,
-        "scatti per 300 cm2 di superficie fogliare"@it .
-
-code:12224 a :Measure ;
-    rdfs:label "ppm"@de,
-        "ppm"@en,
-        "ppm"@fr,
-        "ppm"@it .
-
-code:12240 a :Measure ;
-    rdfs:label "kg/t"@de,
-        "kg/t"@en,
-        "kg/t"@fr,
-        "kg/t"@it .
-
-code:12285 a :Measure ;
-    rdfs:label "g/100 Pflanzen"@de,
-        "g/100 plantes"@fr,
-        "g/100 piante"@it .
-
-code:12621 a :Measure ;
-    rdfs:label "Stück pro 3-5 m Ganglänge"@de,
-        "pièce par 3-5 m longueur de la galerie"@fr,
-        "pezzo per 3-5 m lunghezza della galleria"@it .
-
-code:12636 a :Measure ;
-    rdfs:label "Einheiten à 50 Tiere / 100m2"@de,
-        "unités à 50 animaux / 100m2"@fr,
-        "unità di 50 animali / 100m2"@it .
-
-code:12709 a :Measure ;
-    rdfs:label "Klick pro 300 cm2 Blattoberfläche"@de,
-        "clic pour 300 cm2 de surface foliaire"@fr,
-        "scatto per 300 cm2 di superficie fogliare"@it .
-
-code:12824 a :Measure ;
-    rdfs:label "g/m2 Setzlinge"@de,
-        "g/m2 jeunes plantes"@fr,
-        "g/m2 piantoni"@it .
-
-code:12879 a :Measure ;
-    rdfs:label "ml/hl Nährlösung"@de,
-        "ml/hl de solution nutritive"@fr,
-        "ml/hl di soluzione nutritiva"@it ;
-    :code "ml/hl Nährlösung" .
-
-code:12915 a :Measure ;
-    rdfs:label "l/m2 Setzlinge "@de,
-        "l/m2 jeunes plantes"@fr,
-        "l/m2 piantoni "@it .
-
-code:12925 a :Measure ;
-    rdfs:label "ml/100 m³ "@de,
-        "ml/100 m³ "@fr,
-        "ml/100 m³ "@it .
-
-code:12966 a :Measure ;
-    rdfs:label "Fangbrett (à 2.5 Mio. Org.) / 4 m2"@de,
-        "piège (à 2.5 mio. org.) / 4 m2"@fr,
-        "trappola (a 2.5 mio. org.) / 4 m2"@it .
-
-code:13291 a :Measure ;
-    rdfs:label "g pro 45-60 m³ "@de,
-        "g pour 45-60 m³ "@fr,
-        "g per 45-60 m³ "@it ;
-    :code "tabs" .
-
-code:13320 a :Measure ;
-    rdfs:label "ml/10 m³ "@de,
-        "ml/10 m³ "@en,
-        "ml/10 m³ "@fr,
-        "ml/10 m³ "@it .
-
-code:13321 a :Measure ;
-    rdfs:label "ml/5 m²"@de,
-        "ml/5 m²"@en,
-        "ml/5 m²"@fr,
-        "ml/5 m²"@it .
-
-code:13404 a :Measure ;
-    rdfs:label "Individuen / ha"@de,
-        "individus / ha"@fr,
-        "individui /ha"@it .
-
-code:14361 a :Measure ;
-    rdfs:label "Stück pro Köderstation "@de,
-        "pièce par station d'appâtage "@fr,
-        "pezzo per stazione con esca "@it .
-
-code:14733 a :Measure ;
-    rdfs:label "Beutel / m2 "@de,
-        "sachet(s) /m2 "@fr,
-        "sacchetto(i) / m2 "@it .
-
-code:14734 a :Measure ;
-    rdfs:label "Million(en)/ 1l Wasser"@de,
-        "millions/ 1l d'eau"@fr,
-        "milione/ 1l d'acqua"@it .
-
-code:14738 a :Measure ;
-    rdfs:label "g/100 kg Substrat "@de,
-        "g/100 kg de substratum"@fr,
-        "g/100 kg di substrato"@it .
-
-code:14886 a :Measure ;
-    rdfs:label "Milliarden /ha"@de,
-        "milliards / ha"@fr,
-        "miliardi / ha"@it .
-
-code:15271 a :Measure ;
-    rdfs:label "Tabletten/100 l Wasser "@de,
-        "tablettes/100 l d'eau "@fr,
-        "compresse/100 l d'acqua "@it .
-
-code:15335 a :Measure ;
-    rdfs:label "Tabletten/a"@de,
-        "tablettes/a"@fr,
-        "compresse/a"@it .
-
-code:15446 a :Measure ;
-    rdfs:label "Organismen/m2 oder Befallsherd"@de,
-        "organismes/m2 ou rond attaqué"@fr,
-        "organismi/m2 o focolaio"@it .
-
-code:15548 a :Measure ;
-    rdfs:label "Einheit / 5m2"@de,
-        "unité / 5m2"@fr,
-        "unità / 5m2"@it .
-
-code:15568 a :Measure ;
-    rdfs:label "g pro 40-45 m³"@de,
-        "g pour 40-45 m³"@fr,
-        "g per 40-45 m³"@it ;
-    :code "tabs" .
-
-code:15617 a :Measure ;
-    rdfs:label "Organismen/10-25 m²"@de,
-        "organismes/10-25 m²"@fr,
-        "organismi/10-25 m²"@it ;
-    :code "Lager" .
-
-code:15664 a :Measure ;
-    rdfs:label "Karten/m²"@de,
-        "cartes/m²"@fr,
-        "carte/m²"@it .
-
-code:15777 a :Measure ;
-    rdfs:label "Einheit / 100m2 "@de,
-        "unité / 100m2"@fr,
-        "unità / 100m2"@it .
-
-code:15792 a :Measure ;
-    rdfs:label "l/1000 Pflanzen"@de,
-        "l/1000 plantes"@fr,
-        "l/1000 piante"@it .
-
-code:15888 a :Measure ;
-    rdfs:label "ml/Tonne/Tag"@de,
-        "ml/tonne/jour"@fr,
-        "ml/t/giorno"@it .
-
-code:6517 a :Measure ;
-    rdfs:label "l/ha"@de,
-        "l/ha"@en,
-        "l/ha"@fr,
-        "l/ha"@it .
-
-code:6518 a :Measure ;
-    rdfs:label "kg/ha"@de,
-        "kg/ha"@en,
-        "kg/ha"@fr,
-        "kg/ha"@it .
-
-code:6519 a :Measure ;
-    rdfs:label "g/m²"@de,
-        "g/m²"@en,
-        "g/m²"@fr,
-        "g/m²"@it .
-
-code:6522 a :Measure ;
-    rdfs:label "g/ha"@de,
-        "g/ha"@en,
-        "g/ha"@fr,
-        "g/ha"@it .
-
-code:6526 a :Measure ;
-    rdfs:label "ml/m²"@de,
-        "ml/m²"@en,
-        "ml/m²"@fr,
-        "ml/m²"@it .
-
-code:6528 a :Measure ;
-    rdfs:label "ml/a"@de,
-        "ml/a"@en,
-        "ml/a"@fr,
-        "ml/a"@it .
-
-code:6533 a :Measure ;
-    rdfs:label "g/l Wasser"@de,
-        "g/l water"@en,
-        "g/l d'eau"@fr,
-        "g/l d'acqua"@it .
-
-code:6535 a :Measure ;
-    rdfs:label "g/m³"@de,
-        "g/m³"@en,
-        "g/m³"@fr,
-        "g/m³"@it .
-
-code:6536 a :Measure ;
-    rdfs:label "Organismen/Pflanze"@de,
-        "organisms per plant"@en,
-        "organismes par plante"@fr,
-        "organismi/piante"@it .
-
-code:6543 a :Measure ;
-    rdfs:label "g/Pflanze"@de,
-        "g/plant"@en,
-        "g/plante"@fr,
-        "g/pianta"@it .
-
-code:6546 a :Measure ;
-    rdfs:label "Tabletten/ha"@de,
-        "tablet(s)/ha"@en,
-        "tablettes/ha"@fr,
-        "compresse/ha"@it .
-
-code:6551 a :Measure ;
-    rdfs:label "Weibchen/ha"@de,
-        "females/ha"@en,
-        "femelles/ha"@fr,
-        "femmine/ha"@it .
-
-code:6552 a :Measure ;
-    rdfs:label "ml/hl"@de,
-        "ml/hl"@en,
-        "ml/hl"@fr,
-        "ml/hl"@it .
-
-code:6555 a :Measure ;
-    rdfs:label "Organismen/a"@de,
-        "organismes/a"@fr,
-        "organismi/a"@it .
-
-code:6556 a :Measure ;
-    rdfs:label "Organismen/ha"@de,
-        "organisms/ha"@en,
-        "organismes/ha"@fr,
-        "organismi/ha"@it .
-
-code:6557 a :Measure ;
-    rdfs:label "Organismen/l Substrat"@de,
-        "organisms/l of substratum"@en,
-        "organismes/l de substratum"@fr,
-        "organismi/l di substrato"@it .
-
-code:6558 a :Measure ;
-    rdfs:label "Organismen/m²"@de,
-        "organisms/m²"@en,
-        "organismes/m²"@fr,
-        "organismi/m²"@it .
-
-code:6563 a :Measure ;
-    rdfs:label "Dispenser/ha"@de,
-        "dispenser/ha"@en,
-        "diffuseur/ha"@fr,
-        "dosatore/ha"@it .
-
-code:6571 a :Measure ;
-    rdfs:label "l/1000 m³"@de,
-        "l/1000 m³"@en,
-        "l/1000 m³"@fr,
-        "l/1000 m³"@it .
-
-code:6575 a :Measure ;
-    rdfs:label "Gaspatronen/Kolonie"@de,
-        "cartouches fumigènes/colonie"@fr,
-        "cartucce di gas/colonia"@it .
-
-code:6579 a :Measure ;
-    rdfs:label "l/a"@de,
-        "l/a"@en,
-        "l/a"@fr,
-        "l/a"@it .
-
-code:6580 a :Measure ;
-    rdfs:label "g/100 kg Saatgut"@de,
-        "g/100 kg de semences"@fr,
-        "g/100 kg di sementi"@it .
-
-code:6582 a :Measure ;
-    rdfs:label "l/hl"@de,
-        "l/hl"@en,
-        "l/hl"@fr,
-        "l/hl"@it .
-
-code:6583 a :Measure ;
-    rdfs:label "ml/100 kg Saatgut"@de,
-        "ml/100 kg de semences"@fr,
-        "ml/100 kg di sementi"@it .
-
-code:6584 a :Measure ;
-    rdfs:label "ml/t"@de,
-        "ml/t"@en,
-        "ml/t"@fr,
-        "ml/t"@it .
-
-code:6587 a :Measure ;
-    rdfs:label "l/100 kg Saatgut"@de,
-        "l/100 kg de semences"@fr,
-        "l/100 kg di sementi"@it .
-
-code:6588 a :Measure ;
-    rdfs:label "ml/ha"@de,
-        "ml/ha"@en,
-        "ml/ha"@fr,
-        "ml/ha"@it .
-
-code:6589 a :Measure ;
-    rdfs:label "ml/l"@de,
-        "ml/l"@en,
-        "ml/l"@fr,
-        "ml/l"@it .
-
-code:6591 a :Measure ;
-    rdfs:label "Million(en)/m²"@de,
-        "millions/m²"@en,
-        "millions/m²"@fr,
-        "milione/m²"@it .
-
-code:6592 a :Measure ;
-    rdfs:label "l in 1000 l Wasser/ha"@de,
-        "l in 1000 l of water/ha"@en,
-        "l in 1000 l d'eau/ha"@fr,
-        "l in 1000 l di acqua/ha"@it .
-
-code:6595 a :Measure ;
-    rdfs:label "kg in 10 l Wasser"@de,
-        "kg dans 10 l d'eau"@fr,
-        "kg/10 l di acqua"@it .
-
-code:6599 a :Measure ;
-    rdfs:label "ml/Tonne Kartoffeln"@de,
-        "ml par tonne de pommes de terre"@fr,
-        "ml/t di patate"@it .
-
-code:6602 a :Measure ;
-    rdfs:label "Tabletten/l Wasser"@de,
-        "tablettes/l d'eau"@fr,
-        "compresse/l d'acqua"@it .
-
-code:6608 a :Measure ;
-    rdfs:label "g/hl"@de,
-        "g/hl"@fr,
-        "g/hl"@it .
-
-code:6611 a :Measure ;
-    rdfs:label "ml in 10 l Wasser/100 m²"@de,
-        "ml dans 10 l d'eau/100 m²"@fr,
-        "ml in 10 l d'acqua/100 m²"@it .
-
-code:6612 a :Measure ;
-    rdfs:label "Organismen/Kolonie"@de,
-        "organismes/colonie"@fr,
-        "organismi/colonia"@it .
-
-code:6618 a :Measure ;
-    rdfs:label "Organismen/Befallsherd"@de,
-        "organismes/rond attaqué"@fr,
-        "organismi/focolaio"@it .
-
-code:6619 a :Measure ;
-    rdfs:label "g ai/100'000 Körner"@de,
-        "g ai/100'000 grains"@fr .
-
-code:6621 a :Measure ;
-    rdfs:label "Ampullen/ha"@de,
-        "ampoules/ha"@fr,
-        "ampolle/ha"@it .
-
-code:6622 a :Measure ;
-    rdfs:label "ml/100'000 Pillen"@de,
-        "ml/100'000 graines"@fr,
-        "ml/100'000 semi"@it .
-
-code:6624 a :Measure ;
-    rdfs:label "ml/50'000 Maiskörner"@de,
-        "ml/50'000 graines de mais"@fr,
-        "ml/50'000 grani di mais"@it .
-
-code:6626 a :Measure ;
-    rdfs:label "Stck/m² "@de,
-        "pièces/m²"@fr,
-        "pezzo/m² "@it .
-
-code:6633 a :Measure ;
-    rdfs:label "ml/kg Saatgut"@de,
-        "ml/kg de semences"@fr,
-        "ml/kg di sementi"@it .
-
-code:6637 a :Measure ;
-    rdfs:label "g/l"@de,
-        "g/l"@fr .
-
-code:6638 a :Measure ;
-    rdfs:label "ml/m3 Pflanzenerde"@de,
-        "ml/m3 terreau"@fr,
-        "ml/m3 terriccio"@it .
-
-code:6639 a :Measure ;
-    rdfs:label "Organismen/100 m²"@de,
-        "organisms/100 m²"@en,
-        "organismes/100 m²"@fr,
-        "organismi/100 m²"@it .
-
-code:6646 a :Measure ;
-    rdfs:label "Karten/100 m²"@de,
-        "cards/100 m²"@en,
-        "cartes/100 m²"@fr,
-        "carte/100 m²"@it .
-
-code:6647 a :Measure ;
-    rdfs:label "l/1'000 kg Saatgut"@de,
-        "l/1'000 kg de semences"@fr,
-        "l/1'000 kg di sementi"@it .
-
-code:6649 a :Measure ;
-    rdfs:label "Kärtchen (à 3'000 Trichogramma)/Baum"@de,
-        "diffuseurs (contenant 3'000 Trichogramma)/arbre "@fr,
-        "bustine (contenenti ciascuna 3000 Trichogramma)/albero"@it .
-
-code:6650 a :Measure ;
-    rdfs:label "l/100 t"@de,
-        "l/100 t"@en,
-        "l/100 t"@fr,
-        "l/100 t"@it .
-
-code:6651 a :Measure ;
-    rdfs:label "l/2'000 kg Saatgut /ha"@de,
-        "l/2'000 kg de semences /ha"@fr,
-        "l/2'000 kg di sementi /ha"@it .
-
-code:6653 a :Measure ;
-    rdfs:label "g/Tonne"@de .
-
-code:6654 a :Measure ;
-    rdfs:label "ml/100'000 Samen"@de,
-        "ml/100'000 graines"@fr,
-        "ml/100'000 semi "@it .
-
-code:6657 a :Measure ;
-    rdfs:label "ml / cm Baumdurchmesser (auf 120 cm Höhe)"@de,
-        "ml / cm de diamètre du tronc (à une hauteur de 120 cm)"@fr,
-        "ml / cm di circonferenza della pianta (all'altezza di 120 cm)"@it .
-
-code:6662 a :Measure ;
-    rdfs:label "g h/m³  maximal"@de,
-        "g h/m³ au maximum"@fr,
-        "g h/m³ al massimo"@it .
-
-code:6663 a :Measure ;
-    rdfs:label "ml in 10 l Wasser/10 m² "@de,
-        "ml dans 10 l d'eau/10 m²"@fr,
-        "ml in 10 l d'acqua/10 m²"@it .
-
-code:6668 a :Measure ;
-    rdfs:label "Karten (2000 Tiere / Karte)  / ha"@de,
-        "cards (2000 animals / card) / ha"@en,
-        "cartes (2000 animaux / carte) / ha"@fr,
-        "carte (2000 animali / carta) / ha"@it .
-
-code:6670 a :Measure ;
-    rdfs:label "ml in 10 l Wasser/m2"@de,
-        "ml dans 10 l d'eau/m2"@fr,
-        "ml in 10 l d'acqua/m2"@it .
-
-code:6672 a :Measure ;
-    rdfs:label "Organismen/50-100 m²"@de,
-        "organismes/50-100 m²"@fr,
-        "organismi/50-100 m²"@it ;
-    :code "Lager" .
-
-code:6673 a :Measure ;
-    rdfs:label "ml in 5 l Wasser/100 m² "@de,
-        "ml dans 5 l d'eau/100 m² "@fr,
-        "ml in 5 l d'acqua/100 m² "@it .
-
 code:7950 a :SignalWords ;
     rdfs:label "Achtung"@de,
         "Warning"@en,
@@ -1575,13 +1025,563 @@ code:7951 a :SignalWords ;
         "danger"@fr,
         "Pericolo"@it .
 
-code:7338 a :TimeMeasure ;
+code:11425 a :Unit ;
+    rdfs:label "Million(en)/ha"@de,
+        "millions/ha"@fr,
+        "milione/ha"@it .
+
+code:11546 a :Unit ;
+    rdfs:label "ml/t Getreide"@de,
+        "ml/t céréales"@fr,
+        "ml/t cereali"@it ;
+    :code "ml/t Getreide" .
+
+code:11621 a :Unit ;
+    rdfs:label "ml/10m²"@de,
+        "ml/10m²"@en,
+        "ml/10m²"@fr,
+        "ml/10m²"@it ;
+    :code "ml/10m²" .
+
+code:11636 a :Unit ;
+    rdfs:label "Individuen / m2"@de,
+        "individus / m2"@fr,
+        "individui /m2"@it ;
+    :code "ind" .
+
+code:11645 a :Unit ;
+    rdfs:label "Pellets pro 3-10 m Ganglänge"@de,
+        "Pellets par 3-10 m longueur de la galerie"@fr,
+        "pellets per 3-10 m lunghezza della galleria"@it .
+
+code:11797 a :Unit ;
+    rdfs:label "l/20m²"@de,
+        "l/20m²"@en,
+        "l/20m²"@fr,
+        "l/20m²"@it ;
+    :code "l/20m²" .
+
+code:11954 a :Unit ;
+    rdfs:label "ml/Topf"@de,
+        "ml/pot"@fr,
+        "ml/vaso"@it .
+
+code:12016 a :Unit ;
+    rdfs:label "ml/1000 Pflanzen"@de,
+        "ml/1000 plantes"@fr,
+        "ml/1000 piante"@it .
+
+code:12119 a :Unit ;
+    rdfs:label "g pro 40-75 m3"@de,
+        "g pour 40-75 m3"@fr,
+        "g per 40-75 m3"@it .
+
+code:12120 a :Unit ;
+    rdfs:label "g pro 50-120 m3"@de,
+        "g pour 50-120 m3"@fr,
+        "g per 50-120 m3"@it .
+
+code:12121 a :Unit ;
+    rdfs:label "g pro 50-70 m3"@de,
+        "g pour 50-70 m3"@fr,
+        "g per 50-70 m3"@it .
+
+code:12148 a :Unit ;
+    rdfs:label "Klicks pro 300 cm2 Blattoberfläche"@de,
+        "clics pour 300 cm2 de surface foliaire"@fr,
+        "scatti per 300 cm2 di superficie fogliare"@it .
+
+code:12224 a :Unit ;
+    rdfs:label "ppm"@de,
+        "ppm"@en,
+        "ppm"@fr,
+        "ppm"@it .
+
+code:12240 a :Unit ;
+    rdfs:label "kg/t"@de,
+        "kg/t"@en,
+        "kg/t"@fr,
+        "kg/t"@it .
+
+code:12285 a :Unit ;
+    rdfs:label "g/100 Pflanzen"@de,
+        "g/100 plantes"@fr,
+        "g/100 piante"@it .
+
+code:12621 a :Unit ;
+    rdfs:label "Stück pro 3-5 m Ganglänge"@de,
+        "pièce par 3-5 m longueur de la galerie"@fr,
+        "pezzo per 3-5 m lunghezza della galleria"@it .
+
+code:12636 a :Unit ;
+    rdfs:label "Einheiten à 50 Tiere / 100m2"@de,
+        "unités à 50 animaux / 100m2"@fr,
+        "unità di 50 animali / 100m2"@it .
+
+code:12709 a :Unit ;
+    rdfs:label "Klick pro 300 cm2 Blattoberfläche"@de,
+        "clic pour 300 cm2 de surface foliaire"@fr,
+        "scatto per 300 cm2 di superficie fogliare"@it .
+
+code:12824 a :Unit ;
+    rdfs:label "g/m2 Setzlinge"@de,
+        "g/m2 jeunes plantes"@fr,
+        "g/m2 piantoni"@it .
+
+code:12879 a :Unit ;
+    rdfs:label "ml/hl Nährlösung"@de,
+        "ml/hl de solution nutritive"@fr,
+        "ml/hl di soluzione nutritiva"@it ;
+    :code "ml/hl Nährlösung" .
+
+code:12915 a :Unit ;
+    rdfs:label "l/m2 Setzlinge "@de,
+        "l/m2 jeunes plantes"@fr,
+        "l/m2 piantoni "@it .
+
+code:12925 a :Unit ;
+    rdfs:label "ml/100 m³ "@de,
+        "ml/100 m³ "@fr,
+        "ml/100 m³ "@it .
+
+code:12966 a :Unit ;
+    rdfs:label "Fangbrett (à 2.5 Mio. Org.) / 4 m2"@de,
+        "piège (à 2.5 mio. org.) / 4 m2"@fr,
+        "trappola (a 2.5 mio. org.) / 4 m2"@it .
+
+code:13291 a :Unit ;
+    rdfs:label "g pro 45-60 m³ "@de,
+        "g pour 45-60 m³ "@fr,
+        "g per 45-60 m³ "@it ;
+    :code "tabs" .
+
+code:13320 a :Unit ;
+    rdfs:label "ml/10 m³ "@de,
+        "ml/10 m³ "@en,
+        "ml/10 m³ "@fr,
+        "ml/10 m³ "@it .
+
+code:13321 a :Unit ;
+    rdfs:label "ml/5 m²"@de,
+        "ml/5 m²"@en,
+        "ml/5 m²"@fr,
+        "ml/5 m²"@it .
+
+code:13404 a :Unit ;
+    rdfs:label "Individuen / ha"@de,
+        "individus / ha"@fr,
+        "individui /ha"@it .
+
+code:14361 a :Unit ;
+    rdfs:label "Stück pro Köderstation "@de,
+        "pièce par station d'appâtage "@fr,
+        "pezzo per stazione con esca "@it .
+
+code:14733 a :Unit ;
+    rdfs:label "Beutel / m2 "@de,
+        "sachet(s) /m2 "@fr,
+        "sacchetto(i) / m2 "@it .
+
+code:14734 a :Unit ;
+    rdfs:label "Million(en)/ 1l Wasser"@de,
+        "millions/ 1l d'eau"@fr,
+        "milione/ 1l d'acqua"@it .
+
+code:14738 a :Unit ;
+    rdfs:label "g/100 kg Substrat "@de,
+        "g/100 kg de substratum"@fr,
+        "g/100 kg di substrato"@it .
+
+code:14886 a :Unit ;
+    rdfs:label "Milliarden /ha"@de,
+        "milliards / ha"@fr,
+        "miliardi / ha"@it .
+
+code:15271 a :Unit ;
+    rdfs:label "Tabletten/100 l Wasser "@de,
+        "tablettes/100 l d'eau "@fr,
+        "compresse/100 l d'acqua "@it .
+
+code:15335 a :Unit ;
+    rdfs:label "Tabletten/a"@de,
+        "tablettes/a"@fr,
+        "compresse/a"@it .
+
+code:15446 a :Unit ;
+    rdfs:label "Organismen/m2 oder Befallsherd"@de,
+        "organismes/m2 ou rond attaqué"@fr,
+        "organismi/m2 o focolaio"@it .
+
+code:15548 a :Unit ;
+    rdfs:label "Einheit / 5m2"@de,
+        "unité / 5m2"@fr,
+        "unità / 5m2"@it .
+
+code:15568 a :Unit ;
+    rdfs:label "g pro 40-45 m³"@de,
+        "g pour 40-45 m³"@fr,
+        "g per 40-45 m³"@it ;
+    :code "tabs" .
+
+code:15617 a :Unit ;
+    rdfs:label "Organismen/10-25 m²"@de,
+        "organismes/10-25 m²"@fr,
+        "organismi/10-25 m²"@it ;
+    :code "Lager" .
+
+code:15664 a :Unit ;
+    rdfs:label "Karten/m²"@de,
+        "cartes/m²"@fr,
+        "carte/m²"@it .
+
+code:15777 a :Unit ;
+    rdfs:label "Einheit / 100m2 "@de,
+        "unité / 100m2"@fr,
+        "unità / 100m2"@it .
+
+code:15792 a :Unit ;
+    rdfs:label "l/1000 Pflanzen"@de,
+        "l/1000 plantes"@fr,
+        "l/1000 piante"@it .
+
+code:15888 a :Unit ;
+    rdfs:label "ml/Tonne/Tag"@de,
+        "ml/tonne/jour"@fr,
+        "ml/t/giorno"@it .
+
+code:6517 a :Unit ;
+    rdfs:label "l/ha"@de,
+        "l/ha"@en,
+        "l/ha"@fr,
+        "l/ha"@it .
+
+code:6518 a :Unit ;
+    rdfs:label "kg/ha"@de,
+        "kg/ha"@en,
+        "kg/ha"@fr,
+        "kg/ha"@it .
+
+code:6519 a :Unit ;
+    rdfs:label "g/m²"@de,
+        "g/m²"@en,
+        "g/m²"@fr,
+        "g/m²"@it .
+
+code:6522 a :Unit ;
+    rdfs:label "g/ha"@de,
+        "g/ha"@en,
+        "g/ha"@fr,
+        "g/ha"@it .
+
+code:6526 a :Unit ;
+    rdfs:label "ml/m²"@de,
+        "ml/m²"@en,
+        "ml/m²"@fr,
+        "ml/m²"@it .
+
+code:6528 a :Unit ;
+    rdfs:label "ml/a"@de,
+        "ml/a"@en,
+        "ml/a"@fr,
+        "ml/a"@it .
+
+code:6533 a :Unit ;
+    rdfs:label "g/l Wasser"@de,
+        "g/l water"@en,
+        "g/l d'eau"@fr,
+        "g/l d'acqua"@it .
+
+code:6535 a :Unit ;
+    rdfs:label "g/m³"@de,
+        "g/m³"@en,
+        "g/m³"@fr,
+        "g/m³"@it .
+
+code:6536 a :Unit ;
+    rdfs:label "Organismen/Pflanze"@de,
+        "organisms per plant"@en,
+        "organismes par plante"@fr,
+        "organismi/piante"@it .
+
+code:6543 a :Unit ;
+    rdfs:label "g/Pflanze"@de,
+        "g/plant"@en,
+        "g/plante"@fr,
+        "g/pianta"@it .
+
+code:6546 a :Unit ;
+    rdfs:label "Tabletten/ha"@de,
+        "tablet(s)/ha"@en,
+        "tablettes/ha"@fr,
+        "compresse/ha"@it .
+
+code:6551 a :Unit ;
+    rdfs:label "Weibchen/ha"@de,
+        "females/ha"@en,
+        "femelles/ha"@fr,
+        "femmine/ha"@it .
+
+code:6552 a :Unit ;
+    rdfs:label "ml/hl"@de,
+        "ml/hl"@en,
+        "ml/hl"@fr,
+        "ml/hl"@it .
+
+code:6555 a :Unit ;
+    rdfs:label "Organismen/a"@de,
+        "organismes/a"@fr,
+        "organismi/a"@it .
+
+code:6556 a :Unit ;
+    rdfs:label "Organismen/ha"@de,
+        "organisms/ha"@en,
+        "organismes/ha"@fr,
+        "organismi/ha"@it .
+
+code:6557 a :Unit ;
+    rdfs:label "Organismen/l Substrat"@de,
+        "organisms/l of substratum"@en,
+        "organismes/l de substratum"@fr,
+        "organismi/l di substrato"@it .
+
+code:6558 a :Unit ;
+    rdfs:label "Organismen/m²"@de,
+        "organisms/m²"@en,
+        "organismes/m²"@fr,
+        "organismi/m²"@it .
+
+code:6563 a :Unit ;
+    rdfs:label "Dispenser/ha"@de,
+        "dispenser/ha"@en,
+        "diffuseur/ha"@fr,
+        "dosatore/ha"@it .
+
+code:6571 a :Unit ;
+    rdfs:label "l/1000 m³"@de,
+        "l/1000 m³"@en,
+        "l/1000 m³"@fr,
+        "l/1000 m³"@it .
+
+code:6575 a :Unit ;
+    rdfs:label "Gaspatronen/Kolonie"@de,
+        "cartouches fumigènes/colonie"@fr,
+        "cartucce di gas/colonia"@it .
+
+code:6579 a :Unit ;
+    rdfs:label "l/a"@de,
+        "l/a"@en,
+        "l/a"@fr,
+        "l/a"@it .
+
+code:6580 a :Unit ;
+    rdfs:label "g/100 kg Saatgut"@de,
+        "g/100 kg de semences"@fr,
+        "g/100 kg di sementi"@it .
+
+code:6582 a :Unit ;
+    rdfs:label "l/hl"@de,
+        "l/hl"@en,
+        "l/hl"@fr,
+        "l/hl"@it .
+
+code:6583 a :Unit ;
+    rdfs:label "ml/100 kg Saatgut"@de,
+        "ml/100 kg de semences"@fr,
+        "ml/100 kg di sementi"@it .
+
+code:6584 a :Unit ;
+    rdfs:label "ml/t"@de,
+        "ml/t"@en,
+        "ml/t"@fr,
+        "ml/t"@it .
+
+code:6587 a :Unit ;
+    rdfs:label "l/100 kg Saatgut"@de,
+        "l/100 kg de semences"@fr,
+        "l/100 kg di sementi"@it .
+
+code:6588 a :Unit ;
+    rdfs:label "ml/ha"@de,
+        "ml/ha"@en,
+        "ml/ha"@fr,
+        "ml/ha"@it .
+
+code:6589 a :Unit ;
+    rdfs:label "ml/l"@de,
+        "ml/l"@en,
+        "ml/l"@fr,
+        "ml/l"@it .
+
+code:6591 a :Unit ;
+    rdfs:label "Million(en)/m²"@de,
+        "millions/m²"@en,
+        "millions/m²"@fr,
+        "milione/m²"@it .
+
+code:6592 a :Unit ;
+    rdfs:label "l in 1000 l Wasser/ha"@de,
+        "l in 1000 l of water/ha"@en,
+        "l in 1000 l d'eau/ha"@fr,
+        "l in 1000 l di acqua/ha"@it .
+
+code:6595 a :Unit ;
+    rdfs:label "kg in 10 l Wasser"@de,
+        "kg dans 10 l d'eau"@fr,
+        "kg/10 l di acqua"@it .
+
+code:6599 a :Unit ;
+    rdfs:label "ml/Tonne Kartoffeln"@de,
+        "ml par tonne de pommes de terre"@fr,
+        "ml/t di patate"@it .
+
+code:6602 a :Unit ;
+    rdfs:label "Tabletten/l Wasser"@de,
+        "tablettes/l d'eau"@fr,
+        "compresse/l d'acqua"@it .
+
+code:6608 a :Unit ;
+    rdfs:label "g/hl"@de,
+        "g/hl"@fr,
+        "g/hl"@it .
+
+code:6611 a :Unit ;
+    rdfs:label "ml in 10 l Wasser/100 m²"@de,
+        "ml dans 10 l d'eau/100 m²"@fr,
+        "ml in 10 l d'acqua/100 m²"@it .
+
+code:6612 a :Unit ;
+    rdfs:label "Organismen/Kolonie"@de,
+        "organismes/colonie"@fr,
+        "organismi/colonia"@it .
+
+code:6618 a :Unit ;
+    rdfs:label "Organismen/Befallsherd"@de,
+        "organismes/rond attaqué"@fr,
+        "organismi/focolaio"@it .
+
+code:6619 a :Unit ;
+    rdfs:label "g ai/100'000 Körner"@de,
+        "g ai/100'000 grains"@fr .
+
+code:6621 a :Unit ;
+    rdfs:label "Ampullen/ha"@de,
+        "ampoules/ha"@fr,
+        "ampolle/ha"@it .
+
+code:6622 a :Unit ;
+    rdfs:label "ml/100'000 Pillen"@de,
+        "ml/100'000 graines"@fr,
+        "ml/100'000 semi"@it .
+
+code:6624 a :Unit ;
+    rdfs:label "ml/50'000 Maiskörner"@de,
+        "ml/50'000 graines de mais"@fr,
+        "ml/50'000 grani di mais"@it .
+
+code:6626 a :Unit ;
+    rdfs:label "Stck/m² "@de,
+        "pièces/m²"@fr,
+        "pezzo/m² "@it .
+
+code:6633 a :Unit ;
+    rdfs:label "ml/kg Saatgut"@de,
+        "ml/kg de semences"@fr,
+        "ml/kg di sementi"@it .
+
+code:6637 a :Unit ;
+    rdfs:label "g/l"@de,
+        "g/l"@fr .
+
+code:6638 a :Unit ;
+    rdfs:label "ml/m3 Pflanzenerde"@de,
+        "ml/m3 terreau"@fr,
+        "ml/m3 terriccio"@it .
+
+code:6639 a :Unit ;
+    rdfs:label "Organismen/100 m²"@de,
+        "organisms/100 m²"@en,
+        "organismes/100 m²"@fr,
+        "organismi/100 m²"@it .
+
+code:6646 a :Unit ;
+    rdfs:label "Karten/100 m²"@de,
+        "cards/100 m²"@en,
+        "cartes/100 m²"@fr,
+        "carte/100 m²"@it .
+
+code:6647 a :Unit ;
+    rdfs:label "l/1'000 kg Saatgut"@de,
+        "l/1'000 kg de semences"@fr,
+        "l/1'000 kg di sementi"@it .
+
+code:6649 a :Unit ;
+    rdfs:label "Kärtchen (à 3'000 Trichogramma)/Baum"@de,
+        "diffuseurs (contenant 3'000 Trichogramma)/arbre "@fr,
+        "bustine (contenenti ciascuna 3000 Trichogramma)/albero"@it .
+
+code:6650 a :Unit ;
+    rdfs:label "l/100 t"@de,
+        "l/100 t"@en,
+        "l/100 t"@fr,
+        "l/100 t"@it .
+
+code:6651 a :Unit ;
+    rdfs:label "l/2'000 kg Saatgut /ha"@de,
+        "l/2'000 kg de semences /ha"@fr,
+        "l/2'000 kg di sementi /ha"@it .
+
+code:6653 a :Unit ;
+    rdfs:label "g/Tonne"@de .
+
+code:6654 a :Unit ;
+    rdfs:label "ml/100'000 Samen"@de,
+        "ml/100'000 graines"@fr,
+        "ml/100'000 semi "@it .
+
+code:6657 a :Unit ;
+    rdfs:label "ml / cm Baumdurchmesser (auf 120 cm Höhe)"@de,
+        "ml / cm de diamètre du tronc (à une hauteur de 120 cm)"@fr,
+        "ml / cm di circonferenza della pianta (all'altezza di 120 cm)"@it .
+
+code:6662 a :Unit ;
+    rdfs:label "g h/m³  maximal"@de,
+        "g h/m³ au maximum"@fr,
+        "g h/m³ al massimo"@it .
+
+code:6663 a :Unit ;
+    rdfs:label "ml in 10 l Wasser/10 m² "@de,
+        "ml dans 10 l d'eau/10 m²"@fr,
+        "ml in 10 l d'acqua/10 m²"@it .
+
+code:6668 a :Unit ;
+    rdfs:label "Karten (2000 Tiere / Karte)  / ha"@de,
+        "cards (2000 animals / card) / ha"@en,
+        "cartes (2000 animaux / carte) / ha"@fr,
+        "carte (2000 animali / carta) / ha"@it .
+
+code:6670 a :Unit ;
+    rdfs:label "ml in 10 l Wasser/m2"@de,
+        "ml dans 10 l d'eau/m2"@fr,
+        "ml in 10 l d'acqua/m2"@it .
+
+code:6672 a :Unit ;
+    rdfs:label "Organismen/50-100 m²"@de,
+        "organismes/50-100 m²"@fr,
+        "organismi/50-100 m²"@it ;
+    :code "Lager" .
+
+code:6673 a :Unit ;
+    rdfs:label "ml in 5 l Wasser/100 m² "@de,
+        "ml dans 5 l d'eau/100 m² "@fr,
+        "ml in 5 l d'acqua/100 m² "@it .
+
+code:7338 a :Unit ;
     rdfs:label "Tage"@de,
         "Days"@en,
         "Jours"@fr,
         "Giorni"@it .
 
-code:7339 a :TimeMeasure ;
+code:7339 a :Unit ;
     rdfs:label "Woche(n)"@de,
         "Week(s)"@en,
         "Semaine(s)"@fr,

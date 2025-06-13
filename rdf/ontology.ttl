@@ -2,6 +2,7 @@
 @prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -73,6 +74,11 @@ schema:PostalAddress a owl:Class ;
         "Adresse postale"@fr,
         "Indirizzo postale"@it .
 
+schema:QuantitativeValue a owl:Class ;
+    rdfs:label "Quantitativer Wert"@de,
+        "Quantitative value"@en ;
+    rdfs:comment "A point value or interval for product characteristics and other purposes."@en .
+
 wikidata:Q16521 a owl:Class ;
     rdfs:label "Biologisches Taxon"@de,
         "Biological taxon"@en,
@@ -131,12 +137,6 @@ wikidata:Q16521 a owl:Class ;
         Un acaricida è un prodotto chimico per la protezione delle colture utilizzato per controllare acari e zecche, che spesso danneggiano le colture agricole.
         """@it ;
     rdfs:subClassOf :ChemicalProduct .
-
-:ActionNotice a owl:Class ;
-    rdfs:label "Hinweis bezüglich einer Schutzmassnahme"@de,
-        "Notice regarding a protective action"@en,
-        "Avis concernant une mesure de protection"@fr,
-        "Avviso relativo a una misura di protezione"@it .
 
 :ActiveIngredient a owl:Class ;
     rdfs:label "Aktivsubstanz"@de,
@@ -411,29 +411,6 @@ wikidata:Q16521 a owl:Class ;
         """@it ;
     rdfs:subClassOf :ChemicalProduct .
 
-:BestPracticeRecommendations a owl:Class ;
-    rdfs:label "Schutzmassnahmenempfehlung"@de,
-        "Protective Action Recommendation"@en,
-        "Recommandation de mesure de protection"@fr,
-        "Raccomandazione di misura di protezione"@it ;
-    rdfs:comment """
-        Schutzmassnahmenempfehlungen geben Anleitung für die effektivsten und nachhaltigsten Massnahmen, um Schäden an spezifischen Nutzpflanzen zu verhindern oder zu minimieren, die durch bestimmte Stressfaktoren verursacht werden.
-        Sie berücksichtigen die Art der Kultur, die Umweltbedingungen und die Besonderheiten des Stressfaktors.
-        """@de,
-        """
-        Protective action recommendations provide guidance on the most effective and sustainable measures to prevent or minimize damage to specific crops caused by particular stressors.
-        They consider the type of crop, environmental conditions, and characteristics of the stressor.
-        """@en,
-        """
-        Les recommandations de mesures de protection fournissent des conseils sur les mesures les plus efficaces et durables pour prévenir ou minimiser les dommages causés à des cultures spécifiques par certains facteurs de stress.
-        Elles tiennent compte du type de culture, des conditions environnementales et des caractéristiques du facteur de stress.
-        """@fr,
-        """
-        Le raccomandazioni sulle misure di protezione forniscono indicazioni sulle misure più efficaci e sostenibili per prevenire o ridurre al minimo i danni a colture specifiche causati da particolari fattori di stress.
-        Considerano il tipo di coltura, le condizioni ambientali e le caratteristiche del fattore di stress.
-        """@it ;
-    rdfs:subClassOf :ActionNotice .
-
 :BiologicalControlAgent a owl:Class ;
     rdfs:label "Organismus für die biologische Schädlingsbekämpfung"@de,
         "Biological control agent"@en,
@@ -560,25 +537,6 @@ wikidata:Q16521 a owl:Class ;
     rdfs:label "Component",
         "Komponent"@de .
 
-:ControlDamageThreshold a owl:Class ;
-    rdfs:label "Bekämpfungsschadschwelle"@de,
-        "Control Damage Threshold"@en,
-        "Seuil de dommage pour intervention"@fr,
-        "Soglia di danno per l'intervento"@it ;
-    rdfs:comment """
-        Definiert die Schadensschwelle, ab der Massnahmen zur Bekämpfung eines Stressors ergriffen werden sollten, um weiteren Schaden zu verhindern.
-        """@de,
-        """
-        Defines the damage threshold at which control measures should be implemented to prevent further harm from a stressor.
-        """@en,
-        """
-        Définit le seuil de dommage à partir duquel des mesures de lutte doivent être mises en œuvre pour éviter des dommages supplémentaires dus à un facteur de stress.
-        """@fr,
-        """
-        Definisce la soglia di danno oltre la quale devono essere attuate misure di controllo per prevenire ulteriori danni causati da uno stressore.
-        """@it ;
-    rdfs:subClassOf :DamageThreshold .
-
 :CropGroup a owl:Class ;
     rdfs:label "Landwirtschaftliche Kultur"@de,
         "Crop"@en,
@@ -647,6 +605,11 @@ wikidata:Q16521 a owl:Class ;
         Facilita l'identificazione e la gestione dei fattori che compromettono la produttività agricola.
         """@it .
 
+:DangerSymbol a owl:Class ;
+    rdfs:label "Gefahrensymbol"@de,
+        "Danger symbol"@en ;
+    rdfs:subClassOf :Notice .
+
 :Desinfectant a owl:Class ;
     rdfs:label "Desinfektionsmittel"@de,
         "Desinfectant"@en,
@@ -702,7 +665,8 @@ wikidata:Q16521 a owl:Class ;
         Le frasi di rischio H e le frasi complementari EUH sono descrizioni standardizzate dei pericoli specifici associati a sostanze o miscele chimiche, come la tossicità, l'infiammabilità o i danni ambientali.
         Fanno parte del Sistema Globale Armonizzato (GHS) e garantiscono una comunicazione chiara e uniforme dei pericoli chimici a livello mondiale.
         """@it ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Globally_Harmonized_System_of_Classification_and_Labelling_of_Chemicals> .
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Globally_Harmonized_System_of_Classification_and_Labelling_of_Chemicals> ;
+    rdfs:subClassOf :Notice .
 
 :Herbicide a owl:Class ;
     rdfs:label "Herbizid"@de,
@@ -738,7 +702,15 @@ wikidata:Q16521 a owl:Class ;
         "Indicazione"@it ;
     rdfs:comment """
        Im Pflanzenschutzmittel ist eine Indikation eine erlaubte Anwendung eines einzigen bestimmten Produktes auf bestimmten Kulturen gegen bestimmte Schadverursacher.
-       """@de .
+       """@de ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :IndicationNotice ;
+            owl:onProperty :notice ] .
+
+:IndicationNotice a owl:Class ;
+    rdfs:label "Indication notice"@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( :Obligation :ApplicationComment ) ] .
 
 :Insecticide a owl:Class ;
     rdfs:label "Insektizid"@de,
@@ -816,6 +788,10 @@ wikidata:Q16521 a owl:Class ;
         """@it ;
     rdfs:subClassOf :ChemicalProduct .
 
+:Notice a owl:Class ;
+    rdfs:label "Hinweis"@de,
+        "Notice"@en .
+
 :Obligation a owl:Class ;
     rdfs:label "Auflage zu Behandlungen"@de,
         "Application requirement"@en,
@@ -837,7 +813,7 @@ wikidata:Q16521 a owl:Class ;
         Un requisito di applicazione è una condizione o obbligo specifico da rispettare per l’uso corretto di un prodotto fitosanitario secondo il registro svizzero dei prodotti fitosanitari.
         Questi requisiti mirano a garantire un uso sicuro ed efficace del prodotto, riducendo al minimo i rischi per la salute umana, gli animali e l’ambiente.
         """@it ;
-    rdfs:subClassOf :ActionNotice .
+    rdfs:subClassOf :Notice .
 
 :ParallelImport a owl:Class ;
     rdfs:label "Parallelimport"@de,
@@ -934,12 +910,21 @@ wikidata:Q16521 a owl:Class ;
         """
         Questa classe è destinata a modellare tutti i prodotti fitosanitari che richiedono una registrazione federale e che possono avere restrizioni o autorizzazioni per l'uso non professionale secondo le normative svizzere.
         """@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :ProductNotice ;
+            owl:onProperty :notice ] ;
     owl:equivalentClass [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty :isNonProfessionallyAllowed ],
+            owl:onProperty :federalAdmissionNumber ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty :federalAdmissionNumber ] .
+            owl:onProperty :isNonProfessionallyAllowed ] .
+
+:ProductNotice a owl:Class ;
+    rdfs:label "Hinweise zum Produkt"@de,
+        "Product notice"@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( :HazardStatement :DangerSymbol :SignalWord ) ] .
 
 :Rodenticide a owl:Class ;
     rdfs:label "Rodentizid"@de,
@@ -954,6 +939,17 @@ wikidata:Q16521 a owl:Class ;
         "Traitement des semences"@fr,
         "Concia delle sementi"@it ;
     rdfs:subClassOf :ChemicalProduct .
+
+:SignalWord a owl:Class ;
+    rdfs:label "Signalwort"@de,
+        "Signal word"@en ;
+    rdfs:comment """
+        Im Global harmonisierten System (GHS) verwendete Signalwörter zur Gefahrenkommunikation, z.B. 'Gefahr' und 'Warnung'.
+        """@de,
+        """
+        Signal words used in the Globally Harmonized System (GHS) for hazard communication, e.g. 'Danger' and 'Warning'.
+        """@en ;
+    rdfs:subClassOf :Notice .
 
 :SoapProduct a owl:Class ;
     rdfs:label "Seifenpräparat-Insektizide"@de,
@@ -991,27 +987,6 @@ wikidata:Q16521 a owl:Class ;
         I sinergetici agiscono inibendo i meccanismi di disintossicazione dei parassiti, aumentando così la tossicità degli insetticidi.
         """@it ;
     rdfs:subClassOf :ComponentPortion .
-
-:TreatmentConstraint a owl:Class ;
-    rdfs:label "Anwendungseinschränkung"@de,
-        "Treatment constraint"@en,
-        "Restriction d'application"@fr,
-        "Restrizione di applicazione"@it ;
-    rdfs:subClassOf :ActionNotice .
-
-:TreatmentDosage a owl:Class ;
-    rdfs:label "Dosierung"@de,
-        "Dosage"@en,
-        "Dosage"@fr,
-        "Dosaggio"@it ;
-    rdfs:subClassOf :TreatmentConstraint .
-
-:TreatmentRate a owl:Class ;
-    rdfs:label "Anwendungsrate"@de,
-        "Application rate"@en ;
-    rdfs:comment "Anwendungsrate für Behandlungen."@de,
-        "Application rate for treatments."@en ;
-    rdfs:subClassOf :TreatmentConstraint .
 
 :Viricide a owl:Class ;
     rdfs:label "Virizid"@de,
@@ -1134,6 +1109,30 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> ;
     rdfs:range xsd:string .
 
+:dosage a owl:DatatypeProperty ;
+    rdfs:label "Dosierung"@de,
+        "Dosage"@en ;
+    rdfs:domain :Indication ;
+    rdfs:range schema:QuantitativeValue .
+
+:exhaustionDeadline a owl:DatatypeProperty ;
+    rdfs:label "Ablaufdatum der Nutzung"@de,
+        "Exhaustion deadline"@en ;
+    rdfs:comment """
+        Das Datum, an dem das Produkt nicht mehr genutzt werden darf, in der Regel nach der Widerrufung der Produktregistrierung.
+        """@de,
+        """
+        The date by which the product must no longer be used, typically after the product registration has been revoked.
+        """@en ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:date .
+
+:expenditure a owl:DatatypeProperty ;
+    rdfs:label "Ausbringungsmenge"@de,
+        "Expenditure"@en ;
+    rdfs:domain :Indication ;
+    rdfs:range schema:QuantitativeValue .
+
 :federalAdmissionNumber a owl:DatatypeProperty ;
     rdfs:label "Eidgenössische Zulassungsnummer"@de,
         "Federal admission number"@en,
@@ -1148,17 +1147,7 @@ schema:telephone a owl:DatatypeProperty ;
         The federal admission number uniquely identifies a product registration.
         It is either constructed as a W-Number in the case of federal admissions (e.g., W-18) or as a parallel import number with the country of origin's initial letter in the code in the case of parallel imports (e.g., I-2789 for a parallel import from Italy).
         Numbers with a dash (e.g., W-18-1, W-18-2) represent equivalent products held by different legal entities, while numbers without a dash (e.g., W-18) represent the original registration.
-        """@en,
-        """
-        Le numéro d'autorisation fédérale identifie de manière unique une enregistrement de produit.
-        Il est soit construit comme un numéro W dans le cas des autorisations fédérales (par exemple, W-18), soit comme un numéro d'importation parallèle avec la lettre initiale du pays d'origine dans le code dans le cas des importations parallèles (par exemple, I-2789 pour une importation parallèle en provenance d'Italie).
-        Les numéros avec un tiret (par exemple, W-18-1, W-18-2) représentent des produits équivalents détenus par différentes entités juridiques, tandis que les numéros sans tiret (par exemple, W-18) représentent l'enregistrement original.
-        """@fr,
-        """
-        Il numero di autorizzazione federale identifica in modo univoco una registrazione di prodotto.
-        È costruito come un numero W nel caso di autorizzazioni federali (ad esempio, W-18) o come un numero di importazione parallela con la lettera iniziale del paese di origine nel codice nel caso di importazioni parallele (ad esempio, I-2789 per un'importazione parallela dall'Italia).
-        I numeri con un trattino (ad esempio, W-18-1, W-18-2) rappresentano prodotti equivalenti detenuti da diverse entità giuridiche, mentre i numeri senza trattino (ad esempio, W-18) rappresentano la registrazione originale.
-        """@it ;
+        """@en ;
     rdfs:domain :Product ;
     rdfs:range xsd:NCName .
 
@@ -1172,53 +1161,9 @@ schema:telephone a owl:DatatypeProperty ;
         """@de,
         """
         This property specifies the admission or registration number assigned to the product in its country of origin.
-        """@en,
-        """
-        Cette propriété indique le numéro d'autorisation ou d'enregistrement attribué au produit dans son pays d'origine.
-        """@fr,
-        """
-        Questa proprietà specifica il numero di autorizzazione o di registrazione assegnato al prodotto nel paese di origine.
-        """@it ;
+        """@en ;
     rdfs:domain :ParallelImport ;
     rdfs:range xsd:string .
-
-:hasCodeR a owl:DatatypeProperty ;
-    rdfs:label "R-Satz"@de,
-        "R phrase"@en,
-        "Phrase R"@fr,
-        "Frase R"@it ;
-    rdfs:domain :Product ;
-    rdfs:range :CodeR ;
-    rdfs:subPropertyOf :hasHazardStatement .
-
-:hasCodeS a owl:DatatypeProperty ;
-    rdfs:label "S-Satz"@de,
-        "S phrase"@en,
-        "Phrase S"@fr,
-        "Frase S"@it ;
-    rdfs:domain :Product ;
-    rdfs:range :CodeS ;
-    rdfs:subPropertyOf :hasHazardStatement .
-
-:hasExhaustionDeadline a owl:DatatypeProperty ;
-    rdfs:label "Ablaufdatum der Nutzung"@de,
-        "Exhaustion deadline"@en,
-        "Date limite d'utilisation"@fr,
-        "Data di scadenza dell'utilizzo"@it ;
-    rdfs:comment """
-        Das Datum, an dem das Produkt nicht mehr genutzt werden darf, in der Regel nach der Widerrufung der Produktregistrierung.
-        """@de,
-        """
-        The date by which the product must no longer be used, typically after the product registration has been revoked.
-        """@en,
-        """
-        La date à laquelle le produit ne peut plus être utilisé, généralement après le retrait de l'enregistrement du produit.
-        """@fr,
-        """
-        La data entro la quale il prodotto non può più essere utilizzato, di solito dopo la revoca della registrazione del prodotto.
-        """@it ;
-    rdfs:domain :Product ;
-    rdfs:range xsd:date .
 
 :hasGrammPerLitre a owl:DatatypeProperty ;
     rdfs:label "Anteil [g/L]"@de,
@@ -1243,26 +1188,6 @@ schema:telephone a owl:DatatypeProperty ;
         "Percentuale [%]"@it ;
     rdfs:domain :ComponentPortion ;
     rdfs:range xsd:decimal .
-
-:hasSoldoutDeadline a owl:DatatypeProperty ;
-    rdfs:label "Ausverkauft-Frist"@de,
-        "Sold out deadline"@en,
-        "Date limite de vente"@fr,
-        "Termine ultimo di vendita"@it ;
-    rdfs:comment """
-        Das Datum, an dem das Produkt nicht mehr verkauft werden darf, in der Regel nach der Widerrufung der Produktregistrierung.
-        """@de,
-        """
-        The date by which the product can no longer be sold, typically after the product registration has been revoked.
-        """@en,
-        """
-        La date à partir de laquelle le produit ne peut plus être vendu, généralement après le retrait de l'enregistrement du produit.
-        """@fr,
-        """
-        La data entro la quale il prodotto non può più essere venduto, di solito dopo la revoca della registrazione del prodotto.
-        """@it ;
-    rdfs:domain :Product ;
-    rdfs:range xsd:date .
 
 :isNonProfessionallyAllowed a owl:DatatypeProperty ;
     rdfs:label "Erlaubnis für die nicht-berufliche Verwendung"@de,
@@ -1305,18 +1230,6 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:domain :ComponentPortion ;
     rdfs:range xsd:string .
 
-:maximumTreatmentDosage a owl:DatatypeProperty ;
-    rdfs:label "Maximale Dosierung"@de,
-        "Maximal dosage"@en ;
-    rdfs:domain :Indication ;
-    rdfs:range xsd:float .
-
-:minimumTreatmentDosage a owl:DatatypeProperty ;
-    rdfs:label "Minimale Dosierung"@de,
-        "Minimal dosage"@en ;
-    rdfs:domain :Indication ;
-    rdfs:range xsd:float .
-
 :packageInsertNumber a owl:DatatypeProperty ;
     rdfs:label "Packungsbeilagenummer"@de,
         "Package insert number"@en,
@@ -1325,13 +1238,33 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:domain :Product ;
     rdfs:range xsd:string .
 
+:soldoutDeadline a owl:DatatypeProperty ;
+    rdfs:label "Ausverkauft-Frist"@de,
+        "Sold out deadline"@en,
+        "Date limite de vente"@fr,
+        "Termine ultimo di vendita"@it ;
+    rdfs:comment """
+        Das Datum, an dem das Produkt nicht mehr verkauft werden darf, in der Regel nach der Widerrufung der Produktregistrierung.
+        """@de,
+        """
+        The date by which the product can no longer be sold, typically after the product registration has been revoked.
+        """@en,
+        """
+        La date à partir de laquelle le produit ne peut plus être vendu, généralement après le retrait de l'enregistrement du produit.
+        """@fr,
+        """
+        La data entro la quale il prodotto non può più essere venduto, di solito dopo la revoca della registrazione del prodotto.
+        """@it ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:date .
+
 :waitingPeriod a owl:DatatypeProperty ;
     rdfs:label "Minimale Wartezeit"@de,
         "Minimal waiting period"@en ;
     rdfs:comment "Das minimal erforderliche Zeitintervall nach einer Behandlung, in dem dasselbe Produkt nicht erneut auf dieselbe Kulturpflanze angewendet werden sollte."@de,
         "The required time interval after a treatment during which the same product should not be applied again to the same crop."@en ;
     rdfs:domain :Indication ;
-    rdfs:range xsd:float .
+    rdfs:range schema:QuantitativeValue .
 
 schema:address a owl:ObjectProperty ;
     rdfs:label "hat Adresse"@de,
@@ -1354,33 +1287,6 @@ schema:addressCountry a owl:ObjectProperty ;
         "Application area"@en ;
     rdfs:domain :Indication ;
     rdfs:range :ApplicationArea .
-
-:applicationComment a owl:ObjectProperty ;
-    rdfs:comment "Anwendungskommentar"@de,
-        "Application comment"@en ;
-    rdfs:domain :Indication ;
-    rdfs:range :ApplicationComment .
-
-:appliesToProduct a owl:ObjectProperty ;
-    rdfs:label "bezieht sich auf das Produkt"@de,
-        "applies to product"@en,
-        "se rapporte au produit"@fr,
-        "si riferisce al prodotto"@it ;
-    rdfs:comment """
-        Diese Eigenschaft verknüpft eine Gefahrenkennzeichnung mit dem Produkt, auf das sie sich bezieht.
-        """@de,
-        """
-        This property associates a hazard statement with the product it pertains to.
-        """@en,
-        """
-        Cette propriété associe une mention de danger au produit auquel elle se rapporte.
-        """@fr,
-        """
-        Questa proprietà associa un'indicazione di pericolo al prodotto a cui si riferisce.
-        """@it ;
-    rdfs:domain :HazardStatement ;
-    rdfs:range :Product ;
-    owl:inverseOf :hasHazardStatement .
 
 :cropGroup a owl:ObjectProperty ;
     rdfs:label "Kulturgruppe"@de,
@@ -1443,14 +1349,6 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:domain :Product ;
     rdfs:range schema:Country .
 
-:hasDangerSymbol a owl:ObjectProperty ;
-    rdfs:label "Gefahrensymbol"@de,
-        "Danger symbol"@en,
-        "Symbole de danger"@fr,
-        "Simbolo di pericolo"@it ;
-    rdfs:domain :Product ;
-    rdfs:range :DangerSymbol .
-
 :hasFormulationCode a owl:ObjectProperty ;
     rdfs:label "Formulierungscode"@de,
         "Formulation code"@en,
@@ -1458,14 +1356,6 @@ schema:addressCountry a owl:ObjectProperty ;
         "Codice di formulazione"@it ;
     rdfs:domain :FormulationCode ;
     rdfs:range :Product .
-
-:hasHazardStatement a owl:ObjectProperty ;
-    rdfs:label "Sicherheitshinweis für Gefahrenstoff"@de,
-        "Hazard statement"@en,
-        "Mention de danger"@fr,
-        "Indicazione di pericolo"@it ;
-    rdfs:domain :Product ;
-    rdfs:range :HazardStatement .
 
 :hasParentCropGroup a owl:ObjectProperty ;
     rdfs:label "Übergruppe"@de,
@@ -1495,14 +1385,6 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:domain :Product ;
     rdfs:range schema:Organization ;
     owl:inverseOf :holdsPermissionToSell .
-
-:hasSignalWords a owl:ObjectProperty ;
-    rdfs:label "Signalwort"@de,
-        "Signal word"@en,
-        "Mention d'avertissement"@fr,
-        "Avvertenza"@it ;
-    rdfs:domain :Product ;
-    rdfs:range :SignalWord .
 
 :hasUnit a owl:ObjectProperty ;
     rdfs:label "Einheit"@de,
@@ -1540,32 +1422,6 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:range :Indication ;
     owl:inverseOf :product .
 
-:interactsWith a owl:ObjectProperty ;
-    rdfs:label "interagiert mit"@de,
-        "interacts with"@en,
-        "interagit avec"@fr,
-        "interagisce con"@it ;
-    rdfs:comment """
-        Allgemeine Beziehung für physische Dinge, die mit etwas anderem interagieren.
-        Ein Tier interagiert mit seiner Nahrung.
-        Ein Pestizid interagiert mit dem Zielorganismus.
-        """@de,
-        """
-        General relationship for physical things that interact with something else.
-        An animal interacts with its food.
-        A pesticide interacts with the target organism.
-        """@en,
-        """
-        Relation générale pour les objets physiques qui interagissent avec quelque chose d'autre.
-        Un animal interagit avec sa nourriture.
-        Un pesticide interagit avec l'organisme cible.
-        """@fr,
-        """
-        Relazione generale per oggetti fisici che interagiscono con qualcos'altro.
-        Un animale interagisce con il suo cibo.
-        Un pesticida interagisce con l'organismo bersaglio.
-        """@it .
-
 :isDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:label "Biologische Taxon"@de,
         "Biological taxon"@en,
@@ -1602,10 +1458,10 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:domain :Product ;
     rdfs:range :Product .
 
-:obligation a owl:ObjectProperty ;
-    rdfs:label "Anwendungsauflage"@de,
-        "Obligation regarding the application"@de ;
-    rdfs:domain :Indication .
+:notice a owl:ObjectProperty ;
+    rdfs:label "Hinweis"@de,
+        "Notice"@en ;
+    rdfs:range :Notice .
 
 :product a owl:ObjectProperty ;
     rdfs:label "PSM-Produkt"@de,
@@ -1654,7 +1510,16 @@ srppp: a owl:Ontology ;
     rdfs:seeAlso <https://raw.githubusercontent.com/blw-ofag-ufag/plant-protection/refs/heads/main/rdf/ontology.ttl> ;
     owl:versionInfo "0.11" .
 
+schema:maxValue rdfs:label "Maximaler Wert"@de,
+        "Maximal value"@en .
+
+schema:minValue rdfs:label "Minimaler Wert"@de,
+        "Minimal value"@en .
+
 :Safener rdfs:label "Safener"@de,
         "Safener"@en ;
     rdfs:subClassOf :ComponentPortion .
 
+:ApplicationComment a owl:Class ;
+    rdfs:subClassOf :Notice ;
+    rdfs:label "Anwendungskommentar"@de, "Application comment"@en .
