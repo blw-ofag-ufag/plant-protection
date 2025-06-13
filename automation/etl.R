@@ -429,7 +429,7 @@ describe = function(x, parallelimport = FALSE) {
     triple(subject, ":expenditureTo", attr(indication, "expenditureTo"))
     triple(subject, ":expenditureFrom", attr(indication, "expenditureFrom"))
     triple(subject, ":applicationArea", uri(file.path("code", getFK(indication, "ApplicationArea")), base))
-    triple(subject, ":applicationComment", uri(file.path("note", getFK(indication, "applicationComment")), base))
+    triple(subject, ":applicationComment", uri(file.path("note", getFK(indication, "ApplicationComment")), base))
     triple(subject, ":obligation", uri(file.path("note",getFK(indication, "Obligation")), base))
     triple(subject, ":cropStressor", uri(file.path("pest",getFK(indication, "Pest")), base))
     triple(subject, ":cropGroup", uri(file.path("crop",getFK(indication, "Culture")), base))

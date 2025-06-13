@@ -9,7 +9,7 @@ You can use the browser tool [WebVOWL](https://github.com/VisualDataWeb/WebVOWL)
 
 # Example queries
 
-## [Companies that sell product applicable agains potato late blight](https://s.zazuko.com/2cD58BV)
+## [Companies that sell product applicable agains potato late blight](https://s.zazuko.com/ALGTr2)
 
 ```rq
 PREFIX aschema: <https://schema.ld.admin.ch/>
@@ -25,9 +25,9 @@ WHERE {
   ?product schema:name ?name ;
     :hasPermissionHolder/schema:legalName ?company ;
     :federalAdmissionNumber ?WNbr ;
-    :isInvolvedIn [
-      :protects/schema:name "Kartoffeln"@de ;
-      :mitigates/schema:name "Kraut- und Knollenfäule"@de
+    :indication [
+      :cropGroup/schema:name "Kartoffeln"@de ;
+      :cropStressor/schema:name "Kraut- und Knollenfäule"@de
   	] .
 }
 
@@ -59,7 +59,7 @@ WHERE
 ORDER BY ?class
 ```
 
-## [Federated query: Get all taxon names + authors for pests that belong to the order of *Lepidoptera*](https://s.zazuko.com/25ER8Pj)
+## [Federated query: Get all taxon names + authors for pests that belong to the order of *Lepidoptera*](https://s.zazuko.com/36zyoKS)
 
 ```rq
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -79,14 +79,16 @@ WHERE {
   ?pest a :BioticStressor ;
     schema:name ?name ;
     :isDefinedByBiologicalTaxon ?taxon ;
-    :isMitigatedBy/:involves ?product .
+    ^:cropStressor/^:indication ?product .
   FILTER(LANG(?name) = "de")
   
   # query Wikidata for the 
   SERVICE <https://qlever.cs.uni-freiburg.de/api/wikidata> {
     ?taxon wdt:P225 ?taxonname ;
-      wdt:P3031 ?eppo ;
       wdt:P171*/wdt:P225 "Lepidoptera" .
+    OPTIONAL {
+      ?taxon wdt:P3031 ?eppo .
+    }
     OPTIONAL {
       ?taxon prop:P225/qualifier:P405/wdt:P1559 ?author .
     }
@@ -99,11 +101,11 @@ ORDER BY DESC(?products)
 
 ## Other queries
 
-- [What insecticide indication has most obligations?](https://s.zazuko.com/2MSLoHB)
-- [Count number of indications per application area](https://s.zazuko.com/2w3CpY4)
+- [What insecticide indication has most obligations?](https://s.zazuko.com/ZJ3A4T)
+- [Count number of indications per application area](https://s.zazuko.com/cCvhUJ)
 - [Get all class and property labels and comments](https://s.zazuko.com/aJyrxh)
 - [Count the instances per (sub)class](https://s.zazuko.com/j55kjw)
-- [A list of all substances, their IUPAC name, role, average percentages and how many products they are in](https://s.zazuko.com/3ssB5gY)
-- [Count the involved pests and crops per indication](https://s.zazuko.com/272TFvJ)
-- [Product list](https://s.zazuko.com/SLoUx8)
-- [Federated query on CheBI database:](https://s.zazuko.com/qhYq1W) Query the CheBI database via RHEA for chemical entity names, roles, chemical formulas, charge and foreign keys to other databases.
+- [A list of all substances, their IUPAC name, role, average percentages and how many products they are in](https://s.zazuko.com/2be7XUX)
+- [Count the involved pests and crops per indication](https://s.zazuko.com/yAWBE5)
+- [Product list](https://s.zazuko.com/tiKEMc)
+- [Federated query on CheBI database:](https://s.zazuko.com/3xHmyFZ) Query the CheBI database via RHEA for chemical entity names, roles, chemical formulas and foreign keys to other databases.

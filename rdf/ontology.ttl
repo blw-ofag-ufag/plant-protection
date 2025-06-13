@@ -156,7 +156,7 @@ wikidata:Q16521 a owl:Class ;
         Le sostanze attive (note anche come principi attivi) sono composti biologicamente attivi che, in basse concentrazioni, influenzano quantitativamente e/o qualitativamente i processi biochimici e fisiologici negli organismi vegetali, animali e umani sotto forma di inibizione o attivazione.
         """@it ;
     rdfs:isDefinedBy <https://www.scienceindustries.ch/_file/27381/201903-begriffsklaerung-final-en.pdf> ;
-    rdfs:subClassOf :Substance ;
+    rdfs:subClassOf :ComponentPortion ;
     skos:altLabel "Wirkstoff"@de,
         "Active ingredient"@en,
         "Principe actif"@fr,
@@ -179,7 +179,7 @@ wikidata:Q16521 a owl:Class ;
         """
         Additivi contenuti in un prodotto che devono essere dichiarati, ad esempio a causa delle loro proprietà chimiche o dei potenziali effetti.
         """@it ;
-    rdfs:subClassOf :Substance .
+    rdfs:subClassOf :ComponentPortion .
 
 :AdhesionAgents a owl:Class ;
     rdfs:label "Netz- und Haftmittel"@de,
@@ -969,31 +969,6 @@ wikidata:Q16521 a owl:Class ;
         "Prodotti per la protezione delle scorte"@it ;
     rdfs:subClassOf :ChemicalProduct .
 
-:Substance a owl:Class ;
-    rdfs:label "Wirkstoff"@de,
-        "Substance"@en,
-        "Substance"@fr,
-        "Sostanza"@it ;
-    rdfs:comment """
-        Eine chemische Substanz, die entweder eine reine Substanz oder ein Gemisch aus anderen Substanzen sein kann.
-        Jede Substanz kann mit höchstens einer CheBI-Chemikalie verknüpft sein.
-        """@de,
-        """
-        A chemical substance, which may be either a pure substance or a mixture composed of other substances.
-        Each substance can be associated with at most one CheBI chemical entity.
-        """@en,
-        """
-        Une substance chimique, qui peut être soit une substance pure, soit un mélange composé d'autres substances.
-        Chaque substance peut être associée à au plus une entité chimique CheBI.
-        """@fr,
-        """
-        Una sostanza chimica, che può essere una sostanza pura o una miscela composta da altre sostanze.
-        Ogni sostanza può essere associata ad al massimo un'entità chimica CheBI.
-        """@it ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty :hasChebiIdentity ] .
-
 :Synergist a owl:Class ;
     rdfs:label "Synergist"@de,
         "Synergist"@en,
@@ -1015,7 +990,7 @@ wikidata:Q16521 a owl:Class ;
         Un sinergetico è una sostanza che da sola ha un effetto insetticida nullo o minimo, ma aumenta l'efficacia degli insetticidi.
         I sinergetici agiscono inibendo i meccanismi di disintossicazione dei parassiti, aumentando così la tossicità degli insetticidi.
         """@it ;
-    rdfs:subClassOf :Substance .
+    rdfs:subClassOf :ComponentPortion .
 
 :TreatmentConstraint a owl:Class ;
     rdfs:label "Anwendungseinschränkung"@de,
@@ -1327,8 +1302,20 @@ schema:telephone a owl:DatatypeProperty ;
         """
         Denominazione sistematica della sostanza chimica secondo le regole della nomenclatura IUPAC.
         """@it ;
-    rdfs:domain :Substance ;
+    rdfs:domain :ComponentPortion ;
     rdfs:range xsd:string .
+
+:maximumTreatmentDosage a owl:DatatypeProperty ;
+    rdfs:label "Maximale Dosierung"@de,
+        "Maximal dosage"@en ;
+    rdfs:domain :Indication ;
+    rdfs:range xsd:float .
+
+:minimumTreatmentDosage a owl:DatatypeProperty ;
+    rdfs:label "Minimale Dosierung"@de,
+        "Minimal dosage"@en ;
+    rdfs:domain :Indication ;
+    rdfs:range xsd:float .
 
 :packageInsertNumber a owl:DatatypeProperty ;
     rdfs:label "Packungsbeilagenummer"@de,
@@ -1433,7 +1420,7 @@ schema:addressCountry a owl:ObjectProperty ;
         "has component portion"@en ;
     rdfs:comment "Verknüpft ein Gemisch mit einer seiner Komponentenportionen, wobei jede Portion eine Bestandssubstanz und deren Prozentsatz angibt."@de,
         "Links a mixture to one of its component portions, each detailing a component substance and its percentage."@en ;
-    rdfs:domain :Product ;
+    rdfs:domain :ChemicalProduct ;
     rdfs:range :ComponentPortion .
 
 :hasCountryOfOrigin a owl:ObjectProperty ;
@@ -1669,5 +1656,5 @@ srppp: a owl:Ontology ;
 
 :Safener rdfs:label "Safener"@de,
         "Safener"@en ;
-    rdfs:subClassOf :Substance .
+    rdfs:subClassOf :ComponentPortion .
 
