@@ -101,11 +101,11 @@ ORDER BY DESC(?products)
 
 ## Other queries
 
-- [What insecticide indication has most obligations?](https://s.zazuko.com/ZJ3A4T)
+- [What insecticide indication has most obligations?](https://s.zazuko.com/mkNyy1)
 - [Count number of indications per application area](https://s.zazuko.com/cCvhUJ)
 - [Get all class and property labels and comments](https://s.zazuko.com/aJyrxh)
 - [Count the instances per (sub)class](https://s.zazuko.com/j55kjw)
 - [A list of all substances, their IUPAC name, role, average percentages and how many products they are in](https://s.zazuko.com/2be7XUX)
 - [Count the involved pests and crops per indication](https://s.zazuko.com/yAWBE5)
-- [Product list](https://s.zazuko.com/tiKEMc)
+- [List of all companies that have permission to sell plant protection products](https://s.zazuko.com/21xrM6T)
 - [Federated query on CheBI database:](https://s.zazuko.com/3xHmyFZ) Query the CheBI database via RHEA for chemical entity names, roles, chemical formulas and foreign keys to other databases.
