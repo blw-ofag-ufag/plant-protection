@@ -2,6 +2,7 @@
 @prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix substance: <https://agriculture.ld.admin.ch/plant-protection/substance/> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
 
 substance:1025 :hasChebiIdentity chebi:32687 .
 
@@ -119,21 +120,21 @@ substance:1301 rdfs:label "Metconazole"@de .
 
 substance:1304 rdfs:label "Kupfer (als Octanoat)"@de .
 
-substance:1305 rdfs:label "E7Z9-12 Ac"@de .
+substance:1305 :hasChebiIdentity chebi:196041 .
 
-substance:1306 rdfs:label "Rapsölmethylester"@de .
+substance:1306 :hasChebiIdentity chebi:4986 .
 
-substance:1312 rdfs:label "12 OH (1-dodecanol)"@de .
+substance:1312 :hasChebiIdentity chebi:28878 .
 
 substance:1313 rdfs:label "14 OH (1-tetradecanol)"@de .
 
-substance:1314 rdfs:label "Macrolophus pygmaeus (vormals bekannt als Macrolophus caliginosus)"@de .
+substance:1314 :isDefinedByBiologicalTaxon wikidata:Q10573776 .
 
-substance:1315 rdfs:label "Microterys flavus"@de .
+substance:1315 :isDefinedByBiologicalTaxon wikidata:Q49528817 .
 
-substance:1316 rdfs:label "Pseudaphycus maculipennis"@de .
+substance:1316 :isDefinedByBiologicalTaxon wikidata:Q13224243 .
 
-substance:1317 rdfs:label "Kresoxim-methyl"@de .
+substance:1317 :hasChebiIdentity chebi:2962 .
 
 substance:1319 rdfs:label "Azoxystrobin"@de .
 

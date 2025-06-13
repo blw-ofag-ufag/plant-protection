@@ -226,6 +226,11 @@ wikidata:Q16521 a owl:Class ;
         Questa classificazione serve a inquadrare i trattamenti in contesti agricoli, forestali o di altro tipo.
         """@it .
 
+:ApplicationComment a owl:Class ;
+    rdfs:label "Anwendungskommentar"@de,
+        "Application comment"@en ;
+    rdfs:subClassOf :Notice .
+
 :BCAAgainstFungi a owl:Class ;
     rdfs:label "Produkte gegen Pilze"@de,
         "Products against fungi"@en,
@@ -1520,6 +1525,3 @@ schema:minValue rdfs:label "Minimaler Wert"@de,
         "Safener"@en ;
     rdfs:subClassOf :ComponentPortion .
 
-:ApplicationComment a owl:Class ;
-    rdfs:subClassOf :Notice ;
-    rdfs:label "Anwendungskommentar"@de, "Application comment"@en .
