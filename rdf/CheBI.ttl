@@ -28,9 +28,9 @@ substance:1098 :hasChebiIdentity chebi:179333 .
 
 substance:110 :hasChebiIdentity chebi:62961 .
 
-substance:1106 rdfs:label "1-Naphthylacetamid"@de .
+substance:1106 :hasChebiIdentity chebi:81810 .
 
-substance:1109 rdfs:label "Aluminiumfosetyl (Fosetyl-Al)"@de .
+substance:1109 :hasChebiIdentity chebi:84033 .
 
 substance:1110 :hasChebiIdentity chebi:38495 .
 
@@ -126,7 +126,7 @@ substance:1306 :hasChebiIdentity chebi:4986 .
 
 substance:1312 :hasChebiIdentity chebi:28878 .
 
-substance:1313 rdfs:label "14 OH (1-tetradecanol)"@de .
+substance:1313 :hasChebiIdentity chebi:77417 .
 
 substance:1314 :isDefinedByBiologicalTaxon wikidata:Q10573776 .
 
@@ -138,9 +138,9 @@ substance:1317 :hasChebiIdentity chebi:2962 .
 
 substance:1319 rdfs:label "Azoxystrobin"@de .
 
-substance:1324 rdfs:label "Amblyseius californicus"@de .
+substance:1324 :isDefinedByBiologicalTaxon wikidata:Q5672141 .
 
-substance:1325 rdfs:label "Aphidius ervi"@de .
+substance:1325 :isDefinedByBiologicalTaxon wikidata:Q1945705 .
 
 substance:1331 rdfs:label "Schachtelhalmextrakt"@de .
 
@@ -148,9 +148,9 @@ substance:1342 rdfs:label "Schwefelsaure Tonerde"@de .
 
 substance:1350 rdfs:label "Acetamiprid"@de .
 
-substance:1351 rdfs:label "Eretmocerus mundus"@de .
+substance:1351 :isDefinedByBiologicalTaxon wikidata:Q5835607 .
 
-substance:1352 rdfs:label "Chrysoperla carnea"@de .
+substance:1352 :isDefinedByBiologicalTaxon wikidata:Q264998 .
 
 substance:1359 rdfs:label "Fettsäuren"@de .
 
@@ -166,13 +166,13 @@ substance:1367 rdfs:label "Spiroxamine"@de .
 
 substance:1368 rdfs:label "Florasulam"@de .
 
-substance:1369 rdfs:label "Pseudomonas chlororaphis"@de .
+substance:1369 :isDefinedByBiologicalTaxon wikidata:Q7255026 .
 
-substance:1371 rdfs:label "Adalia bipunctata"@de .
+substance:1371 :isDefinedByBiologicalTaxon wikidata:Q233024 .
 
-substance:1376 rdfs:label "Coniothyrium minitans"@de .
+substance:1376 :isDefinedByBiologicalTaxon wikidata:Q59546595 .
 
-substance:1384 rdfs:label "Steinernema carpocapsae all strain"@de .
+substance:1384 :isDefinedByBiologicalTaxon wikidata:Q5267719 .
 
 substance:1391 rdfs:label "Benzoesäure"@de .
 
@@ -198,9 +198,9 @@ substance:1408 rdfs:label "Mefenpyr-Diethyl"@de .
 
 substance:1410 rdfs:label "Eisen-III-Phosphat"@de .
 
-substance:1413 rdfs:label "Heterorhabditis bacteriophora"@de .
+substance:1413 :isDefinedByBiologicalTaxon wikidata:Q3134908 .
 
-substance:1414 rdfs:label "Photorhabdus luminescens"@de .
+substance:1414 :isDefinedByBiologicalTaxon wikidata:Q388648 .
 
 substance:1416 rdfs:label "Isoxaflutole"@de .
 
@@ -222,7 +222,7 @@ substance:1434 rdfs:label "Imazamox"@de .
 
 substance:1439 rdfs:label "Methylbutenol"@de .
 
-substance:1442 rdfs:label "Xenorhabdus bovienii"@de .
+substance:1442 :isDefinedByBiologicalTaxon wikidata:Q26307560 .
 
 substance:1444 rdfs:label "Propoxycarbazone-sodium"@de .
 
@@ -232,7 +232,7 @@ substance:1457 rdfs:label "Foramsulfuron"@de .
 
 substance:1464 rdfs:label "Isoxadifen-ethyl"@de .
 
-substance:1465 rdfs:label "Anthocoris nemoralis"@de .
+substance:1465 :isDefinedByBiologicalTaxon wikidata:Q10413188 .
 
 substance:1466 rdfs:label "Mesosulfuron-methyl"@de .
 
@@ -242,13 +242,13 @@ substance:1468 rdfs:label "Boscalid"@de .
 
 substance:1469 rdfs:label "Cyazofamid"@de .
 
-substance:1472 rdfs:label "Feltiella acarisuga"@de .
+substance:1472 :isDefinedByBiologicalTaxon wikidata:Q5442662 .
 
 substance:1475 rdfs:label "Pethoxamid"@de .
 
 substance:1476 rdfs:label "Prothioconazole"@de .
 
-substance:1479 rdfs:label "Heterorhabditis megidis"@de .
+substance:1479 :isDefinedByBiologicalTaxon wikidata:Q18349335 .
 
 substance:1480 rdfs:label "Z9-14Ac"@de .
 
@@ -284,9 +284,9 @@ substance:1517 rdfs:label "Z3Z13-18Ac"@de .
 
 substance:152 rdfs:label "Dodine"@de .
 
-substance:1522 rdfs:label "Trichogramma cacoeciae"@de .
+substance:1522 :eppo "TRIGCC" .
 
-substance:1526 rdfs:label "Amblyseius andersoni"@de .
+substance:1526 :isDefinedByBiologicalTaxon wikidata:Q10330509 .
 
 substance:1527 rdfs:label "Milbemectin"@de .
 
@@ -300,7 +300,7 @@ substance:1532 rdfs:label "Kaliumhydrogencarbonat"@de .
 
 substance:1533 rdfs:label "Laminarin"@de .
 
-substance:1535 rdfs:label "Amblyseius degenerans"@de .
+substance:1535 :isDefinedByBiologicalTaxon wikidata:Q50365760 .
 
 substance:1539 rdfs:label "Schafsfett"@de .
 
@@ -312,13 +312,13 @@ substance:1543 rdfs:label "Flonicamid"@de .
 
 substance:1546 rdfs:label "Tembotrione"@de .
 
-substance:1547 rdfs:label "Aureobasidium pullulans"@de .
+substance:1547 :isDefinedByBiologicalTaxon wikidata:Q147300 .
 
-substance:1548 rdfs:label "Trichogramma evanescens"@de .
+substance:1548 :isDefinedByBiologicalTaxon wikidata:Q7840786 .
 
-substance:1549 rdfs:label "Habrobracon hebetor"@de .
+substance:1549 :isDefinedByBiologicalTaxon wikidata:Q2214586 .
 
-substance:1550 rdfs:label "Lariophagus distinguendus"@de .
+substance:1550 :isDefinedByBiologicalTaxon wikidata:Q1800300 .
 
 substance:1552 rdfs:label "Mepiquatchlorid"@de .
 
