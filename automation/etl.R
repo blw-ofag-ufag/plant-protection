@@ -343,7 +343,7 @@ describe <- function(x) {
     } else {
       triple(subject, "a", ":CropStressor")
     }
-    Q = data[[i]][["wikidata-iri"]]
+    Q = unlist(data[[i]][["wikidata-iri"]])
     if(!is.null(Q)) {
       triple(subject, uri("isDefinedByBiologicalTaxon",base), uri(Q, "http://www.wikidata.org/entity/"))
     }

@@ -108,15 +108,15 @@ substance:1277 rdfs:label "Kaliumphosphonat"@de .
 
 substance:1283 rdfs:label "Ipsdienol"@de .
 
-substance:1289 rdfs:label "(S)-cis-Verbenol"@de .
+substance:1289 :hasChebiIdentity chebi:233296 .
 
 substance:1298 rdfs:label "Acibenzolar-S-methyl"@de .
 
 substance:1299 rdfs:label "Metalaxyl-M"@de .
 
-substance:13 rdfs:label "Aclonifen"@de .
+substance:13 :hasChebiIdentity chebi:137374 .
 
-substance:1301 rdfs:label "Metconazole"@de .
+substance:1301 :hasChebiIdentity chebi:81773 .
 
 substance:1304 rdfs:label "Kupfer (als Octanoat)"@de .
 
@@ -136,7 +136,7 @@ substance:1316 :isDefinedByBiologicalTaxon wikidata:Q13224243 .
 
 substance:1317 :hasChebiIdentity chebi:2962 .
 
-substance:1319 rdfs:label "Azoxystrobin"@de .
+substance:1319 :hasChebiIdentity chebi:40909 .
 
 substance:1324 :isDefinedByBiologicalTaxon wikidata:Q5672141 .
 
@@ -146,7 +146,7 @@ substance:1331 rdfs:label "Schachtelhalmextrakt"@de .
 
 substance:1342 rdfs:label "Schwefelsaure Tonerde"@de .
 
-substance:1350 rdfs:label "Acetamiprid"@de .
+substance:1350 :hasChebiIdentity chebi:39163 .
 
 substance:1351 :isDefinedByBiologicalTaxon wikidata:Q5835607 .
 

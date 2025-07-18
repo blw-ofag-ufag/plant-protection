@@ -7,23 +7,20 @@ pest:10800 a :AbioticStressor,
         :CropStressor ;
     rdfs:label "Gegen Rötel"@de,
         "contre le rougissement précoce"@fr,
-        "Contro l'arrossamento"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Contro l'arrossamento"@it .
 
 pest:10875 a :AbioticStressor,
         :CropStressor ;
     rdfs:label "Mechanische Verletzungen"@de,
         "blessures dues à des causes mécaniques"@fr,
-        "Danni meccanici"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Danni meccanici"@it .
 
 pest:11139 a :AbioticStressor,
         :CropStressor ;
     rdfs:label "Sprenkelnekrosen (PLS)"@de,
         "grillures (PLS)"@fr,
         "Bruciature fogliari (PLS)"@it,
-        "PLS=physiological leaf spots"@lt ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "PLS=physiological leaf spots"@lt .
 
 pest:10349 a :BioticStressor,
         :CropStressor ;
@@ -2487,8 +2484,7 @@ pest:10968 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Lagerfäulen"@de,
         "maladies de conservation"@fr,
-        "Deperimento di ortofrutticoli in deposito"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Deperimento di ortofrutticoli in deposito"@it .
 
 pest:10970 a :BioticStressor,
         :CropStressor ;
@@ -2738,8 +2734,7 @@ pest:11014 a :BioticStressor,
     rdfs:label "Lagerkrankheiten"@de,
         "maladies de stockage"@fr,
         "Malattie da stoccaggio"@it,
-        "Venturia spp. und Lagerfäulen / et maladies de conservation / e deperimento di ortofrutticoli in deposito"@lt ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Venturia spp. und Lagerfäulen / et maladies de conservation / e deperimento di ortofrutticoli in deposito"@lt .
 
 pest:11015 a :BioticStressor,
         :CropStressor ;
@@ -2963,8 +2958,7 @@ pest:11103 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Samen- und bodenbürtige Krankheiten"@de,
         "maladies du sol et transmises par les semences"@fr,
-        "Malattie trasmesse dal suolo e dalle sementi"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Malattie trasmesse dal suolo e dalle sementi"@it .
 
 pest:11111 a :BioticStressor,
         :CropStressor ;
@@ -3030,8 +3024,7 @@ pest:11131 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Breitblättrige Unkräuter"@de,
         "mauvaises herbes à feuilles larges"@fr,
-        "Malerbe a foglia larga"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Malerbe a foglia larga"@it .
 
 pest:11138 a :BioticStressor,
         :CropStressor ;
@@ -3195,8 +3188,7 @@ pest:11191 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Quarantäneschädlinge"@de,
         "Ravageurs de quarantaine"@fr,
-        "Organismi animali di quarantena"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Organismi animali di quarantena"@it .
 
 pest:11192 a :BioticStressor,
         :CropStressor ;
@@ -3783,8 +3775,7 @@ pest:12434 a :BioticStressor,
         :CropStressor ;
     rdfs:label "Abbrennen von Stockausschlägen"@de,
         "Élimination des rejets"@fr,
-        "Eliminazione dei ricacci"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Eliminazione dei ricacci"@it .
 
 pest:12474 a :BioticStressor,
         :CropStressor ;
@@ -4182,140 +4173,117 @@ pest:15868 a :BioticStressor,
 pest:10585 a :CropStressor ;
     rdfs:label "Desinfektion"@de,
         "désinfection"@fr,
-        "Disinfezione"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Disinfezione"@it .
 
 pest:10673 a :CropStressor ;
     rdfs:label "Desikkation, Abbrennen"@de,
         "dessiccation, défanage"@fr,
-        "Disseccamento, essiccamento"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Disseccamento, essiccamento"@it .
 
 pest:10798 a :CropStressor ;
     rdfs:label "Blüten- und Fruchtausdünnung"@de,
         "éclaircissage des fleurs et fruits"@fr,
-        "Diradamento dei fiori e dei frutticini"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Diradamento dei fiori e dei frutticini"@it .
 
 pest:10799 a :CropStressor ;
     rdfs:label "Brechung der Alternanz (Apfelbaum)"@de,
         "rupture de l'alternance (pommier)"@fr,
-        "Interruzione dell'alternanza (melo)"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Interruzione dell'alternanza (melo)"@it .
 
 pest:10802 a :CropStressor ;
     rdfs:label "Erhöhung der Standfestigkeit"@de,
         "augmentation de la résistance à la verse"@fr,
-        "Aumento della stabilità"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Aumento della stabilità"@it .
 
 pest:10803 a :CropStressor ;
     rdfs:label "Hemmung des Längenwachstums (Stauchen)"@de,
         "inhibition de la croissance des organes aériens"@fr,
-        "Inibizione della crescita longitudinale"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Inibizione della crescita longitudinale"@it .
 
 pest:10804 a :CropStressor ;
     rdfs:label "Bildung von Fruchtholz an nichttragenden Jungbäumen"@de,
         "pour favoriser la formation des branches fruitières des jeunes arbres"@fr,
-        "Formazione di ramo fruttifero su alberi giovani "@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Formazione di ramo fruttifero su alberi giovani "@it .
 
 pest:10809 a :CropStressor ;
     rdfs:label "Verbesserung des Fruchtansatzes (Bildung von parthenokarpen Früchten)"@de,
         "amélioration de la nouaison  (formation de fruits parthénocarpiques)"@fr,
-        "Miglioramento dell'allegagione (formazione di frutti partenocarpici)"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Miglioramento dell'allegagione (formazione di frutti partenocarpici)"@it .
 
 pest:10810 a :CropStressor ;
     rdfs:label "Brechung der Knospenruhe, Förderung des Längenwachstums"@de,
         "levée de la dormance des bourgeons, stimulation de la croissance"@fr,
-        "Interruzione della dormienza delle gemme, stimolo della crescita longitudinale"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Interruzione della dormienza delle gemme, stimolo della crescita longitudinale"@it .
 
 pest:10861 a :CropStressor ;
     rdfs:label "Keimhemmung"@de,
         "inhibition de la germination"@fr,
-        "Inibizione della germinazione"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Inibizione della germinazione"@it .
 
 pest:10873 a :CropStressor ;
     rdfs:label "Wundverschluss"@de,
         "cicatrisation des plaies"@fr,
-        "Cicatrizzazione "@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Cicatrizzazione "@it .
 
 pest:10898 a :CropStressor ;
     rdfs:label "Erhöhung des Netz- und Haftvermögens"@de,
         "augmentation du pouvoir mouillant et adhésif"@fr,
-        "Aumento del potere umidificante e adesivante"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Aumento del potere umidificante e adesivante"@it .
 
 pest:10967 a :CropStressor ;
     rdfs:label "Strunkbehandlung gegen Stockausschläge"@de,
         "traitement du tronc contre les rejets"@fr,
-        "Trattamento della ceppaia contro i ricacci"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Trattamento della ceppaia contro i ricacci"@it .
 
 pest:10977 a :CropStressor ;
     rdfs:label "Vorzeitiger Fruchtfall"@de,
         "Chute précoce"@fr,
-        "Caduta precoce"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Caduta precoce"@it .
 
 pest:11005 a :CropStressor ;
     rdfs:label "Wirkungssicherung"@de,
         "maintien de l'efficacité"@fr,
-        "Assicurazione dell'efficacia"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Assicurazione dell'efficacia"@it .
 
 pest:11042 a :CropStressor ;
     rdfs:label "Optimierung der Sortierung"@de,
         "optimisation du triage"@fr,
-        "Ottimizzazione della cernita"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Ottimizzazione della cernita"@it .
 
 pest:11151 a :CropStressor ;
     rdfs:label "Fruchtausdünnung"@de,
         "éclaircissage des fruits"@fr,
-        "Diradamento dei frutticini"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Diradamento dei frutticini"@it .
 
 pest:11162 a :CropStressor ;
     rdfs:label "Reifeverzögerung"@de,
         "retard de la maturité"@fr,
-        "Ritardo della maturazione"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Ritardo della maturazione"@it .
 
 pest:11227 a :CropStressor ;
     rdfs:label "Beschleunigung und Synchronisierung der Fruchtreife"@de,
         "accélération et synchronisation de la maturité des fruits"@fr,
-        "Accellerazione e sincronizzazione della maturità dei frutti"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Accellerazione e sincronizzazione della maturità dei frutti"@it .
 
 pest:11264 a :CropStressor ;
     rdfs:label "Seitentriebhemmung"@de,
         "inhibition des pousses latérales "@fr,
-        "Inibizione dei germogli laterali"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Inibizione dei germogli laterali"@it .
 
 pest:12631 a :CropStressor ;
     rdfs:label "Lockerung des Traubenstielgerüsts"@de,
         "Élongation de la rafle et décompactage des grappes de raisin"@fr,
-        "Allentamento del grapplo d'uva"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Allentamento del grapplo d'uva"@it .
 
 pest:13677 a :CropStressor ;
     rdfs:label "Hemmung des Triebwachstums"@de,
         "inhibition de la croissance des rameaux"@fr,
-        "Inibizione della crescita dei polloni"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Inibizione della crescita dei polloni"@it .
 
 pest:13946 a :CropStressor ;
     rdfs:label "Minderung von Fruchtberostung und Wachstumsrissen"@de,
         "Diminution de la roussissure et des crevasses de croissance sur fruits "@fr,
-        "Riduzione della rugginosità della frutta e delle fratture di crescita"@it ;
-    :isDefinedByBiologicalTaxon wikidata:NULL .
+        "Riduzione della rugginosità della frutta e delle fratture di crescita"@it .
 
 pest:10710 rdfs:label "Brachfliege"@de,
         "mouche grise des céréales"@fr,
