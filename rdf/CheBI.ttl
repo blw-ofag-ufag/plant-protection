@@ -156,15 +156,15 @@ substance:1359 rdfs:label "Fettsäuren"@de .
 
 substance:1360 rdfs:label "Essigsäure"@de .
 
-substance:1363 rdfs:label "Prohexadione-Calcium"@de .
+substance:1363 :hasChebiIdentity chebi:137425 .
 
-substance:1364 rdfs:label "Trifloxystrobin"@de .
+substance:1364 :hasChebiIdentity chebi:81833 .
 
-substance:1366 rdfs:label "Fenhexamid"@de .
+substance:1366 :hasChebiIdentity chebi:81853 .
 
-substance:1367 rdfs:label "Spiroxamine"@de .
+substance:1367 :hasChebiIdentity chebi:9242 .
 
-substance:1368 rdfs:label "Florasulam"@de .
+substance:1368 :hasChebiIdentity chebi:82009 .
 
 substance:1369 :isDefinedByBiologicalTaxon wikidata:Q7255026 .
 
@@ -180,23 +180,23 @@ substance:1395 rdfs:label "Fettsäuren"@de .
 
 substance:1396 rdfs:label "Sesamöl raffiniert"@de .
 
-substance:1397 rdfs:label "Thiencarbazon"@de .
+substance:1397 :hasChebiIdentity chebi:145501 .
 
 substance:1398 rdfs:label "Proteine"@de .
 
-substance:1400 rdfs:label "Flufenacet"@de .
+substance:1400 :hasChebiIdentity chebi:81920 .
 
-substance:1404 rdfs:label "Zoxamid"@de .
+substance:1404 :hasChebiIdentity chebi:82048 .
 
-substance:1405 rdfs:label "Iodosulfuron-methyl-Natrium"@de .
+substance:1405 :hasChebiIdentity chebi:81741 .
 
-substance:1406 rdfs:label "Flumioxazin"@de .
+substance:1406 :hasChebiIdentity chebi:8939 .
 
-substance:1407 rdfs:label "Etofenprox"@de .
+substance:1407 :hasChebiIdentity chebi:39348 .
 
-substance:1408 rdfs:label "Mefenpyr-Diethyl"@de .
+substance:1408 :hasChebiIdentity chebi:133786 .
 
-substance:1410 rdfs:label "Eisen-III-Phosphat"@de .
+substance:1410 :hasChebiIdentity chebi:131371 .
 
 substance:1413 :isDefinedByBiologicalTaxon wikidata:Q3134908 .
 
@@ -208,29 +208,29 @@ substance:1418 rdfs:label "Verbissmittel (Grundkörper)"@de .
 
 substance:1421 rdfs:label "Spinosad"@de .
 
-substance:1422 rdfs:label "Mesotrione"@de .
+substance:1422 :hasChebiIdentity chebi:38321 .
 
-substance:1423 rdfs:label "Dimethenamid-P"@de .
+substance:1423 :hasChebiIdentity chebi:83640 .
 
-substance:1425 rdfs:label "Pyraclostrobin"@de .
+substance:1425 :hasChebiIdentity chebi:78780 .
 
-substance:1428 rdfs:label "Iprovalicarb"@de .
+substance:1428 :hasChebiIdentity chebi:82023 .
 
 substance:1430 rdfs:label "Schwefelkalk (Calciumpolysulfid)"@de .
 
-substance:1434 rdfs:label "Imazamox"@de .
+substance:1434 :hasChebiIdentity chebi:81857 .
 
 substance:1439 rdfs:label "Methylbutenol"@de .
 
 substance:1442 :isDefinedByBiologicalTaxon wikidata:Q26307560 .
 
-substance:1444 rdfs:label "Propoxycarbazone-sodium"@de .
+substance:1444 :hasChebiIdentity chebi:59511 .
 
-substance:1456 rdfs:label "Pyraflufen-ethyl"@de .
+substance:1456 :hasChebiIdentity chebi:81828 .
 
-substance:1457 rdfs:label "Foramsulfuron"@de .
+substance:1457 :hasChebiIdentity chebi:83502 .
 
-substance:1464 rdfs:label "Isoxadifen-ethyl"@de .
+substance:1464 :hasChebiIdentity chebi:132497 .
 
 substance:1465 :isDefinedByBiologicalTaxon wikidata:Q10413188 .
 
@@ -806,7 +806,7 @@ substance:851 rdfs:label "Schalenwicklergranulose-Virus"@de .
 
 substance:852 rdfs:label "Steinernema carpocapsae"@de .
 
-substance:853 rdfs:label "Steinernema feltiae"@de .
+substance:853 :isDefinedByBiologicalTaxon wikidata:Q5303814 .
 
 substance:854 rdfs:label "Trichogramma brassicae Bezdenko"@de .
 
@@ -872,17 +872,17 @@ substance:951 rdfs:label "Z11-14 Ac"@de .
 
 substance:952 rdfs:label "Cyprodinil"@de .
 
-substance:955 rdfs:label "Aphidius colemani"@de .
+substance:955 :isDefinedByBiologicalTaxon wikidata:Q1907227 .
 
-substance:960 rdfs:label "Metarhizium anisopliae"@de .
+substance:960 :isDefinedByBiologicalTaxon wikidata:Q134941 .
 
 substance:961 rdfs:label "Maleinsäurehydrazid"@de .
 
-substance:970 rdfs:label "Bacillus thuringiensis var. tenebrionis"@de .
+substance:970 :isDefinedByBiologicalTaxon wikidata:Q310467 .
 
-substance:972 rdfs:label "Beauveria bassiana"@de .
+substance:972 :isDefinedByBiologicalTaxon wikidata:Q2345333 .
 
-substance:974 rdfs:label "Phasmarhabditis hermaphrodita"@de .
+substance:974 :isDefinedByBiologicalTaxon wikidata:Q7181031 .
 
 substance:975 rdfs:label "Z8-12Ac"@de .
 
@@ -896,11 +896,11 @@ substance:981 rdfs:label "Mepanipyrim"@de .
 
 substance:982 rdfs:label "Fludioxonil"@de .
 
-substance:984 rdfs:label "Phlebia gigantea"@de .
+substance:984 :isDefinedByBiologicalTaxon wikidata:Q108178965 .
 
 substance:988 rdfs:label "Sojalecithin"@de .
 
-substance:998 rdfs:label "Leptomastidea abnormis"@de .
+substance:998 :isDefinedByBiologicalTaxon wikidata:Q13394572 .
 
-substance:999 rdfs:label "Leptomastix dactylopii"@de .
+substance:999 :isDefinedByBiologicalTaxon wikidata:Q13394629 .
 

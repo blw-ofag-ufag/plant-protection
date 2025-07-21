@@ -5,62 +5,52 @@
 code:1 a :ApplicationArea ;
     rdfs:label "Beerenbau"@de,
         "Culture des baies"@fr,
-        "Coltivazione di bacche"@it ;
-    :code "B" .
+        "Coltivazione di bacche"@it .
 
 code:12890 a :ApplicationArea ;
     rdfs:label "Lager- und Produktionsräume"@de,
         "Entrepôts et locaux de production"@fr,
-        "Locali di stoccaggio e di produzione"@it ;
-    :code "L" .
+        "Locali di stoccaggio e di produzione"@it .
 
 code:2 a :ApplicationArea ;
     rdfs:label "Obstbau"@de,
         "Arboriculture"@fr,
-        "Frutticoltura"@it ;
-    :code "O" .
+        "Frutticoltura"@it .
 
 code:3 a :ApplicationArea ;
     rdfs:label "Weinbau"@de,
         "Viticulture"@fr,
-        "Viticoltura"@it ;
-    :code "W" .
+        "Viticoltura"@it .
 
 code:4 a :ApplicationArea ;
     rdfs:label "Gemüsebau"@de,
         "Culture maraîchère"@fr,
-        "Orticoltura"@it ;
-    :code "G" .
+        "Orticoltura"@it .
 
 code:5 a :ApplicationArea ;
     rdfs:label "Feldbau"@de,
         "Grande culture"@fr,
-        "Campicoltura"@it ;
-    :code "F" .
+        "Campicoltura"@it .
 
 code:6 a :ApplicationArea ;
     rdfs:label "Zierpflanzen"@de,
         "Culture ornementale"@fr,
-        "Coltivazione piante ornam."@it ;
-    :code "Z" .
+        "Coltivazione piante ornam."@it .
 
 code:7 a :ApplicationArea ;
     rdfs:label "Forstwirtschaft"@de,
         "Sylviculture"@fr,
-        "Selvicoltura"@it ;
-    :code "S" .
+        "Selvicoltura"@it .
 
 code:8 a :ApplicationArea ;
     rdfs:label "Nichtkulturland"@de,
         "Domaine non agricole"@fr,
-        "Superfici non coltive"@it ;
-    :code "N" .
+        "Superfici non coltive"@it .
 
 code:9 a :ApplicationArea ;
     rdfs:label "Biodiversitätsförderflächen (BFF) gemäss DZV"@de,
         "Surfaces de promotion de la biodiversité (SPB) selon OPD"@fr,
-        "Superfici per la promozione della biodiversità (SPB) secondo OPD"@it ;
-    :code "Ö" .
+        "Superfici per la promozione della biodiversità (SPB) secondo OPD"@it .
 
 code:11429 a :CodeR ;
     rdfs:label "Kann allergische Hautreaktionen verursachen."@de,
@@ -714,304 +704,261 @@ code:8069 a :DangerSymbol ;
         "Pericoloso per l'ambiente acquatico"@it ;
     :hasHazardStatementCode "GHS09" .
 
-code:12692 a :FormulationCode ;
+code:12692 a :Formulation ;
     rdfs:label "Kontaktpulver"@de,
         "Contact powder"@en,
         "Poudre de contact"@fr,
-        "Polvere di contatto"@it ;
-    :code "CP" .
+        "Polvere di contatto"@it .
 
-code:12922 a :FormulationCode ;
+code:12922 a :Formulation ;
     rdfs:label "Wasserlösliche Tablette"@de,
         "Water soluble tablet"@en,
         "tablette soluble dans l'eau"@fr,
-        "compressa solubile in acqua"@it ;
-    :code "ST" .
+        "compressa solubile in acqua"@it .
 
-code:6416 a :FormulationCode ;
+code:6416 a :Formulation ;
     rdfs:label "Aerosoldose oder -flasche"@de,
         "Aerosol dispenser"@en,
         "générateur aérosol"@fr,
-        "bomboletta o flacone aerosol"@it ;
-    :code "AE" .
+        "bomboletta o flacone aerosol"@it .
 
-code:6417 a :FormulationCode ;
+code:6417 a :Formulation ;
     rdfs:label "Flüssigkeit zur unverdünnten Anwendung"@de,
         "Other liquids to be applied undiluted"@en,
         "liquide destiné à être utilisé sans dilution"@fr,
-        "liquido (utilizzo senza diluizione)"@it ;
-    :code "AL" .
+        "liquido (utilizzo senza diluizione)"@it .
 
-code:6423 a :FormulationCode ;
+code:6423 a :Formulation ;
     rdfs:label "Kapselsuspension"@de,
         "Capsule suspension"@en,
         "suspension de capsules"@fr,
-        "sospensione di capsule"@it ;
-    :code "CS" .
+        "sospensione di capsule"@it .
 
-code:6424 a :FormulationCode ;
+code:6424 a :Formulation ;
     rdfs:label "Dispergierbares Konzentrat"@de,
         "Dispersible concentrate"@en,
         "concentré dispersable"@fr,
-        "concentrato dispersibile"@it ;
-    :code "DC" .
+        "concentrato dispersibile"@it .
 
-code:6425 a :FormulationCode ;
+code:6425 a :Formulation ;
     rdfs:label "Staub"@de,
         "Dustable powder"@en,
         "poudre pour poudrage"@fr,
-        "polvere"@it ;
-    :code "DP" .
+        "polvere"@it .
 
-code:6427 a :FormulationCode ;
+code:6427 a :Formulation ;
     rdfs:label "Emulsionskonzentrat"@de,
         "Emulsifiable concentrate"@en,
         "concentré émulsifiable"@fr,
-        "concentrato emulsionato"@it ;
-    :code "EC" .
+        "concentrato emulsionato"@it .
 
-code:6429 a :FormulationCode ;
+code:6429 a :Formulation ;
     rdfs:label "Emulsion, Wasser in Oel"@de,
         "Emulsion, water in oil"@en,
         "emulsion de type huileux"@fr,
-        "emulsione, acqua in olio"@it ;
-    :code "EO" .
+        "emulsione, acqua in olio"@it .
 
-code:6430 a :FormulationCode ;
+code:6430 a :Formulation ;
     rdfs:label "Emulsion zur Saatgutbehandlung oder Emulsionsbeize"@de,
         "Emulsion for seed treatment"@en,
         "emulsion pour traitement des semences"@fr,
-        "emulsione per trattamento sementi o soluzione emulsionata per concia sementi"@it ;
-    :code "ES" .
+        "emulsione per trattamento sementi o soluzione emulsionata per concia sementi"@it .
 
-code:6431 a :FormulationCode ;
+code:6431 a :Formulation ;
     rdfs:label "Emulsion, Öl in Wasser"@de,
         "Emulsion, oil in water"@en,
         "emulsion de type aqueux"@fr,
-        "emulsione, olio in acqua"@it ;
-    :code "EW" .
+        "emulsione, olio in acqua"@it .
 
-code:6438 a :FormulationCode ;
+code:6438 a :Formulation ;
     rdfs:label "Mehrphasenkonzentrat zur Saatgutbehandlung oder Suspensionsbeize"@de,
         "Flowable concentrate for seed treatment"@en,
         "suspension concentrée pour traitement des semences"@fr,
-        "concentrato multifase per trattamento sementi o soluzione in sospensione"@it ;
-    :code "FS" .
+        "concentrato multifase per trattamento sementi o soluzione in sospensione"@it .
 
-code:6440 a :FormulationCode ;
+code:6440 a :Formulation ;
     rdfs:label "Räuchermittel"@de,
         "Smoke generator"@en,
         "fumigène"@fr,
-        "fumogeno (fumigante)"@it ;
-    :code "FU" .
+        "fumogeno (fumigante)"@it .
 
-code:6442 a :FormulationCode ;
+code:6442 a :Formulation ;
     rdfs:label "Gas (in Druckpackung)"@de,
         "Gas"@en,
         "gaz comprimé"@fr,
-        "gas (in pressione)"@it ;
-    :code "GA" .
+        "gas (in pressione)"@it .
 
-code:6444 a :FormulationCode ;
+code:6444 a :Formulation ;
     rdfs:label "Gaserzeugendes Produkt"@de,
         "Gas generating product"@en,
         "produit générateur de gaz"@fr,
-        "prodotto gassificabile"@it ;
-    :code "GE" .
+        "prodotto gassificabile"@it .
 
-code:6448 a :FormulationCode ;
+code:6448 a :Formulation ;
     rdfs:label "Granulat"@de,
         "Granule"@en,
         "granulé"@fr,
-        "granulare "@it ;
-    :code "GR" .
+        "granulare "@it .
 
-code:6451 a :FormulationCode ;
+code:6451 a :Formulation ;
     rdfs:label "Heissvernebelungsmittel"@de,
         "Hot fogging concentrate"@en,
         "produit pour nébulisation à chaud"@fr,
-        "concentrato nebbiogeno a caldo"@it ;
-    :code "HN" .
+        "concentrato nebbiogeno a caldo"@it .
 
-code:6452 a :FormulationCode ;
+code:6452 a :Formulation ;
     rdfs:label "Kombi-Pack fest/flüssig"@de,
         "Combi-pack solid/liquid"@en,
         "emballage associatif solide/liquide"@fr,
-        "imballaggio combi solido/liquido"@it ;
-    :code "KK" .
+        "imballaggio combi solido/liquido"@it .
 
-code:6454 a :FormulationCode ;
+code:6454 a :Formulation ;
     rdfs:label "Kaltvernebelungsmittel"@de,
         "Cold fogging concentrate"@en,
         "produit pour nébulisation à froid"@fr,
-        "concentrato nebbiogeno a freddo"@it ;
-    :code "KN" .
+        "concentrato nebbiogeno a freddo"@it .
 
-code:6458 a :FormulationCode ;
+code:6458 a :Formulation ;
     rdfs:label "Mikroemulsion"@de,
         "Microemulsion"@en,
         "microémulsion"@fr,
-        "microemulsione"@it ;
-    :code "ME" .
+        "microemulsione"@it .
 
-code:6463 a :FormulationCode ;
+code:6463 a :Formulation ;
     rdfs:label "Paste auf Wasserbasis"@de,
         "Paste"@en,
         "latex"@fr,
-        "pasta "@it ;
-    :code "PA" .
+        "pasta "@it .
 
-code:6468 a :FormulationCode ;
+code:6468 a :Formulation ;
     rdfs:label "Fertigköder"@de,
         "Bait (ready for use)"@en,
         "appât (prêt à l'emploi)"@fr,
-        "esca pronta per l'uso"@it ;
-    :code "RB" .
+        "esca pronta per l'uso"@it .
 
-code:6470 a :FormulationCode ;
+code:6470 a :Formulation ;
     rdfs:label "Suspensionskonzentrat"@de,
         "Suspension concentrate"@en,
         "suspension concentrée"@fr,
-        "sospensione concentrata"@it ;
-    :code "SC" .
+        "sospensione concentrata"@it .
 
-code:6471 a :FormulationCode ;
+code:6471 a :Formulation ;
     rdfs:label "Suspoemulsion"@de,
         "Suspo-emulsion"@en,
         "suspension-émulsion"@fr,
-        "sospensione-emulsione"@it ;
-    :code "SE" .
+        "sospensione-emulsione"@it .
 
-code:6472 a :FormulationCode ;
+code:6472 a :Formulation ;
     rdfs:label "Wasserlösliches Granulat"@de,
         "Water soluble granules"@en,
         "granulés solubles dans l'eau"@fr,
-        "granulare solubile in acqua"@it ;
-    :code "SG" .
+        "granulare solubile in acqua"@it .
 
-code:6473 a :FormulationCode ;
+code:6473 a :Formulation ;
     rdfs:label "Wasserlösliches Konzentrat"@de,
         "Soluble concentrate"@en,
         "concentré soluble dans l'eau"@fr,
-        "concentrato solubile in acqua"@it ;
-    :code "SL" .
+        "concentrato solubile in acqua"@it .
 
-code:6475 a :FormulationCode ;
+code:6475 a :Formulation ;
     rdfs:label "Wasserlösliches Pulver"@de,
         "Water soluble powder"@en,
         "poudre soluble dans l'eau"@fr,
-        "polvere solubile in acqua"@it ;
-    :code "SP" .
+        "polvere solubile in acqua"@it .
 
-code:6478 a :FormulationCode ;
+code:6478 a :Formulation ;
     rdfs:label "Tablette"@de,
         "Tablet"@en,
         "tablette"@fr,
-        "compressa"@it ;
-    :code "TB" .
+        "compressa"@it .
 
-code:6483 a :FormulationCode ;
+code:6483 a :Formulation ;
     rdfs:label "ULV - Lösung"@de,
         "Ultra-low volume (ULV) liquid"@en,
         "liquide pour application à très bas volume (TBV)"@fr,
-        "liquido volume ultra basso (ULV)"@it ;
-    :code "UL" .
+        "liquido volume ultra basso (ULV)"@it .
 
-code:6484 a :FormulationCode ;
+code:6484 a :Formulation ;
     rdfs:label "Verdampfende Wirkstoffe enthaltendes Produkt"@de,
         "Vapour realeasing product"@en,
         "produit diffuseur de vapeur"@fr,
-        "prodotto con principi attivi evaporabili"@it ;
-    :code "VP" .
+        "prodotto con principi attivi evaporabili"@it .
 
-code:6485 a :FormulationCode ;
+code:6485 a :Formulation ;
     rdfs:label "Wasserdispergierbares Granulat"@de,
         "Water dispersible granules"@en,
         "granulés à disperser dans l'eau"@fr,
-        "granulare idrodispersibile"@it ;
-    :code "WG" .
+        "granulare idrodispersibile"@it .
 
-code:6486 a :FormulationCode ;
+code:6486 a :Formulation ;
     rdfs:label "Wasserdispergierbares Pulver"@de,
         "Wettable powder"@en,
         "poudre mouillable"@fr,
-        "polvere bagnabile "@it ;
-    :code "WP" .
+        "polvere bagnabile "@it .
 
-code:6487 a :FormulationCode ;
+code:6487 a :Formulation ;
     rdfs:label "Schlämmpulver oder Schlämmbeize"@de,
         "Water dispersible powder for slurry seed treatment"@en,
         "poudre mouillable pour traitement humide"@fr,
-        "polvere bagnabile per concia sementi"@it ;
-    :code "WS" .
+        "polvere bagnabile per concia sementi"@it .
 
-code:6488 a :FormulationCode ;
+code:6488 a :Formulation ;
     rdfs:label "Adulte"@de,
         "Adults"@en,
         "adultes"@fr,
-        "adulti"@it ;
-    :code "XA" .
+        "adulti"@it .
 
-code:6489 a :FormulationCode ;
+code:6489 a :Formulation ;
     rdfs:label "Eier"@de,
         "Eggs"@en,
         "oeufs"@fr,
-        "uova"@it ;
-    :code "XE" .
+        "uova"@it .
 
-code:6490 a :FormulationCode ;
+code:6490 a :Formulation ;
     rdfs:label "Myzel"@de,
         "Mycelium"@en,
         "mycélium"@fr,
-        "micelio"@it ;
-    :code "XF" .
+        "micelio"@it .
 
-code:6491 a :FormulationCode ;
+code:6491 a :Formulation ;
     rdfs:label "Larven"@de,
-        "larves"@fr ;
-    :code "XL" .
+        "larves"@fr .
 
-code:6492 a :FormulationCode ;
+code:6492 a :Formulation ;
     rdfs:label "Nematodenlarven"@de,
         "Nematode larvae"@en,
         "larves de nématodes"@fr,
-        "larve di nematodi"@it ;
-    :code "XN" .
+        "larve di nematodi"@it .
 
-code:6493 a :FormulationCode ;
+code:6493 a :Formulation ;
     rdfs:label "Puppen"@de,
         "Pupae"@en,
         "pupes"@fr,
-        "pupe"@it ;
-    :code "XP" .
+        "pupe"@it .
 
-code:6496 a :FormulationCode ;
+code:6496 a :Formulation ;
     rdfs:label "Larven und Adulte"@de,
         "Larvae and adults"@en,
         "larves et adultes"@fr,
-        "larve e adulti"@it ;
-    :code "XV" .
+        "larve e adulti"@it .
 
-code:6499 a :FormulationCode ;
+code:6499 a :Formulation ;
     rdfs:label "Öldispersion"@de,
         "Oil-based suspension concentrate"@en,
         "Dispersion d'huile"@fr,
-        "olio dispersibile"@it ;
-    :code "OD" .
+        "olio dispersibile"@it .
 
-code:6500 a :FormulationCode ;
+code:6500 a :Formulation ;
     rdfs:label "Emulgierbares Granulat"@de,
         "Emulsifiable granules"@en,
         "granulé émulsifiable"@fr,
-        "granulare emulsionato"@it ;
-    :code "EG" .
+        "granulare emulsionato"@it .
 
-code:6501 a :FormulationCode ;
+code:6501 a :Formulation ;
     rdfs:label "Mischformulierung aus CS und SC"@de,
         "A mixed formulation of CS and SC"@en,
         "Mélange des formulations CS et SC"@fr,
-        "Miscela delle formulazioni CS e SC"@it ;
-    :code "ZC" .
+        "Miscela delle formulazioni CS e SC"@it .
 
 code:7950 a :SignalWords ;
     rdfs:label "Achtung"@de,
@@ -1033,21 +980,18 @@ code:11425 a :Unit ;
 code:11546 a :Unit ;
     rdfs:label "ml/t Getreide"@de,
         "ml/t céréales"@fr,
-        "ml/t cereali"@it ;
-    :code "ml/t Getreide" .
+        "ml/t cereali"@it .
 
 code:11621 a :Unit ;
     rdfs:label "ml/10m²"@de,
         "ml/10m²"@en,
         "ml/10m²"@fr,
-        "ml/10m²"@it ;
-    :code "ml/10m²" .
+        "ml/10m²"@it .
 
 code:11636 a :Unit ;
     rdfs:label "Individuen / m2"@de,
         "individus / m2"@fr,
-        "individui /m2"@it ;
-    :code "ind" .
+        "individui /m2"@it .
 
 code:11645 a :Unit ;
     rdfs:label "Pellets pro 3-10 m Ganglänge"@de,
@@ -1058,8 +1002,7 @@ code:11797 a :Unit ;
     rdfs:label "l/20m²"@de,
         "l/20m²"@en,
         "l/20m²"@fr,
-        "l/20m²"@it ;
-    :code "l/20m²" .
+        "l/20m²"@it .
 
 code:11954 a :Unit ;
     rdfs:label "ml/Topf"@de,
@@ -1131,8 +1074,7 @@ code:12824 a :Unit ;
 code:12879 a :Unit ;
     rdfs:label "ml/hl Nährlösung"@de,
         "ml/hl de solution nutritive"@fr,
-        "ml/hl di soluzione nutritiva"@it ;
-    :code "ml/hl Nährlösung" .
+        "ml/hl di soluzione nutritiva"@it .
 
 code:12915 a :Unit ;
     rdfs:label "l/m2 Setzlinge "@de,
@@ -1152,8 +1094,7 @@ code:12966 a :Unit ;
 code:13291 a :Unit ;
     rdfs:label "g pro 45-60 m³ "@de,
         "g pour 45-60 m³ "@fr,
-        "g per 45-60 m³ "@it ;
-    :code "tabs" .
+        "g per 45-60 m³ "@it .
 
 code:13320 a :Unit ;
     rdfs:label "ml/10 m³ "@de,
@@ -1220,14 +1161,12 @@ code:15548 a :Unit ;
 code:15568 a :Unit ;
     rdfs:label "g pro 40-45 m³"@de,
         "g pour 40-45 m³"@fr,
-        "g per 40-45 m³"@it ;
-    :code "tabs" .
+        "g per 40-45 m³"@it .
 
 code:15617 a :Unit ;
     rdfs:label "Organismen/10-25 m²"@de,
         "organismes/10-25 m²"@fr,
-        "organismi/10-25 m²"@it ;
-    :code "Lager" .
+        "organismi/10-25 m²"@it .
 
 code:15664 a :Unit ;
     rdfs:label "Karten/m²"@de,
@@ -1567,8 +1506,7 @@ code:6670 a :Unit ;
 code:6672 a :Unit ;
     rdfs:label "Organismen/50-100 m²"@de,
         "organismes/50-100 m²"@fr,
-        "organismi/50-100 m²"@it ;
-    :code "Lager" .
+        "organismi/50-100 m²"@it .
 
 code:6673 a :Unit ;
     rdfs:label "ml in 5 l Wasser/100 m² "@de,

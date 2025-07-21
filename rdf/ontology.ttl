@@ -138,49 +138,6 @@ wikidata:Q16521 a owl:Class ;
         """@it ;
     rdfs:subClassOf :ChemicalProduct .
 
-:ActiveIngredient a owl:Class ;
-    rdfs:label "Aktivsubstanz"@de,
-        "Active substance"@en,
-        "Substance active"@fr,
-        "Sostanza attiva"@it ;
-    rdfs:comment """
-        Aktivsubstanzen (auch Wirkstoffe genannt) sind biologisch aktive Verbindungen, die in geringen Konzentrationen biochemische und physiologische Prozesse in pflanzlichen, tierischen und menschlichen Organismen quantitativ und/oder qualitativ in Form von Hemmung oder Aktivierung beeinflussen.
-        """@de,
-        """
-        Active substances (also known as active ingredients) are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation.
-        """@en,
-        """
-        Les substances actives (également appelées principes actifs) sont des composés biologiquement actifs qui, à faibles concentrations, influencent les processus biochimiques et physiologiques des organismes végétaux, animaux et humains, de manière quantitative et/ou qualitative, par inhibition ou activation.
-        """@fr,
-        """
-        Le sostanze attive (note anche come principi attivi) sono composti biologicamente attivi che, in basse concentrazioni, influenzano quantitativamente e/o qualitativamente i processi biochimici e fisiologici negli organismi vegetali, animali e umani sotto forma di inibizione o attivazione.
-        """@it ;
-    rdfs:isDefinedBy <https://www.scienceindustries.ch/_file/27381/201903-begriffsklaerung-final-en.pdf> ;
-    rdfs:subClassOf :ComponentPortion ;
-    skos:altLabel "Wirkstoff"@de,
-        "Active ingredient"@en,
-        "Principe actif"@fr,
-        "Principio attivo"@it .
-
-:AdditiveToDeclare a owl:Class ;
-    rdfs:label "Zu deklarierende Additive"@de,
-        "Additives to declare"@en,
-        "Additifs à déclarer"@fr,
-        "Additivi da dichiarare"@it ;
-    rdfs:comment """
-        Additive, die in einem Produkt enthalten sind und deklariert werden müssen, beispielsweise aufgrund ihrer chemischen Eigenschaften oder potenziellen Auswirkungen.
-        """@de,
-        """
-        Additives that are included in a product and must be declared, for example due to their chemical properties or potential effects.
-        """@en,
-        """
-        Additifs présents dans un produit et devant être déclarés, par exemple en raison de leurs propriétés chimiques ou de leurs effets potentiels.
-        """@fr,
-        """
-        Additivi contenuti in un prodotto che devono essere dichiarati, ad esempio a causa delle loro proprietà chimiche o dei potenziali effetti.
-        """@it ;
-    rdfs:subClassOf :ComponentPortion .
-
 :AdhesionAgents a owl:Class ;
     rdfs:label "Netz- und Haftmittel"@de,
         "Wetting and adhesion agents"@en,
@@ -980,35 +937,15 @@ wikidata:Q16521 a owl:Class ;
         "Prodotti per la protezione delle scorte"@it ;
     rdfs:subClassOf :ChemicalProduct .
 
-:Synergist a owl:Class ;
-    rdfs:label "Synergist"@de,
-        "Synergist"@en,
-        "Synergiste"@fr,
-        "Sinergetico"@it ;
-    rdfs:comment """
-        Ein Synergist ist eine Substanz, die selbst keine oder nur geringe insektizide Wirkung besitzt, aber die Wirksamkeit von Insektiziden erhöht.
-        Synergisten wirken, indem sie die Entgiftungsmechanismen von Schädlingen hemmen, wodurch die Toxizität der Insektizide verstärkt wird.
-        """@de,
-        """
-        A synergist is a substance that has little or no insecticidal effect on its own but enhances the efficacy of insecticides.
-        Synergists function by inhibiting the detoxification mechanisms of pests, thereby increasing the toxicity of the insecticides.
-        """@en,
-        """
-        Un synergiste est une substance qui n'a que peu ou pas d'effet insecticide par elle-même, mais qui augmente l'efficacité des insecticides.
-        Les synergistes agissent en inhibant les mécanismes de détoxification des nuisibles, augmentant ainsi la toxicité des insecticides.
-        """@fr,
-        """
-        Un sinergetico è una sostanza che da sola ha un effetto insetticida nullo o minimo, ma aumenta l'efficacia degli insetticidi.
-        I sinergetici agiscono inibendo i meccanismi di disintossicazione dei parassiti, aumentando così la tossicità degli insetticidi.
-        """@it ;
-    rdfs:subClassOf :ComponentPortion .
-
 :Viricide a owl:Class ;
     rdfs:label "Virizid"@de,
         "Viricide"@en,
         "Virucide"@fr,
         "Viricida"@it ;
     rdfs:subClassOf :ChemicalProduct .
+
+_:nf79c8b9230174ba6bbc7800b94cfcdfcb12 a owl:Class ;
+    owl:oneOf ( :AdditiveToDeclare :Synergist :Safener :ActiveIngredient ) .
 
 schema:addressLocality a owl:DatatypeProperty ;
     rdfs:label "Ortschaft"@de,
@@ -1129,6 +1066,21 @@ schema:telephone a owl:DatatypeProperty ;
         "Dosage"@en ;
     rdfs:domain :Indication ;
     rdfs:range schema:QuantitativeValue .
+
+:eppo a owl:DatatypeProperty ;
+    rdfs:label "EPPO-Code"@de,
+        "EPPO code"@en ;
+    rdfs:comment """
+        Der EPPO-Code ist ein standardisierter alphanumerischer Code,
+        der von der Europäischen und mediterranen Pflanzenschutzorganisation (EPPO)
+        zur einheitlichen Identifizierung von Pflanzen, Schädlingen und
+        Krankheitserregern verwendet wird.
+        """@de,
+        """
+        The EPPO code is a standardized alphanumeric identifier assigned
+        by the European and Mediterranean Plant Protection Organization (EPPO)
+        to uniquely identify plants, pests, and pathogens.
+        """@en .
 
 :exhaustionDeadline a owl:DatatypeProperty ;
     rdfs:label "Ablaufdatum der Nutzung"@de,
@@ -1319,6 +1271,14 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:domain :Indication ;
     rdfs:range :CropStressor .
 
+:formulation a owl:ObjectProperty ;
+    rdfs:label "Formulierung"@de,
+        "Formulation"@en,
+        "Formulation"@fr,
+        "Formulazione"@it ;
+    rdfs:domain :Formulation ;
+    rdfs:range :Product .
+
 :hasChebiIdentity a owl:ObjectProperty ;
     rdfs:label "CheBI-Identität"@de,
         "CheBI identity"@en ;
@@ -1363,14 +1323,6 @@ schema:addressCountry a owl:ObjectProperty ;
         """@it ;
     rdfs:domain :Product ;
     rdfs:range schema:Country .
-
-:hasFormulationCode a owl:ObjectProperty ;
-    rdfs:label "Formulierungscode"@de,
-        "Formulation code"@en,
-        "Code de formulation"@fr,
-        "Codice di formulazione"@it ;
-    rdfs:domain :FormulationCode ;
-    rdfs:range :Product .
 
 :hasParentCropGroup a owl:ObjectProperty ;
     rdfs:label "Übergruppe"@de,
@@ -1498,6 +1450,13 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:range :Product ;
     owl:inverseOf :indication .
 
+:role a owl:ObjectProperty ;
+    rdfs:label "Rolle"@de,
+        "Role"@en ;
+    rdfs:comment "The role that a particular component plays in a mixture."@en ;
+    rdfs:domain :ComponentPortion ;
+    rdfs:range _:nf79c8b9230174ba6bbc7800b94cfcdfcb12 .
+
 :substance a owl:ObjectProperty ;
     rdfs:label "Substanz"@de,
         "Substance"@en ;
@@ -1531,7 +1490,66 @@ schema:maxValue rdfs:label "Maximaler Wert"@de,
 schema:minValue rdfs:label "Minimaler Wert"@de,
         "Minimal value"@en .
 
+:ActiveIngredient rdfs:label "Aktivsubstanz"@de,
+        "Active substance"@en,
+        "Substance active"@fr,
+        "Sostanza attiva"@it ;
+    rdfs:comment """
+        Aktivsubstanzen (auch Wirkstoffe genannt) sind biologisch aktive Verbindungen, die in geringen Konzentrationen biochemische und physiologische Prozesse in pflanzlichen, tierischen und menschlichen Organismen quantitativ und/oder qualitativ in Form von Hemmung oder Aktivierung beeinflussen.
+        """@de,
+        """
+        Active substances (also known as active ingredients) are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation.
+        """@en,
+        """
+        Les substances actives (également appelées principes actifs) sont des composés biologiquement actifs qui, à faibles concentrations, influencent les processus biochimiques et physiologiques des organismes végétaux, animaux et humains, de manière quantitative et/ou qualitative, par inhibition ou activation.
+        """@fr,
+        """
+        Le sostanze attive (note anche come principi attivi) sono composti biologicamente attivi che, in basse concentrazioni, influenzano quantitativamente e/o qualitativamente i processi biochimici e fisiologici negli organismi vegetali, animali e umani sotto forma di inibizione o attivazione.
+        """@it ;
+    rdfs:isDefinedBy <https://www.scienceindustries.ch/_file/27381/201903-begriffsklaerung-final-en.pdf> ;
+    skos:altLabel "Wirkstoff"@de,
+        "Active ingredient"@en,
+        "Principe actif"@fr,
+        "Principio attivo"@it .
+
+:AdditiveToDeclare rdfs:label "Zu deklarierende Additive"@de,
+        "Additives to declare"@en,
+        "Additifs à déclarer"@fr,
+        "Additivi da dichiarare"@it ;
+    rdfs:comment """
+        Additive, die in einem Produkt enthalten sind und deklariert werden müssen, beispielsweise aufgrund ihrer chemischen Eigenschaften oder potenziellen Auswirkungen.
+        """@de,
+        """
+        Additives that are included in a product and must be declared, for example due to their chemical properties or potential effects.
+        """@en,
+        """
+        Additifs présents dans un produit et devant être déclarés, par exemple en raison de leurs propriétés chimiques ou de leurs effets potentiels.
+        """@fr,
+        """
+        Additivi contenuti in un prodotto che devono essere dichiarati, ad esempio a causa delle loro proprietà chimiche o dei potenziali effetti.
+        """@it .
+
 :Safener rdfs:label "Safener"@de,
-        "Safener"@en ;
-    rdfs:subClassOf :ComponentPortion .
+        "Safener"@en .
+
+:Synergist rdfs:label "Synergist"@de,
+        "Synergist"@en,
+        "Synergiste"@fr,
+        "Sinergetico"@it ;
+    rdfs:comment """
+        Ein Synergist ist eine Substanz, die selbst keine oder nur geringe insektizide Wirkung besitzt, aber die Wirksamkeit von Insektiziden erhöht.
+        Synergisten wirken, indem sie die Entgiftungsmechanismen von Schädlingen hemmen, wodurch die Toxizität der Insektizide verstärkt wird.
+        """@de,
+        """
+        A synergist is a substance that has little or no insecticidal effect on its own but enhances the efficacy of insecticides.
+        Synergists function by inhibiting the detoxification mechanisms of pests, thereby increasing the toxicity of the insecticides.
+        """@en,
+        """
+        Un synergiste est une substance qui n'a que peu ou pas d'effet insecticide par elle-même, mais qui augmente l'efficacité des insecticides.
+        Les synergistes agissent en inhibant les mécanismes de détoxification des nuisibles, augmentant ainsi la toxicité des insecticides.
+        """@fr,
+        """
+        Un sinergetico è una sostanza che da sola ha un effetto insetticida nullo o minimo, ma aumenta l'efficacia degli insetticidi.
+        I sinergetici agiscono inibendo i meccanismi di disintossicazione dei parassiti, aumentando così la tossicità degli insetticidi.
+        """@it .
 

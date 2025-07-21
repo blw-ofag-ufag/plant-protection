@@ -6,6 +6,9 @@ library(xml2)
 library(dplyr)
 library(srppp)
 library(jsonlite)
+library(dialr)
+library(uuid)
+library(rlang)
 library(rdfhelper) # install from <https://github.com/damian-oswald/rdfhelper>
 
 # ------------------------------------------------------------------
@@ -47,31 +50,31 @@ XML <- read_xml(xml_file_path)
 rm(xml_file_path, srppp_zip_url, temp_zip, unzip_dir)
 
 # Read mapping tables
-lindas_country = read.csv("tables/mapping/lindas-country.csv", row.names = 1)
-srppp_product_category = read.csv("tables/mapping/srppp-product-category.csv", row.names = 1)
-zefix_company = read.csv("tables/mapping/zefix-company.csv", row.names = 1)
+lindas_country = utils::read.csv("tables/mapping/lindas-country.csv", row.names = 1)
+srppp_product_category = utils::read.csv("tables/mapping/srppp-product-category.csv", row.names = 1)
+zefix_company = utils::read.csv("tables/mapping/zefix-company.csv", row.names = 1)
 
 # ------------------------------------------------------------------
 # WRITE PRODUCT INFORMATION
 # ------------------------------------------------------------------
 
 # transform XML to lists
-L1 = XML |>
-  xml_find_all("//Product") |>
-  as_list()
-L2 = XML |>
-  xml_find_all("//Parallelimport") |>
-  as_list()
+L1 <- XML |>
+  xml2::xml_find_all("//Product") |>
+  xml2::as_list()
+L2 <- XML |>
+  xml2::xml_find_all("//Parallelimport") |>
+  xml2::as_list()
 
 # construct a index data frame with the id for unique chemical and brand products
-index = data.frame(
-  
+index <- data.frame(
+
   # id unique to a chemical product
   w = c(
     getW(sub("-.*$", "", sapply(L1, attr, "wNbr"))),
     getW(sapply(L2, attr, "wNbr"))
   ),
-  
+
   # id unique to a product as it is sold (with name and seller)
   p = c(
     getW(sapply(L1, attr, "wNbr")),
@@ -81,7 +84,7 @@ index = data.frame(
 
 # other product information (not in SRPPP package)
 describe <- function(x, parallelimport = FALSE) {
-  
+
   # get the correct IDs (depending on whether product is parallel import or not)
   if(parallelimport) {
     p = attr(x, "id")
@@ -94,27 +97,27 @@ describe <- function(x, parallelimport = FALSE) {
     subject = uri(p, base)
     triple(subject, "a", ":Product")
   }
-  
+
   # assign product categories
   for (i in srppp_product_category[getFK(x[["ProductInformation"]], "ProductCategory"),]) {
     triple(subject, "a", uri(i))
   }
-  
+
   # product label
-  triple(subject, "rdfs:label", literal(attr(x, "name")))
-  
+  triple(subject, "schema:name", literal(attr(x, "name")))
+
   # Numbers for this product
   triple(subject, ":federalAdmissionNumber", literal(p))
   triple(subject, ":foreignAdmissionNumber", literal(attr(x, "admissionnumber")))
   triple(subject, ":packageInsertNumber", literal(attr(x, "packageInsert")))
-  
+
   # find the chemically identical products and make the identity explicit
   for (i in index[index[,"w"]==w,"p"]) {
     if (i != p) {
       triple(subject, ":isSameProductAs", uri(i, base))
     }
   }
-  
+
   # reuse existing company from lindas zefix, if possible; otherwise point at own company
   companies <- getFK(x[["ProductInformation"]], "PermissionHolderKey")
   if(length(companies)>0) {
@@ -127,29 +130,29 @@ describe <- function(x, parallelimport = FALSE) {
       }
     }
   }
-  
+
   # producing country
   triple(subject, ":hasCountryOfOrigin", uri(lindas_country[attr(x, "producingCountryPrimaryKey"),]))
-  
+
   # dates
   for (variable in c("soldoutDeadline", "exhaustionDeadline")) {
     triple(subject, paste0(":",variable), typed(attr(x, variable), "date"))
   }
-  
+
   # add diverse links to codes
   prefix = paste0(base, "code/")
-  triple(subject, ":hasFormulationCode", uri(getFK(x[["ProductInformation"]], variable), prefix))
+  triple(subject, ":formulation", uri(getFK(x[["ProductInformation"]], variable), prefix))
   for (variable in c("CodeR", "CodeS", "DangerSymbol", "SignalWords")) {
     triple(subject, ":notice", uri(getFK(x[["ProductInformation"]], variable), prefix))
   }
-  
+
   # Save the ingredients (here, we work with blank nodes)
-  PI = x[["ProductInformation"]]
+  PI <- x[["ProductInformation"]]
   prefix = paste0(base, "substance/")
   for (ingredient in PI[names(PI)=="Ingredient"]) {
-    blank <- paste0("_:", nano_id(24))
+    blank <- paste0("_:", rdfhelper::nano(length = 24))
     triple(subject, ":hasComponentPortion", blank)
-    triple(blank, "a", uri(snake_to_camel(unlist(ingredient[["SubstanceType"]])), base))
+    triple(blank, ":role", uri(snake_to_camel(unlist(ingredient[["SubstanceType"]])), base))
     triple(blank, ":substance", uri(getPK(ingredient[["Substance"]]), prefix))
     triple(blank, ":hasPercentage", attr(ingredient, "inPercent"))
     triple(blank, ":hasGrammPerLitre", attr(ingredient, "inGrammPerLitre"))
@@ -179,7 +182,7 @@ convert <- function(x) {
 # Batch processing city
 XML |>
   xml_find_all(".//MetaData[@name='City']/Detail") |>
-  as_list() |>
+  xml2::as_list() |>
   sapply(convert) |>
   t() |> data.frame(row.names = 1) -> cities
 
@@ -219,10 +222,10 @@ cat(prefixes)
 
 # loop over every company
 for (i in 1:nrow(companies)) {
-  
+
   # define a new company IRI
   x = uri(file.path("company",companies[i,"IRI"]), base)
-  
+
   # set company (legal) name and contact info
   triple(x, "a", "schema:Organization")
   triple(x, "schema:name", literal(companies[i,"label"]))
@@ -232,7 +235,7 @@ for (i in 1:nrow(companies)) {
       triple(x, uri(property, "http://schema.org/"), uri(companies[i,property]))
     }
   }
-  
+
   # construct address IRI
   address = uri(uuid::UUIDfromName("2034115b-8c4e-43a1-960f-c73320210196", companies[i,"IRI"]), base)
   triple(x, "schema:address", address)
@@ -242,12 +245,12 @@ for (i in 1:nrow(companies)) {
     }
   }
   triple(address, "schema:addressCountry", uri(companies[i,"addressCountry"]))
-  
+
   # consider same ZEFIX company
   if (as.character(companies[i,"IRI"])%in%rownames(zefix_company)) {
     triple(x, "owl:sameAs", uri(zefix_company[companies[i,"IRI"],"IRI"]))
   }
-  
+
 }
 sink()
 rm(companies, cities, company_xml, email_from_fax, email_from_phone, email_regex, address)
@@ -270,7 +273,7 @@ sink("rdf/codes.ttl")
 cat(prefixes)
 for (varname in c("CodeR", "CodeS", "DangerSymbol", "SignalWords")) {
   XML |> xml_find_all(sprintf("//MetaData[@name='%s']/Detail", varname)) |>
-    as_list() |>
+    xml2::as_list() |>
     lapply(convert) |>
     printList(sprintf(":%s", varname), properties = ":hasHazardStatementCode")
 }
@@ -291,13 +294,18 @@ cat(prefixes)
 for (varname in c("FormulationCode", "ApplicationArea", "CultureForm", "Measure", "TimeMeasure")) {
   class <- if(varname %in% c("Measure","TimeMeasure")) {
     "Unit"
-  } else {
+  }
+  else if(varname == "FormulationCode")
+  {
+    "Formulation"
+  }
+  else {
     varname
   }
   XML |> xml_find_all(sprintf("//MetaData[@name='%s']/Detail", varname)) |>
-    as_list() |>
+    xml2::as_list() |>
     lapply(convert) |>
-    printList(sprintf(":%s", class), properties = ":code")
+    printList(sprintf(":%s", class), properties = "schema:identifier")
 }
 sink()
 
@@ -319,7 +327,7 @@ sink("rdf/crops.ttl")
 cat(prefixes)
 XML |>
   xml_find_all("//MetaData[@name='Culture']/Detail") |>
-  as_list() |>
+  xml2::as_list() |>
   lapply(convert) |>
   printList(":CropGroup", ":hasParentCropGroup")
 sink()
@@ -331,10 +339,10 @@ sink()
 # Function to convert *one* crop object to a better processable list
 data <- read_json("tables/mapping/crop-stressors.json")
 describe <- function(x) {
-  
+
   i = which(sapply(data, function(x) x[["srppp-id"]])==getPK(x))
   subject = uri(file.path("pest",getPK(x)), base)
-  
+
   if(length(i)>0) {
     if(data[[i]][["type"]]=="biotic") {
       triple(subject, "a", c(":CropStressor", ":BioticStressor"))
@@ -348,7 +356,7 @@ describe <- function(x) {
       triple(subject, uri("isDefinedByBiologicalTaxon",base), uri(Q, "http://www.wikidata.org/entity/"))
     }
   }
-  
+
   # print labels
   printLabels(c(list(subject = subject), getLabels(x)))
 }
@@ -359,7 +367,7 @@ cat(prefixes)
 invisible({
   XML |>
     xml_find_all("//MetaData[@name='Pest']/Detail") |>
-    as_list() |> lapply(describe)
+    xml2::as_list() |> lapply(describe)
 })
 sink()
 
@@ -380,7 +388,7 @@ sink("rdf/substances.ttl")
 cat(prefixes)
 XML |>
   xml_find_all("//MetaData[@name='Substance']/Detail") |>
-  as_list() |>
+  xml2::as_list() |>
   lapply(convert) |>
   printList(":Substance", ":iupac")
 sink()
@@ -398,11 +406,11 @@ convert <- function(x) {
 sink("rdf/notes.ttl")
 cat(prefixes)
 XML |> xml_find_all("//MetaData[@name='Obligation']/Detail") |>
-  as_list() |>
+  xml2::as_list() |>
   lapply(convert) |>
   printList(":Obligation")
 XML |> xml_find_all("//MetaData[@name='ApplicationComment']/Detail") |>
-  as_list() |>
+  xml2::as_list() |>
   lapply(convert) |>
   printList(":ApplicationComment")
 sink()
@@ -412,12 +420,12 @@ sink()
 # ------------------------------------------------------------------
 
 describe = function(x, parallelimport = FALSE) {
-  
+
   # save indications
   indications = x$ProductInformation[names(x$ProductInformation)=="Indication"]
-  
+
   for (indication in indications) {
-    
+
     # generate an anonymous hash-uuid-URI that will always be the same from the same attributes
     subject = uri(uuid::UUIDfromName("acdb7485-3f2b-45f0-a783-01133f235c2a", rlang::hash(indication)), base)
     triple(subject, ":product", if(parallelimport) {
@@ -425,14 +433,14 @@ describe = function(x, parallelimport = FALSE) {
     } else {
       uri(paste0("W-",attr(x, "wNbr")), base)
     })
-    
+
     triple(subject, "a", ":Indication")
     triple(subject, ":applicationArea", uri(file.path("code", getFK(indication, "ApplicationArea")), base))
     triple(subject, ":notice", uri(file.path("note", getFK(indication, "ApplicationComment")), base))
     triple(subject, ":notice", uri(file.path("note",getFK(indication, "Obligation")), base))
     triple(subject, ":cropStressor", uri(file.path("pest",getFK(indication, "Pest")), base))
     triple(subject, ":cropGroup", uri(file.path("crop",getFK(indication, "Culture")), base))
-    
+
     # model the quantitative values as blank nodes (in order to attach units)
     if(!rdfhelper:::is.missing(attr(indication, "waitingPeriod"))) {
       blank <- paste0("_:", rlang::hash(subject))
@@ -445,16 +453,16 @@ describe = function(x, parallelimport = FALSE) {
                  dosageTo = "dosageTo",
                  expenditureFrom = "expenditureForm",
                  expenditureTo = "expenditureTo")
-    
+
     for (property in c("dosage", "expenditure")) {
-      
+
       unit <- uri(file.path("code",getFK(indication, "Measure")), base)
       min <- as.numeric(attr(indication, mapping[paste0(property, "From")]))
       max <- as.numeric(attr(indication, mapping[paste0(property, "To")]))
-      
+
       if(!rdfhelper:::is.missing(min) || !rdfhelper:::is.missing(max)) {
         blank <- paste0("_:", rlang::hash(paste0(rlang::hash(subject), property)))
-        
+
         triple( subject,  paste0(":", property),                       blank )
         triple(   blank,                    "a",  "schema:QuantitativeValue" )
         triple(   blank,      "schema:minValue",                         min )
@@ -470,11 +478,11 @@ sink("rdf/indications.ttl")
 cat(prefixes)
 L = XML |>
   xml_find_all("//Product") |>
-  as_list()
+  xml2::as_list()
 for (x in L) describe(x)
 L = XML |>
   xml_find_all("//Parallelimport") |>
-  as_list()
+  xml2::as_list()
 for (x in L) describe(x)
 sink()
 
@@ -486,4 +494,3 @@ for (i in unique(L)) {
   cat(i, "\n")
 }
 sink()
-
