@@ -107,5 +107,6 @@ ORDER BY DESC(?products)
 - [Count the instances per (sub)class](https://s.zazuko.com/j55kjw)
 - [A list of all substances, their IUPAC name, role, average percentages and how many products they are in](https://s.zazuko.com/2be7XUX)
 - [Count the involved pests and crops per indication](https://s.zazuko.com/yAWBE5)
+- [A list of all units, the SRPPP PK and their occurences](https://s.zazuko.com/M1SCFh)
 - [List of all companies that have permission to sell plant protection products](https://s.zazuko.com/21xrM6T)
 - [Federated query on CheBI database:](https://s.zazuko.com/3xHmyFZ) Query the CheBI database via RHEA for chemical entity names, roles, chemical formulas and foreign keys to other databases.
