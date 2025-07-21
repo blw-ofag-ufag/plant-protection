@@ -724,6 +724,16 @@ wikidata:Q16521 a owl:Class ;
         "Insetticida"@it ;
     rdfs:subClassOf :ChemicalProduct .
 
+:ModeOfActionTerm a owl:Class ;
+    rdfs:label "Mode of Action Term"@en ;
+    rdfs:comment """
+        A generic class representing any entry in the IRAC Mode of Action classification 
+        scheme, i.e. both main groups and sub‑groups (if these exist). Each instance
+        carries its unique IRAC code (e.g. "1", "1A", "4B") via the `schema:identifier` 
+        property, and may be linked hierarchically using `schema:isPartOf`/`schema:hasPart`.
+        """@en ;
+    rdfs:seeAlso <https://irac-online.org/documents/moa-classification/> .
+
 :Molluscicide a owl:Class ;
     rdfs:label "Molluskizid"@de,
         "Molluscicide"@en,

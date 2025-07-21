@@ -1,0 +1,114 @@
+@prefix : <https://agriculture.ld.admin.ch/plant-protection/> .
+@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix code: <https://agriculture.ld.admin.ch/plant-protection/code/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+
+code:P8dAK7iErOPdDbks9 a :ModeOfActionTerm ;
+    rdfs:label "Organophosphates"@en ;
+    schema:identifier "1B" ;
+    schema:isPartOf code:PnC5dTtdJdjxRVKCW ;
+    :activeIngredients chebi:34690,
+        "Acephate",
+        "Azamethiphos",
+        "Azinphos-ethyl",
+        "Azinphos-methyl",
+        "Cadusafos",
+        "Chlorethoxyfos",
+        "Chlorfenvinphos",
+        "Chlormephos",
+        "Chlorpyrifos",
+        "Chlorpyrifos-methyl",
+        "Coumaphos",
+        "Cyanophos",
+        "Demeton-S-methyl",
+        "Diazinon",
+        "Dicrotophos",
+        "Dimethoate",
+        "Dimethylvinphos",
+        "Disulfoton",
+        "EPN",
+        "Ethion",
+        "Ethoprophos",
+        "Famphur",
+        "Fenamiphos",
+        "Fenitrothion",
+        "Fenthion",
+        "Fosthiazate",
+        "Heptenophos",
+        "Imicyafos",
+        "Isofenphos",
+        "Isopropyl O-(methoxyaminothiophosphoryl) salicylate",
+        "Isoxathion",
+        "Malathion",
+        "Mecarbam",
+        "Methamidophos",
+        "Methidathion",
+        "Mevinphos",
+        "Monocrotophos",
+        "Naled",
+        "Omethoate",
+        "Oxydemeton-methyl",
+        "Parathion",
+        "Parathion-methyl",
+        "Phenthoate",
+        "Phorate",
+        "Phosalone",
+        "Phosmet",
+        "Phosphamidon",
+        "Phoxim",
+        "Pirimiphos-methyl",
+        "Profenofos",
+        "Propetamphos",
+        "Prothiofos",
+        "Pyraclofos",
+        "Pyridaphenthion",
+        "Quinalphos",
+        "Sulfotep",
+        "Tebupirimfos",
+        "Temephos",
+        "Terbufos",
+        "Tetrachlorvinphos",
+        "Thiometon",
+        "Triazophos",
+        "Trichlorfon",
+        "Vamidothion" .
+
+code:PnC5dTtdJdjxRVKCW a :ModeOfActionTerm ;
+    rdfs:label "Acetylcholinesterase (AChE) inhibitors"@en ;
+    schema:hasPart code:P8dAK7iErOPdDbks9,
+        code:PxC6dTtdFDxxUTK3L ;
+    schema:identifier "1" ;
+    rdfs:comment "Nerve action, strong evidence that action at this protein is responsible for insecticidal effects"@en .
+
+code:PxC6dTtdFDxxUTK3L a :ModeOfActionTerm ;
+    rdfs:label "Carbamates"@en ;
+    schema:identifier "1A" ;
+    schema:isPartOf code:PnC5dTtdJdjxRVKCW ;
+    :activeIngredients chebi:2555,
+        chebi:3014,
+        chebi:3390,
+        chebi:34304,
+        chebi:34556,
+        chebi:34611,
+        chebi:34938,
+        chebi:35048,
+        chebi:38463,
+        chebi:38465,
+        chebi:38470,
+        chebi:38476,
+        chebi:38483,
+        chebi:38491,
+        chebi:38504,
+        chebi:38505,
+        chebi:38508,
+        chebi:38537,
+        chebi:38539,
+        chebi:38548,
+        chebi:38549,
+        chebi:38569,
+        chebi:38571,
+        chebi:38576,
+        chebi:6835,
+        chebi:8248 .
+
