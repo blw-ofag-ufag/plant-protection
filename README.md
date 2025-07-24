@@ -1,12 +1,6 @@
 > [!NOTE]
 > This GitHub repository is used as a proof-of-concept. It does not contain any official information from the Federal Office for Agriculture.
 
-# Visual ontology exploration
-
-You can use the browser tool [WebVOWL](https://github.com/VisualDataWeb/WebVOWL) order to visually explore the ontologies. The following links will open the current drafts for ontologies:
-
-- [**A plant protection ontology for Swiss agriculture.**](https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/plant-protection/refs/heads/main/rdf/ontology.ttl)
-
 # Example queries
 
 ## [Companies that sell product applicable agains potato late blight](https://s.zazuko.com/ALGTr2)
