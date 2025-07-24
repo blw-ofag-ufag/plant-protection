@@ -35,12 +35,11 @@ SELECT ?substance ?substanceName ?iupac
        (ROUND(AVG(?percentage)*100)/100 AS ?averagePercentage)
 WHERE {
   ?product :hasComponentPortion [
-    a ?role ;
-    :hasComponentSubstance ?substance ;
+    :role ?role ;
+    :substance ?substance ;
     :hasPercentage ?percentage ;
   ] .
-  ?role rdfs:subClassOf :Substance ;
-        rdfs:label ?roleName .
+  ?role rdfs:label ?roleName .
   FILTER (LANG(?roleName) = "de")
 
   ?substance rdfs:label ?substanceName .
