@@ -158,4 +158,60 @@
     border-radius: .75rem;
   }
   
-  
+/* Components as responsive tiles ---------------------------------- */
+.components{
+  margin:1rem 0 0;
+  padding:0;
+  list-style:none;
+  display:grid;
+  gap:1rem;
+  grid-template-columns:repeat(auto-fill,minmax(16rem,1fr));
+}
+.components .tile{
+  border:1px solid var(--stroke);
+  border-radius:.75rem;
+  background:#fff;
+  box-shadow:0 2px 6px rgba(0,0,0,.04);
+  padding:1rem 1.25rem 1.25rem;
+  display:flex;
+  flex-direction:column;
+  gap:.75rem;
+}
+.tile header{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem;
+  align-items:baseline;
+}
+.tile .role{
+  background:#fee2e2;
+  color:#b91c1c;
+}
+.tile .chem{
+  text-align:center;
+}
+.tile .chem img{
+  max-width:100%;
+  height:auto;
+}
+.tile .meta{
+  font-size:.85rem;
+  color:#374151;
+  display:flex;
+  gap:.75rem;
+  flex-wrap:wrap;
+}
+.smiles{
+  font-family:monospace;
+  background:#f3f4f6;
+  padding:.15rem .3rem;
+  border-radius:.25rem;
+  overflow-x:auto;
+}
+.link{
+  margin-top:auto;
+  font-size:.8rem;
+  color:#2563eb;
+  text-decoration:none;
+}
+.link:hover{text-decoration:underline;}
