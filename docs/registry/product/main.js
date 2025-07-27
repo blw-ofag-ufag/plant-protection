@@ -45,10 +45,10 @@ WHERE {
     VALUES ?product { <https://agriculture.ld.admin.ch/plant-protection/${id}> }
     ?product a           ?producttype ;
              schema:name ?productName ;
-             :hasFederalAdmissionNumber ?federalNo ;
+             :federalAdmissionNumber ?federalNo ;
              :hasPermissionHolder ?company .
 
-    OPTIONAL { ?product :hasForeignAdmissionNumber ?foreignNo }
+    OPTIONAL { ?product :foreignAdmissionNumber ?foreignNo }
 
     OPTIONAL {
       ?product :isSameProductAs ?sameProduct .
@@ -60,7 +60,6 @@ WHERE {
       ?formObj schema:name ?formLabel .
       FILTER(lang(?formLabel)="de")
     }
-
     OPTIONAL {
       ?producttype schema:name ?producttypeLabel .
       FILTER(lang(?producttypeLabel)="de")
@@ -129,7 +128,7 @@ WHERE {
     ?company schema:identifier ?idObj .
     ?idObj schema:name  ?idName ;
            schema:value ?idValue .
-    FILTER(?idName IN ("CompanyUID","CompanyCHID"))
+    FILTER(?idName IN ("CompanyUID","CompanyCHID","CompanyEHRAID"))
   }
 }`;
 
@@ -139,7 +138,7 @@ PREFIX schema: <http://schema.org/>
 SELECT ?statementName ?codeIRI WHERE {
   GRAPH <https://lindas.admin.ch/foag/plant-protection> {
     VALUES ?product { <https://agriculture.ld.admin.ch/plant-protection/${id}> }
-    ?product :hasHazardStatement ?stmt .
+    ?product :notice ?stmt .
     ?stmt schema:name ?statementName .
     FILTER(lang(?statementName)="de")
     OPTIONAL { ?stmt :hasHazardStatementCode ?codeIRI }
@@ -164,8 +163,9 @@ SELECT ?statementName ?codeIRI WHERE {
 
     let UID = null, CHID = null;
     compRows.forEach(r => {
-      if (r.idName?.value === "CompanyUID")  UID  = r.idValue?.value;
-      if (r.idName?.value === "CompanyCHID") CHID = r.idValue?.value;
+      if (r.idName?.value === "CompanyUID")    UID    = r.idValue?.value;
+      if (r.idName?.value === "CompanyCHID")   CHID   = r.idValue?.value;
+      if (r.idName?.value === "CompanyEHRAID") EHRAID = r.idValue?.value;
     });
 
     // process hazards
@@ -209,6 +209,7 @@ SELECT ?statementName ?codeIRI WHERE {
         ` : ''}
         ${UID  ? `<dt>UID</dt><dd>${UID}</dd>`   : ''}
         ${CHID ? `<dt>CHID</dt><dd>${CHID}</dd>` : ''}
+        ${EHRAID ? `<dt>EHRAID</dt><dd>${EHRAID}</dd>` : ''}
         ${(street||postal||locality) ? `
           <dt>Adresse</dt>
           <dd>${[street,postal,locality].filter(Boolean).join(', ')}</dd>
