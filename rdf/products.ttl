@@ -6671,8 +6671,8 @@
     :notice code:6145 .
 
 :D-6260 a :Bactericide,
-        :ChemicalProduct,
-        :ParallelImport ;
+        :ParallelImport,
+        :Phytoregulator ;
     schema:name "Prohexadion-Ca 100 " ;
     :federalAdmissionNumber "D-6260" ;
     :foreignAdmissionNumber "007727-00/014" ;
@@ -6692,8 +6692,8 @@
     :packageInsertNumber "8451" .
 
 :D-6616 a :Bactericide,
-        :ChemicalProduct,
-        :ParallelImport ;
+        :ParallelImport,
+        :Phytoregulator ;
     schema:name "Regalis Plus" ;
     :federalAdmissionNumber "D-6616" ;
     :foreignAdmissionNumber "007727-00/015" ;
@@ -6713,8 +6713,8 @@
     :packageInsertNumber "8451" .
 
 :D-6617 a :Bactericide,
-        :ChemicalProduct,
-        :ParallelImport ;
+        :ParallelImport,
+        :Phytoregulator ;
     schema:name "Regalis Plus" ;
     :federalAdmissionNumber "D-6617" ;
     :foreignAdmissionNumber "007727-00/018" ;
@@ -6734,8 +6734,8 @@
     :packageInsertNumber "8451" .
 
 :D-6618 a :Bactericide,
-        :ChemicalProduct,
-        :ParallelImport ;
+        :ParallelImport,
+        :Phytoregulator ;
     schema:name "Regalis Plus 10 WG" ;
     :federalAdmissionNumber "D-6618" ;
     :foreignAdmissionNumber "007727-00/016" ;
@@ -6755,8 +6755,8 @@
     :packageInsertNumber "8451" .
 
 :D-7083 a :Bactericide,
-        :ChemicalProduct,
-        :ParallelImport ;
+        :ParallelImport,
+        :Phytoregulator ;
     schema:name "Prohexa " ;
     :federalAdmissionNumber "D-7083" ;
     :foreignAdmissionNumber "007727-00/020" ;
@@ -6922,8 +6922,8 @@
     :packageInsertNumber "7433" .
 
 :I-6113 a :Bactericide,
-        :ChemicalProduct,
-        :ParallelImport ;
+        :ParallelImport,
+        :Phytoregulator ;
     schema:name "Regalis Plus" ;
     :federalAdmissionNumber "I-6113" ;
     :foreignAdmissionNumber "015553" ;
@@ -7538,7 +7538,7 @@
     :soldoutDeadline "2025-10-15"^^xsd:date .
 
 :W-7110 a :Bactericide,
-        :ChemicalProduct,
+        :Phytoregulator,
         :Product ;
     schema:name "Regalis Plus" ;
     :federalAdmissionNumber "W-7110" ;
@@ -7561,7 +7561,7 @@
         code:8067 .
 
 :W-7110-1 a :Bactericide,
-        :ChemicalProduct,
+        :Phytoregulator,
         :Product ;
     schema:name "Regalis Plus" ;
     :federalAdmissionNumber "W-7110-1" ;
@@ -7822,7 +7822,7 @@
         code:8067 .
 
 :W-7620 a :Bactericide,
-        :ChemicalProduct,
+        :Phytoregulator,
         :Product ;
     schema:name "Kudos" ;
     :federalAdmissionNumber "W-7620" ;
@@ -7835,2809 +7835,6 @@
         code:11880,
         code:6145,
         code:7988 .
-
-:W-5782 a :ChemicalCropProtectionProduct,
-        :Product ;
-    schema:name "Certosan" ;
-    :federalAdmissionNumber "W-5782" ;
-    :hasComponentPortion [ :hasPercentage 99.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1398 ] ;
-    :hasPermissionHolder zefix:1634453 ;
-    :notice code:11473,
-        code:11880,
-        code:13876,
-        code:6145 .
-
-:W-5940 a :ChemicalCropProtectionProduct,
-        :Product ;
-    schema:name "Fantom-E" ;
-    :federalAdmissionNumber "W-5940" ;
-    :hasComponentPortion [ :role :ActiveIngredient ;
-            :substance substance:1418 ] ;
-    :hasPermissionHolder zefix:1634453 ;
-    :notice code:11473,
-        code:11880,
-        code:13876,
-        code:6145 .
-
-:W-6549 a :ChemicalCropProtectionProduct,
-        :Product ;
-    schema:name "Trico" ;
-    :federalAdmissionNumber "W-6549" ;
-    :hasComponentPortion [ :hasGrammPerLitre 65.0 ;
-            :hasPercentage 6.4 ;
-            :role :ActiveIngredient ;
-            :substance substance:1539 ] ;
-    :hasPermissionHolder zefix:730369 ;
-    :notice code:11469,
-        code:11472,
-        code:11473,
-        code:11880,
-        code:13876,
-        code:15378,
-        code:6145 .
-
-:W-7602 a :ChemicalCropProtectionProduct,
-        :Product ;
-    schema:name "Epsom" ;
-    :federalAdmissionNumber "W-7602" ;
-    :hasComponentPortion [ :role :AdditiveToDeclare ;
-            :substance substance:2058 ],
-        [ :hasGrammPerLitre 26.5 ;
-            :hasPercentage 2.85 ;
-            :role :ActiveIngredient ;
-            :substance substance:1936 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1693 ] ;
-    :hasPermissionHolder zefix:1634453 ;
-    :notice code:11429,
-        code:11435,
-        code:11448,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:8062,
-        code:8067 .
-
-:D-2479 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Moddus" ;
-    :federalAdmissionNumber "D-2479" ;
-    :foreignAdmissionNumber "024212-00" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 26.6 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:7179 ;
-    :isSameProductAs :F-5389,
-        :F-6414,
-        :W-3070,
-        :W-3070-1,
-        :W-3070-2 ;
-    :notice code:6145 ;
-    :packageInsertNumber "4499" .
-
-:D-4561 a :ChemicalProduct,
-        :Fungicide,
-        :ParallelImport ;
-    schema:name "Caramba" ;
-    :federalAdmissionNumber "D-4561" ;
-    :foreignAdmissionNumber "024487-00" ;
-    :hasComponentPortion [ :hasGrammPerLitre 60.0 ;
-            :hasPercentage 6.7 ;
-            :role :ActiveIngredient ;
-            :substance substance:1301 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:10281 ;
-    :isSameProductAs :W-5365 ;
-    :notice code:6145 ;
-    :packageInsertNumber "6351" .
-
-:D-4955 a :ChemicalProduct,
-        :Fungicide,
-        :ParallelImport ;
-    schema:name "Tebu Super 250 EW" ;
-    :federalAdmissionNumber "D-4955" ;
-    :foreignAdmissionNumber "034028-00/185" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 25.8 ;
-            :role :ActiveIngredient ;
-            :substance substance:893 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:11123 ;
-    :isSameProductAs :D-7275,
-        :F-2628,
-        :F-2629,
-        :F-4807,
-        :W-5468 ;
-    :notice code:6145 ;
-    :packageInsertNumber "6521" .
-
-:D-5375 a :ChemicalProduct,
-        :Fungicide,
-        :ParallelImport ;
-    schema:name "Carax" ;
-    :federalAdmissionNumber "D-5375" ;
-    :foreignAdmissionNumber "006415-00" ;
-    :hasComponentPortion [ :hasGrammPerLitre 210.0 ;
-            :hasPercentage 19.1 ;
-            :role :ActiveIngredient ;
-            :substance substance:1552 ],
-        [ :hasGrammPerLitre 30.0 ;
-            :hasPercentage 2.7 ;
-            :role :ActiveIngredient ;
-            :substance substance:1301 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:10281 ;
-    :isSameProductAs :D-6555,
-        :D-6799,
-        :D-6975,
-        :F-5376,
-        :W-6815 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8006" .
-
-:D-5618 a :ChemicalProduct,
-        :Fungicide,
-        :ParallelImport ;
-    schema:name "Magnello" ;
-    :federalAdmissionNumber "D-5618" ;
-    :foreignAdmissionNumber "007026-00" ;
-    :hasComponentPortion [ :hasGrammPerLitre 100.0 ;
-            :hasPercentage 9.9 ;
-            :role :ActiveIngredient ;
-            :substance substance:894 ],
-        [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 24.8 ;
-            :role :ActiveIngredient ;
-            :substance substance:893 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:7179 ;
-    :isSameProductAs :D-6592,
-        :W-6822 ;
-    :notice code:6145 ;
-    :packageInsertNumber "7969" .
-
-:D-6215 a :ChemicalProduct,
-        :Fungicide,
-        :ParallelImport ;
-    schema:name "Tebuconazol + Prothioconazol " ;
-    :federalAdmissionNumber "D-6215" ;
-    :foreignAdmissionNumber "006855-00/013" ;
-    :hasComponentPortion [ :hasGrammPerLitre 80.0 ;
-            :hasPercentage 8.15 ;
-            :role :ActiveIngredient ;
-            :substance substance:1476 ],
-        [ :hasGrammPerLitre 160.0 ;
-            :hasPercentage 16.3 ;
-            :role :ActiveIngredient ;
-            :substance substance:893 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:11601 ;
-    :isSameProductAs :D-7338,
-        :W-6834 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8154" .
-
-:D-6555 a :ChemicalProduct,
-        :Fungicide,
-        :ParallelImport ;
-    schema:name "Dakar" ;
-    :federalAdmissionNumber "D-6555" ;
-    :foreignAdmissionNumber "006415-00/006" ;
-    :hasComponentPortion [ :hasGrammPerLitre 210.0 ;
-            :hasPercentage 19.1 ;
-            :role :ActiveIngredient ;
-            :substance substance:1552 ],
-        [ :hasGrammPerLitre 30.0 ;
-            :hasPercentage 2.7 ;
-            :role :ActiveIngredient ;
-            :substance substance:1301 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:11071 ;
-    :isSameProductAs :D-5375,
-        :D-6799,
-        :D-6975,
-        :F-5376,
-        :W-6815 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8006" .
-
-:D-6592 a :ChemicalProduct,
-        :Fungicide,
-        :ParallelImport ;
-    schema:name "Magnello" ;
-    :federalAdmissionNumber "D-6592" ;
-    :foreignAdmissionNumber "007026-00/003" ;
-    :hasComponentPortion [ :hasGrammPerLitre 100.0 ;
-            :hasPercentage 9.9 ;
-            :role :ActiveIngredient ;
-            :substance substance:894 ],
-        [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 24.8 ;
-            :role :ActiveIngredient ;
-            :substance substance:893 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:11696 ;
-    :isSameProductAs :D-5618,
-        :W-6822 ;
-    :notice code:6145 ;
-    :packageInsertNumber "7969" .
-
-:D-6797 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Trinexapac-ethyl 175" ;
-    :exhaustionDeadline "2027-02-28"^^xsd:date ;
-    :federalAdmissionNumber "D-6797" ;
-    :foreignAdmissionNumber "007005-00/017" ;
-    :hasComponentPortion [ :hasGrammPerLitre 175.0 ;
-            :hasPercentage 17.5 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:11601 ;
-    :isSameProductAs :D-6798,
-        :D-7337,
-        :F-7043,
-        :I-7042,
-        :W-6832,
-        :W-6832-1 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8009" ;
-    :soldoutDeadline "2026-02-28"^^xsd:date .
-
-:D-6798 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Trinex 175 " ;
-    :exhaustionDeadline "2027-02-28"^^xsd:date ;
-    :federalAdmissionNumber "D-6798" ;
-    :foreignAdmissionNumber "007005-00/018" ;
-    :hasComponentPortion [ :hasGrammPerLitre 175.0 ;
-            :hasPercentage 17.5 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:11601 ;
-    :isSameProductAs :D-6797,
-        :D-7337,
-        :F-7043,
-        :I-7042,
-        :W-6832,
-        :W-6832-1 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8009" ;
-    :soldoutDeadline "2026-02-28"^^xsd:date .
-
-:D-6799 a :ChemicalProduct,
-        :Fungicide,
-        :ParallelImport ;
-    schema:name "Mepiquat + Metconazol " ;
-    :federalAdmissionNumber "D-6799" ;
-    :foreignAdmissionNumber "006415-00/011" ;
-    :hasComponentPortion [ :hasGrammPerLitre 210.0 ;
-            :hasPercentage 19.1 ;
-            :role :ActiveIngredient ;
-            :substance substance:1552 ],
-        [ :hasGrammPerLitre 30.0 ;
-            :hasPercentage 2.7 ;
-            :role :ActiveIngredient ;
-            :substance substance:1301 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:11601 ;
-    :isSameProductAs :D-5375,
-        :D-6555,
-        :D-6975,
-        :F-5376,
-        :W-6815 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8006" .
-
-:D-6821 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Trinex DC " ;
-    :federalAdmissionNumber "D-6821" ;
-    :foreignAdmissionNumber "007733-00/003" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 24.1 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:11773 ;
-    :isSameProductAs :W-7038 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8347" .
-
-:D-6975 a :ChemicalProduct,
-        :Fungicide,
-        :ParallelImport ;
-    schema:name "Mepiconazol" ;
-    :federalAdmissionNumber "D-6975" ;
-    :foreignAdmissionNumber "006415-00/012" ;
-    :hasComponentPortion [ :hasGrammPerLitre 210.0 ;
-            :hasPercentage 19.1 ;
-            :role :ActiveIngredient ;
-            :substance substance:1552 ],
-        [ :hasGrammPerLitre 30.0 ;
-            :hasPercentage 2.7 ;
-            :role :ActiveIngredient ;
-            :substance substance:1301 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:11773 ;
-    :isSameProductAs :D-5375,
-        :D-6555,
-        :D-6799,
-        :F-5376,
-        :W-6815 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8006" .
-
-:D-7263 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Medax Max" ;
-    :federalAdmissionNumber "D-7263" ;
-    :foreignAdmissionNumber "008258-00/001" ;
-    :hasComponentPortion [ :hasPercentage 7.5 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ],
-        [ :hasPercentage 5.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1363 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:11696 ;
-    :isSameProductAs :D-7390,
-        :W-7385 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8817" .
-
-:D-7275 a :ChemicalProduct,
-        :Fungicide,
-        :ParallelImport ;
-    schema:name "Folicur" ;
-    :federalAdmissionNumber "D-7275" ;
-    :foreignAdmissionNumber "034028-00" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 25.8 ;
-            :role :ActiveIngredient ;
-            :substance substance:893 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:11830 ;
-    :isSameProductAs :D-4955,
-        :F-2628,
-        :F-2629,
-        :F-4807,
-        :W-5468 ;
-    :notice code:6145 ;
-    :packageInsertNumber "6521" .
-
-:D-7337 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Calma" ;
-    :exhaustionDeadline "2027-02-28"^^xsd:date ;
-    :federalAdmissionNumber "D-7337" ;
-    :foreignAdmissionNumber "007005-00" ;
-    :hasComponentPortion [ :hasGrammPerLitre 175.0 ;
-            :hasPercentage 17.5 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:10980 ;
-    :isSameProductAs :D-6797,
-        :D-6798,
-        :F-7043,
-        :I-7042,
-        :W-6832,
-        :W-6832-1 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8009" ;
-    :soldoutDeadline "2026-02-28"^^xsd:date .
-
-:D-7338 a :ChemicalProduct,
-        :Fungicide,
-        :ParallelImport ;
-    schema:name "Tilmor" ;
-    :federalAdmissionNumber "D-7338" ;
-    :foreignAdmissionNumber "006855-00" ;
-    :hasComponentPortion [ :hasGrammPerLitre 80.0 ;
-            :hasPercentage 8.15 ;
-            :role :ActiveIngredient ;
-            :substance substance:1476 ],
-        [ :hasGrammPerLitre 160.0 ;
-            :hasPercentage 16.3 ;
-            :role :ActiveIngredient ;
-            :substance substance:893 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:11830 ;
-    :isSameProductAs :D-6215,
-        :W-6834 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8154" .
-
-:D-7355 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Itcan SL 270" ;
-    :federalAdmissionNumber "D-7355" ;
-    :foreignAdmissionNumber "027233-00" ;
-    :hasComponentPortion [ :hasGrammPerLitre 270.0 ;
-            :hasPercentage 22.68 ;
-            :role :ActiveIngredient ;
-            :substance substance:961 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:12028 ;
-    :isSameProductAs :D-7408,
-        :W-6933 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8225" .
-
-:D-7390 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Prodax" ;
-    :federalAdmissionNumber "D-7390" ;
-    :foreignAdmissionNumber "008258-00" ;
-    :hasComponentPortion [ :hasPercentage 7.5 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ],
-        [ :hasPercentage 5.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1363 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:10639 ;
-    :isSameProductAs :D-7263,
-        :W-7385 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8817" .
-
-:D-7391 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Fazor" ;
-    :federalAdmissionNumber "D-7391" ;
-    :foreignAdmissionNumber "026865-00" ;
-    :hasComponentPortion [ :hasPercentage 60.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:961 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:11605 ;
-    :isSameProductAs :W-7405,
-        :W-7405-1 ;
-    :notice code:6145 ;
-    :packageInsertNumber "9296" .
-
-:D-7396 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Cerone 660" ;
-    :federalAdmissionNumber "D-7396" ;
-    :foreignAdmissionNumber "006285-00" ;
-    :hasComponentPortion [ :hasGrammPerLitre 660.0 ;
-            :hasPercentage 52.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:162 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:11830 ;
-    :isSameProductAs :D-7397,
-        :W-7438 ;
-    :notice code:6145 ;
-    :packageInsertNumber "9357" .
-
-:D-7397 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Camposan Top" ;
-    :federalAdmissionNumber "D-7397" ;
-    :foreignAdmissionNumber "00A617-00" ;
-    :hasComponentPortion [ :hasGrammPerLitre 660.0 ;
-            :hasPercentage 52.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:162 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:10980 ;
-    :isSameProductAs :D-7396,
-        :W-7438 ;
-    :notice code:6145 ;
-    :packageInsertNumber "9357" .
-
-:D-7408 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Crown MH" ;
-    :federalAdmissionNumber "D-7408" ;
-    :foreignAdmissionNumber "027233-60" ;
-    :hasComponentPortion [ :hasGrammPerLitre 270.0 ;
-            :hasPercentage 22.68 ;
-            :role :ActiveIngredient ;
-            :substance substance:961 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
-    :hasPermissionHolder company:12028 ;
-    :isSameProductAs :D-7355,
-        :W-6933 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8225" .
-
-:F-2628 a :ChemicalProduct,
-        :Fungicide,
-        :ParallelImport ;
-    schema:name "Corail" ;
-    :federalAdmissionNumber "F-2628" ;
-    :foreignAdmissionNumber "9300257" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 25.8 ;
-            :role :ActiveIngredient ;
-            :substance substance:893 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:10727 ;
-    :isSameProductAs :D-4955,
-        :D-7275,
-        :F-2629,
-        :F-4807,
-        :W-5468 ;
-    :notice code:6145 ;
-    :packageInsertNumber "6521" .
-
-:F-2629 a :ChemicalProduct,
-        :Fungicide,
-        :ParallelImport ;
-    schema:name "Horizon EW" ;
-    :federalAdmissionNumber "F-2629" ;
-    :foreignAdmissionNumber "9200078" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 25.8 ;
-            :role :ActiveIngredient ;
-            :substance substance:893 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:10727 ;
-    :isSameProductAs :D-4955,
-        :D-7275,
-        :F-2628,
-        :F-4807,
-        :W-5468 ;
-    :notice code:6145 ;
-    :packageInsertNumber "6521" .
-
-:F-3855 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Atena Etephon" ;
-    :exhaustionDeadline "2026-06-30"^^xsd:date ;
-    :federalAdmissionNumber "F-3855" ;
-    :foreignAdmissionNumber "9500536" ;
-    :hasComponentPortion [ :hasGrammPerLitre 480.0 ;
-            :hasPercentage 39.1 ;
-            :role :ActiveIngredient ;
-            :substance substance:162 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder zefix:968176 ;
-    :isSameProductAs :F-3861,
-        :I-3209,
-        :W-3060 ;
-    :notice code:6145 ;
-    :packageInsertNumber "5166" ;
-    :soldoutDeadline "2025-06-30"^^xsd:date .
-
-:F-3861 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Phon-Choc" ;
-    :exhaustionDeadline "2026-06-30"^^xsd:date ;
-    :federalAdmissionNumber "F-3861" ;
-    :foreignAdmissionNumber "9500012" ;
-    :hasComponentPortion [ :hasGrammPerLitre 480.0 ;
-            :hasPercentage 39.1 ;
-            :role :ActiveIngredient ;
-            :substance substance:162 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder zefix:968176 ;
-    :isSameProductAs :F-3855,
-        :I-3209,
-        :W-3060 ;
-    :notice code:6145 ;
-    :packageInsertNumber "5166" ;
-    :soldoutDeadline "2025-06-30"^^xsd:date .
-
-:F-4807 a :ChemicalProduct,
-        :Fungicide,
-        :ParallelImport ;
-    schema:name "Baltazar" ;
-    :federalAdmissionNumber "F-4807" ;
-    :foreignAdmissionNumber "9200078" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 25.8 ;
-            :role :ActiveIngredient ;
-            :substance substance:893 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:10679 ;
-    :isSameProductAs :D-4955,
-        :D-7275,
-        :F-2628,
-        :F-2629,
-        :W-5468 ;
-    :notice code:6145 ;
-    :packageInsertNumber "6521" .
-
-:F-4901 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Maxcel" ;
-    :federalAdmissionNumber "F-4901" ;
-    :foreignAdmissionNumber "2090019" ;
-    :hasComponentPortion [ :hasGrammPerLitre 20.0 ;
-            :hasPercentage 1.91 ;
-            :role :ActiveIngredient ;
-            :substance substance:1542 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:11066 ;
-    :isSameProductAs :I-4570,
-        :I-6881,
-        :W-6529,
-        :W-6529-1 ;
-    :notice code:6145 ;
-    :packageInsertNumber "7698" .
-
-:F-5213 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Contreverse" ;
-    :federalAdmissionNumber "F-5213" ;
-    :foreignAdmissionNumber "8200124" ;
-    :hasComponentPortion [ :hasGrammPerLitre 357.0 ;
-            :hasPercentage 33.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1753 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:11117 ;
-    :isSameProductAs :W-3072,
-        :W-3072-1 ;
-    :notice code:6145 ;
-    :packageInsertNumber "4813" .
-
-:F-5376 a :ChemicalProduct,
-        :Fungicide,
-        :ParallelImport ;
-    schema:name "Caryx" ;
-    :federalAdmissionNumber "F-5376" ;
-    :foreignAdmissionNumber "2090068" ;
-    :hasComponentPortion [ :hasGrammPerLitre 210.0 ;
-            :hasPercentage 19.1 ;
-            :role :ActiveIngredient ;
-            :substance substance:1552 ],
-        [ :hasGrammPerLitre 30.0 ;
-            :hasPercentage 2.7 ;
-            :role :ActiveIngredient ;
-            :substance substance:1301 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:10297 ;
-    :isSameProductAs :D-5375,
-        :D-6555,
-        :D-6799,
-        :D-6975,
-        :W-6815 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8006" .
-
-:F-5389 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Linear" ;
-    :federalAdmissionNumber "F-5389" ;
-    :foreignAdmissionNumber "2140018" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 26.6 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:11846 ;
-    :isSameProductAs :D-2479,
-        :F-6414,
-        :W-3070,
-        :W-3070-1,
-        :W-3070-2 ;
-    :notice code:6145 ;
-    :packageInsertNumber "4499" .
-
-:F-6126 a :ChemicalProduct,
-        :Fungicide,
-        :ParallelImport ;
-    schema:name "Toprex" ;
-    :federalAdmissionNumber "F-6126" ;
-    :foreignAdmissionNumber "2080147" ;
-    :hasComponentPortion [ :hasGrammPerLitre 125.0 ;
-            :hasPercentage 11.3 ;
-            :role :ActiveIngredient ;
-            :substance substance:284 ],
-        [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 22.5 ;
-            :role :ActiveIngredient ;
-            :substance substance:894 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:11609 ;
-    :isSameProductAs :W-7030,
-        :W-7030-1 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8349" .
-
-:F-6412 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Life Scientific Trinexapac" ;
-    :federalAdmissionNumber "F-6412" ;
-    :foreignAdmissionNumber "2140018" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 26.6 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:11846 ;
-    :isSameProductAs :F-6413,
-        :F-6683,
-        :W-6922 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8234" .
-
-:F-6413 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Regulastar" ;
-    :federalAdmissionNumber "F-6413" ;
-    :foreignAdmissionNumber "2140018" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 26.6 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:11846 ;
-    :isSameProductAs :F-6412,
-        :F-6683,
-        :W-6922 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8234" .
-
-:F-6414 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Linear" ;
-    :federalAdmissionNumber "F-6414" ;
-    :foreignAdmissionNumber "2140018" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 26.6 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:11846 ;
-    :isSameProductAs :D-2479,
-        :F-5389,
-        :W-3070,
-        :W-3070-1,
-        :W-3070-2 ;
-    :notice code:6145 ;
-    :packageInsertNumber "4499" .
-
-:F-6683 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Moxa" ;
-    :federalAdmissionNumber "F-6683" ;
-    :foreignAdmissionNumber "2130247" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 26.6 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:10716 ;
-    :isSameProductAs :F-6412,
-        :F-6413,
-        :W-6922 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8234" .
-
-:F-6684 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Cuadro NT" ;
-    :federalAdmissionNumber "F-6684" ;
-    :foreignAdmissionNumber "2170354" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 24.7 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:10635 ;
-    :isSameProductAs :W-7177 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8545" .
-
-:F-6735 a :ChemicalProduct,
-        :Fungicide,
-        :Insecticide,
-        :ParallelImport ;
-    schema:name "Armicarb" ;
-    :federalAdmissionNumber "F-6735" ;
-    :foreignAdmissionNumber "2110059" ;
-    :hasComponentPortion [ :hasPercentage 85.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1532 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:10340 ;
-    :isSameProductAs :F-6736,
-        :F-6737,
-        :W-6432,
-        :W-6432-1,
-        :W-6432-3,
-        :W-6432-4,
-        :W-6432-5 ;
-    :notice code:6145 ;
-    :packageInsertNumber "7511" .
-
-:F-6736 a :ChemicalProduct,
-        :Fungicide,
-        :Insecticide,
-        :ParallelImport ;
-    schema:name "APC-09CD" ;
-    :federalAdmissionNumber "F-6736" ;
-    :foreignAdmissionNumber "2110059" ;
-    :hasComponentPortion [ :hasPercentage 85.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1532 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:10340 ;
-    :isSameProductAs :F-6735,
-        :F-6737,
-        :W-6432,
-        :W-6432-1,
-        :W-6432-3,
-        :W-6432-4,
-        :W-6432-5 ;
-    :notice code:6145 ;
-    :packageInsertNumber "7511" .
-
-:F-6737 a :ChemicalProduct,
-        :Fungicide,
-        :Insecticide,
-        :ParallelImport ;
-    schema:name "Armicarb jardin" ;
-    :federalAdmissionNumber "F-6737" ;
-    :foreignAdmissionNumber "2110196" ;
-    :hasComponentPortion [ :hasPercentage 85.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1532 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:10340 ;
-    :isSameProductAs :F-6735,
-        :F-6736,
-        :W-6432,
-        :W-6432-1,
-        :W-6432-3,
-        :W-6432-4,
-        :W-6432-5 ;
-    :notice code:6145 ;
-    :packageInsertNumber "7511" .
-
-:F-7043 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Trimaxx" ;
-    :exhaustionDeadline "2027-02-28"^^xsd:date ;
-    :federalAdmissionNumber "F-7043" ;
-    :foreignAdmissionNumber "2140082" ;
-    :hasComponentPortion [ :hasGrammPerLitre 175.0 ;
-            :hasPercentage 17.5 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:11833 ;
-    :isSameProductAs :D-6797,
-        :D-6798,
-        :D-7337,
-        :I-7042,
-        :W-6832,
-        :W-6832-1 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8009" ;
-    :soldoutDeadline "2026-02-28"^^xsd:date .
-
-:F-7416 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Rhodofix" ;
-    :federalAdmissionNumber "F-7416" ;
-    :foreignAdmissionNumber "7400755" ;
-    :hasComponentPortion [ :hasPercentage 1.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:3 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
-    :hasPermissionHolder company:11833 ;
-    :isSameProductAs :W-3003 ;
-    :notice code:6145 ;
-    :packageInsertNumber "5862" .
-
-:I-3209 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Ethrel" ;
-    :exhaustionDeadline "2026-06-30"^^xsd:date ;
-    :federalAdmissionNumber "I-3209" ;
-    :foreignAdmissionNumber "6437" ;
-    :hasComponentPortion [ :hasGrammPerLitre 480.0 ;
-            :hasPercentage 39.1 ;
-            :role :ActiveIngredient ;
-            :substance substance:162 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
-    :hasPermissionHolder company:10618 ;
-    :isSameProductAs :F-3855,
-        :F-3861,
-        :W-3060 ;
-    :notice code:6145 ;
-    :packageInsertNumber "5166" ;
-    :soldoutDeadline "2025-06-30"^^xsd:date .
-
-:I-4570 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Maxcel" ;
-    :federalAdmissionNumber "I-4570" ;
-    :foreignAdmissionNumber "006324" ;
-    :hasComponentPortion [ :hasGrammPerLitre 20.0 ;
-            :hasPercentage 1.91 ;
-            :role :ActiveIngredient ;
-            :substance substance:1542 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
-    :hasPermissionHolder company:11044 ;
-    :isSameProductAs :F-4901,
-        :I-6881,
-        :W-6529,
-        :W-6529-1 ;
-    :notice code:6145 ;
-    :packageInsertNumber "7698" .
-
-:I-5565 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Dazide enhance" ;
-    :federalAdmissionNumber "I-5565" ;
-    :foreignAdmissionNumber "012455" ;
-    :hasComponentPortion [ :hasPercentage 85.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:119 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
-    :hasPermissionHolder company:11009 ;
-    :isSameProductAs :W-3002 ;
-    :notice code:6145 ;
-    :packageInsertNumber "5139" .
-
-:I-6469 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Bonzi" ;
-    :federalAdmissionNumber "I-6469" ;
-    :foreignAdmissionNumber "016305" ;
-    :hasComponentPortion [ :hasGrammPerLitre 4.0 ;
-            :hasPercentage 0.39 ;
-            :role :ActiveIngredient ;
-            :substance substance:284 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
-    :hasPermissionHolder company:7182 ;
-    :isSameProductAs :W-3049 ;
-    :notice code:6145 ;
-    :packageInsertNumber "5142" .
-
-:I-6478 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Dirager SL " ;
-    :federalAdmissionNumber "I-6478" ;
-    :foreignAdmissionNumber "16338" ;
-    :hasComponentPortion [ :hasGrammPerLitre 37.0 ;
-            :hasPercentage 3.31 ;
-            :role :ActiveIngredient ;
-            :substance substance:3 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
-    :hasPermissionHolder company:11706 ;
-    :isSameProductAs :W-3080 ;
-    :notice code:6145 ;
-    :packageInsertNumber "5158" .
-
-:I-6881 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "MaxCel 2SL" ;
-    :federalAdmissionNumber "I-6881" ;
-    :foreignAdmissionNumber "15839" ;
-    :hasComponentPortion [ :hasGrammPerLitre 20.0 ;
-            :hasPercentage 1.91 ;
-            :role :ActiveIngredient ;
-            :substance substance:1542 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
-    :hasPermissionHolder company:11807 ;
-    :isSameProductAs :F-4901,
-        :I-4570,
-        :W-6529,
-        :W-6529-1 ;
-    :notice code:6145 ;
-    :packageInsertNumber "7698" .
-
-:I-7042 a :ChemicalProduct,
-        :ParallelImport ;
-    schema:name "Trimaxx" ;
-    :exhaustionDeadline "2027-02-28"^^xsd:date ;
-    :federalAdmissionNumber "I-7042" ;
-    :foreignAdmissionNumber "16191" ;
-    :hasComponentPortion [ :hasGrammPerLitre 175.0 ;
-            :hasPercentage 17.5 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
-    :hasPermissionHolder company:11210 ;
-    :isSameProductAs :D-6797,
-        :D-6798,
-        :D-7337,
-        :F-7043,
-        :W-6832,
-        :W-6832-1 ;
-    :notice code:6145 ;
-    :packageInsertNumber "8009" ;
-    :soldoutDeadline "2026-02-28"^^xsd:date .
-
-:W-3002 a :ChemicalProduct,
-        :Product ;
-    schema:name "Alar" ;
-    :federalAdmissionNumber "W-3002" ;
-    :hasComponentPortion [ :hasPercentage 85.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:119 ] ;
-    :hasPermissionHolder zefix:393743 ;
-    :isSameProductAs :I-5565 ;
-    :notice code:11473,
-        code:11880,
-        code:6145 .
-
-:W-3003 a :ChemicalProduct,
-        :Product ;
-    schema:name "Rhodofix" ;
-    :federalAdmissionNumber "W-3003" ;
-    :hasComponentPortion [ :hasPercentage 1.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:3 ] ;
-    :hasPermissionHolder zefix:393743 ;
-    :isSameProductAs :F-7416 ;
-    :notice code:11448,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:8067 .
-
-:W-3004 a :ChemicalProduct,
-        :Product ;
-    schema:name "Dirigol - N" ;
-    :federalAdmissionNumber "W-3004" ;
-    :hasComponentPortion [ :hasPercentage 50.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:813 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1710 ] ;
-    :hasPermissionHolder zefix:267983 ;
-    :isSameProductAs :W-3004-1 ;
-    :notice code:11473,
-        code:11875,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7970,
-        code:7972,
-        code:7974,
-        code:7976,
-        code:8065,
-        code:8067,
-        code:8068 .
-
-:W-3004-1 a :ChemicalProduct,
-        :Product ;
-    schema:name "Phytonic" ;
-    :federalAdmissionNumber "W-3004-1" ;
-    :hasComponentPortion [ :hasPercentage 50.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:813 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1710 ] ;
-    :hasPermissionHolder zefix:106909 ;
-    :isSameProductAs :W-3004 ;
-    :notice code:11473,
-        code:11875,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7970,
-        code:7972,
-        code:7974,
-        code:7976,
-        code:8065,
-        code:8067,
-        code:8068 .
-
-:W-3028 a :ChemicalProduct,
-        :Product ;
-    schema:name "Gibberellin A3" ;
-    :federalAdmissionNumber "W-3028" ;
-    :hasComponentPortion [ :hasPercentage 10.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:2012 ] ;
-    :hasPermissionHolder zefix:142062 ;
-    :notice code:11473,
-        code:11880,
-        code:6145 .
-
-:W-3040 a :ChemicalProduct,
-        :Product ;
-    schema:name "CCC-Stabilan LG " ;
-    :federalAdmissionNumber "W-3040" ;
-    :hasComponentPortion [ :hasGrammPerLitre 310.0 ;
-            :hasPercentage 28.9 ;
-            :role :ActiveIngredient ;
-            :substance substance:1753 ] ;
-    :hasPermissionHolder zefix:106909 ;
-    :notice code:11443,
-        code:11473,
-        code:11880,
-        code:12045,
-        code:6145,
-        code:7950,
-        code:7988,
-        code:8065,
-        code:8067 .
-
-:W-3049 a :ChemicalProduct,
-        :Product ;
-    schema:name "Bonzi " ;
-    :federalAdmissionNumber "W-3049" ;
-    :hasComponentPortion [ :hasGrammPerLitre 4.0 ;
-            :hasPercentage 0.39 ;
-            :role :ActiveIngredient ;
-            :substance substance:284 ] ;
-    :hasPermissionHolder zefix:393743 ;
-    :isSameProductAs :I-6469 ;
-    :notice code:11458,
-        code:11469,
-        code:11473,
-        code:11875,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:8068,
-        code:8069 .
-
-:W-3060 a :ChemicalProduct,
-        :Product ;
-    schema:name "Etephon Médol" ;
-    :exhaustionDeadline "2026-06-30"^^xsd:date ;
-    :federalAdmissionNumber "W-3060" ;
-    :hasComponentPortion [ :hasGrammPerLitre 480.0 ;
-            :hasPercentage 39.1 ;
-            :role :ActiveIngredient ;
-            :substance substance:162 ] ;
-    :hasPermissionHolder zefix:219348 ;
-    :isSameProductAs :F-3855,
-        :F-3861,
-        :I-3209 ;
-    :notice code:11443,
-        code:11447,
-        code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7976,
-        code:7986,
-        code:8065,
-        code:8067,
-        code:8069 ;
-    :soldoutDeadline "2025-06-30"^^xsd:date .
-
-:W-3064 a :ChemicalProduct,
-        :Product ;
-    schema:name "Ethefon S" ;
-    :exhaustionDeadline "2026-12-31"^^xsd:date ;
-    :federalAdmissionNumber "W-3064" ;
-    :hasComponentPortion [ :hasGrammPerLitre 480.0 ;
-            :hasPercentage 40.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:162 ] ;
-    :hasPermissionHolder zefix:1118792 ;
-    :isSameProductAs :W-3064-1,
-        :W-3064-2 ;
-    :notice code:11447,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7977,
-        code:7988,
-        code:8065,
-        code:8067 ;
-    :soldoutDeadline "2025-12-31"^^xsd:date .
-
-:W-3064-1 a :ChemicalProduct,
-        :Product ;
-    schema:name "Dartilon" ;
-    :exhaustionDeadline "2026-12-31"^^xsd:date ;
-    :federalAdmissionNumber "W-3064-1" ;
-    :hasComponentPortion [ :hasGrammPerLitre 480.0 ;
-            :hasPercentage 40.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:162 ] ;
-    :hasPermissionHolder zefix:267983 ;
-    :isSameProductAs :W-3064,
-        :W-3064-2 ;
-    :notice code:11447,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7977,
-        code:7988,
-        code:8065,
-        code:8067 ;
-    :soldoutDeadline "2025-12-31"^^xsd:date .
-
-:W-3064-2 a :ChemicalProduct,
-        :Product ;
-    schema:name "Ethephon LG" ;
-    :exhaustionDeadline "2026-12-31"^^xsd:date ;
-    :federalAdmissionNumber "W-3064-2" ;
-    :hasComponentPortion [ :hasGrammPerLitre 480.0 ;
-            :hasPercentage 40.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:162 ] ;
-    :hasPermissionHolder zefix:106909 ;
-    :isSameProductAs :W-3064,
-        :W-3064-1 ;
-    :notice code:11447,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7977,
-        code:7988,
-        code:8065,
-        code:8067 ;
-    :soldoutDeadline "2025-12-31"^^xsd:date .
-
-:W-3070 a :ChemicalProduct,
-        :Product ;
-    schema:name "Moddus" ;
-    :federalAdmissionNumber "W-3070" ;
-    :hasComponentPortion [ :role :AdditiveToDeclare ;
-            :substance substance:1698 ],
-        [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 26.6 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasPermissionHolder zefix:393743 ;
-    :isSameProductAs :D-2479,
-        :F-5389,
-        :F-6414,
-        :W-3070-1,
-        :W-3070-2 ;
-    :notice code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7958,
-        code:7976,
-        code:7977,
-        code:8062,
-        code:8067,
-        code:8069 .
-
-:W-3070-1 a :ChemicalProduct,
-        :Product ;
-    schema:name "Moddus" ;
-    :federalAdmissionNumber "W-3070-1" ;
-    :hasComponentPortion [ :role :AdditiveToDeclare ;
-            :substance substance:1698 ],
-        [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 26.6 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasPermissionHolder zefix:106909 ;
-    :isSameProductAs :D-2479,
-        :F-5389,
-        :F-6414,
-        :W-3070,
-        :W-3070-2 ;
-    :notice code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7958,
-        code:7976,
-        code:7977,
-        code:8062,
-        code:8067,
-        code:8069 .
-
-:W-3070-2 a :ChemicalProduct,
-        :Product ;
-    schema:name "Metro class" ;
-    :federalAdmissionNumber "W-3070-2" ;
-    :hasComponentPortion [ :role :AdditiveToDeclare ;
-            :substance substance:1698 ],
-        [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 26.6 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasPermissionHolder zefix:336959 ;
-    :isSameProductAs :D-2479,
-        :F-5389,
-        :F-6414,
-        :W-3070,
-        :W-3070-1 ;
-    :notice code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7958,
-        code:7976,
-        code:7977,
-        code:8062,
-        code:8067,
-        code:8069 .
-
-:W-3072 a :ChemicalProduct,
-        :Product ;
-    schema:name "Stabilan plus " ;
-    :federalAdmissionNumber "W-3072" ;
-    :hasComponentPortion [ :hasGrammPerLitre 357.0 ;
-            :hasPercentage 33.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1753 ] ;
-    :hasPermissionHolder zefix:106909 ;
-    :isSameProductAs :F-5213,
-        :W-3072-1 ;
-    :notice code:11443,
-        code:11473,
-        code:11880,
-        code:12045,
-        code:6145,
-        code:7950,
-        code:7988,
-        code:8065,
-        code:8067 .
-
-:W-3072-1 a :ChemicalProduct,
-        :Product ;
-    schema:name "Stabilan S" ;
-    :federalAdmissionNumber "W-3072-1" ;
-    :hasComponentPortion [ :hasGrammPerLitre 357.0 ;
-            :hasPercentage 33.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1753 ] ;
-    :hasPermissionHolder zefix:267983 ;
-    :isSameProductAs :F-5213,
-        :W-3072 ;
-    :notice code:11443,
-        code:11473,
-        code:11880,
-        code:12045,
-        code:6145,
-        code:7950,
-        code:7988,
-        code:8065,
-        code:8067 .
-
-:W-3073 a :ChemicalProduct,
-        :Product ;
-    schema:name "CCC Extra" ;
-    :federalAdmissionNumber "W-3073" ;
-    :hasComponentPortion [ :hasGrammPerLitre 357.0 ;
-            :hasPercentage 33.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1753 ] ;
-    :hasPermissionHolder zefix:730369 ;
-    :notice code:11443,
-        code:11473,
-        code:11880,
-        code:12045,
-        code:6145,
-        code:7950,
-        code:7988,
-        code:8065,
-        code:8067 .
-
-:W-3080 a :ChemicalProduct,
-        :Product ;
-    schema:name "Dirager S" ;
-    :federalAdmissionNumber "W-3080" ;
-    :hasComponentPortion [ :hasGrammPerLitre 37.0 ;
-            :hasPercentage 3.31 ;
-            :role :ActiveIngredient ;
-            :substance substance:3 ] ;
-    :hasPermissionHolder zefix:730369 ;
-    :isSameProductAs :I-6478 ;
-    :notice code:11473,
-        code:11875,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7988,
-        code:8068 .
-
-:W-3083 a :ChemicalProduct,
-        :Product ;
-    schema:name "Dazide Enhance" ;
-    :federalAdmissionNumber "W-3083" ;
-    :hasComponentPortion [ :hasPercentage 85.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:119 ] ;
-    :hasPermissionHolder zefix:339512 ;
-    :notice code:11473,
-        code:11880,
-        code:6145 .
-
-:W-3085 a :ChemicalProduct,
-        :Product ;
-    schema:name "Ethephon" ;
-    :exhaustionDeadline "2026-10-31"^^xsd:date ;
-    :federalAdmissionNumber "W-3085" ;
-    :hasComponentPortion [ :hasGrammPerLitre 480.0 ;
-            :hasPercentage 37.7 ;
-            :role :ActiveIngredient ;
-            :substance substance:162 ] ;
-    :hasPermissionHolder zefix:1634453 ;
-    :notice code:11443,
-        code:11447,
-        code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7972,
-        code:7977,
-        code:8065,
-        code:8067,
-        code:8069 ;
-    :soldoutDeadline "2025-10-31"^^xsd:date .
-
-:W-4549 a :ChemicalProduct,
-        :Product ;
-    schema:name "Tervanol F " ;
-    :federalAdmissionNumber "W-4549" ;
-    :hasComponentPortion [ :hasPercentage 1.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:920 ] ;
-    :hasPermissionHolder zefix:730369 ;
-    :notice code:11469,
-        code:11473,
-        code:11880,
-        code:13876,
-        code:6145,
-        code:7988 .
-
-:W-5365 a :ChemicalProduct,
-        :Fungicide,
-        :Product ;
-    schema:name "Sirocco" ;
-    :federalAdmissionNumber "W-5365" ;
-    :hasComponentPortion [ :role :AdditiveToDeclare ;
-            :substance substance:1832 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1871 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1698 ],
-        [ :hasGrammPerLitre 60.0 ;
-            :hasPercentage 6.7 ;
-            :role :ActiveIngredient ;
-            :substance substance:1301 ] ;
-    :hasPermissionHolder zefix:730369 ;
-    :isSameProductAs :D-4561 ;
-    :notice code:11429,
-        code:11445,
-        code:11473,
-        code:11875,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7958,
-        code:7973,
-        code:7974,
-        code:7977,
-        code:7987,
-        code:8062,
-        code:8065,
-        code:8067,
-        code:8068,
-        code:8069 .
-
-:W-5468 a :ChemicalProduct,
-        :Fungicide,
-        :Product ;
-    schema:name "Horizont" ;
-    :federalAdmissionNumber "W-5468" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 25.8 ;
-            :role :ActiveIngredient ;
-            :substance substance:893 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1711 ] ;
-    :hasPermissionHolder zefix:336959 ;
-    :isSameProductAs :D-4955,
-        :D-7275,
-        :F-2628,
-        :F-2629,
-        :F-4807 ;
-    :notice code:11473,
-        code:11875,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7970,
-        code:7974,
-        code:7987,
-        code:8065,
-        code:8067,
-        code:8068,
-        code:8069 .
-
-:W-5989 a :ChemicalProduct,
-        :Product ;
-    schema:name "Viviful" ;
-    :federalAdmissionNumber "W-5989" ;
-    :hasComponentPortion [ :hasPercentage 10.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1363 ] ;
-    :hasPermissionHolder zefix:267983 ;
-    :notice code:11473,
-        code:11880,
-        code:6145 .
-
-:W-6247 a :ChemicalProduct,
-        :Product ;
-    schema:name "Primo Maxx" ;
-    :exhaustionDeadline "2027-01-31"^^xsd:date ;
-    :federalAdmissionNumber "W-6247" ;
-    :hasComponentPortion [ :hasGrammPerLitre 121.0 ;
-            :hasPercentage 11.3 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasPermissionHolder zefix:393743 ;
-    :notice code:11473,
-        code:11880,
-        code:6145,
-        code:7988 ;
-    :soldoutDeadline "2026-01-31"^^xsd:date .
-
-:W-6432 a :ChemicalProduct,
-        :Fungicide,
-        :Insecticide,
-        :Product ;
-    schema:name "Armicarb" ;
-    :federalAdmissionNumber "W-6432" ;
-    :hasComponentPortion [ :hasPercentage 85.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1532 ] ;
-    :hasPermissionHolder zefix:267983 ;
-    :isSameProductAs :F-6735,
-        :F-6736,
-        :F-6737,
-        :W-6432-1,
-        :W-6432-3,
-        :W-6432-4,
-        :W-6432-5 ;
-    :notice code:11473,
-        code:11880,
-        code:13876,
-        code:6145 .
-
-:W-6432-1 a :ChemicalProduct,
-        :Fungicide,
-        :Insecticide,
-        :Product ;
-    schema:name "Capito Armicarb" ;
-    :federalAdmissionNumber "W-6432-1" ;
-    :hasComponentPortion [ :hasPercentage 85.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1532 ] ;
-    :hasPermissionHolder zefix:267983 ;
-    :isSameProductAs :F-6735,
-        :F-6736,
-        :F-6737,
-        :W-6432,
-        :W-6432-3,
-        :W-6432-4,
-        :W-6432-5 ;
-    :notice code:11473,
-        code:11880,
-        code:13876,
-        code:6145 .
-
-:W-6432-3 a :ChemicalProduct,
-        :Fungicide,
-        :Insecticide,
-        :Product ;
-    schema:name "BIOHOP FungiCARB" ;
-    :federalAdmissionNumber "W-6432-3" ;
-    :hasComponentPortion [ :hasPercentage 85.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1532 ] ;
-    :hasPermissionHolder zefix:1190792 ;
-    :isSameProductAs :F-6735,
-        :F-6736,
-        :F-6737,
-        :W-6432,
-        :W-6432-1,
-        :W-6432-4,
-        :W-6432-5 ;
-    :notice code:11473,
-        code:11880,
-        code:13876,
-        code:6145 .
-
-:W-6432-4 a :ChemicalProduct,
-        :Fungicide,
-        :Insecticide,
-        :Product ;
-    schema:name "Rondo Natura" ;
-    :federalAdmissionNumber "W-6432-4" ;
-    :hasComponentPortion [ :hasPercentage 85.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1532 ] ;
-    :hasPermissionHolder zefix:1335753 ;
-    :isSameProductAs :F-6735,
-        :F-6736,
-        :F-6737,
-        :W-6432,
-        :W-6432-1,
-        :W-6432-3,
-        :W-6432-5 ;
-    :notice code:11473,
-        code:11880,
-        code:13876,
-        code:6145 .
-
-:W-6432-5 a :ChemicalProduct,
-        :Fungicide,
-        :Insecticide,
-        :Product ;
-    schema:name "Belrose Pilz-Stopp" ;
-    :federalAdmissionNumber "W-6432-5" ;
-    :hasComponentPortion [ :hasPercentage 85.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1532 ] ;
-    :hasPermissionHolder zefix:1335753 ;
-    :isSameProductAs :F-6735,
-        :F-6736,
-        :F-6737,
-        :W-6432,
-        :W-6432-1,
-        :W-6432-3,
-        :W-6432-4 ;
-    :notice code:11473,
-        code:11880,
-        code:13876,
-        code:6145 .
-
-:W-6472 a :ChemicalProduct,
-        :Fungicide,
-        :Product ;
-    schema:name "FZB 24 flüssig" ;
-    :federalAdmissionNumber "W-6472" ;
-    :hasComponentPortion [ :role :ActiveIngredient ;
-            :substance substance:1939 ] ;
-    :hasPermissionHolder zefix:336959 ;
-    :notice code:11473,
-        code:11626,
-        code:11627,
-        code:11768,
-        code:11880,
-        code:13344,
-        code:6145 .
-
-:W-6515 a :ChemicalProduct,
-        :Product ;
-    schema:name "Medax Top" ;
-    :federalAdmissionNumber "W-6515" ;
-    :hasComponentPortion [ :hasGrammPerLitre 300.0 ;
-            :hasPercentage 26.5 ;
-            :role :ActiveIngredient ;
-            :substance substance:1552 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1731 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1814 ],
-        [ :hasGrammPerLitre 50.0 ;
-            :hasPercentage 4.4 ;
-            :role :ActiveIngredient ;
-            :substance substance:1363 ] ;
-    :hasPermissionHolder zefix:943835 ;
-    :isSameProductAs :W-6515-1 ;
-    :notice code:11448,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7970,
-        code:7988,
-        code:8067 .
-
-:W-6515-1 a :ChemicalProduct,
-        :Product ;
-    schema:name "Medax" ;
-    :federalAdmissionNumber "W-6515-1" ;
-    :hasComponentPortion [ :hasGrammPerLitre 300.0 ;
-            :hasPercentage 26.5 ;
-            :role :ActiveIngredient ;
-            :substance substance:1552 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1731 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1814 ],
-        [ :hasGrammPerLitre 50.0 ;
-            :hasPercentage 4.4 ;
-            :role :ActiveIngredient ;
-            :substance substance:1363 ] ;
-    :hasPermissionHolder zefix:267983 ;
-    :isSameProductAs :W-6515 ;
-    :notice code:11448,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7970,
-        code:7988,
-        code:8067 .
-
-:W-6529 a :ChemicalProduct,
-        :Product ;
-    schema:name "MaxCel" ;
-    :federalAdmissionNumber "W-6529" ;
-    :hasComponentPortion [ :hasGrammPerLitre 20.0 ;
-            :hasPercentage 1.91 ;
-            :role :ActiveIngredient ;
-            :substance substance:1542 ] ;
-    :hasPermissionHolder zefix:512743 ;
-    :isSameProductAs :F-4901,
-        :I-4570,
-        :I-6881,
-        :W-6529-1 ;
-    :notice code:11469,
-        code:11473,
-        code:11880,
-        code:6145 .
-
-:W-6529-1 a :ChemicalProduct,
-        :Product ;
-    schema:name "Maxcel " ;
-    :federalAdmissionNumber "W-6529-1" ;
-    :hasComponentPortion [ :hasGrammPerLitre 20.0 ;
-            :hasPercentage 1.91 ;
-            :role :ActiveIngredient ;
-            :substance substance:1542 ] ;
-    :hasPermissionHolder zefix:730369 ;
-    :isSameProductAs :F-4901,
-        :I-4570,
-        :I-6881,
-        :W-6529 ;
-    :notice code:11469,
-        code:11473,
-        code:11880,
-        code:6145 .
-
-:W-6797 a :ChemicalProduct,
-        :Product ;
-    schema:name "Fazor" ;
-    :federalAdmissionNumber "W-6797" ;
-    :hasComponentPortion [ :hasPercentage 60.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:961 ] ;
-    :hasPermissionHolder zefix:106909 ;
-    :notice code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:8069 .
-
-:W-6815 a :ChemicalProduct,
-        :Fungicide,
-        :Product ;
-    schema:name "Caryx" ;
-    :federalAdmissionNumber "W-6815" ;
-    :hasComponentPortion [ :role :AdditiveToDeclare ;
-            :substance substance:1683 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1899 ],
-        [ :hasGrammPerLitre 210.0 ;
-            :hasPercentage 19.1 ;
-            :role :ActiveIngredient ;
-            :substance substance:1552 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1801 ],
-        [ :hasGrammPerLitre 30.0 ;
-            :hasPercentage 2.7 ;
-            :role :ActiveIngredient ;
-            :substance substance:1301 ] ;
-    :hasPermissionHolder zefix:943835 ;
-    :isSameProductAs :D-5375,
-        :D-6555,
-        :D-6799,
-        :D-6975,
-        :F-5376 ;
-    :notice code:11429,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7970,
-        code:7974,
-        code:7976,
-        code:7987,
-        code:8065,
-        code:8067,
-        code:8069 .
-
-:W-6822 a :ChemicalProduct,
-        :Fungicide,
-        :Product ;
-    schema:name "Magnello " ;
-    :federalAdmissionNumber "W-6822" ;
-    :hasComponentPortion [ :hasGrammPerLitre 100.0 ;
-            :hasPercentage 9.9 ;
-            :role :ActiveIngredient ;
-            :substance substance:894 ],
-        [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 24.8 ;
-            :role :ActiveIngredient ;
-            :substance substance:893 ] ;
-    :hasPermissionHolder zefix:393743 ;
-    :isSameProductAs :D-5618,
-        :D-6592 ;
-    :notice code:11448,
-        code:11473,
-        code:11875,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7987,
-        code:8067,
-        code:8068,
-        code:8069 .
-
-:W-6832 a :ChemicalProduct,
-        :Product ;
-    schema:name "Trimaxx" ;
-    :exhaustionDeadline "2027-02-28"^^xsd:date ;
-    :federalAdmissionNumber "W-6832" ;
-    :hasComponentPortion [ :hasGrammPerLitre 175.0 ;
-            :hasPercentage 17.5 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasPermissionHolder zefix:932153 ;
-    :isSameProductAs :D-6797,
-        :D-6798,
-        :D-7337,
-        :F-7043,
-        :I-7042,
-        :W-6832-1 ;
-    :notice code:11429,
-        code:11448,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7973,
-        code:7988,
-        code:8067 ;
-    :soldoutDeadline "2026-02-28"^^xsd:date .
-
-:W-6832-1 a :ChemicalProduct,
-        :Product ;
-    schema:name "Trinexx Top" ;
-    :exhaustionDeadline "2027-02-28"^^xsd:date ;
-    :federalAdmissionNumber "W-6832-1" ;
-    :hasComponentPortion [ :hasGrammPerLitre 175.0 ;
-            :hasPercentage 17.5 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasPermissionHolder zefix:1118792 ;
-    :isSameProductAs :D-6797,
-        :D-6798,
-        :D-7337,
-        :F-7043,
-        :I-7042,
-        :W-6832 ;
-    :notice code:11429,
-        code:11448,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7973,
-        code:7988,
-        code:8067 ;
-    :soldoutDeadline "2026-02-28"^^xsd:date .
-
-:W-6834 a :ChemicalProduct,
-        :Fungicide,
-        :Product ;
-    schema:name "Tilmor" ;
-    :federalAdmissionNumber "W-6834" ;
-    :hasComponentPortion [ :hasGrammPerLitre 80.0 ;
-            :hasPercentage 8.15 ;
-            :role :ActiveIngredient ;
-            :substance substance:1476 ],
-        [ :hasGrammPerLitre 160.0 ;
-            :hasPercentage 16.3 ;
-            :role :ActiveIngredient ;
-            :substance substance:893 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1711 ] ;
-    :hasPermissionHolder zefix:336959 ;
-    :isSameProductAs :D-6215,
-        :D-7338 ;
-    :notice code:11429,
-        code:11448,
-        code:11473,
-        code:11875,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7973,
-        code:7976,
-        code:7977,
-        code:7987,
-        code:8067,
-        code:8068,
-        code:8069 .
-
-:W-6863 a :ChemicalProduct,
-        :Fungicide,
-        :Product ;
-    schema:name "Caryx" ;
-    :federalAdmissionNumber "W-6863" ;
-    :hasComponentPortion [ :role :AdditiveToDeclare ;
-            :substance substance:1801 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1899 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1683 ],
-        [ :hasGrammPerLitre 30.0 ;
-            :hasPercentage 2.7 ;
-            :role :ActiveIngredient ;
-            :substance substance:1301 ],
-        [ :hasGrammPerLitre 210.0 ;
-            :hasPercentage 19.1 ;
-            :role :ActiveIngredient ;
-            :substance substance:1552 ] ;
-    :hasPermissionHolder zefix:106909 ;
-    :notice code:11429,
-        code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7970,
-        code:7974,
-        code:7976,
-        code:8065,
-        code:8067,
-        code:8069 .
-
-:W-6874 a :ChemicalProduct,
-        :Product ;
-    schema:name "Camposan Extra" ;
-    :exhaustionDeadline "2026-10-15"^^xsd:date ;
-    :federalAdmissionNumber "W-6874" ;
-    :hasComponentPortion [ :hasGrammPerLitre 660.0 ;
-            :hasPercentage 52.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:162 ] ;
-    :hasPermissionHolder company:11036 ;
-    :isSameProductAs :W-6874-1 ;
-    :notice code:11443,
-        code:11447,
-        code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7972,
-        code:7986,
-        code:8065,
-        code:8067,
-        code:8069 ;
-    :soldoutDeadline "2025-10-15"^^xsd:date .
-
-:W-6874-1 a :ChemicalProduct,
-        :Product ;
-    schema:name "Elotin" ;
-    :exhaustionDeadline "2026-10-15"^^xsd:date ;
-    :federalAdmissionNumber "W-6874-1" ;
-    :hasComponentPortion [ :hasGrammPerLitre 660.0 ;
-            :hasPercentage 52.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:162 ] ;
-    :hasPermissionHolder zefix:730369 ;
-    :isSameProductAs :W-6874 ;
-    :notice code:11443,
-        code:11447,
-        code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7972,
-        code:7986,
-        code:8065,
-        code:8067,
-        code:8069 ;
-    :soldoutDeadline "2025-10-15"^^xsd:date .
-
-:W-6903 a :ChemicalProduct,
-        :Product ;
-    schema:name "Rhodofix" ;
-    :exhaustionDeadline "2026-10-15"^^xsd:date ;
-    :federalAdmissionNumber "W-6903" ;
-    :hasComponentPortion [ :hasPercentage 1.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:3 ] ;
-    :hasPermissionHolder company:11036 ;
-    :notice code:11448,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:8067 ;
-    :soldoutDeadline "2025-10-15"^^xsd:date .
-
-:W-6922 a :ChemicalProduct,
-        :Product ;
-    schema:name "Moxa" ;
-    :federalAdmissionNumber "W-6922" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 26.6 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasPermissionHolder zefix:1118792 ;
-    :isSameProductAs :F-6412,
-        :F-6413,
-        :F-6683 ;
-    :notice code:11448,
-        code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7958,
-        code:7976,
-        code:7977,
-        code:7985,
-        code:8062,
-        code:8067,
-        code:8069 .
-
-:W-6933 a :ChemicalProduct,
-        :Product ;
-    schema:name "Itcan SL 270" ;
-    :federalAdmissionNumber "W-6933" ;
-    :hasComponentPortion [ :hasGrammPerLitre 270.0 ;
-            :hasPercentage 22.68 ;
-            :role :ActiveIngredient ;
-            :substance substance:961 ] ;
-    :hasPermissionHolder zefix:190273 ;
-    :isSameProductAs :D-7355,
-        :D-7408 ;
-    :notice code:11469,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7988 .
-
-:W-6962 a :ChemicalProduct,
-        :Product ;
-    schema:name "Trimaxx" ;
-    :federalAdmissionNumber "W-6962" ;
-    :hasComponentPortion [ :hasGrammPerLitre 175.0 ;
-            :hasPercentage 17.5 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasPermissionHolder zefix:243472 ;
-    :notice code:11429,
-        code:11448,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7973,
-        code:7988,
-        code:8067 .
-
-:W-6972 a :ChemicalProduct,
-        :Product ;
-    schema:name "Antak" ;
-    :federalAdmissionNumber "W-6972" ;
-    :hasComponentPortion [ :hasGrammPerLitre 686.0 ;
-            :hasPercentage 79.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1662 ] ;
-    :hasPermissionHolder zefix:190273 ;
-    :notice code:11429,
-        code:11448,
-        code:11457,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:6152,
-        code:7950,
-        code:8067,
-        code:8069 .
-
-:W-6984 a :ChemicalProduct,
-        :Product ;
-    schema:name "Brevis" ;
-    :federalAdmissionNumber "W-6984" ;
-    :hasComponentPortion [ :hasPercentage 15.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:880 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1961 ] ;
-    :hasPermissionHolder zefix:932153 ;
-    :notice code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7970,
-        code:7974,
-        code:8065,
-        code:8067,
-        code:8069 .
-
-:W-6995 a :ChemicalProduct,
-        :Product ;
-    schema:name "Biox-M" ;
-    :federalAdmissionNumber "W-6995" ;
-    :hasComponentPortion [ :hasPercentage 100.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1789 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1903 ] ;
-    :hasPermissionHolder zefix:1410761 ;
-    :notice code:11429,
-        code:11445,
-        code:11457,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:8067,
-        code:8068,
-        code:8069 .
-
-:W-6996 a :ChemicalProduct,
-        :Product ;
-    schema:name "Brevis" ;
-    :federalAdmissionNumber "W-6996" ;
-    :hasComponentPortion [ :hasPercentage 15.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:880 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1961 ] ;
-    :hasPermissionHolder zefix:106909 ;
-    :notice code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7970,
-        code:7974,
-        code:8065,
-        code:8067,
-        code:8069 .
-
-:W-7030 a :ChemicalProduct,
-        :Fungicide,
-        :Product ;
-    schema:name "Toprex" ;
-    :federalAdmissionNumber "W-7030" ;
-    :hasComponentPortion [ :hasGrammPerLitre 125.0 ;
-            :hasPercentage 11.3 ;
-            :role :ActiveIngredient ;
-            :substance substance:284 ],
-        [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 22.5 ;
-            :role :ActiveIngredient ;
-            :substance substance:894 ] ;
-    :hasPermissionHolder zefix:393743 ;
-    :isSameProductAs :F-6126,
-        :W-7030-1 ;
-    :notice code:11473,
-        code:11875,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7987,
-        code:8068,
-        code:8069 .
-
-:W-7030-1 a :ChemicalProduct,
-        :Fungicide,
-        :Product ;
-    schema:name "Corex" ;
-    :federalAdmissionNumber "W-7030-1" ;
-    :hasComponentPortion [ :hasGrammPerLitre 125.0 ;
-            :hasPercentage 11.3 ;
-            :role :ActiveIngredient ;
-            :substance substance:284 ],
-        [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 22.5 ;
-            :role :ActiveIngredient ;
-            :substance substance:894 ] ;
-    :hasPermissionHolder zefix:106909 ;
-    :isSameProductAs :F-6126,
-        :W-7030 ;
-    :notice code:11473,
-        code:11875,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7987,
-        code:8068,
-        code:8069 .
-
-:W-7038 a :ChemicalProduct,
-        :Product ;
-    schema:name "Moddus Start" ;
-    :federalAdmissionNumber "W-7038" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 24.1 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasPermissionHolder zefix:393743 ;
-    :isSameProductAs :D-6821 ;
-    :notice code:11448,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7988,
-        code:8067 .
-
-:W-7044 a :ChemicalProduct,
-        :Product ;
-    schema:name "CCC" ;
-    :federalAdmissionNumber "W-7044" ;
-    :hasComponentPortion [ :hasGrammPerLitre 357.0 ;
-            :hasPercentage 33.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1753 ] ;
-    :hasPermissionHolder zefix:1118792 ;
-    :notice code:11443,
-        code:11473,
-        code:11880,
-        code:12045,
-        code:6145,
-        code:7950,
-        code:7988,
-        code:8065,
-        code:8067 .
-
-:W-7066 a :ChemicalProduct,
-        :Product ;
-    schema:name "Smart Fresh" ;
-    :federalAdmissionNumber "W-7066" ;
-    :hasComponentPortion [ :hasPercentage 3.3 ;
-            :role :ActiveIngredient ;
-            :substance substance:1501 ] ;
-    :hasPermissionHolder zefix:1211870 ;
-    :notice code:11473,
-        code:11880,
-        code:6145 .
-
-:W-7067 a :ChemicalProduct,
-        :Product ;
-    schema:name "SmartFresh ProTabs" ;
-    :federalAdmissionNumber "W-7067" ;
-    :hasComponentPortion [ :hasPercentage 2.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1501 ] ;
-    :hasPermissionHolder zefix:1211870 ;
-    :notice code:11448,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7973,
-        code:8067 .
-
-:W-7075 a :ChemicalProduct,
-        :Product ;
-    schema:name "Cycocel extra" ;
-    :federalAdmissionNumber "W-7075" ;
-    :hasComponentPortion [ :hasGrammPerLitre 357.0 ;
-            :hasPercentage 33.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1753 ] ;
-    :hasPermissionHolder zefix:730369 ;
-    :notice code:11443,
-        code:11473,
-        code:11880,
-        code:12045,
-        code:6145,
-        code:7950,
-        code:7988,
-        code:8065,
-        code:8067 .
-
-:W-7084 a :ChemicalProduct,
-        :Product ;
-    schema:name "RipeLock Tabs 2.0" ;
-    :federalAdmissionNumber "W-7084" ;
-    :hasComponentPortion [ :hasPercentage 2.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1501 ] ;
-    :hasPermissionHolder zefix:1211870 ;
-    :notice code:11448,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7973,
-        code:8067 .
-
-:W-7088 a :ChemicalProduct,
-        :Product ;
-    schema:name "Brevis" ;
-    :federalAdmissionNumber "W-7088" ;
-    :hasComponentPortion [ :role :AdditiveToDeclare ;
-            :substance substance:1961 ],
-        [ :hasPercentage 15.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:880 ] ;
-    :hasPermissionHolder zefix:243472 ;
-    :notice code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7970,
-        code:7974,
-        code:8065,
-        code:8067,
-        code:8069 .
-
-:W-7173 a :ChemicalProduct,
-        :Product ;
-    schema:name "Banarg 4%" ;
-    :federalAdmissionNumber "W-7173" ;
-    :hasComponentPortion [ :hasPercentage 4.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1755 ] ;
-    :hasPermissionHolder zefix:132246 ;
-    :notice code:11442,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:8064 .
-
-:W-7177 a :ChemicalProduct,
-        :Product ;
-    schema:name "CHA 8830" ;
-    :federalAdmissionNumber "W-7177" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 24.7 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasPermissionHolder zefix:267983 ;
-    :isSameProductAs :F-6684 ;
-    :notice code:11429,
-        code:11448,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7988,
-        code:8067 .
-
-:W-7178 a :ChemicalProduct,
-        :Product ;
-    schema:name "Primo Maxx" ;
-    :federalAdmissionNumber "W-7178" ;
-    :hasComponentPortion [ :hasGrammPerLitre 116.0 ;
-            :hasPercentage 11.3 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasPermissionHolder zefix:393743 ;
-    :notice code:11429,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7988,
-        code:8067 .
-
-:W-7194 a :ChemicalProduct,
-        :Product ;
-    schema:name "Milo" ;
-    :federalAdmissionNumber "W-7194" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 25.3 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1838 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1798 ] ;
-    :hasPermissionHolder zefix:730369 ;
-    :notice code:11429,
-        code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7974,
-        code:8065,
-        code:8067,
-        code:8069 .
-
-:W-7307 a :ChemicalProduct,
-        :Fungicide,
-        :Insecticide,
-        :Product ;
-    schema:name "Carbofort" ;
-    :federalAdmissionNumber "W-7307" ;
-    :hasComponentPortion [ :hasPercentage 85.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1532 ] ;
-    :hasPermissionHolder zefix:267983 ;
-    :isSameProductAs :W-7307-1 ;
-    :notice code:11473,
-        code:11880,
-        code:13876,
-        code:6145 .
-
-:W-7307-1 a :ChemicalProduct,
-        :Fungicide,
-        :Insecticide,
-        :Product ;
-    schema:name "GHEKKO" ;
-    :federalAdmissionNumber "W-7307-1" ;
-    :hasComponentPortion [ :hasPercentage 85.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1532 ] ;
-    :hasPermissionHolder zefix:393743 ;
-    :isSameProductAs :W-7307 ;
-    :notice code:11473,
-        code:11880,
-        code:13876,
-        code:6145 .
-
-:W-7309 a :ChemicalProduct,
-        :Product ;
-    schema:name "Geramid Top" ;
-    :federalAdmissionNumber "W-7309" ;
-    :hasComponentPortion [ :hasGrammPerLitre 30.0 ;
-            :hasPercentage 2.67 ;
-            :role :ActiveIngredient ;
-            :substance substance:1106 ] ;
-    :hasPermissionHolder zefix:730369 ;
-    :notice code:11473,
-        code:11880,
-        code:6145 .
-
-:W-7344 a :ChemicalProduct,
-        :Product ;
-    schema:name "Novagib" ;
-    :federalAdmissionNumber "W-7344" ;
-    :hasComponentPortion [ :hasGrammPerLitre 10.0 ;
-            :hasPercentage 0.96 ;
-            :role :ActiveIngredient ;
-            :substance substance:1957 ] ;
-    :hasPermissionHolder zefix:267983 ;
-    :notice code:11473,
-        code:11880,
-        code:6145 .
-
-:W-7377 a :ChemicalProduct,
-        :Product ;
-    schema:name "Dormir" ;
-    :federalAdmissionNumber "W-7377" ;
-    :hasComponentPortion [ :hasGrammPerLitre 994.0 ;
-            :hasPercentage 98.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1877 ] ;
-    :hasPermissionHolder zefix:1241466 .
-
-:W-7385 a :ChemicalProduct,
-        :Product ;
-    schema:name "Prodax" ;
-    :federalAdmissionNumber "W-7385" ;
-    :hasComponentPortion [ :hasPercentage 7.5 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ],
-        [ :hasPercentage 5.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1363 ] ;
-    :hasPermissionHolder zefix:943835 ;
-    :isSameProductAs :D-7263,
-        :D-7390 ;
-    :notice code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:8069 .
-
-:W-7396 a :ChemicalProduct,
-        :Product ;
-    schema:name "Dirager Plus" ;
-    :federalAdmissionNumber "W-7396" ;
-    :hasComponentPortion [ :hasGrammPerLitre 30.2 ;
-            :hasPercentage 2.7 ;
-            :role :ActiveIngredient ;
-            :substance substance:3 ] ;
-    :hasPermissionHolder zefix:730369 ;
-    :notice code:11473,
-        code:11880,
-        code:6145 .
-
-:W-7400 a :ChemicalProduct,
-        :Product ;
-    schema:name "Paket" ;
-    :exhaustionDeadline "2026-10-31"^^xsd:date ;
-    :federalAdmissionNumber "W-7400" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 21.7 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasPermissionHolder zefix:840339 ;
-    :notice code:11429,
-        code:11448,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7988,
-        code:8067 ;
-    :soldoutDeadline "2025-10-31"^^xsd:date .
-
-:W-7405 a :ChemicalProduct,
-        :Product ;
-    schema:name "Fazor" ;
-    :federalAdmissionNumber "W-7405" ;
-    :hasComponentPortion [ :hasPercentage 60.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:961 ] ;
-    :hasPermissionHolder zefix:840339 ;
-    :isSameProductAs :D-7391,
-        :W-7405-1 ;
-    :notice code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:8069 .
-
-:W-7405-1 a :ChemicalProduct,
-        :Product ;
-    schema:name "Germstop" ;
-    :federalAdmissionNumber "W-7405-1" ;
-    :hasComponentPortion [ :hasPercentage 60.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:961 ] ;
-    :hasPermissionHolder zefix:267983 ;
-    :isSameProductAs :D-7391,
-        :W-7405 ;
-    :notice code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:8069 .
-
-:W-7438 a :ChemicalProduct,
-        :Product ;
-    schema:name "Elotin" ;
-    :federalAdmissionNumber "W-7438" ;
-    :hasComponentPortion [ :hasGrammPerLitre 660.0 ;
-            :hasPercentage 52.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:162 ] ;
-    :hasPermissionHolder zefix:730369 ;
-    :isSameProductAs :D-7396,
-        :D-7397 ;
-    :notice code:11443,
-        code:11447,
-        code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7972,
-        code:7986,
-        code:8065,
-        code:8067,
-        code:8069 .
-
-:W-7439 a :ChemicalProduct,
-        :Product ;
-    schema:name "Stabilan 460 SL" ;
-    :federalAdmissionNumber "W-7439" ;
-    :hasComponentPortion [ :hasGrammPerLitre 357.0 ;
-            :hasPercentage 33.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1753 ] ;
-    :hasPermissionHolder zefix:730369 ;
-    :notice code:11443,
-        code:11473,
-        code:11880,
-        code:12045,
-        code:6145,
-        code:7950,
-        code:7988,
-        code:8065,
-        code:8067 .
-
-:W-7463 a :ChemicalProduct,
-        :Product ;
-    schema:name "Terpal" ;
-    :federalAdmissionNumber "W-7463" ;
-    :hasComponentPortion [ :hasGrammPerLitre 305.0 ;
-            :hasPercentage 28.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1552 ],
-        [ :hasGrammPerLitre 155.0 ;
-            :hasPercentage 14.2 ;
-            :role :ActiveIngredient ;
-            :substance substance:162 ] ;
-    :hasPermissionHolder zefix:943835 ;
-    :notice code:11443,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7970,
-        code:7977,
-        code:7988,
-        code:8065,
-        code:8067 .
-
-:W-7470 a :ChemicalProduct,
-        :Product ;
-    schema:name "Falgro Tabs" ;
-    :federalAdmissionNumber "W-7470" ;
-    :hasComponentPortion [ :hasPercentage 18.7 ;
-            :role :ActiveIngredient ;
-            :substance substance:2012 ] ;
-    :hasPermissionHolder zefix:267983 ;
-    :notice code:11473,
-        code:11880,
-        code:6145 .
-
-:W-7481 a :ChemicalProduct,
-        :Fungicide,
-        :Insecticide,
-        :Product ;
-    schema:name "Armicarb SG" ;
-    :federalAdmissionNumber "W-7481" ;
-    :hasComponentPortion [ :hasPercentage 85.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1532 ] ;
-    :hasPermissionHolder zefix:267983 ;
-    :notice code:11473,
-        code:11880,
-        code:6145 .
-
-:W-7501 a :ChemicalProduct,
-        :Product ;
-    schema:name "Next" ;
-    :federalAdmissionNumber "W-7501" ;
-    :hasComponentPortion [ :role :AdditiveToDeclare ;
-            :substance substance:1698 ],
-        [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 26.6 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ] ;
-    :hasPermissionHolder zefix:973510 ;
-    :notice code:11458,
-        code:11469,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7958,
-        code:7977,
-        code:7983,
-        code:8062,
-        code:8067,
-        code:8068,
-        code:8069 .
-
-:W-7542 a :ChemicalProduct,
-        :Product ;
-    schema:name "StoreGuard" ;
-    :federalAdmissionNumber "W-7542" ;
-    :hasComponentPortion [ :hasPercentage 2.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1501 ] ;
-    :hasPermissionHolder zefix:1211870 ;
-    :notice code:11448,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7973,
-        code:8067 .
-
-:W-7545 a :ChemicalProduct,
-        :Product ;
-    schema:name "AdvanStore" ;
-    :federalAdmissionNumber "W-7545" ;
-    :hasComponentPortion [ :hasPercentage 2.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1501 ] ;
-    :hasPermissionHolder zefix:1211870 ;
-    :notice code:11448,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7950,
-        code:7973,
-        code:8067 .
-
-:W-7558 a :ChemicalProduct,
-        :Product ;
-    schema:name "Milo" ;
-    :federalAdmissionNumber "W-7558" ;
-    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
-            :hasPercentage 25.3 ;
-            :role :ActiveIngredient ;
-            :substance substance:1257 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1798 ],
-        [ :role :AdditiveToDeclare ;
-            :substance substance:1838 ] ;
-    :hasPermissionHolder zefix:878487 ;
-    :notice code:11429,
-        code:11458,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:7974,
-        code:8065,
-        code:8067,
-        code:8069 .
-
-:W-7562 a :ChemicalProduct,
-        :Product ;
-    schema:name "Gibbalin SL" ;
-    :federalAdmissionNumber "W-7562" ;
-    :hasComponentPortion [ :hasGrammPerLitre 19.0 ;
-            :hasPercentage 1.83 ;
-            :role :ActiveIngredient ;
-            :substance substance:1957 ],
-        [ :hasGrammPerLitre 19.0 ;
-            :hasPercentage 1.83 ;
-            :role :ActiveIngredient ;
-            :substance substance:1542 ] ;
-    :hasPermissionHolder zefix:1118792 ;
-    :notice code:11473,
-        code:11880,
-        code:6145 .
-
-:W-7596 a :ChemicalProduct,
-        :Fungicide,
-        :Insecticide,
-        :Product ;
-    schema:name "Armicarb SG Jardin" ;
-    :federalAdmissionNumber "W-7596" ;
-    :hasComponentPortion [ :hasPercentage 85.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1532 ] ;
-    :hasPermissionHolder zefix:267983 ;
-    :notice code:11473,
-        code:11880,
-        code:13876,
-        code:6145 .
-
-:W-7621 a :ChemicalProduct,
-        :Product ;
-    schema:name "Biox-M" ;
-    :federalAdmissionNumber "W-7621" ;
-    :hasComponentPortion [ :role :AdditiveToDeclare ;
-            :substance substance:1903 ],
-        [ :hasPercentage 100.0 ;
-            :role :ActiveIngredient ;
-            :substance substance:1789 ] ;
-    :hasPermissionHolder zefix:1410761 ;
-    :notice code:11429,
-        code:11445,
-        code:11457,
-        code:11473,
-        code:11880,
-        code:6145,
-        code:7951,
-        code:8067,
-        code:8068,
-        code:8069 .
 
 :B-5440 a :Desinfectant,
         :Fungicide,
@@ -11396,6 +8593,22 @@
     :packageInsertNumber "7467" ;
     :soldoutDeadline "2025-07-01"^^xsd:date .
 
+:D-4561 a :Fungicide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Caramba" ;
+    :federalAdmissionNumber "D-4561" ;
+    :foreignAdmissionNumber "024487-00" ;
+    :hasComponentPortion [ :hasGrammPerLitre 60.0 ;
+            :hasPercentage 6.7 ;
+            :role :ActiveIngredient ;
+            :substance substance:1301 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:10281 ;
+    :isSameProductAs :W-5365 ;
+    :notice code:6145 ;
+    :packageInsertNumber "6351" .
+
 :D-4775 a :Fungicide,
         :ParallelImport ;
     schema:name "Agro Thianon" ;
@@ -11417,6 +8630,26 @@
         :W-6060-4 ;
     :notice code:6145 ;
     :packageInsertNumber "7221" .
+
+:D-4955 a :Fungicide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Tebu Super 250 EW" ;
+    :federalAdmissionNumber "D-4955" ;
+    :foreignAdmissionNumber "034028-00/185" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 25.8 ;
+            :role :ActiveIngredient ;
+            :substance substance:893 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:11123 ;
+    :isSameProductAs :D-7275,
+        :F-2628,
+        :F-2629,
+        :F-4807,
+        :W-5468 ;
+    :notice code:6145 ;
+    :packageInsertNumber "6521" .
 
 :D-5269 a :Fungicide,
         :ParallelImport ;
@@ -11461,6 +8694,51 @@
         :W-6948 ;
     :notice code:6145 ;
     :packageInsertNumber "7862" .
+
+:D-5375 a :Fungicide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Carax" ;
+    :federalAdmissionNumber "D-5375" ;
+    :foreignAdmissionNumber "006415-00" ;
+    :hasComponentPortion [ :hasGrammPerLitre 210.0 ;
+            :hasPercentage 19.1 ;
+            :role :ActiveIngredient ;
+            :substance substance:1552 ],
+        [ :hasGrammPerLitre 30.0 ;
+            :hasPercentage 2.7 ;
+            :role :ActiveIngredient ;
+            :substance substance:1301 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:10281 ;
+    :isSameProductAs :D-6555,
+        :D-6799,
+        :D-6975,
+        :F-5376,
+        :W-6815 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8006" .
+
+:D-5618 a :Fungicide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Magnello" ;
+    :federalAdmissionNumber "D-5618" ;
+    :foreignAdmissionNumber "007026-00" ;
+    :hasComponentPortion [ :hasGrammPerLitre 100.0 ;
+            :hasPercentage 9.9 ;
+            :role :ActiveIngredient ;
+            :substance substance:894 ],
+        [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 24.8 ;
+            :role :ActiveIngredient ;
+            :substance substance:893 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:7179 ;
+    :isSameProductAs :D-6592,
+        :W-6822 ;
+    :notice code:6145 ;
+    :packageInsertNumber "7969" .
 
 :D-5620 a :Fungicide,
         :ParallelImport ;
@@ -11726,6 +9004,27 @@
         :W-6060-4 ;
     :notice code:6145 ;
     :packageInsertNumber "7221" .
+
+:D-6215 a :Fungicide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Tebuconazol + Prothioconazol " ;
+    :federalAdmissionNumber "D-6215" ;
+    :foreignAdmissionNumber "006855-00/013" ;
+    :hasComponentPortion [ :hasGrammPerLitre 80.0 ;
+            :hasPercentage 8.15 ;
+            :role :ActiveIngredient ;
+            :substance substance:1476 ],
+        [ :hasGrammPerLitre 160.0 ;
+            :hasPercentage 16.3 ;
+            :role :ActiveIngredient ;
+            :substance substance:893 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:11601 ;
+    :isSameProductAs :D-7338,
+        :W-6834 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8154" .
 
 :D-6223 a :Fungicide,
         :ParallelImport ;
@@ -12084,6 +9383,30 @@
     :notice code:6145 ;
     :packageInsertNumber "7862" .
 
+:D-6555 a :Fungicide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Dakar" ;
+    :federalAdmissionNumber "D-6555" ;
+    :foreignAdmissionNumber "006415-00/006" ;
+    :hasComponentPortion [ :hasGrammPerLitre 210.0 ;
+            :hasPercentage 19.1 ;
+            :role :ActiveIngredient ;
+            :substance substance:1552 ],
+        [ :hasGrammPerLitre 30.0 ;
+            :hasPercentage 2.7 ;
+            :role :ActiveIngredient ;
+            :substance substance:1301 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:11071 ;
+    :isSameProductAs :D-5375,
+        :D-6799,
+        :D-6975,
+        :F-5376,
+        :W-6815 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8006" .
+
 :D-6578 a :Fungicide,
         :ParallelImport ;
     schema:name "Flint" ;
@@ -12143,6 +9466,27 @@
     :notice code:14077,
         code:6145 ;
     :packageInsertNumber "7562" .
+
+:D-6592 a :Fungicide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Magnello" ;
+    :federalAdmissionNumber "D-6592" ;
+    :foreignAdmissionNumber "007026-00/003" ;
+    :hasComponentPortion [ :hasGrammPerLitre 100.0 ;
+            :hasPercentage 9.9 ;
+            :role :ActiveIngredient ;
+            :substance substance:894 ],
+        [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 24.8 ;
+            :role :ActiveIngredient ;
+            :substance substance:893 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:11696 ;
+    :isSameProductAs :D-5618,
+        :W-6822 ;
+    :notice code:6145 ;
+    :packageInsertNumber "7969" .
 
 :D-6600 a :Fungicide,
         :ParallelImport ;
@@ -12421,6 +9765,30 @@
     :notice code:14077,
         code:6145 ;
     :packageInsertNumber "4410" .
+
+:D-6799 a :Fungicide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Mepiquat + Metconazol " ;
+    :federalAdmissionNumber "D-6799" ;
+    :foreignAdmissionNumber "006415-00/011" ;
+    :hasComponentPortion [ :hasGrammPerLitre 210.0 ;
+            :hasPercentage 19.1 ;
+            :role :ActiveIngredient ;
+            :substance substance:1552 ],
+        [ :hasGrammPerLitre 30.0 ;
+            :hasPercentage 2.7 ;
+            :role :ActiveIngredient ;
+            :substance substance:1301 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:11601 ;
+    :isSameProductAs :D-5375,
+        :D-6555,
+        :D-6975,
+        :F-5376,
+        :W-6815 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8006" .
 
 :D-6828 a :Fungicide,
         :ParallelImport ;
@@ -13100,6 +10468,30 @@
         :W-6948 ;
     :notice code:6145 ;
     :packageInsertNumber "7862" .
+
+:D-6975 a :Fungicide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Mepiconazol" ;
+    :federalAdmissionNumber "D-6975" ;
+    :foreignAdmissionNumber "006415-00/012" ;
+    :hasComponentPortion [ :hasGrammPerLitre 210.0 ;
+            :hasPercentage 19.1 ;
+            :role :ActiveIngredient ;
+            :substance substance:1552 ],
+        [ :hasGrammPerLitre 30.0 ;
+            :hasPercentage 2.7 ;
+            :role :ActiveIngredient ;
+            :substance substance:1301 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:11773 ;
+    :isSameProductAs :D-5375,
+        :D-6555,
+        :D-6799,
+        :F-5376,
+        :W-6815 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8006" .
 
 :D-6989 a :Fungicide,
         :ParallelImport ;
@@ -13819,6 +11211,26 @@
     :notice code:6145 ;
     :packageInsertNumber "8027" .
 
+:D-7275 a :Fungicide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Folicur" ;
+    :federalAdmissionNumber "D-7275" ;
+    :foreignAdmissionNumber "034028-00" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 25.8 ;
+            :role :ActiveIngredient ;
+            :substance substance:893 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:11830 ;
+    :isSameProductAs :D-4955,
+        :F-2628,
+        :F-2629,
+        :F-4807,
+        :W-5468 ;
+    :notice code:6145 ;
+    :packageInsertNumber "6521" .
+
 :D-7292 a :Fungicide,
         :ParallelImport ;
     schema:name "Bonafide" ;
@@ -13887,6 +11299,27 @@
         :W-6747-1 ;
     :notice code:6145 ;
     :packageInsertNumber "7952" .
+
+:D-7338 a :Fungicide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Tilmor" ;
+    :federalAdmissionNumber "D-7338" ;
+    :foreignAdmissionNumber "006855-00" ;
+    :hasComponentPortion [ :hasGrammPerLitre 80.0 ;
+            :hasPercentage 8.15 ;
+            :role :ActiveIngredient ;
+            :substance substance:1476 ],
+        [ :hasGrammPerLitre 160.0 ;
+            :hasPercentage 16.3 ;
+            :role :ActiveIngredient ;
+            :substance substance:893 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:11830 ;
+    :isSameProductAs :D-6215,
+        :W-6834 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8154" .
 
 :D-7361 a :Fungicide,
         :ParallelImport ;
@@ -14461,6 +11894,46 @@
     :notice code:6145 ;
     :packageInsertNumber "6113" .
 
+:F-2628 a :Fungicide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Corail" ;
+    :federalAdmissionNumber "F-2628" ;
+    :foreignAdmissionNumber "9300257" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 25.8 ;
+            :role :ActiveIngredient ;
+            :substance substance:893 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:10727 ;
+    :isSameProductAs :D-4955,
+        :D-7275,
+        :F-2629,
+        :F-4807,
+        :W-5468 ;
+    :notice code:6145 ;
+    :packageInsertNumber "6521" .
+
+:F-2629 a :Fungicide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Horizon EW" ;
+    :federalAdmissionNumber "F-2629" ;
+    :foreignAdmissionNumber "9200078" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 25.8 ;
+            :role :ActiveIngredient ;
+            :substance substance:893 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:10727 ;
+    :isSameProductAs :D-4955,
+        :D-7275,
+        :F-2628,
+        :F-4807,
+        :W-5468 ;
+    :notice code:6145 ;
+    :packageInsertNumber "6521" .
+
 :F-3647 a :Fungicide,
         :ParallelImport ;
     schema:name "Delan WG" ;
@@ -14650,6 +12123,26 @@
     :notice code:6145 ;
     :packageInsertNumber "7231" .
 
+:F-4807 a :Fungicide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Baltazar" ;
+    :federalAdmissionNumber "F-4807" ;
+    :foreignAdmissionNumber "9200078" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 25.8 ;
+            :role :ActiveIngredient ;
+            :substance substance:893 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:10679 ;
+    :isSameProductAs :D-4955,
+        :D-7275,
+        :F-2628,
+        :F-2629,
+        :W-5468 ;
+    :notice code:6145 ;
+    :packageInsertNumber "6521" .
+
 :F-4873 a :Fungicide,
         :ParallelImport ;
     schema:name "Tarame" ;
@@ -14748,6 +12241,30 @@
         :W-6948 ;
     :notice code:6145 ;
     :packageInsertNumber "7862" .
+
+:F-5376 a :Fungicide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Caryx" ;
+    :federalAdmissionNumber "F-5376" ;
+    :foreignAdmissionNumber "2090068" ;
+    :hasComponentPortion [ :hasGrammPerLitre 210.0 ;
+            :hasPercentage 19.1 ;
+            :role :ActiveIngredient ;
+            :substance substance:1552 ],
+        [ :hasGrammPerLitre 30.0 ;
+            :hasPercentage 2.7 ;
+            :role :ActiveIngredient ;
+            :substance substance:1301 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:10297 ;
+    :isSameProductAs :D-5375,
+        :D-6555,
+        :D-6799,
+        :D-6975,
+        :W-6815 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8006" .
 
 :F-5388 a :Fungicide,
         :ParallelImport ;
@@ -15108,6 +12625,27 @@
         :W-5934 ;
     :notice code:6145 ;
     :packageInsertNumber "6833" .
+
+:F-6126 a :Fungicide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Toprex" ;
+    :federalAdmissionNumber "F-6126" ;
+    :foreignAdmissionNumber "2080147" ;
+    :hasComponentPortion [ :hasGrammPerLitre 125.0 ;
+            :hasPercentage 11.3 ;
+            :role :ActiveIngredient ;
+            :substance substance:284 ],
+        [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 22.5 ;
+            :role :ActiveIngredient ;
+            :substance substance:894 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:11609 ;
+    :isSameProductAs :W-7030,
+        :W-7030-1 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8349" .
 
 :F-6145 a :Fungicide,
         :ParallelImport ;
@@ -15616,6 +13154,72 @@
     :notice code:14077,
         code:6145 ;
     :packageInsertNumber "7150" .
+
+:F-6735 a :Fungicide,
+        :Insecticide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Armicarb" ;
+    :federalAdmissionNumber "F-6735" ;
+    :foreignAdmissionNumber "2110059" ;
+    :hasComponentPortion [ :hasPercentage 85.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1532 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:10340 ;
+    :isSameProductAs :F-6736,
+        :F-6737,
+        :W-6432,
+        :W-6432-1,
+        :W-6432-3,
+        :W-6432-4,
+        :W-6432-5 ;
+    :notice code:6145 ;
+    :packageInsertNumber "7511" .
+
+:F-6736 a :Fungicide,
+        :Insecticide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "APC-09CD" ;
+    :federalAdmissionNumber "F-6736" ;
+    :foreignAdmissionNumber "2110059" ;
+    :hasComponentPortion [ :hasPercentage 85.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1532 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:10340 ;
+    :isSameProductAs :F-6735,
+        :F-6737,
+        :W-6432,
+        :W-6432-1,
+        :W-6432-3,
+        :W-6432-4,
+        :W-6432-5 ;
+    :notice code:6145 ;
+    :packageInsertNumber "7511" .
+
+:F-6737 a :Fungicide,
+        :Insecticide,
+        :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Armicarb jardin" ;
+    :federalAdmissionNumber "F-6737" ;
+    :foreignAdmissionNumber "2110196" ;
+    :hasComponentPortion [ :hasPercentage 85.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1532 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:10340 ;
+    :isSameProductAs :F-6735,
+        :F-6736,
+        :W-6432,
+        :W-6432-1,
+        :W-6432-3,
+        :W-6432-4,
+        :W-6432-5 ;
+    :notice code:6145 ;
+    :packageInsertNumber "7511" .
 
 :F-6884 a :Fungicide,
         :ParallelImport ;
@@ -18333,6 +15937,41 @@
         code:7987,
         code:8069 .
 
+:W-5365 a :Fungicide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "Sirocco" ;
+    :federalAdmissionNumber "W-5365" ;
+    :hasComponentPortion [ :role :AdditiveToDeclare ;
+            :substance substance:1832 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1871 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1698 ],
+        [ :hasGrammPerLitre 60.0 ;
+            :hasPercentage 6.7 ;
+            :role :ActiveIngredient ;
+            :substance substance:1301 ] ;
+    :hasPermissionHolder zefix:730369 ;
+    :isSameProductAs :D-4561 ;
+    :notice code:11429,
+        code:11445,
+        code:11473,
+        code:11875,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7958,
+        code:7973,
+        code:7974,
+        code:7977,
+        code:7987,
+        code:8062,
+        code:8065,
+        code:8067,
+        code:8068,
+        code:8069 .
+
 :W-5417 a :Fungicide,
         :Product ;
     schema:name "Dithianon 70 WG" ;
@@ -18412,6 +16051,36 @@
         code:6145,
         code:7950,
         code:7987,
+        code:8068,
+        code:8069 .
+
+:W-5468 a :Fungicide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "Horizont" ;
+    :federalAdmissionNumber "W-5468" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 25.8 ;
+            :role :ActiveIngredient ;
+            :substance substance:893 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1711 ] ;
+    :hasPermissionHolder zefix:336959 ;
+    :isSameProductAs :D-4955,
+        :D-7275,
+        :F-2628,
+        :F-2629,
+        :F-4807 ;
+    :notice code:11473,
+        code:11875,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7970,
+        code:7974,
+        code:7987,
+        code:8065,
+        code:8067,
         code:8068,
         code:8069 .
 
@@ -20151,6 +17820,116 @@
         code:8069 ;
     :soldoutDeadline "2025-10-31"^^xsd:date .
 
+:W-6432 a :Fungicide,
+        :Insecticide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "Armicarb" ;
+    :federalAdmissionNumber "W-6432" ;
+    :hasComponentPortion [ :hasPercentage 85.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1532 ] ;
+    :hasPermissionHolder zefix:267983 ;
+    :isSameProductAs :F-6735,
+        :F-6736,
+        :F-6737,
+        :W-6432-1,
+        :W-6432-3,
+        :W-6432-4,
+        :W-6432-5 ;
+    :notice code:11473,
+        code:11880,
+        code:13876,
+        code:6145 .
+
+:W-6432-1 a :Fungicide,
+        :Insecticide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "Capito Armicarb" ;
+    :federalAdmissionNumber "W-6432-1" ;
+    :hasComponentPortion [ :hasPercentage 85.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1532 ] ;
+    :hasPermissionHolder zefix:267983 ;
+    :isSameProductAs :F-6735,
+        :F-6736,
+        :F-6737,
+        :W-6432,
+        :W-6432-3,
+        :W-6432-4,
+        :W-6432-5 ;
+    :notice code:11473,
+        code:11880,
+        code:13876,
+        code:6145 .
+
+:W-6432-3 a :Fungicide,
+        :Insecticide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "BIOHOP FungiCARB" ;
+    :federalAdmissionNumber "W-6432-3" ;
+    :hasComponentPortion [ :hasPercentage 85.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1532 ] ;
+    :hasPermissionHolder zefix:1190792 ;
+    :isSameProductAs :F-6735,
+        :F-6736,
+        :F-6737,
+        :W-6432,
+        :W-6432-1,
+        :W-6432-4,
+        :W-6432-5 ;
+    :notice code:11473,
+        code:11880,
+        code:13876,
+        code:6145 .
+
+:W-6432-4 a :Fungicide,
+        :Insecticide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "Rondo Natura" ;
+    :federalAdmissionNumber "W-6432-4" ;
+    :hasComponentPortion [ :hasPercentage 85.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1532 ] ;
+    :hasPermissionHolder zefix:1335753 ;
+    :isSameProductAs :F-6735,
+        :F-6736,
+        :F-6737,
+        :W-6432,
+        :W-6432-1,
+        :W-6432-3,
+        :W-6432-5 ;
+    :notice code:11473,
+        code:11880,
+        code:13876,
+        code:6145 .
+
+:W-6432-5 a :Fungicide,
+        :Insecticide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "Belrose Pilz-Stopp" ;
+    :federalAdmissionNumber "W-6432-5" ;
+    :hasComponentPortion [ :hasPercentage 85.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1532 ] ;
+    :hasPermissionHolder zefix:1335753 ;
+    :isSameProductAs :F-6735,
+        :F-6736,
+        :F-6737,
+        :W-6432,
+        :W-6432-1,
+        :W-6432-3,
+        :W-6432-4 ;
+    :notice code:11473,
+        code:11880,
+        code:13876,
+        code:6145 .
+
 :W-6438 a :Fungicide,
         :Product ;
     schema:name "Tebucur 250" ;
@@ -20301,6 +18080,22 @@
         code:7987,
         code:8067,
         code:8069 .
+
+:W-6472 a :Fungicide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "FZB 24 flüssig" ;
+    :federalAdmissionNumber "W-6472" ;
+    :hasComponentPortion [ :role :ActiveIngredient ;
+            :substance substance:1939 ] ;
+    :hasPermissionHolder zefix:336959 ;
+    :notice code:11473,
+        code:11626,
+        code:11627,
+        code:11768,
+        code:11880,
+        code:13344,
+        code:6145 .
 
 :W-6479 a :Fungicide,
         :Product ;
@@ -21445,6 +19240,71 @@
         code:8068,
         code:8069 .
 
+:W-6815 a :Fungicide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "Caryx" ;
+    :federalAdmissionNumber "W-6815" ;
+    :hasComponentPortion [ :role :AdditiveToDeclare ;
+            :substance substance:1683 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1899 ],
+        [ :hasGrammPerLitre 210.0 ;
+            :hasPercentage 19.1 ;
+            :role :ActiveIngredient ;
+            :substance substance:1552 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1801 ],
+        [ :hasGrammPerLitre 30.0 ;
+            :hasPercentage 2.7 ;
+            :role :ActiveIngredient ;
+            :substance substance:1301 ] ;
+    :hasPermissionHolder zefix:943835 ;
+    :isSameProductAs :D-5375,
+        :D-6555,
+        :D-6799,
+        :D-6975,
+        :F-5376 ;
+    :notice code:11429,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7970,
+        code:7974,
+        code:7976,
+        code:7987,
+        code:8065,
+        code:8067,
+        code:8069 .
+
+:W-6822 a :Fungicide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "Magnello " ;
+    :federalAdmissionNumber "W-6822" ;
+    :hasComponentPortion [ :hasGrammPerLitre 100.0 ;
+            :hasPercentage 9.9 ;
+            :role :ActiveIngredient ;
+            :substance substance:894 ],
+        [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 24.8 ;
+            :role :ActiveIngredient ;
+            :substance substance:893 ] ;
+    :hasPermissionHolder zefix:393743 ;
+    :isSameProductAs :D-5618,
+        :D-6592 ;
+    :notice code:11448,
+        code:11473,
+        code:11875,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7987,
+        code:8067,
+        code:8068,
+        code:8069 .
+
 :W-6825 a :Fungicide,
         :Product ;
     schema:name "Propulse" ;
@@ -21521,6 +19381,39 @@
         code:8068,
         code:8069 ;
     :soldoutDeadline "2025-01-01"^^xsd:date .
+
+:W-6834 a :Fungicide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "Tilmor" ;
+    :federalAdmissionNumber "W-6834" ;
+    :hasComponentPortion [ :hasGrammPerLitre 80.0 ;
+            :hasPercentage 8.15 ;
+            :role :ActiveIngredient ;
+            :substance substance:1476 ],
+        [ :hasGrammPerLitre 160.0 ;
+            :hasPercentage 16.3 ;
+            :role :ActiveIngredient ;
+            :substance substance:893 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1711 ] ;
+    :hasPermissionHolder zefix:336959 ;
+    :isSameProductAs :D-6215,
+        :D-7338 ;
+    :notice code:11429,
+        code:11448,
+        code:11473,
+        code:11875,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7973,
+        code:7976,
+        code:7977,
+        code:7987,
+        code:8067,
+        code:8068,
+        code:8069 .
 
 :W-6838 a :Fungicide,
         :Product ;
@@ -21895,6 +19788,39 @@
         code:7987,
         code:8067,
         code:8068,
+        code:8069 .
+
+:W-6863 a :Fungicide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "Caryx" ;
+    :federalAdmissionNumber "W-6863" ;
+    :hasComponentPortion [ :role :AdditiveToDeclare ;
+            :substance substance:1801 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1899 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1683 ],
+        [ :hasGrammPerLitre 30.0 ;
+            :hasPercentage 2.7 ;
+            :role :ActiveIngredient ;
+            :substance substance:1301 ],
+        [ :hasGrammPerLitre 210.0 ;
+            :hasPercentage 19.1 ;
+            :role :ActiveIngredient ;
+            :substance substance:1552 ] ;
+    :hasPermissionHolder zefix:106909 ;
+    :notice code:11429,
+        code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7970,
+        code:7974,
+        code:7976,
+        code:8065,
+        code:8067,
         code:8069 .
 
 :W-6865 a :Fungicide,
@@ -22571,6 +20497,56 @@
         code:7987,
         code:8065,
         code:8066,
+        code:8068,
+        code:8069 .
+
+:W-7030 a :Fungicide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "Toprex" ;
+    :federalAdmissionNumber "W-7030" ;
+    :hasComponentPortion [ :hasGrammPerLitre 125.0 ;
+            :hasPercentage 11.3 ;
+            :role :ActiveIngredient ;
+            :substance substance:284 ],
+        [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 22.5 ;
+            :role :ActiveIngredient ;
+            :substance substance:894 ] ;
+    :hasPermissionHolder zefix:393743 ;
+    :isSameProductAs :F-6126,
+        :W-7030-1 ;
+    :notice code:11473,
+        code:11875,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7987,
+        code:8068,
+        code:8069 .
+
+:W-7030-1 a :Fungicide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "Corex" ;
+    :federalAdmissionNumber "W-7030-1" ;
+    :hasComponentPortion [ :hasGrammPerLitre 125.0 ;
+            :hasPercentage 11.3 ;
+            :role :ActiveIngredient ;
+            :substance substance:284 ],
+        [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 22.5 ;
+            :role :ActiveIngredient ;
+            :substance substance:894 ] ;
+    :hasPermissionHolder zefix:106909 ;
+    :isSameProductAs :F-6126,
+        :W-7030 ;
+    :notice code:11473,
+        code:11875,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7987,
         code:8068,
         code:8069 .
 
@@ -24619,6 +22595,38 @@
         code:8068,
         code:8069 .
 
+:W-7307 a :Fungicide,
+        :Insecticide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "Carbofort" ;
+    :federalAdmissionNumber "W-7307" ;
+    :hasComponentPortion [ :hasPercentage 85.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1532 ] ;
+    :hasPermissionHolder zefix:267983 ;
+    :isSameProductAs :W-7307-1 ;
+    :notice code:11473,
+        code:11880,
+        code:13876,
+        code:6145 .
+
+:W-7307-1 a :Fungicide,
+        :Insecticide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "GHEKKO" ;
+    :federalAdmissionNumber "W-7307-1" ;
+    :hasComponentPortion [ :hasPercentage 85.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1532 ] ;
+    :hasPermissionHolder zefix:393743 ;
+    :isSameProductAs :W-7307 ;
+    :notice code:11473,
+        code:11880,
+        code:13876,
+        code:6145 .
+
 :W-7325 a :Fungicide,
         :Product ;
     schema:name "Alibi Flora" ;
@@ -25570,6 +23578,20 @@
         code:7950,
         code:8067 .
 
+:W-7481 a :Fungicide,
+        :Insecticide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "Armicarb SG" ;
+    :federalAdmissionNumber "W-7481" ;
+    :hasComponentPortion [ :hasPercentage 85.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1532 ] ;
+    :hasPermissionHolder zefix:267983 ;
+    :notice code:11473,
+        code:11880,
+        code:6145 .
+
 :W-7496 a :Fungicide,
         :Product ;
     schema:name "Diagonal" ;
@@ -25920,6 +23942,21 @@
         code:7981,
         code:8067,
         code:8069 .
+
+:W-7596 a :Fungicide,
+        :Insecticide,
+        :Phytoregulator,
+        :Product ;
+    schema:name "Armicarb SG Jardin" ;
+    :federalAdmissionNumber "W-7596" ;
+    :hasComponentPortion [ :hasPercentage 85.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1532 ] ;
+    :hasPermissionHolder zefix:267983 ;
+    :notice code:11473,
+        code:11880,
+        code:13876,
+        code:6145 .
 
 :W-7607 a :Fungicide,
         :Product ;
@@ -51444,6 +49481,25 @@
         code:11880,
         code:6145 .
 
+:D-2479 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Moddus" ;
+    :federalAdmissionNumber "D-2479" ;
+    :foreignAdmissionNumber "024212-00" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 26.6 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:7179 ;
+    :isSameProductAs :F-5389,
+        :F-6414,
+        :W-3070,
+        :W-3070-1,
+        :W-3070-2 ;
+    :notice code:6145 ;
+    :packageInsertNumber "4499" .
+
 :D-4883 a :ParallelImport,
         :StorageProtectors ;
     schema:name "K-Obiol EC25" ;
@@ -51458,6 +49514,65 @@
     :isSameProductAs :W-6751 ;
     :notice code:6145 ;
     :packageInsertNumber "7921" .
+
+:D-6797 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Trinexapac-ethyl 175" ;
+    :exhaustionDeadline "2027-02-28"^^xsd:date ;
+    :federalAdmissionNumber "D-6797" ;
+    :foreignAdmissionNumber "007005-00/017" ;
+    :hasComponentPortion [ :hasGrammPerLitre 175.0 ;
+            :hasPercentage 17.5 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:11601 ;
+    :isSameProductAs :D-6798,
+        :D-7337,
+        :F-7043,
+        :I-7042,
+        :W-6832,
+        :W-6832-1 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8009" ;
+    :soldoutDeadline "2026-02-28"^^xsd:date .
+
+:D-6798 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Trinex 175 " ;
+    :exhaustionDeadline "2027-02-28"^^xsd:date ;
+    :federalAdmissionNumber "D-6798" ;
+    :foreignAdmissionNumber "007005-00/018" ;
+    :hasComponentPortion [ :hasGrammPerLitre 175.0 ;
+            :hasPercentage 17.5 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:11601 ;
+    :isSameProductAs :D-6797,
+        :D-7337,
+        :F-7043,
+        :I-7042,
+        :W-6832,
+        :W-6832-1 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8009" ;
+    :soldoutDeadline "2026-02-28"^^xsd:date .
+
+:D-6821 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Trinex DC " ;
+    :federalAdmissionNumber "D-6821" ;
+    :foreignAdmissionNumber "007733-00/003" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 24.1 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:11773 ;
+    :isSameProductAs :W-7038 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8347" .
 
 :D-6936 a :ParallelImport,
         :SoapProduct ;
@@ -51476,6 +49591,392 @@
         :W-6671-3 ;
     :notice code:6145 ;
     :packageInsertNumber "8069" .
+
+:D-7263 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Medax Max" ;
+    :federalAdmissionNumber "D-7263" ;
+    :foreignAdmissionNumber "008258-00/001" ;
+    :hasComponentPortion [ :hasPercentage 7.5 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ],
+        [ :hasPercentage 5.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1363 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:11696 ;
+    :isSameProductAs :D-7390,
+        :W-7385 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8817" .
+
+:D-7337 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Calma" ;
+    :exhaustionDeadline "2027-02-28"^^xsd:date ;
+    :federalAdmissionNumber "D-7337" ;
+    :foreignAdmissionNumber "007005-00" ;
+    :hasComponentPortion [ :hasGrammPerLitre 175.0 ;
+            :hasPercentage 17.5 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:10980 ;
+    :isSameProductAs :D-6797,
+        :D-6798,
+        :F-7043,
+        :I-7042,
+        :W-6832,
+        :W-6832-1 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8009" ;
+    :soldoutDeadline "2026-02-28"^^xsd:date .
+
+:D-7355 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Itcan SL 270" ;
+    :federalAdmissionNumber "D-7355" ;
+    :foreignAdmissionNumber "027233-00" ;
+    :hasComponentPortion [ :hasGrammPerLitre 270.0 ;
+            :hasPercentage 22.68 ;
+            :role :ActiveIngredient ;
+            :substance substance:961 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:12028 ;
+    :isSameProductAs :D-7408,
+        :W-6933 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8225" .
+
+:D-7390 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Prodax" ;
+    :federalAdmissionNumber "D-7390" ;
+    :foreignAdmissionNumber "008258-00" ;
+    :hasComponentPortion [ :hasPercentage 7.5 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ],
+        [ :hasPercentage 5.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1363 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:10639 ;
+    :isSameProductAs :D-7263,
+        :W-7385 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8817" .
+
+:D-7391 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Fazor" ;
+    :federalAdmissionNumber "D-7391" ;
+    :foreignAdmissionNumber "026865-00" ;
+    :hasComponentPortion [ :hasPercentage 60.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:961 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:11605 ;
+    :isSameProductAs :W-7405,
+        :W-7405-1 ;
+    :notice code:6145 ;
+    :packageInsertNumber "9296" .
+
+:D-7396 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Cerone 660" ;
+    :federalAdmissionNumber "D-7396" ;
+    :foreignAdmissionNumber "006285-00" ;
+    :hasComponentPortion [ :hasGrammPerLitre 660.0 ;
+            :hasPercentage 52.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:162 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:11830 ;
+    :isSameProductAs :D-7397,
+        :W-7438 ;
+    :notice code:6145 ;
+    :packageInsertNumber "9357" .
+
+:D-7397 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Camposan Top" ;
+    :federalAdmissionNumber "D-7397" ;
+    :foreignAdmissionNumber "00A617-00" ;
+    :hasComponentPortion [ :hasGrammPerLitre 660.0 ;
+            :hasPercentage 52.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:162 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:10980 ;
+    :isSameProductAs :D-7396,
+        :W-7438 ;
+    :notice code:6145 ;
+    :packageInsertNumber "9357" .
+
+:D-7408 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Crown MH" ;
+    :federalAdmissionNumber "D-7408" ;
+    :foreignAdmissionNumber "027233-60" ;
+    :hasComponentPortion [ :hasGrammPerLitre 270.0 ;
+            :hasPercentage 22.68 ;
+            :role :ActiveIngredient ;
+            :substance substance:961 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/DEU> ;
+    :hasPermissionHolder company:12028 ;
+    :isSameProductAs :D-7355,
+        :W-6933 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8225" .
+
+:F-3855 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Atena Etephon" ;
+    :exhaustionDeadline "2026-06-30"^^xsd:date ;
+    :federalAdmissionNumber "F-3855" ;
+    :foreignAdmissionNumber "9500536" ;
+    :hasComponentPortion [ :hasGrammPerLitre 480.0 ;
+            :hasPercentage 39.1 ;
+            :role :ActiveIngredient ;
+            :substance substance:162 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder zefix:968176 ;
+    :isSameProductAs :F-3861,
+        :I-3209,
+        :W-3060 ;
+    :notice code:6145 ;
+    :packageInsertNumber "5166" ;
+    :soldoutDeadline "2025-06-30"^^xsd:date .
+
+:F-3861 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Phon-Choc" ;
+    :exhaustionDeadline "2026-06-30"^^xsd:date ;
+    :federalAdmissionNumber "F-3861" ;
+    :foreignAdmissionNumber "9500012" ;
+    :hasComponentPortion [ :hasGrammPerLitre 480.0 ;
+            :hasPercentage 39.1 ;
+            :role :ActiveIngredient ;
+            :substance substance:162 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder zefix:968176 ;
+    :isSameProductAs :F-3855,
+        :I-3209,
+        :W-3060 ;
+    :notice code:6145 ;
+    :packageInsertNumber "5166" ;
+    :soldoutDeadline "2025-06-30"^^xsd:date .
+
+:F-4901 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Maxcel" ;
+    :federalAdmissionNumber "F-4901" ;
+    :foreignAdmissionNumber "2090019" ;
+    :hasComponentPortion [ :hasGrammPerLitre 20.0 ;
+            :hasPercentage 1.91 ;
+            :role :ActiveIngredient ;
+            :substance substance:1542 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:11066 ;
+    :isSameProductAs :I-4570,
+        :I-6881,
+        :W-6529,
+        :W-6529-1 ;
+    :notice code:6145 ;
+    :packageInsertNumber "7698" .
+
+:F-5213 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Contreverse" ;
+    :federalAdmissionNumber "F-5213" ;
+    :foreignAdmissionNumber "8200124" ;
+    :hasComponentPortion [ :hasGrammPerLitre 357.0 ;
+            :hasPercentage 33.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1753 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:11117 ;
+    :isSameProductAs :W-3072,
+        :W-3072-1 ;
+    :notice code:6145 ;
+    :packageInsertNumber "4813" .
+
+:F-5389 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Linear" ;
+    :federalAdmissionNumber "F-5389" ;
+    :foreignAdmissionNumber "2140018" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 26.6 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:11846 ;
+    :isSameProductAs :D-2479,
+        :F-6414,
+        :W-3070,
+        :W-3070-1,
+        :W-3070-2 ;
+    :notice code:6145 ;
+    :packageInsertNumber "4499" .
+
+:F-6412 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Life Scientific Trinexapac" ;
+    :federalAdmissionNumber "F-6412" ;
+    :foreignAdmissionNumber "2140018" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 26.6 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:11846 ;
+    :isSameProductAs :F-6413,
+        :F-6683,
+        :W-6922 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8234" .
+
+:F-6413 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Regulastar" ;
+    :federalAdmissionNumber "F-6413" ;
+    :foreignAdmissionNumber "2140018" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 26.6 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:11846 ;
+    :isSameProductAs :F-6412,
+        :F-6683,
+        :W-6922 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8234" .
+
+:F-6414 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Linear" ;
+    :federalAdmissionNumber "F-6414" ;
+    :foreignAdmissionNumber "2140018" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 26.6 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:11846 ;
+    :isSameProductAs :D-2479,
+        :F-5389,
+        :W-3070,
+        :W-3070-1,
+        :W-3070-2 ;
+    :notice code:6145 ;
+    :packageInsertNumber "4499" .
+
+:F-6683 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Moxa" ;
+    :federalAdmissionNumber "F-6683" ;
+    :foreignAdmissionNumber "2130247" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 26.6 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:10716 ;
+    :isSameProductAs :F-6412,
+        :F-6413,
+        :W-6922 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8234" .
+
+:F-6684 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Cuadro NT" ;
+    :federalAdmissionNumber "F-6684" ;
+    :foreignAdmissionNumber "2170354" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 24.7 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:10635 ;
+    :isSameProductAs :W-7177 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8545" .
+
+:F-7043 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Trimaxx" ;
+    :exhaustionDeadline "2027-02-28"^^xsd:date ;
+    :federalAdmissionNumber "F-7043" ;
+    :foreignAdmissionNumber "2140082" ;
+    :hasComponentPortion [ :hasGrammPerLitre 175.0 ;
+            :hasPercentage 17.5 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:11833 ;
+    :isSameProductAs :D-6797,
+        :D-6798,
+        :D-7337,
+        :I-7042,
+        :W-6832,
+        :W-6832-1 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8009" ;
+    :soldoutDeadline "2026-02-28"^^xsd:date .
+
+:F-7416 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Rhodofix" ;
+    :federalAdmissionNumber "F-7416" ;
+    :foreignAdmissionNumber "7400755" ;
+    :hasComponentPortion [ :hasPercentage 1.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:3 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/FRA> ;
+    :hasPermissionHolder company:11833 ;
+    :isSameProductAs :W-3003 ;
+    :notice code:6145 ;
+    :packageInsertNumber "5862" .
+
+:I-3209 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Ethrel" ;
+    :exhaustionDeadline "2026-06-30"^^xsd:date ;
+    :federalAdmissionNumber "I-3209" ;
+    :foreignAdmissionNumber "6437" ;
+    :hasComponentPortion [ :hasGrammPerLitre 480.0 ;
+            :hasPercentage 39.1 ;
+            :role :ActiveIngredient ;
+            :substance substance:162 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
+    :hasPermissionHolder company:10618 ;
+    :isSameProductAs :F-3855,
+        :F-3861,
+        :W-3060 ;
+    :notice code:6145 ;
+    :packageInsertNumber "5166" ;
+    :soldoutDeadline "2025-06-30"^^xsd:date .
+
+:I-4570 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Maxcel" ;
+    :federalAdmissionNumber "I-4570" ;
+    :foreignAdmissionNumber "006324" ;
+    :hasComponentPortion [ :hasGrammPerLitre 20.0 ;
+            :hasPercentage 1.91 ;
+            :role :ActiveIngredient ;
+            :substance substance:1542 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
+    :hasPermissionHolder company:11044 ;
+    :isSameProductAs :F-4901,
+        :I-6881,
+        :W-6529,
+        :W-6529-1 ;
+    :notice code:6145 ;
+    :packageInsertNumber "7698" .
 
 :I-4839 a :ParallelImport,
         :Pheromone ;
@@ -51551,6 +50052,90 @@
     :isSameProductAs :W-5963 ;
     :notice code:6145 ;
     :packageInsertNumber "7008" .
+
+:I-5565 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Dazide enhance" ;
+    :federalAdmissionNumber "I-5565" ;
+    :foreignAdmissionNumber "012455" ;
+    :hasComponentPortion [ :hasPercentage 85.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:119 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
+    :hasPermissionHolder company:11009 ;
+    :isSameProductAs :W-3002 ;
+    :notice code:6145 ;
+    :packageInsertNumber "5139" .
+
+:I-6469 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Bonzi" ;
+    :federalAdmissionNumber "I-6469" ;
+    :foreignAdmissionNumber "016305" ;
+    :hasComponentPortion [ :hasGrammPerLitre 4.0 ;
+            :hasPercentage 0.39 ;
+            :role :ActiveIngredient ;
+            :substance substance:284 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
+    :hasPermissionHolder company:7182 ;
+    :isSameProductAs :W-3049 ;
+    :notice code:6145 ;
+    :packageInsertNumber "5142" .
+
+:I-6478 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Dirager SL " ;
+    :federalAdmissionNumber "I-6478" ;
+    :foreignAdmissionNumber "16338" ;
+    :hasComponentPortion [ :hasGrammPerLitre 37.0 ;
+            :hasPercentage 3.31 ;
+            :role :ActiveIngredient ;
+            :substance substance:3 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
+    :hasPermissionHolder company:11706 ;
+    :isSameProductAs :W-3080 ;
+    :notice code:6145 ;
+    :packageInsertNumber "5158" .
+
+:I-6881 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "MaxCel 2SL" ;
+    :federalAdmissionNumber "I-6881" ;
+    :foreignAdmissionNumber "15839" ;
+    :hasComponentPortion [ :hasGrammPerLitre 20.0 ;
+            :hasPercentage 1.91 ;
+            :role :ActiveIngredient ;
+            :substance substance:1542 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
+    :hasPermissionHolder company:11807 ;
+    :isSameProductAs :F-4901,
+        :I-4570,
+        :W-6529,
+        :W-6529-1 ;
+    :notice code:6145 ;
+    :packageInsertNumber "7698" .
+
+:I-7042 a :ParallelImport,
+        :Phytoregulator ;
+    schema:name "Trimaxx" ;
+    :exhaustionDeadline "2027-02-28"^^xsd:date ;
+    :federalAdmissionNumber "I-7042" ;
+    :foreignAdmissionNumber "16191" ;
+    :hasComponentPortion [ :hasGrammPerLitre 175.0 ;
+            :hasPercentage 17.5 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasCountryOfOrigin <https://ld.admin.ch/country/ITA> ;
+    :hasPermissionHolder company:11210 ;
+    :isSameProductAs :D-6797,
+        :D-6798,
+        :D-7337,
+        :F-7043,
+        :W-6832,
+        :W-6832-1 ;
+    :notice code:6145 ;
+    :packageInsertNumber "8009" ;
+    :soldoutDeadline "2026-02-28"^^xsd:date .
 
 :W-5331 a :Pheromone,
         :Product ;
@@ -52186,6 +50771,1341 @@
         code:6145,
         code:7988 .
 
+:W-3002 a :Phytoregulator,
+        :Product ;
+    schema:name "Alar" ;
+    :federalAdmissionNumber "W-3002" ;
+    :hasComponentPortion [ :hasPercentage 85.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:119 ] ;
+    :hasPermissionHolder zefix:393743 ;
+    :isSameProductAs :I-5565 ;
+    :notice code:11473,
+        code:11880,
+        code:6145 .
+
+:W-3003 a :Phytoregulator,
+        :Product ;
+    schema:name "Rhodofix" ;
+    :federalAdmissionNumber "W-3003" ;
+    :hasComponentPortion [ :hasPercentage 1.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:3 ] ;
+    :hasPermissionHolder zefix:393743 ;
+    :isSameProductAs :F-7416 ;
+    :notice code:11448,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:8067 .
+
+:W-3004 a :Phytoregulator,
+        :Product ;
+    schema:name "Dirigol - N" ;
+    :federalAdmissionNumber "W-3004" ;
+    :hasComponentPortion [ :hasPercentage 50.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:813 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1710 ] ;
+    :hasPermissionHolder zefix:267983 ;
+    :isSameProductAs :W-3004-1 ;
+    :notice code:11473,
+        code:11875,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7970,
+        code:7972,
+        code:7974,
+        code:7976,
+        code:8065,
+        code:8067,
+        code:8068 .
+
+:W-3004-1 a :Phytoregulator,
+        :Product ;
+    schema:name "Phytonic" ;
+    :federalAdmissionNumber "W-3004-1" ;
+    :hasComponentPortion [ :hasPercentage 50.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:813 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1710 ] ;
+    :hasPermissionHolder zefix:106909 ;
+    :isSameProductAs :W-3004 ;
+    :notice code:11473,
+        code:11875,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7970,
+        code:7972,
+        code:7974,
+        code:7976,
+        code:8065,
+        code:8067,
+        code:8068 .
+
+:W-3028 a :Phytoregulator,
+        :Product ;
+    schema:name "Gibberellin A3" ;
+    :federalAdmissionNumber "W-3028" ;
+    :hasComponentPortion [ :hasPercentage 10.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:2012 ] ;
+    :hasPermissionHolder zefix:142062 ;
+    :notice code:11473,
+        code:11880,
+        code:6145 .
+
+:W-3040 a :Phytoregulator,
+        :Product ;
+    schema:name "CCC-Stabilan LG " ;
+    :federalAdmissionNumber "W-3040" ;
+    :hasComponentPortion [ :hasGrammPerLitre 310.0 ;
+            :hasPercentage 28.9 ;
+            :role :ActiveIngredient ;
+            :substance substance:1753 ] ;
+    :hasPermissionHolder zefix:106909 ;
+    :notice code:11443,
+        code:11473,
+        code:11880,
+        code:12045,
+        code:6145,
+        code:7950,
+        code:7988,
+        code:8065,
+        code:8067 .
+
+:W-3049 a :Phytoregulator,
+        :Product ;
+    schema:name "Bonzi " ;
+    :federalAdmissionNumber "W-3049" ;
+    :hasComponentPortion [ :hasGrammPerLitre 4.0 ;
+            :hasPercentage 0.39 ;
+            :role :ActiveIngredient ;
+            :substance substance:284 ] ;
+    :hasPermissionHolder zefix:393743 ;
+    :isSameProductAs :I-6469 ;
+    :notice code:11458,
+        code:11469,
+        code:11473,
+        code:11875,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:8068,
+        code:8069 .
+
+:W-3060 a :Phytoregulator,
+        :Product ;
+    schema:name "Etephon Médol" ;
+    :exhaustionDeadline "2026-06-30"^^xsd:date ;
+    :federalAdmissionNumber "W-3060" ;
+    :hasComponentPortion [ :hasGrammPerLitre 480.0 ;
+            :hasPercentage 39.1 ;
+            :role :ActiveIngredient ;
+            :substance substance:162 ] ;
+    :hasPermissionHolder zefix:219348 ;
+    :isSameProductAs :F-3855,
+        :F-3861,
+        :I-3209 ;
+    :notice code:11443,
+        code:11447,
+        code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7976,
+        code:7986,
+        code:8065,
+        code:8067,
+        code:8069 ;
+    :soldoutDeadline "2025-06-30"^^xsd:date .
+
+:W-3064 a :Phytoregulator,
+        :Product ;
+    schema:name "Ethefon S" ;
+    :exhaustionDeadline "2026-12-31"^^xsd:date ;
+    :federalAdmissionNumber "W-3064" ;
+    :hasComponentPortion [ :hasGrammPerLitre 480.0 ;
+            :hasPercentage 40.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:162 ] ;
+    :hasPermissionHolder zefix:1118792 ;
+    :isSameProductAs :W-3064-1,
+        :W-3064-2 ;
+    :notice code:11447,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7977,
+        code:7988,
+        code:8065,
+        code:8067 ;
+    :soldoutDeadline "2025-12-31"^^xsd:date .
+
+:W-3064-1 a :Phytoregulator,
+        :Product ;
+    schema:name "Dartilon" ;
+    :exhaustionDeadline "2026-12-31"^^xsd:date ;
+    :federalAdmissionNumber "W-3064-1" ;
+    :hasComponentPortion [ :hasGrammPerLitre 480.0 ;
+            :hasPercentage 40.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:162 ] ;
+    :hasPermissionHolder zefix:267983 ;
+    :isSameProductAs :W-3064,
+        :W-3064-2 ;
+    :notice code:11447,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7977,
+        code:7988,
+        code:8065,
+        code:8067 ;
+    :soldoutDeadline "2025-12-31"^^xsd:date .
+
+:W-3064-2 a :Phytoregulator,
+        :Product ;
+    schema:name "Ethephon LG" ;
+    :exhaustionDeadline "2026-12-31"^^xsd:date ;
+    :federalAdmissionNumber "W-3064-2" ;
+    :hasComponentPortion [ :hasGrammPerLitre 480.0 ;
+            :hasPercentage 40.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:162 ] ;
+    :hasPermissionHolder zefix:106909 ;
+    :isSameProductAs :W-3064,
+        :W-3064-1 ;
+    :notice code:11447,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7977,
+        code:7988,
+        code:8065,
+        code:8067 ;
+    :soldoutDeadline "2025-12-31"^^xsd:date .
+
+:W-3070 a :Phytoregulator,
+        :Product ;
+    schema:name "Moddus" ;
+    :federalAdmissionNumber "W-3070" ;
+    :hasComponentPortion [ :role :AdditiveToDeclare ;
+            :substance substance:1698 ],
+        [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 26.6 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasPermissionHolder zefix:393743 ;
+    :isSameProductAs :D-2479,
+        :F-5389,
+        :F-6414,
+        :W-3070-1,
+        :W-3070-2 ;
+    :notice code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7958,
+        code:7976,
+        code:7977,
+        code:8062,
+        code:8067,
+        code:8069 .
+
+:W-3070-1 a :Phytoregulator,
+        :Product ;
+    schema:name "Moddus" ;
+    :federalAdmissionNumber "W-3070-1" ;
+    :hasComponentPortion [ :role :AdditiveToDeclare ;
+            :substance substance:1698 ],
+        [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 26.6 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasPermissionHolder zefix:106909 ;
+    :isSameProductAs :D-2479,
+        :F-5389,
+        :F-6414,
+        :W-3070,
+        :W-3070-2 ;
+    :notice code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7958,
+        code:7976,
+        code:7977,
+        code:8062,
+        code:8067,
+        code:8069 .
+
+:W-3070-2 a :Phytoregulator,
+        :Product ;
+    schema:name "Metro class" ;
+    :federalAdmissionNumber "W-3070-2" ;
+    :hasComponentPortion [ :role :AdditiveToDeclare ;
+            :substance substance:1698 ],
+        [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 26.6 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasPermissionHolder zefix:336959 ;
+    :isSameProductAs :D-2479,
+        :F-5389,
+        :F-6414,
+        :W-3070,
+        :W-3070-1 ;
+    :notice code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7958,
+        code:7976,
+        code:7977,
+        code:8062,
+        code:8067,
+        code:8069 .
+
+:W-3072 a :Phytoregulator,
+        :Product ;
+    schema:name "Stabilan plus " ;
+    :federalAdmissionNumber "W-3072" ;
+    :hasComponentPortion [ :hasGrammPerLitre 357.0 ;
+            :hasPercentage 33.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1753 ] ;
+    :hasPermissionHolder zefix:106909 ;
+    :isSameProductAs :F-5213,
+        :W-3072-1 ;
+    :notice code:11443,
+        code:11473,
+        code:11880,
+        code:12045,
+        code:6145,
+        code:7950,
+        code:7988,
+        code:8065,
+        code:8067 .
+
+:W-3072-1 a :Phytoregulator,
+        :Product ;
+    schema:name "Stabilan S" ;
+    :federalAdmissionNumber "W-3072-1" ;
+    :hasComponentPortion [ :hasGrammPerLitre 357.0 ;
+            :hasPercentage 33.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1753 ] ;
+    :hasPermissionHolder zefix:267983 ;
+    :isSameProductAs :F-5213,
+        :W-3072 ;
+    :notice code:11443,
+        code:11473,
+        code:11880,
+        code:12045,
+        code:6145,
+        code:7950,
+        code:7988,
+        code:8065,
+        code:8067 .
+
+:W-3073 a :Phytoregulator,
+        :Product ;
+    schema:name "CCC Extra" ;
+    :federalAdmissionNumber "W-3073" ;
+    :hasComponentPortion [ :hasGrammPerLitre 357.0 ;
+            :hasPercentage 33.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1753 ] ;
+    :hasPermissionHolder zefix:730369 ;
+    :notice code:11443,
+        code:11473,
+        code:11880,
+        code:12045,
+        code:6145,
+        code:7950,
+        code:7988,
+        code:8065,
+        code:8067 .
+
+:W-3080 a :Phytoregulator,
+        :Product ;
+    schema:name "Dirager S" ;
+    :federalAdmissionNumber "W-3080" ;
+    :hasComponentPortion [ :hasGrammPerLitre 37.0 ;
+            :hasPercentage 3.31 ;
+            :role :ActiveIngredient ;
+            :substance substance:3 ] ;
+    :hasPermissionHolder zefix:730369 ;
+    :isSameProductAs :I-6478 ;
+    :notice code:11473,
+        code:11875,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7988,
+        code:8068 .
+
+:W-3083 a :Phytoregulator,
+        :Product ;
+    schema:name "Dazide Enhance" ;
+    :federalAdmissionNumber "W-3083" ;
+    :hasComponentPortion [ :hasPercentage 85.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:119 ] ;
+    :hasPermissionHolder zefix:339512 ;
+    :notice code:11473,
+        code:11880,
+        code:6145 .
+
+:W-3085 a :Phytoregulator,
+        :Product ;
+    schema:name "Ethephon" ;
+    :exhaustionDeadline "2026-10-31"^^xsd:date ;
+    :federalAdmissionNumber "W-3085" ;
+    :hasComponentPortion [ :hasGrammPerLitre 480.0 ;
+            :hasPercentage 37.7 ;
+            :role :ActiveIngredient ;
+            :substance substance:162 ] ;
+    :hasPermissionHolder zefix:1634453 ;
+    :notice code:11443,
+        code:11447,
+        code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7972,
+        code:7977,
+        code:8065,
+        code:8067,
+        code:8069 ;
+    :soldoutDeadline "2025-10-31"^^xsd:date .
+
+:W-5989 a :Phytoregulator,
+        :Product ;
+    schema:name "Viviful" ;
+    :federalAdmissionNumber "W-5989" ;
+    :hasComponentPortion [ :hasPercentage 10.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1363 ] ;
+    :hasPermissionHolder zefix:267983 ;
+    :notice code:11473,
+        code:11880,
+        code:6145 .
+
+:W-6247 a :Phytoregulator,
+        :Product ;
+    schema:name "Primo Maxx" ;
+    :exhaustionDeadline "2027-01-31"^^xsd:date ;
+    :federalAdmissionNumber "W-6247" ;
+    :hasComponentPortion [ :hasGrammPerLitre 121.0 ;
+            :hasPercentage 11.3 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasPermissionHolder zefix:393743 ;
+    :notice code:11473,
+        code:11880,
+        code:6145,
+        code:7988 ;
+    :soldoutDeadline "2026-01-31"^^xsd:date .
+
+:W-6515 a :Phytoregulator,
+        :Product ;
+    schema:name "Medax Top" ;
+    :federalAdmissionNumber "W-6515" ;
+    :hasComponentPortion [ :hasGrammPerLitre 300.0 ;
+            :hasPercentage 26.5 ;
+            :role :ActiveIngredient ;
+            :substance substance:1552 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1731 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1814 ],
+        [ :hasGrammPerLitre 50.0 ;
+            :hasPercentage 4.4 ;
+            :role :ActiveIngredient ;
+            :substance substance:1363 ] ;
+    :hasPermissionHolder zefix:943835 ;
+    :isSameProductAs :W-6515-1 ;
+    :notice code:11448,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7970,
+        code:7988,
+        code:8067 .
+
+:W-6515-1 a :Phytoregulator,
+        :Product ;
+    schema:name "Medax" ;
+    :federalAdmissionNumber "W-6515-1" ;
+    :hasComponentPortion [ :hasGrammPerLitre 300.0 ;
+            :hasPercentage 26.5 ;
+            :role :ActiveIngredient ;
+            :substance substance:1552 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1731 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1814 ],
+        [ :hasGrammPerLitre 50.0 ;
+            :hasPercentage 4.4 ;
+            :role :ActiveIngredient ;
+            :substance substance:1363 ] ;
+    :hasPermissionHolder zefix:267983 ;
+    :isSameProductAs :W-6515 ;
+    :notice code:11448,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7970,
+        code:7988,
+        code:8067 .
+
+:W-6529 a :Phytoregulator,
+        :Product ;
+    schema:name "MaxCel" ;
+    :federalAdmissionNumber "W-6529" ;
+    :hasComponentPortion [ :hasGrammPerLitre 20.0 ;
+            :hasPercentage 1.91 ;
+            :role :ActiveIngredient ;
+            :substance substance:1542 ] ;
+    :hasPermissionHolder zefix:512743 ;
+    :isSameProductAs :F-4901,
+        :I-4570,
+        :I-6881,
+        :W-6529-1 ;
+    :notice code:11469,
+        code:11473,
+        code:11880,
+        code:6145 .
+
+:W-6529-1 a :Phytoregulator,
+        :Product ;
+    schema:name "Maxcel " ;
+    :federalAdmissionNumber "W-6529-1" ;
+    :hasComponentPortion [ :hasGrammPerLitre 20.0 ;
+            :hasPercentage 1.91 ;
+            :role :ActiveIngredient ;
+            :substance substance:1542 ] ;
+    :hasPermissionHolder zefix:730369 ;
+    :isSameProductAs :F-4901,
+        :I-4570,
+        :I-6881,
+        :W-6529 ;
+    :notice code:11469,
+        code:11473,
+        code:11880,
+        code:6145 .
+
+:W-6797 a :Phytoregulator,
+        :Product ;
+    schema:name "Fazor" ;
+    :federalAdmissionNumber "W-6797" ;
+    :hasComponentPortion [ :hasPercentage 60.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:961 ] ;
+    :hasPermissionHolder zefix:106909 ;
+    :notice code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:8069 .
+
+:W-6832 a :Phytoregulator,
+        :Product ;
+    schema:name "Trimaxx" ;
+    :exhaustionDeadline "2027-02-28"^^xsd:date ;
+    :federalAdmissionNumber "W-6832" ;
+    :hasComponentPortion [ :hasGrammPerLitre 175.0 ;
+            :hasPercentage 17.5 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasPermissionHolder zefix:932153 ;
+    :isSameProductAs :D-6797,
+        :D-6798,
+        :D-7337,
+        :F-7043,
+        :I-7042,
+        :W-6832-1 ;
+    :notice code:11429,
+        code:11448,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7973,
+        code:7988,
+        code:8067 ;
+    :soldoutDeadline "2026-02-28"^^xsd:date .
+
+:W-6832-1 a :Phytoregulator,
+        :Product ;
+    schema:name "Trinexx Top" ;
+    :exhaustionDeadline "2027-02-28"^^xsd:date ;
+    :federalAdmissionNumber "W-6832-1" ;
+    :hasComponentPortion [ :hasGrammPerLitre 175.0 ;
+            :hasPercentage 17.5 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasPermissionHolder zefix:1118792 ;
+    :isSameProductAs :D-6797,
+        :D-6798,
+        :D-7337,
+        :F-7043,
+        :I-7042,
+        :W-6832 ;
+    :notice code:11429,
+        code:11448,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7973,
+        code:7988,
+        code:8067 ;
+    :soldoutDeadline "2026-02-28"^^xsd:date .
+
+:W-6874 a :Phytoregulator,
+        :Product ;
+    schema:name "Camposan Extra" ;
+    :exhaustionDeadline "2026-10-15"^^xsd:date ;
+    :federalAdmissionNumber "W-6874" ;
+    :hasComponentPortion [ :hasGrammPerLitre 660.0 ;
+            :hasPercentage 52.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:162 ] ;
+    :hasPermissionHolder company:11036 ;
+    :isSameProductAs :W-6874-1 ;
+    :notice code:11443,
+        code:11447,
+        code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7972,
+        code:7986,
+        code:8065,
+        code:8067,
+        code:8069 ;
+    :soldoutDeadline "2025-10-15"^^xsd:date .
+
+:W-6874-1 a :Phytoregulator,
+        :Product ;
+    schema:name "Elotin" ;
+    :exhaustionDeadline "2026-10-15"^^xsd:date ;
+    :federalAdmissionNumber "W-6874-1" ;
+    :hasComponentPortion [ :hasGrammPerLitre 660.0 ;
+            :hasPercentage 52.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:162 ] ;
+    :hasPermissionHolder zefix:730369 ;
+    :isSameProductAs :W-6874 ;
+    :notice code:11443,
+        code:11447,
+        code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7972,
+        code:7986,
+        code:8065,
+        code:8067,
+        code:8069 ;
+    :soldoutDeadline "2025-10-15"^^xsd:date .
+
+:W-6903 a :Phytoregulator,
+        :Product ;
+    schema:name "Rhodofix" ;
+    :exhaustionDeadline "2026-10-15"^^xsd:date ;
+    :federalAdmissionNumber "W-6903" ;
+    :hasComponentPortion [ :hasPercentage 1.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:3 ] ;
+    :hasPermissionHolder company:11036 ;
+    :notice code:11448,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:8067 ;
+    :soldoutDeadline "2025-10-15"^^xsd:date .
+
+:W-6922 a :Phytoregulator,
+        :Product ;
+    schema:name "Moxa" ;
+    :federalAdmissionNumber "W-6922" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 26.6 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasPermissionHolder zefix:1118792 ;
+    :isSameProductAs :F-6412,
+        :F-6413,
+        :F-6683 ;
+    :notice code:11448,
+        code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7958,
+        code:7976,
+        code:7977,
+        code:7985,
+        code:8062,
+        code:8067,
+        code:8069 .
+
+:W-6933 a :Phytoregulator,
+        :Product ;
+    schema:name "Itcan SL 270" ;
+    :federalAdmissionNumber "W-6933" ;
+    :hasComponentPortion [ :hasGrammPerLitre 270.0 ;
+            :hasPercentage 22.68 ;
+            :role :ActiveIngredient ;
+            :substance substance:961 ] ;
+    :hasPermissionHolder zefix:190273 ;
+    :isSameProductAs :D-7355,
+        :D-7408 ;
+    :notice code:11469,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7988 .
+
+:W-6962 a :Phytoregulator,
+        :Product ;
+    schema:name "Trimaxx" ;
+    :federalAdmissionNumber "W-6962" ;
+    :hasComponentPortion [ :hasGrammPerLitre 175.0 ;
+            :hasPercentage 17.5 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasPermissionHolder zefix:243472 ;
+    :notice code:11429,
+        code:11448,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7973,
+        code:7988,
+        code:8067 .
+
+:W-6972 a :Phytoregulator,
+        :Product ;
+    schema:name "Antak" ;
+    :federalAdmissionNumber "W-6972" ;
+    :hasComponentPortion [ :hasGrammPerLitre 686.0 ;
+            :hasPercentage 79.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1662 ] ;
+    :hasPermissionHolder zefix:190273 ;
+    :notice code:11429,
+        code:11448,
+        code:11457,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:6152,
+        code:7950,
+        code:8067,
+        code:8069 .
+
+:W-6984 a :Phytoregulator,
+        :Product ;
+    schema:name "Brevis" ;
+    :federalAdmissionNumber "W-6984" ;
+    :hasComponentPortion [ :hasPercentage 15.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:880 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1961 ] ;
+    :hasPermissionHolder zefix:932153 ;
+    :notice code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7970,
+        code:7974,
+        code:8065,
+        code:8067,
+        code:8069 .
+
+:W-6995 a :Phytoregulator,
+        :Product ;
+    schema:name "Biox-M" ;
+    :federalAdmissionNumber "W-6995" ;
+    :hasComponentPortion [ :hasPercentage 100.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1789 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1903 ] ;
+    :hasPermissionHolder zefix:1410761 ;
+    :notice code:11429,
+        code:11445,
+        code:11457,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:8067,
+        code:8068,
+        code:8069 .
+
+:W-6996 a :Phytoregulator,
+        :Product ;
+    schema:name "Brevis" ;
+    :federalAdmissionNumber "W-6996" ;
+    :hasComponentPortion [ :hasPercentage 15.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:880 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1961 ] ;
+    :hasPermissionHolder zefix:106909 ;
+    :notice code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7970,
+        code:7974,
+        code:8065,
+        code:8067,
+        code:8069 .
+
+:W-7038 a :Phytoregulator,
+        :Product ;
+    schema:name "Moddus Start" ;
+    :federalAdmissionNumber "W-7038" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 24.1 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasPermissionHolder zefix:393743 ;
+    :isSameProductAs :D-6821 ;
+    :notice code:11448,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7988,
+        code:8067 .
+
+:W-7044 a :Phytoregulator,
+        :Product ;
+    schema:name "CCC" ;
+    :federalAdmissionNumber "W-7044" ;
+    :hasComponentPortion [ :hasGrammPerLitre 357.0 ;
+            :hasPercentage 33.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1753 ] ;
+    :hasPermissionHolder zefix:1118792 ;
+    :notice code:11443,
+        code:11473,
+        code:11880,
+        code:12045,
+        code:6145,
+        code:7950,
+        code:7988,
+        code:8065,
+        code:8067 .
+
+:W-7066 a :Phytoregulator,
+        :Product ;
+    schema:name "Smart Fresh" ;
+    :federalAdmissionNumber "W-7066" ;
+    :hasComponentPortion [ :hasPercentage 3.3 ;
+            :role :ActiveIngredient ;
+            :substance substance:1501 ] ;
+    :hasPermissionHolder zefix:1211870 ;
+    :notice code:11473,
+        code:11880,
+        code:6145 .
+
+:W-7067 a :Phytoregulator,
+        :Product ;
+    schema:name "SmartFresh ProTabs" ;
+    :federalAdmissionNumber "W-7067" ;
+    :hasComponentPortion [ :hasPercentage 2.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1501 ] ;
+    :hasPermissionHolder zefix:1211870 ;
+    :notice code:11448,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7973,
+        code:8067 .
+
+:W-7075 a :Phytoregulator,
+        :Product ;
+    schema:name "Cycocel extra" ;
+    :federalAdmissionNumber "W-7075" ;
+    :hasComponentPortion [ :hasGrammPerLitre 357.0 ;
+            :hasPercentage 33.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1753 ] ;
+    :hasPermissionHolder zefix:730369 ;
+    :notice code:11443,
+        code:11473,
+        code:11880,
+        code:12045,
+        code:6145,
+        code:7950,
+        code:7988,
+        code:8065,
+        code:8067 .
+
+:W-7084 a :Phytoregulator,
+        :Product ;
+    schema:name "RipeLock Tabs 2.0" ;
+    :federalAdmissionNumber "W-7084" ;
+    :hasComponentPortion [ :hasPercentage 2.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1501 ] ;
+    :hasPermissionHolder zefix:1211870 ;
+    :notice code:11448,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7973,
+        code:8067 .
+
+:W-7088 a :Phytoregulator,
+        :Product ;
+    schema:name "Brevis" ;
+    :federalAdmissionNumber "W-7088" ;
+    :hasComponentPortion [ :role :AdditiveToDeclare ;
+            :substance substance:1961 ],
+        [ :hasPercentage 15.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:880 ] ;
+    :hasPermissionHolder zefix:243472 ;
+    :notice code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7970,
+        code:7974,
+        code:8065,
+        code:8067,
+        code:8069 .
+
+:W-7173 a :Phytoregulator,
+        :Product ;
+    schema:name "Banarg 4%" ;
+    :federalAdmissionNumber "W-7173" ;
+    :hasComponentPortion [ :hasPercentage 4.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1755 ] ;
+    :hasPermissionHolder zefix:132246 ;
+    :notice code:11442,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:8064 .
+
+:W-7177 a :Phytoregulator,
+        :Product ;
+    schema:name "CHA 8830" ;
+    :federalAdmissionNumber "W-7177" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 24.7 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasPermissionHolder zefix:267983 ;
+    :isSameProductAs :F-6684 ;
+    :notice code:11429,
+        code:11448,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7988,
+        code:8067 .
+
+:W-7178 a :Phytoregulator,
+        :Product ;
+    schema:name "Primo Maxx" ;
+    :federalAdmissionNumber "W-7178" ;
+    :hasComponentPortion [ :hasGrammPerLitre 116.0 ;
+            :hasPercentage 11.3 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasPermissionHolder zefix:393743 ;
+    :notice code:11429,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7988,
+        code:8067 .
+
+:W-7194 a :Phytoregulator,
+        :Product ;
+    schema:name "Milo" ;
+    :federalAdmissionNumber "W-7194" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 25.3 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1838 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1798 ] ;
+    :hasPermissionHolder zefix:730369 ;
+    :notice code:11429,
+        code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7974,
+        code:8065,
+        code:8067,
+        code:8069 .
+
+:W-7309 a :Phytoregulator,
+        :Product ;
+    schema:name "Geramid Top" ;
+    :federalAdmissionNumber "W-7309" ;
+    :hasComponentPortion [ :hasGrammPerLitre 30.0 ;
+            :hasPercentage 2.67 ;
+            :role :ActiveIngredient ;
+            :substance substance:1106 ] ;
+    :hasPermissionHolder zefix:730369 ;
+    :notice code:11473,
+        code:11880,
+        code:6145 .
+
+:W-7344 a :Phytoregulator,
+        :Product ;
+    schema:name "Novagib" ;
+    :federalAdmissionNumber "W-7344" ;
+    :hasComponentPortion [ :hasGrammPerLitre 10.0 ;
+            :hasPercentage 0.96 ;
+            :role :ActiveIngredient ;
+            :substance substance:1957 ] ;
+    :hasPermissionHolder zefix:267983 ;
+    :notice code:11473,
+        code:11880,
+        code:6145 .
+
+:W-7377 a :Phytoregulator,
+        :Product ;
+    schema:name "Dormir" ;
+    :federalAdmissionNumber "W-7377" ;
+    :hasComponentPortion [ :hasGrammPerLitre 994.0 ;
+            :hasPercentage 98.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1877 ] ;
+    :hasPermissionHolder zefix:1241466 .
+
+:W-7385 a :Phytoregulator,
+        :Product ;
+    schema:name "Prodax" ;
+    :federalAdmissionNumber "W-7385" ;
+    :hasComponentPortion [ :hasPercentage 7.5 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ],
+        [ :hasPercentage 5.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1363 ] ;
+    :hasPermissionHolder zefix:943835 ;
+    :isSameProductAs :D-7263,
+        :D-7390 ;
+    :notice code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:8069 .
+
+:W-7396 a :Phytoregulator,
+        :Product ;
+    schema:name "Dirager Plus" ;
+    :federalAdmissionNumber "W-7396" ;
+    :hasComponentPortion [ :hasGrammPerLitre 30.2 ;
+            :hasPercentage 2.7 ;
+            :role :ActiveIngredient ;
+            :substance substance:3 ] ;
+    :hasPermissionHolder zefix:730369 ;
+    :notice code:11473,
+        code:11880,
+        code:6145 .
+
+:W-7400 a :Phytoregulator,
+        :Product ;
+    schema:name "Paket" ;
+    :exhaustionDeadline "2026-10-31"^^xsd:date ;
+    :federalAdmissionNumber "W-7400" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 21.7 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasPermissionHolder zefix:840339 ;
+    :notice code:11429,
+        code:11448,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7988,
+        code:8067 ;
+    :soldoutDeadline "2025-10-31"^^xsd:date .
+
+:W-7405 a :Phytoregulator,
+        :Product ;
+    schema:name "Fazor" ;
+    :federalAdmissionNumber "W-7405" ;
+    :hasComponentPortion [ :hasPercentage 60.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:961 ] ;
+    :hasPermissionHolder zefix:840339 ;
+    :isSameProductAs :D-7391,
+        :W-7405-1 ;
+    :notice code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:8069 .
+
+:W-7405-1 a :Phytoregulator,
+        :Product ;
+    schema:name "Germstop" ;
+    :federalAdmissionNumber "W-7405-1" ;
+    :hasComponentPortion [ :hasPercentage 60.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:961 ] ;
+    :hasPermissionHolder zefix:267983 ;
+    :isSameProductAs :D-7391,
+        :W-7405 ;
+    :notice code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:8069 .
+
+:W-7438 a :Phytoregulator,
+        :Product ;
+    schema:name "Elotin" ;
+    :federalAdmissionNumber "W-7438" ;
+    :hasComponentPortion [ :hasGrammPerLitre 660.0 ;
+            :hasPercentage 52.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:162 ] ;
+    :hasPermissionHolder zefix:730369 ;
+    :isSameProductAs :D-7396,
+        :D-7397 ;
+    :notice code:11443,
+        code:11447,
+        code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7972,
+        code:7986,
+        code:8065,
+        code:8067,
+        code:8069 .
+
+:W-7439 a :Phytoregulator,
+        :Product ;
+    schema:name "Stabilan 460 SL" ;
+    :federalAdmissionNumber "W-7439" ;
+    :hasComponentPortion [ :hasGrammPerLitre 357.0 ;
+            :hasPercentage 33.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1753 ] ;
+    :hasPermissionHolder zefix:730369 ;
+    :notice code:11443,
+        code:11473,
+        code:11880,
+        code:12045,
+        code:6145,
+        code:7950,
+        code:7988,
+        code:8065,
+        code:8067 .
+
+:W-7463 a :Phytoregulator,
+        :Product ;
+    schema:name "Terpal" ;
+    :federalAdmissionNumber "W-7463" ;
+    :hasComponentPortion [ :hasGrammPerLitre 305.0 ;
+            :hasPercentage 28.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1552 ],
+        [ :hasGrammPerLitre 155.0 ;
+            :hasPercentage 14.2 ;
+            :role :ActiveIngredient ;
+            :substance substance:162 ] ;
+    :hasPermissionHolder zefix:943835 ;
+    :notice code:11443,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7970,
+        code:7977,
+        code:7988,
+        code:8065,
+        code:8067 .
+
+:W-7470 a :Phytoregulator,
+        :Product ;
+    schema:name "Falgro Tabs" ;
+    :federalAdmissionNumber "W-7470" ;
+    :hasComponentPortion [ :hasPercentage 18.7 ;
+            :role :ActiveIngredient ;
+            :substance substance:2012 ] ;
+    :hasPermissionHolder zefix:267983 ;
+    :notice code:11473,
+        code:11880,
+        code:6145 .
+
+:W-7501 a :Phytoregulator,
+        :Product ;
+    schema:name "Next" ;
+    :federalAdmissionNumber "W-7501" ;
+    :hasComponentPortion [ :role :AdditiveToDeclare ;
+            :substance substance:1698 ],
+        [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 26.6 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ] ;
+    :hasPermissionHolder zefix:973510 ;
+    :notice code:11458,
+        code:11469,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7958,
+        code:7977,
+        code:7983,
+        code:8062,
+        code:8067,
+        code:8068,
+        code:8069 .
+
+:W-7542 a :Phytoregulator,
+        :Product ;
+    schema:name "StoreGuard" ;
+    :federalAdmissionNumber "W-7542" ;
+    :hasComponentPortion [ :hasPercentage 2.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1501 ] ;
+    :hasPermissionHolder zefix:1211870 ;
+    :notice code:11448,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7973,
+        code:8067 .
+
+:W-7545 a :Phytoregulator,
+        :Product ;
+    schema:name "AdvanStore" ;
+    :federalAdmissionNumber "W-7545" ;
+    :hasComponentPortion [ :hasPercentage 2.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1501 ] ;
+    :hasPermissionHolder zefix:1211870 ;
+    :notice code:11448,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7950,
+        code:7973,
+        code:8067 .
+
+:W-7558 a :Phytoregulator,
+        :Product ;
+    schema:name "Milo" ;
+    :federalAdmissionNumber "W-7558" ;
+    :hasComponentPortion [ :hasGrammPerLitre 250.0 ;
+            :hasPercentage 25.3 ;
+            :role :ActiveIngredient ;
+            :substance substance:1257 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1798 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1838 ] ;
+    :hasPermissionHolder zefix:878487 ;
+    :notice code:11429,
+        code:11458,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:7974,
+        code:8065,
+        code:8067,
+        code:8069 .
+
+:W-7562 a :Phytoregulator,
+        :Product ;
+    schema:name "Gibbalin SL" ;
+    :federalAdmissionNumber "W-7562" ;
+    :hasComponentPortion [ :hasGrammPerLitre 19.0 ;
+            :hasPercentage 1.83 ;
+            :role :ActiveIngredient ;
+            :substance substance:1957 ],
+        [ :hasGrammPerLitre 19.0 ;
+            :hasPercentage 1.83 ;
+            :role :ActiveIngredient ;
+            :substance substance:1542 ] ;
+    :hasPermissionHolder zefix:1118792 ;
+    :notice code:11473,
+        code:11880,
+        code:6145 .
+
+:W-7621 a :Phytoregulator,
+        :Product ;
+    schema:name "Biox-M" ;
+    :federalAdmissionNumber "W-7621" ;
+    :hasComponentPortion [ :role :AdditiveToDeclare ;
+            :substance substance:1903 ],
+        [ :hasPercentage 100.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1789 ] ;
+    :hasPermissionHolder zefix:1410761 ;
+    :notice code:11429,
+        code:11445,
+        code:11457,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:8067,
+        code:8068,
+        code:8069 .
+
 :W-2743 a :Product,
         :Rodenticide ;
     schema:name "Vulkan- Wühlmauspatrone " ;
@@ -52369,6 +52289,21 @@
         code:8062,
         code:8065,
         code:8069 .
+
+:W-4549 a :Product,
+        :WoundClosureAgent ;
+    schema:name "Tervanol F " ;
+    :federalAdmissionNumber "W-4549" ;
+    :hasComponentPortion [ :hasPercentage 1.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:920 ] ;
+    :hasPermissionHolder zefix:730369 ;
+    :notice code:11469,
+        code:11473,
+        code:11880,
+        code:13876,
+        code:6145,
+        code:7988 .
 
 :W-4682 a :Product,
         :SoapProduct ;
@@ -52571,6 +52506,19 @@
         code:11880,
         code:6145 .
 
+:W-5782 a :Product,
+        :WildlifeDeterrent ;
+    schema:name "Certosan" ;
+    :federalAdmissionNumber "W-5782" ;
+    :hasComponentPortion [ :hasPercentage 99.0 ;
+            :role :ActiveIngredient ;
+            :substance substance:1398 ] ;
+    :hasPermissionHolder zefix:1634453 ;
+    :notice code:11473,
+        code:11880,
+        code:13876,
+        code:6145 .
+
 :W-5807 a :Product,
         :SeedDressing ;
     schema:name "Maxim XL" ;
@@ -52591,6 +52539,18 @@
         code:6145,
         code:7950,
         code:8069 .
+
+:W-5940 a :Product,
+        :WildlifeDeterrent ;
+    schema:name "Fantom-E" ;
+    :federalAdmissionNumber "W-5940" ;
+    :hasComponentPortion [ :role :ActiveIngredient ;
+            :substance substance:1418 ] ;
+    :hasPermissionHolder zefix:1634453 ;
+    :notice code:11473,
+        code:11880,
+        code:13876,
+        code:6145 .
 
 :W-6107 a :Product,
         :SoapProduct ;
@@ -52773,6 +52733,23 @@
         code:11768,
         code:11880,
         code:13344,
+        code:6145 .
+
+:W-6549 a :Product,
+        :WildlifeDeterrent ;
+    schema:name "Trico" ;
+    :federalAdmissionNumber "W-6549" ;
+    :hasComponentPortion [ :hasGrammPerLitre 65.0 ;
+            :hasPercentage 6.4 ;
+            :role :ActiveIngredient ;
+            :substance substance:1539 ] ;
+    :hasPermissionHolder zefix:730369 ;
+    :notice code:11469,
+        code:11472,
+        code:11473,
+        code:11880,
+        code:13876,
+        code:15378,
         code:6145 .
 
 :W-6586 a :Product,
@@ -53503,6 +53480,29 @@
         code:8067,
         code:8068,
         code:8069 .
+
+:W-7602 a :Product,
+        :WildlifeDeterrent ;
+    schema:name "Epsom" ;
+    :federalAdmissionNumber "W-7602" ;
+    :hasComponentPortion [ :role :AdditiveToDeclare ;
+            :substance substance:2058 ],
+        [ :hasGrammPerLitre 26.5 ;
+            :hasPercentage 2.85 ;
+            :role :ActiveIngredient ;
+            :substance substance:1936 ],
+        [ :role :AdditiveToDeclare ;
+            :substance substance:1693 ] ;
+    :hasPermissionHolder zefix:1634453 ;
+    :notice code:11429,
+        code:11435,
+        code:11448,
+        code:11473,
+        code:11880,
+        code:6145,
+        code:7951,
+        code:8062,
+        code:8067 .
 
 :W-7606 a :Product,
         :Rodenticide ;
