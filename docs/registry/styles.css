@@ -1,217 +1,216 @@
-/* style.css */
-
-/* Reset & base ------------------------------------------------------- */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-    background: #f9fafb;
-    color: #111827;
-    line-height: 1.45;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 3rem 1rem;
-  }
-  :root {
-    --brand: #047857;          /* emerald 600 */
-    --brand-light: #d1fae5;    /* emerald 100 */
-    --stroke: #e5e7eb;         /* zinc 200 */
-    --card-bg: #ffffff;
-  }
-  
-  /* Card --------------------------------------------------------------- */
-  .card {
-    width: min(60rem, 100%);
-    background: var(--card-bg);
-    border: 1px solid var(--stroke);
-    border-radius: 1.25rem;
-    box-shadow: 0 4px 24px rgba(0,0,0,.04);
-    padding: 2.5rem 3rem;
-    animation: fade .4s ease;
-  }
-
-    /* make all lists in the card align with the H2 text */
-.card ul {
-    margin: 0.5rem 0;        /* a bit of vertical breathing room */
-    padding-inline-start: 1.5rem;  /* line up the bullets exactly under the heading text */
-    list-style-position: outside;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-  @keyframes fade {
-    from { opacity: 0; transform: translateY(8px); }
-    to   { opacity: 1; transform: none; }
+body {
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #f9fafb;
+  color: #111827;
+  line-height: 1.45;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+}
+:root {
+  --brand: #047857;
+  --brand-light: #d1fae5;
+  --stroke: #e5e7eb;
+  --card-bg: #ffffff;
+}
+.card {
+  width: min(60rem, 100%);
+  background: var(--card-bg);
+  border: 1px solid var(--stroke);
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+  padding: 2.5rem 3rem;
+  animation: fade 0.4s ease;
+}
+.card ul:not(.components) {
+  margin: 0.5rem 0;
+  padding-inline-start: 1.5rem;
+  list-style-position: outside;
+}
+.card ul.components {
+  padding-inline-start: 0;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
   }
-  
-  /* Typography --------------------------------------------------------- */
-
-  /* put this in style.css */
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 .card ul a {
-    color: #2563eb;
-    text-decoration: none;
-  }
-  .card ul a:hover {
-    text-decoration: underline;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: .5rem;
-    color: var(--brand);
-  }
-  .subtitle {
-    color: #6b7280;
-    font-size: .95rem;
-    margin-bottom: 1.5rem;
-  }
-  h2 {
-    margin-top: 2.5rem;
-    font-size: 1.15rem;
-    font-weight: 600;
-    letter-spacing: .02em;
-    color: #374151;
-  }
-  
-  /* Tag / badge -------------------------------------------------------- */
-  .tag, .badge {
-    display: inline-block;
-    border-radius: 9999px;
-    padding: .25rem .75rem;
-    font-size: .8rem;
-    font-weight: 600;
-    text-decoration: none;
-    margin: .25rem .35rem .35rem 0;
-    white-space: nowrap;
-  }
-  .tag {
-    background: var(--brand-light);
-    color: var(--brand);
-  }
-  .badge {
-    background: #e0e7ff;
-    color: #3730a3;
-    transition: .15s;
-  }
-  .badge:hover {
-    background: #312e81;
-    color: #ffffff;
-  }
-
-  /* Darken tags on hover like badges */
+  color: #2563eb;
+  text-decoration: none;
+}
+.card ul a:hover {
+  text-decoration: underline;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--brand);
+}
+.subtitle {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+h2 {
+  margin-top: 2.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #374151;
+}
+.tag, .badge {
+  display: inline-block;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0.25rem 0.35rem 0.35rem 0;
+  white-space: nowrap;
+}
 .tag {
-  transition: background .15s, color .15s;
+  background: var(--brand-light);
+  color: var(--brand);
+}
+.badge {
+  background: #e0e7ff;
+  color: #3730a3;
+  transition: 0.15s;
+}
+.badge:hover {
+  background: #312e81;
+  color: #ffffff;
+}
+.tag {
+  transition: background 0.15s, color 0.15s;
 }
 .tag:hover {
   background: var(--brand);
   color: #ffffff;
 }
-
-  
-  /* Definition list grid ---------------------------------------------- */
-  dl {
-    display: grid;
-    grid-template-columns: 11rem 1fr;
-    row-gap: .75rem;
-    column-gap: 1.5rem;
-    margin-top: 1.75rem;
-  }
-  dt {
-    color: #4b5563;
-    font-weight: 500;
-  }
-  dd a {
-    color: #2563eb;
-    text-decoration: none;
-  }
-  dd a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Utility ------------------------------------------------------------ */
-  #loading {
-    font-size: 1rem;
-    color: #6b7280;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-  }
-  #loading svg {
-    width: 20px;
-    height: 20px;
-    animation: spin .8s linear infinite;
-  }
-  @keyframes spin {
-    to { transform: rotate(360deg); }
-  }
-  .hidden {
-    display: none !important;
-  }
-  .error {
-    color: #b91c1c;
-    background: #fef2f2;
-    padding: 1rem 1.25rem;
-    border: 1px solid #fecaca;
-    border-radius: .75rem;
-  }
-  
-/* Components as responsive tiles ---------------------------------- */
-.components{
-  margin:1rem 0 0;
-  padding:0;
-  list-style:none;
-  display:grid;
-  gap:1rem;
-  grid-template-columns:repeat(auto-fill,minmax(16rem,1fr));
+dl {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  row-gap: 0.75rem;
+  column-gap: 1.5rem;
+  margin-top: 1.75rem;
 }
-.components .tile{
-  border:1px solid var(--stroke);
-  border-radius:.75rem;
-  background:#fff;
-  box-shadow:0 2px 6px rgba(0,0,0,.04);
-  padding:1rem 1.25rem 1.25rem;
-  display:flex;
-  flex-direction:column;
-  gap:.75rem;
+dt {
+  color: #4b5563;
+  font-weight: 500;
 }
-.tile header{
-  display:flex;
-  flex-wrap:wrap;
-  gap:.5rem;
-  align-items:baseline;
+dd a {
+  color: #2563eb;
+  text-decoration: none;
 }
-.tile .role{
-  background:#fee2e2;
-  color:#b91c1c;
+dd a:hover {
+  text-decoration: underline;
 }
-.tile .chem{
-  text-align:center;
+#loading {
+  font-size: 1rem;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
-.tile .chem img{
-  max-width:100%;
-  height:auto;
+#loading svg {
+  width: 20px;
+  height: 20px;
+  animation: spin 0.8s linear infinite;
 }
-.tile .meta{
-  font-size:.85rem;
-  color:#374151;
-  display:flex;
-  gap:.75rem;
-  flex-wrap:wrap;
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
-.smiles{
-  font-family:monospace;
-  background:#f3f4f6;
-  padding:.15rem .3rem;
-  border-radius:.25rem;
-  overflow-x:auto;
+.hidden {
+  display: none !important;
 }
-.link{
-  margin-top:auto;
-  font-size:.8rem;
-  color:#2563eb;
-  text-decoration:none;
+.error {
+  color: #b91c1c;
+  background: #fef2f2;
+  padding: 1rem 1.25rem;
+  border: 1px solid #fecaca;
+  border-radius: 0.75rem;
 }
-.link:hover{text-decoration:underline;}
+.components {
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+.components .tile {
+  border: 1px solid var(--stroke);
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  padding: 1rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+.components .tile:hover,
+.components .tile:focus-visible {
+  border-color: var(--brand);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.components .tile a {
+  cursor: auto;
+}
+.tile header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+.tile .role {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+.tile .chem {
+  text-align: center;
+}
+.tile .chem img {
+  max-width: 100%;
+  height: auto;
+}
+.tile .meta {
+  font-size: 0.85rem;
+  color: #374151;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.smiles {
+  font-family: monospace;
+  background: #f3f4f6;
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.25rem;
+  overflow-x: auto;
+}
+.link {
+  margin-top: auto;
+  font-size: 0.8rem;
+  color: #2563eb;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}

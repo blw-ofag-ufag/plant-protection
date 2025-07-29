@@ -108,15 +108,26 @@ WHERE{
 }`;
 
     const sparqlHazards = `
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX :<https://agriculture.ld.admin.ch/plant-protection/>
 PREFIX schema:<http://schema.org/>
-SELECT ?statementName ?codeIRI WHERE{
+SELECT ?class ?code ?label
+WHERE{
   GRAPH <https://lindas.admin.ch/foag/plant-protection>{
-    VALUES ?p{<https://agriculture.ld.admin.ch/plant-protection/${id}>}
-    ?p :notice ?stmt .
-    ?stmt schema:name ?statementName .
-    FILTER(lang(?statementName)="de")
-    OPTIONAL{?stmt :hasHazardStatementCode ?codeIRI}
+    :${id} :notice ?statement .
+    ?statement schema:name ?label ;
+      a/schema:name ?class .
+    FILTER(lang(?label)="de")
+    OPTIONAL{
+      ?statement :hasHazardStatementCode ?code
+    }
+    VALUES ?class {
+      "R-Satz"@de
+      "S-Satz"@de
+      "Gefahrensymbol"@de
+      "Signalwort"@de 
+    }
   }
 }`;
 
@@ -124,16 +135,20 @@ SELECT ?statementName ?codeIRI WHERE{
     const sparqlComponents = `
 PREFIX :       <https://agriculture.ld.admin.ch/plant-protection/>
 PREFIX schema: <http://schema.org/>
-SELECT ?grams ?pct ?subIRI ?subName ?roleName ?chebiIRI WHERE{
+SELECT *
+WHERE{
   GRAPH <https://lindas.admin.ch/foag/plant-protection>{
     VALUES ?p{<https://agriculture.ld.admin.ch/plant-protection/${id}>}
     ?p :hasComponentPortion ?portion .
-    ?portion :substance ?subIRI ; :role ?roleIRI .
+    ?portion :substance ?substance ; :role ?roleIRI .
     OPTIONAL{?portion :hasGrammPerLitre ?grams}
     OPTIONAL{?portion :hasPercentage ?pct}
-    ?subIRI schema:name ?subName FILTER(lang(?subName)="de"||lang(?subName)="")
+    ?substance schema:name ?subName FILTER(lang(?subName)="de"||lang(?subName)="")
     ?roleIRI schema:name ?roleName FILTER(lang(?roleName)="de"||lang(?roleName)="")
-    OPTIONAL{?subIRI :hasChebiIdentity ?chebiIRI}
+    OPTIONAL{?substance :hasChebiIdentity ?chebiIRI}
+    OPTIONAL{?substance <http://purl.obolibrary.org/obo/chebi/formula> ?formula}
+    OPTIONAL{?substance <http://purl.obolibrary.org/obo/chebi/smiles> ?smiles}
+    OPTIONAL{?substance :iupac ?iupac }
   }
 }
 ORDER BY DESC(?pct) DESC(?grams)`;
@@ -157,34 +172,39 @@ ORDER BY DESC(?pct) DESC(?grams)`;
 
     /* hazards */
     const hazards=[...new Map(
-      hazardJ.results.bindings.map(r=>[r.statementName.value,r.codeIRI?.value||null])
+      hazardJ.results.bindings.map(r=>[r.label.value,r.code?.value||null])
     )].map(([name,iri])=>({name,iri}));
 
-    /* components */
-    const components=cmpJ.results.bindings.map(r=>({
-      name :r.subName.value,
-      role :r.roleName.value,
-      grams:r.grams?.value||null,
-      pct  :r.pct?.value||null,
-      chebi:r.chebiIRI?.value||null
-    }));
+    /* …unchanged code above … */
 
-    const componentsHTML=components.length
-      ? `<ul class="components">
-          ${components.map(c=>`
-            <li class="tile">
-              <header>
-                <h4 class="substance">${c.name}</h4>
-              </header>
-              <div class="meta">
-                ${c.role?`<span>Rolle: ${c.role}</span>`:''}
-                ${c.grams?`<span>Anteil [g/ml]: ${Number(c.grams).toLocaleString('de-CH')} g/L</span>`:''}
-                ${c.pct  ?`<span>Anteil [%]: ${Number(c.pct ).toLocaleString('de-CH')} %</span>`:''}
-                ${c.chebi?`<span>ChEBI-Entität: <a href="${c.chebi}" target="_blank" rel="noopener">${chebiId(c.chebi)}</a></span>`:''}
-              </div>
-            </li>`).join('')}
-        </ul>`
-      : `<p>Keine Angaben.</p>`;
+/* components ------------------------------------------------------ */
+const components = cmpJ.results.bindings.map(r => ({
+  uri    : r.substance.value,
+  name   : r.subName.value,
+  role   : r.roleName.value,
+  grams  : r.grams?.value || null,
+  pct    : r.pct?.value  || null,
+  chebi  : r.chebiIRI?.value || null,
+  iupac  : r.iupac?.value || null,
+  smiles : r.smiles?.value || null,
+  formula: r.formula?.value || null
+}));
+
+const componentsHTML = components.length
+  ? `<ul class="components">
+      ${components.map(c => `
+        <li class="tile" data-uri="${c.chebi ? c.chebi : c.uri }">
+          <header><h4 class="substance">${c.name}</h4></header>
+          <div class="meta">
+            ${c.formula ? `<span><b>Summenformel:</b> ${c.formula}</span>` : ''}
+            ${c.role ? `<span><b>Rolle:</b> ${c.role}</span>` : ''}
+            ${c.grams? `<span><b>Anteil:</b> ${Number(c.grams).toLocaleString('de-CH')} g/L</span>` : ''}
+            ${c.pct  ? `<span><b>Anteil:</b> ${Number(c.pct ).toLocaleString('de-CH')} %</span>` : ''}
+            ${c.chebi? `<span><b>ChEBI-Entität:</b> <a href="${c.chebi}" target="_blank" rel="noopener">${chebiId(c.chebi)}</a></span>` : ''}
+          </div>
+        </li>`).join('')}
+    </ul>`
+  : `<p>Keine Angaben.</p>`;
 
     /* 4· build card */
     const wrap=document.createElement('div');
@@ -246,6 +266,16 @@ ${hazards.length
     /* 6· done */
     $loading.classList.add('hidden');
     $card.classList.remove('hidden');
+
+    /* link the entire tile ------------------------------------------- */
+    $card.addEventListener('click', e => {
+      const tile = e.target.closest('.components .tile');
+      if (!tile) return;                     // click outside a tile
+      // Ignore clicks on real links inside the tile (e.g. the ChEBI link)
+      if (e.target.tagName === 'A') return;
+      const uri = tile.dataset.uri;
+      if (uri) window.open(uri, '_blank', 'noopener');
+    });
 
   } catch(err){
     console.error(err);
