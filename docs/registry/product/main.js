@@ -41,29 +41,44 @@
 
       /* 2· core product */
       const sparqlProduct = `
-PREFIX :       <https://agriculture.ld.admin.ch/plant-protection/>
-PREFIX schema: <http://schema.org/>
-SELECT ?p ?productName ?federalNo ?foreignNo ?countryName ?countryCode ?company
-     ?formLabel ?producttype ?producttypeLabel
-     ?sameProduct ?sameProductName
-WHERE {
-GRAPH <https://lindas.admin.ch/foag/plant-protection> {
-  VALUES ?p { <https://agriculture.ld.admin.ch/plant-protection/${id}> }
-  ?p a ?producttype ;
-     schema:name ?productName ;
-     :federalAdmissionNumber ?federalNo ;
-     :hasPermissionHolder ?company .
-  OPTIONAL { ?p :foreignAdmissionNumber ?foreignNo }
-  OPTIONAL { ?p :isSameProductAs ?sameProduct .
-             ?sameProduct schema:name ?sameProductName }
-  OPTIONAL { ?p :formulation ?fc .
-             ?fc schema:name ?formLabel FILTER(lang(?formLabel)="de") }
-  OPTIONAL { ?producttype schema:name ?producttypeLabel FILTER(lang(?producttypeLabel)="de") }
-}
-OPTIONAL { ?p :hasCountryOfOrigin ?c .
-           ?c schema:name ?countryName FILTER(lang(?countryName)="de")
-           ?c schema:alternateName ?countryCode }
-}`;
+      PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
+      PREFIX schema: <http://schema.org/>
+      SELECT *
+      WHERE {
+        GRAPH ?graph {
+          VALUES ?p { <https://agriculture.ld.admin.ch/plant-protection/${id}> }
+          ?p a ?producttype ;
+            schema:name ?productName ;
+            :federalAdmissionNumber ?federalNo ;
+            :hasPermissionHolder ?company .
+          OPTIONAL {
+            ?p :foreignAdmissionNumber ?foreignNo .
+          }
+          OPTIONAL {
+            ?p :formulation ?fc .
+            ?fc schema:name ?formLabel .
+            FILTER (lang(?formLabel) = "de")
+          }
+          OPTIONAL {
+            ?producttype schema:name ?producttypeLabel .
+            FILTER (lang(?producttypeLabel) = "de")
+          }
+        }
+        OPTIONAL {
+          ?p :hasCountryOfOrigin ?c .
+          ?c schema:name ?countryName .
+          FILTER (lang(?countryName) = "de")
+          ?c schema:alternateName ?countryCode .
+        }
+        OPTIONAL {
+          ?p :isSameProductAs ?sameProduct .
+          ?sameProduct schema:name ?sameProductName .
+          OPTIONAL {
+            ?sameProduct :hasCountryOfOrigin/schema:alternateName ?sameCountryCode .
+          }
+        }
+      }
+      `;
       const prodJ = await fetchSparql(sparqlProduct);
       const prodRows = prodJ.results.bindings;
       if (!prodRows.length) throw new Error(`Kein Datensatz für id=${id} gefunden`);
@@ -74,7 +89,6 @@ OPTIONAL { ?p :hasCountryOfOrigin ?c .
       const federalNo = core.federalNo.value;
       const foreignNo = core.foreignNo?.value || null;
       const countryName = core.countryName?.value;
-      const countryCode = core.countryCode?.value;
       const companyIRI = core.company.value;
       const formulation = core.formLabel?.value ;
 
@@ -83,10 +97,15 @@ OPTIONAL { ?p :hasCountryOfOrigin ?c .
           .map(r => [r.producttype.value, r.producttypeLabel.value])
       )];
 
-      const sameProducts = [...new Map(
-          prodRows.filter(r => r.sameProduct && r.sameProductName)
-          .map(r => [r.sameProduct.value, r.sameProductName.value])
-      )].sort((a, b) => a[1].localeCompare(b[1], 'de'));
+      const sameProducts = new Map(
+        prodRows
+          .filter(r => r.sameProduct && r.sameProductName)
+          .map(r => [
+            r.sameProduct.value,
+            { name: r.sameProductName.value,
+              code: r.sameCountryCode?.value || null }
+          ])
+      );
 
       /* 3· company, hazards, components */
       const sparqlCompany = `
@@ -136,25 +155,29 @@ GRAPH <https://lindas.admin.ch/foag/plant-protection>{
 
       /* components without federated SERVICE */
       const sparqlComponents = `
-PREFIX :       <https://agriculture.ld.admin.ch/plant-protection/>
-PREFIX schema: <http://schema.org/>
-SELECT *
-WHERE{
-GRAPH <https://lindas.admin.ch/foag/plant-protection>{
-  VALUES ?p{<https://agriculture.ld.admin.ch/plant-protection/${id}>}
-  ?p :hasComponentPortion ?portion .
-  ?portion :substance ?substance ; :role ?roleIRI .
-  OPTIONAL{?portion :hasGrammPerLitre ?grams}
-  OPTIONAL{?portion :hasPercentage ?pct}
-  ?substance schema:name ?subName FILTER(lang(?subName)="de"||lang(?subName)="")
-  ?roleIRI schema:name ?roleName FILTER(lang(?roleName)="de"||lang(?roleName)="")
-  OPTIONAL{?substance :hasChebiIdentity ?chebiIRI}
-  OPTIONAL{?substance <http://purl.obolibrary.org/obo/chebi/formula> ?formula}
-  OPTIONAL{?substance <http://purl.obolibrary.org/obo/chebi/smiles> ?smiles}
-  OPTIONAL{?substance :iupac ?iupac }
-}
-}
-ORDER BY DESC(?pct) DESC(?grams)`;
+        PREFIX :         <https://agriculture.ld.admin.ch/plant-protection/>
+        PREFIX schema:   <http://schema.org/>
+        PREFIX obochebi: <http://purl.obolibrary.org/obo/chebi/>
+        SELECT *
+        WHERE
+        {
+          GRAPH <https://lindas.admin.ch/foag/plant-protection>
+          {
+            VALUES ?p{ :${id} }
+            ?p :hasComponentPortion ?portion .
+            ?portion :substance ?substance ; :role ?roleIRI .
+            OPTIONAL{ ?portion            :hasGrammPerLitre ?grams}
+            OPTIONAL{ ?portion            :hasPercentage ?pct}
+            ?substance schema:name ?subName FILTER(lang(?subName)="de"||lang(?subName)="")
+            ?roleIRI   schema:name ?roleName FILTER(lang(?roleName)="de"||lang(?roleName)="")
+            OPTIONAL{ ?substance          :hasChebiIdentity ?chebiIRI}
+            OPTIONAL{ ?substance  obochebi:formula          ?formula}
+            OPTIONAL{ ?substance  obochebi:smiles           ?smiles}
+            OPTIONAL{ ?substance          :iupac            ?iupac }
+          }
+        }
+        ORDER BY DESC(?pct) DESC(?grams)
+      `;
 
       const [companyJ, hazardJ, cmpJ] = await Promise.all([
           fetchSparql(sparqlCompany),
@@ -252,29 +275,34 @@ ORDER BY DESC(?pct) DESC(?grams)`;
         <h1>${productName}</h1>
         <p class="subtitle">Eingetragenes Pflanzenschutzmittel</p>
         <div>${types.map(([iri,l])=>{
-                  const slug=iri.split('/').pop();
-                  return `<a class="tag" href="../overview/index.html?type=${encodeURIComponent(slug)}">${l}</a>`}).join('')}</div>
+                  return `<a class="tag" href="${iri}">${l}</a>`}).join('')}</div>
         </header>
 
         <h2>Produktidentifikatoren</h2>
         <dl>
-        <dt>Globaler Identifikator</dt><dd><a href="${productUri}" target="_blank">${productUri}</a></dd>
-        <dt>Eidgenössische Zulassungsnummer</dt><dd><span class="identifier">${federalNo}</span></dd>
-        ${foreignNo?`<dt>Ausländische Zulassungsnummer</dt><dd><span class="identifier">${foreignNo}</span></dd>`:''}
-        ${countryName?`<dt>Herkunftsland</dt><dd>${countryName}</dd>`:''}
+          <dt>Globaler Identifikator</dt><dd><a href="${productUri}" target="_blank">${productUri}</a></dd>
+          <dt>Eidgenössische Zulassungsnummer</dt><dd><span class="identifier">${federalNo}</span></dd>
+          ${foreignNo?`<dt>Ausländische Zulassungsnummer</dt><dd><span class="identifier">${foreignNo}</span></dd>`:''}
+          ${countryName?`<dt>Herkunftsland</dt><dd>${countryName}</dd>`:''}
         </dl>
 
         <h2>Bewilligungsinhaber</h2>
         <dl>
-        ${comp.name?`<dt>Firma</dt><dd><a href="${companyIRI}" target="_blank" rel="noopener">${comp.name}</a></dd>`:''}
-        ${(comp.street||comp.postal||comp.locality)?`<dt>Adresse</dt><dd>${[comp.street,comp.postal,comp.locality].filter(Boolean).join(', ')}</dd>`:''}
-        ${comp.tel?`<dt>Telefon</dt><dd><a href="${comp.tel}">${comp.tel.replace(/^tel:/,'')}</a></dd>`:''}
-        ${comp.mail?`<dt>Email</dt><dd><a href="mailto:${comp.mail}">${comp.mail}</a></dd>`:''}
-        ${comp.fax?`<dt>Fax</dt><dd><a href="${comp.fax}">${comp.fax.replace(/^tel:/,'')}</a></dd>`:''}
-        ${comp.UID?`<dt>UID</dt><dd><span class="identifier">${comp.UID}</span></dd>`:''}
-        ${comp.CHID?`<dt>CHID</dt><dd><span class="identifier">${comp.CHID}</span></dd>`:''}
-        ${comp.EHRAID?`<dt>EHRAID</dt><dd><span class="identifier">${comp.EHRAID}</span></dd>`:''}
+          ${comp.name?`<dt>Firma</dt><dd><a href="${companyIRI}" target="_blank" rel="noopener">${comp.name}</a></dd>`:''}
+          ${(comp.street||comp.postal||comp.locality)?`<dt>Adresse</dt><dd>${[comp.street,comp.postal,comp.locality].filter(Boolean).join(', ')}</dd>`:''}
+          ${comp.tel?`<dt>Telefon</dt><dd><a href="${comp.tel}">${comp.tel.replace(/^tel:/,'')}</a></dd>`:''}
+          ${comp.mail?`<dt>Email</dt><dd><a href="mailto:${comp.mail}">${comp.mail}</a></dd>`:''}
+          ${comp.fax?`<dt>Fax</dt><dd><a href="${comp.fax}">${comp.fax.replace(/^tel:/,'')}</a></dd>`:''}
+          ${comp.UID?`<dt>UID</dt><dd><span class="identifier">${comp.UID}</span></dd>`:''}
+          ${comp.CHID?`<dt>CHID</dt><dd><span class="identifier">${comp.CHID}</span></dd>`:''}
+          ${comp.EHRAID?`<dt>EHRAID</dt><dd><span class="identifier">${comp.EHRAID}</span></dd>`:''}
         </dl>
+
+        <h2>Chemisch identische Produkte unter anderem Namen</h2>
+          <p style="margin:.6rem 0 1rem;color:#6b7280;font-size:.85rem">
+            Die folgenden Produkte werden zwar unter anderem Namen verkauft, weisen aber dieselbe chemische Formulierung auf.
+          </p>
+        <div id="sameProducts"></div>
 
         <h2>Formulierung</h2>
         <p style="margin:.6rem 0 1rem;color:#6b7280;font-size:.85rem">
@@ -284,23 +312,17 @@ ORDER BY DESC(?pct) DESC(?grams)`;
 
         <h2>Gefahrenhinweise</h2>
         ${hazardsTableHTML || `<p>Keine Gefahrenhinweise verfügbar.</p>`}
-
-        <h2>Chemisch identische Produkte unter anderem Namen</h2>
-        <p style="margin:.6rem 0 1rem;color:#6b7280;font-size:.85rem">
-        Die folgenden Produkte werden zwar unter anderem Namen verkauft, weisen aber dieselbe chemische Formulierung auf.
-        </p>
-        <div id="sameProducts"></div>
       `;
       $card.appendChild(wrap);
 
       /* 5· same‑product badges */
       const tpl = document.getElementById('badge-template');
       const $same = $card.querySelector('#sameProducts');
-      sameProducts.forEach(([iri, name]) => {
-          const a = tpl.content.firstElementChild.cloneNode(true);
-          a.href = `${location.pathname}?id=${encodeURIComponent(iri.split('/').pop())}`;
-          a.textContent = name;
-          $same.appendChild(a);
+      sameProducts.forEach(({ name, code }, iri) => {
+        const a = tpl.content.firstElementChild.cloneNode(true);
+        a.href = `${location.pathname}?id=${encodeURIComponent(iri.split('/').pop())}`;
+        a.textContent = code && code !== 'CH' ? `${name} (${code})` : name;
+        $same.appendChild(a);
       });
 
       /* 6· done */
