@@ -472,7 +472,7 @@ substance:1762 rdfs:label "Z11-14OH"@de .
 
 substance:1766 rdfs:label "Diphenylmethandiisocyanate"@de .
 
-substance:1769 rdfs:label "Natriumdodecylsulfat"@de .
+substance:1769 :hasChebiIdentity chebi:8984 .
 
 substance:1771 rdfs:label "5-Chloro-2-methyl-3(2H)-isothiazolone mixt. with 2-methyl-3(2H)-isothiazolone"@de .
 
@@ -690,7 +690,7 @@ substance:2028 rdfs:label "Alcohols C9-11, ethoxylated propoxylated"@de .
 
 substance:2032 rdfs:label "pentanoic acid, 5-(dimethylamino)-2-methyl-5-oxo-, methyl ester "@de .
 
-substance:2034 rdfs:label "Trinatriumphosphat als Dodecahydrat"@de .
+substance:2034 :hasChebiIdentity chebi:37583 .
 
 substance:2037 rdfs:label "3,6-Dimethyl-4-octin-3,6-diol"@de .
 
@@ -768,7 +768,7 @@ substance:72 rdfs:label "Buprofezin"@de .
 
 substance:79 rdfs:label "Captan"@de .
 
-substance:799 rdfs:label "Tribenuron"@de .
+substance:799 :hasChebiIdentity chebi:83571 .
 
 substance:8 rdfs:label "Abamectin"@de .
 

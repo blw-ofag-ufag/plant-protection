@@ -955,7 +955,7 @@ wikidata:Q16521 a owl:Class ;
         "Viricida"@it ;
     rdfs:subClassOf :ChemicalProduct .
 
-_:n0a52358d4fc34c018b85a6c4261b4e67b12 a owl:Class ;
+_:n4caad910a6b4424a961ba6351796330eb12 a owl:Class ;
     owl:oneOf ( :AdditiveToDeclare :Synergist :Safener :ActiveIngredient ) .
 
 schema:addressLocality a owl:DatatypeProperty ;
@@ -1260,6 +1260,9 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:domain schema:PostalAddress ;
     rdfs:range schema:Country .
 
+:activeIngredients a owl:ObjectProperty ;
+    rdfs:label "Active ingredients"@en .
+
 :applicationArea a owl:ObjectProperty ;
     rdfs:label "Anwendungsgebiet"@de,
         "Application area"@en ;
@@ -1466,7 +1469,7 @@ schema:addressCountry a owl:ObjectProperty ;
         "Role"@en ;
     rdfs:comment "The role that a particular component plays in a mixture."@en ;
     rdfs:domain :ComponentPortion ;
-    rdfs:range _:n0a52358d4fc34c018b85a6c4261b4e67b12 .
+    rdfs:range _:n4caad910a6b4424a961ba6351796330eb12 .
 
 :substance a owl:ObjectProperty ;
     rdfs:label "Substanz"@de,
@@ -1500,9 +1503,6 @@ schema:maxValue rdfs:label "Maximaler Wert"@de,
 
 schema:minValue rdfs:label "Minimaler Wert"@de,
         "Minimal value"@en .
-
-:activeIngredients a owl:ObjectProperty ;
-    rdfs:label "Active ingredients"@en .
 
 :ActiveIngredient rdfs:label "Aktivsubstanz"@de,
         "Active substance"@en,
