@@ -109,49 +109,53 @@
 
       /* 3· company, hazards, components */
       const sparqlCompany = `
-PREFIX schema:<http://schema.org/>
-SELECT ?name ?streetAddress ?postalCode ?addressLocality
-     ?telephone ?email ?fax ?idName ?idValue
-WHERE{
-VALUES ?c{<${companyIRI}>}
-?c schema:name ?name .
-OPTIONAL{?c schema:address ?a .
-         ?a schema:streetAddress ?streetAddress ;
-            schema:postalCode ?postalCode ;
-            schema:addressLocality ?addressLocality}
-OPTIONAL{?c schema:telephone ?telephone}
-OPTIONAL{?c schema:email ?email}
-OPTIONAL{?c schema:fax ?fax}
-OPTIONAL{
-  ?c schema:identifier ?idObj .
-  ?idObj schema:name ?idName ; schema:value ?idValue .
-  FILTER(?idName IN("CompanyUID","CompanyCHID","CompanyEHRAID"))
-}
-}`;
+        PREFIX schema:<http://schema.org/>
+        SELECT ?name ?streetAddress ?postalCode ?addressLocality
+            ?telephone ?email ?fax ?idName ?idValue
+        WHERE
+        {
+          VALUES ?c{<${companyIRI}>}
+          ?c schema:name ?name .
+          OPTIONAL{?c schema:address ?a .
+                  ?a schema:streetAddress ?streetAddress ;
+                      schema:postalCode ?postalCode ;
+                      schema:addressLocality ?addressLocality}
+          OPTIONAL{?c schema:telephone ?telephone}
+          OPTIONAL{?c schema:email ?email}
+          OPTIONAL{?c schema:fax ?fax}
+          OPTIONAL{
+            ?c schema:identifier ?idObj .
+            ?idObj schema:name ?idName ; schema:value ?idValue .
+            FILTER(?idName IN("CompanyUID","CompanyCHID","CompanyEHRAID"))
+          }
+        }
+      `;
 
       const sparqlHazards = `
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX :<https://agriculture.ld.admin.ch/plant-protection/>
-PREFIX schema:<http://schema.org/>
-SELECT ?class ?code ?label
-WHERE{
-GRAPH <https://lindas.admin.ch/foag/plant-protection>{
-  :${id} :notice ?statement .
-  ?statement schema:name ?label ;
-    a/schema:name ?class .
-  FILTER(lang(?label)="de")
-  OPTIONAL{
-    ?statement :hasHazardStatementCode ?code
-  }
-  VALUES ?class {
-    "R-Satz"@de
-    "S-Satz"@de
-    "Gefahrensymbol"@de
-    "Signalwort"@de 
-  }
-}
-}`;
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX :<https://agriculture.ld.admin.ch/plant-protection/>
+        PREFIX schema:<http://schema.org/>
+        SELECT ?class ?code ?label
+        WHERE{
+          GRAPH <https://lindas.admin.ch/foag/plant-protection>
+          {
+            :${id} :notice ?statement .
+            ?statement schema:name ?label ;
+              a/schema:name ?class .
+            FILTER(lang(?label)="de")
+            OPTIONAL{
+              ?statement :hasHazardStatementCode ?code
+            }
+            VALUES ?class {
+              "R-Satz"@de
+              "S-Satz"@de
+              "Gefahrensymbol"@de
+              "Signalwort"@de 
+            }
+          }
+        }
+      `;
 
       /* components without federated SERVICE */
       const sparqlComponents = `
@@ -179,10 +183,41 @@ GRAPH <https://lindas.admin.ch/foag/plant-protection>{
         ORDER BY DESC(?pct) DESC(?grams)
       `;
 
-      const [companyJ, hazardJ, cmpJ] = await Promise.all([
-          fetchSparql(sparqlCompany),
-          fetchSparql(sparqlHazards),
-          fetchSparql(sparqlComponents)
+      /* --- indications ------------------------------------------------ */
+      const sparqlIndications = `
+        PREFIX :       <https://agriculture.ld.admin.ch/plant-protection/>
+        PREFIX schema: <http://schema.org/>
+        SELECT *
+        WHERE{
+          GRAPH <https://lindas.admin.ch/foag/plant-protection>{
+            VALUES ?p { :${id} }
+            ?p :indication ?ind .
+
+            ?ind :applicationArea/schema:name ?area  .
+                FILTER(lang(?area)="de")
+
+            ?ind :cropGroup ?crop .
+                  ?crop schema:name ?cropLabel .
+                  FILTER(lang(?cropLabel)="de")
+
+            ?ind :cropStressor ?pest .
+                  ?pest schema:name ?pestLabel .
+                  FILTER(lang(?pestLabel)="de")
+
+            OPTIONAL{
+              ?ind :notice ?obl .
+              ?obl schema:name ?oblLabel .
+              FILTER(lang(?oblLabel)="de")
+            }
+          }
+        }
+      `;
+
+      const [companyJ, hazardJ, cmpJ, indJ] = await Promise.all([
+        fetchSparql(sparqlCompany),
+        fetchSparql(sparqlHazards),
+        fetchSparql(sparqlComponents),
+        fetchSparql(sparqlIndications)
       ]);
 
       /* company obj */
@@ -268,6 +303,78 @@ GRAPH <https://lindas.admin.ch/foag/plant-protection>{
             </table>`;
       }
 
+      /* indications ---------------------------------------------------- */
+      const indRows = indJ.results.bindings;
+
+      /* ➋  group by indication IRI ------------------------------------ */
+      const byInd = new Map();
+      indRows.forEach(r=>{
+        const key = r.ind.value;
+        if(!byInd.has(key)){
+          byInd.set(key,{
+            area : r.area.value,
+            crops: new Map(),
+            pests: new Map(),
+            obls : new Set()
+          });
+        }
+        const obj = byInd.get(key);
+        obj.crops.set(r.crop.value , {label:r.cropLabel.value , uri:r.crop.value});
+        obj.pests.set(r.pest.value , {label:r.pestLabel.value , uri:r.pest.value});
+        if(r.obl){ obj.obls.add(r.oblLabel.value); }
+      });
+
+      /* ➌  deduplicate obligations globally to assign 1,2,3… ---------- */
+      const oblIndex = new Map();            // text → number
+      let   oblCounter = 1;
+      byInd.forEach(ind=>{
+        ind.obls = [...ind.obls].map(txt=>{
+          if(!oblIndex.has(txt)) oblIndex.set(txt, oblCounter++);
+          return txt;
+        });
+      });
+
+      // HTML table for the indications
+      /* build the HTML table -------------------------------------------- */
+      let indTableHTML = '';
+      if (byInd.size) {
+        indTableHTML = `
+          <table class="indications">
+            <thead>
+              <tr>
+                <th>Bereich</th><th>Kulturen</th><th>Schadorganismen</th><th>Auflagen</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${[...byInd.values()].map(ind => `
+                <tr>
+                  <td>${ind.area}</td>
+
+                  <td>
+                    ${[...ind.crops.values()]
+                      .map(c => `<a href="${c.uri}" target="_blank" rel="noopener">${c.label}</a>`)
+                      .join(',<br> ')}
+                  </td>
+
+                  <td>
+                    ${[...ind.pests.values()]
+                      .map(p => `<a href="${p.uri}" target="_blank" rel="noopener">${p.label}</a>`)
+                      .join(',<br> ')}
+                  </td>
+
+                  <td>
+                    ${ind.obls.length
+                        ? `<ul class="obligations">
+                            ${ind.obls.map(txt => `<li>${txt}</li>`).join('')}
+                          </ul>`
+                        : '—'}
+                  </td>
+                </tr>`).join('')}
+            </tbody>
+          </table>`;
+        }
+
+
       /* 4· build card */
       const wrap = document.createElement('div');
       wrap.innerHTML = `
@@ -309,6 +416,9 @@ GRAPH <https://lindas.admin.ch/foag/plant-protection>{
           ${productName} ${formulation?`ist als ${formulation} formuliert und`:''} besteht aus den folgenden Komponenten:
         </p>
         ${componentsHTML}
+
+        <h2>Zulassungen</h2>
+        ${indTableHTML || `<p>Keine Angaben verfügbar.</p>`}
 
         <h2>Gefahrenhinweise</h2>
         ${hazardsTableHTML || `<p>Keine Gefahrenhinweise verfügbar.</p>`}

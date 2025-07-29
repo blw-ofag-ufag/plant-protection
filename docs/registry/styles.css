@@ -205,13 +205,11 @@ dd a:hover {
   border-radius: 0.25rem;
   overflow-x: auto;
 }
-.link {
-  margin-top: auto;
-  font-size: 0.8rem;
+a {
   color: #2563eb;
   text-decoration: none;
 }
-.link:hover {
+a:hover {
   text-decoration: underline;
 }
 table.hazards{
@@ -232,13 +230,9 @@ table.hazards{
   font-weight:600;
   text-align:left;
 }
-.hazards tbody td:first-child{         /* “Klasse” cells */
+.hazards tbody td:first-child{
   background:#fdfdfd;
   font-weight:500;
-}
-.hazards a{
-  color:#2563eb;
-  text-decoration:none;
 }
 .hazards a:hover{text-decoration:underline;}
 .identifier{
@@ -251,4 +245,39 @@ table.hazards{
   border: 1px solid #9ca4b166;
   border-radius: .3rem;
   line-height: 1;
+}
+table.indications{
+  width:100%;
+  border-collapse:collapse;
+  margin:.75rem 0 0;
+  font-size:.9rem;
+}
+.indications th,
+.indications td
+{
+  border:1px solid var(--stroke);
+  padding:.45rem .65rem;
+  vertical-align:top;
+}
+.indications th{
+  background:#f3f4f6;
+  color:#374151;
+  font-weight:600;
+  text-align:left;
+}
+.obligation-ref{
+  cursor:help;
+  position:relative;
+}
+.obligations{
+  list-style-position: inside;   /* markers live inside the cell      */
+  margin: 0;                     /* no outside margin                  */
+  padding: 0;                    /* kill the default left indent       */
+}
+
+.obligations li{
+  margin: 0 0 .25rem 0;          /* small vertical breathing space     */
+  line-height: 1.35;
+  overflow-wrap: anywhere;       /* let very long words wrap if needed */
+  font-size: 0.8rem;
 }
