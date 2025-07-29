@@ -1,6 +1,5 @@
 /* ---------------------------------------------------------------
- *  script.js – Plant‑Protection Product Profile
- *                (v3  – lightweight tiles, local CheBI link only)
+ * Plant Protection Product Profile
  * --------------------------------------------------------------*/
 (async () => {
 
@@ -258,7 +257,12 @@
           `<ul class="components">
     ${components.map(c => `
       <li class="tile" data-uri="${c.chebi ? c.chebi : c.uri }">
-        <header><h4 class="substance">${c.name}</h4></header>
+      <header><h4 class="substance">${c.name}</h4></header>
+      ${c.smiles ? `
+        <svg class="mol"
+             data-smiles="${c.smiles}"
+             data-smiles-theme="oldschool"
+             alt="Molekülzeichnung von ${c.name}" />` : ''}
         <div class="meta">
           ${c.formula ? `<span><b>Summenformel:</b> ${c.formula}</span>` : ''}
           ${c.role ? `<span><b>Rolle:</b> ${c.role}</span>` : ''}
@@ -306,7 +310,7 @@
       /* indications ---------------------------------------------------- */
       const indRows = indJ.results.bindings;
 
-      /* ➋  group by indication IRI ------------------------------------ */
+      /* group by indication IRI ------------------------------------ */
       const byInd = new Map();
       indRows.forEach(r=>{
         const key = r.ind.value;
@@ -324,7 +328,7 @@
         if(r.obl){ obj.obls.add(r.oblLabel.value); }
       });
 
-      /* ➌  deduplicate obligations globally to assign 1,2,3… ---------- */
+      /* deduplicate obligations globally to assign 1,2,3… ---------- */
       const oblIndex = new Map();            // text → number
       let   oblCounter = 1;
       byInd.forEach(ind=>{
@@ -424,6 +428,10 @@
         ${hazardsTableHTML || `<p>Keine Gefahrenhinweise verfügbar.</p>`}
       `;
       $card.appendChild(wrap);
+      // Render all data‑smiles elements that are now in the DOM
+      if (window.SmiDrawer) {
+        SmiDrawer.apply();
+      }
 
       /* 5· same‑product badges */
       const tpl = document.getElementById('badge-template');
