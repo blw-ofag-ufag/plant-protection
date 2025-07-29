@@ -54,7 +54,7 @@ body {
   text-decoration: underline;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--brand);
@@ -66,7 +66,7 @@ h1 {
 }
 h2 {
   margin-top: 2.5rem;
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.02em;
   color: #374151;
@@ -270,14 +270,14 @@ table.indications{
   position:relative;
 }
 .obligations{
-  list-style-position: inside;   /* markers live inside the cell      */
-  margin: 0;                     /* no outside margin                  */
-  padding: 0;                    /* kill the default left indent       */
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
 }
 .obligations li{
-  margin: 0 0 .25rem 0;          /* small vertical breathing space     */
+  margin: 0 0 .25rem 0;
   line-height: 1.35;
-  overflow-wrap: anywhere;       /* let very long words wrap if needed */
+  overflow-wrap: anywhere;
   font-size: 0.8rem;
 }
 .components .tile {

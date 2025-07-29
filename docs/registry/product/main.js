@@ -346,7 +346,7 @@
           <table class="indications">
             <thead>
               <tr>
-                <th>Bereich</th><th>Kulturen</th><th>Schadorganismen</th><th>Auflagen</th>
+                <th>Bereich</th><th>Kultur</th><th>Schadorganismus</th><th>Auflagen</th>
               </tr>
             </thead>
             <tbody>
@@ -409,7 +409,7 @@
           ${comp.EHRAID?`<dt>EHRAID</dt><dd><span class="identifier">${comp.EHRAID}</span></dd>`:''}
         </dl>
 
-        <h2>Chemisch identische Produkte unter anderem Namen</h2>
+        <h2>Chemisch identische Produkte</h2>
           <p style="margin:.6rem 0 1rem;color:#6b7280;font-size:.85rem">
             Die folgenden Produkte werden zwar unter anderem Namen verkauft, weisen aber dieselbe chemische Formulierung auf.
           </p>
