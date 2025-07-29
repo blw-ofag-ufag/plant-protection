@@ -214,3 +214,41 @@ dd a:hover {
 .link:hover {
   text-decoration: underline;
 }
+table.hazards{
+  width:100%;
+  border-collapse:collapse;
+  margin:.75rem 0 0;
+  font-size:.9rem;
+}
+.hazards th,
+.hazards td{
+  border:1px solid var(--stroke);
+  padding:.45rem .65rem;
+  vertical-align:top;
+}
+.hazards th{
+  background:#f3f4f6;
+  color:#374151;
+  font-weight:600;
+  text-align:left;
+}
+.hazards tbody td:first-child{         /* “Klasse” cells */
+  background:#fdfdfd;
+  font-weight:500;
+}
+.hazards a{
+  color:#2563eb;
+  text-decoration:none;
+}
+.hazards a:hover{text-decoration:underline;}
+.identifier{
+  display:inline-block;
+  font-family: monospace;
+  font-size: .9rem;
+  padding: .2rem .3rem;
+  background: #eff0f388;
+  color: #566174;
+  border: 1px solid #9ca4b166;
+  border-radius: .3rem;
+  line-height: 1;
+}

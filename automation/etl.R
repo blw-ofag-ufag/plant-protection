@@ -141,7 +141,7 @@ describe <- function(x, parallelimport = FALSE) {
 
   # add diverse links to codes
   prefix = paste0(base, "code/")
-  triple(subject, ":formulation", uri(getFK(x[["ProductInformation"]], variable), prefix))
+  triple(subject, ":formulation", uri(getFK(x[["ProductInformation"]], "FormulationCode"), prefix))
   for (variable in c("CodeR", "CodeS", "DangerSymbol", "SignalWords")) {
     triple(subject, ":notice", uri(getFK(x[["ProductInformation"]], variable), prefix))
   }
