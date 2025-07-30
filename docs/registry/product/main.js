@@ -253,26 +253,50 @@
           formula: r.formula?.value || null
       }));
 
-      const componentsHTML = components.length ?
-          `<ul class="components">
-    ${components.map(c => `
-      <li class="tile" data-uri="${c.chebi ? c.chebi : c.uri }">
-      <header><h4 class="substance">${c.name}</h4></header>
-      ${c.smiles ? `
-        <svg class="mol"
-             data-smiles="${c.smiles}"
-             data-smiles-theme="oldschool"
-             alt="Molekülzeichnung von ${c.name}" />` : ''}
-        <div class="meta">
-          ${c.formula ? `<span><b>Summenformel:</b> ${c.formula}</span>` : ''}
-          ${c.role ? `<span><b>Rolle:</b> ${c.role}</span>` : ''}
-          ${c.grams? `<span><b>Anteil:</b> ${Number(c.grams).toLocaleString('de-CH')} g/L</span>` : ''}
-          ${c.pct  ? `<span><b>Anteil:</b> ${Number(c.pct ).toLocaleString('de-CH')} %</span>` : ''}
-          ${c.chebi? `<span><b>ChEBI-Entität:</b> <a href="${c.chebi}" target="_blank" rel="noopener">${chebiId(c.chebi)}</a></span>` : ''}
-        </div>
-      </li>`).join('')}
-  </ul>` :
-          `<p>Keine Angaben.</p>`;
+      /* ── fallback “no structure” SVG ───────────────────────────── */
+      const placeholderSvg = `
+      <br>
+      <br>
+      <svg class="mol placeholder" viewBox="0 0 160 120"
+          role="img" aria-label="Keine Strukturformel vorhanden">
+        <text x="50%" y="50%"
+              dominant-baseline="middle" text-anchor="middle"
+              font-size="100" font-family="Inter, sans-serif"
+              fill="none" stroke="#000000" stroke-width="0.75"
+              stroke-linejoin="round">?</text>
+      </svg>`;
+
+      const componentsHTML = components.length
+        ? `<ul class="components">
+            ${components.map(c => {
+                // --- build the fancy label ---------------------------------
+                const pct  = c.pct   ? `${(+c.pct ).toFixed(2)} %` : null;
+                const gram = c.grams ? `${(+c.grams).toFixed(1)} g L<sup>−1</sup>` : null;
+                const portion = [pct, gram].filter(Boolean).join(' / ');
+
+                return `
+                <li class="tile" data-uri="${c.chebi ? c.chebi : c.uri}">
+                  <header>
+                    <h4 class="substance">${c.name}</h4>
+
+                    <!-- 💥 mind‑blowing portion label -->
+                    ${portion ? `<div class="portion">${portion}</div>` : ''}
+                  </header>
+
+                  ${c.smiles ? `
+                    <svg class="mol"
+                        data-smiles="${c.smiles}"
+                        data-smiles-theme="oldschool"
+                        alt="Molekülzeichnung von ${c.name}" />` : placeholderSvg}
+
+                  <div class="meta">
+                    ${c.formula ? `<span><b>Summenformel:</b> ${c.formula}</span>` : ''}
+                    ${c.role    ? `<span><b>Rolle:</b> ${c.role}</span>` : ''}
+                    ${c.chebi   ? `<span><b>ChEBI‑Entität:</b> <a href="${c.chebi}" target="_blank" rel="noopener">${chebiId(c.chebi)}</a></span>` : ''}
+                  </div>
+                </li>`; }).join('')}
+          </ul>`
+        : `<p>Keine Angaben.</p>`;
 
       /* hazards --------------------------------------------------------- */
       const hazardRows = hazardJ.results.bindings.map(r => ({

@@ -286,4 +286,21 @@ table.indications{
 .components .mol {
   display: block;
   margin: -0.5rem -1rem;
+  margin-top: -0.75rem;  /* fine‑tune to taste */
+  z-index: 0;
+}
+/* Make the whole tile a stacking‑context */
+.components .tile { position: relative; }
+
+/* Portion label – huge, subtle, sits behind the name */
+.components .portion {
+  position: absolute;
+  top: 2.5rem;          /* adjust vertically under the h4 */
+  font-size: 1.5rem;     /* go even bigger if you dare */
+  font-weight: 600;
+  line-height: 1;
+  color: #68717e66;        /* Tailwind slate‑300 → quiet grey */
+  pointer-events: none;  /* so clicks still hit the tile */
+  z-index: 1;           /* literally behind everything */
+  white-space: nowrap;   /* keep it on one line */
 }
