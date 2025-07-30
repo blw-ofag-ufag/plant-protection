@@ -1,5 +1,5 @@
 @prefix : <https://agriculture.ld.admin.ch/plant-protection/> .
-@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix CHEBI: <http://purl.obolibrary.org/obo/CHEBI_> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -10,7 +10,7 @@
 @prefix wikidata: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-chebi:24431 a owl:Class ;
+CHEBI:24431 a owl:Class ;
     rdfs:label "Chemische Entität"@de,
         "Chemical entity"@en,
         "Entité chimique"@fr,
@@ -955,7 +955,7 @@ wikidata:Q16521 a owl:Class ;
         "Viricida"@it ;
     rdfs:subClassOf :ChemicalProduct .
 
-_:nf946374ef46d4976a1539e649ade64cab12 a owl:Class ;
+_:n0163bf3c013c4b3ebfb987ed1ba6a85fb12 a owl:Class ;
     owl:oneOf ( :AdditiveToDeclare :Synergist :Safener :ActiveIngredient ) .
 
 schema:addressLocality a owl:DatatypeProperty ;
@@ -1299,7 +1299,7 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:comment "Verknüpft eine Substanz mit der entsprechenden chemischen Entität in der CheBI-Ontologie und erleichtert so eine standardisierte chemische Identifizierung."@de,
         "Associates a substance with its corresponding chemical entity in the CheBI ontology, facilitating standardized chemical identification."@en ;
     rdfs:domain :Substance ;
-    rdfs:range chebi:24431 .
+    rdfs:range CHEBI:24431 .
 
 :hasChildCropGroup a owl:ObjectProperty ;
     rdfs:label "Untergruppe"@de,
@@ -1469,7 +1469,7 @@ schema:addressCountry a owl:ObjectProperty ;
         "Role"@en ;
     rdfs:comment "The role that a particular component plays in a mixture."@en ;
     rdfs:domain :ComponentPortion ;
-    rdfs:range _:nf946374ef46d4976a1539e649ade64cab12 .
+    rdfs:range _:n0163bf3c013c4b3ebfb987ed1ba6a85fb12 .
 
 :substance a owl:ObjectProperty ;
     rdfs:label "Substanz"@de,
