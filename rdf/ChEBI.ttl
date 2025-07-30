@@ -78,9 +78,9 @@ substance:1239 :hasChebiIdentity CHEBI:9422 .
 
 substance:124 :hasChebiIdentity CHEBI:81856 .
 
-substance:1245 rdfs:label "Terbuthylazine"@de .
+substance:1245 :hasChebiIdentity CHEBI:30263 .
 
-substance:1248 rdfs:label "Thifensulfuron-methyl"@de .
+substance:1248 :hasChebiIdentity CHEBI:83453 .
 
 substance:1254 :hasChebiIdentity CHEBI:9682 .
 
@@ -884,21 +884,21 @@ substance:972 :isDefinedByBiologicalTaxon wikidata:Q2345333 .
 
 substance:974 :isDefinedByBiologicalTaxon wikidata:Q7181031 .
 
-substance:975 rdfs:label "Z8-12Ac"@de .
+substance:975 :hasChebiIdentity CHEBI:179337 .
 
-substance:976 rdfs:label "E8-12Ac"@de .
+substance:976 :hasChebiIdentity CHEBI:179343 .
 
-substance:977 rdfs:label "Z8-12OH ((Z)-8-dodecen-1-ol)"@de .
+substance:977 :hasChebiIdentity CHEBI:616085 .
 
-substance:980 rdfs:label "Pyrimethanil"@de .
+substance:980 :hasChebiIdentity CHEBI:8674 .
 
-substance:981 rdfs:label "Mepanipyrim"@de .
+substance:981 :hasChebiIdentity CHEBI:6751 .
 
-substance:982 rdfs:label "Fludioxonil"@de .
+substance:982 :hasChebiIdentity CHEBI:81763 .
 
 substance:984 :isDefinedByBiologicalTaxon wikidata:Q108178965 .
 
-substance:988 rdfs:label "Sojalecithin"@de .
+substance:988 :hasChebiIdentity CHEBI:86658 .
 
 substance:998 :isDefinedByBiologicalTaxon wikidata:Q13394572 .
 

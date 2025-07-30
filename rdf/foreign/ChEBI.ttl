@@ -19,6 +19,10 @@ CHEBI:145501 rdfs:label "thiencarbazone" .
 
 CHEBI:179333 rdfs:label "9Z-Dodecenyl acetate" .
 
+CHEBI:179337 rdfs:label "8Z-Dodecenyl acetate" .
+
+CHEBI:179343 rdfs:label "8E-Dodecenyl acetate" .
+
 CHEBI:196041 rdfs:label "7E,9Z-Dodecadienyl acetate" .
 
 CHEBI:21763 rdfs:label "N-methylethanolamine" .
@@ -36,6 +40,8 @@ CHEBI:28878 rdfs:label "dodecan-1-ol" .
 CHEBI:2962 rdfs:label "kresoxim-methyl" .
 
 CHEBI:3018 rdfs:label "bentazone" .
+
+CHEBI:30263 rdfs:label "terbutylazine" .
 
 CHEBI:32687 rdfs:label "piperonyl butoxide" .
 
@@ -91,6 +97,8 @@ CHEBI:59511 rdfs:label "cilastatin sodium" .
 
 CHEBI:62961 rdfs:label "clopyralid" .
 
+CHEBI:6751 rdfs:label "mepanipyrim" .
+
 CHEBI:6798 rdfs:label "metazachlor" .
 
 CHEBI:70721 rdfs:label "clethodim" .
@@ -116,6 +124,8 @@ CHEBI:81741 rdfs:label "Iodosulfuron-methyl-sodium" .
 CHEBI:81749 rdfs:label "Flazasulfuron" .
 
 CHEBI:81760 rdfs:label "difenoconazole" .
+
+CHEBI:81763 rdfs:label "fludioxonil" .
 
 CHEBI:81773 rdfs:label "metconazole" .
 
@@ -167,6 +177,8 @@ CHEBI:82048 rdfs:label "zoxamide" .
 
 CHEBI:8248 rdfs:label "pirimicarb" .
 
+CHEBI:83453 rdfs:label "thifensulfuron-methyl" .
+
 CHEBI:83502 rdfs:label "foramsulfuron" .
 
 CHEBI:83569 rdfs:label "pendimethalin" .
@@ -176,6 +188,10 @@ CHEBI:83571 rdfs:label "tribenuron" .
 CHEBI:83640 rdfs:label "dimethenamid-P" .
 
 CHEBI:84033 rdfs:label "fosetyl-Al" .
+
+CHEBI:86658 rdfs:label "L-alpha-Phosphatidylcholine" .
+
+CHEBI:8674 rdfs:label "pyrimethanil" .
 
 CHEBI:8939 rdfs:label "flumioxazin" .
 
@@ -262,6 +278,12 @@ substance:1239 chebi:formula "C18H24ClN3O" ;
 
 substance:124 chebi:formula "C8H6Cl2O3" ;
     chebi:smiles "C1(=CC=C(C(=C1OC)C(O)=O)Cl)Cl" .
+
+substance:1245 chebi:formula "C9H16ClN5" ;
+    chebi:smiles "CCNc1nc(Cl)nc(NC(C)(C)C)n1" .
+
+substance:1248 chebi:formula "C12H13N5O6S2" ;
+    chebi:smiles "S1C=CC(=C1C(OC)=O)S(NC(=O)NC=2N=C(N=C(N2)OC)C)(=O)=O" .
 
 substance:1254 chebi:formula "C7H4Cl3NO3" ;
     chebi:smiles "OC(=O)COc1nc(Cl)c(Cl)cc1Cl" .
@@ -448,4 +470,19 @@ substance:813 chebi:formula "C12H11NO" ;
 
 substance:894 chebi:formula "C19H17Cl2N3O3" ;
     chebi:smiles "CC1COC(Cn2cncn2)(O1)c1ccc(Oc2ccc(Cl)cc2)cc1Cl" .
+
+substance:975 chebi:formula "C14H26O2" ;
+    chebi:smiles "O(CCCCCCC/C=C\\CCC)C(=O)C" .
+
+substance:976 chebi:formula "C14H26O2" ;
+    chebi:smiles "O(CCCCCCC/C=C/CCC)C(=O)C" .
+
+substance:980 chebi:formula "C12H13N3" ;
+    chebi:smiles "Cc1cc(C)nc(Nc2ccccc2)n1" .
+
+substance:981 chebi:formula "C14H13N3" ;
+    chebi:smiles "CC#Cc1cc(C)nc(Nc2ccccc2)n1" .
+
+substance:982 chebi:formula "C12H6F2N2O2" ;
+    chebi:smiles "C1=CC=C2C(=C1C3=CNC=C3C#N)OC(O2)(F)F" .
 

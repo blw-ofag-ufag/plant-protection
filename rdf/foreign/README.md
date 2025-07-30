@@ -6,7 +6,6 @@ The files in this folder are automatically written.
 
 ```rq
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 PREFIX schema: <http://schema.org/>
 PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
 PREFIX chebi: <http://purl.obolibrary.org/obo/chebi/>
