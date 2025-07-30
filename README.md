@@ -1,6 +1,8 @@
 > [!NOTE]
 > This GitHub repository is used as a proof-of-concept. It does not contain any official information from the Federal Office for Agriculture.
 
+<img width="1378" height="661" alt="image" src="https://github.com/user-attachments/assets/9e16624d-003b-484c-8afd-36ca0983a129" />
+
 # Example queries
 
 ## [Companies that sell product applicable agains potato late blight](https://s.zazuko.com/ALGTr2)
