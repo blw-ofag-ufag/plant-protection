@@ -1,0 +1,1032 @@
+@prefix schema: <http://schema.org/> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+
+wikidata:Q1032508 schema:name "Acrolepiopsis assectella" .
+
+wikidata:Q10330509 schema:name "Amblyseius andersoni" .
+
+wikidata:Q103811471 schema:name "Parastagonospora nodorum" .
+
+wikidata:Q103817219 schema:name "Septoria tritici" .
+
+wikidata:Q10406928 schema:name "Alternaria porri" .
+
+wikidata:Q10413188 schema:name "Anthocoris nemoralis" .
+
+wikidata:Q10415221 schema:name "Aphis spiraecola" .
+
+wikidata:Q10431598 schema:name "Blumeriella jaapii" .
+
+wikidata:Q10432033 schema:name "Boeremia sambuci-nigrae" .
+
+wikidata:Q10433870 schema:name "Botryotinia squamosa" .
+
+wikidata:Q10433881 schema:name "Botrytis allii" .
+
+wikidata:Q10433893 schema:name "Botrytis fabae" .
+
+wikidata:Q10439002 schema:name "Cacopsylla" .
+
+wikidata:Q10439063 schema:name "Cacopsylla mali" .
+
+wikidata:Q10439091 schema:name "Cacopsylla pruni" .
+
+wikidata:Q10439574 schema:name "Calepitrimerus vitis" .
+
+wikidata:Q10448077 schema:name "Chalara" .
+
+wikidata:Q1045638 schema:name "Mamestra brassicae" .
+
+wikidata:Q10457059 schema:name "Colletotrichum lupini" .
+
+wikidata:Q10457178 schema:name "Colomerus vitis" .
+
+wikidata:Q10473981 schema:name "Diptilomiopidae" .
+
+wikidata:Q10476632 schema:name "Drepanopeziza ribis" .
+
+wikidata:Q104825 schema:name "Talpidae" .
+
+wikidata:Q10485035 schema:name "Entyloma eryngii" .
+
+wikidata:Q10493219 schema:name "Exserohilum" .
+
+wikidata:Q1049481 schema:name "Ostrinia nubilalis" .
+
+wikidata:Q1049713 schema:name "Yponomeutidae" .
+
+wikidata:Q104978214 schema:name "Microdochium nivale" .
+
+wikidata:Q104989334 schema:name "Plenodomus lindquistii" .
+
+wikidata:Q1050343 schema:name "Plutella xylostella" .
+
+wikidata:Q105054940 schema:name "Glomerella acutata" .
+
+wikidata:Q105055708 schema:name "Helminthosporium oryzae" .
+
+wikidata:Q105060374 schema:name "Peronospora parasitica" .
+
+wikidata:Q10506686 schema:name "Godronia cassandrae" .
+
+wikidata:Q10507042 schema:name "Golovinomyces orontii" .
+
+wikidata:Q10573776 schema:name "Macrolophus pygmaeus" .
+
+wikidata:Q10584312 schema:name "Microdochium majus" .
+
+wikidata:Q10591378 schema:name "Mycosphaerella linicola" .
+
+wikidata:Q10599388 schema:name "Nesidiocoris tenuis" .
+
+wikidata:Q10608057 schema:name "Oidium neolycopersici" .
+
+wikidata:Q10610673 schema:name "Ophiosphaerella herpotricha" .
+
+wikidata:Q10621350 schema:name "Parthenothrips dracaenae" .
+
+wikidata:Q10629909 schema:name "Phyllocoptes gracilis" .
+
+wikidata:Q10635260 schema:name "Podosphaera aphanis" .
+
+wikidata:Q10635270 schema:name "Podosphaera mors-uvae" .
+
+wikidata:Q10635271 schema:name "Podosphaera myrtillina" .
+
+wikidata:Q10641403 schema:name "Psallus" .
+
+wikidata:Q10645270 schema:name "Psylla buxi" .
+
+wikidata:Q10646258 schema:name "Puccinia opizii" .
+
+wikidata:Q10649257 schema:name "Ramularia collo-cygni" .
+
+wikidata:Q10654433 schema:name "Rhynchosporium orthosporum" .
+
+wikidata:Q10660209 schema:name "Saissetia coffeae" .
+
+wikidata:Q10665919 schema:name "Septoria apiicola" .
+
+wikidata:Q10665947 schema:name "Septoria chrysanthemella" .
+
+wikidata:Q10666044 schema:name "Septoria petroselini" .
+
+wikidata:Q10675708 schema:name "Venturia inaequalis" .
+
+wikidata:Q10681915 schema:name "Stromatinia gladioli" .
+
+wikidata:Q10701362 schema:name "Tranzschelia pruni-spinosae" .
+
+wikidata:Q10702710 schema:name "Trichoderma aggressivum" .
+
+wikidata:Q10704098 schema:name "Trioza apicalis" .
+
+wikidata:Q10711324 schema:name "Ustilago hordei" .
+
+wikidata:Q10714040 schema:name "Venturia nashicola" .
+
+wikidata:Q1071848 schema:name "Cameraria ohridella" .
+
+wikidata:Q107461274 schema:name "Plasmopara crustosa" .
+
+wikidata:Q107582349 schema:name "Colletotrichum spinaciae" .
+
+wikidata:Q107638616 schema:name "Diplocarpon coronariae" .
+
+wikidata:Q1077812 schema:name "Eupoecilia ambiguella" .
+
+wikidata:Q108117421 schema:name "Oidium tabaci" .
+
+wikidata:Q108178965 schema:name "Phlebia gigantea" .
+
+wikidata:Q108195922 schema:name "Phomopsis helianthi" .
+
+wikidata:Q108198395 schema:name "Phyllactinia actinidiae" .
+
+wikidata:Q108471185 schema:name "Venturia oleaginea" .
+
+wikidata:Q108599739 schema:name "Exobasidium vaccinii var. japonicum" .
+
+wikidata:Q108687355 schema:name "Podosphaera clandestina var. cydoniae" .
+
+wikidata:Q10876 schema:name "Bacteria" .
+
+wikidata:Q10998 schema:name "Solanum tuberosum" .
+
+wikidata:Q110420353 schema:name "Pseudomonas syringae pv. lachrymans" .
+
+wikidata:Q1106356 schema:name "Grapholita molesta" .
+
+wikidata:Q11113134 schema:name "Phyllactinia moricola" .
+
+wikidata:Q111346 schema:name "Convolvulus arvensis" .
+
+wikidata:Q1117479 schema:name "Helminthosporium solani" .
+
+wikidata:Q1130524 schema:name "Pucciniales" .
+
+wikidata:Q1135851 schema:name "Botrytis cinerea" .
+
+wikidata:Q11832425 schema:name "Apion" .
+
+wikidata:Q1187084 schema:name "Crioceris asparagi" .
+
+wikidata:Q11962 schema:name "Stegobium paniceum" .
+
+wikidata:Q1210088 schema:name "Otiorhynchus" .
+
+wikidata:Q12145842 schema:name "Pegomya betae" .
+
+wikidata:Q1235677 schema:name "Sclerotinia homoeocarpa" .
+
+wikidata:Q12379653 schema:name "Scolytidae" .
+
+wikidata:Q1252923 schema:name "Scrobipalpa ocellatella" .
+
+wikidata:Q1259351 schema:name "Sparganothis pilleriana" .
+
+wikidata:Q1280932 schema:name "Tenthredinidae" .
+
+wikidata:Q1281116 schema:name "Podosphaera pannosa" .
+
+wikidata:Q1301591 schema:name "Oulema melanopus" .
+
+wikidata:Q1301905 schema:name "Adoxophyes orana" .
+
+wikidata:Q1303946 schema:name "Bemisia tabaci" .
+
+wikidata:Q1310150 schema:name "Colletotrichum coccodes" .
+
+wikidata:Q131143 schema:name "Pseudomonas" .
+
+wikidata:Q131219 schema:name "Taraxacum officinale" .
+
+wikidata:Q1312676 schema:name "Rhyzopertha dominica" .
+
+wikidata:Q1312778 schema:name "Uromyces viciae-fabae" .
+
+wikidata:Q131469754 schema:name "Xanthomonas phaseoli pv. phaseoli" .
+
+wikidata:Q131471650 schema:name "Rhizoctonia cerealis" .
+
+wikidata:Q131471662 schema:name "Waitea circinata var. oryzae" .
+
+wikidata:Q131497743 schema:name "Peronospora farinosa f. sp. spinaciae" .
+
+wikidata:Q131499414 schema:name "Pseudomonas syringae pv. morsprunorum" .
+
+wikidata:Q131506166 schema:name "Xanthomonas arboricola pv. juglandis" .
+
+wikidata:Q1315870 schema:name "Agrotis" .
+
+wikidata:Q131672 schema:name "Fusarium" .
+
+wikidata:Q13217466 schema:name "Pepino mosaic virus" .
+
+wikidata:Q13224243 schema:name "Acerophagus maculipennis" .
+
+wikidata:Q133266 schema:name "Alternaria" .
+
+wikidata:Q133538 schema:name "Lasioderma serricorne" .
+
+wikidata:Q1335549 schema:name "Tetranychus urticae" .
+
+wikidata:Q1336450 schema:name "Drosophila suzukii" .
+
+wikidata:Q13375975 schema:name "Grapholita lobarzewskii" .
+
+wikidata:Q13394572 schema:name "Leptomastidea abnormis" .
+
+wikidata:Q13394629 schema:name "Leptomastix dactylopii" .
+
+wikidata:Q134055 schema:name "Cladosporium" .
+
+wikidata:Q134284 schema:name "Botrytis" .
+
+wikidata:Q1348959 schema:name "Anthonomus rubi" .
+
+wikidata:Q134941 schema:name "Metarhizium anisopliae" .
+
+wikidata:Q135374 schema:name "Frankliniella occidentalis" .
+
+wikidata:Q1354085 schema:name "Aphididae" .
+
+wikidata:Q13565566 schema:name "Dysaphis pyri" .
+
+wikidata:Q13608938 schema:name "Ephestia kuhniella" .
+
+wikidata:Q136322 schema:name "Archips podana" .
+
+wikidata:Q1369189 schema:name "Puccinia ribis" .
+
+wikidata:Q13851757 schema:name "Scaptomyza flava" .
+
+wikidata:Q138622 schema:name "Mycosphaerella graminicola" .
+
+wikidata:Q1390 schema:name "Insecta" .
+
+wikidata:Q139958 schema:name "Fusarium oxysporum" .
+
+wikidata:Q1411830 schema:name "Heterobasidion annosum" .
+
+wikidata:Q1422236 schema:name "Puccinia porri" .
+
+wikidata:Q1422663 schema:name "Agromyzidae" .
+
+wikidata:Q143459 schema:name "Oulema gallaeciana" .
+
+wikidata:Q143569 schema:name "Pseudococcidae" .
+
+wikidata:Q1447372 schema:name "Byturus tomentosus" .
+
+wikidata:Q1453267 schema:name "Erysiphe betae" .
+
+wikidata:Q145777 schema:name "Convolvulaceae" .
+
+wikidata:Q145869 schema:name "Ranunculaceae" .
+
+wikidata:Q14594990 schema:name "Amphimallon majale" .
+
+wikidata:Q146130 schema:name "Ranunculus" .
+
+wikidata:Q14621706 schema:name "Pseudococcus viburni" .
+
+wikidata:Q1465179 schema:name "Oscinella frit" .
+
+wikidata:Q146566 schema:name "Stemphylium vesicarium" .
+
+wikidata:Q14705283 schema:name "Viteus vitifoliae" .
+
+wikidata:Q147300 schema:name "Aureobasidium pullulans" .
+
+wikidata:Q147621 schema:name "Bromus" .
+
+wikidata:Q14847257 schema:name "Monocotyledoneae" .
+
+wikidata:Q148675 schema:name "Trifolium repens" .
+
+wikidata:Q149072 schema:name "Phytophthora infestans" .
+
+wikidata:Q149125 schema:name "Thanatephorus cucumeris" .
+
+wikidata:Q1493916 schema:name "Rhagoletis completa" .
+
+wikidata:Q149490 schema:name "Didymella bryoniae" .
+
+wikidata:Q1499415 schema:name "Puccinia striiformis" .
+
+wikidata:Q1513447 schema:name "Sitona lineatus" .
+
+wikidata:Q152553 schema:name "Colchicum autumnale" .
+
+wikidata:Q1532970 schema:name "Aphis fabae" .
+
+wikidata:Q1548922 schema:name "Ceutorhynchus napi" .
+
+wikidata:Q155909 schema:name "Urtica dioica" .
+
+wikidata:Q15633687 schema:name "Drechslera teres" .
+
+wikidata:Q15633887 schema:name "Ascochyta fabae" .
+
+wikidata:Q1564671 schema:name "Brassicogethes aeneus" .
+
+wikidata:Q156954 schema:name "Leptinotarsa decemlineata" .
+
+wikidata:Q157249 schema:name "Ajuga reptans" .
+
+wikidata:Q157264 schema:name "Rumex" .
+
+wikidata:Q157343 schema:name "Veronica chamaedrys" .
+
+wikidata:Q157408 schema:name "Plantago lanceolata" .
+
+wikidata:Q157547 schema:name "Veratrum album" .
+
+wikidata:Q157571 schema:name "Poa annua" .
+
+wikidata:Q157683 schema:name "Sphingidae" .
+
+wikidata:Q158321 schema:name "Veronica filiformis" .
+
+wikidata:Q158332 schema:name "Oxalis stricta" .
+
+wikidata:Q158603 schema:name "Vanessa cardui" .
+
+wikidata:Q159084 schema:name "Rumex alpinus" .
+
+wikidata:Q1596502 schema:name "Lyonetiidae" .
+
+wikidata:Q159724 schema:name "Veronica serpyllifolia" .
+
+wikidata:Q1608118 schema:name "Diplocarpon rosae" .
+
+wikidata:Q161581 schema:name "Galium aparine" .
+
+wikidata:Q161704 schema:name "Calystegia sepium" .
+
+wikidata:Q1621708 schema:name "Taphrina pruni" .
+
+wikidata:Q162544 schema:name "Glechoma hederacea" .
+
+wikidata:Q162734 schema:name "Lymantriidae" .
+
+wikidata:Q162800 schema:name "Rumex obtusifolius" .
+
+wikidata:Q1632202 schema:name "Coccidae" .
+
+wikidata:Q1634711 schema:name "Chaetocnema concinna" .
+
+wikidata:Q1634854 schema:name "Tilletia caries" .
+
+wikidata:Q163527 schema:name "Echinochloa crus-galli" .
+
+wikidata:Q1638558 schema:name "Cirsium" .
+
+wikidata:Q164002 schema:name "Operophtera brumata" .
+
+wikidata:Q164230 schema:name "Apera spica-venti" .
+
+wikidata:Q16536334 schema:name "Ceutorhynchus quadridens" .
+
+wikidata:Q16537267 schema:name "Ceutorhynchus pleurostigma" .
+
+wikidata:Q1680271 schema:name "Athalia rosae" .
+
+wikidata:Q1743610 schema:name "Rhagoletis cerasi" .
+
+wikidata:Q1755354 schema:name "Erysiphaceae" .
+
+wikidata:Q175754 schema:name "Cydalima perspectalis" .
+
+wikidata:Q1765768 schema:name "Coniella diplodiella" .
+
+wikidata:Q176864 schema:name "Hylobius abietis" .
+
+wikidata:Q1778497 schema:name "Contarinia nasturtii" .
+
+wikidata:Q1778703 schema:name "Ceutorhynchus assimilis" .
+
+wikidata:Q1800300 schema:name "Lariophagus distinguendus" .
+
+wikidata:Q1808247 schema:name "Chamaepsila rosae" .
+
+wikidata:Q18349335 schema:name "Heterorhabditis megidis" .
+
+wikidata:Q18539312 schema:name "Phytoptidae" .
+
+wikidata:Q1892046 schema:name "Thaumetopoeidae",
+        "Thaumetopoeinae" .
+
+wikidata:Q1907227 schema:name "Aphidius colemani" .
+
+wikidata:Q193407 schema:name "Chrysomelidae" .
+
+wikidata:Q1945705 schema:name "Aphidius ervi" .
+
+wikidata:Q1969330 schema:name "Sclerotinia" .
+
+wikidata:Q1972523 schema:name "Lepidosaphes ulmi" .
+
+wikidata:Q1977089 schema:name "Thripidae" .
+
+wikidata:Q2022500 schema:name "Taphrina deformans" .
+
+wikidata:Q206556 schema:name "Planococcus citri" .
+
+wikidata:Q2066868 schema:name "Cercospora" .
+
+wikidata:Q2066891 schema:name "Phoma" .
+
+wikidata:Q2084190 schema:name "Passalora fulva" .
+
+wikidata:Q2084213 schema:name "Septoria lycopersici" .
+
+wikidata:Q209596 schema:name "Senecio" .
+
+wikidata:Q209602 schema:name "Coccoidea" .
+
+wikidata:Q20976 schema:name "Tipula paludosa" .
+
+wikidata:Q20980531 schema:name "Arvicola terrestris" .
+
+wikidata:Q2116610 schema:name "Puccinia allii" .
+
+wikidata:Q21224679 schema:name "Phytonemus" .
+
+wikidata:Q21231860 schema:name "Quadraspidiotus" .
+
+wikidata:Q21315856 schema:name "Puccinia petroselini" .
+
+wikidata:Q21321918 schema:name "Puccinia cichorii" .
+
+wikidata:Q213548 schema:name "Pteridium aquilinum" .
+
+wikidata:Q21383092 schema:name "Clavibacter michiganensis subsp. michiganensis" .
+
+wikidata:Q21398152 schema:name "Plenodomus lingam" .
+
+wikidata:Q21399451 schema:name "Pseudomonas syringae pv. phaseolicola" .
+
+wikidata:Q21399457 schema:name "Pseudomonas syringae pv. syringae" .
+
+wikidata:Q21399463 schema:name "Pseudomonas syringae pv. tomato" .
+
+wikidata:Q217350 schema:name "Sitophilus granarius" .
+
+wikidata:Q21874197 schema:name "Erigeron canadensis" .
+
+wikidata:Q219224 schema:name "Sitophilus oryzae" .
+
+wikidata:Q2207329 schema:name "Bactrocera oleae" .
+
+wikidata:Q2214586 schema:name "Habrobracon hebetor" .
+
+wikidata:Q2215256 schema:name "Meloidogyne" .
+
+wikidata:Q2222304 schema:name "Chaetocnema tibialis" .
+
+wikidata:Q2230727 schema:name "Phytophthora cactorum" .
+
+wikidata:Q2267811 schema:name "Erysiphe necator" .
+
+wikidata:Q2301438 schema:name "Cronartium ribicola" .
+
+wikidata:Q2313186 schema:name "Monilinia laxa" .
+
+wikidata:Q2315947 schema:name "Podosphaera leucotricha" .
+
+wikidata:Q233024 schema:name "Adalia bipunctata" .
+
+wikidata:Q2332344 schema:name "Atomaria linearis" .
+
+wikidata:Q23390 schema:name "Cervidae" .
+
+wikidata:Q2345333 schema:name "Beauveria bassiana" .
+
+wikidata:Q23485 schema:name "Allium cepa" .
+
+wikidata:Q2377614 schema:name "Uromyces appendiculatus" .
+
+wikidata:Q2382963 schema:name "Aphis pomi" .
+
+wikidata:Q2386245 schema:name "Thrips tabaci" .
+
+wikidata:Q240929 schema:name "Anthonomus pomorum" .
+
+wikidata:Q2410490 schema:name "Oryzaephilus mercator" .
+
+wikidata:Q242573 schema:name "Polygonum aviculare" .
+
+wikidata:Q24268 schema:name "Puccinia recondita" .
+
+wikidata:Q244452 schema:name "Cicadellidae" .
+
+wikidata:Q245242 schema:name "Crioceris duodecimpunctata" .
+
+wikidata:Q248425 schema:name "Pyralidae" .
+
+wikidata:Q25347 schema:name "Bryophyta" .
+
+wikidata:Q25400 schema:name "Asteraceae" .
+
+wikidata:Q2557995 schema:name "Aphis gossypii" .
+
+wikidata:Q25823 schema:name "Myriapoda" .
+
+wikidata:Q2589115 schema:name "Pemphigus bursarius" .
+
+wikidata:Q261008 schema:name "Thaumetopoea processionea" .
+
+wikidata:Q26158 schema:name "Bellis perennis" .
+
+wikidata:Q26292479 schema:name "Streptomyces scabiei" .
+
+wikidata:Q26297 schema:name "Rumex acetosa" .
+
+wikidata:Q26307560 schema:name "Xenorhabdus bovienii" .
+
+wikidata:Q2634837 schema:name "Brevicoryne brassicae" .
+
+wikidata:Q264998 schema:name "Chrysoperla carnea" .
+
+wikidata:Q2697099 schema:name "Magnaporthe grisea" .
+
+wikidata:Q2699011 schema:name "Pythium" .
+
+wikidata:Q2703884 schema:name "Golovinomyces cichoracearum" .
+
+wikidata:Q2708559 schema:name "Ustilago tritici" .
+
+wikidata:Q2712591 schema:name "Fusarium culmorum" .
+
+wikidata:Q27133 schema:name "Tracheophytes" .
+
+wikidata:Q2716477 schema:name "Rhizoctonia" .
+
+wikidata:Q27191 schema:name "Heteroptera" .
+
+wikidata:Q27264 schema:name "Capsella bursa-pastoris" .
+
+wikidata:Q276262 schema:name "Elymus repens" .
+
+wikidata:Q28175 schema:name "Melolontha melolontha" .
+
+wikidata:Q28319 schema:name "Lepidoptera" .
+
+wikidata:Q28457 schema:name "Elateridae" .
+
+wikidata:Q2853020 schema:name "Colletotrichum lindemuthianum" .
+
+wikidata:Q2858202 schema:name "Aphanomyces" .
+
+wikidata:Q28674074 schema:name "Neofabraea vagabunda" .
+
+wikidata:Q2871755 schema:name "Aulacorthum solani" .
+
+wikidata:Q289074 schema:name "Pyrenophora tritici-repentis" .
+
+wikidata:Q28953 schema:name "Tortricidae" .
+
+wikidata:Q292074 schema:name "Venturia" .
+
+wikidata:Q292264 schema:name "Puccinia hordei" .
+
+wikidata:Q293311 schema:name "Deroceras" .
+
+wikidata:Q2934344 schema:name "Calocoris" .
+
+wikidata:Q2972256 schema:name "Scaphoideus titanus" .
+
+wikidata:Q2972260 schema:name "Empoasca vitis" .
+
+wikidata:Q3008672 schema:name "Cylindrocladium buxicola" .
+
+wikidata:Q3021774 schema:name "Alternaria radicina" .
+
+wikidata:Q3024203 schema:name "Lygus" .
+
+wikidata:Q305162 schema:name "Puccinia" .
+
+wikidata:Q3061909 schema:name "Phytophthora cryptogea" .
+
+wikidata:Q30906964 schema:name "Rhizoctonia solani" .
+
+wikidata:Q310467 schema:name "Bacillus thuringiensis" .
+
+wikidata:Q310475 schema:name "Septoria" .
+
+wikidata:Q311294 schema:name "Phytophthora" .
+
+wikidata:Q3134908 schema:name "Heterorhabditis bacteriophora" .
+
+wikidata:Q3140391 schema:name "Hoplocampa" .
+
+wikidata:Q3216059 schema:name "Laetisaria fuciformis" .
+
+wikidata:Q322994 schema:name "Dryopteris filix-mas" .
+
+wikidata:Q3270185 schema:name "Halyomorpha halys" .
+
+wikidata:Q3272137 schema:name "Sitophilus zeamais" .
+
+wikidata:Q3274988 schema:name "Macrosiphum euphorbiae" .
+
+wikidata:Q33141702 schema:name "Halticinae" .
+
+wikidata:Q3320779 schema:name "Monilia" .
+
+wikidata:Q3325393 schema:name "Plioreocepta poeciloptera" .
+
+wikidata:Q33472 schema:name "Peribatodes rhomboidaria" .
+
+wikidata:Q3359256 schema:name "Erysiphe pisi" .
+
+wikidata:Q337796 schema:name "Blumeria graminis" .
+
+wikidata:Q3410512 schema:name "Dysaphis plantaginea" .
+
+wikidata:Q341600 schema:name "Cirsium arvense" .
+
+wikidata:Q3647385 schema:name "Chlorops pumilionis" .
+
+wikidata:Q3686995 schema:name "Coniothyrium" .
+
+wikidata:Q369337 schema:name "Phragmidium" .
+
+wikidata:Q373290 schema:name "Diaspididae" .
+
+wikidata:Q3772399 schema:name "Gloeosporium" .
+
+wikidata:Q3772404 schema:name "Glomerella cingulata" .
+
+wikidata:Q378023 schema:name "Phyllopertha horticola" .
+
+wikidata:Q37868 schema:name "Algae" .
+
+wikidata:Q388648 schema:name "Photorhabdus luminescens" .
+
+wikidata:Q3900047 schema:name "Peronospora tabacina" .
+
+wikidata:Q3900048 schema:name "Peronospora destructor" .
+
+wikidata:Q3901665 schema:name "Phomopsis viticola" .
+
+wikidata:Q3906344 schema:name "Plasmopara halstedii" .
+
+wikidata:Q3924916 schema:name "Pseudoperonospora cubensis" .
+
+wikidata:Q3966739 schema:name "Spilocaea" .
+
+wikidata:Q41559 schema:name "Pieridae" .
+
+wikidata:Q4260197 schema:name "Delia floralis" .
+
+wikidata:Q4314880 schema:name "Phaeosphaeria nodorum" .
+
+wikidata:Q43238 schema:name "Poaceae" .
+
+wikidata:Q43365 schema:name "Corvus" .
+
+wikidata:Q4356998 schema:name "Phytoptus" .
+
+wikidata:Q4357993 schema:name "Tarsonemidae" .
+
+wikidata:Q4358160 schema:name "Acalitus essigi" .
+
+wikidata:Q45262 schema:name "Cydia pomonella" .
+
+wikidata:Q45559 schema:name "Geometridae" .
+
+wikidata:Q459180 schema:name "Noctuidae" .
+
+wikidata:Q46858 schema:name "Tuta absoluta" .
+
+wikidata:Q4712742 schema:name "Albugo tragopogonis" .
+
+wikidata:Q4736348 schema:name "Alternaria brassicae" .
+
+wikidata:Q4736354 schema:name "Alternaria dauci" .
+
+wikidata:Q474636 schema:name "Tipulidae" .
+
+wikidata:Q476326 schema:name "Gryllotalpa gryllotalpa" .
+
+wikidata:Q4779847 schema:name "Apiognomonia" .
+
+wikidata:Q4803966 schema:name "Ascochyta pisi" .
+
+wikidata:Q48703112 schema:name "Erysiphe cichoracearum" .
+
+wikidata:Q48847073 schema:name "Phytophthora rubi" .
+
+wikidata:Q4915492 schema:name "Bipolaris" .
+
+wikidata:Q4948840 schema:name "Botryosphaeria obtusa" .
+
+wikidata:Q49528817 schema:name "Microterys flavus" .
+
+wikidata:Q4957943 schema:name "Dasineura brassicae" .
+
+wikidata:Q49607119 schema:name "Cladosporium allii" .
+
+wikidata:Q50365760 schema:name "Amblyseius degenerans" .
+
+wikidata:Q50772526 schema:name "Psylliodes chrysocephala" .
+
+wikidata:Q5114870 schema:name "Chrysomyxa" .
+
+wikidata:Q5124960 schema:name "Cladosporium cucumerinum" .
+
+wikidata:Q513255 schema:name "Synanthedon tipuliformis" .
+
+wikidata:Q5147068 schema:name "Colletotrichum acutatum" .
+
+wikidata:Q5147078 schema:name "Colletotrichum fragariae" .
+
+wikidata:Q5147091 schema:name "Colletotrichum orbiculare" .
+
+wikidata:Q517643 schema:name "Equisetaceae" .
+
+wikidata:Q5187693 schema:name "Cronartium" .
+
+wikidata:Q5196111 schema:name "Curvularia" .
+
+wikidata:Q5226308 schema:name "Pyrenopeziza brassicae" .
+
+wikidata:Q5267719 schema:name "Steinernema carpocapsae" .
+
+wikidata:Q5271812 schema:name "Diaporthe helianthi" .
+
+wikidata:Q5274261 schema:name "Didymella applanata" .
+
+wikidata:Q5279832 schema:name "Diplocarpon mespili" .
+
+wikidata:Q5279833 schema:name "Diplocarpon earlianum" .
+
+wikidata:Q5303814 schema:name "Steinernema feltiae" .
+
+wikidata:Q5306823 schema:name "Drechslera" .
+
+wikidata:Q5396383 schema:name "Erysiphe cruciferarum" .
+
+wikidata:Q5396389 schema:name "Erysiphe heraclei" .
+
+wikidata:Q54365385 schema:name "Gymnosporangium fuscum" .
+
+wikidata:Q54371230 schema:name "Wilsonomyces carpophilus" .
+
+wikidata:Q5442662 schema:name "Feltiella acarisuga" .
+
+wikidata:Q5516728 schema:name "Gaeumannomyces graminis var. avenae" .
+
+wikidata:Q5574380 schema:name "Gnomonia fructicola" .
+
+wikidata:Q557676 schema:name "Etiella zinckenella" .
+
+wikidata:Q5615696 schema:name "Guignardia fulvida" .
+
+wikidata:Q5672141 schema:name "Amblyseius californicus" .
+
+wikidata:Q582991 schema:name "Sciaridae" .
+
+wikidata:Q5835607 schema:name "Eretmocerus mundus" .
+
+wikidata:Q59546595 schema:name "Coniothyrium minitans" .
+
+wikidata:Q59547823 schema:name "Pseudopeziza tracheiphila" .
+
+wikidata:Q59578558 schema:name "Sclerotium cepivorum" .
+
+wikidata:Q598541 schema:name "Zeuzera pyrina" .
+
+wikidata:Q600498 schema:name "Nezara viridula" .
+
+wikidata:Q602740 schema:name "Rubus" .
+
+wikidata:Q604793 schema:name "Guignardia bidwellii" .
+
+wikidata:Q612789 schema:name "Ustilago avenae" .
+
+wikidata:Q618307 schema:name "Synanthedon myopaeformis" .
+
+wikidata:Q618315 schema:name "Eriosoma lanigerum" .
+
+wikidata:Q621790 schema:name "Bremia lactucae" .
+
+wikidata:Q621829 schema:name "Peronosporales" .
+
+wikidata:Q622010 schema:name "Plasmopara viticola" .
+
+wikidata:Q625190 schema:name "Albugo candida" .
+
+wikidata:Q63123831 schema:name "Erwinia carotovora subsp. carotovora" .
+
+wikidata:Q635471 schema:name "Melampsora" .
+
+wikidata:Q640085 schema:name "Panonychus ulmi" .
+
+wikidata:Q6441858 schema:name "Kuehneola uredinis" .
+
+wikidata:Q6528392 schema:name "Leptosphaeria coniothyrium" .
+
+wikidata:Q6528396 schema:name "Leptosphaeria maculans" .
+
+wikidata:Q6534980 schema:name "Leveillula taurica" .
+
+wikidata:Q6676009 schema:name "Ustilago nuda" .
+
+wikidata:Q668208 schema:name "Myzus persicae" .
+
+wikidata:Q6731294 schema:name "Magnaporthe poae" .
+
+wikidata:Q6741484 schema:name "Arthrocladiella mougeotii" .
+
+wikidata:Q676204 schema:name "Tetranychidae" .
+
+wikidata:Q682164 schema:name "Ambrosia artemisiifolia" .
+
+wikidata:Q6947195 schema:name "Mycosphaerella fragariae" .
+
+wikidata:Q6947210 schema:name "Mycosphaerella pinodes" .
+
+wikidata:Q6992815 schema:name "Neofabraea malicorticis" .
+
+wikidata:Q70483904 schema:name "Gemmamyces piceae" .
+
+wikidata:Q7135959 schema:name "Parasitus" .
+
+wikidata:Q7169462 schema:name "Peronospora sparsa" .
+
+wikidata:Q7169463 schema:name "Peronospora trifoliorum" .
+
+wikidata:Q7169465 schema:name "Peronospora valerianellae" .
+
+wikidata:Q7169466 schema:name "Peronospora viciae" .
+
+wikidata:Q7181031 schema:name "Phasmarhabditis hermaphrodita" .
+
+wikidata:Q7187117 schema:name "Phoma exigua var. linicola" .
+
+wikidata:Q7187129 schema:name "Phoma pinodella" .
+
+wikidata:Q7188038 schema:name "Phragmidium mucronatum" .
+
+wikidata:Q7188039 schema:name "Phragmidium rubi-idaei" .
+
+wikidata:Q7188040 schema:name "Phragmidium violaceum" .
+
+wikidata:Q7188488 schema:name "Phyllachora pomigena" .
+
+wikidata:Q7189817 schema:name "Phytophthora fragariae" .
+
+wikidata:Q7189827 schema:name "Phytophthora phaseoli" .
+
+wikidata:Q7204607 schema:name "Pleospora herbarum" .
+
+wikidata:Q7204611 schema:name "Stemphylium botryosum" .
+
+wikidata:Q7207071 schema:name "Podosphaera macularis" .
+
+wikidata:Q7207073 schema:name "Podosphaera tridactyla" .
+
+wikidata:Q7207076 schema:name "Podosphaera xanthii" .
+
+wikidata:Q721100 schema:name "Gracillariidae" .
+
+wikidata:Q7216874 schema:name "Veronica" .
+
+wikidata:Q724130 schema:name "Plasmodiophora" .
+
+wikidata:Q7255026 schema:name "Pseudomonas chlororaphis" .
+
+wikidata:Q7255252 schema:name "Pseudoperonospora humuli" .
+
+wikidata:Q7258185 schema:name "Puccinia asparagi" .
+
+wikidata:Q7258191 schema:name "Puccinia dioicae" .
+
+wikidata:Q7262937 schema:name "Pycnostysanus azaleae" .
+
+wikidata:Q7263460 schema:name "Pyrenophora teres" .
+
+wikidata:Q7263462 schema:name "Pyrenophora graminea" .
+
+wikidata:Q7263907 schema:name "Pythium ultimum" .
+
+wikidata:Q7290354 schema:name "Ramularia" .
+
+wikidata:Q7321729 schema:name "Rhynchosporium secalis" .
+
+wikidata:Q7452330 schema:name "Septocyta ruborum" .
+
+wikidata:Q74663 schema:name "Ascochyta" .
+
+wikidata:Q74842 schema:name "Grapholita funebrana" .
+
+wikidata:Q749983 schema:name "Lymexylidae" .
+
+wikidata:Q761689 schema:name "Delia radicum" .
+
+wikidata:Q7684552 schema:name "Oculimacula yallundae" .
+
+wikidata:Q768519 schema:name "Cecidomyiidae" .
+
+wikidata:Q768766 schema:name "Amphimallon solstitiale" .
+
+wikidata:Q779383 schema:name "Plodia interpunctella" .
+
+wikidata:Q779695 schema:name "Euxoa" .
+
+wikidata:Q779905 schema:name "Oryzaephilus surinamensis" .
+
+wikidata:Q7802811 schema:name "Tilletia controversa" .
+
+wikidata:Q7802813 schema:name "Tilletia laevis" .
+
+wikidata:Q783121 schema:name "Icerya purchasi" .
+
+wikidata:Q7835510 schema:name "Tranzschelia discolor" .
+
+wikidata:Q7840786 schema:name "Trichogramma evanescens" .
+
+wikidata:Q7861358 schema:name "Typhula incarnata" .
+
+wikidata:Q7861360 schema:name "Typhula ishikariensis" .
+
+wikidata:Q7900893 schema:name "Uromyces beticola" .
+
+wikidata:Q790159 schema:name "Anarsia lineatella" .
+
+wikidata:Q7920446 schema:name "Venturia carpophila" .
+
+wikidata:Q793503 schema:name "Caloptilia azaleella" .
+
+wikidata:Q794323 schema:name "Ips typographus" .
+
+wikidata:Q7990362 schema:name "Mycosphaerella brassicicola" .
+
+wikidata:Q8043054 schema:name "Xanthomonas fragariae" .
+
+wikidata:Q8043055 schema:name "Xanthomonas campestris pv. campestris" .
+
+wikidata:Q80819881 schema:name "Cladosporium variabile" .
+
+wikidata:Q80820723 schema:name "Mycosphaerella dianthi" .
+
+wikidata:Q80822823 schema:name "Pseudocercosporella herpotrichoides" .
+
+wikidata:Q80936789 schema:name "Colletotrichum graminicola" .
+
+wikidata:Q80973031 schema:name "Pyricularia oryzae" .
+
+wikidata:Q811652 schema:name "Helicoverpa armigera" .
+
+wikidata:Q815051 schema:name "Lobesia botrana" .
+
+wikidata:Q815617 schema:name "Aleyrodidae" .
+
+wikidata:Q8316 schema:name "Dicotyledones" .
+
+wikidata:Q841786 schema:name "Eriophyidae" .
+
+wikidata:Q84312977 schema:name "Venturia pirina" .
+
+wikidata:Q843136 schema:name "Penicillium" .
+
+wikidata:Q848100 schema:name "Cydia nigricana" .
+
+wikidata:Q84826165 schema:name "Cladosporium allii-cepae" .
+
+wikidata:Q84832098 schema:name "Marssonina panattoniana" .
+
+wikidata:Q84833084 schema:name "Gnomonia leptostyla" .
+
+wikidata:Q84841011 schema:name "Phoma lingam" .
+
+wikidata:Q84847330 schema:name "Rhizoctonia zeae" .
+
+wikidata:Q84855498 schema:name "Septoria nodorum" .
+
+wikidata:Q84857640 schema:name "Drechslera tritici-repentis" .
+
+wikidata:Q864705 schema:name "Miridae" .
+
+wikidata:Q866091 schema:name "Erwinia amylovora" .
+
+wikidata:Q87273622 schema:name "Phytophthora porri" .
+
+wikidata:Q892348 schema:name "Uromyces pisi-sativi" .
+
+wikidata:Q892455 schema:name "Uromyces" .
+
+wikidata:Q898337 schema:name "Pandemis heparana" .
+
+wikidata:Q899672 schema:name "Fallopia japonica" .
+
+wikidata:Q915669 schema:name "Arionidae" .
+
+wikidata:Q928458 schema:name "Ephestia elutella" .
+
+wikidata:Q998226 schema:name "Myzus cerasi" .
+

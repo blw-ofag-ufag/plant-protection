@@ -1,5 +1,5 @@
 @prefix : <https://agriculture.ld.admin.ch/plant-protection/> .
-@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix CHEBI: <http://purl.obolibrary.org/obo/CHEBI_> .
 @prefix code: <https://agriculture.ld.admin.ch/plant-protection/code/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
@@ -8,7 +8,7 @@ code:P8dAK7iErOPdDbks9 a :ModeOfActionTerm ;
     rdfs:label "Organophosphates"@en ;
     schema:identifier "1B" ;
     schema:isPartOf code:PnC5dTtdJdjxRVKCW ;
-    :activeIngredients chebi:34690,
+    :activeIngredients CHEBI:34690,
         "Acephate",
         "Azamethiphos",
         "Azinphos-ethyl",
@@ -85,30 +85,30 @@ code:PxC6dTtdFDxxUTK3L a :ModeOfActionTerm ;
     rdfs:label "Carbamates"@en ;
     schema:identifier "1A" ;
     schema:isPartOf code:PnC5dTtdJdjxRVKCW ;
-    :activeIngredients chebi:2555,
-        chebi:3014,
-        chebi:3390,
-        chebi:34304,
-        chebi:34556,
-        chebi:34611,
-        chebi:34938,
-        chebi:35048,
-        chebi:38463,
-        chebi:38465,
-        chebi:38470,
-        chebi:38476,
-        chebi:38483,
-        chebi:38491,
-        chebi:38504,
-        chebi:38505,
-        chebi:38508,
-        chebi:38537,
-        chebi:38539,
-        chebi:38548,
-        chebi:38549,
-        chebi:38569,
-        chebi:38571,
-        chebi:38576,
-        chebi:6835,
-        chebi:8248 .
+    :activeIngredients CHEBI:2555,
+        CHEBI:3014,
+        CHEBI:3390,
+        CHEBI:34304,
+        CHEBI:34556,
+        CHEBI:34611,
+        CHEBI:34938,
+        CHEBI:35048,
+        CHEBI:38463,
+        CHEBI:38465,
+        CHEBI:38470,
+        CHEBI:38476,
+        CHEBI:38483,
+        CHEBI:38491,
+        CHEBI:38504,
+        CHEBI:38505,
+        CHEBI:38508,
+        CHEBI:38537,
+        CHEBI:38539,
+        CHEBI:38548,
+        CHEBI:38549,
+        CHEBI:38569,
+        CHEBI:38571,
+        CHEBI:38576,
+        CHEBI:6835,
+        CHEBI:8248 .
 

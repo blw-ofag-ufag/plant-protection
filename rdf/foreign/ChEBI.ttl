@@ -1,0 +1,451 @@
+@prefix CHEBI: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix chebi: <http://purl.obolibrary.org/obo/chebi/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix substance: <https://agriculture.ld.admin.ch/plant-protection/substance/> .
+
+CHEBI:131371 rdfs:label "iron(3+) phosphate" .
+
+CHEBI:132497 rdfs:label "isoxadifen-ethyl" .
+
+CHEBI:133786 rdfs:label "mefenpyr-diethyl" .
+
+CHEBI:137374 rdfs:label "aclonifen" .
+
+CHEBI:137425 rdfs:label "prohexadione-calcium" .
+
+CHEBI:143152 rdfs:label "cloquintocet-mexyl" .
+
+CHEBI:145501 rdfs:label "thiencarbazone" .
+
+CHEBI:179333 rdfs:label "9Z-Dodecenyl acetate" .
+
+CHEBI:196041 rdfs:label "7E,9Z-Dodecadienyl acetate" .
+
+CHEBI:21763 rdfs:label "N-methylethanolamine" .
+
+CHEBI:233296 rdfs:label "(S)-cis-verbenol" .
+
+CHEBI:2635 rdfs:label "Amidosulfuron" .
+
+CHEBI:27744 rdfs:label "glyphosate" .
+
+CHEBI:28854 rdfs:label "2,4-D" .
+
+CHEBI:28878 rdfs:label "dodecan-1-ol" .
+
+CHEBI:2962 rdfs:label "kresoxim-methyl" .
+
+CHEBI:3018 rdfs:label "bentazone" .
+
+CHEBI:32687 rdfs:label "piperonyl butoxide" .
+
+CHEBI:32918 rdfs:label "1-naphthaleneacetic acid" .
+
+CHEBI:33403 rdfs:label "elemental sulfur" .
+
+CHEBI:34608 rdfs:label "captan" .
+
+CHEBI:34846 rdfs:label "metribuzin" .
+
+CHEBI:34922 rdfs:label "picloram" .
+
+CHEBI:3751 rdfs:label "clomazone" .
+
+CHEBI:37583 rdfs:label "trisodium phosphate" .
+
+CHEBI:38321 rdfs:label "mesotrione" .
+
+CHEBI:38495 rdfs:label "aluminium phosphide" .
+
+CHEBI:39098 rdfs:label "pyrethrins" .
+
+CHEBI:39163 rdfs:label "acetamiprid" .
+
+CHEBI:39214 rdfs:label "abamectin" .
+
+CHEBI:39315 rdfs:label "clofentezine" .
+
+CHEBI:39325 rdfs:label "lambda-cyhalothrin" .
+
+CHEBI:39348 rdfs:label "etofenprox" .
+
+CHEBI:39381 rdfs:label "buprofezin" .
+
+CHEBI:39678 rdfs:label "metsulfuron methyl" .
+
+CHEBI:4033 rdfs:label "cycloxydim" .
+
+CHEBI:4042 rdfs:label "cypermethrin" .
+
+CHEBI:40909 rdfs:label "azoxystrobin" .
+
+CHEBI:4388 rdfs:label "deltamethrin" .
+
+CHEBI:4986 rdfs:label "fatty acid methyl ester" .
+
+CHEBI:5011 rdfs:label "fenpyroximate" .
+
+CHEBI:5131 rdfs:label "flurochloridone" .
+
+CHEBI:59511 rdfs:label "cilastatin sodium" .
+
+CHEBI:62961 rdfs:label "clopyralid" .
+
+CHEBI:6798 rdfs:label "metazachlor" .
+
+CHEBI:70721 rdfs:label "clethodim" .
+
+CHEBI:73162 rdfs:label "paclobutrazol" .
+
+CHEBI:75212 rdfs:label "dazomet" .
+
+CHEBI:7554 rdfs:label "nicosulfuron" .
+
+CHEBI:77417 rdfs:label "tetradecan-1-ol" .
+
+CHEBI:78780 rdfs:label "pyraclostrobin" .
+
+CHEBI:81539 rdfs:label "metiram" .
+
+CHEBI:81696 rdfs:label "asulam" .
+
+CHEBI:81734 rdfs:label "phenmedipham" .
+
+CHEBI:81741 rdfs:label "Iodosulfuron-methyl-sodium" .
+
+CHEBI:81749 rdfs:label "Flazasulfuron" .
+
+CHEBI:81760 rdfs:label "difenoconazole" .
+
+CHEBI:81773 rdfs:label "metconazole" .
+
+CHEBI:81788 rdfs:label "cymoxanil" .
+
+CHEBI:81806 rdfs:label "2-methyl-4-chlorophenoxybutyric acid" .
+
+CHEBI:81810 rdfs:label "1-naphthaleneacetamide" .
+
+CHEBI:81817 rdfs:label "trinexapac-ethyl" .
+
+CHEBI:81824 rdfs:label "diflufenican" .
+
+CHEBI:81828 rdfs:label "pyraflufen-ethyl" .
+
+CHEBI:81833 rdfs:label "trifloxystrobin" .
+
+CHEBI:81842 rdfs:label "dithianon" .
+
+CHEBI:81853 rdfs:label "fenhexamid" .
+
+CHEBI:81856 rdfs:label "dicamba" .
+
+CHEBI:81857 rdfs:label "imazamox" .
+
+CHEBI:81920 rdfs:label "flufenacet" .
+
+CHEBI:81931 rdfs:label "metaldehyde" .
+
+CHEBI:81952 rdfs:label "bupirimate" .
+
+CHEBI:81964 rdfs:label "Metobromuron" .
+
+CHEBI:81970 rdfs:label "penconazole" .
+
+CHEBI:81971 rdfs:label "Pyridate" .
+
+CHEBI:82009 rdfs:label "Florasulam" .
+
+CHEBI:82019 rdfs:label "folpet" .
+
+CHEBI:82023 rdfs:label "iprovalicarb" .
+
+CHEBI:82033 rdfs:label "propamocarb" .
+
+CHEBI:82034 rdfs:label "propaquizafop" .
+
+CHEBI:82048 rdfs:label "zoxamide" .
+
+CHEBI:8248 rdfs:label "pirimicarb" .
+
+CHEBI:83502 rdfs:label "foramsulfuron" .
+
+CHEBI:83569 rdfs:label "pendimethalin" .
+
+CHEBI:83571 rdfs:label "tribenuron" .
+
+CHEBI:83640 rdfs:label "dimethenamid-P" .
+
+CHEBI:84033 rdfs:label "fosetyl-Al" .
+
+CHEBI:8939 rdfs:label "flumioxazin" .
+
+CHEBI:8984 rdfs:label "sodium dodecyl sulfate" .
+
+CHEBI:9242 rdfs:label "spiroxamine" .
+
+CHEBI:9422 rdfs:label "tebufenpyrad" .
+
+CHEBI:9430 rdfs:label "tefluthrin" .
+
+CHEBI:9682 rdfs:label "trichlopyr" .
+
+substance:1025 chebi:formula "C19H30O5" ;
+    chebi:smiles "CCCCOCCOCCOCc1cc2OCOc2cc1CCC" .
+
+substance:1034 chebi:formula "C8H16O4" ;
+    chebi:smiles "CC1OC(C)OC(C)OC(C)O1" .
+
+substance:106 chebi:formula "C17H26ClNO3S" ;
+    chebi:smiles "CCSC(C)CC1CC(=O)C(=C(O)C1)C(CC)=NOC\\C=C\\Cl" .
+
+substance:1067 chebi:formula "C11H13ClO3" ;
+    chebi:smiles "Cc1cc(Cl)ccc1OCCCC(O)=O" .
+
+substance:1069 chebi:formula "C14H16ClN3O" ;
+    chebi:smiles "Cc1cccc(C)c1N(Cn1cccn1)C(=O)CCl" .
+
+substance:107 chebi:formula "C14H8Cl2N4" ;
+    chebi:smiles "Clc1ccccc1-c1nnc(nn1)-c1ccccc1Cl" .
+
+substance:1071 chebi:formula "C9H11BrN2O2" ;
+    chebi:smiles "CON(C)C(=O)Nc1ccc(Br)cc1" .
+
+substance:1075 chebi:formula "C19H23ClN2O2S" ;
+    chebi:smiles "CCCCCCCCSC(=O)Oc1cc(Cl)nnc1-c1ccccc1" .
+
+substance:108 chebi:formula "C12H14ClNO2" ;
+    chebi:smiles "C1ON(CC=2C=CC=CC2Cl)C(C1(C)C)=O" .
+
+substance:1098 chebi:formula "C14H26O2" ;
+    chebi:smiles "O(CCCCCCCC/C=C\\CC)C(=O)C" .
+
+substance:110 chebi:formula "C6H3Cl2NO2" ;
+    chebi:smiles "OC(=O)c1nc(Cl)ccc1Cl" .
+
+substance:1106 chebi:formula "C12H11NO" ;
+    chebi:smiles "C1=CC=C2C(=C1)C(=CC=C2)CC(N)=O" .
+
+substance:1109 chebi:formula "C6H18AlO9P3" ;
+    chebi:smiles "[Al+3].CCOP([O-])=O.CCOP([O-])=O.CCOP([O-])=O" .
+
+substance:1110 chebi:formula "AlP" ;
+    chebi:smiles "[Al+3].[P-3]" .
+
+substance:1138 chebi:formula "C17H27NO3S" ;
+    chebi:smiles "CCCC(=NOCC)C1=C(O)CC(CC1=O)C1CCCSC1" .
+
+substance:114 chebi:formula "C7H10N4O3" ;
+    chebi:smiles "CCNC(=O)NC(=O)C(=NOC)C#N" .
+
+substance:1147 chebi:formula "C19H11F5N2O2" ;
+    chebi:smiles "Fc1ccc(NC(=O)c2cccnc2Oc2cccc(c2)C(F)(F)F)c(F)c1" .
+
+substance:115 chebi:formula "C22H19Cl2NO3" ;
+    chebi:smiles "CC1(C)C(C=C(Cl)Cl)C1C(=O)OC(C#N)c1cccc(Oc2ccccc2)c1" .
+
+substance:1155 chebi:formula "C14H4N2O2S2" ;
+    chebi:smiles "O=c1c2ccccc2c(=O)c2sc(C#N)c(sc12)C#N" .
+
+substance:1162 chebi:formula "C24H27N3O4" ;
+    chebi:smiles "Cc1nn(C)c(Oc2ccccc2)c1\\C=N\\OCc1ccc(cc1)C(=O)OC(C)(C)C" .
+
+substance:1168 chebi:formula "C12H10Cl2F3NO" ;
+    chebi:smiles "C1(C(CCl)CN(C=2C=C(C(F)(F)F)C=CC2)C1=O)Cl" .
+
+substance:1187 chebi:formula "C23H19ClF3NO3" .
+
+substance:1196 chebi:formula "C14H15N5O6S" ;
+    chebi:smiles "COC(=O)c1ccccc1S(=O)(=O)NC(=O)Nc1nc(C)nc(OC)n1" .
+
+substance:1239 chebi:formula "C18H24ClN3O" ;
+    chebi:smiles "CCc1nn(C)c(C(=O)NCc2ccc(cc2)C(C)(C)C)c1Cl" .
+
+substance:124 chebi:formula "C8H6Cl2O3" ;
+    chebi:smiles "C1(=CC=C(C(=C1OC)C(O)=O)Cl)Cl" .
+
+substance:1254 chebi:formula "C7H4Cl3NO3" ;
+    chebi:smiles "OC(=O)COc1nc(Cl)c(Cl)cc1Cl" .
+
+substance:1257 chebi:formula "C13H16O5" ;
+    chebi:smiles "C/1(\\C(CC(CC1=O)C(OCC)=O)=O)=C(\\C2CC2)/O" .
+
+substance:1289 chebi:formula "C10H16O" ;
+    chebi:smiles "[H]C1(O)C=C(C)C2([H])CC1([H])C2(C)C" .
+
+substance:13 chebi:formula "C12H9ClN2O3" ;
+    chebi:smiles "C=1(C(=CC=C(C1Cl)OC=2C=CC=CC2)[N+](=O)[O-])N" .
+
+substance:1301 chebi:formula "C17H22ClN3O" ;
+    chebi:smiles "CC1(C)CCC(Cc2ccc(Cl)cc2)C1(O)Cn1cncn1" .
+
+substance:1305 chebi:formula "C14H24O2" ;
+    chebi:smiles "O(CCCCCC/C=C/C=C\\CC)C(=O)C" .
+
+substance:1306 chebi:formula "C2H3O2R" ;
+    chebi:smiles "COC([*])=O" .
+
+substance:1312 chebi:formula "C12H26O" ;
+    chebi:smiles "CCCCCCCCCCCCO" .
+
+substance:1313 chebi:formula "C14H30O" ;
+    chebi:smiles "CCCCCCCCCCCCCCO" .
+
+substance:1317 chebi:formula "C18H19NO4" ;
+    chebi:smiles "CO\\N=C(\\C(=O)OC)c1ccccc1COc1ccccc1C" .
+
+substance:1319 chebi:formula "C22H17N3O5" ;
+    chebi:smiles "CO\\C=C(\\C(=O)OC)c1ccccc1Oc1cc(Oc2ccccc2C#N)ncn1" .
+
+substance:1350 chebi:formula "C10H11ClN4" ;
+    chebi:smiles "CN(Cc1ccc(Cl)nc1)C(C)=NC#N" .
+
+substance:1363 chebi:formula "C10H10CaO5" ;
+    chebi:smiles "C1(CC(=C(C(C1)=O)C(=O)CC)[O-])C(=O)[O-].[Ca+2]" .
+
+substance:1364 chebi:formula "C20H19F3N2O4" ;
+    chebi:smiles "CO\\N=C(\\C(=O)OC)c1ccccc1CO\\N=C(/C)c1cccc(c1)C(F)(F)F" .
+
+substance:1366 chebi:formula "C14H17Cl2NO2" ;
+    chebi:smiles "CC1(CCCCC1)C(=O)Nc1ccc(O)c(Cl)c1Cl" .
+
+substance:1367 chebi:formula "C18H35NO2" ;
+    chebi:smiles "CCCN(CC)CC1COC2(CCC(CC2)C(C)(C)C)O1" .
+
+substance:1368 chebi:formula "C12H8F3N5O3S" ;
+    chebi:smiles "COc1ncc(F)c2nc(nn12)S(=O)(=O)Nc1c(F)cccc1F" .
+
+substance:1397 chebi:formula "C11H12N4O7S2" ;
+    chebi:smiles "S(NC(=O)N1C(N(C(=N1)OC)C)=O)(C2=C(SC=C2C(=O)O)C)(=O)=O" .
+
+substance:1400 chebi:formula "C14H13F4N3O2S" ;
+    chebi:smiles "CC(C)N(C(=O)COc1nnc(s1)C(F)(F)F)c1ccc(F)cc1" .
+
+substance:1405 chebi:formula "C14H13IN5NaO6S" ;
+    chebi:smiles "[Na+].COC(=O)c1ccc(I)cc1S(=O)(=O)NC(=O)[N-]c1nc(C)nc(OC)n1" .
+
+substance:1406 chebi:formula "C19H15FN2O4" ;
+    chebi:smiles "C1CC2=C(CC1)C(N(C2=O)C3=CC4=C(C=C3F)OCC(N4CC#C)=O)=O" .
+
+substance:1407 chebi:formula "C25H28O3" ;
+    chebi:smiles "CCOc1ccc(cc1)C(C)(C)COCc1cccc(Oc2ccccc2)c1" .
+
+substance:1408 chebi:formula "C16H18Cl2N2O4" .
+
+substance:1410 chebi:formula "FeO4P" ;
+    chebi:smiles "[Fe+3].[O-]P([O-])(=O)[O-]" .
+
+substance:1422 chebi:formula "C14H13NO7S" ;
+    chebi:smiles "CS(=O)(=O)c1ccc(C(=O)C2C(=O)CCCC2=O)c(c1)[N+]([O-])=O" .
+
+substance:1423 chebi:formula "C12H18ClNO2S" ;
+    chebi:smiles "COC[C@H](C)N(C(=O)CCl)c1c(C)csc1C" .
+
+substance:1425 chebi:formula "C19H18ClN3O4" ;
+    chebi:smiles "CON(C(=O)OC)c1ccccc1COc1ccn(n1)-c1ccc(Cl)cc1" .
+
+substance:1428 chebi:formula "C18H28N2O3" ;
+    chebi:smiles "CC(C)OC(=O)N[C@@H](C(C)C)C(=O)NC(C)c1ccc(C)cc1" .
+
+substance:1434 chebi:formula "C15H19N3O4" .
+
+substance:1444 chebi:formula "C16H25N2NaO5S" ;
+    chebi:smiles "[Na+].CC1(C)C[C@@H]1C(=O)N\\C(C(O)=O)=C/CCCCSC[C@H](N)C([O-])=O" .
+
+substance:1456 chebi:formula "C15H13Cl2F3N2O4" ;
+    chebi:smiles "C1(=C(C=C(C(=C1)OCC(OCC)=O)Cl)F)C2=NN(C(=C2Cl)OC(F)F)C" .
+
+substance:1457 chebi:formula "C17H20N6O7S" ;
+    chebi:smiles "COc1cc(OC)nc(NC(=O)NS(=O)(=O)c2cc(NC=O)ccc2C(=O)N(C)C)n1" .
+
+substance:1464 chebi:formula "C18H17NO3" ;
+    chebi:smiles "O1N=C(CC1(C2=CC=CC=C2)C3=CC=CC=C3)C(=O)OCC" .
+
+substance:1769 chebi:formula "C12H25NaO4S" ;
+    chebi:smiles "[Na+].CCCCCCCCCCCCOS([O-])(=O)=O" .
+
+substance:190 chebi:formula "C9H4Cl3NO2S" ;
+    chebi:smiles "ClC(Cl)(Cl)SN1C(=O)c2ccccc2C1=O" .
+
+substance:199 chebi:formula "C3H8NO5P" ;
+    chebi:smiles "OC(=O)CNCP(O)(O)=O" .
+
+substance:2034 chebi:formula "Na3O4P" ;
+    chebi:smiles "[Na+].[Na+].[Na+].[O-]P([O-])([O-])=O" .
+
+substance:2076 chebi:formula "C3H9NO" ;
+    chebi:smiles "CNCCO" .
+
+substance:26 chebi:formula "C9H15N5O7S2" ;
+    chebi:smiles "COc1cc(OC)nc(NC(=O)NS(=O)(=O)N(C)S(C)(=O)=O)n1" .
+
+substance:269 chebi:formula "C15H18N6O6S" ;
+    chebi:smiles "COc1cc(OC)nc(NC(=O)NS(=O)(=O)c2ncccc2C(=O)N(C)C)n1" .
+
+substance:284 chebi:formula "C15H20ClN3O" .
+
+substance:286 chebi:formula "C13H15Cl2N3" .
+
+substance:287 chebi:formula "C13H19N3O4" ;
+    chebi:smiles "CCC(CC)Nc1c(cc(C)c(C)c1[N+]([O-])=O)[N+]([O-])=O" .
+
+substance:291 chebi:formula "C16H16N2O4" ;
+    chebi:smiles "COC(=O)Nc1cccc(OC(=O)Nc2cccc(C)c2)c1" .
+
+substance:299 chebi:formula "C6H3Cl3N2O2" ;
+    chebi:smiles "C1(=C(C(C(=O)O)=NC(=C1Cl)Cl)Cl)N" .
+
+substance:3 chebi:formula "C12H10O2" ;
+    chebi:smiles "OC(=O)Cc1cccc2ccccc12" .
+
+substance:301 chebi:formula "C11H18N4O2" ;
+    chebi:smiles "CN(C)C(=O)Oc1nc(nc(C)c1C)N(C)C" .
+
+substance:311 chebi:formula "C9H20N2O2" ;
+    chebi:smiles "CCCOC(=O)NCCCN(C)C" .
+
+substance:312 chebi:formula "C22H22ClN3O5" ;
+    chebi:smiles "C[C@@H](Oc1ccc(Oc2cnc3cc(Cl)ccc3n2)cc1)C(=O)OCCON=C(C)C" .
+
+substance:344 chebi:formula "C17H14ClF7O2" .
+
+substance:35 chebi:formula "C8H10N2O4S" ;
+    chebi:smiles "COC(=O)NS(=O)(=O)c1ccc(N)cc1" .
+
+substance:4 chebi:formula "C8H6Cl2O3" ;
+    chebi:smiles "OC(=O)COc1ccc(Cl)cc1Cl" .
+
+substance:451 chebi:formula "C5H10N2S2" ;
+    chebi:smiles "CN1CSC(=S)N(C)C1" .
+
+substance:453 chebi:formula "C22H19Br2NO3" ;
+    chebi:smiles "CC1(C)[C@@H](C=C(Br)Br)[C@H]1C(=O)O[C@H](C#N)c1cccc(Oc2ccccc2)c1" .
+
+substance:50 chebi:formula "C10H12N2O3S" ;
+    chebi:smiles "CC(C)N1C(=O)c2ccccc2NS1(=O)=O" .
+
+substance:564 chebi:formula "C13H12F3N5O5S" ;
+    chebi:smiles "COc1cc(OC)nc(NC(=O)NS(=O)(=O)c2ncccc2C(F)(F)F)n1" .
+
+substance:701 chebi:formula "(C16H33N11S16Zn3)n" .
+
+substance:706 chebi:formula "C8H14N4OS" ;
+    chebi:smiles "CSc1nnc(c(=O)n1N)C(C)(C)C" .
+
+substance:71 chebi:formula "C13H24N4O3S" ;
+    chebi:smiles "CCCCc1c(C)nc(NCC)nc1OS(=O)(=O)N(C)C" .
+
+substance:72 chebi:formula "C16H23N3OS" ;
+    chebi:smiles "N1(C=2C=CC=CC2)C(=O)N(\\C(\\SC1)=N\\C(C)(C)C)C(C)C" .
+
+substance:79 chebi:formula "C9H8Cl3NO2S" ;
+    chebi:smiles "ClC(Cl)(Cl)SN1C(=O)C2CC=CCC2C1=O" .
+
+substance:799 chebi:formula "C14H15N5O6S" ;
+    chebi:smiles "C1(=NC(C)=NC(OC)=N1)N(C(=O)NS(C=2C(C(O)=O)=CC=CC2)(=O)=O)C" .
+
+substance:813 chebi:formula "C12H11NO" ;
+    chebi:smiles "C1=CC=C2C(=C1)C(=CC=C2)CC(N)=O" .
+
+substance:894 chebi:formula "C19H17Cl2N3O3" ;
+    chebi:smiles "CC1COC(Cn2cncn2)(O1)c1ccc(Oc2ccc(Cl)cc2)cc1Cl" .
+
