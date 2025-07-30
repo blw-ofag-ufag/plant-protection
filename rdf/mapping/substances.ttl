@@ -4,9 +4,13 @@
 @prefix substance: <https://agriculture.ld.admin.ch/plant-protection/substance/> .
 @prefix wikidata: <http://www.wikidata.org/entity/> .
 
-substance:1025 :hasChebiIdentity CHEBI:32687 .
+substance:1027 a :NonChemicalSubstance .
 
-substance:1027 rdfs:label "Paraffinöl"@de .
+substance:1164 a :NonChemicalSubstance .
+
+substance:1204 a :NonChemicalSubstance .
+
+substance:1025 :hasChebiIdentity CHEBI:32687 .
 
 substance:1034 :hasChebiIdentity CHEBI:81931 .
 
@@ -48,25 +52,24 @@ substance:1155 :hasChebiIdentity CHEBI:81842 .
 
 substance:1162 :hasChebiIdentity CHEBI:5011 .
 
-substance:1164 rdfs:label "Fettsäuren (Kaliumsalze)"@de .
-
 substance:1168 :hasChebiIdentity CHEBI:5131 .
 
-substance:1184 rdfs:label "Kupfer (als Kalkpräparat, Bordeaux-Brühe)"@de .
+substance:1184 :partialChebiIdentity CHEBI:23414,
+        CHEBI:31341,
+        CHEBI:31344 .
 
 substance:1187 :hasChebiIdentity CHEBI:39325 .
 
-substance:1189 rdfs:label "Magnesiumphosphid"@de .
+substance:1189 :partialChebiIdentity CHEBI:18420,
+        CHEBI:33468 .
 
-substance:119 rdfs:label "Daminozide"@de .
+substance:119 :hasChebiIdentity CHEBI:4312 .
 
 substance:1196 :hasChebiIdentity CHEBI:39678 .
 
-substance:1200 rdfs:label "Napropamide"@de .
+substance:1200 :hasChebiIdentity CHEBI:83771 .
 
-substance:1204 rdfs:label "Netz- und Haftmittel"@de .
-
-substance:1218 rdfs:label "Clodinafop-propargyl"@de .
+substance:1218 :hasChebiIdentity CHEBI:132921 .
 
 substance:1221 rdfs:label "Prosulfocarb"@de .
 

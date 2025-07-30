@@ -1,5 +1,6 @@
 @prefix : <https://agriculture.ld.admin.ch/plant-protection/> .
 @prefix CHEBI: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix chebi: <http://purl.obolibrary.org/obo/chebi/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -760,6 +761,10 @@ wikidata:Q16521 a owl:Class ;
         """@it ;
     rdfs:subClassOf :ChemicalProduct .
 
+:NonChemicalSubstance a owl:Class ;
+    rdfs:label "Chemisch nicht definierbare Substanz"@de ;
+    rdfs:comment "Generische Klasse für Substanzen, Gemische oder Formulierungsbestandteile, die sich nicht auf eine oder wenige klar definierte chemische Verbindung beziehen."@de .
+
 :Notice a owl:Class ;
     rdfs:label "Hinweis"@de,
         "Notice"@en .
@@ -955,7 +960,7 @@ wikidata:Q16521 a owl:Class ;
         "Viricida"@it ;
     rdfs:subClassOf :ChemicalProduct .
 
-_:n7cd815d621eb4db997c517b507a01fb3b12 a owl:Class ;
+_:n44a2a3cc64de4e90848a6890645a349cb12 a owl:Class ;
     owl:oneOf ( :AdditiveToDeclare :Synergist :Safener :ActiveIngredient ) .
 
 schema:addressLocality a owl:DatatypeProperty ;
@@ -1469,7 +1474,7 @@ schema:addressCountry a owl:ObjectProperty ;
         "Role"@en ;
     rdfs:comment "The role that a particular component plays in a mixture."@en ;
     rdfs:domain :ComponentPortion ;
-    rdfs:range _:n7cd815d621eb4db997c517b507a01fb3b12 .
+    rdfs:range _:n44a2a3cc64de4e90848a6890645a349cb12 .
 
 :substance a owl:ObjectProperty ;
     rdfs:label "Substanz"@de,
@@ -1497,6 +1502,12 @@ srppp: a owl:Ontology ;
         "Un'ontologia (dimostrativa) per la protezione delle colture in Svizzera"@it ;
     rdfs:seeAlso <https://raw.githubusercontent.com/blw-ofag-ufag/plant-protection/refs/heads/main/rdf/ontology.ttl> ;
     owl:versionInfo "0.11" .
+
+chebi:formula rdfs:label "Formel"@de,
+        "Formula"@en .
+
+chebi:smiles rdfs:label "SMILES-Code"@de,
+        "SMILES code"@en .
 
 schema:maxValue rdfs:label "Maximaler Wert"@de,
         "Maximal value"@en .
