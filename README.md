@@ -1,18 +1,26 @@
 > [!NOTE]
 > This GitHub repository is used as a proof-of-concept. It does not contain any official information from the Federal Office for Agriculture.
->
-> <img width="1378" height="661" alt="image" src="https://github.com/user-attachments/assets/9e16624d-003b-484c-8afd-36ca0983a129" />
->
-> 
+
+<img width="1378" height="661" alt="image" src="https://github.com/user-attachments/assets/9e16624d-003b-484c-8afd-36ca0983a129" />
+
 # Plant Protection Products as Linked Data
 
 This project extracts the Swiss Plant Protection Product (PPP) registry, maps the data to RDF and publishes it on [LINDAS](https://lindas.admin.ch). The ETL logic lives in [`automation/etl.R`](automation/etl.R) and uses a few CSV files in [`tables/mapping`](tables/mapping) for manual mappings such as company identifiers or product categories.
 
-A couple of small demonstration pages are available in the [`docs`](docs) folder and are hosted via GitHub Pages. They illustrate how linked data from LINDAS can be embedded in a website and are not meant as full fledged applications.
+A couple of small demonstration pages are available in the [`docs`](docs) folder and are hosted via GitHub Pages:
+
+- [Example product overview site.](https://blw-ofag-ufag.github.io/plant-protection/registry/product/?id=W-7055) At the moment, the shown product can only be switched via the URL by passing `?id=XYZ`, with `XYZ` being the W-number of any product.
+- [Example of how any fetched table could look like on a federal webpage.](https://blw-ofag-ufag.github.io/plant-protection/table/)
+
+> [!NOTE]
+> These sites illustrate how linked data from LINDAS can be embedded in a website and **are not meant as full fledged applications**.
 
 ## Querying the dataset
 
-The resulting RDF is loaded into the graph `<https://lindas.admin.ch/foag/plant-protection>` on the public LINDAS SPARQL endpoint at `https://lindas.admin.ch/query`. SPARQL is the query language for RDF datasets. The following examples can be opened directly in your browser via the [s.zazuko.com](https://s.zazuko.com/) shortener.
+The resulting RDF is loaded into the graph `<https://lindas.admin.ch/foag/plant-protection>` on the public LINDAS SPARQL endpoint at `https://lindas.admin.ch/query`. SPARQL is the query language for RDF datasets.
+
+> [!NOTE]
+> The following examples can be opened directly in your browser via the [s.zazuko.com](https://s.zazuko.com/) shortener. Via the links, you can view the SPARQL query, edit it yourself and query the LINDAS triple store however you wish.
 
 ## Example queries
 
