@@ -24,6 +24,11 @@
   /** “CHEBI:12345” from full IRI */
   const chebiId = iri => iri?.split('/').pop().replace('_', ':') || null;
 
+  /** Convert “C9H17NO3” → “C<sub>9</sub>H<sub>17</sub>N<sub>O3</sub>”  */
+  function htmlFormula(formula) {
+    return formula.replace(/(\d+)/g, '<sub>$1</sub>');
+  }
+
   /* ╭──────────────────── Main flow ───────────────────╮ */
   try {
       /* 1· url param */
@@ -275,7 +280,7 @@
                 const portion = [pct, gram].filter(Boolean).join(' / ');
 
                 return `
-                <li class="tile" data-uri="${c.chebi ? c.chebi : c.uri}">
+                <li class="tile" data-uri="${c.uri}">
                   <header>
                     <h4 class="substance">${c.name}</h4>
 
@@ -290,7 +295,7 @@
                         alt="Molekülzeichnung von ${c.name}" />` : placeholderSvg}
 
                   <div class="meta">
-                    ${c.formula ? `<span><b>Summenformel:</b> ${c.formula}</span>` : ''}
+                    ${c.formula ? `<span><b>Summenformel:</b> ${htmlFormula(c.formula)}</span>` : ''}
                     ${c.role    ? `<span><b>Rolle:</b> ${c.role}</span>` : ''}
                     ${c.chebi   ? `<span><b>ChEBI‑Entität:</b> <a href="${c.chebi}" target="_blank" rel="noopener">${chebiId(c.chebi)}</a></span>` : ''}
                   </div>
