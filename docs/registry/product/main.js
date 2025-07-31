@@ -114,8 +114,7 @@
       /* 3· company, hazards, components */
       const sparqlCompany = `
         PREFIX schema:<http://schema.org/>
-        SELECT ?name ?streetAddress ?postalCode ?addressLocality
-            ?telephone ?email ?fax ?idName ?idValue
+        SELECT *
         WHERE
         {
           VALUES ?c{<${companyIRI}>}
@@ -124,10 +123,8 @@
                   ?a schema:streetAddress ?streetAddress ;
                       schema:postalCode ?postalCode ;
                       schema:addressLocality ?addressLocality}
-          OPTIONAL{?c schema:telephone ?telephone}
-          OPTIONAL{?c schema:email ?email}
-          OPTIONAL{?c schema:fax ?fax}
-          OPTIONAL{
+          OPTIONAL
+          {
             ?c schema:identifier ?idObj .
             ?idObj schema:name ?idName ; schema:value ?idValue .
             FILTER(?idName IN("CompanyUID","CompanyCHID","CompanyEHRAID"))
@@ -140,7 +137,7 @@
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX :<https://agriculture.ld.admin.ch/plant-protection/>
         PREFIX schema:<http://schema.org/>
-        SELECT ?class ?code ?label
+        SELECT *
         WHERE{
           GRAPH <https://lindas.admin.ch/foag/plant-protection>
           {
@@ -232,9 +229,6 @@
           street: c0.streetAddress?.value,
           postal: c0.postalCode?.value,
           locality: c0.addressLocality?.value,
-          tel: c0.telephone?.value,
-          mail: c0.email?.value,
-          fax: c0.fax?.value,
           UID: null,
           CHID: null,
           EHRAID: null
@@ -430,8 +424,6 @@
         <dl>
           ${comp.name?`<dt>Firma</dt><dd><a href="${companyIRI}" target="_blank" rel="noopener">${comp.name}</a></dd>`:''}
           ${(comp.street||comp.postal||comp.locality)?`<dt>Adresse</dt><dd>${[comp.street,comp.postal,comp.locality].filter(Boolean).join(', ')}</dd>`:''}
-          ${comp.tel?`<dt>Telefon</dt><dd><a href="${comp.tel}">${comp.tel.replace(/^tel:/,'')}</a></dd>`:''}
-          ${comp.mail?`<dt>Email</dt><dd><a href="mailto:${comp.mail}">${comp.mail}</a></dd>`:''}
           ${comp.fax?`<dt>Fax</dt><dd><a href="${comp.fax}">${comp.fax.replace(/^tel:/,'')}</a></dd>`:''}
           ${comp.UID?`<dt>UID</dt><dd><span class="identifier">${comp.UID}</span></dd>`:''}
           ${comp.CHID?`<dt>CHID</dt><dd><span class="identifier">${comp.CHID}</span></dd>`:''}
