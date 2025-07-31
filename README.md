@@ -1,11 +1,22 @@
 > [!NOTE]
 > This GitHub repository is used as a proof-of-concept. It does not contain any official information from the Federal Office for Agriculture.
+>
+> <img width="1378" height="661" alt="image" src="https://github.com/user-attachments/assets/9e16624d-003b-484c-8afd-36ca0983a129" />
+>
+> 
+# Plant Protection Products as Linked Data
 
-<img width="1378" height="661" alt="image" src="https://github.com/user-attachments/assets/9e16624d-003b-484c-8afd-36ca0983a129" />
+This project extracts the Swiss Plant Protection Product (PPP) registry, maps the data to RDF and publishes it on [LINDAS](https://lindas.admin.ch). The ETL logic lives in [`automation/etl.R`](automation/etl.R) and uses a few CSV files in [`tables/mapping`](tables/mapping) for manual mappings such as company identifiers or product categories.
 
-# Example queries
+A couple of small demonstration pages are available in the [`docs`](docs) folder and are hosted via GitHub Pages. They illustrate how linked data from LINDAS can be embedded in a website and are not meant as full fledged applications.
 
-## [Companies that sell product applicable agains potato late blight](https://s.zazuko.com/2VSLCsf)
+## Querying the dataset
+
+The resulting RDF is loaded into the graph `<https://lindas.admin.ch/foag/plant-protection>` on the public LINDAS SPARQL endpoint at `https://lindas.admin.ch/query`. SPARQL is the query language for RDF datasets. The following examples can be opened directly in your browser via the [s.zazuko.com](https://s.zazuko.com/) shortener.
+
+## Example queries
+
+### [Companies that sell product applicable agains potato late blight](https://s.zazuko.com/2VSLCsf)
 
 ```rq
 PREFIX schema: <http://schema.org/>
@@ -23,14 +34,14 @@ WHERE {
     :indication [
       :cropGroup/schema:name "Kartoffeln"@de ;
       :cropStressor/schema:name "Kraut- und Knollenfäule"@de
-  	] .
+        ] .
 }
 
 GROUP BY ?company
 ORDER BY DESC(?Number)
 ```
 
-## [Get all subclasses of `:Product` with names and descriptions](https://s.zazuko.com/yWk6Fz)
+### [Get all subclasses of `:Product` with names and descriptions](https://s.zazuko.com/yWk6Fz)
 
 ```rq
 PREFIX schema: <http://schema.org/>
@@ -48,14 +59,14 @@ WHERE
   VALUES ?lang { "en" }
   FILTER (
     LANG(?label) = ?lang &&
-    LANG(?comment) = ?lang 
+    LANG(?comment) = ?lang
   )
 }
 
 ORDER BY ?class
 ```
 
-## [Federated query: Get all taxon names + authors for pests that belong to the order of *Lepidoptera*](https://s.zazuko.com/36zyoKS)
+### [Federated query: Get all taxon names + authors for pests that belong to the order of *Lepidoptera*](https://s.zazuko.com/36zyoKS)
 
 ```rq
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -70,15 +81,15 @@ PREFIX wd: <http://www.wikidata.org/entity/>
 SELECT ?pest ?name ?taxon ?eppo ?author ?taxonname (COUNT(?product) AS ?products)
 
 WHERE {
-  
+
   # query LINDAS for pests, their german name, the taxon and any product that is allowed on the pest
   ?pest a :BioticStressor ;
     schema:name ?name ;
     :isDefinedByBiologicalTaxon ?taxon ;
     ^:cropStressor/^:indication ?product .
   FILTER(LANG(?name) = "de")
-  
-  # query Wikidata for the 
+
+  # query Wikidata for the
   SERVICE <https://qlever.cs.uni-freiburg.de/api/wikidata> {
     ?taxon wdt:P225 ?taxonname ;
       wdt:P171*/wdt:P225 "Lepidoptera" .
