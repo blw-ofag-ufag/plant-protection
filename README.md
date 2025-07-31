@@ -7,8 +7,7 @@ A couple of small demonstration pages are available in the [`docs`](docs) folder
 - [Example product overview site.](https://blw-ofag-ufag.github.io/plant-protection/registry/product/?id=W-7055) At the moment, the shown product can only be switched via the URL by passing `?id=XYZ`, with `XYZ` being the W-number of any product.
 - [Example of how any fetched table could look like on a federal webpage.](https://blw-ofag-ufag.github.io/plant-protection/table/)
 
-> [!NOTE]
-> These sites illustrate how linked data from LINDAS can be embedded in a website and **are not meant as full fledged applications**.
+These sites illustrate how linked data from LINDAS can be embedded in a website and **are not meant as full fledged applications**.
 
 ## Querying the dataset
 
