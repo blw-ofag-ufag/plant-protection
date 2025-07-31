@@ -407,7 +407,6 @@
       wrap.innerHTML = `
         <header>
         <h1>${productName}</h1>
-        <p class="subtitle">Eingetragenes Pflanzenschutzmittel</p>
         <div>${types.map(([iri,l])=>{
                   return `<a class="tag" href="${iri}">${l}</a>`}).join('')}</div>
         </header>
@@ -455,7 +454,7 @@
       }
 
       /* 5· same‑product badges */
-      const tpl = document.getElementById('badge-template');
+      const tpl = document.getElementById('tag-template');
       const $same = $card.querySelector('#sameProducts');
       sameProducts.forEach(({ name, code }, iri) => {
         const a = tpl.content.firstElementChild.cloneNode(true);

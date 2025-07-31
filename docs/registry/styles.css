@@ -1,8 +1,11 @@
 :root {
-  --brand: #047857;
-  --brand-light: #d1fae5;
+  --brand: #0c89af;
+  --brand-light: #d3edf5;
   --stroke: #e5e7eb;
   --background: #ffffff;
+  --font-color: #000000;
+  --font-weak: #6b7174;
+  --background-grey: #f4f5f7;
 }
 * {
   box-sizing: border-box;
@@ -11,67 +14,27 @@
 }
 body {
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  background: var(--background);
-  color: #111827;
+  color: var(--font-color);
   line-height: 1.45;
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  padding: 3rem 1rem;
 }
 .card {
   width: min(55rem, 100%);
-  background: var(--background);
-  /*border: 1px solid var(--stroke);
-  border-radius: 1.25rem;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
-  padding: 2.5rem 3rem;
-  animation: fade 0.4s ease;*/
-}
-.card ul:not(.components) {
-  margin: 0.5rem 0;
-  padding-inline-start: 1.5rem;
-  list-style-position: outside;
-}
-.card ul.components {
-  padding-inline-start: 0;
-}
-@keyframes fade {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-.card ul a {
-  color: #2563eb;
-  text-decoration: none;
-}
-.card ul a:hover {
-  text-decoration: underline;
 }
 h1 {
   font-size: 3.5rem;
-  font-weight: 600;
+  margin-top: 1em;
   margin-bottom: 0.5rem;
   color: var(--brand);
-}
-.subtitle {
-  color: #6b7280;
-  font-size: 0.95rem;
-  margin-bottom: 1.5rem;
 }
 h2 {
   margin-top: 2.5rem;
   font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: #374151;
+  color: var(--font-color);
 }
-.tag, .badge {
+.tag {
   display: inline-block;
   border-radius: 9999px;
   padding: 0.25rem 0.75rem;
@@ -84,36 +47,25 @@ h2 {
 .tag {
   background: var(--brand-light);
   color: var(--brand);
-}
-.badge {
-  background: #e0e7ff;
-  color: #3730a3;
-  transition: 0.15s;
-}
-.badge:hover {
-  background: #312e81;
-  color: #ffffff;
-}
-.tag {
   transition: background 0.15s, color 0.15s;
 }
 .tag:hover {
   background: var(--brand);
-  color: #ffffff;
+  color: var(--background);
 }
 dl {
   display: grid;
-  grid-template-columns: 11rem 1fr;
+  grid-template-columns: 10rem 1fr;
   row-gap: 0.75rem;
   column-gap: 1.5rem;
   margin-top: 1.75rem;
 }
 dt {
-  color: #4b5563;
+  color: var(--font-weak);
   font-weight: 500;
 }
 dd a {
-  color: #2563eb;
+  color: var(--brand);
   text-decoration: none;
 }
 dd a:hover {
@@ -121,7 +73,7 @@ dd a:hover {
 }
 #loading {
   font-size: 1rem;
-  color: #6b7280;
+  color: var(--font-weak);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -139,13 +91,6 @@ dd a:hover {
 .hidden {
   display: none !important;
 }
-.error {
-  color: #b91c1c;
-  background: #fef2f2;
-  padding: 1rem 1.25rem;
-  border: 1px solid #fecaca;
-  border-radius: 0.75rem;
-}
 .components {
   margin: 0.5rem 0 0;
   padding: 0;
@@ -156,8 +101,7 @@ dd a:hover {
 }
 .components .tile {
   border: 1px solid var(--stroke);
-  border-radius: 0.75rem;
-  background: #fff;
+  border-radius: 0.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
   padding: 1rem 1.25rem 1.25rem;
   display: flex;
@@ -168,117 +112,60 @@ dd a:hover {
 }
 .components .tile:hover,
 .components .tile:focus-visible {
-  border-color: var(--brand);
+  border-color: var(--font-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .components .tile a {
   cursor: auto;
 }
-.tile header {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  align-items: baseline;
-}
-.tile .role {
-  background: #fee2e2;
-  color: #b91c1c;
-}
-.tile .chem {
-  text-align: center;
-}
-.tile .chem img {
-  max-width: 100%;
-  height: auto;
-}
-.tile .meta {
+.meta {
   font-size: 0.85rem;
-  color: #374151;
+  color: var(--font-color);
   display: flex;
-  gap: 0.75rem;
+  gap: 0.2rem;
   flex-wrap: wrap;
 }
 .smiles {
   font-family: monospace;
-  background: #f3f4f6;
   padding: 0.15rem 0.3rem;
   border-radius: 0.25rem;
   overflow-x: auto;
 }
 a {
-  color: #2563eb;
+  color: var(--brand);
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
 }
-table.hazards{
+table {
   width:100%;
   border-collapse:collapse;
   margin:.75rem 0 0;
-  font-size:.9rem;
 }
-.hazards th,
-.hazards td{
+th, td {
   border:1px solid var(--stroke);
   padding:.45rem .65rem;
   vertical-align:top;
 }
-.hazards th{
-  background:#f3f4f6;
-  color:#374151;
-  font-weight:600;
+th {
+  background: var(--background-grey);
   text-align:left;
 }
-.hazards tbody td:first-child{
-  background:#fdfdfd;
-  font-weight:500;
-}
-.hazards a:hover{text-decoration:underline;}
 .identifier{
   display:inline-block;
   font-family: monospace;
   font-size: .9rem;
   padding: .2rem .3rem;
-  background: #eff0f388;
-  color: #566174;
-  border: 1px solid #9ca4b166;
+  background: var(--background-grey);
+  color: var(--font-weak);
   border-radius: .3rem;
   line-height: 1;
-}
-table.indications{
-  width:100%;
-  border-collapse:collapse;
-  margin:.75rem 0 0;
-  font-size:.9rem;
-}
-.indications th,
-.indications td
-{
-  border:1px solid var(--stroke);
-  padding:.45rem .65rem;
-  vertical-align:top;
-}
-.indications th{
-  background:#f3f4f6;
-  color:#374151;
-  font-weight:600;
-  text-align:left;
-}
-.obligation-ref{
-  cursor:help;
-  position:relative;
 }
 .obligations{
   list-style-position: inside;
   margin: 0;
   padding: 0;
-}
-.obligations li{
-  margin: 0 0 .25rem 0;
-  line-height: 1.35;
-  overflow-wrap: anywhere;
-  font-size: 0.8rem;
 }
 .components .tile {
   overflow: visible !important;
@@ -286,21 +173,18 @@ table.indications{
 .components .mol {
   display: block;
   margin: -0.5rem -1rem;
-  margin-top: -0.75rem;  /* fine‑tune to taste */
+  margin-top: -0.75rem;
   z-index: 0;
 }
-/* Make the whole tile a stacking‑context */
 .components .tile { position: relative; }
-
-/* Portion label – huge, subtle, sits behind the name */
 .components .portion {
   position: absolute;
-  top: 2.5rem;          /* adjust vertically under the h4 */
-  font-size: 1.5rem;     /* go even bigger if you dare */
+  top: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 1;
-  color: #68717e66;        /* Tailwind slate‑300 → quiet grey */
-  pointer-events: none;  /* so clicks still hit the tile */
-  z-index: 1;           /* literally behind everything */
-  white-space: nowrap;   /* keep it on one line */
+  color: #68717e66;
+  pointer-events: none;
+  z-index: 1;
+  white-space: nowrap;
 }
