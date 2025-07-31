@@ -5,10 +5,9 @@
 
 # Example queries
 
-## [Companies that sell product applicable agains potato late blight](https://s.zazuko.com/ALGTr2)
+## [Companies that sell product applicable agains potato late blight](https://s.zazuko.com/2VSLCsf)
 
 ```rq
-PREFIX aschema: <https://schema.ld.admin.ch/>
 PREFIX schema: <http://schema.org/>
 PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
 
@@ -31,9 +30,10 @@ GROUP BY ?company
 ORDER BY DESC(?Number)
 ```
 
-## [Get all subclasses of `:Product` with names and descriptions](https://s.zazuko.com/3ktAsV5)
+## [Get all subclasses of `:Product` with names and descriptions](https://s.zazuko.com/yWk6Fz)
 
 ```rq
+PREFIX schema: <http://schema.org/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
 
@@ -42,8 +42,8 @@ SELECT ?label ?comment
 WHERE
 {
   ?class rdfs:subClassOf* :Product ;
-    rdfs:label ?label ;
-    rdfs:comment ?comment .
+    schema:name ?label ;
+    schema:description ?comment .
 
   VALUES ?lang { "en" }
   FILTER (
@@ -99,11 +99,10 @@ ORDER BY DESC(?products)
 
 - [What insecticide indication has most obligations?](https://s.zazuko.com/mkNyy1)
 - [Count number of indications per application area](https://s.zazuko.com/cCvhUJ)
-- [Get all class and property labels and comments](https://s.zazuko.com/aJyrxh)
-- [Count the instances per (sub)class](https://s.zazuko.com/j55kjw)
-- [A list of all substances, their IUPAC name, role, average percentages and how many products they are in](https://s.zazuko.com/2be7XUX)
+- [Get all class and property names and descriptions](https://s.zazuko.com/EJKZAU)
+- [Count the instances per product subclass](https://s.zazuko.com/5j9ftQ)
+- [A list of all substances, their IUPAC name, role, average percentages and how many products they are in](https://s.zazuko.com/2K54Ld9)
 - [Count the involved pests and crops per indication](https://s.zazuko.com/yAWBE5)
-- [A list of all units, the SRPPP PK and their occurences](https://s.zazuko.com/M1SCFh)
-- [Construct a new graph with all CHEBI labels](https://s.zazuko.com/3q6ekWF)
+- [A list of all units, the SRPPP PK and their occurences](https://s.zazuko.com/hQVZfk)
 - [List of all companies that have permission to sell plant protection products](https://s.zazuko.com/21xrM6T)
-- [Federated query on CheBI database:](https://s.zazuko.com/3xHmyFZ) Query the CheBI database via RHEA for chemical entity names, roles, chemical formulas and foreign keys to other databases.
+- [Federated query on CheBI database:](https://s.zazuko.com/3mxZVCq) Query the CheBI database via RHEA for chemical entity names, roles, chemical formulas and foreign keys to other databases.

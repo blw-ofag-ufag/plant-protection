@@ -31,7 +31,7 @@ printLabels <- function(x) {
   for (lang in c("de","fr","it","en","lt")) {
     label <- x[[lang]]
     if(!is.null(label) && !is.na(label) && label!="") {
-      triple(x[["subject"]], "rdfs:label", langstring(gsub("\"", "'", label), lang))
+      triple(x[["subject"]], "schema:name", langstring(gsub("\"", "'", label), lang))
     }
   }
 }

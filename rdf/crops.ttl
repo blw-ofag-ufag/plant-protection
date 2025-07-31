@@ -1,632 +1,632 @@
 @prefix : <https://agriculture.ld.admin.ch/plant-protection/> .
 @prefix crop: <https://agriculture.ld.admin.ch/plant-protection/crop/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
 
 crop:10000 a :CropGroup ;
-    rdfs:label "Mais"@de,
+    schema:name "Mais"@de,
         "Maïs"@fr,
         "Mais"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10001 a :CropGroup ;
-    rdfs:label "Schalotten"@de,
+    schema:name "Schalotten"@de,
         "échalote"@fr,
         "Scalogni"@it ;
     :hasParentCropGroup crop:9963 .
 
 crop:10002 a :CropGroup ;
-    rdfs:label "Schnittlauch"@de,
+    schema:name "Schnittlauch"@de,
         "ciboulette"@fr,
         "Erba cipollina"@it ;
     :hasParentCropGroup crop:10186 .
 
 crop:10003 a :CropGroup ;
-    rdfs:label "Schwarze Johannisbeere"@de,
+    schema:name "Schwarze Johannisbeere"@de,
         "cassis"@fr,
         "Ribes nero"@it ;
     :hasParentCropGroup crop:10127 .
 
 crop:10004 a :CropGroup ;
-    rdfs:label "Iris"@de,
+    schema:name "Iris"@de,
         "iris"@fr,
         "Iris"@it ;
     :hasParentCropGroup crop:12097 .
 
 crop:10005 a :CropGroup ;
-    rdfs:label "Spargel"@de,
+    schema:name "Spargel"@de,
         "asperge"@fr,
         "Asparagi"@it ;
     :hasParentCropGroup crop:10338 .
 
 crop:10006 a :CropGroup ;
-    rdfs:label "Spinat"@de,
+    schema:name "Spinat"@de,
         "épinard"@fr,
         "Spinaci"@it ;
     :hasParentCropGroup crop:10068 .
 
 crop:10007 a :CropGroup ;
-    rdfs:label "Stachelbeere"@de,
+    schema:name "Stachelbeere"@de,
         "groseilles à maquereau"@fr,
         "Uva spina"@it ;
     :hasParentCropGroup crop:10127 .
 
 crop:10008 a :CropGroup ;
-    rdfs:label "Raps"@de,
+    schema:name "Raps"@de,
         "Colza"@fr,
         "Colza"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10010 a :CropGroup ;
-    rdfs:label "Zuckermais"@de,
+    schema:name "Zuckermais"@de,
         "maïs sucré"@fr,
         "Mais dolce"@it ;
     :hasParentCropGroup crop:10339 .
 
 crop:10011 a :CropGroup ;
-    rdfs:label "Zwetschge / Pflaume"@de,
+    schema:name "Zwetschge / Pflaume"@de,
         "prunier (pruneau/prune)"@fr,
         "Prugno/Susino  "@it ;
     :hasParentCropGroup crop:9965 .
 
 crop:10016 a :CropGroup ;
-    rdfs:label "Gurken"@de,
+    schema:name "Gurken"@de,
         "concombre"@fr,
         "Cetrioli"@it ;
     :hasParentCropGroup crop:10017 .
 
 crop:10017 a :CropGroup ;
-    rdfs:label "Kürbisgewächse (Cucurbitaceae)"@de,
+    schema:name "Kürbisgewächse (Cucurbitaceae)"@de,
         "cucurbitacées"@fr,
         "Cucurbitacee"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:10018 a :CropGroup ;
-    rdfs:label "Zucchetti"@de,
+    schema:name "Zucchetti"@de,
         "courgette"@fr,
         "Zucchine"@it ;
     :hasParentCropGroup crop:10310 .
 
 crop:10019 a :CropGroup ;
-    rdfs:label "Melonen"@de,
+    schema:name "Melonen"@de,
         "melons"@fr,
         "Meloni"@it ;
     :hasParentCropGroup crop:10017 .
 
 crop:10020 a :CropGroup ;
-    rdfs:label "Kohlarten"@de,
+    schema:name "Kohlarten"@de,
         "choux"@fr,
         "Specie di cavoli"@it ;
     :hasParentCropGroup crop:9962 .
 
 crop:10021 a :CropGroup ;
-    rdfs:label "Topf- und Kontainerpflanzen"@de,
+    schema:name "Topf- und Kontainerpflanzen"@de,
         "plantes en pot et en container"@fr,
         "Pianta in vaso e in container"@it ;
     :hasParentCropGroup crop:10190 .
 
 crop:10022 a :CropGroup ;
-    rdfs:label "Wassermelonen"@de,
+    schema:name "Wassermelonen"@de,
         "pastèque"@fr,
         "Angurie"@it ;
     :hasParentCropGroup crop:10017 .
 
 crop:10025 a :CropGroup ;
-    rdfs:label "Portulakgewächse (Portulacaceae)"@de,
+    schema:name "Portulakgewächse (Portulacaceae)"@de,
         "portulacacées (Portulacaceae)"@fr,
         "Portulacee (Portulacaceae)"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:10026 a :CropGroup ;
-    rdfs:label "Nachtschattengewächse (Solanaceae)"@de,
+    schema:name "Nachtschattengewächse (Solanaceae)"@de,
         "solanacées"@fr,
         "Solanacee"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:10027 a :CropGroup ;
-    rdfs:label "Tomaten"@de,
+    schema:name "Tomaten"@de,
         "tomate"@fr,
         "Pomodori"@it ;
     :hasParentCropGroup crop:10026 .
 
 crop:10028 a :CropGroup ;
-    rdfs:label "Aubergine"@de,
+    schema:name "Aubergine"@de,
         "aubergine"@fr,
         "Melanzana"@it ;
     :hasParentCropGroup crop:10026 .
 
 crop:10029 a :CropGroup ;
-    rdfs:label "Paprika"@de,
+    schema:name "Paprika"@de,
         "poivron"@fr,
         "Peperone"@it ;
     :hasParentCropGroup crop:10026 .
 
 crop:10030 a :CropGroup ;
-    rdfs:label "Lauch"@de,
+    schema:name "Lauch"@de,
         "poireau"@fr,
         "Porro"@it ;
     :hasParentCropGroup crop:9963 .
 
 crop:10031 a :CropGroup ;
-    rdfs:label "Zwiebeln"@de,
+    schema:name "Zwiebeln"@de,
         "oignon"@fr,
         "Cipolle"@it ;
     :hasParentCropGroup crop:9963 .
 
 crop:10033 a :CropGroup ;
-    rdfs:label "Gemüseportulak"@de,
+    schema:name "Gemüseportulak"@de,
         "pourpier commun"@fr,
         "Portulaca estiva"@it ;
     :hasParentCropGroup crop:10342 .
 
 crop:10034 a :CropGroup ;
-    rdfs:label "Erbsen"@de,
+    schema:name "Erbsen"@de,
         "pois"@fr,
         "Piselli"@it ;
     :hasParentCropGroup crop:9957 .
 
 crop:10035 a :CropGroup ;
-    rdfs:label "Jostabeere"@de,
+    schema:name "Jostabeere"@de,
         "josta"@fr,
         "Josta"@it ;
     :hasParentCropGroup crop:10127 .
 
 crop:10037 a :CropGroup ;
-    rdfs:label "Jungreben"@de,
+    schema:name "Jungreben"@de,
         "jeune vigne"@fr,
         "Ceppi giovani"@it ;
     :hasParentCropGroup crop:9953 .
 
 crop:10038 a :CropGroup ;
-    rdfs:label "Lagerhallen, Mühlen, Silogebäude"@de,
+    schema:name "Lagerhallen, Mühlen, Silogebäude"@de,
         "entrepôts, moulins, silos"@fr,
         "Depositi, mulini, sili"@it ;
     :hasParentCropGroup crop:10203 .
 
 crop:10039 a :CropGroup ;
-    rdfs:label "Blumenknollen"@de,
+    schema:name "Blumenknollen"@de,
         "tubercules de fleurs"@fr,
         "Radici tuberose floreali"@it ;
     :hasParentCropGroup crop:10190 .
 
 crop:10040 a :CropGroup ;
-    rdfs:label "Begonia"@de,
+    schema:name "Begonia"@de,
         "bégonia"@fr,
         "Begonia"@it ;
     :hasParentCropGroup crop:10021,
         crop:12097 .
 
 crop:10042 a :CropGroup ;
-    rdfs:label "Chinaschilf"@de,
+    schema:name "Chinaschilf"@de,
         "Roseau de Chine"@fr,
         "Miscanto "@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10043 a :CropGroup ;
-    rdfs:label "Federkohl"@de,
+    schema:name "Federkohl"@de,
         "chou frisé non pommé"@fr,
         "Cavolo piuma"@it ;
     :hasParentCropGroup crop:10210 .
 
 crop:10044 a :CropGroup ;
-    rdfs:label "Kresse"@de,
+    schema:name "Kresse"@de,
         "cresson de jardin"@fr,
         "Crescione"@it ;
     :hasParentCropGroup crop:9962 .
 
 crop:10046 a :CropGroup ;
-    rdfs:label "Futter- und Zuckerrüben"@de,
+    schema:name "Futter- und Zuckerrüben"@de,
         "betteraves à sucre et fourragère"@fr,
         "Barbabietole da foraggio e da zucchero"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10047 a :CropGroup ;
-    rdfs:label "Rosenkohl"@de,
+    schema:name "Rosenkohl"@de,
         "chou de Bruxelles"@fr,
         "Cavoli di Bruxelles"@it ;
     :hasParentCropGroup crop:10020 .
 
 crop:10048 a :CropGroup ;
-    rdfs:label "Kenaf"@de,
+    schema:name "Kenaf"@de,
         "Kenaf"@fr,
         "Kenaf"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10050 a :CropGroup ;
-    rdfs:label "Cyclame"@de,
+    schema:name "Cyclame"@de,
         "cyclamen"@fr,
         "Ciclamino"@it ;
     :hasParentCropGroup crop:10021,
         crop:12097 .
 
 crop:10051 a :CropGroup ;
-    rdfs:label "Speisepilze"@de,
+    schema:name "Speisepilze"@de,
         "champignons comestibles"@fr,
         "Funghi commestibili"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:10052 a :CropGroup ;
-    rdfs:label "Weizen"@de,
+    schema:name "Weizen"@de,
         "Blé"@fr,
         "Frumento"@it ;
     :hasParentCropGroup crop:10080 .
 
 crop:10053 a :CropGroup ;
-    rdfs:label "Artischocken"@de,
+    schema:name "Artischocken"@de,
         "artichaut"@fr,
         "Carciofi"@it ;
     :hasParentCropGroup crop:9961 .
 
 crop:10056 a :CropGroup ;
-    rdfs:label "Chicorée"@de,
+    schema:name "Chicorée"@de,
         "chicorée witloof (chicorée-endive)"@fr,
         "Cicoria belga"@it ;
     :hasParentCropGroup crop:9961 .
 
 crop:10059 a :CropGroup ;
-    rdfs:label "Endivien"@de,
+    schema:name "Endivien"@de,
         "chicorée scarole, chicorée frisée"@fr,
         "Indivia"@it ;
     :hasParentCropGroup crop:10325 .
 
 crop:10060 a :CropGroup ;
-    rdfs:label "Kopfsalat"@de,
+    schema:name "Kopfsalat"@de,
         "laitue pommée"@fr,
         "Lattuga cappuccio"@it ;
     :hasParentCropGroup crop:10320 .
 
 crop:10063 a :CropGroup ;
-    rdfs:label "Schwarzwurzel"@de,
+    schema:name "Schwarzwurzel"@de,
         "scorsonère"@fr,
         "Scorzonera"@it ;
     :hasParentCropGroup crop:9961 .
 
 crop:10064 a :CropGroup ;
-    rdfs:label "Topinambur"@de,
+    schema:name "Topinambur"@de,
         "topinambour"@fr,
         "Topinambur"@it ;
     :hasParentCropGroup crop:9961 .
 
 crop:10065 a :CropGroup ;
-    rdfs:label "Zuckerhut"@de,
+    schema:name "Zuckerhut"@de,
         "chicorée pain de sucre"@fr,
         "Cicoria pan di zucchero"@it ;
     :hasParentCropGroup crop:10325 .
 
 crop:10067 a :CropGroup ;
-    rdfs:label "Stangensellerie"@de,
+    schema:name "Stangensellerie"@de,
         "céleri-branche"@fr,
         "Sedano da coste"@it ;
     :hasParentCropGroup crop:9946 .
 
 crop:10068 a :CropGroup ;
-    rdfs:label "Gänsefussgewächse (Chenopodiaceae)"@de,
+    schema:name "Gänsefussgewächse (Chenopodiaceae)"@de,
         "chénopodiacées"@fr,
         "Chenopodiacee"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:10070 a :CropGroup ;
-    rdfs:label "Hyazinthe"@de,
+    schema:name "Hyazinthe"@de,
         "jacinthe"@fr,
         "Giacinto"@it ;
     :hasParentCropGroup crop:10134,
         crop:12097 .
 
 crop:10071 a :CropGroup ;
-    rdfs:label "Tabak"@de,
+    schema:name "Tabak"@de,
         "Tabac"@fr,
         "Tabacco"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10072 a :CropGroup ;
-    rdfs:label "Sojabohne"@de,
+    schema:name "Sojabohne"@de,
         "Soja"@fr,
         "Soia "@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10074 a :CropGroup ;
-    rdfs:label "Buschbohne"@de,
+    schema:name "Buschbohne"@de,
         "haricot nain"@fr,
         "Fagiolo nano"@it ;
     :hasParentCropGroup crop:10292 .
 
 crop:10075 a :CropGroup ;
-    rdfs:label "Gemüsezwiebel"@de,
+    schema:name "Gemüsezwiebel"@de,
         "oignon potager"@fr,
         "Cipolle dolci"@it ;
     :hasParentCropGroup crop:10031 .
 
 crop:10078 a :CropGroup ;
-    rdfs:label "Speisezwiebel"@de,
+    schema:name "Speisezwiebel"@de,
         "oignon (condiment)"@fr,
         "Cipolle da tavola"@it ;
     :hasParentCropGroup crop:10031 .
 
 crop:10080 a :CropGroup ;
-    rdfs:label "Getreide"@de,
+    schema:name "Getreide"@de,
         "Céréales"@fr,
         "Cereali"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10081 a :CropGroup ;
-    rdfs:label "Stangenbohne"@de,
+    schema:name "Stangenbohne"@de,
         "haricot à rames"@fr,
         "Fagiolo rampicante"@it ;
     :hasParentCropGroup crop:10292 .
 
 crop:10082 a :CropGroup ;
-    rdfs:label "Patisson"@de,
+    schema:name "Patisson"@de,
         "pâtisson"@fr,
         "Patisson"@it ;
     :hasParentCropGroup crop:10310 .
 
 crop:10083 a :CropGroup ;
-    rdfs:label "Gerste"@de,
+    schema:name "Gerste"@de,
         "Orge"@fr,
         "Orzo"@it ;
     :hasParentCropGroup crop:10080 .
 
 crop:10084 a :CropGroup ;
-    rdfs:label "Peperoni "@de,
+    schema:name "Peperoni "@de,
         "poivron"@fr,
         "Peperone"@it ;
     :hasParentCropGroup crop:10029 .
 
 crop:10086 a :CropGroup ;
-    rdfs:label "Kartoffeln"@de,
+    schema:name "Kartoffeln"@de,
         "pommes de terre"@fr,
         "Patate"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10088 a :CropGroup ;
-    rdfs:label "Futterrübe"@de,
+    schema:name "Futterrübe"@de,
         "Betterave fourragère"@fr,
         "Barbabietola da foraggio"@it ;
     :hasParentCropGroup crop:10046 .
 
 crop:10089 a :CropGroup ;
-    rdfs:label "Zuckerrübe"@de,
+    schema:name "Zuckerrübe"@de,
         "Betterave à sucre"@fr,
         "Barbabietola da zucchero"@it ;
     :hasParentCropGroup crop:10046 .
 
 crop:10090 a :CropGroup ;
-    rdfs:label "Gladiole"@de,
+    schema:name "Gladiole"@de,
         "glaïeul"@fr,
         "Gladiolo"@it ;
     :hasParentCropGroup crop:10015,
         crop:12097 .
 
 crop:10091 a :CropGroup ;
-    rdfs:label "Walnuss"@de,
+    schema:name "Walnuss"@de,
         "noyer"@fr,
         "Noce comune"@it ;
     :hasParentCropGroup crop:10117 .
 
 crop:10093 a :CropGroup ;
-    rdfs:label "Salate (Asteraceae)"@de,
+    schema:name "Salate (Asteraceae)"@de,
         "salades (Asteraceae)"@fr,
         "Insalate (Asteracee)"@it ;
     :hasParentCropGroup crop:9961 .
 
 crop:10094 a :CropGroup ;
-    rdfs:label "Winterweizen"@de,
+    schema:name "Winterweizen"@de,
         "Blé d'automne"@fr,
         "Frumento autunnale"@it ;
     :hasParentCropGroup crop:10167,
         crop:13784 .
 
 crop:10095 a :CropGroup ;
-    rdfs:label "Baumschule"@de,
+    schema:name "Baumschule"@de,
         "pépinière"@fr,
         "Vivaio"@it ;
     :hasParentCropGroup crop:10190 .
 
 crop:10096 a :CropGroup ;
-    rdfs:label "Chrysantheme"@de,
+    schema:name "Chrysantheme"@de,
         "chrysanthème"@fr,
         "Crisantemo"@it ;
     :hasParentCropGroup crop:10015,
         crop:12097 .
 
 crop:10097 a :CropGroup ;
-    rdfs:label "Pelargonien"@de,
+    schema:name "Pelargonien"@de,
         "géranium"@fr,
         "Geranio"@it ;
     :hasParentCropGroup crop:10021,
         crop:12097 .
 
 crop:10098 a :CropGroup ;
-    rdfs:label "Primeln"@de,
+    schema:name "Primeln"@de,
         "primevères"@fr,
         "Primule"@it ;
     :hasParentCropGroup crop:10021,
         crop:12097 .
 
 crop:10099 a :CropGroup ;
-    rdfs:label "Azaleen"@de,
+    schema:name "Azaleen"@de,
         "azalée"@fr,
         "Azalee"@it ;
     :hasParentCropGroup crop:10100 .
 
 crop:10100 a :CropGroup ;
-    rdfs:label "Rhododendron"@de,
+    schema:name "Rhododendron"@de,
         "rhododendron"@fr,
         "Rododendro"@it ;
     :hasParentCropGroup crop:10108,
         crop:12096 .
 
 crop:10101 a :CropGroup ;
-    rdfs:label "Ziergehölze (ausserhalb Forst)"@de,
+    schema:name "Ziergehölze (ausserhalb Forst)"@de,
         "arbustes d'ornement (hors forêt)"@fr,
         "Arbusti ornamentali (al di fuori della foresta)"@it ;
     :hasParentCropGroup crop:10190 .
 
 crop:10103 a :CropGroup ;
-    rdfs:label "Kirschlorbeer"@de,
+    schema:name "Kirschlorbeer"@de,
         "laurier-cerise"@fr,
         "Lauro ceraso"@it ;
     :hasParentCropGroup crop:10108,
         crop:12096 .
 
 crop:10104 a :CropGroup ;
-    rdfs:label "Rosen"@de,
+    schema:name "Rosen"@de,
         "rosier"@fr,
         "Rose"@it ;
     :hasParentCropGroup crop:10190 .
 
 crop:10109 a :CropGroup ;
-    rdfs:label "Rosskastanie"@de,
+    schema:name "Rosskastanie"@de,
         "marronnier d'Inde"@fr,
         "Ippocastano"@it ;
     :hasParentCropGroup crop:10108,
         crop:12096 .
 
 crop:10110 a :CropGroup ;
-    rdfs:label "Blautanne"@de,
+    schema:name "Blautanne"@de,
         "sapin bleu"@fr,
         "Abete del Colorado"@it ;
     :hasParentCropGroup crop:10111,
         crop:12096 .
 
 crop:10111 a :CropGroup ;
-    rdfs:label "Nadelgehölze (Koniferen)"@de,
+    schema:name "Nadelgehölze (Koniferen)"@de,
         "conifères"@fr,
         "Conifere"@it ;
     :hasParentCropGroup crop:9952 .
 
 crop:10114 a :CropGroup ;
-    rdfs:label "Ertragsreben"@de,
+    schema:name "Ertragsreben"@de,
         "vigne en production"@fr,
         "Vite in produzione"@it ;
     :hasParentCropGroup crop:9953 .
 
 crop:10115 a :CropGroup ;
-    rdfs:label "Hopfen"@de,
+    schema:name "Hopfen"@de,
         "Houblon"@fr,
         "Luppolo"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10116 a :CropGroup ;
-    rdfs:label "Ackerbohne"@de,
+    schema:name "Ackerbohne"@de,
         "féverole"@fr,
         "Fava"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10117 a :CropGroup ;
-    rdfs:label "Nüsse"@de,
+    schema:name "Nüsse"@de,
         "noix"@fr,
         "Noci"@it ;
     :hasParentCropGroup crop:10260 .
 
 crop:10118 a :CropGroup ;
-    rdfs:label "Sommerweizen"@de,
+    schema:name "Sommerweizen"@de,
         "Blé de printemps"@fr,
         "Frumento primaverile"@it ;
     :hasParentCropGroup crop:10164,
         crop:13784 .
 
 crop:10119 a :CropGroup ;
-    rdfs:label "Triticale"@de,
+    schema:name "Triticale"@de,
         "Triticale"@fr,
         "Triticale"@it ;
     :hasParentCropGroup crop:10080 .
 
 crop:10120 a :CropGroup ;
-    rdfs:label "Roggen"@de,
+    schema:name "Roggen"@de,
         "Seigle"@fr,
         "Segale"@it ;
     :hasParentCropGroup crop:10080 .
 
 crop:10121 a :CropGroup ;
-    rdfs:label "Hafer"@de,
+    schema:name "Hafer"@de,
         "Avoine"@fr,
         "Avena"@it ;
     :hasParentCropGroup crop:10080 .
 
 crop:10122 a :CropGroup ;
-    rdfs:label "Korn (Dinkel)"@de,
+    schema:name "Korn (Dinkel)"@de,
         "Épeautre"@fr,
         "Spelta"@it ;
     :hasParentCropGroup crop:10052,
         crop:10167 .
 
 crop:10124 a :CropGroup ;
-    rdfs:label "Eiweisserbse"@de,
+    schema:name "Eiweisserbse"@de,
         "pois protéagineux"@fr,
         "Pisello proteico"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10126 a :CropGroup ;
-    rdfs:label "Zwetschge"@de,
+    schema:name "Zwetschge"@de,
         "prunier (pruneau)"@fr,
         "Prugno"@it ;
     :hasParentCropGroup crop:10011 .
 
 crop:10127 a :CropGroup ;
-    rdfs:label "Ribes Arten"@de,
+    schema:name "Ribes Arten"@de,
         "espèces de Ribes"@fr,
         "Specie di ribes"@it ;
     :hasParentCropGroup crop:10193 .
 
 crop:10128 a :CropGroup ;
-    rdfs:label "Bohnen"@de,
+    schema:name "Bohnen"@de,
         "haricots"@fr,
         "Fagioli"@it ;
     :hasParentCropGroup crop:9957 .
 
 crop:10132 a :CropGroup ;
-    rdfs:label "Einrichtungen und Geräte"@de,
+    schema:name "Einrichtungen und Geräte"@de,
         "installations et outils"@fr,
         "Installazioni e apparecchi"@it ;
     :hasParentCropGroup crop:10203 .
 
 crop:10133 a :CropGroup ;
-    rdfs:label "Frässaaten"@de,
+    schema:name "Frässaaten"@de,
         "semis après travail superficiel"@fr,
         "Semine dopo la fresatura"@it ;
     :hasParentCropGroup crop:10198 .
 
 crop:10135 a :CropGroup ;
-    rdfs:label "Wiesen und Weiden"@de,
+    schema:name "Wiesen und Weiden"@de,
         "Prairies et pâturages"@fr,
         "Prati e pascoli"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10136 a :CropGroup ;
-    rdfs:label "Blaudistel"@de,
+    schema:name "Blaudistel"@de,
         "chardon bleu"@fr,
         "Cardo azzurro"@it ;
     :hasParentCropGroup crop:10015,
         crop:12097 .
 
 crop:10137 a :CropGroup ;
-    rdfs:label "Sonnenblume"@de,
+    schema:name "Sonnenblume"@de,
         "Tournesol"@fr,
         "Girasole"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10142 a :CropGroup ;
-    rdfs:label "Mulchsaaten"@de,
+    schema:name "Mulchsaaten"@de,
         "semis sous litière"@fr,
         "Semine a lattiera"@it ;
     :hasParentCropGroup crop:10198 .
 
 crop:10143 a :CropGroup ;
-    rdfs:label "Sommergerste"@de,
+    schema:name "Sommergerste"@de,
         "orge de printemps"@fr,
         "Orzo primaverile"@it ;
     :hasParentCropGroup crop:10083,
         crop:10164 .
 
 crop:10144 a :CropGroup ;
-    rdfs:label "Sommerhafer"@de,
+    schema:name "Sommerhafer"@de,
         "Avoine de printemps"@fr,
         "Avena primaverile"@it ;
     :hasParentCropGroup crop:10121,
         crop:10164 .
 
 crop:10147 a :CropGroup ;
-    rdfs:label "Gerbera"@de,
+    schema:name "Gerbera"@de,
         "Gerbera"@en,
         "gerbera"@fr,
         "Gerbera"@it ;
@@ -634,1297 +634,1297 @@ crop:10147 a :CropGroup ;
         crop:12097 .
 
 crop:10150 a :CropGroup ;
-    rdfs:label "Luzerne"@de,
+    schema:name "Luzerne"@de,
         "Luzerne"@fr,
         "Erba medica"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10151 a :CropGroup ;
-    rdfs:label "Kleegrasmischung (Kunstwiese)"@de,
+    schema:name "Kleegrasmischung (Kunstwiese)"@de,
         "mélange trèfles-graminées (prairie arificielle)"@fr,
         "Miscela trifoglio-graminacee (prati artificiali)"@it ;
     :hasParentCropGroup crop:10135 .
 
 crop:10152 a :CropGroup ;
-    rdfs:label "Buchsbäume (Buxus)"@de,
+    schema:name "Buchsbäume (Buxus)"@de,
         "buis (Buxus)"@fr,
         "Bosso (Buxus)"@it ;
     :hasParentCropGroup crop:10108,
         crop:12096 .
 
 crop:10155 a :CropGroup ;
-    rdfs:label "Winterraps"@de,
+    schema:name "Winterraps"@de,
         "Colza d'automne"@fr,
         "Colza autunnale"@it ;
     :hasParentCropGroup crop:10008 .
 
 crop:10157 a :CropGroup ;
-    rdfs:label "Fichte"@de,
+    schema:name "Fichte"@de,
         "épicéa"@fr,
         "Abete rosso"@it ;
     :hasParentCropGroup crop:10111 .
 
 crop:10158 a :CropGroup ;
-    rdfs:label "Tulpe"@de,
+    schema:name "Tulpe"@de,
         "tulipe"@fr,
         "Tulipano"@it ;
     :hasParentCropGroup crop:12097 .
 
 crop:10159 a :CropGroup ;
-    rdfs:label "Gewürz- und Medizinalkräuter"@de,
+    schema:name "Gewürz- und Medizinalkräuter"@de,
         "herbes aromatiques et médicinales"@fr,
         "Erbe aromatiche e medicinali"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:10162 a :CropGroup ;
-    rdfs:label "Dahlien"@de,
+    schema:name "Dahlien"@de,
         "dahlia"@fr,
         "Dalie"@it ;
     :hasParentCropGroup crop:10039 .
 
 crop:10164 a :CropGroup ;
-    rdfs:label "Sommergetreide"@de,
+    schema:name "Sommergetreide"@de,
         "Céréales de printemps"@fr,
         "Cereali primaverili"@it ;
     :hasParentCropGroup crop:10080 .
 
 crop:10167 a :CropGroup ;
-    rdfs:label "Wintergetreide"@de,
+    schema:name "Wintergetreide"@de,
         "Céréales d'automne"@fr,
         "Cereali autunnali"@it ;
     :hasParentCropGroup crop:10080 .
 
 crop:10171 a :CropGroup ;
-    rdfs:label "Suppensellerie"@de,
+    schema:name "Suppensellerie"@de,
         "céleri-pomme pour bouillon"@fr,
         "Sedano da condimento"@it ;
     :hasParentCropGroup crop:9946 .
 
 crop:10172 a :CropGroup ;
-    rdfs:label "allg. Ökologische Ausgleichsflächen (gemäss DZV)"@de,
+    schema:name "allg. Ökologische Ausgleichsflächen (gemäss DZV)"@de,
         "domaine surfaces de compensation écologique (selon OPD)"@fr,
         "Superfici di compensazione ecologica in generale (conformemente OPD)"@it .
 
 crop:10176 a :CropGroup ;
-    rdfs:label "Ein- und zweijährige Zierpflanzen"@de,
+    schema:name "Ein- und zweijährige Zierpflanzen"@de,
         "plantes ornementales annuelles et bisannuelles"@fr,
         "Piante ornamentali annuali e biennali"@it ;
     :hasParentCropGroup crop:10190 .
 
 crop:10178 a :CropGroup ;
-    rdfs:label "Böschungen und Grünstreifen entlang von Verkehrswegen (gem. ChemRRV)"@de,
+    schema:name "Böschungen und Grünstreifen entlang von Verkehrswegen (gem. ChemRRV)"@de,
         "talus et bandes vertes le long des voies de communication (selon ORRChim)"@fr,
         "Scarpate e strisce verdi lungo le vie di comunicazione (conformemente ORRPChim)"@it ;
     :hasParentCropGroup crop:12147 .
 
 crop:10179 a :CropGroup ;
-    rdfs:label "Auf und an National- und Kantonsstrassen (gem. ChemRRV) "@de,
+    schema:name "Auf und an National- und Kantonsstrassen (gem. ChemRRV) "@de,
         "le long des routes nationales et cantonales  (selon ORRChim) "@fr,
         "Lungo le strade nazionali e cantonali (conformemente ORRPChim) "@it ;
     :hasParentCropGroup crop:12147 .
 
 crop:10180 a :CropGroup ;
-    rdfs:label "Wintertriticale"@de,
+    schema:name "Wintertriticale"@de,
         "Triticale d'automne"@fr,
         "Triticale autunnale"@it ;
     :hasParentCropGroup crop:10119,
         crop:10167 .
 
 crop:10186 a :CropGroup ;
-    rdfs:label "Küchenkräuter"@de,
+    schema:name "Küchenkräuter"@de,
         "fines herbes"@fr,
         "Erbette da cucina"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:10187 a :CropGroup ;
-    rdfs:label "Lupinen"@de,
+    schema:name "Lupinen"@de,
         "Lupin"@fr,
         "Lupini"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10188 a :CropGroup ;
-    rdfs:label "Ölkürbisse"@de,
+    schema:name "Ölkürbisse"@de,
         "courges oléagineuses"@fr,
         "Zucca da olio"@it ;
     :hasParentCropGroup crop:10017 .
 
 crop:10190 a :CropGroup ;
-    rdfs:label "Zierpflanzen allg."@de,
+    schema:name "Zierpflanzen allg."@de,
         "culture ornementale en général"@fr,
         "Coltivazione piante ornam. in generale "@it .
 
 crop:10192 a :CropGroup ;
-    rdfs:label "allg. Obstbau"@de,
+    schema:name "allg. Obstbau"@de,
         "domaine app. arboriculture"@fr .
 
 crop:10193 a :CropGroup ;
-    rdfs:label "allg. Beerenbau"@de,
+    schema:name "allg. Beerenbau"@de,
         "domaine app. baies"@fr .
 
 crop:10194 a :CropGroup ;
-    rdfs:label "allg. Weinbau"@de,
+    schema:name "allg. Weinbau"@de,
         "domaine app. vignes"@fr .
 
 crop:10195 a :CropGroup ;
-    rdfs:label "allg. Gemüsebau"@de,
+    schema:name "allg. Gemüsebau"@de,
         "domaine app. maraîchère"@fr .
 
 crop:10197 a :CropGroup ;
-    rdfs:label "allg. Feldbau"@de,
+    schema:name "allg. Feldbau"@de,
         "domaine app. grande culture"@fr .
 
 crop:10198 a :CropGroup ;
-    rdfs:label "Anbautechnik"@de,
+    schema:name "Anbautechnik"@de,
         "techniques culturales"@fr,
         "Tecnica di coltivazione"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10202 a :CropGroup ;
-    rdfs:label "allg. Forstwirtschaft"@de,
+    schema:name "allg. Forstwirtschaft"@de,
         "domaine app. sylviculture"@fr .
 
 crop:10203 a :CropGroup ;
-    rdfs:label "Allgemein Vorratsschutz"@de,
+    schema:name "Allgemein Vorratsschutz"@de,
         "protection des récoltes"@fr,
         "Protezione delle scorte (in generale)"@it ;
     :hasParentCropGroup crop:10201 .
 
 crop:10210 a :CropGroup ;
-    rdfs:label "Blattkohle"@de,
+    schema:name "Blattkohle"@de,
         "choux à feuilles"@fr,
         "Cavoli fogliacei"@it ;
     :hasParentCropGroup crop:10020 .
 
 crop:10218 a :CropGroup ;
-    rdfs:label "Schwarzer Holunder"@de,
+    schema:name "Schwarzer Holunder"@de,
         "Elder berry"@en,
         "grand sureau"@fr,
         "Sambuco nero"@it ;
     :hasParentCropGroup crop:10193 .
 
 crop:10225 a :CropGroup ;
-    rdfs:label "Lein"@de,
+    schema:name "Lein"@de,
         "Lin"@fr,
         "Lino"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10227 a :CropGroup ;
-    rdfs:label "Offene Ackerfläche"@de,
+    schema:name "Offene Ackerfläche"@de,
         "terres ouvertes"@fr,
         "Superficie coltiva aperta"@it ;
     :hasParentCropGroup crop:10172 .
 
 crop:10230 a :CropGroup ;
-    rdfs:label "Grünfläche"@de,
+    schema:name "Grünfläche"@de,
         "surfaces herbagères"@fr,
         "Superficie inerbita"@it .
 
 crop:10232 a :CropGroup ;
-    rdfs:label "Johanniskraut"@de,
+    schema:name "Johanniskraut"@de,
         "Saint-John's-wort"@en,
         "millepertuis"@fr,
         "Iperico"@it ;
     :hasParentCropGroup crop:10159 .
 
 crop:10236 a :CropGroup ;
-    rdfs:label "Grasbestände zur Saatgutproduktion"@de,
+    schema:name "Grasbestände zur Saatgutproduktion"@de,
         "Graminées pour la production de semences"@fr,
         "Graminacee per la produzione di sementi"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10237 a :CropGroup ;
-    rdfs:label "Meerrettich"@de,
+    schema:name "Meerrettich"@de,
         "raifort"@fr,
         "Rafano rusticana / Ramolaccio"@it ;
     :hasParentCropGroup crop:9962 .
 
 crop:10238 a :CropGroup ;
-    rdfs:label "Mohn"@de,
+    schema:name "Mohn"@de,
         "pavot"@fr,
         "Papavero"@it .
 
 crop:10242 a :CropGroup ;
-    rdfs:label "Dill"@de,
+    schema:name "Dill"@de,
         "dill"@en,
         "aneth"@fr,
         "Aneto"@it ;
     :hasParentCropGroup crop:10186 .
 
 crop:10243 a :CropGroup ;
-    rdfs:label "Baldrian"@de,
+    schema:name "Baldrian"@de,
         "Valerian"@en,
         "valériane"@fr,
         "Valeriana"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:10244 a :CropGroup ;
-    rdfs:label "Kümmel"@de,
+    schema:name "Kümmel"@de,
         "caraway"@en,
         "carvi"@fr,
         "Carvi"@it ;
     :hasParentCropGroup crop:10186 .
 
 crop:10245 a :CropGroup ;
-    rdfs:label "Rucola"@de,
+    schema:name "Rucola"@de,
         "rocket"@en,
         "roquette"@fr,
         "Rucola"@it ;
     :hasParentCropGroup crop:9962 .
 
 crop:10248 a :CropGroup ;
-    rdfs:label "Trockenreis"@de,
+    schema:name "Trockenreis"@de,
         "Riz semis sur terrain sec"@fr,
         "Riso seminato su terreno asciutto"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10251 a :CropGroup ;
-    rdfs:label "Baby-Leaf"@de,
+    schema:name "Baby-Leaf"@de,
         "Baby-Leaf"@fr,
         "Baby-Leaf"@it .
 
 crop:10252 a :CropGroup ;
-    rdfs:label "Färberdistel (Saflor)"@de,
+    schema:name "Färberdistel (Saflor)"@de,
         "Safflower"@en,
         "Carthame"@fr,
         "Cartamo"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:10253 a :CropGroup ;
-    rdfs:label "Pastinake"@de,
+    schema:name "Pastinake"@de,
         "Panais"@fr,
         "Pastinaca"@it ;
     :hasParentCropGroup crop:9951 .
 
 crop:10254 a :CropGroup ;
-    rdfs:label "Medizinalkräuter"@de,
+    schema:name "Medizinalkräuter"@de,
         "plantes médicinales"@fr,
         "erbe medicinali"@it .
 
 crop:10256 a :CropGroup ;
-    rdfs:label "Zierkürbis"@de,
+    schema:name "Zierkürbis"@de,
         "courge d'ornement"@fr,
         "Zucca ornamentale"@it ;
     :hasParentCropGroup crop:12097 .
 
 crop:10258 a :CropGroup ;
-    rdfs:label "Einlegegurken"@de,
+    schema:name "Einlegegurken"@de,
         "cornichons"@fr,
         "cetrioli per conserva"@it ;
     :hasParentCropGroup crop:10016 .
 
 crop:10260 a :CropGroup ;
-    rdfs:label "Hartschalenobst"@de,
+    schema:name "Hartschalenobst"@de,
         "noix en général"@fr,
         "Frutta con guscio"@it ;
     :hasParentCropGroup crop:10192 .
 
 crop:10261 a :CropGroup ;
-    rdfs:label "Holzpaletten, Packholz, Stammholz"@de,
+    schema:name "Holzpaletten, Packholz, Stammholz"@de,
         "Palette en bois, bois d'emballage, bois en général"@fr,
         "Palette in legno, legno da imballaggio, legno non lavorato"@it .
 
 crop:10264 a :CropGroup ;
-    rdfs:label "Speisekürbisse (ungeniessbare Schale)"@de,
+    schema:name "Speisekürbisse (ungeniessbare Schale)"@de,
         "courges (écorce non comestible)"@fr,
         "Zucche (buccia non commestibile)"@it ;
     :hasParentCropGroup crop:10017 .
 
 crop:10266 a :CropGroup ;
-    rdfs:label "Rondini"@de,
+    schema:name "Rondini"@de,
         "rondini"@fr,
         "Rondini"@it ;
     :hasParentCropGroup crop:10310 .
 
 crop:10267 a :CropGroup ;
-    rdfs:label "Wolliger Fingerhut"@de,
+    schema:name "Wolliger Fingerhut"@de,
         "Grecian foxglove"@en,
         "digitale lanifère"@fr,
         "Digitale lanata"@it ;
     :hasParentCropGroup crop:10254 .
 
 crop:10268 a :CropGroup ;
-    rdfs:label "Melisse"@de,
+    schema:name "Melisse"@de,
         "mélisse"@fr,
         "Melissa"@it .
 
 crop:10270 a :CropGroup ;
-    rdfs:label "Minze"@de,
+    schema:name "Minze"@de,
         "Mint"@en,
         "menthe"@fr,
         "Menta"@it ;
     :hasParentCropGroup crop:10186 .
 
 crop:10271 a :CropGroup ;
-    rdfs:label "Emmer"@de,
+    schema:name "Emmer"@de,
         "Amidonnier"@fr,
         "Farro"@it ;
     :hasParentCropGroup crop:10052,
         crop:10167 .
 
 crop:10272 a :CropGroup ;
-    rdfs:label "Kardy"@de,
+    schema:name "Kardy"@de,
         "Cardy"@en,
         "cardon"@fr,
         "Cardo"@it ;
     :hasParentCropGroup crop:9961 .
 
 crop:10274 a :CropGroup ;
-    rdfs:label "Rosmarin"@de,
+    schema:name "Rosmarin"@de,
         "Rosemary"@en,
         "romarin"@fr,
         "Rosmarino"@it ;
     :hasParentCropGroup crop:10186 .
 
 crop:10277 a :CropGroup ;
-    rdfs:label "Olive"@de,
+    schema:name "Olive"@de,
         "Olive"@en,
         "olivier"@fr,
         "Olivo"@it ;
     :hasParentCropGroup crop:10192 .
 
 crop:10279 a :CropGroup ;
-    rdfs:label "Verarbeitungsräume"@de,
+    schema:name "Verarbeitungsräume"@de,
         "locaux de transformation"@fr,
         "Locali per la lavorazione"@it ;
     :hasParentCropGroup crop:10203 .
 
 crop:10280 a :CropGroup ;
-    rdfs:label "Lagerräume"@de,
+    schema:name "Lagerräume"@de,
         "entrepôts"@fr,
         "Depositi"@it ;
     :hasParentCropGroup crop:10203 .
 
 crop:10281 a :CropGroup ;
-    rdfs:label "Wurzelpetersilie"@de,
+    schema:name "Wurzelpetersilie"@de,
         "Turnip-rooted parsley"@en,
         "persil à grosse racine"@fr,
         "Prezzemolo tuberoso"@it ;
     :hasParentCropGroup crop:9951 .
 
 crop:10283 a :CropGroup ;
-    rdfs:label "Barbarakraut"@de,
+    schema:name "Barbarakraut"@de,
         "Barbarée du printemps"@fr,
         "Erba di Santa Barbara vernale"@it ;
     :hasParentCropGroup crop:9962 .
 
 crop:10284 a :CropGroup ;
-    rdfs:label "Blumenkohle"@de,
+    schema:name "Blumenkohle"@de,
         "Flowering brassica"@en,
         "choux (développement de l'inflorescence)"@fr,
         "Cavoli a infiorescenza"@it ;
     :hasParentCropGroup crop:10020 .
 
 crop:10285 a :CropGroup ;
-    rdfs:label "Andenbeere"@de,
+    schema:name "Andenbeere"@de,
         "cape gooseberry"@en,
         "coqueret du Pérou"@fr,
         "Alchechengio"@it ;
     :hasParentCropGroup crop:10026 .
 
 crop:10286 a :CropGroup ;
-    rdfs:label "Pepino"@de,
+    schema:name "Pepino"@de,
         "pear melon"@en,
         "poire melon"@fr,
         "Pepino"@it ;
     :hasParentCropGroup crop:10026 .
 
 crop:10288 a :CropGroup ;
-    rdfs:label "Mini-Kiwi"@de,
+    schema:name "Mini-Kiwi"@de,
         "mini-Kiwi (Kiwaï)"@fr,
         "Mini-Kiwi"@it ;
     :hasParentCropGroup crop:10193 .
 
 crop:10290 a :CropGroup ;
-    rdfs:label "Weihnachtsbäume"@de,
+    schema:name "Weihnachtsbäume"@de,
         "arbres de Noël"@fr,
         "Alberi di Natale"@it ;
     :hasParentCropGroup crop:10111,
         crop:12096 .
 
 crop:10292 a :CropGroup ;
-    rdfs:label "Bohnen mit Hülsen"@de,
+    schema:name "Bohnen mit Hülsen"@de,
         "haricots non écossés"@fr,
         "Fagioli con baccello"@it ;
     :hasParentCropGroup crop:10128 .
 
 crop:10293 a :CropGroup ;
-    rdfs:label "Bohnen ohne Hülsen"@de,
+    schema:name "Bohnen ohne Hülsen"@de,
         "haricots écossés"@fr,
         "Fagioli senza baccello"@it ;
     :hasParentCropGroup crop:10128 .
 
 crop:10294 a :CropGroup ;
-    rdfs:label "Erbsen ohne Hülsen"@de,
+    schema:name "Erbsen ohne Hülsen"@de,
         "pois écossés"@fr,
         "Piselli senza baccello"@it ;
     :hasParentCropGroup crop:10034 .
 
 crop:10295 a :CropGroup ;
-    rdfs:label "Erbsen mit Hülsen"@de,
+    schema:name "Erbsen mit Hülsen"@de,
         "pois non écossés"@fr,
         "Piselli con baccello"@it ;
     :hasParentCropGroup crop:10034 .
 
 crop:10296 a :CropGroup ;
-    rdfs:label "Birne / Nashi"@de,
+    schema:name "Birne / Nashi"@de,
         "poirier / nashi"@fr,
         "Pero / Nashi"@it ;
     :hasParentCropGroup crop:9959 .
 
 crop:10297 a :CropGroup ;
-    rdfs:label "Rubus Arten"@de,
+    schema:name "Rubus Arten"@de,
         "espèces de Rubus"@fr,
         "Specie di rubus"@it ;
     :hasParentCropGroup crop:10193 .
 
 crop:10298 a :CropGroup ;
-    rdfs:label "Speisekohlrüben"@de,
+    schema:name "Speisekohlrüben"@de,
         "rave de Brassica rapa et B. napus"@fr,
         "Rapa di Brassica rapa e B. napus"@it ;
     :hasParentCropGroup crop:9962 .
 
 crop:10299 a :CropGroup ;
-    rdfs:label "Brassica rapa-Rüben"@de,
+    schema:name "Brassica rapa-Rüben"@de,
         "rave de Brassica rapa "@fr,
         "Rapa di Brassica rapa "@it ;
     :hasParentCropGroup crop:10298 .
 
 crop:10300 a :CropGroup ;
-    rdfs:label "Brassica napus-Rüben"@de,
+    schema:name "Brassica napus-Rüben"@de,
         "rave de Brassica napus"@fr,
         "Rapa di Brassica napus"@it ;
     :hasParentCropGroup crop:10298 .
 
 crop:10303 a :CropGroup ;
-    rdfs:label "Bodenkohlrabi"@de,
+    schema:name "Bodenkohlrabi"@de,
         "rutabaga"@fr,
         "Cavolo navone"@it ;
     :hasParentCropGroup crop:10300 .
 
 crop:10304 a :CropGroup ;
-    rdfs:label "Lactuca-Salate"@de,
+    schema:name "Lactuca-Salate"@de,
         "salades lactuca"@fr,
         "Insalate del genere Lactuca"@it ;
     :hasParentCropGroup crop:10093 .
 
 crop:10305 a :CropGroup ;
-    rdfs:label "Asia-Salate (Brassicaceae)"@de,
+    schema:name "Asia-Salate (Brassicaceae)"@de,
         "salades Asia (Brassicaceae)"@fr,
         "Insalate asiatiche (Brassicacee)"@it ;
     :hasParentCropGroup crop:9962 .
 
 crop:10306 a :CropGroup ;
-    rdfs:label "Mangold"@de,
+    schema:name "Mangold"@de,
         "bette"@fr,
         "Bietola"@it ;
     :hasParentCropGroup crop:10068 .
 
 crop:10307 a :CropGroup ;
-    rdfs:label "Basilikum"@de,
+    schema:name "Basilikum"@de,
         "basilic"@fr,
         "Basilico"@it ;
     :hasParentCropGroup crop:10186 .
 
 crop:10308 a :CropGroup ;
-    rdfs:label "Salbei"@de,
+    schema:name "Salbei"@de,
         "sauge"@fr,
         "Salvia"@it ;
     :hasParentCropGroup crop:10186 .
 
 crop:10309 a :CropGroup ;
-    rdfs:label "Bohnenkraut"@de,
+    schema:name "Bohnenkraut"@de,
         "sarriette"@fr,
         "Santoreggia"@it ;
     :hasParentCropGroup crop:10186 .
 
 crop:10310 a :CropGroup ;
-    rdfs:label "Kürbisse mit geniessbarer Schale"@de,
+    schema:name "Kürbisse mit geniessbarer Schale"@de,
         "courges à peau comestible"@fr,
         "Zucche con buccia commestibile"@it ;
     :hasParentCropGroup crop:10017 .
 
 crop:10311 a :CropGroup ;
-    rdfs:label "Liebstöckel"@de,
+    schema:name "Liebstöckel"@de,
         "livèche"@fr,
         "Levistico"@it ;
     :hasParentCropGroup crop:10186 .
 
 crop:10312 a :CropGroup ;
-    rdfs:label "Estragon"@de,
+    schema:name "Estragon"@de,
         "estragon"@fr,
         "Dragoncello"@it ;
     :hasParentCropGroup crop:10186 .
 
 crop:10314 a :CropGroup ;
-    rdfs:label "Romanesco"@de,
+    schema:name "Romanesco"@de,
         "romanesco"@fr,
         "Romanesco"@it ;
     :hasParentCropGroup crop:10284 .
 
 crop:10315 a :CropGroup ;
-    rdfs:label "Pak-Choi"@de,
+    schema:name "Pak-Choi"@de,
         "pakchoi"@fr,
         "Pak-Choi"@it ;
     :hasParentCropGroup crop:10210 .
 
 crop:10316 a :CropGroup ;
-    rdfs:label "Kopfkohle"@de,
+    schema:name "Kopfkohle"@de,
         "choux pommés"@fr,
         "Cavoli a testa"@it ;
     :hasParentCropGroup crop:10020 .
 
 crop:10317 a :CropGroup ;
-    rdfs:label "Stielmus"@de,
+    schema:name "Stielmus"@de,
         "navet à tondre"@fr,
         "Cavoli / rape da taglio"@it ;
     :hasParentCropGroup crop:10210 .
 
 crop:10318 a :CropGroup ;
-    rdfs:label "Cima di Rapa"@de,
+    schema:name "Cima di Rapa"@de,
         "cima di rapa"@fr,
         "Cima di rapa"@it ;
     :hasParentCropGroup crop:9962 .
 
 crop:10319 a :CropGroup ;
-    rdfs:label "Brunnenkresse"@de,
+    schema:name "Brunnenkresse"@de,
         "cresson de fontaine"@fr,
         "Crescione acquatico"@it ;
     :hasParentCropGroup crop:9962 .
 
 crop:10320 a :CropGroup ;
-    rdfs:label "Kopfsalate"@de,
+    schema:name "Kopfsalate"@de,
         "laitues pommées"@fr,
         "Insalate cappuccio"@it ;
     :hasParentCropGroup crop:10304 .
 
 crop:10323 a :CropGroup ;
-    rdfs:label "Schnittsalat"@de,
+    schema:name "Schnittsalat"@de,
         "laitue à tondre"@fr,
         "Lattuga da taglio"@it ;
     :hasParentCropGroup crop:9944 .
 
 crop:10325 a :CropGroup ;
-    rdfs:label "Endivien und Blattzichorien"@de,
+    schema:name "Endivien und Blattzichorien"@de,
         "chicorée pommée et chicorée à feuilles"@fr,
         "Indivia e cicoria da foglia"@it ;
     :hasParentCropGroup crop:10093 .
 
 crop:10326 a :CropGroup ;
-    rdfs:label "Radicchio- und Cicorino-Typen"@de,
+    schema:name "Radicchio- und Cicorino-Typen"@de,
         "types de radicchio/trévises et cicorino"@fr,
         "Tipi di radicchio e cicorino"@it ;
     :hasParentCropGroup crop:10325 .
 
 crop:10327 a :CropGroup ;
-    rdfs:label "Löwenzahn"@de,
+    schema:name "Löwenzahn"@de,
         "dent-de-lion"@fr,
         "Dente di leone"@it ;
     :hasParentCropGroup crop:10093 .
 
 crop:10328 a :CropGroup ;
-    rdfs:label "Krautstiel"@de,
+    schema:name "Krautstiel"@de,
         "Swiss chard "@en,
         "bette à côte"@fr,
         "Costa"@it ;
     :hasParentCropGroup crop:10306 .
 
 crop:10329 a :CropGroup ;
-    rdfs:label "Schnittmangold"@de,
+    schema:name "Schnittmangold"@de,
         "bette à tondre"@fr,
         "Bietola da taglio"@it ;
     :hasParentCropGroup crop:10306 .
 
 crop:10330 a :CropGroup ;
-    rdfs:label "Puffbohne"@de,
+    schema:name "Puffbohne"@de,
         "fève"@fr,
         "Fave"@it ;
     :hasParentCropGroup crop:9957 .
 
 crop:10332 a :CropGroup ;
-    rdfs:label "Cherrytomaten"@de,
+    schema:name "Cherrytomaten"@de,
         "tomate-cerise"@fr,
         "Pomodoro ciliegia"@it ;
     :hasParentCropGroup crop:10027 .
 
 crop:10333 a :CropGroup ;
-    rdfs:label "Rispentomaten"@de,
+    schema:name "Rispentomaten"@de,
         "tomate à grappe"@fr,
         "Pomodoro ramato"@it ;
     :hasParentCropGroup crop:10027 .
 
 crop:10335 a :CropGroup ;
-    rdfs:label "Tomaten Spezialitäten"@de,
+    schema:name "Tomaten Spezialitäten"@de,
         "tomates, spécialités"@fr,
         "Varietà particolari di pomodoro"@it ;
     :hasParentCropGroup crop:10027 .
 
 crop:10336 a :CropGroup ;
-    rdfs:label "Gemüsepaprika"@de,
+    schema:name "Gemüsepaprika"@de,
         "poivron doux"@fr,
         "Peperone dolce"@it ;
     :hasParentCropGroup crop:10029 .
 
 crop:10337 a :CropGroup ;
-    rdfs:label "Bundzwiebeln"@de,
+    schema:name "Bundzwiebeln"@de,
         "oignons en botte"@fr,
         "Cipollotti a mazzi"@it ;
     :hasParentCropGroup crop:10031 .
 
 crop:10338 a :CropGroup ;
-    rdfs:label "Spargelgewächse (Asparagaceae)"@de,
+    schema:name "Spargelgewächse (Asparagaceae)"@de,
         "asparagacées (Asparagaceae)"@fr,
         "Asparagacee (Asparagaceae)"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:10339 a :CropGroup ;
-    rdfs:label "Süssgräser (Poaceae)"@de,
+    schema:name "Süssgräser (Poaceae)"@de,
         "poacées (Gramineae)"@fr,
         "Poacee (Graminaceae)"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:10340 a :CropGroup ;
-    rdfs:label "Lippenblütler (Labiatae)"@de,
+    schema:name "Lippenblütler (Labiatae)"@de,
         "lamiacées (Labiatae)"@fr,
         "Lamiacee (Labiatae)"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:10341 a :CropGroup ;
-    rdfs:label "Stachys"@de,
+    schema:name "Stachys"@de,
         "crosnes du japon"@fr,
         "Tuberina"@it ;
     :hasParentCropGroup crop:10340 .
 
 crop:10342 a :CropGroup ;
-    rdfs:label "Portulak"@de,
+    schema:name "Portulak"@de,
         "pourpier"@fr,
         "Portulaca"@it ;
     :hasParentCropGroup crop:10025 .
 
 crop:10346 a :CropGroup ;
-    rdfs:label "Speise- und Futterkartoffeln"@de,
+    schema:name "Speise- und Futterkartoffeln"@de,
         "pommes de terre de consommation et fourragère"@fr,
         "Patate da tavola e da foraggio"@it ;
     :hasParentCropGroup crop:10086 .
 
 crop:11321 a :CropGroup ;
-    rdfs:label "Hartweizen"@de,
+    schema:name "Hartweizen"@de,
         "Blé dur"@fr,
         "Grano duro"@it ;
     :hasParentCropGroup crop:10052 .
 
 crop:11325 a :CropGroup ;
-    rdfs:label "Klee zur Saatgutproduktion"@de,
+    schema:name "Klee zur Saatgutproduktion"@de,
         "Trèfles pour la production de semences"@fr,
         "Trifoglio per la produzione di sementi"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:11326 a :CropGroup ;
-    rdfs:label "Kartoffeln zur Pflanzgutproduktion"@de,
+    schema:name "Kartoffeln zur Pflanzgutproduktion"@de,
         "pommes de terre pour la production de plants"@fr,
         "Patate per la produzione di tuberi-seme"@it ;
     :hasParentCropGroup crop:10086 .
 
 crop:11335 a :CropGroup ;
-    rdfs:label "Liliengewächse (Zierpflanzen)"@de,
+    schema:name "Liliengewächse (Zierpflanzen)"@de,
         "liliacées (plantes ornementales)"@fr,
         "Liliacee (pianti ornamentali)"@it ;
     :hasParentCropGroup crop:12097 .
 
 crop:11393 a :CropGroup ;
-    rdfs:label "Sorghum"@de,
+    schema:name "Sorghum"@de,
         "Sorgho commun"@fr,
         "Sorgo"@it ;
     :hasParentCropGroup crop:10197 .
 
 crop:11816 a :CropGroup ;
-    rdfs:label "Kerbel"@de,
+    schema:name "Kerbel"@de,
         "cerfeuil"@fr,
         "Cerfoglio"@it ;
     :hasParentCropGroup crop:10186 .
 
 crop:11817 a :CropGroup ;
-    rdfs:label "Thymian"@de,
+    schema:name "Thymian"@de,
         "thym"@fr,
         "Timo"@it ;
     :hasParentCropGroup crop:10186 .
 
 crop:11819 a :CropGroup ;
-    rdfs:label "Koriander"@de,
+    schema:name "Koriander"@de,
         "coriandre"@fr,
         "Coriandolo"@it ;
     :hasParentCropGroup crop:10186 .
 
 crop:11820 a :CropGroup ;
-    rdfs:label "Ysop"@de,
+    schema:name "Ysop"@de,
         "Hysope"@fr,
         "Issopo"@it ;
     :hasParentCropGroup crop:10186 .
 
 crop:11877 a :CropGroup ;
-    rdfs:label "Brachland"@de,
+    schema:name "Brachland"@de,
         "friche"@fr,
         "Terreno incolto"@it .
 
 crop:11878 a :CropGroup ;
-    rdfs:label "Humusdeponie"@de,
+    schema:name "Humusdeponie"@de,
         "dépôt de terre végétale"@fr,
         "Deposito di terreno vegetale"@it .
 
 crop:11984 a :CropGroup ;
-    rdfs:label "Anemone"@de,
+    schema:name "Anemone"@de,
         "anémone"@fr,
         "Anemone"@it .
 
 crop:11985 a :CropGroup ;
-    rdfs:label "Ranunkel"@de,
+    schema:name "Ranunkel"@de,
         "ranunculus"@fr,
         "ranuncolo"@it .
 
 crop:12066 a :CropGroup ;
-    rdfs:label "Obstbau allg. "@de,
+    schema:name "Obstbau allg. "@de,
         "arboriculture en général"@fr,
         "Frutticoltura in generale"@it .
 
 crop:12067 a :CropGroup ;
-    rdfs:label "Beerenbau allg. "@de,
+    schema:name "Beerenbau allg. "@de,
         "culture des baies en général"@fr,
         "Coltivazione di bacche in generale"@it .
 
 crop:12068 a :CropGroup ;
-    rdfs:label "Gemüsebau allg. "@de,
+    schema:name "Gemüsebau allg. "@de,
         "culture maraîchère en général"@fr,
         "Orticoltura in generale"@it .
 
 crop:12069 a :CropGroup ;
-    rdfs:label "Feldbau allg. "@de,
+    schema:name "Feldbau allg. "@de,
         "grande culture en général"@fr,
         "Campicoltura in generale"@it .
 
 crop:12096 a :CropGroup ;
-    rdfs:label "Bäume und Sträucher (ausserhalb Forst)"@de,
+    schema:name "Bäume und Sträucher (ausserhalb Forst)"@de,
         "arbres et arbustes (hors fôret)"@fr,
         "Alberi e arbusti (al di fuori della foresta)"@it ;
     :hasParentCropGroup crop:10190 .
 
 crop:12097 a :CropGroup ;
-    rdfs:label "Blumenkulturen und Grünpflanzen"@de,
+    schema:name "Blumenkulturen und Grünpflanzen"@de,
         "cultures florales et plantes vertes"@fr,
         "Colture da fiore e piante verdi"@it ;
     :hasParentCropGroup crop:10190 .
 
 crop:12098 a :CropGroup ;
-    rdfs:label "Blumenzwiebeln und Blumenknollen"@de,
+    schema:name "Blumenzwiebeln und Blumenknollen"@de,
         "bulbes ornementaux"@fr,
         "Bulbi ornamentali"@it .
 
 crop:12147 a :CropGroup ;
-    rdfs:label "Nichtkulturland allg."@de,
+    schema:name "Nichtkulturland allg."@de,
         "domaine non agricole en général"@fr,
         "Superfici non coltive in generale"@it .
 
 crop:12464 a :CropGroup ;
-    rdfs:label "Wald"@de,
+    schema:name "Wald"@de,
         "forêt"@fr,
         "Bosco"@it ;
     :hasParentCropGroup crop:12465 .
 
 crop:12465 a :CropGroup ;
-    rdfs:label "Forstwirtschaft allg."@de,
+    schema:name "Forstwirtschaft allg."@de,
         "sylviculture en général"@fr,
         "Selvicoltura in generale"@it .
 
 crop:12507 a :CropGroup ;
-    rdfs:label "Römische Kamille"@de,
+    schema:name "Römische Kamille"@de,
         "lat. Chamaemelum nobile"@en,
         "Camomille romaine"@fr,
         "Camomilla romana"@it ;
     :hasParentCropGroup crop:10186 .
 
 crop:12626 a :CropGroup ;
-    rdfs:label "Majoran"@de,
+    schema:name "Majoran"@de,
         "Marjoram"@en,
         "marjolaine"@fr,
         "maggiorana "@it .
 
 crop:12627 a :CropGroup ;
-    rdfs:label "Oregano"@de,
+    schema:name "Oregano"@de,
         "Oregano"@en,
         "origan"@fr,
         "origano"@it .
 
 crop:12628 a :CropGroup ;
-    rdfs:label "Rosenwurz"@de,
+    schema:name "Rosenwurz"@de,
         "Rhodiola rosea"@en,
         "Orpin rose"@fr,
         "Rhodiola rosea"@it .
 
 crop:12629 a :CropGroup ;
-    rdfs:label "Traubensilberkerze"@de,
+    schema:name "Traubensilberkerze"@de,
         "actaea racemosa"@en,
         "actée à grappe"@fr,
         "actaea racemosa"@it .
 
 crop:12630 a :CropGroup ;
-    rdfs:label "Spitzwegerich"@de,
+    schema:name "Spitzwegerich"@de,
         "plantago lanceolata"@en,
         "plantain lancéolé"@fr,
         "piantaggine lanciuola"@it .
 
 crop:12689 a :CropGroup ;
-    rdfs:label "Linse"@de,
+    schema:name "Linse"@de,
         "lentille"@fr,
         "Lenticchia"@it ;
     :hasParentCropGroup crop:9957 .
 
 crop:12829 a :CropGroup ;
-    rdfs:label "Schwarze Apfelbeere"@de,
+    schema:name "Schwarze Apfelbeere"@de,
         "aronie noire"@fr,
         "Aronia nera"@it ;
     :hasParentCropGroup crop:10193 .
 
 crop:12891 a :CropGroup ;
-    rdfs:label "Erntegut"@de,
+    schema:name "Erntegut"@de,
         "denrée stockée"@fr,
         "Raccolto stoccato"@it .
 
 crop:12970 a :CropGroup ;
-    rdfs:label "Gewürzfenchel"@de,
+    schema:name "Gewürzfenchel"@de,
         "fenouil aromatique"@fr,
         "Finocchio aromatico"@it .
 
 crop:12999 a :CropGroup ;
-    rdfs:label "leere Lagerräume"@de,
+    schema:name "leere Lagerräume"@de,
         "Êntrepôts vides"@fr,
         "Locali di stoccaggio vuoti"@it .
 
 crop:13000 a :CropGroup ;
-    rdfs:label "leere Produktionsräume"@de,
+    schema:name "leere Produktionsräume"@de,
         "Locaux de production vides"@fr,
         "Locali di produzione vuoti"@it .
 
 crop:13001 a :CropGroup ;
-    rdfs:label "Tabak produzierende Betriebe"@de,
+    schema:name "Tabak produzierende Betriebe"@de,
         "Les exploitations tabacoles"@fr,
         "Aziende produttrici di tabacco"@it .
 
 crop:13002 a :CropGroup ;
-    rdfs:label "leere Verarbeitungsräume"@de,
+    schema:name "leere Verarbeitungsräume"@de,
         "Locaux de transformation vides"@fr,
         "Locali per la lavorazione vuoti"@it .
 
 crop:13238 a :CropGroup ;
-    rdfs:label "Lager- und Produktionsräume allg."@de,
+    schema:name "Lager- und Produktionsräume allg."@de,
         "Lager- und Produktionsräume allg."@en,
         "Lager- und Produktionsräume allg."@fr,
         "Lager- und Produktionsräume allg."@it .
 
 crop:13362 a :CropGroup ;
-    rdfs:label "Gojibeere"@de,
+    schema:name "Gojibeere"@de,
         "Goji berry, wolfberry"@en,
         "Baies de Goji"@fr,
         "Bacche di Goji"@it .
 
 crop:13784 a :CropGroup ;
-    rdfs:label "Weichweizen"@de,
+    schema:name "Weichweizen"@de,
         "Blé tendre"@fr,
         "Grano tenero"@it ;
     :hasParentCropGroup crop:10052 .
 
 crop:13785 a :CropGroup ;
-    rdfs:label "Blaue Heckenkirsche"@de,
+    schema:name "Blaue Heckenkirsche"@de,
         "camérisier bleu"@fr,
         "Caprifoglio turchino"@it .
 
 crop:13832 a :CropGroup ;
-    rdfs:label "Lorbeer"@de,
+    schema:name "Lorbeer"@de,
         "LURNO "@en,
         "Laurier"@fr,
         "Alloro "@it .
 
 crop:13905 a :CropGroup ;
-    rdfs:label "Süsskartoffel"@de,
+    schema:name "Süsskartoffel"@de,
         "Sweet potato"@en,
         "Patate douce"@fr,
         "Patata dolce"@it ;
     :hasParentCropGroup crop:15866 .
 
 crop:14001 a :CropGroup ;
-    rdfs:label "Hagebutten"@de,
+    schema:name "Hagebutten"@de,
         "rose hip"@en,
         "cynorhodon"@fr,
         "rosa canina"@it .
 
 crop:14273 a :CropGroup ;
-    rdfs:label "Kichererbse"@de,
+    schema:name "Kichererbse"@de,
         "chickpea"@en,
         "pois chiche"@fr,
         "cece"@it .
 
 crop:14382 a :CropGroup ;
-    rdfs:label "Baby-Leaf (Brassicaceae)"@de,
+    schema:name "Baby-Leaf (Brassicaceae)"@de,
         "Baby-Leaf (Brassicaceae)"@fr,
         "Baby-Leaf (Brassicaceae)"@it ;
     :hasParentCropGroup crop:10251 .
 
 crop:14383 a :CropGroup ;
-    rdfs:label "Baby-Leaf (Asteraceae)"@de,
+    schema:name "Baby-Leaf (Asteraceae)"@de,
         "Baby-Leaf (Asteraceae)"@fr,
         "Baby-Leaf (Asteraceae)"@it ;
     :hasParentCropGroup crop:10251 .
 
 crop:14384 a :CropGroup ;
-    rdfs:label "Baby-Leaf (Chenopodiaceae)"@de,
+    schema:name "Baby-Leaf (Chenopodiaceae)"@de,
         "Baby-Leaf (Chenopodiaceae)"@fr,
         "Baby-Leaf (Chenopodiaceae)"@it ;
     :hasParentCropGroup crop:10251 .
 
 crop:14729 a :CropGroup ;
-    rdfs:label "Hanf"@de,
+    schema:name "Hanf"@de,
         "Hemp"@en,
         "Chanvre"@fr,
         "Canapa"@it ;
     :hasParentCropGroup crop:12069 .
 
 crop:14786 a :CropGroup ;
-    rdfs:label "Sanddorn"@de,
+    schema:name "Sanddorn"@de,
         "argousier"@fr,
         "Olivello spinoso"@it .
 
 crop:14787 a :CropGroup ;
-    rdfs:label "Schwarze Maulbeere"@de,
+    schema:name "Schwarze Maulbeere"@de,
         "mûrier noir"@fr,
         "Moro nero"@it .
 
 crop:14799 a :CropGroup ;
-    rdfs:label "Eberesche"@de,
+    schema:name "Eberesche"@de,
         "sorbier des oiseleurs"@fr,
         "Sorbo degli ucellatori"@it .
 
 crop:14801 a :CropGroup ;
-    rdfs:label "Gemeine Felsenbirne"@de,
+    schema:name "Gemeine Felsenbirne"@de,
         "amélavier commun"@fr,
         "Pero corvino"@it .
 
 crop:14904 a :CropGroup ;
-    rdfs:label "Süssdolde"@de,
+    schema:name "Süssdolde"@de,
         "cicely"@en,
         "Cerfeuil musqué"@fr,
         "finocchiella"@it .
 
 crop:14985 a :CropGroup ;
-    rdfs:label "Markstammkohl"@de,
+    schema:name "Markstammkohl"@de,
         "chou moellier"@fr,
         "Cavolo fustoso"@it ;
     :hasParentCropGroup crop:10210 .
 
 crop:15269 a :CropGroup ;
-    rdfs:label "Kerbelrübe"@de,
+    schema:name "Kerbelrübe"@de,
         "Cerfeuil tubéreux"@fr,
         "Cerfoglio bulboso"@it .
 
 crop:15866 a :CropGroup ;
-    rdfs:label "Windengewächse (Convolvulaceae)"@de,
+    schema:name "Windengewächse (Convolvulaceae)"@de,
         "Convolvulaceae"@en,
         "convolvulacées (Convolvulaceae)"@fr,
         "Convolvulaceae"@it .
 
 crop:15872 a :CropGroup ;
-    rdfs:label "Rispenhirse "@de,
+    schema:name "Rispenhirse "@de,
         "Millet"@fr,
         "Miglio "@it .
 
 crop:9942 a :CropGroup ;
-    rdfs:label "Pflanzen"@de,
+    schema:name "Pflanzen"@de,
         "plantes"@fr,
         "Piante"@it .
 
 crop:9943 a :CropGroup ;
-    rdfs:label "Wintergerste"@de,
+    schema:name "Wintergerste"@de,
         "Orge d'automne"@fr,
         "Orzo autunnale"@it ;
     :hasParentCropGroup crop:10083,
         crop:10167 .
 
 crop:9944 a :CropGroup ;
-    rdfs:label "Blattsalate (Asteraceae)"@de,
+    schema:name "Blattsalate (Asteraceae)"@de,
         "laitues à tondre (Asteraceae)"@fr,
         "Insalate a foglie (Asteracee)"@it ;
     :hasParentCropGroup crop:10304 .
 
 crop:9945 a :CropGroup ;
-    rdfs:label "Winterroggen"@de,
+    schema:name "Winterroggen"@de,
         "Seigle d'automne"@fr,
         "Segale autunnale"@it ;
     :hasParentCropGroup crop:10120,
         crop:10167 .
 
 crop:9946 a :CropGroup ;
-    rdfs:label "Sellerie"@de,
+    schema:name "Sellerie"@de,
         "céleri"@fr,
         "Sedano "@it ;
     :hasParentCropGroup crop:9951 .
 
 crop:9948 a :CropGroup ;
-    rdfs:label "Baldriangewächse (Valerianaceae)"@de,
+    schema:name "Baldriangewächse (Valerianaceae)"@de,
         "valérianacées"@fr,
         "Valerianacee"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:9950 a :CropGroup ;
-    rdfs:label "Brache"@de,
+    schema:name "Brache"@de,
         "jachère"@fr,
         "Maggese"@it .
 
 crop:9951 a :CropGroup ;
-    rdfs:label "Doldenblütler (Apiaceae)"@de,
+    schema:name "Doldenblütler (Apiaceae)"@de,
         "ombellifères (Apiaceae)"@fr,
         "Ombrellifere (Apiacee)"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:9952 a :CropGroup ;
-    rdfs:label "Gehölze (ausserhalb Forst)"@de,
+    schema:name "Gehölze (ausserhalb Forst)"@de,
         "plantes ligneuses (hors forêt)"@fr,
         "Boschetti (al di fuori del bosco)"@it ;
     :hasParentCropGroup crop:10190 .
 
 crop:9953 a :CropGroup ;
-    rdfs:label "Reben"@de,
+    schema:name "Reben"@de,
         "vigne"@fr,
         "Vite"@it ;
     :hasParentCropGroup crop:10194 .
 
 crop:9954 a :CropGroup ;
-    rdfs:label "Forstliche Pflanzgärten"@de,
+    schema:name "Forstliche Pflanzgärten"@de,
         "pépinières forestières"@fr,
         "Vivai forestali"@it ;
     :hasParentCropGroup crop:12464,
         crop:12465 .
 
 crop:9955 a :CropGroup ;
-    rdfs:label "Nelken"@de,
+    schema:name "Nelken"@de,
         "oeillet"@fr,
         "Garofani"@it ;
     :hasParentCropGroup crop:10015,
         crop:12097 .
 
 crop:9956 a :CropGroup ;
-    rdfs:label "Liegendes Rundholz im Wald und auf Lagerplätzen"@de,
+    schema:name "Liegendes Rundholz im Wald und auf Lagerplätzen"@de,
         "grumes en forêt et sur les places de stockage"@fr,
         "Tronchi abbattuti nella foresta e presso piazzali di deposito"@it ;
     :hasParentCropGroup crop:10202 .
 
 crop:9957 a :CropGroup ;
-    rdfs:label "Hülsenfrüchtler (Fabaceae)"@de,
+    schema:name "Hülsenfrüchtler (Fabaceae)"@de,
         "fabacées (légumineuses)"@fr,
         "Fabacee (Leguminose)"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:9959 a :CropGroup ;
-    rdfs:label "Kernobst"@de,
+    schema:name "Kernobst"@de,
         "fruits à pépins"@fr,
         "Frutta a granelli"@it ;
     :hasParentCropGroup crop:10192 .
 
 crop:9960 a :CropGroup ;
-    rdfs:label "Knöterichgewächse (Polygonaceae)"@de,
+    schema:name "Knöterichgewächse (Polygonaceae)"@de,
         "polygonacées"@fr,
         "Poligonacee"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:9961 a :CropGroup ;
-    rdfs:label "Korbblütler (Asteraceae)"@de,
+    schema:name "Korbblütler (Asteraceae)"@de,
         "composées (Asteracea)"@fr,
         "Composite (Asteracee)"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:9962 a :CropGroup ;
-    rdfs:label "Kreuzblütler (Brassicaceae)"@de,
+    schema:name "Kreuzblütler (Brassicaceae)"@de,
         "crucifères (Brassicaceae)"@fr,
         "Crocifere (Brassicacee)"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:9963 a :CropGroup ;
-    rdfs:label "Liliengewächse (Liliaceae)"@de,
+    schema:name "Liliengewächse (Liliaceae)"@de,
         "liliacées"@fr,
         "Liliacee"@it ;
     :hasParentCropGroup crop:10195 .
 
 crop:9965 a :CropGroup ;
-    rdfs:label "Steinobst"@de,
+    schema:name "Steinobst"@de,
         "fruits à noyaux"@fr,
         "Frutta a nocciolo"@it ;
     :hasParentCropGroup crop:10192 .
 
 crop:9967 a :CropGroup ;
-    rdfs:label "Zier- und Sportrasen"@de,
+    schema:name "Zier- und Sportrasen"@de,
         "gazon d'ornement et terrains de sport"@fr,
         "Tappeti erbosi e terreni sportivi"@it ;
     :hasParentCropGroup crop:10190 .
 
 crop:9968 a :CropGroup ;
-    rdfs:label "Stauden"@de,
+    schema:name "Stauden"@de,
         "plantes vivaces"@fr,
         "Arbusti"@it ;
     :hasParentCropGroup crop:10190 .
 
 crop:9969 a :CropGroup ;
-    rdfs:label "Sommerflor"@de,
+    schema:name "Sommerflor"@de,
         "fleurs estivales"@fr,
         "Fiori estivi"@it ;
     :hasParentCropGroup crop:10176 .
 
 crop:9970 a :CropGroup ;
-    rdfs:label "Apfel"@de,
+    schema:name "Apfel"@de,
         "pommier"@fr,
         "Melo"@it ;
     :hasParentCropGroup crop:9959 .
 
 crop:9971 a :CropGroup ;
-    rdfs:label "Aprikose"@de,
+    schema:name "Aprikose"@de,
         "abricotier"@fr,
         "Albicocco"@it ;
     :hasParentCropGroup crop:9965 .
 
 crop:9972 a :CropGroup ;
-    rdfs:label "Birne"@de,
+    schema:name "Birne"@de,
         "poirier"@fr,
         "Pero"@it ;
     :hasParentCropGroup crop:10296 .
 
 crop:9973 a :CropGroup ;
-    rdfs:label "Blumenkohl"@de,
+    schema:name "Blumenkohl"@de,
         "chou-fleur"@fr,
         "Cavolfiore"@it ;
     :hasParentCropGroup crop:10284 .
 
 crop:9974 a :CropGroup ;
-    rdfs:label "Broccoli"@de,
+    schema:name "Broccoli"@de,
         "brocoli"@fr,
         "Broccoli"@it ;
     :hasParentCropGroup crop:10284 .
 
 crop:9975 a :CropGroup ;
-    rdfs:label "Brombeere"@de,
+    schema:name "Brombeere"@de,
         "mûre"@fr,
         "Mora"@it ;
     :hasParentCropGroup crop:10297 .
 
 crop:9977 a :CropGroup ;
-    rdfs:label "Chinakohl"@de,
+    schema:name "Chinakohl"@de,
         "chou de Chine"@fr,
         "Cavolo cinese"@it ;
     :hasParentCropGroup crop:10210 .
 
 crop:9978 a :CropGroup ;
-    rdfs:label "Erdbeere"@de,
+    schema:name "Erdbeere"@de,
         "fraise"@fr,
         "Fragola"@it ;
     :hasParentCropGroup crop:10193 .
 
 crop:9979 a :CropGroup ;
-    rdfs:label "Heidelbeere"@de,
+    schema:name "Heidelbeere"@de,
         "myrtille"@fr,
         "Mirtillo"@it ;
     :hasParentCropGroup crop:10193 .
 
 crop:9980 a :CropGroup ;
-    rdfs:label "Himbeere"@de,
+    schema:name "Himbeere"@de,
         "framboise"@fr,
         "Lampone"@it ;
     :hasParentCropGroup crop:10297 .
 
 crop:9981 a :CropGroup ;
-    rdfs:label "Karotten"@de,
+    schema:name "Karotten"@de,
         "carotte"@fr,
         "Carote"@it ;
     :hasParentCropGroup crop:9951 .
 
 crop:9982 a :CropGroup ;
-    rdfs:label "Kirsche"@de,
+    schema:name "Kirsche"@de,
         "cerisier"@fr,
         "Ciliegio"@it ;
     :hasParentCropGroup crop:9965 .
 
 crop:9983 a :CropGroup ;
-    rdfs:label "Knoblauch"@de,
+    schema:name "Knoblauch"@de,
         "ail"@fr,
         "Aglio"@it ;
     :hasParentCropGroup crop:9963 .
 
 crop:9984 a :CropGroup ;
-    rdfs:label "Knollenfenchel"@de,
+    schema:name "Knollenfenchel"@de,
         "fenouil bulbeux"@fr,
         "Finocchio dolce"@it ;
     :hasParentCropGroup crop:9951 .
 
 crop:9985 a :CropGroup ;
-    rdfs:label "Knollensellerie"@de,
+    schema:name "Knollensellerie"@de,
         "céleri-pomme"@fr,
         "Sedano rapa"@it ;
     :hasParentCropGroup crop:9946 .
 
 crop:9986 a :CropGroup ;
-    rdfs:label "Kohlrabi"@de,
+    schema:name "Kohlrabi"@de,
         "colrave"@fr,
         "Cavolo rapa"@it ;
     :hasParentCropGroup crop:10020 .
 
 crop:9990 a :CropGroup ;
-    rdfs:label "Nüsslisalat"@de,
+    schema:name "Nüsslisalat"@de,
         "mâche, rampon"@fr,
         "Valerianella"@it ;
     :hasParentCropGroup crop:9948 .
 
 crop:9991 a :CropGroup ;
-    rdfs:label "Petersilie"@de,
+    schema:name "Petersilie"@de,
         "persil"@fr,
         "Prezzemolo"@it ;
     :hasParentCropGroup crop:10186 .
 
 crop:9992 a :CropGroup ;
-    rdfs:label "Pfirsich / Nektarine"@de,
+    schema:name "Pfirsich / Nektarine"@de,
         "pêcher / nectarine"@fr,
         "Pesco/pesco noce"@it ;
     :hasParentCropGroup crop:9965 .
 
 crop:9993 a :CropGroup ;
-    rdfs:label "Pflaume"@de,
+    schema:name "Pflaume"@de,
         "prunier (prune)"@fr,
         "Prugnolo"@it ;
     :hasParentCropGroup crop:10011 .
 
 crop:9994 a :CropGroup ;
-    rdfs:label "Quitte"@de,
+    schema:name "Quitte"@de,
         "cognassier"@fr,
         "Cotogno"@it ;
     :hasParentCropGroup crop:9959 .
 
 crop:9995 a :CropGroup ;
-    rdfs:label "Radies"@de,
+    schema:name "Radies"@de,
         "radis de tous les mois"@fr,
         "Ravanello"@it ;
     :hasParentCropGroup crop:9962 .
 
 crop:9996 a :CropGroup ;
-    rdfs:label "Rande"@de,
+    schema:name "Rande"@de,
         "betterave à salade"@fr,
         "Barbabietola"@it ;
     :hasParentCropGroup crop:10068 .
 
 crop:9997 a :CropGroup ;
-    rdfs:label "Rettich"@de,
+    schema:name "Rettich"@de,
         "radis long"@fr,
         "Ramolaccio"@it ;
     :hasParentCropGroup crop:9962 .
 
 crop:9998 a :CropGroup ;
-    rdfs:label "Rhabarber"@de,
+    schema:name "Rhabarber"@de,
         "rhubarbe"@fr,
         "Rabarbaro"@it ;
     :hasParentCropGroup crop:9960 .
 
 crop:9999 a :CropGroup ;
-    rdfs:label "Rote Johannisbeere"@de,
+    schema:name "Rote Johannisbeere"@de,
         "groseilles à grappes"@fr,
         "Ribes rosso"@it ;
     :hasParentCropGroup crop:10127 .
