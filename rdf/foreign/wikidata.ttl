@@ -1,4 +1,7 @@
+@prefix : <https://agriculture.ld.admin.ch/plant-protection/> .
+@prefix pest: <https://agriculture.ld.admin.ch/plant-protection/pest/> .
 @prefix schema: <http://schema.org/> .
+@prefix substance: <https://agriculture.ld.admin.ch/plant-protection/substance/> .
 @prefix wikidata: <http://www.wikidata.org/entity/> .
 
 wikidata:Q1032508 schema:name "Acrolepiopsis assectella" .
@@ -7,9 +10,9 @@ wikidata:Q10330509 schema:name "Amblyseius andersoni" .
 
 wikidata:Q103811471 schema:name "Parastagonospora nodorum" .
 
-wikidata:Q103817219 schema:name "Septoria tritici" .
-
 wikidata:Q10406928 schema:name "Alternaria porri" .
+
+wikidata:Q10408548 schema:name "Ampelomyces" .
 
 wikidata:Q10413188 schema:name "Anthocoris nemoralis" .
 
@@ -37,8 +40,6 @@ wikidata:Q10448077 schema:name "Chalara" .
 
 wikidata:Q1045638 schema:name "Mamestra brassicae" .
 
-wikidata:Q10457059 schema:name "Colletotrichum lupini" .
-
 wikidata:Q10457178 schema:name "Colomerus vitis" .
 
 wikidata:Q10473981 schema:name "Diptilomiopidae" .
@@ -62,10 +63,6 @@ wikidata:Q104989334 schema:name "Plenodomus lindquistii" .
 wikidata:Q1050343 schema:name "Plutella xylostella" .
 
 wikidata:Q105054940 schema:name "Glomerella acutata" .
-
-wikidata:Q105055708 schema:name "Helminthosporium oryzae" .
-
-wikidata:Q105060374 schema:name "Peronospora parasitica" .
 
 wikidata:Q10506686 schema:name "Godronia cassandrae" .
 
@@ -97,8 +94,6 @@ wikidata:Q10641403 schema:name "Psallus" .
 
 wikidata:Q10645270 schema:name "Psylla buxi" .
 
-wikidata:Q10646258 schema:name "Puccinia opizii" .
-
 wikidata:Q10649257 schema:name "Ramularia collo-cygni" .
 
 wikidata:Q10654433 schema:name "Rhynchosporium orthosporum" .
@@ -117,8 +112,6 @@ wikidata:Q10681915 schema:name "Stromatinia gladioli" .
 
 wikidata:Q10701362 schema:name "Tranzschelia pruni-spinosae" .
 
-wikidata:Q10702710 schema:name "Trichoderma aggressivum" .
-
 wikidata:Q10704098 schema:name "Trioza apicalis" .
 
 wikidata:Q10711324 schema:name "Ustilago hordei" .
@@ -131,17 +124,7 @@ wikidata:Q107461274 schema:name "Plasmopara crustosa" .
 
 wikidata:Q107582349 schema:name "Colletotrichum spinaciae" .
 
-wikidata:Q107638616 schema:name "Diplocarpon coronariae" .
-
 wikidata:Q1077812 schema:name "Eupoecilia ambiguella" .
-
-wikidata:Q108117421 schema:name "Oidium tabaci" .
-
-wikidata:Q108178965 schema:name "Phlebia gigantea" .
-
-wikidata:Q108195922 schema:name "Phomopsis helianthi" .
-
-wikidata:Q108198395 schema:name "Phyllactinia actinidiae" .
 
 wikidata:Q108471185 schema:name "Venturia oleaginea" .
 
@@ -165,7 +148,7 @@ wikidata:Q1117479 schema:name "Helminthosporium solani" .
 
 wikidata:Q1130524 schema:name "Pucciniales" .
 
-wikidata:Q1135851 schema:name "Botrytis cinerea" .
+wikidata:Q113105294 schema:name "Stratiolaelaps scimitus" .
 
 wikidata:Q11832425 schema:name "Apion" .
 
@@ -175,11 +158,7 @@ wikidata:Q11962 schema:name "Stegobium paniceum" .
 
 wikidata:Q1210088 schema:name "Otiorhynchus" .
 
-wikidata:Q12145842 schema:name "Pegomya betae" .
-
 wikidata:Q1235677 schema:name "Sclerotinia homoeocarpa" .
-
-wikidata:Q12379653 schema:name "Scolytidae" .
 
 wikidata:Q1252923 schema:name "Scrobipalpa ocellatella" .
 
@@ -233,7 +212,7 @@ wikidata:Q1335549 schema:name "Tetranychus urticae" .
 
 wikidata:Q1336450 schema:name "Drosophila suzukii" .
 
-wikidata:Q13375975 schema:name "Grapholita lobarzewskii" .
+wikidata:Q13374365 schema:name "Anisopteromalus calandrae" .
 
 wikidata:Q13394572 schema:name "Leptomastidea abnormis" .
 
@@ -253,15 +232,13 @@ wikidata:Q1354085 schema:name "Aphididae" .
 
 wikidata:Q13565566 schema:name "Dysaphis pyri" .
 
-wikidata:Q13608938 schema:name "Ephestia kuhniella" .
-
 wikidata:Q136322 schema:name "Archips podana" .
 
 wikidata:Q1369189 schema:name "Puccinia ribis" .
 
-wikidata:Q13851757 schema:name "Scaptomyza flava" .
+wikidata:Q13847678 schema:name "Metaphycus helvolus" .
 
-wikidata:Q138622 schema:name "Mycosphaerella graminicola" .
+wikidata:Q13851757 schema:name "Scaptomyza flava" .
 
 wikidata:Q1390 schema:name "Insecta" .
 
@@ -293,15 +270,11 @@ wikidata:Q14621706 schema:name "Pseudococcus viburni" .
 
 wikidata:Q1465179 schema:name "Oscinella frit" .
 
-wikidata:Q146566 schema:name "Stemphylium vesicarium" .
-
 wikidata:Q14705283 schema:name "Viteus vitifoliae" .
 
 wikidata:Q147300 schema:name "Aureobasidium pullulans" .
 
 wikidata:Q147621 schema:name "Bromus" .
-
-wikidata:Q14847257 schema:name "Monocotyledoneae" .
 
 wikidata:Q148675 schema:name "Trifolium repens" .
 
@@ -310,8 +283,6 @@ wikidata:Q149072 schema:name "Phytophthora infestans" .
 wikidata:Q149125 schema:name "Thanatephorus cucumeris" .
 
 wikidata:Q1493916 schema:name "Rhagoletis completa" .
-
-wikidata:Q149490 schema:name "Didymella bryoniae" .
 
 wikidata:Q1499415 schema:name "Puccinia striiformis" .
 
@@ -324,10 +295,6 @@ wikidata:Q1532970 schema:name "Aphis fabae" .
 wikidata:Q1548922 schema:name "Ceutorhynchus napi" .
 
 wikidata:Q155909 schema:name "Urtica dioica" .
-
-wikidata:Q15633687 schema:name "Drechslera teres" .
-
-wikidata:Q15633887 schema:name "Ascochyta fabae" .
 
 wikidata:Q1564671 schema:name "Brassicogethes aeneus" .
 
@@ -377,8 +344,6 @@ wikidata:Q1632202 schema:name "Coccidae" .
 
 wikidata:Q1634711 schema:name "Chaetocnema concinna" .
 
-wikidata:Q1634854 schema:name "Tilletia caries" .
-
 wikidata:Q163527 schema:name "Echinochloa crus-galli" .
 
 wikidata:Q1638558 schema:name "Cirsium" .
@@ -388,8 +353,6 @@ wikidata:Q164002 schema:name "Operophtera brumata" .
 wikidata:Q164230 schema:name "Apera spica-venti" .
 
 wikidata:Q16536334 schema:name "Ceutorhynchus quadridens" .
-
-wikidata:Q16537267 schema:name "Ceutorhynchus pleurostigma" .
 
 wikidata:Q1680271 schema:name "Athalia rosae" .
 
@@ -407,16 +370,11 @@ wikidata:Q1778497 schema:name "Contarinia nasturtii" .
 
 wikidata:Q1778703 schema:name "Ceutorhynchus assimilis" .
 
-wikidata:Q1800300 schema:name "Lariophagus distinguendus" .
-
 wikidata:Q1808247 schema:name "Chamaepsila rosae" .
 
 wikidata:Q18349335 schema:name "Heterorhabditis megidis" .
 
 wikidata:Q18539312 schema:name "Phytoptidae" .
-
-wikidata:Q1892046 schema:name "Thaumetopoeidae",
-        "Thaumetopoeinae" .
 
 wikidata:Q1907227 schema:name "Aphidius colemani" .
 
@@ -444,8 +402,6 @@ wikidata:Q2084213 schema:name "Septoria lycopersici" .
 
 wikidata:Q209596 schema:name "Senecio" .
 
-wikidata:Q209602 schema:name "Coccoidea" .
-
 wikidata:Q20976 schema:name "Tipula paludosa" .
 
 wikidata:Q20980531 schema:name "Arvicola terrestris" .
@@ -456,17 +412,11 @@ wikidata:Q21224679 schema:name "Phytonemus" .
 
 wikidata:Q21231860 schema:name "Quadraspidiotus" .
 
-wikidata:Q21315856 schema:name "Puccinia petroselini" .
-
-wikidata:Q21321918 schema:name "Puccinia cichorii" .
-
 wikidata:Q213548 schema:name "Pteridium aquilinum" .
 
 wikidata:Q21383092 schema:name "Clavibacter michiganensis subsp. michiganensis" .
 
 wikidata:Q21398152 schema:name "Plenodomus lingam" .
-
-wikidata:Q21399451 schema:name "Pseudomonas syringae pv. phaseolicola" .
 
 wikidata:Q21399457 schema:name "Pseudomonas syringae pv. syringae" .
 
@@ -479,8 +429,6 @@ wikidata:Q21874197 schema:name "Erigeron canadensis" .
 wikidata:Q219224 schema:name "Sitophilus oryzae" .
 
 wikidata:Q2207329 schema:name "Bactrocera oleae" .
-
-wikidata:Q2214586 schema:name "Habrobracon hebetor" .
 
 wikidata:Q2215256 schema:name "Meloidogyne" .
 
@@ -501,8 +449,6 @@ wikidata:Q233024 schema:name "Adalia bipunctata" .
 wikidata:Q2332344 schema:name "Atomaria linearis" .
 
 wikidata:Q23390 schema:name "Cervidae" .
-
-wikidata:Q2345333 schema:name "Beauveria bassiana" .
 
 wikidata:Q23485 schema:name "Allium cepa" .
 
@@ -544,23 +490,15 @@ wikidata:Q26292479 schema:name "Streptomyces scabiei" .
 
 wikidata:Q26297 schema:name "Rumex acetosa" .
 
-wikidata:Q26307560 schema:name "Xenorhabdus bovienii" .
-
 wikidata:Q2634837 schema:name "Brevicoryne brassicae" .
 
 wikidata:Q264998 schema:name "Chrysoperla carnea" .
-
-wikidata:Q2697099 schema:name "Magnaporthe grisea" .
 
 wikidata:Q2699011 schema:name "Pythium" .
 
 wikidata:Q2703884 schema:name "Golovinomyces cichoracearum" .
 
-wikidata:Q2708559 schema:name "Ustilago tritici" .
-
 wikidata:Q2712591 schema:name "Fusarium culmorum" .
-
-wikidata:Q27133 schema:name "Tracheophytes" .
 
 wikidata:Q2716477 schema:name "Rhizoctonia" .
 
@@ -579,8 +517,6 @@ wikidata:Q28457 schema:name "Elateridae" .
 wikidata:Q2853020 schema:name "Colletotrichum lindemuthianum" .
 
 wikidata:Q2858202 schema:name "Aphanomyces" .
-
-wikidata:Q28674074 schema:name "Neofabraea vagabunda" .
 
 wikidata:Q2871755 schema:name "Aulacorthum solani" .
 
@@ -632,11 +568,7 @@ wikidata:Q3272137 schema:name "Sitophilus zeamais" .
 
 wikidata:Q3274988 schema:name "Macrosiphum euphorbiae" .
 
-wikidata:Q33141702 schema:name "Halticinae" .
-
 wikidata:Q3320779 schema:name "Monilia" .
-
-wikidata:Q3325393 schema:name "Plioreocepta poeciloptera" .
 
 wikidata:Q33472 schema:name "Peribatodes rhomboidaria" .
 
@@ -666,23 +598,15 @@ wikidata:Q37868 schema:name "Algae" .
 
 wikidata:Q388648 schema:name "Photorhabdus luminescens" .
 
-wikidata:Q3900047 schema:name "Peronospora tabacina" .
-
 wikidata:Q3900048 schema:name "Peronospora destructor" .
-
-wikidata:Q3901665 schema:name "Phomopsis viticola" .
 
 wikidata:Q3906344 schema:name "Plasmopara halstedii" .
 
 wikidata:Q3924916 schema:name "Pseudoperonospora cubensis" .
 
-wikidata:Q3966739 schema:name "Spilocaea" .
-
 wikidata:Q41559 schema:name "Pieridae" .
 
 wikidata:Q4260197 schema:name "Delia floralis" .
-
-wikidata:Q4314880 schema:name "Phaeosphaeria nodorum" .
 
 wikidata:Q43238 schema:name "Poaceae" .
 
@@ -714,10 +638,6 @@ wikidata:Q476326 schema:name "Gryllotalpa gryllotalpa" .
 
 wikidata:Q4779847 schema:name "Apiognomonia" .
 
-wikidata:Q4803966 schema:name "Ascochyta pisi" .
-
-wikidata:Q48703112 schema:name "Erysiphe cichoracearum" .
-
 wikidata:Q48847073 schema:name "Phytophthora rubi" .
 
 wikidata:Q4915492 schema:name "Bipolaris" .
@@ -727,10 +647,6 @@ wikidata:Q4948840 schema:name "Botryosphaeria obtusa" .
 wikidata:Q49528817 schema:name "Microterys flavus" .
 
 wikidata:Q4957943 schema:name "Dasineura brassicae" .
-
-wikidata:Q49607119 schema:name "Cladosporium allii" .
-
-wikidata:Q50365760 schema:name "Amblyseius degenerans" .
 
 wikidata:Q50772526 schema:name "Psylliodes chrysocephala" .
 
@@ -780,31 +696,25 @@ wikidata:Q5442662 schema:name "Feltiella acarisuga" .
 
 wikidata:Q5516728 schema:name "Gaeumannomyces graminis var. avenae" .
 
+wikidata:Q55724157 schema:name "Purpureocillium lilacinum" .
+
 wikidata:Q5574380 schema:name "Gnomonia fructicola" .
 
 wikidata:Q557676 schema:name "Etiella zinckenella" .
 
-wikidata:Q5615696 schema:name "Guignardia fulvida" .
-
-wikidata:Q5672141 schema:name "Amblyseius californicus" .
-
 wikidata:Q582991 schema:name "Sciaridae" .
+
+wikidata:Q5835605 schema:name "Eretmocerus eremicus" .
 
 wikidata:Q5835607 schema:name "Eretmocerus mundus" .
 
-wikidata:Q59546595 schema:name "Coniothyrium minitans" .
-
 wikidata:Q59547823 schema:name "Pseudopeziza tracheiphila" .
-
-wikidata:Q59578558 schema:name "Sclerotium cepivorum" .
 
 wikidata:Q598541 schema:name "Zeuzera pyrina" .
 
 wikidata:Q600498 schema:name "Nezara viridula" .
 
 wikidata:Q602740 schema:name "Rubus" .
-
-wikidata:Q604793 schema:name "Guignardia bidwellii" .
 
 wikidata:Q612789 schema:name "Ustilago avenae" .
 
@@ -820,15 +730,11 @@ wikidata:Q622010 schema:name "Plasmopara viticola" .
 
 wikidata:Q625190 schema:name "Albugo candida" .
 
-wikidata:Q63123831 schema:name "Erwinia carotovora subsp. carotovora" .
-
 wikidata:Q635471 schema:name "Melampsora" .
 
 wikidata:Q640085 schema:name "Panonychus ulmi" .
 
 wikidata:Q6441858 schema:name "Kuehneola uredinis" .
-
-wikidata:Q6528392 schema:name "Leptosphaeria coniothyrium" .
 
 wikidata:Q6528396 schema:name "Leptosphaeria maculans" .
 
@@ -848,11 +754,7 @@ wikidata:Q682164 schema:name "Ambrosia artemisiifolia" .
 
 wikidata:Q6947195 schema:name "Mycosphaerella fragariae" .
 
-wikidata:Q6947210 schema:name "Mycosphaerella pinodes" .
-
 wikidata:Q6992815 schema:name "Neofabraea malicorticis" .
-
-wikidata:Q70483904 schema:name "Gemmamyces piceae" .
 
 wikidata:Q7135959 schema:name "Parasitus" .
 
@@ -865,10 +767,6 @@ wikidata:Q7169465 schema:name "Peronospora valerianellae" .
 wikidata:Q7169466 schema:name "Peronospora viciae" .
 
 wikidata:Q7181031 schema:name "Phasmarhabditis hermaphrodita" .
-
-wikidata:Q7187117 schema:name "Phoma exigua var. linicola" .
-
-wikidata:Q7187129 schema:name "Phoma pinodella" .
 
 wikidata:Q7188038 schema:name "Phragmidium mucronatum" .
 
@@ -884,8 +782,6 @@ wikidata:Q7189827 schema:name "Phytophthora phaseoli" .
 
 wikidata:Q7204607 schema:name "Pleospora herbarum" .
 
-wikidata:Q7204611 schema:name "Stemphylium botryosum" .
-
 wikidata:Q7207071 schema:name "Podosphaera macularis" .
 
 wikidata:Q7207073 schema:name "Podosphaera tridactyla" .
@@ -898,13 +794,9 @@ wikidata:Q7216874 schema:name "Veronica" .
 
 wikidata:Q724130 schema:name "Plasmodiophora" .
 
-wikidata:Q7255026 schema:name "Pseudomonas chlororaphis" .
-
 wikidata:Q7255252 schema:name "Pseudoperonospora humuli" .
 
 wikidata:Q7258185 schema:name "Puccinia asparagi" .
-
-wikidata:Q7258191 schema:name "Puccinia dioicae" .
 
 wikidata:Q7262937 schema:name "Pycnostysanus azaleae" .
 
@@ -918,11 +810,7 @@ wikidata:Q7290354 schema:name "Ramularia" .
 
 wikidata:Q7321729 schema:name "Rhynchosporium secalis" .
 
-wikidata:Q7452330 schema:name "Septocyta ruborum" .
-
 wikidata:Q74663 schema:name "Ascochyta" .
-
-wikidata:Q74842 schema:name "Grapholita funebrana" .
 
 wikidata:Q749983 schema:name "Lymexylidae" .
 
@@ -954,8 +842,6 @@ wikidata:Q7861358 schema:name "Typhula incarnata" .
 
 wikidata:Q7861360 schema:name "Typhula ishikariensis" .
 
-wikidata:Q7900893 schema:name "Uromyces beticola" .
-
 wikidata:Q790159 schema:name "Anarsia lineatella" .
 
 wikidata:Q7920446 schema:name "Venturia carpophila" .
@@ -972,51 +858,27 @@ wikidata:Q8043055 schema:name "Xanthomonas campestris pv. campestris" .
 
 wikidata:Q80819881 schema:name "Cladosporium variabile" .
 
-wikidata:Q80820723 schema:name "Mycosphaerella dianthi" .
-
-wikidata:Q80822823 schema:name "Pseudocercosporella herpotrichoides" .
-
-wikidata:Q80936789 schema:name "Colletotrichum graminicola" .
-
-wikidata:Q80973031 schema:name "Pyricularia oryzae" .
-
 wikidata:Q811652 schema:name "Helicoverpa armigera" .
 
 wikidata:Q815051 schema:name "Lobesia botrana" .
 
 wikidata:Q815617 schema:name "Aleyrodidae" .
 
-wikidata:Q8316 schema:name "Dicotyledones" .
-
 wikidata:Q841786 schema:name "Eriophyidae" .
-
-wikidata:Q84312977 schema:name "Venturia pirina" .
 
 wikidata:Q843136 schema:name "Penicillium" .
 
 wikidata:Q848100 schema:name "Cydia nigricana" .
 
-wikidata:Q84826165 schema:name "Cladosporium allii-cepae" .
-
 wikidata:Q84832098 schema:name "Marssonina panattoniana" .
 
-wikidata:Q84833084 schema:name "Gnomonia leptostyla" .
-
-wikidata:Q84841011 schema:name "Phoma lingam" .
-
-wikidata:Q84847330 schema:name "Rhizoctonia zeae" .
-
 wikidata:Q84855498 schema:name "Septoria nodorum" .
-
-wikidata:Q84857640 schema:name "Drechslera tritici-repentis" .
 
 wikidata:Q864705 schema:name "Miridae" .
 
 wikidata:Q866091 schema:name "Erwinia amylovora" .
 
 wikidata:Q87273622 schema:name "Phytophthora porri" .
-
-wikidata:Q892348 schema:name "Uromyces pisi-sativi" .
 
 wikidata:Q892455 schema:name "Uromyces" .
 
@@ -1029,4 +891,1012 @@ wikidata:Q915669 schema:name "Arionidae" .
 wikidata:Q928458 schema:name "Ephestia elutella" .
 
 wikidata:Q998226 schema:name "Myzus cerasi" .
+
+pest:10349 :eppo "1ALTEG" .
+
+pest:10360 :eppo "1MELGG" .
+
+pest:10366 :eppo "VENTIN",
+        "VENTNA" .
+
+pest:10367 :eppo "PSDMTM" .
+
+pest:10369 :eppo "PERODE" .
+
+pest:10375 :eppo "1THRIF" .
+
+pest:10376 :eppo "FRANOC" .
+
+pest:10377 :eppo "THRITB" .
+
+pest:10379 :eppo "1TETRF" .
+
+pest:10381 :eppo "1TARSF" .
+
+pest:10383 :eppo "TETRUR" .
+
+pest:10384 :eppo "METTUL" .
+
+pest:10385 :eppo "1PYRAF" .
+
+pest:10388 :eppo "1CHRYF" .
+
+pest:10389 :eppo "CHAECO",
+        "CHAETI" .
+
+pest:10390 :eppo "LPTNDE" .
+
+pest:10391 :eppo "MELOME" .
+
+pest:10396 :eppo "1HETER" .
+
+pest:10398 :eppo "1APHIF" .
+
+pest:10404 :eppo "1COCCF" .
+
+pest:10405 :eppo "1PSEUF" .
+
+pest:10406 :eppo "1DIASF" .
+
+pest:10410 :eppo "1ALEYF" .
+
+pest:10412 :eppo "APHIGO" .
+
+pest:10413 :eppo "APHIFA" .
+
+pest:10414 :eppo "BRVCBR" .
+
+pest:10415 :eppo "PEMPBU" .
+
+pest:10416 :eppo "TRIZAP" .
+
+pest:10417 :eppo "BEMITA" .
+
+pest:10420 :eppo "BARABR" .
+
+pest:10421 :eppo "1NOCTF" .
+
+pest:10423 :eppo "1GEOMF" .
+
+pest:10425 :eppo "DASYBR" .
+
+pest:10426 :eppo "1GRACF",
+        "1LYONF" .
+
+pest:10427 :eppo "1LYMAF" .
+
+pest:10429 :eppo "1PIERF" .
+
+pest:10430 :eppo "1AGROF" .
+
+pest:10434 :eppo "1SCIAF" .
+
+pest:10435 :eppo "1CECIF" .
+
+pest:10436 :eppo "1TIPUF" .
+
+pest:10442 :eppo "1ELATF" .
+
+pest:10445 :eppo "CEUTQU" .
+
+pest:10448 :eppo "1APIOG" .
+
+pest:10450 :eppo "GRYTGR" .
+
+pest:10451 :eppo "1MIRIF" .
+
+pest:10452 :eppo "1TENTF" .
+
+pest:10455 :eppo "ERISLA" .
+
+pest:10458 :eppo "PLUTMA" .
+
+pest:10459 :eppo "ACROAS" .
+
+pest:10460 :eppo "CRIEAS" .
+
+pest:10461 :eppo "CRIEDU" .
+
+pest:10463 :eppo "SITNLI" .
+
+pest:10464 :eppo "CONTNA" .
+
+pest:10465 :eppo "HYLEFL",
+        "HYLERA" .
+
+pest:10470 :eppo "PSILRO" .
+
+pest:10472 :eppo "PODOLE" .
+
+pest:10477 :eppo "DIPCMA" .
+
+pest:10478 :eppo "CHLPPU" .
+
+pest:10481 :eppo "MONILA" .
+
+pest:10482 :eppo "VENTCA" .
+
+pest:10483 :eppo "STIGCA" .
+
+pest:10485 :eppo "PSDMMP" .
+
+pest:10486 :eppo "GLOMCI" .
+
+pest:10487 :eppo "BLUMJA" .
+
+pest:10488 :eppo "TRANDI",
+        "TRANPS" .
+
+pest:10489 :eppo "TAPHDE" .
+
+pest:10490 :eppo "SPHRPA" .
+
+pest:10491 :eppo "PODOTR" .
+
+pest:10492 :eppo "TAPHPR" .
+
+pest:10493 :eppo "PODOAP" .
+
+pest:10495 :eppo "DIPCEA",
+        "MYCOFR" .
+
+pest:10496 :eppo "PHYTCC" .
+
+pest:10497 :eppo "PHYTFR" .
+
+pest:10498 :eppo "PHYTCC" .
+
+pest:10499 :eppo "LEMALI",
+        "LEMAME" .
+
+pest:10501 :eppo "DIDYAP" .
+
+pest:10502 :eppo "PHYTFU" .
+
+pest:10503 :eppo "CRONRI",
+        "PUCCRI" .
+
+pest:10504 :eppo "DREPRI" .
+
+pest:10505 :eppo "SPHRMU" .
+
+pest:10506 :eppo "PLASVI" .
+
+pest:10507 :eppo "UNCINE" .
+
+pest:10508 :eppo "PSPZTR" .
+
+pest:10509 :eppo "CONLDI" .
+
+pest:10510 :eppo "1INSEC" .
+
+pest:10516 :eppo "COLLLD" .
+
+pest:10518 :eppo "UROMAP" .
+
+pest:10519 :eppo "PSDMLA" .
+
+pest:10521 :eppo "PSPECU" .
+
+pest:10523 :eppo "ALTEDA",
+        "ALTERA" .
+
+pest:10524 :eppo "BREMLA" .
+
+pest:10528 :eppo "ALTEBA" .
+
+pest:10530 :eppo "MARSPA" .
+
+pest:10531 :eppo "SEPTAP" .
+
+pest:10532 :eppo "FULVFU" .
+
+pest:10533 :eppo "1BOTRG" .
+
+pest:10535 :eppo "1CERCG",
+        "1RAMUG" .
+
+pest:10536 :eppo "ERYSPP",
+        "PODOXA" .
+
+pest:10537 :eppo "ALBUTR" .
+
+pest:10538 :eppo "SEPTLY" .
+
+pest:10540 :eppo "1ALTEG" .
+
+pest:10544 :eppo "TILLCO" .
+
+pest:10545 :eppo "TILLFO" .
+
+pest:10549 :eppo "USTINH" .
+
+pest:10550 :eppo "USTIHO" .
+
+pest:10551 :eppo "PYRNGR" .
+
+pest:10554 :eppo "PSYICH" .
+
+pest:10555 :eppo "RHIZSO" .
+
+pest:10556 :eppo "USTIAV" .
+
+pest:10559 :eppo "1APHAG",
+        "1PHOMG",
+        "1PYTHG",
+        "1RHIZG" .
+
+pest:10560 :eppo "PSDCHE" .
+
+pest:10561 :eppo "ERYSGR" .
+
+pest:10562 :eppo "PUCCST" .
+
+pest:10563 :eppo "PUCCRE" .
+
+pest:10565 :eppo "1FUSAG",
+        "MONGNI" .
+
+pest:10566 :eppo "PYRNTE" .
+
+pest:10567 :eppo "RHYNSE" .
+
+pest:10569 :eppo "PHYTIN" .
+
+pest:10571 :eppo "1TALPF" .
+
+pest:10574 :eppo "1ALTEG",
+        "1APIGG",
+        "1ASCOG",
+        "1CERCG",
+        "1GLOEG",
+        "1SEPTG" .
+
+pest:10575 :eppo "1CHAAG",
+        "1FUSAG",
+        "1PENIG",
+        "1PYTHG",
+        "1RHIZG",
+        "1SCLEG" .
+
+pest:10579 :eppo "CEUTPL" .
+
+pest:10580 :eppo "OSCIFR" .
+
+pest:10584 :eppo "SEPTCH" .
+
+pest:10589 :eppo "EXOBVJ" .
+
+pest:10590 :eppo "PYCZAZ" .
+
+pest:10593 :eppo "DIPCRO" .
+
+pest:10599 :eppo "SPHRMA" .
+
+pest:10605 :eppo "CAPBP" .
+
+pest:10609 :eppo "ERICA" .
+
+pest:10614 :eppo "GALAP" .
+
+pest:10620 :eppo "OXAST" .
+
+pest:10622 :eppo "POLAV" .
+
+pest:10634 :eppo "AIURE" .
+
+pest:10635 :eppo "BELPE" .
+
+pest:10636 :eppo "CAGSE" .
+
+pest:10638 :eppo "CIRAR" .
+
+pest:10640 :eppo "CONAR" .
+
+pest:10641 :eppo "GLEHE" .
+
+pest:10643 :eppo "PLALA" .
+
+pest:10644 :eppo "RUMAC" .
+
+pest:10645 :eppo "RUMOB" .
+
+pest:10647 :eppo "TAROF" .
+
+pest:10648 :eppo "TRFRE" .
+
+pest:10649 :eppo "URTDI" .
+
+pest:10650 :eppo "VERCH" .
+
+pest:10651 :eppo "VERFI" .
+
+pest:10652 :eppo "VERSE" .
+
+pest:10653 :eppo "AGRRE" .
+
+pest:10657 :eppo "APESV" .
+
+pest:10659 :eppo "POAAN" .
+
+pest:10660 :eppo "ORYZSU" .
+
+pest:10662 :eppo "DIDYAP" .
+
+pest:10667 :eppo "VENTIN" .
+
+pest:10668 :eppo "PEZIMA" .
+
+pest:10669 :eppo "1MONLG" .
+
+pest:10671 :eppo "PODOCY" .
+
+pest:10678 :eppo "MELIAE" .
+
+pest:10679 :eppo "LAESFU" .
+
+pest:10680 :eppo "1DIPMF",
+        "1ERIOF",
+        "1PHTPF" .
+
+pest:10681 :eppo "1PHTPG" .
+
+pest:10683 :eppo "EPITVI" .
+
+pest:10684 :eppo "ERPHVI" .
+
+pest:10685 :eppo "ACEIES" .
+
+pest:10686 :eppo "1PHTNG" .
+
+pest:10690 :eppo "RHAGCE" .
+
+pest:10693 :eppo "ANTHPO" .
+
+pest:10696 :eppo "1OTIOG" .
+
+pest:10697 :eppo "ANTHRU" .
+
+pest:10698 :eppo "BYTUTO" .
+
+pest:10701 :eppo "1SCLEG" .
+
+pest:10702 :eppo "1PHYTG" .
+
+pest:10703 :eppo "1HOPLG" .
+
+pest:10704 :eppo "CALAOR" .
+
+pest:10705 :eppo "DYSAPY" .
+
+pest:10706 :eppo "DYSAPL" .
+
+pest:10707 :eppo "MYZUCE" .
+
+pest:10708 :eppo "MYZUPE" .
+
+pest:10714 :eppo "LEPSUL" .
+
+pest:10716 :eppo "PSYLMA" .
+
+pest:10720 :eppo "VITEVI" .
+
+pest:10721 :eppo "PYRUNU" .
+
+pest:10722 :eppo "CALAGR" .
+
+pest:10723 :eppo "EMPOFL" .
+
+pest:10725 :eppo "1CLCRG",
+        "1LYGUG",
+        "1PSALG" .
+
+pest:10730 :eppo "CARPPO" .
+
+pest:10731 :eppo "HELMSO" .
+
+pest:10736 :eppo "CACOPO",
+        "CAPURE",
+        "PANDHE" .
+
+pest:10738 :eppo "1BRYP" .
+
+pest:10739 :eppo "CLYSAM",
+        "POLYBO" .
+
+pest:10740 :eppo "CLYSAM" .
+
+pest:10741 :eppo "POLYBO" .
+
+pest:10742 :eppo "SPARPI" .
+
+pest:10745 :eppo "LASPMO" .
+
+pest:10746 :eppo "1YPONF" .
+
+pest:10754 :eppo "PLODIN" .
+
+pest:10755 :eppo "CHEIBR" .
+
+pest:10756 :eppo "BOARRH" .
+
+pest:10757 :eppo "ATOMLI" .
+
+pest:10759 :eppo "1AGROG",
+        "1EUXOG" .
+
+pest:10760 :eppo "1TORTF" .
+
+pest:10762 :eppo "1BACTK" .
+
+pest:10763 :eppo "AAAAA" .
+
+pest:10765 :eppo "1CICDF" .
+
+pest:10770 :eppo "1VERG" .
+
+pest:10779 :eppo "ARVCTE" .
+
+pest:10784 :eppo "1TENTF" .
+
+pest:10785 :eppo "1PHTPG" .
+
+pest:10786 :eppo "PSPEHU" .
+
+pest:10806 :eppo "IPSXTY" .
+
+pest:10823 :eppo "1ARIOF" .
+
+pest:10825 :eppo "1DEROG" .
+
+pest:10834 :eppo "1QUADG" .
+
+pest:10836 :eppo "PHRAMU" .
+
+pest:10837 :eppo "SPHRPA" .
+
+pest:10838 :eppo "PSPESR" .
+
+pest:10839 :eppo "1CONIG" .
+
+pest:10841 :eppo "SCLESQ" .
+
+pest:10848 :eppo "1CCPSG" .
+
+pest:10856 :eppo "MACSEU" .
+
+pest:10858 :eppo "ENTYER" .
+
+pest:10859 :eppo "ECHCG" .
+
+pest:10862 :eppo "1EQUF" .
+
+pest:10863 :eppo "1VERG" .
+
+pest:10864 :eppo "1RUMG" .
+
+pest:10868 :eppo "1GRAF" .
+
+pest:10871 :eppo "SCLEHO" .
+
+pest:10882 :eppo "ALLCE" .
+
+pest:10883 :eppo "1LYMEF" .
+
+pest:10885 :eppo "MYCOBR" .
+
+pest:10886 :eppo "PYRPBR" .
+
+pest:10887 :eppo "PHYSBR" .
+
+pest:10888 :eppo "ALTEPO" .
+
+pest:10890 :eppo "PUCCAL" .
+
+pest:10891 :eppo "GLOMCI" .
+
+pest:10894 :eppo "PUCCAL",
+        "PUCCPO" .
+
+pest:10897 :eppo "PYRNTR" .
+
+pest:10900 :eppo "PTEAQ" .
+
+pest:10901 :eppo "PSECCI" .
+
+pest:10905 :eppo "1ALTEG",
+        "1ASCOG",
+        "1FUSAG",
+        "1PHOMG",
+        "1PYTHG",
+        "1RHIZG",
+        "PYTHUL",
+        "RHIZSO" .
+
+pest:10906 :eppo "HETEAN" .
+
+pest:10910 :eppo "1LEPIO" .
+
+pest:10912 :eppo "RUMAL" .
+
+pest:10919 :eppo "1CERVF" .
+
+pest:10925 :eppo "1CERVF" .
+
+pest:10931 :eppo "VEAAL" .
+
+pest:10932 :eppo "1COMF" .
+
+pest:10933 :eppo "1COMF" .
+
+pest:10934 :eppo "1COMF" .
+
+pest:10935 :eppo "PAREDR" .
+
+pest:10937 :eppo "SAISHE" .
+
+pest:10939 :eppo "1CLADG" .
+
+pest:10940 :eppo "1RANF" .
+
+pest:10941 :eppo "1RANF" .
+
+pest:10948 :eppo "FUSACU" .
+
+pest:10950 :eppo "XANTCA" .
+
+pest:10951 :eppo "XANTPH" .
+
+pest:10952 :eppo "CORBMI" .
+
+pest:10956 :eppo "DYOFM" .
+
+pest:10959 :eppo "PSECOB" .
+
+pest:10965 :eppo "ERWIAM" .
+
+pest:10966 :eppo "1RUBG" .
+
+pest:10970 :eppo "LASDSE" .
+
+pest:10972 :eppo "1RANG" .
+
+pest:10974 :eppo "1COVF" .
+
+pest:10975 :eppo "1CIRG" .
+
+pest:10976 :eppo "1VERG" .
+
+pest:10979 :eppo "EPHEEL" .
+
+pest:10980 :eppo "SEPTAP",
+        "SEPTPE" .
+
+pest:10981 :eppo "PSPESR" .
+
+pest:10982 :eppo "GYMNFU" .
+
+pest:10983 :eppo "GLODPO" .
+
+pest:10984 :eppo "LEPTNO" .
+
+pest:10985 :eppo "PSDMSY" .
+
+pest:10988 :eppo "1DRECG" .
+
+pest:10990 :eppo "OPHPHE" .
+
+pest:10991 :eppo "MAGNPO" .
+
+pest:10992 :eppo "GAEUGA" .
+
+pest:10993 :eppo "RHITDO" .
+
+pest:10995 :eppo "MICDMA",
+        "MONGNI",
+        "TYPHIN",
+        "TYPHIS" .
+
+pest:10998 :eppo "GNOMFR" .
+
+pest:11001 :eppo "AULASO" .
+
+pest:11002 :eppo "PUCCAS" .
+
+pest:11003 :eppo "VANSCA" .
+
+pest:11004 :eppo "1PYTHG" .
+
+pest:11006 :eppo "COLLAZ" .
+
+pest:11007 :eppo "ATALCO" .
+
+pest:11008 :eppo "CEUTNA" .
+
+pest:11011 :eppo "1FUSAG" .
+
+pest:11013 :eppo "PHYTIN" .
+
+pest:11015 :eppo "SYNAMY" .
+
+pest:11016 :eppo "BOTRAL" .
+
+pest:11017 :eppo "PHRARU" .
+
+pest:11022 :eppo "LASPNI" .
+
+pest:11023 :eppo "PHPHHO" .
+
+pest:11024 :eppo "1PHOMG",
+        "1PHYTG",
+        "1PLADG" .
+
+pest:11027 :eppo "1PUCCG" .
+
+pest:11029 :eppo "1BIPOG",
+        "1CURVG",
+        "1DRECG",
+        "1EXSEG" .
+
+pest:11034 :eppo "RHYNOH",
+        "RHYNSE" .
+
+pest:11037 :eppo "BOTRFA" .
+
+pest:11047 :eppo "LEPTNO" .
+
+pest:11048 :eppo "VENTIN" .
+
+pest:11060 :eppo "CLADVA" .
+
+pest:11062 :eppo "1BROG" .
+
+pest:11063 :eppo "ALBUCA" .
+
+pest:11064 :eppo "COLLAZ" .
+
+pest:11077 :eppo "SYNATI" .
+
+pest:11087 :eppo "ERYSBE" .
+
+pest:11088 :eppo "PODOTR",
+        "SPHRPA" .
+
+pest:11089 :eppo "LEVETA",
+        "OIDINL" .
+
+pest:11091 :eppo "PODOMY" .
+
+pest:11093 :eppo "PLASHA" .
+
+pest:11094 :eppo "PEROFS" .
+
+pest:11095 :eppo "1PYTHG" .
+
+pest:11096 :eppo "RHIZSO" .
+
+pest:11111 :eppo "CLADCU" .
+
+pest:11116 :eppo "DIAPHE" .
+
+pest:11120 :eppo "PYTHUL" .
+
+pest:11124 :eppo "BOERSN" .
+
+pest:11125 :eppo "COLLAZ" .
+
+pest:11127 :eppo "CXHAU" .
+
+pest:11129 :eppo "LITHOD" .
+
+pest:11138 :eppo "RAMUCC" .
+
+pest:11144 :eppo "ZEUZPY" .
+
+pest:11157 :eppo "1SENG" .
+
+pest:11158 :eppo "SCAPLI" .
+
+pest:11159 :eppo "1APHIF" .
+
+pest:11160 :eppo "AMBEL" .
+
+pest:11168 :eppo "EPHEEL" .
+
+pest:11169 :eppo "STEGPA" .
+
+pest:11171 :eppo "ORYZME" .
+
+pest:11176 :eppo "1PHOMG" .
+
+pest:11177 :eppo "PHYTCR" .
+
+pest:11183 :eppo "CALAZM" .
+
+pest:11185 :eppo "PSDCHE" .
+
+pest:11186 :eppo "ERYSCR" .
+
+pest:11188 :eppo "BOTSOB" .
+
+pest:11190 :eppo "ERYSHE" .
+
+pest:11192 :eppo "ECHCG" .
+
+pest:11193 :eppo "1PSDMG" .
+
+pest:11196 :eppo "LEPTMA" .
+
+pest:11197 :eppo "PHYTPO" .
+
+pest:11203 :eppo "1CORVG" .
+
+pest:11205 :eppo "1MYRIQ" .
+
+pest:11206 :eppo "KUEHUR",
+        "PHRAVI" .
+
+pest:11208 :eppo "PLEOHE" .
+
+pest:11209 :eppo "LEVETA" .
+
+pest:11210 :eppo "1ERYSF" .
+
+pest:11211 :eppo "APHISI" .
+
+pest:11212 :eppo "APHIPO" .
+
+pest:11214 :eppo "ERYSCI" .
+
+pest:11215 :eppo "PEROVI" .
+
+pest:11216 :eppo "PEROVI",
+        "PHYTPH" .
+
+pest:11217 :eppo "PLASCR" .
+
+pest:11218 :eppo "PEROVA" .
+
+pest:11220 :eppo "PHYTPO" .
+
+pest:11221 :eppo "1PEROO" .
+
+pest:11222 :eppo "1PEROO" .
+
+pest:11223 :eppo "1ERYSF" .
+
+pest:11225 :eppo "LEVETA" .
+
+pest:11226 :eppo "DACUOL" .
+
+pest:11229 :eppo "ERYSGR" .
+
+pest:11233 :eppo "HELIAR" .
+
+pest:11238 :eppo "SOLTU" .
+
+pest:11239 :eppo "POLCU" .
+
+pest:11240 :eppo "DPHNPE" .
+
+pest:11242 :eppo "THAUPR" .
+
+pest:11243 :eppo "HYLOAB" .
+
+pest:11245 :eppo "GNORAB" .
+
+pest:11247 :eppo "ACEIGR" .
+
+pest:11251 :eppo "1CHMYG",
+        "1CRONG",
+        "1MELMG",
+        "1PHRAG",
+        "1PUCCG",
+        "1UROMG" .
+
+pest:11252 :eppo "ERYSCR" .
+
+pest:11256 :eppo "SCATFL" .
+
+pest:11257 :eppo "TIPUPA" .
+
+pest:11260 :eppo "CYCLOL" .
+
+pest:11262 :eppo "COLLLA" .
+
+pest:11263 :eppo "SCLEGL" .
+
+pest:11265 :eppo "XANTFR" .
+
+pest:11310 :eppo "RHAGCO" .
+
+pest:11319 :eppo "UROMVF" .
+
+pest:11320 :eppo "UROMVF" .
+
+pest:11476 :eppo "DROSSU" .
+
+pest:11684 :eppo "ANARLI" .
+
+pest:11707 :eppo "1VENTG" .
+
+pest:11721 :eppo "COLLAC" .
+
+pest:11956 :eppo "AMHIMJ",
+        "AMHISO" .
+
+pest:11995 :eppo "1SPHIF" .
+
+pest:12138 :eppo "1FUSAG",
+        "1PHOMG" .
+
+pest:12145 :eppo "COLLCC" .
+
+pest:12169 :eppo "BREMLA" .
+
+pest:12329 :eppo "GNORAB",
+        "GRACAZ",
+        "LITHOD" .
+
+pest:12334 :eppo "ETIEZI" .
+
+pest:12339 :eppo "1ERYSF" .
+
+pest:12340 :eppo "1NOCTF" .
+
+pest:12349 :eppo "LEPTNO" .
+
+pest:12352 :eppo "MYCOLN" .
+
+pest:12353 :eppo "ERYSPP" .
+
+pest:12354 :eppo "LEPTLI" .
+
+pest:12355 :eppo "PUCCHD" .
+
+pest:12406 :eppo "STRESC" .
+
+pest:12409 :eppo "PHYTIN" .
+
+pest:12474 :eppo "CYLDBU" .
+
+pest:12476 :eppo "1PUCCG",
+        "1UROMG" .
+
+pest:12477 :eppo "RHIZCE",
+        "RHIZOR",
+        "RHIZSO" .
+
+pest:12482 :eppo "XANTJU" .
+
+pest:12484 :eppo "1PRSTG" .
+
+pest:12547 :eppo "1DIPMF",
+        "1ERIOF",
+        "1PHTPF" .
+
+pest:12669 :eppo "PHTOOC" .
+
+pest:12711 :eppo "1PEROO" .
+
+pest:12759 :eppo "COLLAZ",
+        "COLLFR" .
+
+pest:12923 :eppo "1INSEC" .
+
+pest:12924 :eppo "1INSEC" .
+
+pest:13018 :eppo "1FUSAG" .
+
+pest:13140 :eppo "PEPMV0" .
+
+pest:13360 :eppo "PODOAP" .
+
+pest:13448 :eppo "1ASCOG" .
+
+pest:13449 :eppo "PEROTR" .
+
+pest:13479 :eppo "COLLDS" .
+
+pest:13493 :eppo "PSYLPR" .
+
+pest:13549 :eppo "MONGNI" .
+
+pest:13704 :eppo "AHCLMO" .
+
+pest:14147 :eppo "PSYLBU" .
+
+pest:14259 :eppo "GODRCA" .
+
+pest:14294 :eppo "1GRAF" .
+
+pest:14377 :eppo "ERYSPI" .
+
+pest:14795 :eppo "1UREDO" .
+
+pest:14878 :eppo "FUSAOX" .
+
+pest:14999 :eppo "PHYLGM" .
+
+pest:15000 :eppo "1ERYSF" .
+
+pest:15001 :eppo "1ERYSF" .
+
+pest:15002 :eppo "1ERYSF" .
+
+pest:15003 :eppo "1ERYSF" .
+
+pest:15263 :eppo "1APHIF" .
+
+pest:15310 :eppo "HALYHA" .
+
+pest:15445 :eppo "ICERPU" .
+
+pest:15475 :eppo "PEROVI" .
+
+pest:15588 :eppo "CYROTE" .
+
+pest:15705 :eppo "RHIZSO" .
+
+pest:15868 :eppo "NEZAVI" .
+
+substance:1261 :eppo "METPHE" .
+
+substance:1264 :eppo "STTLSC" .
+
+substance:1271 :eppo "1AMPEG" .
+
+substance:1314 :eppo "MACLNU" .
+
+substance:1315 :eppo "MIROFL" .
+
+substance:1316 :eppo "PSUDMC" .
+
+substance:1325 :eppo "APHUER" .
+
+substance:1351 :eppo "ERETMU" .
+
+substance:1352 :eppo "CHROCR" .
+
+substance:1371 :eppo "ADALBI" .
+
+substance:1384 :eppo "NEAPCA" .
+
+substance:1413 :eppo "HETOBA" .
+
+substance:1414 :eppo "PHRHLU" .
+
+substance:1465 :eppo "ANTONA" .
+
+substance:1472 :eppo "THRDPE" .
+
+substance:1479 :eppo "HETOME" .
+
+substance:1486 :eppo "ERETER" .
+
+substance:1526 :eppo "AMBSAN" .
+
+substance:1547 :eppo "AUREPU" .
+
+substance:1548 :eppo "TRIGEV" .
+
+substance:1569 :eppo "ANIMCA" .
+
+substance:1584 :eppo "1PSDMG" .
+
+substance:1598 :eppo "PAECLI" .
+
+substance:853 :eppo "NEAPGL" .
+
+substance:955 :eppo "APHUCO" .
+
+substance:960 :eppo "MTRHAN" .
+
+substance:970 :eppo "BACITH" .
+
+substance:974 :eppo "PHSMHE" .
+
+substance:998 :eppo "LPTMAB" .
+
+substance:999 :eppo "LPTXDA" .
 

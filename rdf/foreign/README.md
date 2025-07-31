@@ -35,12 +35,14 @@ PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
 CONSTRUCT
 {
   ?taxon schema:name ?name .
+  ?subject :eppo ?eppo .
 }
 WHERE {
-  ?sub :isDefinedByBiologicalTaxon ?taxon .
+  ?subject :isDefinedByBiologicalTaxon ?taxon .
   SERVICE <https://qlever.cs.uni-freiburg.de/api/wikidata>
   {
     ?taxon wdt:P225 ?name .
+    ?taxon wdt:P3031 ?eppo .
   }
 }
 ```
