@@ -960,7 +960,7 @@ wikidata:Q16521 a owl:Class ;
         "Viricida"@it ;
     rdfs:subClassOf :ChemicalProduct .
 
-_:n2e63b5c862544df5ad0eb11922e17ae7b12 a owl:Class ;
+_:n5368ecb40dae480cb4fb30675a10844bb12 a owl:Class ;
     owl:oneOf ( :AdditiveToDeclare :Synergist :Safener :ActiveIngredient ) .
 
 schema:addressLocality a owl:DatatypeProperty ;
@@ -1474,7 +1474,7 @@ schema:addressCountry a owl:ObjectProperty ;
         "Role"@en ;
     rdfs:comment "The role that a particular component plays in a mixture."@en ;
     rdfs:domain :ComponentPortion ;
-    rdfs:range _:n2e63b5c862544df5ad0eb11922e17ae7b12 .
+    rdfs:range _:n5368ecb40dae480cb4fb30675a10844bb12 .
 
 :substance a owl:ObjectProperty ;
     rdfs:label "Substanz"@de,

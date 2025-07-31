@@ -1,918 +1,1336 @@
 @prefix : <https://agriculture.ld.admin.ch/plant-protection/> .
 @prefix CHEBI: <http://purl.obolibrary.org/obo/CHEBI_> .
 @prefix chebi: <http://purl.obolibrary.org/obo/chebi/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
 @prefix substance: <https://agriculture.ld.admin.ch/plant-protection/substance/> .
 @prefix wikidata: <http://www.wikidata.org/entity/> .
 
-substance:1027 a :NonChemicalSubstance .
+substance:1027 a :NonChemicalSubstance ;
+    schema:name "Paraffinöl"@de .
 
-substance:1164 a :NonChemicalSubstance .
+substance:1164 a :NonChemicalSubstance ;
+    schema:name "Fettsäuren (Kaliumsalze)"@de .
 
-substance:1204 a :NonChemicalSubstance .
+substance:1204 a :NonChemicalSubstance ;
+    schema:name "Netz- und Haftmittel"@de .
 
-substance:1224 a :NonChemicalSubstance .
+substance:1224 a :NonChemicalSubstance ;
+    schema:name "Quassiaextrakt"@de .
 
-substance:1226 a :NonChemicalSubstance .
+substance:1226 a :NonChemicalSubstance ;
+    schema:name "Rapsöl"@de .
 
-substance:1274 a :NonChemicalSubstance .
+substance:1274 a :NonChemicalSubstance ;
+    schema:name "Alkoholethoxylat"@de .
 
-substance:1277 a :NonChemicalSubstance .
+substance:1277 a :NonChemicalSubstance ;
+    schema:name "Kaliumphosphonat"@de .
 
-substance:1331 a :NonChemicalSubstance .
+substance:1331 a :NonChemicalSubstance ;
+    schema:name "Schachtelhalmextrakt"@de .
 
-substance:1359 a :NonChemicalSubstance .
+substance:1359 a :NonChemicalSubstance ;
+    schema:name "Fettsäuren"@de .
 
-substance:1396 a :NonChemicalSubstance .
+substance:1396 a :NonChemicalSubstance ;
+    schema:name "Sesamöl raffiniert"@de .
 
-substance:1398 a :NonChemicalSubstance .
+substance:1398 a :NonChemicalSubstance ;
+    schema:name "Proteine"@de .
 
-substance:1418 a :NonChemicalSubstance .
+substance:1418 a :NonChemicalSubstance ;
+    schema:name "Verbissmittel (Grundkörper)"@de .
 
-substance:1483 a :NonChemicalSubstance .
+substance:1483 a :NonChemicalSubstance ;
+    schema:name "Polyalkyleneoxide modified Heptamethyltrisiloxane"@de .
 
-substance:1488 a :NonChemicalSubstance .
+substance:1488 a :NonChemicalSubstance ;
+    schema:name "Magermilchpulver"@de .
 
-substance:1539 a :NonChemicalSubstance .
+substance:1539 a :NonChemicalSubstance ;
+    schema:name "Schafsfett"@de .
 
-substance:1566 a :NonChemicalSubstance .
+substance:1566 a :NonChemicalSubstance ;
+    schema:name "Polyethermodifiziertes Trisiloxan"@de .
 
-substance:1571 a :NonChemicalSubstance .
+substance:1571 a :NonChemicalSubstance ;
+    schema:name "Synthetischer Latex"@de .
 
-substance:1573 a :NonChemicalSubstance .
+substance:1573 a :NonChemicalSubstance ;
+    schema:name "Alkylpolyglycosid"@de .
 
-substance:1685 a :NonChemicalSubstance .
+substance:1671 a :NonChemicalSubstance ;
+    schema:name "Solvent Naphtha"@de .
 
-substance:918 a :NonChemicalSubstance .
+substance:1685 a :NonChemicalSubstance ;
+    schema:name "Lösungsmittelnaphtha (Erdöl), leichte aromatische"@de .
 
-substance:1025 :hasChebiIdentity CHEBI:32687 .
+substance:1695 a :NonChemicalSubstance ;
+    schema:name "Destillate (Erdöl)"@de .
 
-substance:1034 :hasChebiIdentity CHEBI:81931 .
+substance:1704 a :NonChemicalSubstance ;
+    schema:name "poly(oxy-1,2-ethanediyl),alphaisotridecyl-omegahydroxy"@de .
 
-substance:106 :hasChebiIdentity CHEBI:70721 .
+substance:1710 a :NonChemicalSubstance ;
+    schema:name "Natriumdiisopropylnaphtalinsulfonat"@de .
 
-substance:1067 :hasChebiIdentity CHEBI:81806 .
+substance:1714 a :NonChemicalSubstance ;
+    schema:name "Benzolsulfonsäure, Mono-C11-13-verzweigte Alkylderivate, Calciumsalze"@de .
 
-substance:1069 :hasChebiIdentity CHEBI:6798 .
+substance:1722 a :NonChemicalSubstance ;
+    schema:name "Natrium-di-butyl-naphtalinsulfonat"@de .
 
-substance:107 :hasChebiIdentity CHEBI:39315 .
+substance:1733 a :NonChemicalSubstance ;
+    schema:name "Polyglykolether"@de .
 
-substance:1071 :hasChebiIdentity CHEBI:81964 .
+substance:1747 a :NonChemicalSubstance ;
+    schema:name "C14-C16-Alkanehydroxysulfonic acids sodium salts"@de .
 
-substance:1075 :hasChebiIdentity CHEBI:81971 .
+substance:1760 a :NonChemicalSubstance ;
+    schema:name "COS-OGA"@de .
 
-substance:108 :hasChebiIdentity CHEBI:3751 .
+substance:1762 a :NonChemicalSubstance ;
+    schema:name "Z11-14OH"@de .
 
-substance:1098 :hasChebiIdentity CHEBI:179333 .
+substance:1776 a :NonChemicalSubstance ;
+    schema:name "Sodium Lauryl Ether Sulfate"@de .
 
-substance:110 :hasChebiIdentity CHEBI:62961 .
+substance:1782 a :NonChemicalSubstance ;
+    schema:name "Hydrocarbons, C10, aromatics, <1% naphthalene"@de .
 
-substance:1106 :hasChebiIdentity CHEBI:81810 .
+substance:1788 a :NonChemicalSubstance ;
+    schema:name "Alkane C9-C12-Iso"@de .
 
-substance:1109 :hasChebiIdentity CHEBI:84033 .
+substance:1789 a :NonChemicalSubstance ;
+    schema:name "Grüne-Minze-Öl"@de .
 
-substance:1110 :hasChebiIdentity CHEBI:38495 .
+substance:1798 a :NonChemicalSubstance ;
+    schema:name "Calcium Dodecylbenzene Sulfonate"@de .
 
-substance:1137 :hasChebiIdentity CHEBI:143152 .
+substance:1801 a :NonChemicalSubstance ;
+    schema:name "Benzolsulfonsäure, 4-C10-13-sec-Alkylderivate"@de .
 
-substance:1138 :hasChebiIdentity CHEBI:4033 .
+substance:1806 a :NonChemicalSubstance ;
+    schema:name "Anionische Tenside"@de .
 
-substance:114 :hasChebiIdentity CHEBI:81788 .
+substance:1807 a :NonChemicalSubstance ;
+    schema:name "Nichtionische Tenside"@de .
 
-substance:1147 :hasChebiIdentity CHEBI:81824 .
+substance:1819 a :NonChemicalSubstance ;
+    schema:name "Polyethylene glycerol esters of fatty acids"@de .
 
-substance:115 :hasChebiIdentity CHEBI:4042 .
+substance:1820 a :NonChemicalSubstance ;
+    schema:name "Sulfonated aromatic polymer, sodiumsalt"@de .
 
-substance:1155 :hasChebiIdentity CHEBI:81842 .
+substance:1830 a :NonChemicalSubstance ;
+    schema:name "Phenolsulfonic acid - phenol - formaldehyde - urea condensate, sodium salt "@de .
 
-substance:1162 :hasChebiIdentity CHEBI:5011 .
+substance:1831 a :NonChemicalSubstance ;
+    schema:name "Alcohols, C12-15, ethoxylated "@de .
 
-substance:1168 :hasChebiIdentity CHEBI:5131 .
+substance:1832 a :NonChemicalSubstance ;
+    schema:name "Alcohols, C9-11, ethoxylated"@de .
 
-substance:1184 :partialChebiIdentity CHEBI:23414,
+substance:1837 a :NonChemicalSubstance ;
+    schema:name "Alcohols, C9-11-iso-, C10-rich, ethoxylated"@de .
+
+substance:1840 a :NonChemicalSubstance ;
+    schema:name "alcohols, (c12-14), ethoxylated, monoethers with sulfuric acid, sodium salts"@de .
+
+substance:1863 a :NonChemicalSubstance ;
+    schema:name "Fettalkoholpolyglykolether"@de .
+
+substance:1864 a :NonChemicalSubstance ;
+    schema:name "Ethoxyliertes Rizinusöl"@de .
+
+substance:1871 a :NonChemicalSubstance ;
+    schema:name "Naphtha (Erdoel), schwere Alkylat- [Enthält weniger als 0.1 % Benzol]"@de .
+
+substance:1875 a :NonChemicalSubstance ;
+    schema:name "Fettsäuren C7-C18"@de .
+
+substance:1876 a :NonChemicalSubstance ;
+    schema:name "Naphthalenesulfonic acid, methyl-, polymer with formaldehyde, sodium salt"@de .
+
+substance:1883 a :NonChemicalSubstance ;
+    schema:name "dodecanol, ethoxylated, monoether with sulfuric acid, ammonium salt"@de .
+
+substance:1890 a :NonChemicalSubstance ;
+    schema:name "Hydrocarbons, C10-C13, aromatics, <1% naphthalene"@de .
+
+substance:1891 a :NonChemicalSubstance ;
+    schema:name "alcohols, c11-15-secondary, ethoxylated"@de .
+
+substance:1894 a :NonChemicalSubstance ;
+    schema:name "Weisses Mineralöl (Petroleum)"@de .
+
+substance:1897 a :NonChemicalSubstance ;
+    schema:name "Dodecan-1-ol, ethoxyliert "@de .
+
+substance:1899 a :NonChemicalSubstance ;
+    schema:name "Gemisch aus: 2-Ethylhexyl-mono-D-glucopyranosid und 2-Ethylhexyl-di-D-glucopyranosid"@de .
+
+substance:2023 a :NonChemicalSubstance ;
+    schema:name "Terpen-Oligomere"@de .
+
+substance:2028 a :NonChemicalSubstance ;
+    schema:name "Alcohols C9-11, ethoxylated propoxylated"@de .
+
+substance:2040 a :NonChemicalSubstance ;
+    schema:name "lignin, alkali, reaction products with formaldehyde and sodium bisulfite"@de .
+
+substance:2041 a :NonChemicalSubstance ;
+    schema:name "Ethylenediamine, ethoxylated and propoxylated"@de .
+
+substance:2072 a :NonChemicalSubstance ;
+    schema:name "Alcohols, C16-18, ethoxylated"@de .
+
+substance:2074 a :NonChemicalSubstance ;
+    schema:name "Alcohols, C11-14-iso-, C13-rich, ethoxylated (6 EO), methylated"@de .
+
+substance:898 a :NonChemicalSubstance ;
+    schema:name "Kupfer (als Oxychlorid)"@de .
+
+substance:918 a :NonChemicalSubstance ;
+    schema:name "Oleum foeniculi"@de .
+
+substance:950 a :NonChemicalSubstance ;
+    schema:name "E8E10-12 OH (E,E-8.10-dodecadien-1-ol; Codlemone)"@de .
+
+substance:951 a :NonChemicalSubstance ;
+    schema:name "Z11-14 Ac"@de .
+
+substance:1025 schema:name "Piperonyl butoxid"@de ;
+    :hasChebiIdentity CHEBI:32687 .
+
+substance:1034 schema:name "Metaldehyd"@de ;
+    :hasChebiIdentity CHEBI:81931 .
+
+substance:106 schema:name "Clethodim"@de ;
+    :hasChebiIdentity CHEBI:70721 .
+
+substance:1067 schema:name "MCPB"@de ;
+    :hasChebiIdentity CHEBI:81806 .
+
+substance:1069 schema:name "Metazachlor"@de ;
+    :hasChebiIdentity CHEBI:6798 .
+
+substance:107 schema:name "Clofentezine"@de ;
+    :hasChebiIdentity CHEBI:39315 .
+
+substance:1071 schema:name "Metobromuron"@de ;
+    :hasChebiIdentity CHEBI:81964 .
+
+substance:1075 schema:name "Pyridate"@de ;
+    :hasChebiIdentity CHEBI:81971 .
+
+substance:108 schema:name "Clomazone"@de ;
+    :hasChebiIdentity CHEBI:3751 .
+
+substance:1098 schema:name "Z9-12 Ac"@de ;
+    :hasChebiIdentity CHEBI:179333 .
+
+substance:110 schema:name "Clopyralid"@de ;
+    :hasChebiIdentity CHEBI:62961 .
+
+substance:1106 schema:name "1-Naphthylacetamid"@de ;
+    :hasChebiIdentity CHEBI:81810 .
+
+substance:1109 schema:name "Aluminiumfosetyl (Fosetyl-Al)"@de ;
+    :hasChebiIdentity CHEBI:84033 .
+
+substance:1110 schema:name "Aluminiumphosphid"@de ;
+    :hasChebiIdentity CHEBI:38495 .
+
+substance:1137 schema:name "Cloquintocet-mexyl"@de ;
+    :hasChebiIdentity CHEBI:143152 .
+
+substance:1138 schema:name "Cycloxydim"@de ;
+    :hasChebiIdentity CHEBI:4033 .
+
+substance:114 schema:name "Cymoxanil"@de ;
+    :hasChebiIdentity CHEBI:81788 .
+
+substance:1147 schema:name "Diflufenican"@de ;
+    :hasChebiIdentity CHEBI:81824 .
+
+substance:115 schema:name "Cypermethrin"@de ;
+    :hasChebiIdentity CHEBI:4042 .
+
+substance:1155 schema:name "Dithianon"@de ;
+    :hasChebiIdentity CHEBI:81842 .
+
+substance:1162 schema:name "Fenpyroximate"@de ;
+    :hasChebiIdentity CHEBI:5011 .
+
+substance:1168 schema:name "Flurochloridon"@de ;
+    :hasChebiIdentity CHEBI:5131 .
+
+substance:1184 schema:name "Kupfer (als Kalkpräparat, Bordeaux-Brühe)"@de ;
+    :partialChebiIdentity CHEBI:23414,
         CHEBI:31341,
         CHEBI:31344 .
 
-substance:1187 :hasChebiIdentity CHEBI:39325 .
+substance:1187 schema:name "Lambda-Cyhalothrin"@de ;
+    :hasChebiIdentity CHEBI:39325 .
 
-substance:1189 :partialChebiIdentity CHEBI:18420,
+substance:1189 schema:name "Magnesiumphosphid"@de ;
+    :partialChebiIdentity CHEBI:18420,
         CHEBI:33468 .
 
-substance:119 :hasChebiIdentity CHEBI:4312 .
+substance:119 schema:name "Daminozide"@de ;
+    :hasChebiIdentity CHEBI:4312 .
 
-substance:1196 :hasChebiIdentity CHEBI:39678 .
+substance:1196 schema:name "Metsulfuron-methyl"@de ;
+    :hasChebiIdentity CHEBI:39678 .
 
-substance:1200 :hasChebiIdentity CHEBI:83771 .
+substance:1200 schema:name "Napropamide"@de ;
+    :hasChebiIdentity CHEBI:83771 .
 
-substance:1218 :hasChebiIdentity CHEBI:132921 .
+substance:1218 schema:name "Clodinafop-propargyl"@de ;
+    :hasChebiIdentity CHEBI:132921 .
 
-substance:1221 :hasChebiIdentity CHEBI:81941 .
+substance:1221 schema:name "Prosulfocarb"@de ;
+    :hasChebiIdentity CHEBI:81941 .
 
-substance:1239 :hasChebiIdentity CHEBI:9422 .
+substance:1239 schema:name "Tebufenpyrad"@de ;
+    :hasChebiIdentity CHEBI:9422 .
 
-substance:124 :hasChebiIdentity CHEBI:81856 .
+substance:124 schema:name "Dicamba"@de ;
+    :hasChebiIdentity CHEBI:81856 .
 
-substance:1245 :hasChebiIdentity CHEBI:30263 .
+substance:1245 schema:name "Terbuthylazine"@de ;
+    :hasChebiIdentity CHEBI:30263 .
 
-substance:1248 :hasChebiIdentity CHEBI:83453 .
+substance:1248 schema:name "Thifensulfuron-methyl"@de ;
+    :hasChebiIdentity CHEBI:83453 .
 
-substance:1254 :hasChebiIdentity CHEBI:9682 .
+substance:1254 schema:name "Triclopyr"@de ;
+    :hasChebiIdentity CHEBI:9682 .
 
-substance:1257 :hasChebiIdentity CHEBI:81817 .
+substance:1257 schema:name "Trinexapac-ethyl"@de ;
+    :hasChebiIdentity CHEBI:81817 .
 
-substance:1260 :hasChebiIdentity CHEBI:79736 .
+substance:1260 schema:name "Ziram"@de ;
+    :hasChebiIdentity CHEBI:79736 .
 
-substance:1261 :isDefinedByBiologicalTaxon wikidata:Q13847678 .
+substance:1261 schema:name "Metaphycus helvolus"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q13847678 .
 
-substance:1263 :hasChebiIdentity CHEBI:3416 .
+substance:1263 schema:name "Carfentrazone-ethyl"@de ;
+    :hasChebiIdentity CHEBI:3416 .
 
-substance:1264 :isDefinedByBiologicalTaxon wikidata:Q113105294 .
+substance:1264 schema:name "Stratiolaelaps scimitus (vormals bekannt als Hypoaspis miles)"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q113105294 .
 
-substance:1265 :hasChebiIdentity CHEBI:2942 .
+substance:1265 schema:name "Azadirachtin A"@de ;
+    :hasChebiIdentity CHEBI:2942 .
 
-substance:1267 rdfs:label "Sulfosulfuron"@de ;
-    chebi:formula "C16H18N6O7S2" ;
-    chebi:smiles "CCS(=O)(=O)C1=C(N2C=CC=CC2=N1)S(=O)(=O)NC(=O)NC3=NC(=CC(=N3)OC)OC" .
+substance:1267 chebi:formula "C16H18N6O7S2" ;
+    chebi:smiles "CCS(=O)(=O)C1=C(N2C=CC=CC2=N1)S(=O)(=O)NC(=O)NC3=NC(=CC(=N3)OC)OC" ;
+    schema:name "Sulfosulfuron"@de .
 
-substance:1268 :hasChebiIdentity CHEBI:84199 .
+substance:1268 schema:name "Quinmerac"@de ;
+    :hasChebiIdentity CHEBI:84199 .
 
-substance:1271 :isDefinedByBiologicalTaxon wikidata:Q10408548 .
+substance:1271 schema:name "Ampelomyces quisqualis"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q10408548 .
 
-substance:1283 :hasChebiIdentity CHEBI:84970 .
+substance:1283 schema:name "Ipsdienol"@de ;
+    :hasChebiIdentity CHEBI:84970 .
 
-substance:1289 :hasChebiIdentity CHEBI:233296 .
+substance:1289 schema:name "(S)-cis-Verbenol"@de ;
+    :hasChebiIdentity CHEBI:233296 .
 
-substance:1298 :hasChebiIdentity CHEBI:73178 .
+substance:1298 schema:name "Acibenzolar-S-methyl"@de ;
+    :hasChebiIdentity CHEBI:73178 .
 
-substance:1299 :hasChebiIdentity CHEBI:60607 .
+substance:1299 schema:name "Metalaxyl-M"@de ;
+    :hasChebiIdentity CHEBI:60607 .
 
-substance:13 :hasChebiIdentity CHEBI:137374 .
+substance:13 schema:name "Aclonifen"@de ;
+    :hasChebiIdentity CHEBI:137374 .
 
-substance:1301 :hasChebiIdentity CHEBI:81773 .
+substance:1301 schema:name "Metconazole"@de ;
+    :hasChebiIdentity CHEBI:81773 .
 
-substance:1304 :partialChebiIdentity CHEBI:25646,
+substance:1304 schema:name "Kupfer (als Octanoat)"@de ;
+    :partialChebiIdentity CHEBI:25646,
         CHEBI:29036 .
 
-substance:1305 :hasChebiIdentity CHEBI:196041 .
+substance:1305 schema:name "E7Z9-12 Ac"@de ;
+    :hasChebiIdentity CHEBI:196041 .
 
-substance:1306 :hasChebiIdentity CHEBI:4986 .
+substance:1306 schema:name "Rapsölmethylester"@de ;
+    :hasChebiIdentity CHEBI:4986 .
 
-substance:1312 :hasChebiIdentity CHEBI:28878 .
+substance:1312 schema:name "12 OH (1-dodecanol)"@de ;
+    :hasChebiIdentity CHEBI:28878 .
 
-substance:1313 :hasChebiIdentity CHEBI:77417 .
+substance:1313 schema:name "14 OH (1-tetradecanol)"@de ;
+    :hasChebiIdentity CHEBI:77417 .
 
-substance:1314 :isDefinedByBiologicalTaxon wikidata:Q10573776 .
+substance:1314 schema:name "Macrolophus pygmaeus (vormals bekannt als Macrolophus caliginosus)"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q10573776 .
 
-substance:1315 :isDefinedByBiologicalTaxon wikidata:Q49528817 .
+substance:1315 schema:name "Microterys flavus"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q49528817 .
 
-substance:1316 :isDefinedByBiologicalTaxon wikidata:Q13224243 .
+substance:1316 schema:name "Pseudaphycus maculipennis"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q13224243 .
 
-substance:1317 :hasChebiIdentity CHEBI:2962 .
+substance:1317 schema:name "Kresoxim-methyl"@de ;
+    :hasChebiIdentity CHEBI:2962 .
 
-substance:1319 :hasChebiIdentity CHEBI:40909 .
+substance:1319 schema:name "Azoxystrobin"@de ;
+    :hasChebiIdentity CHEBI:40909 .
 
-substance:1324 :isDefinedByBiologicalTaxon wikidata:Q5672141 .
+substance:1324 schema:name "Amblyseius californicus"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q5672141 .
 
-substance:1325 :isDefinedByBiologicalTaxon wikidata:Q1945705 .
+substance:1325 schema:name "Aphidius ervi"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q1945705 .
 
-substance:1342 :hasChebiIdentity CHEBI:74772 .
+substance:1342 schema:name "Schwefelsaure Tonerde"@de ;
+    :hasChebiIdentity CHEBI:74772 .
 
-substance:1350 :hasChebiIdentity CHEBI:39163 .
+substance:1350 schema:name "Acetamiprid"@de ;
+    :hasChebiIdentity CHEBI:39163 .
 
-substance:1351 :isDefinedByBiologicalTaxon wikidata:Q5835607 .
+substance:1351 schema:name "Eretmocerus mundus"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q5835607 .
 
-substance:1352 :isDefinedByBiologicalTaxon wikidata:Q264998 .
+substance:1352 schema:name "Chrysoperla carnea"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q264998 .
 
-substance:1360 :hasChebiIdentity CHEBI:15366 .
+substance:1360 schema:name "Essigsäure"@de ;
+    :hasChebiIdentity CHEBI:15366 .
 
-substance:1363 :hasChebiIdentity CHEBI:137425 .
+substance:1363 schema:name "Prohexadione-Calcium"@de ;
+    :hasChebiIdentity CHEBI:137425 .
 
-substance:1364 :hasChebiIdentity CHEBI:81833 .
+substance:1364 schema:name "Trifloxystrobin"@de ;
+    :hasChebiIdentity CHEBI:81833 .
 
-substance:1366 :hasChebiIdentity CHEBI:81853 .
+substance:1366 schema:name "Fenhexamid"@de ;
+    :hasChebiIdentity CHEBI:81853 .
 
-substance:1367 :hasChebiIdentity CHEBI:9242 .
+substance:1367 schema:name "Spiroxamine"@de ;
+    :hasChebiIdentity CHEBI:9242 .
 
-substance:1368 :hasChebiIdentity CHEBI:82009 .
+substance:1368 schema:name "Florasulam"@de ;
+    :hasChebiIdentity CHEBI:82009 .
 
-substance:1369 :isDefinedByBiologicalTaxon wikidata:Q7255026 .
+substance:1369 schema:name "Pseudomonas chlororaphis"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q7255026 .
 
-substance:1371 :isDefinedByBiologicalTaxon wikidata:Q233024 .
+substance:1371 schema:name "Adalia bipunctata"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q233024 .
 
-substance:1376 :isDefinedByBiologicalTaxon wikidata:Q59546595 .
+substance:1376 schema:name "Coniothyrium minitans"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q59546595 .
 
-substance:1384 :isDefinedByBiologicalTaxon wikidata:Q5267719 .
+substance:1384 schema:name "Steinernema carpocapsae all strain"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q5267719 .
 
-substance:1391 :hasChebiIdentity CHEBI:30746 .
+substance:1391 schema:name "Benzoesäure"@de ;
+    :hasChebiIdentity CHEBI:30746 .
 
-substance:1395 :hasChebiIdentity CHEBI:35366 .
+substance:1395 schema:name "Fettsäuren"@de ;
+    :hasChebiIdentity CHEBI:35366 .
 
-substance:1397 :hasChebiIdentity CHEBI:145501 .
+substance:1397 schema:name "Thiencarbazon"@de ;
+    :hasChebiIdentity CHEBI:145501 .
 
-substance:1400 :hasChebiIdentity CHEBI:81920 .
+substance:1400 schema:name "Flufenacet"@de ;
+    :hasChebiIdentity CHEBI:81920 .
 
-substance:1404 :hasChebiIdentity CHEBI:82048 .
+substance:1404 schema:name "Zoxamid"@de ;
+    :hasChebiIdentity CHEBI:82048 .
 
-substance:1405 :hasChebiIdentity CHEBI:81741 .
+substance:1405 schema:name "Iodosulfuron-methyl-Natrium"@de ;
+    :hasChebiIdentity CHEBI:81741 .
 
-substance:1406 :hasChebiIdentity CHEBI:8939 .
+substance:1406 schema:name "Flumioxazin"@de ;
+    :hasChebiIdentity CHEBI:8939 .
 
-substance:1407 :hasChebiIdentity CHEBI:39348 .
+substance:1407 schema:name "Etofenprox"@de ;
+    :hasChebiIdentity CHEBI:39348 .
 
-substance:1408 :hasChebiIdentity CHEBI:133786 .
+substance:1408 schema:name "Mefenpyr-Diethyl"@de ;
+    :hasChebiIdentity CHEBI:133786 .
 
-substance:1410 :hasChebiIdentity CHEBI:131371 .
+substance:1410 schema:name "Eisen-III-Phosphat"@de ;
+    :hasChebiIdentity CHEBI:131371 .
 
-substance:1413 :isDefinedByBiologicalTaxon wikidata:Q3134908 .
+substance:1413 schema:name "Heterorhabditis bacteriophora"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q3134908 .
 
-substance:1414 :isDefinedByBiologicalTaxon wikidata:Q388648 .
+substance:1414 schema:name "Photorhabdus luminescens"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q388648 .
 
-substance:1416 :hasChebiIdentity CHEBI:141213 .
+substance:1416 schema:name "Isoxaflutole"@de ;
+    :hasChebiIdentity CHEBI:141213 .
 
-substance:1421 :partialChebiIdentity CHEBI:9230,
+substance:1421 schema:name "Spinosad"@de ;
+    :partialChebiIdentity CHEBI:9230,
         CHEBI:9232 .
 
-substance:1422 :hasChebiIdentity CHEBI:38321 .
+substance:1422 schema:name "Mesotrione"@de ;
+    :hasChebiIdentity CHEBI:38321 .
 
-substance:1423 :hasChebiIdentity CHEBI:83640 .
+substance:1423 schema:name "Dimethenamid-P"@de ;
+    :hasChebiIdentity CHEBI:83640 .
 
-substance:1425 :hasChebiIdentity CHEBI:78780 .
+substance:1425 schema:name "Pyraclostrobin"@de ;
+    :hasChebiIdentity CHEBI:78780 .
 
-substance:1428 :hasChebiIdentity CHEBI:82023 .
+substance:1428 schema:name "Iprovalicarb"@de ;
+    :hasChebiIdentity CHEBI:82023 .
 
-substance:1430 :partialChebiIdentity CHEBI:53720,
+substance:1430 schema:name "Schwefelkalk (Calciumpolysulfid)"@de ;
+    :partialChebiIdentity CHEBI:53720,
         CHEBI:81055 .
 
-substance:1434 :hasChebiIdentity CHEBI:81857 .
+substance:1434 schema:name "Imazamox"@de ;
+    :hasChebiIdentity CHEBI:81857 .
 
-substance:1439 :hasChebiIdentity CHEBI:132752 .
+substance:1439 schema:name "Methylbutenol"@de ;
+    :hasChebiIdentity CHEBI:132752 .
 
-substance:1442 :isDefinedByBiologicalTaxon wikidata:Q26307560 .
+substance:1442 schema:name "Xenorhabdus bovienii"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q26307560 .
 
-substance:1444 :hasChebiIdentity CHEBI:59511 .
+substance:1444 schema:name "Propoxycarbazone-sodium"@de ;
+    :hasChebiIdentity CHEBI:59511 .
 
-substance:1456 :hasChebiIdentity CHEBI:81828 .
+substance:1456 schema:name "Pyraflufen-ethyl"@de ;
+    :hasChebiIdentity CHEBI:81828 .
 
-substance:1457 :hasChebiIdentity CHEBI:83502 .
+substance:1457 schema:name "Foramsulfuron"@de ;
+    :hasChebiIdentity CHEBI:83502 .
 
-substance:1464 :hasChebiIdentity CHEBI:132497 .
+substance:1464 schema:name "Isoxadifen-ethyl"@de ;
+    :hasChebiIdentity CHEBI:132497 .
 
-substance:1465 :isDefinedByBiologicalTaxon wikidata:Q10413188 .
+substance:1465 schema:name "Anthocoris nemoralis"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q10413188 .
 
-substance:1466 :hasChebiIdentity CHEBI:39678 .
+substance:1466 schema:name "Mesosulfuron-methyl"@de ;
+    :hasChebiIdentity CHEBI:39678 .
 
-substance:1467 :hasChebiIdentity CHEBI:81732 .
+substance:1467 schema:name "Benthiavalicarb-isopropyl"@de ;
+    :hasChebiIdentity CHEBI:81732 .
 
-substance:1468 :hasChebiIdentity CHEBI:81822 .
+substance:1468 schema:name "Boscalid"@de ;
+    :hasChebiIdentity CHEBI:81822 .
 
-substance:1469 :hasChebiIdentity CHEBI:81841 .
+substance:1469 schema:name "Cyazofamid"@de ;
+    :hasChebiIdentity CHEBI:81841 .
 
-substance:1472 :isDefinedByBiologicalTaxon wikidata:Q5442662 .
+substance:1472 schema:name "Feltiella acarisuga"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q5442662 .
 
-substance:1475 :hasChebiIdentity CHEBI:83523 .
+substance:1475 schema:name "Pethoxamid"@de ;
+    :hasChebiIdentity CHEBI:83523 .
 
-substance:1476 :hasChebiIdentity CHEBI:82036 .
+substance:1476 schema:name "Prothioconazole"@de ;
+    :hasChebiIdentity CHEBI:82036 .
 
-substance:1479 :isDefinedByBiologicalTaxon wikidata:Q18349335 .
+substance:1479 schema:name "Heterorhabditis megidis"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q18349335 .
 
-substance:1480 :hasChebiIdentity CHEBI:179803 .
+substance:1480 schema:name "Z9-14Ac"@de ;
+    :hasChebiIdentity CHEBI:179803 .
 
-substance:1481 :hasChebiIdentity CHEBI:81792 .
+substance:1481 schema:name "Flutolanil"@de ;
+    :hasChebiIdentity CHEBI:81792 .
 
-substance:1482 :hasChebiIdentity CHEBI:83253 .
+substance:1482 schema:name "Fluoxastrobin"@de ;
+    :hasChebiIdentity CHEBI:83253 .
 
-substance:1486 :isDefinedByBiologicalTaxon wikidata:Q5835605 .
+substance:1486 schema:name "Eretmocerus eremicus (syn. californicus)"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q5835605 .
 
-substance:1487 :hasChebiIdentity CHEBI:180344 .
+substance:1487 schema:name "E3Z13-18Ac "@de ;
+    :hasChebiIdentity CHEBI:180344 .
 
-substance:1492 :hasChebiIdentity CHEBI:180343 .
+substance:1492 schema:name "E2Z13-18Ac"@de ;
+    :hasChebiIdentity CHEBI:180343 .
 
-substance:1494 :hasChebiIdentity CHEBI:38592 .
+substance:1494 schema:name "Acequinocyl"@de ;
+    :hasChebiIdentity CHEBI:38592 .
 
-substance:1500 :hasChebiIdentity CHEBI:83555 .
+substance:1500 schema:name "Proquinazid"@de ;
+    :hasChebiIdentity CHEBI:83555 .
 
-substance:1501 :hasChebiIdentity CHEBI:132592 .
+substance:1501 schema:name "1-methylcyclopropene / 1-MCP"@de ;
+    :hasChebiIdentity CHEBI:132592 .
 
-substance:1507 :hasChebiIdentity CHEBI:81797 .
+substance:1507 schema:name "Cyflufenamid"@de ;
+    :hasChebiIdentity CHEBI:81797 .
 
-substance:1508 :hasChebiIdentity CHEBI:83500 .
+substance:1508 schema:name "Tritosulfuron"@de ;
+    :hasChebiIdentity CHEBI:83500 .
 
-substance:1509 :hasChebiIdentity CHEBI:83345 .
+substance:1509 schema:name "Metrafenone"@de ;
+    :hasChebiIdentity CHEBI:83345 .
 
-substance:1510 :hasChebiIdentity CHEBI:29019 .
+substance:1510 schema:name "Pelargonsäure"@de ;
+    :hasChebiIdentity CHEBI:29019 .
 
-substance:1517 :hasChebiIdentity CHEBI:180347 .
+substance:1517 schema:name "Z3Z13-18Ac"@de ;
+    :hasChebiIdentity CHEBI:180347 .
 
-substance:152 :hasChebiIdentity CHEBI:74889 .
+substance:152 schema:name "Dodine"@de ;
+    :hasChebiIdentity CHEBI:74889 .
 
-substance:1522 :isDefinedByBiologicalTaxon wikidata:Q135525879 .
+substance:1522 schema:name "Trichogramma cacoeciae"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q135525879 .
 
-substance:1526 :isDefinedByBiologicalTaxon wikidata:Q10330509 .
+substance:1526 schema:name "Amblyseius andersoni"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q10330509 .
 
-substance:1527 :partialChebiIdentity CHEBI:39228,
+substance:1527 schema:name "Milbemectin"@de ;
+    :partialChebiIdentity CHEBI:39228,
         CHEBI:39229 .
 
-substance:1528 :hasChebiIdentity CHEBI:81764 .
+substance:1528 schema:name "Fluopicolide"@de ;
+    :hasChebiIdentity CHEBI:81764 .
 
-substance:1529 :hasChebiIdentity CHEBI:83524 .
+substance:1529 schema:name "Pinoxaden"@de ;
+    :hasChebiIdentity CHEBI:83524 .
 
-substance:1531 :hasChebiIdentity CHEBI:140503 .
+substance:1531 schema:name "Kaolin"@de ;
+    :hasChebiIdentity CHEBI:140503 .
 
-substance:1532 :hasChebiIdentity CHEBI:81862 .
+substance:1532 schema:name "Kaliumhydrogencarbonat"@de ;
+    :hasChebiIdentity CHEBI:81862 .
 
-substance:1533 :hasChebiIdentity CHEBI:6364 .
+substance:1533 schema:name "Laminarin"@de ;
+    :hasChebiIdentity CHEBI:6364 .
 
-substance:1535 :isDefinedByBiologicalTaxon wikidata:Q50365760 .
+substance:1535 schema:name "Amblyseius degenerans"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q50365760 .
 
-substance:1541 :hasChebiIdentity CHEBI:82779 .
+substance:1541 schema:name "Benalaxyl-M"@de ;
+    :hasChebiIdentity CHEBI:82779 .
 
-substance:1542 :hasChebiIdentity CHEBI:29022 .
+substance:1542 schema:name "6-benzyladenine"@de ;
+    :hasChebiIdentity CHEBI:29022 .
 
-substance:1543 :hasChebiIdentity CHEBI:39291 .
+substance:1543 schema:name "Flonicamid"@de ;
+    :hasChebiIdentity CHEBI:39291 .
 
-substance:1546 :hasChebiIdentity CHEBI:132273 .
+substance:1546 schema:name "Tembotrione"@de ;
+    :hasChebiIdentity CHEBI:132273 .
 
-substance:1547 :isDefinedByBiologicalTaxon wikidata:Q147300 .
+substance:1547 schema:name "Aureobasidium pullulans"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q147300 .
 
-substance:1548 :isDefinedByBiologicalTaxon wikidata:Q7840786 .
+substance:1548 schema:name "Trichogramma evanescens"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q7840786 .
 
-substance:1549 :isDefinedByBiologicalTaxon wikidata:Q2214586 .
+substance:1549 schema:name "Habrobracon hebetor"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q2214586 .
 
-substance:1550 :isDefinedByBiologicalTaxon wikidata:Q1800300 .
+substance:1550 schema:name "Lariophagus distinguendus"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q1800300 .
 
-substance:1552 :hasChebiIdentity CHEBI:81772 .
+substance:1552 schema:name "Mepiquatchlorid"@de ;
+    :hasChebiIdentity CHEBI:81772 .
 
-substance:1554 :hasChebiIdentity CHEBI:81802 .
+substance:1554 schema:name "Mandipropamid"@de ;
+    :hasChebiIdentity CHEBI:81802 .
 
-substance:1556 :hasChebiIdentity CHEBI:132270 .
+substance:1556 schema:name "Cyprosulfamid"@de ;
+    :hasChebiIdentity CHEBI:132270 .
 
-substance:1560 :hasChebiIdentity CHEBI:81846 .
+substance:1560 schema:name "Amisulbrom"@de ;
+    :hasChebiIdentity CHEBI:81846 .
 
-substance:1562 :hasChebiIdentity CHEBI:39287 .
+substance:1562 schema:name "Sulfurylfluorid"@de ;
+    :hasChebiIdentity CHEBI:39287 .
 
-substance:1563 :hasChebiIdentity CHEBI:81884 .
+substance:1563 schema:name "Zinkphosphid"@de ;
+    :hasChebiIdentity CHEBI:81884 .
 
-substance:1564 :hasChebiIdentity CHEBI:234004 .
+substance:1564 schema:name "Pyroxsulam"@de ;
+    :hasChebiIdentity CHEBI:234004 .
 
-substance:1565 :isDefinedByBiologicalTaxon wikidata:Q30686888 .
+substance:1565 schema:name "Typhlodromips swirskii"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q30686888 .
 
-substance:1567 :hasChebiIdentity CHEBI:38660 .
+substance:1567 schema:name "Bifenazat"@de ;
+    :hasChebiIdentity CHEBI:38660 .
 
-substance:1568 :hasChebiIdentity CHEBI:81975 .
+substance:1568 schema:name "Spirotetramat"@de ;
+    :hasChebiIdentity CHEBI:81975 .
 
-substance:1569 :isDefinedByBiologicalTaxon wikidata:Q13374365 .
+substance:1569 schema:name "Anisopteromalus calandrae"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q13374365 .
 
-substance:1570 :hasChebiIdentity CHEBI:62962 .
+substance:1570 schema:name "Aminopyralid"@de ;
+    :hasChebiIdentity CHEBI:62962 .
 
-substance:1572 :hasChebiIdentity CHEBI:10057 .
+substance:1572 schema:name "Xanthan"@de ;
+    :hasChebiIdentity CHEBI:10057 .
 
-substance:1574 :hasChebiIdentity CHEBI:39233 .
+substance:1574 schema:name "Emamectinbenzoat"@de ;
+    :hasChebiIdentity CHEBI:39233 .
 
-substance:1575 :hasChebiIdentity CHEBI:67113 .
+substance:1575 schema:name "Chlorantraniliprol"@de ;
+    :hasChebiIdentity CHEBI:67113 .
 
-substance:1579 :hasChebiIdentity CHEBI:83610 .
+substance:1579 schema:name "Valifenalate"@de ;
+    :hasChebiIdentity CHEBI:83610 .
 
-substance:1581 :hasChebiIdentity CHEBI:83106 .
+substance:1581 schema:name "Bixafen"@de ;
+    :hasChebiIdentity CHEBI:83106 .
 
-substance:1583 :hasChebiIdentity CHEBI:83070 .
+substance:1583 schema:name "Fluopyram"@de ;
+    :hasChebiIdentity CHEBI:83070 .
 
-substance:1584 :isDefinedByBiologicalTaxon wikidata:Q131143 .
+substance:1584 schema:name "Pseudomonas sp. Stamm DSMZ 13134"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q131143 .
 
-substance:1585 :isDefinedByBiologicalTaxon wikidata:Q18966728 .
+substance:1585 schema:name "Baumwollkapselwurm-Nukleopolyedervirus (Helicoverpa armigera-NPV, HearNPV)"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q18966728 .
 
-substance:1588 :hasChebiIdentity CHEBI:82041 .
+substance:1588 schema:name "Spinetoram"@de ;
+    :hasChebiIdentity CHEBI:82041 .
 
-substance:1589 :hasChebiIdentity CHEBI:81777 .
+substance:1589 schema:name "Penthiopyrad"@de ;
+    :hasChebiIdentity CHEBI:81777 .
 
-substance:1593 :hasChebiIdentity CHEBI:81776 .
+substance:1593 schema:name "Penoxsulam"@de ;
+    :hasChebiIdentity CHEBI:81776 .
 
-substance:1598 :isDefinedByBiologicalTaxon wikidata:Q55724157 .
+substance:1598 schema:name "Purpureocillium lilacinum"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q55724157 .
 
-substance:162 :hasChebiIdentity CHEBI:52741 .
+substance:162 schema:name "Ethephon"@de ;
+    :hasChebiIdentity CHEBI:52741 .
 
-substance:165 :hasChebiIdentity CHEBI:81990 .
+substance:165 schema:name "Ethofumesate"@de ;
+    :hasChebiIdentity CHEBI:81990 .
 
-substance:1656 :isDefinedByBiologicalTaxon wikidata:Q2672335 .
+substance:1656 schema:name "Gliocladium catenulatum"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q2672335 .
 
-substance:1659 :hasChebiIdentity CHEBI:82364 .
+substance:1659 schema:name "Orangenöl"@de ;
+    :hasChebiIdentity CHEBI:82364 .
 
-substance:1660 :hasChebiIdentity CHEBI:25140 .
+substance:1660 schema:name "Maltodextrin"@de ;
+    :hasChebiIdentity CHEBI:25140 .
 
-substance:1661 :hasChebiIdentity CHEBI:83327 .
+substance:1661 schema:name "Fenpyrazamin"@de ;
+    :hasChebiIdentity CHEBI:83327 .
 
-substance:1662 :hasChebiIdentity CHEBI:28903 .
+substance:1662 schema:name "1-Decanol"@de ;
+    :hasChebiIdentity CHEBI:28903 .
 
-substance:1665 :hasChebiIdentity CHEBI:17854 .
+substance:1665 schema:name "Cyclohexanone"@de ;
+    :hasChebiIdentity CHEBI:17854 .
 
-substance:1666 :hasChebiIdentity CHEBI:27338 .
+substance:1666 schema:name "Xylol"@de ;
+    :hasChebiIdentity CHEBI:27338 .
 
-substance:1667 rdfs:label "4-Chlor-o-kresol"@de .
+substance:1667 schema:name "4-Chlor-o-kresol"@de ;
+    :hasChebiIdentity CHEBI:1800 .
 
-substance:1668 rdfs:label "2-Methyl-2H-isothiazol-3-on"@de .
+substance:1668 schema:name "2-Methyl-2H-isothiazol-3-on"@de ;
+    :hasChebiIdentity CHEBI:53620 .
 
-substance:1671 rdfs:label "Solvent Naphtha"@de .
+substance:1672 schema:name "Docusatnatrium"@de ;
+    :hasChebiIdentity CHEBI:4674 .
 
-substance:1672 rdfs:label "Docusatnatrium"@de .
+substance:1673 schema:name "N-Methyl-2-pyrrolidone"@de ;
+    :hasChebiIdentity CHEBI:7307 .
 
-substance:1673 rdfs:label "N-Methyl-2-pyrrolidone"@de .
+substance:1678 schema:name "Ethylenglycol"@de ;
+    :hasChebiIdentity CHEBI:30742 .
 
-substance:1678 rdfs:label "Ethylenglycol"@de .
+substance:1679 schema:name "Propan-2-ol"@de ;
+    :hasChebiIdentity CHEBI:17824 .
 
-substance:1679 rdfs:label "Propan-2-ol"@de .
+substance:1682 schema:name "Isobutanol"@de ;
+    :hasChebiIdentity CHEBI:46645 .
 
-substance:1682 rdfs:label "Isobutanol"@de .
+substance:1683 schema:name "Natriumhydroxid"@de ;
+    :hasChebiIdentity CHEBI:32145 .
 
-substance:1683 rdfs:label "Natriumhydroxid"@de .
+substance:1687 schema:name "Kaliumhydroxid"@de ;
+    :hasChebiIdentity CHEBI:32035 .
 
-substance:1687 rdfs:label "Kaliumhydroxid"@de .
+substance:1689 schema:name "1,2-Benzisothiazol-3(2H)-on"@de ;
+    :hasChebiIdentity CHEBI:167099 .
 
-substance:1689 rdfs:label "1,2-Benzisothiazol-3(2H)-on"@de .
+substance:1693 schema:name "Ethanol"@de ;
+    :hasChebiIdentity CHEBI:16236 .
 
-substance:1693 rdfs:label "Ethanol"@de .
+substance:1698 schema:name "Pentanol, verzweigt und linear"@de ;
+    :partialChebiIdentity CHEBI:44884,
+        CHEBI:77518,
+        CHEBI:77519 .
 
-substance:1695 rdfs:label "Destillate (Erdöl)"@de .
+substance:1699 schema:name "Naphtalin"@de ;
+    :hasChebiIdentity CHEBI:16482 .
 
-substance:1698 rdfs:label "Pentanol, verzweigt und linear"@de .
+substance:1703 schema:name "Tetranatriumpyrophosphat"@de ;
+    :hasChebiIdentity CHEBI:71240 .
 
-substance:1699 rdfs:label "Naphtalin"@de .
+substance:1711 schema:name "Decanamide, N, N- dimethyl "@de ;
+    :hasChebiIdentity CHEBI:228336 .
 
-substance:1703 rdfs:label "Tetranatriumpyrophosphat"@de .
+substance:1716 schema:name "Benzylalkohol"@de ;
+    :hasChebiIdentity CHEBI:17987 .
 
-substance:1704 rdfs:label "poly(oxy-1,2-ethanediyl),alphaisotridecyl-omegahydroxy"@de .
+substance:1719 schema:name "1-Octyl-2-pyrrolidon"@de ;
+    :hasChebiIdentity CHEBI:183762 .
 
-substance:1710 rdfs:label "Natriumdiisopropylnaphtalinsulfonat"@de .
+substance:1727 schema:name "Gamma Butyrolacton"@de ;
+    :hasChebiIdentity CHEBI:42639 .
 
-substance:1711 :hasChebiIdentity CHEBI:228336 .
+substance:1730 schema:name "Natriumnitrat"@de ;
+    :hasChebiIdentity CHEBI:63005 .
 
-substance:1714 rdfs:label "Benzolsulfonsäure, Mono-C11-13-verzweigte Alkylderivate, Calciumsalze"@de .
+substance:1731 schema:name "Calciumchlorid"@de ;
+    :hasChebiIdentity CHEBI:3312 .
 
-substance:1716 rdfs:label "Benzylalkohol"@de .
+substance:1739 schema:name "Fluxapyroxad"@de ;
+    :hasChebiIdentity CHEBI:83113 .
 
-substance:1719 rdfs:label "1-Octyl-2-pyrrolidon"@de .
+substance:1740 schema:name "Kaliumaluminiumsulfat "@de ;
+    :hasChebiIdentity CHEBI:86463 .
 
-substance:1722 rdfs:label "Natrium-di-butyl-naphtalinsulfonat"@de .
+substance:1744 schema:name "Ephedrus cerasicola"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q1322976 .
 
-substance:1727 rdfs:label "Gamma Butyrolacton"@de .
+substance:1746 schema:name "Praon volucre"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q14163346 .
 
-substance:1730 rdfs:label "Natriumnitrat"@de .
+substance:1748 schema:name "Bacillus amyloliquefaciens ssp. plantarum"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q4354408 .
 
-substance:1731 rdfs:label "Calciumchlorid"@de .
+substance:1753 schema:name "Chlormequat"@de ;
+    :hasChebiIdentity CHEBI:81850 .
 
-substance:1733 rdfs:label "Polyglykolether"@de .
+substance:1755 schema:name "Ethylen"@de ;
+    :hasChebiIdentity CHEBI:18153 .
 
-substance:1739 rdfs:label "Fluxapyroxad"@de .
+substance:1756 schema:name "Calciumcarbonat"@de ;
+    :hasChebiIdentity CHEBI:3311 .
 
-substance:1740 rdfs:label "Kaliumaluminiumsulfat "@de .
+substance:1766 schema:name "Diphenylmethandiisocyanate"@de ;
+    :hasChebiIdentity CHEBI:53218 .
 
-substance:1744 rdfs:label "Ephedrus cerasicola"@de .
+substance:1769 schema:name "Natriumdodecylsulfat"@de ;
+    :hasChebiIdentity CHEBI:8984 .
 
-substance:1746 rdfs:label "Praon volucre"@de .
+substance:1771 schema:name "5-Chloro-2-methyl-3(2H)-isothiazolone mixt. with 2-methyl-3(2H)-isothiazolone"@de ;
+    :partialChebiIdentity CHEBI:53620,
+        CHEBI:53621 .
 
-substance:1747 rdfs:label "C14-C16-Alkanehydroxysulfonic acids sodium salts"@de .
+substance:1790 chebi:formula "C11H22O3" ;
+    chebi:smiles "CCCCC(CC)COC(=O)C(C)O" ;
+    schema:name "2-Ethylhexyllaktat"@de .
 
-substance:1748 rdfs:label "Bacillus amyloliquefaciens ssp. plantarum"@de .
+substance:1791 chebi:formula "C6H12O3" ;
+    chebi:smiles "CCCOC(=O)C(C)O" ;
+    schema:name "Propyllaktat"@de .
 
-substance:1753 rdfs:label "Chlormequat"@de .
+substance:1793 schema:name "Halauxifen-methyl"@de ;
+    :hasChebiIdentity CHEBI:143513 .
 
-substance:1755 rdfs:label "Ethylen"@de .
+substance:1795 schema:name "Benzovindiflupyr"@de ;
+    :hasChebiIdentity CHEBI:83102 .
 
-substance:1756 rdfs:label "Calciumcarbonat"@de .
+substance:1800 schema:name "Ametoctradin"@de ;
+    :hasChebiIdentity CHEBI:83398 .
 
-substance:1760 rdfs:label "COS-OGA"@de .
+substance:1814 schema:name "Ammonium nitrate"@de ;
+    :hasChebiIdentity CHEBI:63038 .
 
-substance:1762 rdfs:label "Z11-14OH"@de .
+substance:1815 schema:name "Pepinomosaikvirus, Stamm CH2, Isolat 1906"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q13217466 .
 
-substance:1766 rdfs:label "Diphenylmethandiisocyanate"@de .
+substance:1833 schema:name "2,6-Di-tert-butyl-p-kresol"@de ;
+    :hasChebiIdentity CHEBI:34247 .
 
-substance:1769 :hasChebiIdentity CHEBI:8984 .
+substance:1838 schema:name "1-Butanol"@de ;
+    :hasChebiIdentity CHEBI:28885 .
 
-substance:1771 rdfs:label "5-Chloro-2-methyl-3(2H)-isothiazolone mixt. with 2-methyl-3(2H)-isothiazolone"@de .
+substance:1841 schema:name "2,2',2''-(hexahydro-1,3,5-triazine-1,3,5-triyl)triethanol / 1,3,5-tris(2-hydroxyethyl)hexahydro-1,3,5-triazine"@de .
 
-substance:1776 rdfs:label "Sodium Lauryl Ether Sulfate"@de .
+substance:1844 schema:name "Polyethylene-polypropylene glycol"@de ;
+    :partialChebiIdentity CHEBI:46793,
+        CHEBI:53262 .
 
-substance:1782 rdfs:label "Hydrocarbons, C10, aromatics, <1% naphthalene"@de .
+substance:1845 schema:name "Dinatriumphosphonat"@de ;
+    :hasChebiIdentity CHEBI:34683 .
 
-substance:1788 rdfs:label "Alkane C9-C12-Iso"@de .
+substance:1846 schema:name "2-hydroxy-4-n-octyloxybenzophenone"@de ;
+    :hasChebiIdentity CHEBI:135390 .
 
-substance:1789 rdfs:label "Grüne-Minze-Öl"@de .
+substance:1850 schema:name "Dipenten; Limonen"@de ;
+    :partialChebiIdentity CHEBI:15384 .
 
-substance:1790 rdfs:label "2-Ethylhexyllaktat"@de .
+substance:1851 schema:name "Estragol"@de ;
+    :hasChebiIdentity CHEBI:4867 .
 
-substance:1791 rdfs:label "Propyllaktat"@de .
+substance:1853 schema:name "Pin-2(3)-en"@de ;
+    :hasChebiIdentity CHEBI:17187 .
 
-substance:1793 rdfs:label "Halauxifen-methyl"@de .
+substance:1855 schema:name "Disodium maleate"@de ;
+    :hasChebiIdentity CHEBI:91263 .
 
-substance:1795 rdfs:label "Benzovindiflupyr"@de .
+substance:1860 schema:name "Propan-1-ol"@de ;
+    :hasChebiIdentity CHEBI:28831 .
 
-substance:1798 rdfs:label "Calcium Dodecylbenzene Sulfonate"@de .
+substance:1861 schema:name "Dodecylbenzolsulfonsäure, Verbindung mit 2-Aminoethanol (1:1)"@de ;
+    :partialChebiIdentity CHEBI:149774,
+        CHEBI:16000 .
 
-substance:1800 rdfs:label "Ametoctradin"@de .
+substance:1869 schema:name "Benzolsulfonsäure"@de ;
+    :hasChebiIdentity CHEBI:64455 .
 
-substance:1801 rdfs:label "Benzolsulfonsäure, 4-C10-13-sec-Alkylderivate"@de .
+substance:1870 schema:name "Poly(ethylene glycol)(18)tridecyl ether"@de ;
+    :partialChebiIdentity CHEBI:34123,
+        CHEBI:46793 .
 
-substance:1806 rdfs:label "Anionische Tenside"@de .
+substance:1877 schema:name "1,4-Dimethylnaphthalin"@de ;
+    :hasChebiIdentity CHEBI:48609 .
 
-substance:1807 rdfs:label "Nichtionische Tenside"@de .
+substance:1878 schema:name "Pyriofenon"@de ;
+    :hasChebiIdentity CHEBI:83346 .
 
-substance:1814 rdfs:label "Ammonium nitrate"@de .
+substance:1879 schema:name "1,2-benzisothiazol-3(2H)-one; 1,2-benzisothiazolin-1 3-one"@de ;
+    :hasChebiIdentity CHEBI:167099 .
 
-substance:1815 rdfs:label "Pepinomosaikvirus, Stamm CH2, Isolat 1906"@de .
+substance:1884 schema:name "2-methylpentane-2,4-diol"@de ;
+    :hasChebiIdentity CHEBI:62995 .
 
-substance:1819 rdfs:label "Polyethylene glycerol esters of fatty acids"@de .
+substance:1887 schema:name "Saccharomyces cerevisiae"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q719725 .
 
-substance:1820 rdfs:label "Sulfonated aromatic polymer, sodiumsalt"@de .
+substance:1892 chebi:formula "C8H14O2" ;
+    chebi:smiles "CC(C)COC(=O)C(=C)C" ;
+    schema:name "isobutyl methacrylate"@de .
 
-substance:1830 rdfs:label "Phenolsulfonic acid - phenol - formaldehyde - urea condensate, sodium salt "@de .
+substance:1895 schema:name "Dodecylbenzolsulfonat, verzweigt, Kalziumsalz"@de ;
+    :partialChebiIdentity CHEBI:149774 .
 
-substance:1831 rdfs:label "Alcohols, C12-15, ethoxylated "@de .
+substance:1896 schema:name "Dimethylamin"@de ;
+    :hasChebiIdentity CHEBI:17170 .
 
-substance:1832 rdfs:label "Alcohols, C9-11, ethoxylated"@de .
+substance:1898 schema:name "Tetrahydrofurfuryl-Alkohol"@de ;
+    :hasChebiIdentity CHEBI:137944 .
 
-substance:1833 rdfs:label "2,6-Di-tert-butyl-p-kresol"@de .
+substance:190 schema:name "Folpet"@de ;
+    :hasChebiIdentity CHEBI:82019 .
 
-substance:1837 rdfs:label "Alcohols, C9-11-iso-, C10-rich, ethoxylated"@de .
+substance:1900 schema:name "Oleylamin ethoxyliert, Dodecylbenzensulfonsalz"@de .
 
-substance:1838 rdfs:label "1-Butanol"@de .
+substance:1902 schema:name "Benzolsulfonsäure, C10-13-Alkylderivate, Calciumsalze"@de .
 
-substance:1840 rdfs:label "alcohols, (c12-14), ethoxylated, monoethers with sulfuric acid, sodium salts"@de .
+substance:1903 schema:name "L-Carvon"@de .
 
-substance:1841 rdfs:label "2,2',2''-(hexahydro-1,3,5-triazine-1,3,5-triyl)triethanol / 1,3,5-tris(2-hydroxyethyl)hexahydro-1,3,5-triazine"@de .
+substance:1904 schema:name "Triisobutylphosphat"@de .
 
-substance:1844 rdfs:label "Polyethylene-polypropylene glycol"@de .
+substance:1905 schema:name "Benzenesulfonic acid, 4-c10-14-alkyl derivatives, calcium salts"@de .
 
-substance:1845 rdfs:label "Dinatriumphosphonat"@de .
+substance:1906 schema:name "Ammoniumcarbamat"@de .
 
-substance:1846 rdfs:label "2-hydroxy-4-n-octyloxybenzophenone"@de .
+substance:1909 schema:name "Benzolsulfonsäure"@de .
 
-substance:1850 rdfs:label "Dipenten; Limonen"@de .
+substance:1910 schema:name "1,2-benzisothiazol-3(2H)-one; 1,2-benzisothiazolin-3-one"@de .
 
-substance:1851 rdfs:label "Estragol"@de .
+substance:1911 schema:name "Terpineol"@de .
 
-substance:1853 rdfs:label "Pin-2(3)-en"@de .
+substance:1912 schema:name "Solvent naphtha (petroleum), heavy arom.; Kerosine - unspecified"@de .
 
-substance:1855 rdfs:label "Disodium maleate"@de .
+substance:1917 schema:name "Hydrocarbons, C9, aromatics"@de .
 
-substance:1860 rdfs:label "Propan-1-ol"@de .
+substance:1919 schema:name "Kohlenwasserstoffe, C10, Aromaten"@de .
 
-substance:1861 rdfs:label "Dodecylbenzolsulfonsäure, Verbindung mit 2-Aminoethanol (1:1)"@de .
+substance:1922 schema:name "Kupfer (als Tribasisches Kupfersulfat)"@de .
 
-substance:1863 rdfs:label "Fettalkoholpolyglykolether"@de .
+substance:1927 schema:name "Fettsäuren C7-C20 (Kaliumsalze)"@de .
 
-substance:1864 rdfs:label "Ethoxyliertes Rizinusöl"@de .
+substance:1928 schema:name "Ethoxyliertes Sojabohnenöl"@de .
 
-substance:1869 rdfs:label "Benzolsulfonsäure"@de .
+substance:1930 schema:name "(Z)-9-Octadecen-1-ol ethoxylated"@de .
 
-substance:1870 rdfs:label "Poly(ethylene glycol)(18)tridecyl ether"@de .
+substance:1933 schema:name "Mefentrifluconazole"@de .
 
-substance:1871 rdfs:label "Naphtha (Erdoel), schwere Alkylat- [Enthält weniger als 0.1 % Benzol]"@de .
+substance:1936 schema:name "Fischöl"@de .
 
-substance:1875 rdfs:label "Fettsäuren C7-C18"@de .
+substance:1937 schema:name "Methenamin; Hexamethylenetetramin"@de .
 
-substance:1876 rdfs:label "Naphthalenesulfonic acid, methyl-, polymer with formaldehyde, sodium salt"@de .
+substance:1938 schema:name "polyoxyethylene trimethyldecyl alcohol"@de .
 
-substance:1877 rdfs:label "1,4-Dimethylnaphthalin"@de .
+substance:1939 schema:name "Bacillus amyloliquefaciens"@de .
 
-substance:1878 rdfs:label "Pyriofenon"@de .
+substance:1942 schema:name "Reaktionsgemisch, bestehend aus 5-Chlor-2-methyl-2H-isothiazol-3-on und 2-Methyl-2H-isothiazol-3-on (3:1)"@de .
 
-substance:1879 rdfs:label "1,2-benzisothiazol-3(2H)-one; 1,2-benzisothiazolin-1 3-one"@de .
+substance:1951 schema:name "2-Ethylhexyl-S-Lactat"@de .
 
-substance:1883 rdfs:label "dodecanol, ethoxylated, monoether with sulfuric acid, ammonium salt"@de .
+substance:1954 schema:name "Encarsia citrina"@de .
 
-substance:1884 rdfs:label "2-methylpentane-2,4-diol"@de .
+substance:1956 schema:name "Rodolia cardinalis"@de .
 
-substance:1887 rdfs:label "Saccharomyces cerevisiae"@de .
+substance:1957 schema:name "Gibberellin "@de .
 
-substance:1890 rdfs:label "Hydrocarbons, C10-C13, aromatics, <1% naphthalene"@de .
+substance:196 schema:name "Fosetyl"@de .
 
-substance:1891 rdfs:label "alcohols, c11-15-secondary, ethoxylated"@de .
+substance:1961 schema:name "Calciumformiat"@de .
 
-substance:1892 rdfs:label "isobutyl methacrylate"@de .
+substance:1964 schema:name "Hydroxypropylstärke"@de .
 
-substance:1894 rdfs:label "Weisses Mineralöl (Petroleum)"@de .
+substance:1974 schema:name "Coccophagus scutellaris"@de .
 
-substance:1895 rdfs:label "Dodecylbenzolsulfonat, verzweigt, Kalziumsalz"@de .
+substance:1977 schema:name "Anagyrus vladimiri (vormals bekannt als Anagyrus pseudococci)"@de .
 
-substance:1896 rdfs:label "Dimethylamin"@de .
+substance:1978 schema:name "Trichopria drosophilae"@de .
 
-substance:1897 rdfs:label "Dodecan-1-ol, ethoxyliert "@de .
+substance:1979 schema:name "Cephalonomia tarsalis"@de .
 
-substance:1898 rdfs:label "Tetrahydrofurfuryl-Alkohol"@de .
+substance:199 schema:name "Glyphosat"@de ;
+    :hasChebiIdentity CHEBI:27744 .
 
-substance:1899 rdfs:label "Gemisch aus: 2-Ethylhexyl-mono-D-glucopyranosid und 2-Ethylhexyl-di-D-glucopyranosid"@de .
+substance:1990 schema:name "Eupeodes corollae"@de .
 
-substance:190 :hasChebiIdentity CHEBI:82019 .
+substance:1993 schema:name "Heterorhabditis downesi"@de .
 
-substance:1900 rdfs:label "Oleylamin ethoxyliert, Dodecylbenzensulfonsalz"@de .
+substance:1995 schema:name "Ammoniak, wässrige Lösung"@de .
 
-substance:1902 rdfs:label "Benzolsulfonsäure, C10-13-Alkylderivate, Calciumsalze"@de .
+substance:1999 schema:name "Anastatus bifasciatus"@de .
 
-substance:1903 rdfs:label "L-Carvon"@de .
+substance:2000 schema:name "Transeius montdorensis"@de .
 
-substance:1904 rdfs:label "Triisobutylphosphat"@de .
+substance:2001 schema:name "Sphaerophoria rueppellii"@de .
 
-substance:1905 rdfs:label "Benzenesulfonic acid, 4-c10-14-alkyl derivatives, calcium salts"@de .
+substance:2012 schema:name "Gibberellinsäure"@de .
 
-substance:1906 rdfs:label "Ammoniumcarbamat"@de .
+substance:2014 schema:name "1-Heptanol, 2-propyl-, 7EO"@de .
 
-substance:1909 rdfs:label "Benzolsulfonsäure"@de .
+substance:2015 schema:name "Alcohols, C12-15, branched and linear, ethoxylated"@de .
 
-substance:1910 rdfs:label "1,2-benzisothiazol-3(2H)-one; 1,2-benzisothiazolin-3-one"@de .
+substance:2016 schema:name "Exochomus quadripustulatus"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q15736396 .
 
-substance:1911 rdfs:label "Terpineol"@de .
+substance:2019 schema:name "Trissolcus basalis"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q14079847 .
 
-substance:1912 rdfs:label "Solvent naphtha (petroleum), heavy arom.; Kerosine - unspecified"@de .
+substance:2024 schema:name "Pronematus ubiquitus"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q22109458 .
 
-substance:1917 rdfs:label "Hydrocarbons, C9, aromatics"@de .
+substance:2027 schema:name "Mischung aus SiO2 und Al2O3"@de ;
+    :partialChebiIdentity CHEBI:30187,
+        CHEBI:30563 .
 
-substance:1919 rdfs:label "Kohlenwasserstoffe, C10, Aromaten"@de .
+substance:2032 chebi:formula "C9H17NO3" ;
+    chebi:smiles "CC(CCC(=O)N(C)C)C(=O)OC" ;
+    schema:name "pentanoic acid, 5-(dimethylamino)-2-methyl-5-oxo-, methyl ester "@de .
 
-substance:1922 rdfs:label "Kupfer (als Tribasisches Kupfersulfat)"@de .
+substance:2034 schema:name "Trinatriumphosphat als Dodecahydrat"@de ;
+    :hasChebiIdentity CHEBI:37583 .
 
-substance:1927 rdfs:label "Fettsäuren C7-C20 (Kaliumsalze)"@de .
+substance:2037 chebi:formula "C10H18O2" ;
+    chebi:smiles "CCC(C)(C#CC(C)(CC)O)O" ;
+    schema:name "3,6-Dimethyl-4-octin-3,6-diol"@de .
 
-substance:1928 rdfs:label "Ethoxyliertes Sojabohnenöl"@de .
+substance:2042 schema:name "Kieselgur (Diatomeenerde)"@de ;
+    :hasChebiIdentity CHEBI:82661 .
 
-substance:1930 rdfs:label "(Z)-9-Octadecen-1-ol ethoxylated"@de .
+substance:205 schema:name "Hexythiazox"@de ;
+    :hasChebiIdentity CHEBI:39326 .
 
-substance:1933 rdfs:label "Mefentrifluconazole"@de .
+substance:2056 chebi:formula "C10H21NO" ;
+    chebi:smiles "CCCCCCCC(=O)N(C)C" ;
+    schema:name "N,N-Dimethyloctanamide"@de .
 
-substance:1936 rdfs:label "Fischöl"@de .
+substance:2058 schema:name "Kolophonium"@de ;
+    :partialChebiIdentity CHEBI:28987,
+        CHEBI:29571 .
 
-substance:1937 rdfs:label "Methenamin; Hexamethylenetetramin"@de .
+substance:2059 schema:name "Quarz"@de ;
+    :hasChebiIdentity CHEBI:46727 .
 
-substance:1938 rdfs:label "polyoxyethylene trimethyldecyl alcohol"@de .
+substance:2070 schema:name "Anethol (1-methoxyl-(1-Propenyl) benzen)"@de ;
+    :hasChebiIdentity CHEBI:35616 .
 
-substance:1939 rdfs:label "Bacillus amyloliquefaciens"@de .
+substance:2071 schema:name "linalyl alcohol"@de ;
+    :hasChebiIdentity CHEBI:17580 .
 
-substance:1942 rdfs:label "Reaktionsgemisch, bestehend aus 5-Chlor-2-methyl-2H-isothiazol-3-on und 2-Methyl-2H-isothiazol-3-on (3:1)"@de .
+substance:2076 schema:name "2-methylaminoethanol"@de ;
+    :hasChebiIdentity CHEBI:21763 .
 
-substance:1951 rdfs:label "2-Ethylhexyl-S-Lactat"@de .
+substance:26 schema:name "Amidosulfuron"@de ;
+    :hasChebiIdentity CHEBI:2635 .
 
-substance:1954 rdfs:label "Encarsia citrina"@de .
+substance:269 schema:name "Nicosulfuron"@de ;
+    :hasChebiIdentity CHEBI:7554 .
 
-substance:1956 rdfs:label "Rodolia cardinalis"@de .
+substance:284 schema:name "Paclobutrazol"@de ;
+    :hasChebiIdentity CHEBI:73162 .
 
-substance:1957 rdfs:label "Gibberellin "@de .
+substance:286 schema:name "Penconazole"@de ;
+    :hasChebiIdentity CHEBI:81970 .
 
-substance:196 rdfs:label "Fosetyl"@de .
+substance:287 schema:name "Pendimethalin"@de ;
+    :hasChebiIdentity CHEBI:83569 .
 
-substance:1961 rdfs:label "Calciumformiat"@de .
+substance:291 schema:name "Phenmedipham"@de ;
+    :hasChebiIdentity CHEBI:81734 .
 
-substance:1964 rdfs:label "Hydroxypropylstärke"@de .
+substance:299 schema:name "Picloram"@de ;
+    :hasChebiIdentity CHEBI:34922 .
 
-substance:1974 rdfs:label "Coccophagus scutellaris"@de .
+substance:3 schema:name "1-Naphthylacetic acid"@de ;
+    :hasChebiIdentity CHEBI:32918 .
 
-substance:1977 rdfs:label "Anagyrus vladimiri (vormals bekannt als Anagyrus pseudococci)"@de .
+substance:301 schema:name "Pirimicarb"@de ;
+    :hasChebiIdentity CHEBI:8248 .
 
-substance:1978 rdfs:label "Trichopria drosophilae"@de .
+substance:311 schema:name "Propamocarb"@de ;
+    :hasChebiIdentity CHEBI:82033 .
 
-substance:1979 rdfs:label "Cephalonomia tarsalis"@de .
+substance:312 schema:name "Propaquizafop"@de ;
+    :hasChebiIdentity CHEBI:82034 .
 
-substance:199 :hasChebiIdentity CHEBI:27744 .
+substance:323 schema:name "Pyrethrine"@de ;
+    :hasChebiIdentity CHEBI:39098 .
 
-substance:1990 rdfs:label "Eupeodes corollae"@de .
+substance:338 schema:name "Schwefel"@de ;
+    :hasChebiIdentity CHEBI:33403 .
 
-substance:1993 rdfs:label "Heterorhabditis downesi"@de .
+substance:344 schema:name "Tefluthrin"@de ;
+    :hasChebiIdentity CHEBI:9430 .
 
-substance:1995 rdfs:label "Ammoniak, wässrige Lösung"@de .
+substance:35 schema:name "Asulam"@de ;
+    :hasChebiIdentity CHEBI:81696 .
 
-substance:1999 rdfs:label "Anastatus bifasciatus"@de .
+substance:4 schema:name "2,4-D"@de ;
+    :hasChebiIdentity CHEBI:28854 .
 
-substance:2000 rdfs:label "Transeius montdorensis"@de .
+substance:451 schema:name "Dazomet (DMTT)"@de ;
+    :hasChebiIdentity CHEBI:75212 .
 
-substance:2001 rdfs:label "Sphaerophoria rueppellii"@de .
+substance:453 schema:name "Deltamethrin"@de ;
+    :hasChebiIdentity CHEBI:4388 .
 
-substance:2012 rdfs:label "Gibberellinsäure"@de .
+substance:50 schema:name "Bentazon"@de ;
+    :hasChebiIdentity CHEBI:3018 .
 
-substance:2014 rdfs:label "1-Heptanol, 2-propyl-, 7EO"@de .
+substance:564 schema:name "Flazasulfuron"@de ;
+    :hasChebiIdentity CHEBI:81749 .
 
-substance:2015 rdfs:label "Alcohols, C12-15, branched and linear, ethoxylated"@de .
+substance:701 schema:name "Metiram"@de ;
+    :hasChebiIdentity CHEBI:81539 .
 
-substance:2016 rdfs:label "Exochomus quadripustulatus"@de .
+substance:706 schema:name "Metribuzin"@de ;
+    :hasChebiIdentity CHEBI:34846 .
 
-substance:2019 rdfs:label "Trissolcus basalis"@de .
+substance:71 schema:name "Bupirimate"@de ;
+    :hasChebiIdentity CHEBI:81952 .
 
-substance:2023 rdfs:label "Terpen-Oligomere"@de .
+substance:72 schema:name "Buprofezin"@de ;
+    :hasChebiIdentity CHEBI:39381 .
 
-substance:2024 rdfs:label "Pronematus ubiquitus"@de .
+substance:79 schema:name "Captan"@de ;
+    :hasChebiIdentity CHEBI:34608 .
 
-substance:2027 rdfs:label "Mischung aus SiO2 und Al2O3"@de .
+substance:799 schema:name "Tribenuron"@de ;
+    :hasChebiIdentity CHEBI:83571 .
 
-substance:2028 rdfs:label "Alcohols C9-11, ethoxylated propoxylated"@de .
+substance:8 schema:name "Abamectin"@de ;
+    :hasChebiIdentity CHEBI:39214 .
 
-substance:2032 rdfs:label "pentanoic acid, 5-(dimethylamino)-2-methyl-5-oxo-, methyl ester "@de ;
-    chebi:formula "C9H17NO3" ;
-    chebi:smiles "CC(CCC(=O)N(C)C)C(=O)OC" .
+substance:813 schema:name "2-(1-naphthyl) Acetamide"@de ;
+    :hasChebiIdentity CHEBI:81810 .
 
-substance:2034 :hasChebiIdentity CHEBI:37583 .
+substance:832 schema:name "Encarsia formosa"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q614882 .
 
-substance:2037 rdfs:label "3,6-Dimethyl-4-octin-3,6-diol"@de .
+substance:834 schema:name "Cydia pomonella Granulovirus (Apfelwicklergranulose-Virus, CpGV)"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q5199143 .
 
-substance:2040 rdfs:label "lignin, alkali, reaction products with formaldehyde and sodium bisulfite"@de .
+substance:835 schema:name "Amblyseius cucumeris (synonym: Neoseiulus cucumeris)"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q21353045 .
 
-substance:2041 rdfs:label "Ethylenediamine, ethoxylated and propoxylated"@de .
+substance:836 schema:name "Aphelinus abdominalis"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q4779562 .
 
-substance:2042 rdfs:label "Kieselgur (Diatomeenerde)"@de .
+substance:837 schema:name "Aphidius matricariae"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q1977887 .
 
-substance:205 rdfs:label "Hexythiazox"@de .
+substance:838 schema:name "Aphidoletes aphidimyza"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q4779604 .
 
-substance:2056 rdfs:label "N,N-Dimethyloctanamide"@de .
+substance:839 schema:name "Cryptolaemus montrouzieri"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q2401586 .
 
-substance:2058 rdfs:label "Kolophonium"@de .
+substance:840 schema:name "Dacnusa sibirica"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q2073375 .
 
-substance:2059 rdfs:label "Quarz"@de .
+substance:841 schema:name "Diglyphus isaea"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q13572833 .
 
-substance:2070 rdfs:label "Anethol (1-methoxyl-(1-Propenyl) benzen)"@de .
+substance:843 schema:name "Streptomyces griseoviridis"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q22665875 .
 
-substance:2071 rdfs:label "linalyl alcohol"@de .
+substance:845 schema:name "Orius laevigatus"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q6052991 .
 
-substance:2072 rdfs:label "Alcohols, C16-18, ethoxylated"@de .
+substance:846 schema:name "Orius majusculus"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q10611549 .
 
-substance:2074 rdfs:label "Alcohols, C11-14-iso-, C13-rich, ethoxylated (6 EO), methylated"@de .
+substance:847 schema:name "Phytoseiulus persimilis"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q9059274 .
 
-substance:2076 :hasChebiIdentity CHEBI:21763 .
+substance:849 schema:name "Beauveria brongniartii"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q10427561 .
 
-substance:26 :hasChebiIdentity CHEBI:2635 .
+substance:851 schema:name "Schalenwicklergranulose-Virus"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q5199143 .
 
-substance:269 :hasChebiIdentity CHEBI:7554 .
+substance:852 schema:name "Steinernema carpocapsae"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q5267719 .
 
-substance:284 :hasChebiIdentity CHEBI:73162 .
+substance:853 schema:name "Steinernema feltiae"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q5303814 .
 
-substance:286 :hasChebiIdentity CHEBI:81970 .
+substance:854 schema:name "Trichogramma brassicae Bezdenko"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q7840781 .
 
-substance:287 :hasChebiIdentity CHEBI:83569 .
+substance:863 schema:name "Propyzamid"@de ;
+    :hasChebiIdentity CHEBI:34935 .
 
-substance:291 :hasChebiIdentity CHEBI:81734 .
+substance:872 schema:name "Fenoxaprop-P-ethyl"@de ;
+    :hasChebiIdentity CHEBI:5008 .
 
-substance:299 :hasChebiIdentity CHEBI:34922 .
+substance:873 schema:name "Dimethachlor"@de ;
+    :hasChebiIdentity CHEBI:81911 .
 
-substance:3 :hasChebiIdentity CHEBI:32918 .
+substance:875 schema:name "Fluroxypyr"@de ;
+    :hasChebiIdentity CHEBI:82017 .
 
-substance:301 :hasChebiIdentity CHEBI:8248 .
+substance:876 schema:name "Lenacil"@de ;
+    :hasChebiIdentity CHEBI:6407 .
 
-substance:311 :hasChebiIdentity CHEBI:82033 .
+substance:877 schema:name "Mecoprop-P"@de ;
+    :hasChebiIdentity CHEBI:75703 .
 
-substance:312 :hasChebiIdentity CHEBI:82034 .
+substance:879 schema:name "MCPA"@de ;
+    :hasChebiIdentity CHEBI:50099 .
 
-substance:323 :hasChebiIdentity CHEBI:39098 .
+substance:880 schema:name "Metamitron"@de ;
+    :hasChebiIdentity CHEBI:6791 .
 
-substance:338 :hasChebiIdentity CHEBI:33403 .
+substance:881 schema:name "Chlorotoluron"@de ;
+    :hasChebiIdentity CHEBI:81981 .
 
-substance:344 :hasChebiIdentity CHEBI:9430 .
+substance:890 schema:name "Rimsulfuron"@de ;
+    :hasChebiIdentity CHEBI:8866 .
 
-substance:35 :hasChebiIdentity CHEBI:81696 .
+substance:893 schema:name "Tebuconazole"@de ;
+    :hasChebiIdentity CHEBI:81781 .
 
-substance:4 :hasChebiIdentity CHEBI:28854 .
+substance:894 schema:name "Difenoconazol"@de ;
+    :hasChebiIdentity CHEBI:81760 .
 
-substance:451 :hasChebiIdentity CHEBI:75212 .
+substance:896 schema:name "Fluazinam"@de ;
+    :hasChebiIdentity CHEBI:81843 .
 
-substance:453 :hasChebiIdentity CHEBI:4388 .
+substance:897 schema:name "Kupfer (als Hydroxid)"@de ;
+    :hasChebiIdentity CHEBI:81907 .
 
-substance:50 :hasChebiIdentity CHEBI:3018 .
+substance:912 schema:name "Dimethomorph"@de ;
+    :hasChebiIdentity CHEBI:81848 .
 
-substance:564 :hasChebiIdentity CHEBI:81749 .
+substance:920 schema:name "Thiabendazole"@de ;
+    :hasChebiIdentity CHEBI:45979 .
 
-substance:701 :hasChebiIdentity CHEBI:81539 .
+substance:924 schema:name "Imazalil"@de ;
+    :hasChebiIdentity CHEBI:81927 .
 
-substance:706 :hasChebiIdentity CHEBI:34846 .
+substance:925 schema:name "Hymexazol"@de ;
+    :hasChebiIdentity CHEBI:5827 .
 
-substance:71 :hasChebiIdentity CHEBI:81952 .
+substance:928 schema:name "Triticonazole"@de ;
+    :hasChebiIdentity CHEBI:81980 .
 
-substance:72 :hasChebiIdentity CHEBI:39381 .
+substance:935 schema:name "Bacillus thuringiensis var. israeliensis"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q3522985 .
 
-substance:79 :hasChebiIdentity CHEBI:34608 .
+substance:937 schema:name "Bacillus thuringiensis var. aizawai"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q135527162 .
 
-substance:799 :hasChebiIdentity CHEBI:83571 .
+substance:939 schema:name "Bacillus thuringiensis var. kurstaki"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q24977208 .
 
-substance:8 :hasChebiIdentity CHEBI:39214 .
+substance:942 schema:name "Quizalofop-P-ethyl"@de ;
+    :hasChebiIdentity CHEBI:137938 .
 
-substance:813 :hasChebiIdentity CHEBI:81810 .
+substance:943 schema:name "Fluazifop-P-butyl"@de ;
+    :hasChebiIdentity CHEBI:132964 .
 
-substance:832 rdfs:label "Encarsia formosa"@de .
+substance:946 schema:name "Fenpropidin"@de ;
+    :hasChebiIdentity CHEBI:81917 .
 
-substance:834 rdfs:label "Cydia pomonella Granulovirus (Apfelwicklergranulose-Virus, CpGV)"@de .
+substance:948 schema:name "Tebufenozide"@de ;
+    :hasChebiIdentity CHEBI:38452 .
 
-substance:835 rdfs:label "Amblyseius cucumeris (synonym: Neoseiulus cucumeris)"@de .
+substance:952 schema:name "Cyprodinil"@de ;
+    :hasChebiIdentity CHEBI:4045 .
 
-substance:836 rdfs:label "Aphelinus abdominalis"@de .
+substance:955 schema:name "Aphidius colemani"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q1907227 .
 
-substance:837 rdfs:label "Aphidius matricariae"@de .
+substance:960 schema:name "Metarhizium anisopliae"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q134941 .
 
-substance:838 rdfs:label "Aphidoletes aphidimyza"@de .
+substance:961 schema:name "Maleinsäurehydrazid"@de ;
+    :hasChebiIdentity CHEBI:81771 .
 
-substance:839 rdfs:label "Cryptolaemus montrouzieri"@de .
+substance:970 schema:name "Bacillus thuringiensis var. tenebrionis"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q310467 .
 
-substance:840 rdfs:label "Dacnusa sibirica"@de .
+substance:972 schema:name "Beauveria bassiana"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q2345333 .
 
-substance:841 rdfs:label "Diglyphus isaea"@de .
+substance:974 schema:name "Phasmarhabditis hermaphrodita"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q7181031 .
 
-substance:843 rdfs:label "Streptomyces griseoviridis"@de .
+substance:975 schema:name "Z8-12Ac"@de ;
+    :hasChebiIdentity CHEBI:179337 .
 
-substance:845 rdfs:label "Orius laevigatus"@de .
+substance:976 schema:name "E8-12Ac"@de ;
+    :hasChebiIdentity CHEBI:179343 .
 
-substance:846 rdfs:label "Orius majusculus"@de .
+substance:977 schema:name "Z8-12OH ((Z)-8-dodecen-1-ol)"@de ;
+    :hasChebiIdentity CHEBI:616085 .
 
-substance:847 rdfs:label "Phytoseiulus persimilis"@de .
+substance:980 schema:name "Pyrimethanil"@de ;
+    :hasChebiIdentity CHEBI:8674 .
 
-substance:849 rdfs:label "Beauveria brongniartii"@de .
+substance:981 schema:name "Mepanipyrim"@de ;
+    :hasChebiIdentity CHEBI:6751 .
 
-substance:851 rdfs:label "Schalenwicklergranulose-Virus"@de .
+substance:982 schema:name "Fludioxonil"@de ;
+    :hasChebiIdentity CHEBI:81763 .
 
-substance:852 rdfs:label "Steinernema carpocapsae"@de .
+substance:984 schema:name "Phlebia gigantea"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q108178965 .
 
-substance:853 :isDefinedByBiologicalTaxon wikidata:Q5303814 .
+substance:988 schema:name "Sojalecithin"@de ;
+    :hasChebiIdentity CHEBI:86658 .
 
-substance:854 rdfs:label "Trichogramma brassicae Bezdenko"@de .
+substance:998 schema:name "Leptomastidea abnormis"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q13394572 .
 
-substance:863 rdfs:label "Propyzamid"@de .
-
-substance:872 rdfs:label "Fenoxaprop-P-ethyl"@de .
-
-substance:873 rdfs:label "Dimethachlor"@de .
-
-substance:875 rdfs:label "Fluroxypyr"@de .
-
-substance:876 rdfs:label "Lenacil"@de .
-
-substance:877 rdfs:label "Mecoprop-P"@de .
-
-substance:879 rdfs:label "MCPA"@de .
-
-substance:880 rdfs:label "Metamitron"@de .
-
-substance:881 rdfs:label "Chlorotoluron"@de .
-
-substance:890 rdfs:label "Rimsulfuron"@de .
-
-substance:893 rdfs:label "Tebuconazole"@de .
-
-substance:894 :hasChebiIdentity CHEBI:81760 .
-
-substance:896 rdfs:label "Fluazinam"@de .
-
-substance:897 rdfs:label "Kupfer (als Hydroxid)"@de .
-
-substance:898 rdfs:label "Kupfer (als Oxychlorid)"@de .
-
-substance:912 rdfs:label "Dimethomorph"@de .
-
-substance:920 :hasChebiIdentity CHEBI:45979 .
-
-substance:924 :hasChebiIdentity CHEBI:81927 .
-
-substance:925 :hasChebiIdentity CHEBI:5827 .
-
-substance:928 :hasChebiIdentity CHEBI:81980 .
-
-substance:935 rdfs:label "Bacillus thuringiensis var. israeliensis"@de .
-
-substance:937 rdfs:label "Bacillus thuringiensis var. aizawai"@de .
-
-substance:939 rdfs:label "Bacillus thuringiensis var. kurstaki"@de .
-
-substance:942 rdfs:label "Quizalofop-P-ethyl"@de .
-
-substance:943 rdfs:label "Fluazifop-P-butyl"@de .
-
-substance:946 rdfs:label "Fenpropidin"@de .
-
-substance:948 rdfs:label "Tebufenozide"@de .
-
-substance:950 rdfs:label "E8E10-12 OH (E,E-8.10-dodecadien-1-ol; Codlemone)"@de .
-
-substance:951 rdfs:label "Z11-14 Ac"@de .
-
-substance:952 rdfs:label "Cyprodinil"@de .
-
-substance:955 :isDefinedByBiologicalTaxon wikidata:Q1907227 .
-
-substance:960 :isDefinedByBiologicalTaxon wikidata:Q134941 .
-
-substance:961 rdfs:label "Maleinsäurehydrazid"@de .
-
-substance:970 :isDefinedByBiologicalTaxon wikidata:Q310467 .
-
-substance:972 :isDefinedByBiologicalTaxon wikidata:Q2345333 .
-
-substance:974 :isDefinedByBiologicalTaxon wikidata:Q7181031 .
-
-substance:975 :hasChebiIdentity CHEBI:179337 .
-
-substance:976 :hasChebiIdentity CHEBI:179343 .
-
-substance:977 :hasChebiIdentity CHEBI:616085 .
-
-substance:980 :hasChebiIdentity CHEBI:8674 .
-
-substance:981 :hasChebiIdentity CHEBI:6751 .
-
-substance:982 :hasChebiIdentity CHEBI:81763 .
-
-substance:984 :isDefinedByBiologicalTaxon wikidata:Q108178965 .
-
-substance:988 :hasChebiIdentity CHEBI:86658 .
-
-substance:998 :isDefinedByBiologicalTaxon wikidata:Q13394572 .
-
-substance:999 :isDefinedByBiologicalTaxon wikidata:Q13394629 .
+substance:999 schema:name "Leptomastix dactylopii"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q13394629 .
 
