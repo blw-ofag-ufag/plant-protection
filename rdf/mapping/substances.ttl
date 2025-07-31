@@ -170,6 +170,45 @@ substance:1897 a :NonChemicalSubstance ;
 substance:1899 a :NonChemicalSubstance ;
     schema:name "Gemisch aus: 2-Ethylhexyl-mono-D-glucopyranosid und 2-Ethylhexyl-di-D-glucopyranosid"@de .
 
+substance:1902 a :NonChemicalSubstance ;
+    schema:name "Benzolsulfonsäure, C10-13-Alkylderivate, Calciumsalze"@de .
+
+substance:1905 a :NonChemicalSubstance ;
+    schema:name "Benzenesulfonic acid, 4-c10-14-alkyl derivatives, calcium salts"@de .
+
+substance:1912 a :NonChemicalSubstance ;
+    schema:name "Solvent naphtha (petroleum), heavy arom.; Kerosine - unspecified"@de .
+
+substance:1917 a :NonChemicalSubstance ;
+    schema:name "Hydrocarbons, C9, aromatics"@de .
+
+substance:1919 a :NonChemicalSubstance ;
+    schema:name "Kohlenwasserstoffe, C10, Aromaten"@de .
+
+substance:1927 a :NonChemicalSubstance ;
+    schema:name "Fettsäuren C7-C20 (Kaliumsalze)"@de .
+
+substance:1928 a :NonChemicalSubstance ;
+    schema:name "Ethoxyliertes Sojabohnenöl"@de .
+
+substance:1930 a :NonChemicalSubstance ;
+    schema:name "(Z)-9-Octadecen-1-ol ethoxylated"@de .
+
+substance:1936 a :NonChemicalSubstance ;
+    schema:name "Fischöl"@de .
+
+substance:1938 a :NonChemicalSubstance ;
+    schema:name "polyoxyethylene trimethyldecyl alcohol"@de .
+
+substance:1964 a :NonChemicalSubstance ;
+    schema:name "Hydroxypropylstärke"@de .
+
+substance:2014 a :NonChemicalSubstance ;
+    schema:name "1-Heptanol, 2-propyl-, 7EO"@de .
+
+substance:2015 a :NonChemicalSubstance ;
+    schema:name "Alcohols, C12-15, branched and linear, ethoxylated"@de .
+
 substance:2023 a :NonChemicalSubstance ;
     schema:name "Terpen-Oligomere"@de .
 
@@ -861,7 +900,10 @@ substance:1833 schema:name "2,6-Di-tert-butyl-p-kresol"@de ;
 substance:1838 schema:name "1-Butanol"@de ;
     :hasChebiIdentity CHEBI:28885 .
 
-substance:1841 schema:name "2,2',2''-(hexahydro-1,3,5-triazine-1,3,5-triyl)triethanol / 1,3,5-tris(2-hydroxyethyl)hexahydro-1,3,5-triazine"@de .
+substance:1841 chebi:formula "C9H21N3O3" ;
+    chebi:smiles "C1N(CN(CN1CCO)CCO)CCO" ;
+    schema:name "2,2',2''-(hexahydro-1,3,5-triazine-1,3,5-triyl)triethanol / 1,3,5-tris(2-hydroxyethyl)hexahydro-1,3,5-triazine"@de ;
+    :CAS "4719-04-4" .
 
 substance:1844 schema:name "Polyethylene-polypropylene glycol"@de ;
     :partialChebiIdentity CHEBI:46793,
@@ -930,92 +972,98 @@ substance:1898 schema:name "Tetrahydrofurfuryl-Alkohol"@de ;
 substance:190 schema:name "Folpet"@de ;
     :hasChebiIdentity CHEBI:82019 .
 
-substance:1900 schema:name "Oleylamin ethoxyliert, Dodecylbenzensulfonsalz"@de .
+substance:1900 schema:name "Oleylamin ethoxyliert, Dodecylbenzensulfonsalz"@de ;
+    :partialChebiIdentity CHEBI:149774 .
 
-substance:1902 schema:name "Benzolsulfonsäure, C10-13-Alkylderivate, Calciumsalze"@de .
+substance:1903 schema:name "L-Carvon"@de ;
+    :hasChebiIdentity CHEBI:15400 .
 
-substance:1903 schema:name "L-Carvon"@de .
+substance:1904 schema:name "Triisobutylphosphat"@de ;
+    :hasChebiIdentity CHEBI:35019 .
 
-substance:1904 schema:name "Triisobutylphosphat"@de .
+substance:1906 schema:name "Ammoniumcarbamat"@de ;
+    :hasChebiIdentity CHEBI:16134 .
 
-substance:1905 schema:name "Benzenesulfonic acid, 4-c10-14-alkyl derivatives, calcium salts"@de .
+substance:1909 schema:name "Benzolsulfonsäure"@de ;
+    :hasChebiIdentity CHEBI:64455 .
 
-substance:1906 schema:name "Ammoniumcarbamat"@de .
+substance:1910 schema:name "1,2-benzisothiazol-3(2H)-one; 1,2-benzisothiazolin-3-one"@de ;
+    :hasChebiIdentity CHEBI:167099 .
 
-substance:1909 schema:name "Benzolsulfonsäure"@de .
+substance:1911 schema:name "Terpineol"@de ;
+    :hasChebiIdentity CHEBI:26876 .
 
-substance:1910 schema:name "1,2-benzisothiazol-3(2H)-one; 1,2-benzisothiazolin-3-one"@de .
+substance:1922 schema:name "Kupfer (als Tribasisches Kupfersulfat)"@de ;
+    :hasChebiIdentity CHEBI:232855 .
 
-substance:1911 schema:name "Terpineol"@de .
+substance:1933 schema:name "Mefentrifluconazole"@de ;
+    :hasChebiIdentity CHEBI:144514 .
 
-substance:1912 schema:name "Solvent naphtha (petroleum), heavy arom.; Kerosine - unspecified"@de .
+substance:1937 schema:name "Methenamin; Hexamethylenetetramin"@de ;
+    :hasChebiIdentity CHEBI:6824 .
 
-substance:1917 schema:name "Hydrocarbons, C9, aromatics"@de .
+substance:1939 schema:name "Bacillus amyloliquefaciens"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q4354408 .
 
-substance:1919 schema:name "Kohlenwasserstoffe, C10, Aromaten"@de .
+substance:1942 schema:name "Reaktionsgemisch, bestehend aus 5-Chlor-2-methyl-2H-isothiazol-3-on und 2-Methyl-2H-isothiazol-3-on (3:1)"@de ;
+    :partialChebiIdentity CHEBI:53620,
+        CHEBI:53621 .
 
-substance:1922 schema:name "Kupfer (als Tribasisches Kupfersulfat)"@de .
+substance:1951 chebi:formula "C11H22O3" ;
+    chebi:smiles "CCCCC(CC)COC(=O)C(C)O" ;
+    schema:name "2-Ethylhexyl-S-Lactat"@de ;
+    :CAS "6283-86-9" .
 
-substance:1927 schema:name "Fettsäuren C7-C20 (Kaliumsalze)"@de .
+substance:1954 schema:name "Encarsia citrina"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q13576781 .
 
-substance:1928 schema:name "Ethoxyliertes Sojabohnenöl"@de .
+substance:1956 schema:name "Rodolia cardinalis"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q2235176 .
 
-substance:1930 schema:name "(Z)-9-Octadecen-1-ol ethoxylated"@de .
+substance:1957 schema:name "Gibberellin "@de ;
+    :hasChebiIdentity CHEBI:24250 .
 
-substance:1933 schema:name "Mefentrifluconazole"@de .
+substance:196 schema:name "Fosetyl"@de ;
+    :hasChebiIdentity CHEBI:40926 .
 
-substance:1936 schema:name "Fischöl"@de .
+substance:1961 schema:name "Calciumformiat"@de ;
+    :hasChebiIdentity CHEBI:81851 .
 
-substance:1937 schema:name "Methenamin; Hexamethylenetetramin"@de .
+substance:1974 schema:name "Coccophagus scutellaris"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q13472118 .
 
-substance:1938 schema:name "polyoxyethylene trimethyldecyl alcohol"@de .
+substance:1977 schema:name "Anagyrus vladimiri (vormals bekannt als Anagyrus pseudococci)"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q122387674 .
 
-substance:1939 schema:name "Bacillus amyloliquefaciens"@de .
+substance:1978 schema:name "Trichopria drosophilae"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q135527839 .
 
-substance:1942 schema:name "Reaktionsgemisch, bestehend aus 5-Chlor-2-methyl-2H-isothiazol-3-on und 2-Methyl-2H-isothiazol-3-on (3:1)"@de .
-
-substance:1951 schema:name "2-Ethylhexyl-S-Lactat"@de .
-
-substance:1954 schema:name "Encarsia citrina"@de .
-
-substance:1956 schema:name "Rodolia cardinalis"@de .
-
-substance:1957 schema:name "Gibberellin "@de .
-
-substance:196 schema:name "Fosetyl"@de .
-
-substance:1961 schema:name "Calciumformiat"@de .
-
-substance:1964 schema:name "Hydroxypropylstärke"@de .
-
-substance:1974 schema:name "Coccophagus scutellaris"@de .
-
-substance:1977 schema:name "Anagyrus vladimiri (vormals bekannt als Anagyrus pseudococci)"@de .
-
-substance:1978 schema:name "Trichopria drosophilae"@de .
-
-substance:1979 schema:name "Cephalonomia tarsalis"@de .
+substance:1979 schema:name "Cephalonomia tarsalis"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q14624618 .
 
 substance:199 schema:name "Glyphosat"@de ;
     :hasChebiIdentity CHEBI:27744 .
 
-substance:1990 schema:name "Eupeodes corollae"@de .
+substance:1990 schema:name "Eupeodes corollae"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q1758301 .
 
-substance:1993 schema:name "Heterorhabditis downesi"@de .
+substance:1993 schema:name "Heterorhabditis downesi"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q50410485 .
 
-substance:1995 schema:name "Ammoniak, wässrige Lösung"@de .
+substance:1995 schema:name "Ammoniak, wässrige Lösung"@de ;
+    :hasChebiIdentity CHEBI:13772 .
 
-substance:1999 schema:name "Anastatus bifasciatus"@de .
+substance:1999 schema:name "Anastatus bifasciatus"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q13370258 .
 
-substance:2000 schema:name "Transeius montdorensis"@de .
+substance:2000 schema:name "Transeius montdorensis"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q10131725 .
 
-substance:2001 schema:name "Sphaerophoria rueppellii"@de .
+substance:2001 schema:name "Sphaerophoria rueppellii"@de ;
+    :isDefinedByBiologicalTaxon wikidata:Q2744853 .
 
-substance:2012 schema:name "Gibberellinsäure"@de .
-
-substance:2014 schema:name "1-Heptanol, 2-propyl-, 7EO"@de .
-
-substance:2015 schema:name "Alcohols, C12-15, branched and linear, ethoxylated"@de .
+substance:2012 schema:name "Gibberellinsäure"@de ;
+    :hasChebiIdentity CHEBI:28833 .
 
 substance:2016 schema:name "Exochomus quadripustulatus"@de ;
     :isDefinedByBiologicalTaxon wikidata:Q15736396 .

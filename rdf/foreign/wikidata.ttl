@@ -80,6 +80,8 @@ wikidata:Q10608057 schema:name "Oidium neolycopersici" .
 
 wikidata:Q10610673 schema:name "Ophiosphaerella herpotricha" .
 
+wikidata:Q10611549 schema:name "Orius majusculus" .
+
 wikidata:Q10621350 schema:name "Parthenothrips dracaenae" .
 
 wikidata:Q10629909 schema:name "Phyllocoptes gracilis" .
@@ -212,6 +214,8 @@ wikidata:Q1335549 schema:name "Tetranychus urticae" .
 
 wikidata:Q1336450 schema:name "Drosophila suzukii" .
 
+wikidata:Q13370258 schema:name "Anastatus bifasciatus" .
+
 wikidata:Q13374365 schema:name "Anisopteromalus calandrae" .
 
 wikidata:Q13394572 schema:name "Leptomastidea abnormis" .
@@ -222,6 +226,8 @@ wikidata:Q134055 schema:name "Cladosporium" .
 
 wikidata:Q134284 schema:name "Botrytis" .
 
+wikidata:Q13472118 schema:name "Coccophagus scutellaris" .
+
 wikidata:Q1348959 schema:name "Anthonomus rubi" .
 
 wikidata:Q134941 schema:name "Metarhizium anisopliae" .
@@ -231,6 +237,10 @@ wikidata:Q135374 schema:name "Frankliniella occidentalis" .
 wikidata:Q1354085 schema:name "Aphididae" .
 
 wikidata:Q13565566 schema:name "Dysaphis pyri" .
+
+wikidata:Q13572833 schema:name "Diglyphus isaea" .
+
+wikidata:Q13576781 schema:name "Encarsia citrina" .
 
 wikidata:Q136322 schema:name "Archips podana" .
 
@@ -244,7 +254,11 @@ wikidata:Q1390 schema:name "Insecta" .
 
 wikidata:Q139958 schema:name "Fusarium oxysporum" .
 
+wikidata:Q14079847 schema:name "Trissolcus basalis" .
+
 wikidata:Q1411830 schema:name "Heterobasidion annosum" .
+
+wikidata:Q14163346 schema:name "Praon volucre" .
 
 wikidata:Q1422236 schema:name "Puccinia porri" .
 
@@ -306,6 +320,8 @@ wikidata:Q157264 schema:name "Rumex" .
 
 wikidata:Q157343 schema:name "Veronica chamaedrys" .
 
+wikidata:Q15736396 schema:name "Exochomus quadripustulatus" .
+
 wikidata:Q157408 schema:name "Plantago lanceolata" .
 
 wikidata:Q157547 schema:name "Veratrum album" .
@@ -362,6 +378,8 @@ wikidata:Q1755354 schema:name "Erysiphaceae" .
 
 wikidata:Q175754 schema:name "Cydalima perspectalis" .
 
+wikidata:Q1758301 schema:name "Eupeodes corollae" .
+
 wikidata:Q1765768 schema:name "Coniella diplodiella" .
 
 wikidata:Q176864 schema:name "Hylobius abietis" .
@@ -388,6 +406,8 @@ wikidata:Q1972523 schema:name "Lepidosaphes ulmi" .
 
 wikidata:Q1977089 schema:name "Thripidae" .
 
+wikidata:Q1977887 schema:name "Aphidius matricariae" .
+
 wikidata:Q2022500 schema:name "Taphrina deformans" .
 
 wikidata:Q206556 schema:name "Planococcus citri" .
@@ -395,6 +415,8 @@ wikidata:Q206556 schema:name "Planococcus citri" .
 wikidata:Q2066868 schema:name "Cercospora" .
 
 wikidata:Q2066891 schema:name "Phoma" .
+
+wikidata:Q2073375 schema:name "Dacnusa sibirica" .
 
 wikidata:Q2084190 schema:name "Passalora fulva" .
 
@@ -436,6 +458,10 @@ wikidata:Q2222304 schema:name "Chaetocnema tibialis" .
 
 wikidata:Q2230727 schema:name "Phytophthora cactorum" .
 
+wikidata:Q2235176 schema:name "Rodolia cardinalis" .
+
+wikidata:Q22665875 schema:name "Streptomyces griseoviridis" .
+
 wikidata:Q2267811 schema:name "Erysiphe necator" .
 
 wikidata:Q2301438 schema:name "Cronartium ribicola" .
@@ -457,6 +483,8 @@ wikidata:Q2377614 schema:name "Uromyces appendiculatus" .
 wikidata:Q2382963 schema:name "Aphis pomi" .
 
 wikidata:Q2386245 schema:name "Thrips tabaci" .
+
+wikidata:Q2401586 schema:name "Cryptolaemus montrouzieri" .
 
 wikidata:Q240929 schema:name "Anthonomus pomorum" .
 
@@ -505,6 +533,8 @@ wikidata:Q2716477 schema:name "Rhizoctonia" .
 wikidata:Q27191 schema:name "Heteroptera" .
 
 wikidata:Q27264 schema:name "Capsella bursa-pastoris" .
+
+wikidata:Q2744853 schema:name "Sphaerophoria rueppellii" .
 
 wikidata:Q276262 schema:name "Elymus repens" .
 
@@ -612,6 +642,8 @@ wikidata:Q43238 schema:name "Poaceae" .
 
 wikidata:Q43365 schema:name "Corvus" .
 
+wikidata:Q4354408 schema:name "Bacillus amyloliquefaciens" .
+
 wikidata:Q4356998 schema:name "Phytoptus" .
 
 wikidata:Q4357993 schema:name "Tarsonemidae" .
@@ -635,6 +667,10 @@ wikidata:Q4736354 schema:name "Alternaria dauci" .
 wikidata:Q474636 schema:name "Tipulidae" .
 
 wikidata:Q476326 schema:name "Gryllotalpa gryllotalpa" .
+
+wikidata:Q4779562 schema:name "Aphelinus abdominalis" .
+
+wikidata:Q4779604 schema:name "Aphidoletes aphidimyza" .
 
 wikidata:Q4779847 schema:name "Apiognomonia" .
 
@@ -667,6 +703,8 @@ wikidata:Q517643 schema:name "Equisetaceae" .
 wikidata:Q5187693 schema:name "Cronartium" .
 
 wikidata:Q5196111 schema:name "Curvularia" .
+
+wikidata:Q5199143 schema:name "Cydia pomonella granulovirus" .
 
 wikidata:Q5226308 schema:name "Pyrenopeziza brassicae" .
 
@@ -716,7 +754,11 @@ wikidata:Q600498 schema:name "Nezara viridula" .
 
 wikidata:Q602740 schema:name "Rubus" .
 
+wikidata:Q6052991 schema:name "Orius laevigatus" .
+
 wikidata:Q612789 schema:name "Ustilago avenae" .
+
+wikidata:Q614882 schema:name "Encarsia formosa" .
 
 wikidata:Q618307 schema:name "Synanthedon myopaeformis" .
 
@@ -780,6 +822,8 @@ wikidata:Q7189817 schema:name "Phytophthora fragariae" .
 
 wikidata:Q7189827 schema:name "Phytophthora phaseoli" .
 
+wikidata:Q719725 schema:name "Saccharomyces cerevisiae" .
+
 wikidata:Q7204607 schema:name "Pleospora herbarum" .
 
 wikidata:Q7207071 schema:name "Podosphaera macularis" .
@@ -836,6 +880,8 @@ wikidata:Q783121 schema:name "Icerya purchasi" .
 
 wikidata:Q7835510 schema:name "Tranzschelia discolor" .
 
+wikidata:Q7840781 schema:name "Trichogramma brassicae" .
+
 wikidata:Q7840786 schema:name "Trichogramma evanescens" .
 
 wikidata:Q7861358 schema:name "Typhula incarnata" .
@@ -885,6 +931,8 @@ wikidata:Q892455 schema:name "Uromyces" .
 wikidata:Q898337 schema:name "Pandemis heparana" .
 
 wikidata:Q899672 schema:name "Fallopia japonica" .
+
+wikidata:Q9059274 schema:name "Phytoseiulus persimilis" .
 
 wikidata:Q915669 schema:name "Arionidae" .
 
@@ -1886,7 +1934,63 @@ substance:1584 :eppo "1PSDMG" .
 
 substance:1598 :eppo "PAECLI" .
 
+substance:1746 :eppo "PRANVO" .
+
+substance:1748 :eppo "BACIAM" .
+
+substance:1815 :eppo "PEPMV0" .
+
+substance:1887 :eppo "SACCCE" .
+
+substance:1939 :eppo "BACIAM" .
+
+substance:1954 :eppo "ASPTCI" .
+
+substance:1956 :eppo "RODOCA" .
+
+substance:1974 :eppo "COCUSC" .
+
+substance:1990 :eppo "METYCR" .
+
+substance:1999 :eppo "ANAUBI" .
+
+substance:2001 :eppo "SPHPRU" .
+
+substance:2016 :eppo "EXOCQU" .
+
+substance:2019 :eppo "TRSSBA" .
+
+substance:832 :eppo "ENCAFO" .
+
+substance:834 :eppo "CPGV00" .
+
+substance:836 :eppo "APHEAB" .
+
+substance:837 :eppo "APHUMA" .
+
+substance:838 :eppo "APHLAP" .
+
+substance:839 :eppo "CRYEMO" .
+
+substance:840 :eppo "DACNSI" .
+
+substance:841 :eppo "DIGLIS" .
+
+substance:843 :eppo "STREGV" .
+
+substance:845 :eppo "ORIULA" .
+
+substance:846 :eppo "ORIUMU" .
+
+substance:847 :eppo "PHSLRI" .
+
+substance:851 :eppo "CPGV00" .
+
+substance:852 :eppo "NEAPCA" .
+
 substance:853 :eppo "NEAPGL" .
+
+substance:854 :eppo "TRIGBR" .
 
 substance:955 :eppo "APHUCO" .
 
