@@ -25,30 +25,31 @@ window.getSparqlData = async function (query) {
 ----------------------------------------------------------- */
 async function loadSubstanceTable() {
   const query = `
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX substance: <https://agriculture.ld.admin.ch/plant-protection/substance/>
-PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX schema: <http://schema.org/>
+    PREFIX substance: <https://agriculture.ld.admin.ch/plant-protection/substance/>
+    PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
 
-SELECT ?substance ?substanceName ?iupac
-       (GROUP_CONCAT(DISTINCT ?roleName; separator = " + ") AS ?roles)
-       (COUNT(?product) AS ?products)
-       (ROUND(AVG(?percentage)*100)/100 AS ?averagePercentage)
-WHERE {
-  ?product :hasComponentPortion [
-    :role ?role ;
-    :substance ?substance ;
-    :hasPercentage ?percentage ;
-  ] .
-  ?role rdfs:label ?roleName .
-  FILTER (LANG(?roleName) = "de")
+    SELECT ?substance ?substanceName ?iupac
+          (GROUP_CONCAT(DISTINCT ?roleName; separator = " + ") AS ?roles)
+          (COUNT(?product) AS ?products)
+          (ROUND(AVG(?percentage)*100)/100 AS ?averagePercentage)
+    WHERE {
+      ?product :hasComponentPortion [
+        :role ?role ;
+        :substance ?substance ;
+        :hasPercentage ?percentage ;
+      ] .
+      ?role schema:name ?roleName .
+      FILTER (LANG(?roleName) = "de")
 
-  ?substance rdfs:label ?substanceName .
-  FILTER (LANG(?substanceName) = "de")
+      ?substance schema:name ?substanceName .
+      FILTER (LANG(?substanceName) = "de")
 
-  OPTIONAL { ?substance :iupac ?iupac }
-}
-GROUP BY ?substance ?substanceName ?iupac
-ORDER BY DESC(?products)
+      OPTIONAL { ?substance :iupac ?iupac }
+    }
+    GROUP BY ?substance ?substanceName ?iupac
+    ORDER BY DESC(?products)
   `;
 
   try {
@@ -58,7 +59,7 @@ ORDER BY DESC(?products)
 
     results.bindings.forEach((row) => {
       const iri = row.substance.value;
-      const slug = iri.split('/').pop();               // get the part after the last “/”
+      const slug = iri.split('/').pop();
       const name = row.substanceName.value;
       const iupac = row.iupac ? row.iupac.value : '';
       const roles = row.roles ? row.roles.value : '';
