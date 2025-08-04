@@ -25,11 +25,12 @@ PREFIX schema: <http://schema.org/>
 PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
 
 SELECT
-?company
-(GROUP_CONCAT(CONCAT(?name, " (", ?WNbr, ")"); separator=", ") AS ?Product)
-(COUNT(?product) AS ?Number)
+  ?company
+  (GROUP_CONCAT(CONCAT(?name, " (", ?WNbr, ")"); separator=", ") AS ?Product)
+  (COUNT(?product) AS ?Number)
 
-WHERE {
+WHERE
+{
   ?product schema:name ?name ;
     :hasPermissionHolder/schema:legalName ?company ;
     :federalAdmissionNumber ?WNbr ;
@@ -82,7 +83,8 @@ PREFIX wd: <http://www.wikidata.org/entity/>
 
 SELECT ?pest ?name ?taxon ?eppo ?author ?taxonname (COUNT(?product) AS ?products)
 
-WHERE {
+WHERE
+{
 
   # query LINDAS for pests, their german name, the taxon and any product that is allowed on the pest
   ?pest a :BioticStressor ;
@@ -91,14 +93,18 @@ WHERE {
     ^:cropStressor/^:indication ?product .
   FILTER(LANG(?name) = "de")
 
-  # query Wikidata for the
-  SERVICE <https://qlever.cs.uni-freiburg.de/api/wikidata> {
+  # query Wikidata for more information about the taxon
+  # (note that we use the *very fast* Qlever endpoint in this case)
+  SERVICE <https://qlever.cs.uni-freiburg.de/api/wikidata>
+  {
     ?taxon wdt:P225 ?taxonname ;
       wdt:P171*/wdt:P225 "Lepidoptera" .
-    OPTIONAL {
+    OPTIONAL
+    {
       ?taxon wdt:P3031 ?eppo .
     }
-    OPTIONAL {
+    OPTIONAL
+    {
       ?taxon prop:P225/qualifier:P405/wdt:P1559 ?author .
     }
   }
