@@ -15,23 +15,49 @@
 </head>
 <body>
 
-  <!-- Loading indicator ------------------------------------------------- -->
-  <div id="loading">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="12" cy="12" r="10" opacity=".25"/>
-      <path d="M22 12a10 10 0 0 1-10 10"/>
-    </svg>
-    Loading product …
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-content">
+      <span class="site-title">Linked-PSM-Verzeichnis</span>
+      <form class="search-form" id="search-form" role="search">
+        <input type="search" id="search-input" list="search-suggestions" placeholder="Produkt suchen" autocomplete="off">
+        <datalist id="search-suggestions"></datalist>
+        <button type="submit">Suchen</button>
+      </form>
+    </div>
+  </header>
+
+  <div class="content-wrapper">
+    <!-- Loading indicator ------------------------------------------------- -->
+    <div id="loading">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10" opacity=".25"/>
+        <path d="M22 12a10 10 0 0 1-10 10"/>
+      </svg>
+      Loading product …
+    </div>
+
+    <!-- Main card (injected via JS) -------------------------------------- -->
+    <article class="card hidden" id="card"></article>
   </div>
 
-  <!-- Main card (injected via JS) -------------------------------------- -->
-  <article class="card hidden" id="card"></article>
 
   <!-- Template helper --------------------------------------------------- -->
   <template id="tag-template">
     <a class="tag" target="_self"></a>
   </template>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>
+        Diese Seite ist ein Demoprojekt des Bundesamtes für Landwirtschaft (BLW). Die Daten werden über die <a href="https://lindas.admin.ch/" target="_blank" rel="noopener">LINDAS-Plattform</a> bereitgestellt.
+        Den Quellcode und weitere Informationen finden Sie auf <a href="https://github.com/blw-ofag-ufag/plant-protection" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+    </div>
+  </footer>
+
 
   <!-- Script ------------------------------------------------------------- -->
   <script src="https://unpkg.com/smiles-drawer@2.0.1/dist/smiles-drawer.min.js"></script>
