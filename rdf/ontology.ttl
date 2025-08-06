@@ -671,7 +671,7 @@ wikidata:Q16521 a owl:Class ;
             owl:onProperty :notice ] .
 
 :IndicationNotice a owl:Class ;
-    rdfs:label "Indication notice"@en ;
+    rdfs:label "Indication notice"@en, "Hinweis zur Anwendung"@de ;
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Obligation :ApplicationComment ) ] .
 
@@ -683,11 +683,11 @@ wikidata:Q16521 a owl:Class ;
     rdfs:subClassOf :ChemicalProduct .
 
 :ModeOfActionTerm a owl:Class ;
-    rdfs:label "Mode of Action Term"@en ;
+    rdfs:label "Mode of Action Term"@en, "Wirkungsweise-Begriff"@de ;
     rdfs:comment """
         A generic class representing any entry in the IRAC Mode of Action classification 
         scheme, i.e. both main groups and sub‑groups (if these exist). Each instance
-        carries its unique IRAC code (e.g. "1", "1A", "4B") via the `schema:identifier` 
+        carries its unique IRAC code (e.g. \"1\", \"1A\", \"4B\") via the `schema:identifier` 
         property, and may be linked hierarchically using `schema:isPartOf`/`schema:hasPart`.
         """@en ;
     rdfs:seeAlso <https://irac-online.org/documents/moa-classification/> .
@@ -1266,7 +1266,7 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:range schema:Country .
 
 :activeIngredients a owl:ObjectProperty ;
-    rdfs:label "Active ingredients"@en .
+    rdfs:label "Active ingredients"@en , "Aktivsubstanz"@de .
 
 :applicationArea a owl:ObjectProperty ;
     rdfs:label "Anwendungsgebiet"@de,
