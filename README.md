@@ -6,6 +6,7 @@ This project extracts the Swiss Plant Protection Product (PPP) registry, maps th
 
 A couple of small demonstration pages are available in the [`docs`](docs) folder and are hosted via GitHub Pages:
 
+- [Example of the generic RDF object pages](https://agriculture.ld.admin.ch/plant-protection/W-7300) genertated by LINDAS/trifid.
 - [Example product overview site.](https://blw-ofag-ufag.github.io/plant-protection/registry/?id=W-7300) At the moment, the shown product can only be switched via the URL by passing `?id=XYZ`, with `XYZ` being the W-number of any product.
 - [Example of how any fetched table could look like on a federal webpage.](https://blw-ofag-ufag.github.io/plant-protection/table/)
 
