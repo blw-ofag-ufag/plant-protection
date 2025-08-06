@@ -671,7 +671,8 @@ wikidata:Q16521 a owl:Class ;
             owl:onProperty :notice ] .
 
 :IndicationNotice a owl:Class ;
-    rdfs:label "Indication notice"@en, "Hinweis zur Anwendung"@de ;
+    rdfs:label "Hinweis zur Anwendung"@de,
+        "Indication notice"@en ;
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Obligation :ApplicationComment ) ] .
 
@@ -683,11 +684,12 @@ wikidata:Q16521 a owl:Class ;
     rdfs:subClassOf :ChemicalProduct .
 
 :ModeOfActionTerm a owl:Class ;
-    rdfs:label "Mode of Action Term"@en, "Wirkungsweise-Begriff"@de ;
+    rdfs:label "Wirkungsweise-Begriff"@de,
+        "Mode of Action Term"@en ;
     rdfs:comment """
         A generic class representing any entry in the IRAC Mode of Action classification 
         scheme, i.e. both main groups and sub‑groups (if these exist). Each instance
-        carries its unique IRAC code (e.g. \"1\", \"1A\", \"4B\") via the `schema:identifier` 
+        carries its unique IRAC code (e.g. "1", "1A", "4B") via the `schema:identifier` 
         property, and may be linked hierarchically using `schema:isPartOf`/`schema:hasPart`.
         """@en ;
     rdfs:seeAlso <https://irac-online.org/documents/moa-classification/> .
@@ -960,7 +962,7 @@ wikidata:Q16521 a owl:Class ;
         "Viricida"@it ;
     rdfs:subClassOf :ChemicalProduct .
 
-_:nb6ee6835c99847d5a745905d18b7f2ffb12 a owl:Class ;
+_:n12c0eb02f50d49c9a44177ebf7e28de4b12 a owl:Class ;
     owl:oneOf ( :AdditiveToDeclare :Synergist :Safener :ActiveIngredient ) .
 
 schema:addressLocality a owl:DatatypeProperty ;
@@ -1076,6 +1078,17 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:domain schema:Organization ;
     rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> ;
     rdfs:range xsd:string .
+
+:CAS a owl:DatatypeProperty ;
+    rdfs:label "CAS-Nummer"@de,
+        "CAS registry number"@en ;
+    rdfs:comment """
+        Die CAS-Nummer (auch CAS-Registrierungsnummer und CAS-Registernummer, engl. CAS Registry Number,
+        CAS = Chemical Abstracts Service) ist ein internationaler Bezeichnungsstandard für chemische Stoffe.
+        Für jeden in der CAS-Datenbank registrierten chemischen Stoff (auch Biosequenzen, Legierungen, Polymere)
+        existiert eine eindeutige CAS-Nummer.
+        """@de ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/CAS_Registry_Number> .
 
 :dosage a owl:DatatypeProperty ;
     rdfs:label "Dosierung"@de,
@@ -1266,7 +1279,8 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:range schema:Country .
 
 :activeIngredients a owl:ObjectProperty ;
-    rdfs:label "Active ingredients"@en , "Aktivsubstanz"@de .
+    rdfs:label "Aktivsubstanz"@de,
+        "Active ingredients"@en .
 
 :applicationArea a owl:ObjectProperty ;
     rdfs:label "Anwendungsgebiet"@de,
@@ -1449,6 +1463,10 @@ schema:addressCountry a owl:ObjectProperty ;
         "Notice"@en ;
     rdfs:range :Notice .
 
+:partialChebiIdentity a owl:ObjectProperty ;
+    rdfs:label "Partielle CheBI-Identität"@de,
+        "Partial CheBI identity"@en .
+
 :product a owl:ObjectProperty ;
     rdfs:label "PSM-Produkt"@de,
         "PPP product"@en,
@@ -1474,7 +1492,7 @@ schema:addressCountry a owl:ObjectProperty ;
         "Role"@en ;
     rdfs:comment "The role that a particular component plays in a mixture."@en ;
     rdfs:domain :ComponentPortion ;
-    rdfs:range _:nb6ee6835c99847d5a745905d18b7f2ffb12 .
+    rdfs:range _:n12c0eb02f50d49c9a44177ebf7e28de4b12 .
 
 :substance a owl:ObjectProperty ;
     rdfs:label "Substanz"@de,
@@ -1508,6 +1526,9 @@ chebi:formula rdfs:label "Formel"@de,
 
 chebi:smiles rdfs:label "SMILES-Code"@de,
         "SMILES code"@en .
+
+schema:image rdfs:label "Bild"@de,
+        "Image"@en .
 
 schema:maxValue rdfs:label "Maximaler Wert"@de,
         "Maximal value"@en .
