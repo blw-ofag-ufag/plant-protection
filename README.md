@@ -61,6 +61,8 @@ sequenceDiagram
     UploadScript->>LINDAS: Uploads the new `graph.ttl`
 ```
 
+All of the provided example/demonstration webpages query the data directly via the LINDAS SPARQL endpoint.
+
 ## Querying the dataset
 
 The resulting RDF is loaded into the graph `<https://lindas.admin.ch/foag/plant-protection>` on the public LINDAS SPARQL endpoint at `https://lindas.admin.ch/query`. SPARQL is the query language for RDF datasets.
