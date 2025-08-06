@@ -126,49 +126,36 @@ WHERE
 ORDER BY ?class
 ```
 
-### [Federated query: Get all taxon names + authors for pests that belong to the order of *Lepidoptera*](https://s.zazuko.com/36zyoKS)
+### [Federated query: A list of all products that contain neurotoxic ingredients and and may be used against insects](https://s.zazuko.com/UAfswS)
 
 ```rq
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX wdt:  <http://www.wikidata.org/prop/direct/>
-PREFIX prop: <http://www.wikidata.org/prop/>
-PREFIX qualifier: <http://www.wikidata.org/prop/qualifier/>
-PREFIX schema: <http://schema.org/>
 PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
-PREFIX pest: <https://agriculture.ld.admin.ch/plant-protection/pest/>
-PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX wdt:  <http://www.wikidata.org/prop/direct/>
 
-SELECT ?pest ?name ?taxon ?eppo ?author ?taxonname (COUNT(?product) AS ?products)
+SELECT DISTINCT ?product ?name ?company
 
 WHERE
 {
-
-  # query LINDAS for pests, their german name, the taxon and any product that is allowed on the pest
-  ?pest a :BioticStressor ;
-    schema:name ?name ;
-    :isDefinedByBiologicalTaxon ?taxon ;
-    ^:cropStressor/^:indication ?product .
-  FILTER(LANG(?name) = "de")
-
-  # query Wikidata for more information about the taxon
-  # (note that we use the *very fast* Qlever endpoint in this case)
+  # search SRPPP data for products and bind wikidataTaxon + chebi keys
+  ?product schema:name ?name ;
+    :hasPermissionHolder/schema:legalName ?company ;
+    :indication/:cropStressor/:isDefinedByBiologicalTaxon ?wikidataTaxon ;
+    :hasComponentPortion/:substance/(:hasChebiIdentity|:partialChebiIdentity) ?chebi .
+  
+  # query Wikidata to only select taxa that are a subgroup of "Insecta" --> i.e. that are insects
   SERVICE <https://qlever.cs.uni-freiburg.de/api/wikidata>
   {
-    ?taxon wdt:P225 ?taxonname ;
-      wdt:P171*/wdt:P225 "Lepidoptera" .
-    OPTIONAL
-    {
-      ?taxon wdt:P3031 ?eppo .
-    }
-    OPTIONAL
-    {
-      ?taxon prop:P225/qualifier:P405/wdt:P1559 ?author .
-    }
+    ?wikidataTaxon wdt:P171*/wdt:P225 "Insecta" .
+  }
+  
+  # query RHEA/ChEBI for chemical entities that have the role "neurotoxin"
+  SERVICE <https://sparql.rhea-db.org/sparql/> {
+    ?chebi rdfs:subClassOf/owl:someValuesFrom/rdfs:label "neurotoxin" .
   }
 }
-
-GROUP BY ?pest ?name ?taxon ?eppo ?author ?taxonname
-ORDER BY DESC(?products)
 ```
 
 ## Other queries
@@ -181,4 +168,5 @@ ORDER BY DESC(?products)
 - [Count the involved pests and crops per indication](https://s.zazuko.com/yAWBE5)
 - [A list of all units, the SRPPP PK and their occurences](https://s.zazuko.com/hQVZfk)
 - [List of all companies that have permission to sell plant protection products](https://s.zazuko.com/21xrM6T)
+- [Federated query on wikidata database](https://s.zazuko.com/36zyoKS) Get all taxon names + authors for pests that belong to the order of *Lepidoptera*.
 - [Federated query on CheBI database:](https://s.zazuko.com/3mxZVCq) Query the CheBI database via RHEA for chemical entity names, roles, chemical formulas and foreign keys to other databases.
