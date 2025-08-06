@@ -9,6 +9,58 @@ A couple of small demonstration pages are available in the [`docs`](docs) folder
 
 These sites illustrate how linked data from LINDAS can be embedded in a website and **are not meant as full fledged applications**.
 
+## ETL pipeline
+
+The main R script, `etl.R`, initiates the process by downloading the Swiss Plant Protection Product Registry data as an XML file.
+It then parses this XML and transforms the relevant elements—such as products, companies, and codes—into RDF triples using a custom ontology.
+
+The ETL pipeline incorporates manually curated mapping tables in CSV and JSON formats. These tables are used to align internal classes and identifiers with established external ones, such as mapping company IDs to their ZEFIX registry entries or mapping product categories to subclasses of product in the ontology.
+
+The Python script `reason.py` plays a crucial role in preparing the data for publication. It performs the following actions:
+
+1. Merges all the generated and external RDF files into a single graph.
+2. Applies RDFS and OWL reasoning to infer new relationships. This includes expanding class hierarchies (`rdfs:subClassOf`), property hierarchies (`rdfs:subPropertyOf`), and reciprocal relationships (`owl:inverseOf`).
+3. Deterministically sorts the triples to ensure consistency between versions.
+4. Serializes the final, consolidated graph into a single Turtle file (`graph.ttl`).
+
+Here's a graphical overview of these steps:
+
+```mermaid
+sequenceDiagram
+
+    autonumber
+
+    participant FSVO as FSVO website
+    participant UploadScript as Upload Script (upload.sh)
+    participant ETL_Pipeline as ETL Pipeline (etl.R)
+    participant Repo as Repository
+    participant ReasoningScript as Reasoning Script (reason.py)
+    participant LINDAS as LINDAS Platform
+
+    UploadScript->>ETL_Pipeline: Trigger ETL pipeline
+
+    activate ETL_Pipeline
+        ETL_Pipeline->>FSVO: Loads FSVO XML
+        ETL_Pipeline->>Repo: Reads mapping tables
+        loop For each class individually
+            ETL_Pipeline->>ETL_Pipeline: Parses XML object
+            ETL_Pipeline->>ETL_Pipeline: Integrates mappings
+            ETL_Pipeline->>Repo: Writes n-triple<br>or turtle RDF files
+        end
+    deactivate ETL_Pipeline
+
+    UploadScript->>ReasoningScript: Trigger reasoning pipeline
+    activate ReasoningScript
+        ReasoningScript->>Repo: Loads `.ttl` files<br>(`ontology.ttl`, foreign triples<br>from `rdf/foreign/*.ttl`, and manual<br>mappings from `rdf/mapping/*.ttl`)
+        ReasoningScript->>ReasoningScript: Merges all RDF data
+        ReasoningScript->>ReasoningScript: Performs RDFS/OWL reasoning<br>(subclass, subproperty, inverseOf)
+        ReasoningScript->>Repo: Reads, sorts and writes<br>all `.ttl` files
+    deactivate ReasoningScript
+
+    UploadScript->>LINDAS: Clears the existing graph
+    UploadScript->>LINDAS: Uploads the new `graph.ttl`
+```
+
 ## Querying the dataset
 
 The resulting RDF is loaded into the graph `<https://lindas.admin.ch/foag/plant-protection>` on the public LINDAS SPARQL endpoint at `https://lindas.admin.ch/query`. SPARQL is the query language for RDF datasets.
