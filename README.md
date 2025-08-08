@@ -1,8 +1,9 @@
 # Plant Protection Products as Linked Data
 
-![](https://github.com/user-attachments/assets/5f035e5b-0c70-486b-8977-6fd503f056e9)
-
 This project extracts the Swiss Plant Protection Product (PPP) registry, maps the data to RDF and publishes it on [LINDAS](https://lindas.admin.ch). The ETL logic lives in [`automation/etl.R`](automation/etl.R) and uses a few CSV files in [`tables/mapping`](tables/mapping) for manual mappings such as company identifiers or product categories.
+*Currently, this project and the written data is in the prototype stage and should not be consumed by productive applications.*
+
+[![image](https://github.com/user-attachments/assets/e0edd9f3-7a65-4ab1-8e03-9f7429ffc42e)](https://blw-ofag-ufag.github.io/plant-protection/registry/index.html?id=D-7413)
 
 A couple of small demonstration pages are available in the [`docs`](docs) folder and are hosted via GitHub Pages:
 
