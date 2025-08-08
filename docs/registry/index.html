@@ -1,16 +1,17 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <title>Plant-Protection Product Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant-Protection Product Profile | LINDAS</title>
 
-  <!-- Google Font ------------------------------------------------------ -->
+  <!-- Google Fonts: Poppins & Material Symbols -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
 
-  <!-- Main stylesheet ------------------------------------------------- -->
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,48 +19,77 @@
   <!-- Site Header -->
   <header class="site-header">
     <div class="header-content">
-      <span class="site-title">Linked-PSM-Verzeichnis</span>
+      <div class="site-title">
+        <span class="material-symbols-outlined">science</span>
+        <span>LinPSM</span>
+      </div>
       <form class="search-form" id="search-form" role="search">
-        <input type="search" id="search-input" list="search-suggestions" placeholder="Produkt suchen" autocomplete="off">
+        <span class="material-symbols-outlined search-icon">search</span>
+        <input type="search" id="search-input" list="search-suggestions" placeholder="Produkt nach Name oder Zulassungsnummer suchen..." autocomplete="off">
         <datalist id="search-suggestions"></datalist>
-        <button type="submit">Suchen</button>
       </form>
     </div>
   </header>
 
   <div class="content-wrapper">
-    <!-- Loading indicator ------------------------------------------------- -->
-    <div id="loading">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-           stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="10" opacity=".25"/>
-        <path d="M22 12a10 10 0 0 1-10 10"/>
-      </svg>
-      Loading product …
+    <br>
+    <div id="loading" class="loading-container">
+      <div class="spinner"></div>
+      <p>Lade Produktdaten von LINDAS</p>
     </div>
 
-    <!-- Main card (injected via JS) -------------------------------------- -->
-    <article class="card hidden" id="card"></article>
+    <!-- Main Content Area -->
+    <div class="page-content hidden" id="page-content">
+      <!-- Left Sticky Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <!-- Injected via JS -->
+      </aside>
+      <!-- Right Scrollable Main Content -->
+      <main class="main-content" id="main-content">
+        <!-- Injected via JS -->
+      </main>
+    </div>
   </div>
 
+  <!-- Template for Component Tiles -->
+  <template id="component-tile-template">
+    <li class="component-tile">
+      <div class="tile-header">
+        <h4 class="component-name"></h4>
+        <div class="component-portion"></div>
+      </div>
+      <div class="smiles-container"></div>
+      <div class="component-meta"></div>
+      <div class="tile-footer">
+        <span class="component-role"></span>
+      </div>
+    </li>
+  </template>
 
-  <!-- Template helper --------------------------------------------------- -->
-  <template id="tag-template">
-    <a class="tag" target="_self"></a>
+  <!-- Template for Indication Items -->
+  <template id="indication-item-template">
+    <details class="indication-item">
+      <summary>
+        <div class="summary-main">
+          <span class="summary-crop"></span>
+          <span class="summary-pest"></span>
+        </div>
+        <span class="material-symbols-outlined chevron">expand_more</span>
+      </summary>
+      <div class="indication-details"></div>
+    </details>
   </template>
 
   <!-- Site Footer -->
   <footer class="site-footer">
-    <div class="footer-content">
-      <p>
-        Diese Seite ist ein Demoprojekt des Bundesamtes für Landwirtschaft (BLW). Die Daten werden über die <a href="https://lindas.admin.ch/" target="_blank" rel="noopener">LINDAS-Plattform</a> bereitgestellt.
-        Den Quellcode und weitere Informationen finden Sie auf <a href="https://github.com/blw-ofag-ufag/plant-protection" target="_blank" rel="noopener">GitHub</a>.
-      </p>
-    </div>
+    <p>
+      Diese Seite ist ein Demoprojekt des Bundesamtes für Landwirtschaft (BLW).
+      Die Daten werden über die <a href="https://lindas.admin.ch" target="_blank" rel="noopener">LINDAS-Plattform</a> bereitgestellt.
+      Den Quellcode und weitere Informationen finden Sie auf <a href="https://github.com/blw-ofag-ufag/plant-protection" target="_blank" rel="noopener">GitHub</a>.
+    </p>
   </footer>
 
-
-  <!-- Script ------------------------------------------------------------- -->
+  <!-- Scripts -->
   <script src="https://unpkg.com/smiles-drawer@2.0.1/dist/smiles-drawer.min.js"></script>
   <script src="main.js"></script>
 </body>
