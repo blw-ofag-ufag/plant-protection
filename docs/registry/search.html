@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produktsuche | LINDAS</title>
+
+  <!-- Google Fonts: Poppins & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Override page layout to be single-column */
+    .page-content {
+      grid-template-columns: 1fr;
+    }
+
+    /* Additional styles for search page */
+    .filter-bar {
+      margin-bottom: 2rem;
+    }
+    
+    .product-listing {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+
+    /* Make the entire card a clickable link */
+    a.product-card {
+      text-decoration: none;
+      color: inherit;
+      background-color: var(--surface-1);
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all var(--transition-speed) ease;
+    }
+
+    a.product-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--primary);
+      box-shadow: 0 10px 30px rgba(0, 188, 212, 0.2);
+    }
+    
+    /* NEW: Header layout to place name and number side-by-side */
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .card-header h3 {
+        font-size: 1.25rem;
+        color: var(--text-primary);
+        margin-bottom: 0; /* Override default heading margin */
+    }
+
+    /* NEW: Style for the admission number in the card header */
+    .card-admission-number {
+        font-family: var(--font-monospace);
+        font-weight: 500;
+        color: var(--text-secondary);
+        background-color: var(--background);
+        padding: 0.25rem 0.5rem;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .product-card .company-name {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+    }
+    
+    .chip-set {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .chip.active {
+      background-color: var(--primary);
+      color: var(--background);
+      font-weight: 600;
+    }
+
+    /* Make chips on cards interactive */
+    .product-card .chip {
+        cursor: pointer;
+    }
+
+    /* Styling for the 'Nothing Found' message */
+    .no-results-container {
+        grid-column: 1 / -1; /* Span all columns */
+        text-align: center;
+        padding: 4rem 2rem;
+        background-color: var(--surface-1);
+        border-radius: var(--border-radius);
+    }
+    .no-results-container p {
+        color: var(--text-secondary);
+        margin-bottom: 1.5rem;
+    }
+    .clear-filters-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        border: 1px solid var(--primary);
+        color: var(--primary);
+        background-color: transparent;
+        border-radius: var(--border-radius);
+        font-family: inherit;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all var(--transition-speed);
+    }
+    .clear-filters-btn:hover {
+        background-color: var(--primary);
+        color: var(--background);
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-content">
+      <div class="site-title">
+        <span class="material-symbols-outlined">science</span>
+        <span>LinPSM</span>
+      </div>
+      <form class="search-form" id="search-form" role="search">
+        <span class="material-symbols-outlined search-icon">search</span>
+        <input type="search" id="search-input" placeholder="Produkt nach Name, Zulassungsnummer oder Firma suchen..." autocomplete="off">
+      </form>
+    </div>
+  </header>
+
+  <div class="content-wrapper">
+    <div id="loading" class="loading-container">
+      <div class="spinner"></div>
+      <p>Lade Produktdaten von LINDAS</p>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="page-content hidden" id="page-content">
+      <main class="main-content">
+        <div class="filter-bar" id="filter-bar">
+          <h2>Produkttyp auswählen</h2>
+          <div class="chip-set" id="class-filters">
+            <!-- Class filter chips will be injected here -->
+          </div>
+        </div>
+        <div class="product-listing" id="product-listing">
+          <!-- Product cards will be injected here -->
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <p>
+      Diese Seite ist ein Demoprojekt des Bundesamtes für Landwirtschaft (BLW).
+      Die Daten werden über die <a href="https://lindas.admin.ch" target="_blank" rel="noopener">LINDAS-Plattform</a> bereitgestellt.
+      Den Quellcode und weitere Informationen finden Sie auf <a href="https://github.com/blw-ofag-ufag/plant-protection" target="_blank" rel="noopener">GitHub</a>.
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    (async () => {
+      const $loading = document.getElementById('loading');
+      const $pageContent = document.getElementById('page-content');
+      const $productListing = document.getElementById('product-listing');
+      const $classFilters = document.getElementById('class-filters');
+      const $searchInput = document.getElementById('search-input');
+      const $searchForm = document.getElementById('search-form');
+
+      let allProducts = [];
+      let allProductClasses = new Map();
+
+      const fetchSparql = async (q) => {
+        const res = await fetch('https://lindas.admin.ch/query', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/sparql-query', 'Accept': 'application/sparql-results+json' },
+          body: q
+        });
+        if (!res.ok) throw new Error(`SPARQL Query Failed: ${res.status} ${res.statusText}`);
+        return res.json();
+      };
+      
+      const renderProductCard = (product) => {
+        const productUrl = `index.html?id=${encodeURIComponent(product.federalAdmissionNumber)}`;
+        // FIX: Add data-class-slug to chips to make them clickable filters
+        const classChips = product.classes
+            .map(c => `<span class="chip" data-class-slug="${c.slug}">${c.label}</span>`)
+            .join('');
+
+        // FIX: Moved admission number to a new card header for a more compact design
+        return `
+          <a href="${productUrl}" class="product-card">
+            <div>
+              <div class="card-header">
+                <h3>${product.name}</h3>
+                <span class="card-admission-number">${product.federalAdmissionNumber}</span>
+              </div>
+              <p class="company-name">${product.companyName}</p>
+            </div>
+            <div class="chip-set">
+              ${classChips}
+            </div>
+          </a>
+        `;
+      };
+
+      const renderProducts = (products) => {
+        if (products.length === 0) {
+          $productListing.innerHTML = `
+            <div class="no-results-container">
+                <p>Für die aktuelle Auswahl wurden keine Produkte gefunden.</p>
+                <button id="clear-filters-btn" class="clear-filters-btn">
+                    <span class="material-symbols-outlined">clear_all</span>
+                    Filter zurücksetzen
+                </button>
+            </div>
+          `;
+          return;
+        }
+        $productListing.innerHTML = products.map(renderProductCard).join('');
+      };
+
+      const applyFilters = () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchTerm = (urlParams.get('search') || '').toLowerCase();
+        const selectedClassSlugs = (urlParams.get('class') || '').split(',').filter(Boolean);
+        const companyFilter = urlParams.get('company');
+
+        let filteredProducts = allProducts;
+
+        if (companyFilter) {
+            filteredProducts = filteredProducts.filter(p => p.companySlug === companyFilter);
+        }
+
+        if (selectedClassSlugs.length > 0) {
+            filteredProducts = filteredProducts.filter(p => {
+                const productSlugs = new Set(p.classes.map(c => c.slug));
+                return selectedClassSlugs.every(selectedSlug => productSlugs.has(selectedSlug));
+            });
+        }
+
+        if (searchTerm) {
+          filteredProducts = filteredProducts.filter(p =>
+            p.name.toLowerCase().includes(searchTerm) ||
+            p.federalAdmissionNumber.toLowerCase().includes(searchTerm) ||
+            p.companyName.toLowerCase().includes(searchTerm) ||
+            p.classes.some(c => c.label.toLowerCase().includes(searchTerm))
+          );
+        }
+
+        renderProducts(filteredProducts);
+        updateActiveChips(selectedClassSlugs);
+      };
+
+      const updateActiveChips = (activeSlugs) => {
+        const chips = $classFilters.querySelectorAll('.chip');
+        chips.forEach(chip => {
+            const slug = chip.dataset.classSlug;
+            if (slug === '') {
+                chip.classList.toggle('active', activeSlugs.length === 0);
+            } else {
+                chip.classList.toggle('active', activeSlugs.includes(slug));
+            }
+        });
+      };
+
+      const handleClassFilterClick = (e) => {
+        const chip = e.target.closest('.chip');
+        if (!chip) return;
+
+        const clickedSlug = chip.dataset.classSlug;
+        const urlParams = new URLSearchParams(window.location.search);
+        let activeSlugs = (urlParams.get('class') || '').split(',').filter(Boolean);
+
+        if (clickedSlug === '') {
+            activeSlugs = [];
+        } else {
+            const index = activeSlugs.indexOf(clickedSlug);
+            if (index > -1) {
+                activeSlugs.splice(index, 1);
+            } else {
+                activeSlugs.push(clickedSlug);
+            }
+        }
+
+        if (activeSlugs.length > 0) {
+            urlParams.set('class', activeSlugs.join(','));
+        } else {
+            urlParams.delete('class');
+        }
+        
+        window.history.pushState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
+        applyFilters();
+      };
+      
+      const handleClearFilters = () => {
+          const urlParams = new URLSearchParams(window.location.search);
+          urlParams.delete('search');
+          urlParams.delete('class');
+          urlParams.delete('company');
+          window.history.pushState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
+          $searchInput.value = '';
+          applyFilters();
+      };
+
+      const handleSearch = (e) => {
+        e.preventDefault();
+        const searchTerm = $searchInput.value;
+        const urlParams = new URLSearchParams(window.location.search);
+        if (searchTerm) {
+          urlParams.set('search', searchTerm);
+        } else {
+          urlParams.delete('search');
+        }
+        window.history.pushState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
+        applyFilters();
+      };
+      
+      const handleProductListingClick = (e) => {
+          // Handle clicks on "Clear Filters" button in the no-results message
+          if (e.target.closest('#clear-filters-btn')) {
+              handleClearFilters();
+              return;
+          }
+
+          // FIX: Handle clicks on class chips within product cards
+          const chip = e.target.closest('.chip[data-class-slug]');
+          if (chip && e.target.closest('.product-card')) {
+              e.preventDefault(); // Prevent navigating to the product page
+              e.stopPropagation(); // Stop the event from bubbling further
+
+              const clickedSlug = chip.dataset.classSlug;
+              const urlParams = new URLSearchParams(window.location.search);
+              let activeSlugs = (urlParams.get('class') || '').split(',').filter(Boolean);
+
+              if (!activeSlugs.includes(clickedSlug)) {
+                  activeSlugs.push(clickedSlug);
+                  urlParams.set('class', activeSlugs.join(','));
+                  window.history.pushState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
+                  applyFilters();
+              }
+          }
+      };
+
+      const main = async () => {
+        try {
+          const sparqlQuery = `
+            PREFIX sc: <https://schema.org/>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            PREFIX schema: <http://schema.org/>
+            PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
+            SELECT *
+            WHERE {
+              GRAPH <https://lindas.admin.ch/foag/plant-protection>
+              {
+                ?product a :Product ;
+                           schema:name ?name ;
+                           a ?class ;
+                           :federalAdmissionNumber ?federalAdmissionNumber ;
+                           :hasPermissionHolder ?company .
+                ?class rdfs:subClassOf+ :Product ;
+                       schema:name ?className .
+                FILTER(LANG(?className)="de")
+              }
+              ?company schema:legalName ?companyName .
+            }
+          `;
+
+          const { results } = await fetchSparql(sparqlQuery);
+          
+          const productsMap = new Map();
+          results.bindings.forEach(item => {
+              const id = item.federalAdmissionNumber.value;
+              if (!productsMap.has(id)) {
+                  productsMap.set(id, {
+                      federalAdmissionNumber: id,
+                      name: item.name.value,
+                      companyName: item.companyName.value,
+                      companySlug: item.company.value.split('/').pop(),
+                      classes: []
+                  });
+              }
+
+              const product = productsMap.get(id);
+              const classUri = item.class.value;
+              const className = item.className.value;
+              
+              if (!product.classes.some(c => c.uri === classUri)) {
+                product.classes.push({ uri: classUri, label: className, slug: classUri.split('/').pop() });
+              }
+
+              if (!allProductClasses.has(classUri)) {
+                allProductClasses.set(classUri, { label: className, slug: classUri.split('/').pop() });
+              }
+          });
+          allProducts = [...productsMap.values()];
+
+          const sortedClasses = [...allProductClasses.values()].sort((a,b) => a.label.localeCompare(b.label, 'de'));
+          let classChipsHtml = '<span class="chip" data-class-slug="">Alle Typen</span>';
+          sortedClasses.forEach(({ label, slug }) => {
+            classChipsHtml += `<span class="chip" data-class-slug="${slug}">${label}</span>`;
+          });
+          $classFilters.innerHTML = classChipsHtml;
+
+          const urlParams = new URLSearchParams(window.location.search);
+          $searchInput.value = urlParams.get('search') || '';
+          applyFilters();
+
+          $loading.classList.add('hidden');
+          $pageContent.classList.remove('hidden');
+          $pageContent.classList.add('visible');
+
+          // --- Event Listeners ---
+          $classFilters.addEventListener('click', handleClassFilterClick);
+          $searchForm.addEventListener('submit', handleSearch);
+          $searchInput.addEventListener('search', handleSearch);
+          // NEW: Single listener for all clicks within the product list
+          $productListing.addEventListener('click', handleProductListingClick);
+
+        } catch (err) {
+          console.error(err);
+          $loading.innerHTML = `<p class="error" style="color: #ff5252;">${err.message}</p>`;
+        }
+      };
+
+      main();
+    })();
+  </script>
+</body>
+</html>
