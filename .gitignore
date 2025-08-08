@@ -2,3 +2,4 @@ upload.sh
 notes.*
 rdf/graph.ttl
 *.DS_Store
+/api
