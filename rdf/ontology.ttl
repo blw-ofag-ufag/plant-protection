@@ -375,7 +375,7 @@ wikidata:Q16521 a owl:Class ;
     rdfs:subClassOf :ChemicalProduct .
 
 :BiologicalControlAgent a owl:Class ;
-    rdfs:label "Organismus für die biologische Schädlingsbekämpfung"@de,
+    rdfs:label "Biokontroll-Agenten"@de,
         "Biological control agent"@en,
         "Agent de lutte biologique"@fr,
         "Agente di controllo biologico"@it ;
@@ -962,7 +962,7 @@ wikidata:Q16521 a owl:Class ;
         "Viricida"@it ;
     rdfs:subClassOf :ChemicalProduct .
 
-_:n12c0eb02f50d49c9a44177ebf7e28de4b12 a owl:Class ;
+_:nedd97cef57604e87b648d63f701da57cb12 a owl:Class ;
     owl:oneOf ( :AdditiveToDeclare :Synergist :Safener :ActiveIngredient ) .
 
 schema:addressLocality a owl:DatatypeProperty ;
@@ -1492,7 +1492,7 @@ schema:addressCountry a owl:ObjectProperty ;
         "Role"@en ;
     rdfs:comment "The role that a particular component plays in a mixture."@en ;
     rdfs:domain :ComponentPortion ;
-    rdfs:range _:n12c0eb02f50d49c9a44177ebf7e28de4b12 .
+    rdfs:range _:nedd97cef57604e87b648d63f701da57cb12 .
 
 :substance a owl:ObjectProperty ;
     rdfs:label "Substanz"@de,
