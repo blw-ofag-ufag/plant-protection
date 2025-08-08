@@ -28,52 +28,18 @@
   const htmlFormula = (formula) => formula.replace(/(\d+)/g, '<sub>$1</sub>');
 
   /* ╭──────────────────── Search ────────────────────╮ */
-  const initSearch = async () => {
+  const initSearch = () => {
     const $searchForm = document.getElementById('search-form');
     const $searchInput = document.getElementById('search-input');
-    const $suggestions = document.getElementById('search-suggestions');
 
-    const sparqlAllProducts = `
-      PREFIX schema: <http://schema.org/>
-      PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
-      SELECT ?name ?federalAdmissionNumber WHERE {
-        ?product a :Product ; schema:name ?name ; :federalAdmissionNumber ?federalAdmissionNumber .
-      }`;
+    // The search form now redirects to the search page with the query.
+    $searchForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const query = $searchInput.value.trim();
+      if (!query) return;
 
-    try {
-      const { results } = await fetchSparql(sparqlAllProducts);
-      const allProducts = results.bindings.map(r => ({
-        id: r.federalAdmissionNumber.value,
-        name: r.name.value
-      }));
-
-      $suggestions.innerHTML = allProducts.map(p => `<option value="${p.name} (${p.id})"></option>`).join('');
-
-      $searchForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const query = $searchInput.value.toLowerCase();
-        if (!query) return;
-
-        const foundProduct = allProducts.find(p =>
-          p.id.toLowerCase() === query ||
-          p.name.toLowerCase() === query ||
-          `${p.name} (${p.id})`.toLowerCase() === query
-        );
-
-        if (foundProduct) {
-          window.location.href = `${location.pathname}?id=${foundProduct.id}`;
-        } else {
-          const partialMatch = allProducts.find(p => p.id.toLowerCase().includes(query) || p.name.toLowerCase().includes(query));
-          if (partialMatch) {
-            window.location.href = `${location.pathname}?id=${partialMatch.id}`;
-          } else {
-            alert('Produkt nicht gefunden.');
-          }
-        }
-      });
-    } catch (err) {
-      console.error("Failed to initialize search:", err);
-    }
+      window.location.href = `search.html?search=${encodeURIComponent(query)}`;
+    });
   };
 
   /* ╭──────────────────── Accordion Logic ────────────────────╮ */
@@ -107,11 +73,20 @@
 
   const renderSidebar = (data) => {
     const { productName, federalNo, foreignNo, types, company, countryName } = data;
+
+    // Create slugs from IRIs for the new search links.
+    const companySlug = company.iri ? company.iri.split('/').pop() : '';
+    const typeChips = types.map(([iri, label]) => {
+      const classSlug = iri.split('/').pop();
+      // The chips are now links to the search page.
+      return `<a href="search.html?class=${classSlug}" class="chip">${label}</a>`;
+    }).join('');
+
     $sidebar.innerHTML = `
       <div class="card" id="product-info-panel">
         <div id="product-header">
           <h1 id="product-name">${productName}</h1>
-          <div class="chip-set">${types.map(([_, label]) => `<span class="chip">${label}</span>`).join('')}</div>
+          <div class="chip-set">${typeChips}</div>
         </div>
         <hr style="margin: 1.5rem 0; border-color: var(--border-color);">
         <div id="product-identifiers">
@@ -124,7 +99,10 @@
         <hr style="margin: 1.5rem 0; border-color: var(--border-color);">
         <div id="product-company">
           <div class="company-info">
-            <div class="company-name"><a href="${company.iri}" target="_blank" rel="noopener">${company.name}</a></div>
+            <div class="company-name">
+              <!-- The company name now links to the search page. -->
+              <a href="search.html?company=${companySlug}">${company.name}</a>
+            </div>
             <div class="company-address">${[company.street, company.postal, company.locality].filter(Boolean).join(', ')}</div>
           </div>
         </div>
@@ -249,7 +227,7 @@
 
   /* ╭──────────────────── Main Flow ────────────────────╮ */
   const main = async () => {
-    await initSearch();
+    initSearch(); // No longer async
 
     const id = new URLSearchParams(location.search).get('id');
     if (!id) {
