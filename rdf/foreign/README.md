@@ -46,3 +46,36 @@ WHERE {
   }
 }
 ```
+
+## Information for parallel imports
+
+This query looks for all parallel products and matches the primary Swiss registration of a chemically equivalent product.
+It then assigns all indications found for that product to the parallel product as well.
+
+```rq
+PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
+CONSTRUCT
+{
+  ?product :notice ?notice .
+  ?product :indication ?indication .
+  ?product :hasComponentPortion ?componentPortion .
+  ?componentPortion :hasComponentPortion ?percentage .
+  ?componentPortion :hasComponentPortion ?grammPerLitre .
+  ?componentPortion :substance ?substance .
+  ?componentPortion :role ?role .
+}
+WHERE
+{
+  ?product a :ParallelImport .
+  ?product :isSameProductAs ?same .
+  ?same :federalAdmissionNumber ?w .
+  FILTER(REGEX(STR(?w), "^W-\\d{4}$"))
+  ?same :notice ?notice .
+  ?same :indication ?indication .
+  ?same :hasComponentPortion ?componentPortion .
+  ?componentPortion :substance ?substance .
+  ?componentPortion :role ?role .
+  OPTIONAL { ?componentPortion :hasPercentage ?percentage }
+  OPTIONAL { ?componentPortion :hasGrammPerLitre ?grammPerLitre }
+}
+```
