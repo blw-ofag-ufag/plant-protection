@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Substanz-Profil | LINDAS</title>
+
+  <!-- Google Fonts: Poppins & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <!-- Main stylesheet (can be external) -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ============================================================================
+       1. SETUP, THEME & GLOBALS
+       ========================================================================= */
+       :root {
+          --background: #121212;
+          --surface-1: rgba(255, 255, 255, 0.05); /* Cards, containers */
+          --surface-2: rgba(255, 255, 255, 0.08); /* Hover states */
+          --glass-surface: rgba(18, 18, 18, 0.6); /* Blurred backgrounds */
+          --primary: #00bcd4; /* Cyan */
+          --text-primary: #ffffff;
+          --text-secondary: #b0bec5;
+          --text-tertiary: #78909c;
+          --border-color: rgba(255, 255, 255, 0.1);
+          --shadow-color: rgba(0, 0, 0, 0.5);
+        
+          --font-family: 'Poppins', sans-serif;
+          --font-monospace: 'Roboto Mono', monospace;
+          --border-radius: 12px;
+          --transition-speed: 0.3s;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+          font-family: var(--font-family); background-color: var(--background);
+          color: var(--text-primary); line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh;
+        }
+        
+        a { color: var(--primary); text-decoration: none; transition: color var(--transition-speed); }
+        a:hover { color: #ffffff; }
+        
+        h1, h2, h3, h4 { font-weight: 600; }
+        h1 { font-size: 2.75rem; line-height: 1.2; }
+        h2 { font-size: 1.75rem; margin-bottom: 1.5rem; color: var(--text-primary); border-left: 3px solid var(--primary); padding-left: 1rem; }
+        
+    /* ============================================================================
+       2. LAYOUT & STRUCTURE
+       ========================================================================= */
+        .content-wrapper {
+          flex-grow: 1; padding-top: 100px; max-width: 1500px; width: 100%; margin: 0 auto;
+          padding-left: 2rem; padding-right: 2rem; padding-bottom: 4rem;
+        }
+        
+        .page-content {
+          display: grid; grid-template-columns: 350px 1fr; gap: 2rem; align-items: start;
+          opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        
+        .page-content.visible { opacity: 1; transform: translateY(0); }
+        .sidebar { position: sticky; top: 100px; }
+        .main-content { display: flex; flex-direction: column; gap: 2rem; }
+        
+        @media (max-width: 1024px) {
+          .page-content { grid-template-columns: 1fr; }
+          .sidebar { position: static; }
+        }
+        
+    /* ============================================================================
+       3. HEADER & FOOTER
+       ========================================================================= */
+        .site-header {
+          position: fixed; top: 0; left: 0; width: 100%; padding: 0 2rem; z-index: 1000;
+          background: var(--glass-surface); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-color);
+        }
+        .header-content {
+          height: 80px; display: flex; justify-content: space-between; align-items: center;
+          gap: 2rem; max-width: 1400px; margin: 0 auto;
+        }
+        .site-title { display: flex; align-items: center; gap: 0.75rem; font-size: 1.5rem; font-weight: 600; }
+        .search-form { position: relative; flex-grow: 1; max-width: 600px; }
+        .search-form .search-icon { position: absolute; top: 50%; left: 1rem; transform: translateY(-50%); color: var(--text-tertiary); }
+        .search-form input[type="search"] {
+          width: 100%; height: 50px; padding: 0 1rem 0 3.5rem; border: 1px solid var(--border-color);
+          border-radius: var(--border-radius); background-color: var(--surface-1); color: var(--text-primary);
+          font-family: var(--font-family); font-size: 1rem;
+        }
+        .site-footer {
+          background-color: var(--surface-1); border-top: 1px solid var(--border-color);
+          color: var(--text-secondary); text-align: center; padding: 2rem; font-size: 0.9rem;
+        }
+        
+    /* ============================================================================
+       4. COMPONENTS
+       ========================================================================= */
+        .loading-container {
+          display: flex; flex-direction: column; align-items: center; justify-content: center;
+          padding: 5rem 0; gap: 1.5rem; color: var(--text-secondary);
+        }
+        .spinner {
+          width: 50px; height: 50px; border: 4px solid var(--surface-1);
+          border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        
+        .card {
+          background-color: var(--surface-1); border: 1px solid var(--border-color);
+          border-radius: var(--border-radius); padding: 1.5rem; box-shadow: 0 4px 20px var(--shadow-color);
+        }
+        
+        .chip-set { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+        .chip {
+          display: inline-block; padding: 0.3rem 0.8rem; border-radius: 20px;
+          background-color: var(--surface-2); font-size: 0.8rem; font-weight: 500; color: var(--text-secondary);
+        }
+
+        .identifier-list {
+          list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem;
+        }
+        .identifier-list li { display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; }
+        .identifier-list dt { color: var(--text-tertiary); }
+        .identifier-list dd {
+          font-family: var(--font-monospace); font-weight: 500; color: var(--text-secondary);
+          background-color: var(--background); padding: 0.25rem 0.5rem; border: 1px solid var(--border-color);
+          border-radius: 6px;
+        }
+        
+        .structure-container {
+            background: var(--surface-1); border: 1px solid var(--border-color); border-radius: var(--border-radius);
+            padding: 1rem; display: flex; align-items: center; justify-content: center; min-height: 200px;
+        }
+        .structure-container svg { max-width: 400px; max-height: 250px; height: auto; }
+        
+        /* -- Product List for Substance Page -- */
+        .product-list {
+            list-style: none; display: grid; gap: 1.5rem;
+            /* FIX: Reduced min-width to allow more cards per row */
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+        .product-list-item a {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* This is key for equal height cards with footer */
+            text-decoration: none; color: inherit; background-color: var(--surface-1);
+            border: 1px solid var(--border-color); border-radius: var(--border-radius);
+            padding: 1.5rem; height: 100%; transition: all var(--transition-speed) ease;
+        }
+        .product-list-item a:hover {
+            transform: translateY(-5px); border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 188, 212, 0.2);
+        }
+        .product-list-item .item-header {
+            display: flex; justify-content: space-between; align-items: flex-start;
+            gap: 1rem; margin-bottom: 0.25rem;
+        }
+        .item-header h4 { font-size: 1.25rem; color: var(--text-primary); margin: 0; }
+        .card-admission-number {
+            font-family: var(--font-monospace); font-weight: 500; color: var(--text-secondary);
+            background-color: var(--background); padding: 0.25rem 0.5rem; border: 1px solid var(--border-color);
+            border-radius: 6px; white-space: nowrap; flex-shrink: 0;
+        }
+        .component-portion {
+            font-size: 1rem; font-weight: 600; color: var(--primary);
+            white-space: nowrap; text-align: right; margin-top: 1rem; /* Space between text and portion */
+        }
+        .product-list-item .company-name { font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-content">
+      <div class="site-title"><span class="material-symbols-outlined">science</span><span>LinPSM</span></div>
+      <form class="search-form" id="search-form" role="search">
+        <span class="material-symbols-outlined search-icon">search</span>
+        <input type="search" id="search-input" placeholder="Produkt nach Name oder Zulassungsnummer suchen..." autocomplete="off">
+      </form>
+    </div>
+  </header>
+
+  <div class="content-wrapper">
+    <div id="loading" class="loading-container">
+      <div class="spinner"></div><p>Lade Substanz-Daten von LINDAS</p>
+    </div>
+    <div class="page-content hidden" id="page-content">
+      <aside class="sidebar" id="sidebar"></aside>
+      <main class="main-content" id="main-content"></main>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>
+      Diese Seite ist ein Demoprojekt des Bundesamtes für Landwirtschaft (BLW).
+      Die Daten werden über die <a href="https://lindas.admin.ch" target="_blank" rel="noopener">LINDAS-Plattform</a> bereitgestellt.
+      Den Quellcode und weitere Informationen finden Sie auf <a href="https://github.com/blw-ofag-ufag/plant-protection" target="_blank" rel="noopener">GitHub</a>.
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/smiles-drawer@2.0.1/dist/smiles-drawer.min.js"></script>
+  <script>
+    (async () => {
+      const $loading = document.getElementById('loading');
+      const $pageContent = document.getElementById('page-content');
+      const $sidebar = document.getElementById('sidebar');
+      const $mainContent = document.getElementById('main-content');
+      
+      const fetchSparql = async (q) => {
+        const res = await fetch('https://lindas.admin.ch/query', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/sparql-query', 'Accept': 'application/sparql-results+json' },
+          body: q
+        });
+        if (!res.ok) throw new Error(`SPARQL Query Failed: ${res.status} ${res.statusText}`);
+        return res.json();
+      };
+
+      const htmlFormula = (formula) => formula.replace(/(\d+)/g, '<sub>$1</sub>');
+
+      const initSearch = () => {
+        document.getElementById('search-form').addEventListener('submit', (e) => {
+          e.preventDefault();
+          const query = document.getElementById('search-input').value.trim();
+          if (query) window.location.href = `search.html?search=${encodeURIComponent(query)}`;
+        });
+      };
+
+      const renderSidebar = ({ name, roles, formula, chebi }) => {
+        const roleChips = roles.map(role => `<div class="chip">${role}</div>`).join('');
+        const formulaHtml = formula ? `<li><dt>Formel</dt><dd>${htmlFormula(formula)}</dd></li>` : '';
+        const chebiHtml = chebi.map(c => 
+            `<li><dt>ChEBI</dt><dd><a href="${c.url}" target="_blank" rel="noopener">${c.id}</a></dd></li>`
+        ).join('');
+        const identifiersHtml = formulaHtml + chebiHtml;
+        const hasIdentifiers = identifiersHtml.length > 0;
+        $sidebar.innerHTML = `
+          <div class="card">
+            <h1 id="substance-name">${name}</h1>
+            <div class="chip-set">${roleChips}</div>
+            ${hasIdentifiers ? '<hr style="margin: 1.5rem 0; border-color: var(--border-color);">' : ''}
+            ${hasIdentifiers ? `<ul class="identifier-list">${identifiersHtml}</ul>` : ''}
+          </div>`;
+      };
+      
+      const renderMainContent = ({ smiles, name, products }) => {
+        const placeholderSvg = `<svg viewBox="0 0 160 120" role="img"><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="100" font-family="Poppins" fill="none" stroke="var(--text-tertiary)" stroke-width="1" stroke-linejoin="round">?</text></svg>`;
+        const structureHtml = smiles 
+            ? `<svg data-smiles="${smiles}" alt="Molekülzeichnung von ${name}" data-smiles-theme="gruvbox-dark"></svg>` 
+            : placeholderSvg;
+        $mainContent.innerHTML = `
+          <section id="structure">
+            <h2>Struktur</h2>
+            <div class="structure-container">${structureHtml}</div>
+          </section>
+          <section id="products">
+            <h2>Enthalten in den folgenden Produkten</h2>
+            ${products.length > 0 ? 
+              `<ul class="product-list">${products.map(renderProductItem).join('')}</ul>` : 
+              '<p>Diese Substanz ist in keinen zugelassenen Produkten enthalten.</p>'}
+          </section>`;
+        if (window.SmiDrawer) SmiDrawer.apply();
+      };
+
+      const renderProductItem = (p) => {
+        const pct = p.percentage ? `${(+p.percentage).toFixed(2)} %` : null;
+        const gram = p.grammPerLitre ? `${(+p.grammPerLitre).toFixed(1)} g/L` : null;
+        // FIX: Join with ' / ' for a single line display
+        const portion = [pct, gram].filter(Boolean).join(' / ');
+        const productUrl = `index.html?id=${encodeURIComponent(p.wNumber)}`;
+
+        return `
+          <li class="product-list-item">
+            <a href="${productUrl}">
+              <div>
+                <div class="item-header">
+                  <h4>${p.productName}</h4>
+                  <span class="card-admission-number">${p.wNumber}</span>
+                </div>
+                <p class="company-name">${p.permissionHolderLegalName}</p>
+              </div>
+              <div>
+                ${portion ? `<div class="component-portion">${portion}</div>` : ''}
+              </div>
+            </a>
+          </li>`;
+      };
+
+      const main = async () => {
+        initSearch();
+        const id = new URLSearchParams(location.search).get('id');
+        if (!id) {
+          $loading.innerHTML = `<p>Keine Substanz ausgewählt. <br>Versuchen Sie z.B. <a href="${location.pathname}?id=1368">?id=1368</a></p>`;
+          return;
+        }
+        
+        const substanceIRI = `<https://agriculture.ld.admin.ch/plant-protection/substance/${id}>`;
+        try {
+          const sparqlSubstance = `
+            PREFIX schema: <http://schema.org/> PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
+            PREFIX obochebi: <http://purl.obolibrary.org/obo/chebi/>
+            SELECT DISTINCT ?name ?formula ?smiles
+              (GROUP_CONCAT(DISTINCT ?roleName; separator=",") AS ?roles)
+              (GROUP_CONCAT(DISTINCT ?chebiIRI; separator=",") AS ?chebiIRIs)
+            WHERE {
+              GRAPH ?g {
+                VALUES ?substance { ${substanceIRI} }
+                ?substance schema:name ?name . FILTER(LANG(?name) = "de" || LANG(?name) = "")
+                ?component :substance ?substance ; :role/schema:name ?roleName . FILTER(LANG(?roleName) = "de")
+                OPTIONAL { ?substance obochebi:formula ?formula . }
+                OPTIONAL { ?substance obochebi:smiles ?smiles . }
+                OPTIONAL { ?substance (:hasChebiIdentity|:hasPartialChebiIdentity) ?chebiIRI . }
+              }
+            } GROUP BY ?name ?formula ?smiles`;
+          const sparqlProducts = `
+            PREFIX schema: <http://schema.org/> PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
+            SELECT ?productName ?wNumber ?permissionHolderLegalName ?percentage ?grammPerLitre
+            WHERE {
+              VALUES ?substance { ${substanceIRI} }
+              ?component :substance ?substance .
+              ?product :hasComponentPortion ?component ;
+                       schema:name ?productName ; :federalAdmissionNumber ?wNumber ;
+                       :hasPermissionHolder/schema:legalName ?permissionHolderLegalName .
+              OPTIONAL { ?component :hasPercentage ?percentage } OPTIONAL { ?component :hasGrammPerLitre ?grammPerLitre }
+            } ORDER BY ?productName`;
+          
+          const [substanceRes, productsRes] = await Promise.all([ fetchSparql(sparqlSubstance), fetchSparql(sparqlProducts) ]);
+          if (!substanceRes.results.bindings.length) { throw new Error(`Keine Substanz für ID=${id} gefunden.`); }
+          const core = substanceRes.results.bindings[0];
+          
+          let chebiIds = [];
+          if (core.chebiIRIs && core.chebiIRIs.value) {
+              chebiIds = [...new Set(core.chebiIRIs.value.split(','))]
+                .map(iri => ({ id: `CHEBI:${iri.split('/').pop().replace('CHEBI_', '')}`, url: `https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:${iri.split('/').pop().replace('CHEBI_', '')}` }))
+                .sort((a,b) => a.id.localeCompare(b.id));
+          }
+
+          const structuredData = {
+            name: core.name.value, roles: core.roles ? [...new Set(core.roles.value.split(','))].sort() : [],
+            formula: core.formula?.value, smiles: core.smiles?.value, chebi: chebiIds,
+            products: productsRes.results.bindings.map(p => ({
+              productName: p.productName.value, wNumber: p.wNumber.value,
+              permissionHolderLegalName: p.permissionHolderLegalName.value,
+              percentage: p.percentage?.value, grammPerLitre: p.grammPerLitre?.value
+            }))
+          };
+
+          renderSidebar(structuredData);
+          renderMainContent(structuredData);
+          
+          $loading.classList.add('hidden');
+          $pageContent.classList.remove('hidden');
+          $pageContent.classList.add('visible');
+        } catch (err) {
+          console.error(err);
+          $loading.innerHTML = `<p class="error" style="color: #ff5252;">${err.message}</p>`;
+        }
+      };
+      main();
+    })();
+  </script>
+</body>
+</html>

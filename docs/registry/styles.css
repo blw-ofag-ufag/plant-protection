@@ -48,16 +48,17 @@
     /* ============================================================================
        2. LAYOUT & STRUCTURE
        ========================================================================= */
-    .content-wrapper {
-      flex-grow: 1; /* Ensures content pushes footer down */
-      padding-top: 80px;
-      max-width: 1500px;
-      width: 100%;
-      margin: 0 auto;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      padding-bottom: 4rem; /* Add space before footer */
-    }
+.content-wrapper {
+  flex-grow: 1;
+  /* FIX: Increased top padding to push content below the fixed header */
+  padding-top: 100px; 
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 4rem;
+}
     
     .page-content {
       display: grid;
@@ -325,3 +326,5 @@
        ========================================================================= */
     .hidden { display: none !important; }
     .faded-out { opacity: 0; visibility: hidden; }
+
+    
