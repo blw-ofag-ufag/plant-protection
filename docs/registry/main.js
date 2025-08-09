@@ -192,8 +192,8 @@
         </summary>
         <div class="indication-details">
           <dl class="indication-dl">
-            <dt>Anwendungsbereich</dt><dd><a href="${ind.area.uri}" target="_blank" rel="noopener">${ind.area.label}</a></dd>
-            <dt>Kultur</dt><dd>${[...ind.crops.values()].map(c => `<a href="${c.uri}" target="_blank" rel="noopener">${c.label}</a>`).join(', ')}</dd>
+            <dt>Anwendungsbereich</dt><dd>${ind.area.label}</dd>
+            <dt>Kultur</dt><dd>${[...ind.crops.values()].map(c => `${c.label}`).join(', ')}</dd>
             <dt>Dosierung</dt><dd>${formatRange(ind.dosage)}</dd>
             <dt>Aufwand</dt><dd>${formatRange(ind.expenditure)}</dd>
             <dt>Wartefrist</dt><dd>${formatRange(ind.waitingPeriod)}</dd>
