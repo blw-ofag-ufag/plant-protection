@@ -239,7 +239,7 @@
         const hasIdentifiers = identifiersHtml.length > 0;
         $sidebar.innerHTML = `
           <div class="card">
-            <h1 id="substance-name">${name}</h1>
+            <h1 id="substance-name" title="${name}">${name}</h1>
             <div class="chip-set">${roleChips}</div>
             ${hasIdentifiers ? '<hr style="margin: 1.5rem 0; border-color: var(--border-color);">' : ''}
             ${hasIdentifiers ? `<ul class="identifier-list">${identifiersHtml}</ul>` : ''}

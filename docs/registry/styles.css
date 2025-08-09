@@ -328,3 +328,26 @@
     .faded-out { opacity: 0; visibility: hidden; }
 
     
+    /* Prevent long substance names from overflowing the sidebar card */
+#substance-name{
+  /* shrink gently on narrow sidebars */
+  font-size: clamp(1.25rem, 1rem + 1.2vw, 2rem);
+  line-height: 1.2;
+
+  /* wrap even on long unbroken tokens and hyphenate where possible */
+  overflow-wrap: anywhere;   /* modern */
+  word-break: break-word;    /* fallback */
+  hyphens: auto;
+
+  /* safety nets */
+  max-width: 100%;
+}
+
+/* If identifiers can be long, allow wrapping there too */
+.identifier-list dt,
+.identifier-list dd {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.sidebar .card { overflow: hidden; }
