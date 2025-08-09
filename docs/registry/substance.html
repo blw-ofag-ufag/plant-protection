@@ -300,32 +300,45 @@
         const substanceIRI = `<https://agriculture.ld.admin.ch/plant-protection/substance/${id}>`;
         try {
           const sparqlSubstance = `
-            PREFIX schema: <http://schema.org/> PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
+            PREFIX schema: <http://schema.org/>
+            PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
             PREFIX obochebi: <http://purl.obolibrary.org/obo/chebi/>
             SELECT DISTINCT ?name ?formula ?smiles
               (GROUP_CONCAT(DISTINCT ?roleName; separator=",") AS ?roles)
               (GROUP_CONCAT(DISTINCT ?chebiIRI; separator=",") AS ?chebiIRIs)
-            WHERE {
-              GRAPH ?g {
+            WHERE
+            {
+              GRAPH <https://lindas.admin.ch/foag/plant-protection>
+              {
                 VALUES ?substance { ${substanceIRI} }
-                ?substance schema:name ?name . FILTER(LANG(?name) = "de" || LANG(?name) = "")
+                ?substance schema:name ?name . FILTER(LANG(?name) = "de")
                 ?component :substance ?substance ; :role/schema:name ?roleName . FILTER(LANG(?roleName) = "de")
                 OPTIONAL { ?substance obochebi:formula ?formula . }
                 OPTIONAL { ?substance obochebi:smiles ?smiles . }
                 OPTIONAL { ?substance (:hasChebiIdentity|:hasPartialChebiIdentity) ?chebiIRI . }
               }
-            } GROUP BY ?name ?formula ?smiles`;
+            }
+            GROUP BY ?name ?formula ?smiles`;
           const sparqlProducts = `
-            PREFIX schema: <http://schema.org/> PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
-            SELECT ?productName ?wNumber ?permissionHolderLegalName ?percentage ?grammPerLitre
-            WHERE {
-              VALUES ?substance { ${substanceIRI} }
-              ?component :substance ?substance .
-              ?product :hasComponentPortion ?component ;
-                       schema:name ?productName ; :federalAdmissionNumber ?wNumber ;
-                       :hasPermissionHolder/schema:legalName ?permissionHolderLegalName .
-              OPTIONAL { ?component :hasPercentage ?percentage } OPTIONAL { ?component :hasGrammPerLitre ?grammPerLitre }
-            } ORDER BY ?productName`;
+            PREFIX schema: <http://schema.org/>
+            PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
+            SELECT *
+            WHERE
+            {
+              GRAPH <https://lindas.admin.ch/foag/plant-protection>
+              {
+                VALUES ?substance { ${substanceIRI} }
+                ?component :substance ?substance .
+                ?product :hasComponentPortion ?component ;
+                  schema:name ?productName ;
+                  :federalAdmissionNumber ?wNumber ;
+                  :hasPermissionHolder ?permissionHolder .
+                OPTIONAL { ?component :hasPercentage ?percentage . }
+                OPTIONAL { ?component :hasGrammPerLitre ?grammPerLitre . }
+              }
+              ?permissionHolder schema:legalName ?permissionHolderLegalName .
+            }
+            ORDER BY DESC(?percentage)`;
           
           const [substanceRes, productsRes] = await Promise.all([ fetchSparql(sparqlSubstance), fetchSparql(sparqlProducts) ]);
           if (!substanceRes.results.bindings.length) { throw new Error(`Keine Substanz für ID=${id} gefunden.`); }
