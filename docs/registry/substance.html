@@ -131,21 +131,52 @@
         }
         
         .structure-container {
-            background: var(--surface-1); border: 1px solid var(--border-color); border-radius: var(--border-radius);
-            padding: 1rem; display: flex; align-items: center; justify-content: center; min-height: 200px;
+            display: flex; align-items: center; justify-content: center;
+            min-height: 250px; margin-bottom: 1rem;
         }
-        .structure-container svg { max-width: 400px; max-height: 250px; height: auto; }
+        .structure-container svg {
+            max-width: 100%; max-height: 350px; height: auto; width: auto;
+        }
+
+        .structure-dl {
+            font-family: var(--font-monospace);
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1rem 1.5rem;
+            margin-bottom: 2rem;
+            align-items: start;
+        }
+        .structure-dl dt {
+            color: var(--text-tertiary);
+            font-size: 0.9rem;
+            padding-top: 0.5rem; /* Align text baseline with padded dd */
+        }
+        /* THE ACTUAL FIX: Use justify-self to prevent stretching */
+        .structure-dl dd {
+            color: var(--text-secondary);
+            word-break: break-all;
+            font-size: 0.9rem;
+            background-color: var(--surface-1);
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            justify-self: start; /* This prevents the element from stretching to fill the grid cell */
+        }
         
-        /* -- Product List for Substance Page -- */
+        #products > p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
         .product-list {
             list-style: none; display: grid; gap: 1.5rem;
-            /* FIX: Reduced min-width to allow more cards per row */
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         }
         .product-list-item a {
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* This is key for equal height cards with footer */
+            justify-content: space-between;
             text-decoration: none; color: inherit; background-color: var(--surface-1);
             border: 1px solid var(--border-color); border-radius: var(--border-radius);
             padding: 1.5rem; height: 100%; transition: all var(--transition-speed) ease;
@@ -166,7 +197,7 @@
         }
         .component-portion {
             font-size: 1rem; font-weight: 600; color: var(--primary);
-            white-space: nowrap; text-align: right; margin-top: 1rem; /* Space between text and portion */
+            white-space: nowrap; text-align: right; margin-top: 1rem;
         }
         .product-list-item .company-name { font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem; }
   </style>
@@ -229,38 +260,50 @@
         });
       };
 
-      const renderSidebar = ({ name, roles, formula, chebi }) => {
+      const renderSidebar = ({ name, roles, chebi }) => {
         const roleChips = roles.map(role => `<div class="chip">${role}</div>`).join('');
-        const formulaHtml = formula ? `<li><dt>Formel</dt><dd>${htmlFormula(formula)}</dd></li>` : '';
         const chebiHtml = chebi.map(c => 
             `<li><dt>ChEBI</dt><dd><a href="${c.url}" target="_blank" rel="noopener">${c.id}</a></dd></li>`
         ).join('');
-        const identifiersHtml = formulaHtml + chebiHtml;
-        const hasIdentifiers = identifiersHtml.length > 0;
+        const hasIdentifiers = chebiHtml.length > 0;
         $sidebar.innerHTML = `
           <div class="card">
             <h1 id="substance-name" title="${name}">${name}</h1>
             <div class="chip-set">${roleChips}</div>
             ${hasIdentifiers ? '<hr style="margin: 1.5rem 0; border-color: var(--border-color);">' : ''}
-            ${hasIdentifiers ? `<ul class="identifier-list">${identifiersHtml}</ul>` : ''}
+            ${hasIdentifiers ? `<ul class="identifier-list">${chebiHtml}</ul>` : ''}
           </div>`;
       };
       
-      const renderMainContent = ({ smiles, name, products }) => {
+      const renderMainContent = ({ smiles, name, products, formula, iupac }) => {
         const placeholderSvg = `<svg viewBox="0 0 160 120" role="img"><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="100" font-family="Poppins" fill="none" stroke="var(--text-tertiary)" stroke-width="1" stroke-linejoin="round">?</text></svg>`;
-        const structureHtml = smiles 
+        const structureSvg = smiles 
             ? `<svg data-smiles="${smiles}" alt="Molekülzeichnung von ${name}" data-smiles-theme="gruvbox-dark"></svg>` 
             : placeholderSvg;
+        
+        const hasStructureDetails = formula || iupac || smiles;
+        const structureDetailsHtml = hasStructureDetails ? `
+            <dl class="structure-dl">
+                ${formula ? `<dt>Formel</dt><dd>${htmlFormula(formula)}</dd>` : ''}
+                ${iupac ? `<dt>IUPAC</dt><dd>${iupac}</dd>` : ''}
+                ${smiles ? `<dt>SMILES</dt><dd>${smiles}</dd>` : ''}
+            </dl>
+        ` : '';
+        
+        const productsContentHtml = products.length > 0 ? `
+            <p><b>${name}</b> ist in <b>${products.length} Produkten</b> enthalten.</p>
+            <ul class="product-list">${products.map(renderProductItem).join('')}</ul>` :
+            `<p>Diese Substanz ist aktuell in keinen zugelassenen Produkten enthalten.</p>`;
+
         $mainContent.innerHTML = `
           <section id="structure">
             <h2>Struktur</h2>
-            <div class="structure-container">${structureHtml}</div>
+            <div class="structure-container">${structureSvg}</div>
+            ${structureDetailsHtml}
           </section>
           <section id="products">
-            <h2>Enthalten in den folgenden Produkten</h2>
-            ${products.length > 0 ? 
-              `<ul class="product-list">${products.map(renderProductItem).join('')}</ul>` : 
-              '<p>Diese Substanz ist in keinen zugelassenen Produkten enthalten.</p>'}
+            <h2>Produkte</h2>
+            ${productsContentHtml}
           </section>`;
         if (window.SmiDrawer) SmiDrawer.apply();
       };
@@ -268,7 +311,6 @@
       const renderProductItem = (p) => {
         const pct = p.percentage ? `${(+p.percentage).toFixed(2)} %` : null;
         const gram = p.grammPerLitre ? `${(+p.grammPerLitre).toFixed(1)} g/L` : null;
-        // FIX: Join with ' / ' for a single line display
         const portion = [pct, gram].filter(Boolean).join(' / ');
         const productUrl = `index.html?id=${encodeURIComponent(p.wNumber)}`;
 
@@ -303,7 +345,7 @@
             PREFIX schema: <http://schema.org/>
             PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
             PREFIX obochebi: <http://purl.obolibrary.org/obo/chebi/>
-            SELECT DISTINCT ?name ?formula ?smiles
+            SELECT DISTINCT ?name ?formula ?smiles ?iupac
               (GROUP_CONCAT(DISTINCT ?roleName; separator=",") AS ?roles)
               (GROUP_CONCAT(DISTINCT ?chebiIRI; separator=",") AS ?chebiIRIs)
             WHERE
@@ -315,10 +357,11 @@
                 ?component :substance ?substance ; :role/schema:name ?roleName . FILTER(LANG(?roleName) = "de")
                 OPTIONAL { ?substance obochebi:formula ?formula . }
                 OPTIONAL { ?substance obochebi:smiles ?smiles . }
+                OPTIONAL { ?substance :iupac ?iupac . }
                 OPTIONAL { ?substance (:hasChebiIdentity|:hasPartialChebiIdentity) ?chebiIRI . }
               }
             }
-            GROUP BY ?name ?formula ?smiles`;
+            GROUP BY ?name ?formula ?smiles ?iupac`;
           const sparqlProducts = `
             PREFIX schema: <http://schema.org/>
             PREFIX : <https://agriculture.ld.admin.ch/plant-protection/>
@@ -353,7 +396,7 @@
 
           const structuredData = {
             name: core.name.value, roles: core.roles ? [...new Set(core.roles.value.split(','))].sort() : [],
-            formula: core.formula?.value, smiles: core.smiles?.value, chebi: chebiIds,
+            formula: core.formula?.value, smiles: core.smiles?.value, iupac: core.iupac?.value, chebi: chebiIds,
             products: productsRes.results.bindings.map(p => ({
               productName: p.productName.value, wNumber: p.wNumber.value,
               permissionHolderLegalName: p.permissionHolderLegalName.value,
