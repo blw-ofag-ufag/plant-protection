@@ -142,7 +142,7 @@
     const placeholderSvg = `<svg viewBox="0 0 160 120" role="img"><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="100" font-family="Poppins" fill="none" stroke="var(--text-tertiary)" stroke-width="1" stroke-linejoin="round">?</text></svg>`;
 
     return `
-      <li class="component-tile" data-uri="${c.uri}" onclick="window.open('substance.html?id=${c.uri.split('/').pop()}', '_blank', 'noopener')">
+      <li class="component-tile" data-uri="${c.uri}" onclick="window.open('substance.html?id=${c.uri.split('/').pop()}', 'noopener')">
         <div class="tile-header">
           <h4 class="component-name">${c.name}</h4>
           ${portion ? `<div class="component-portion">${portion}</div>` : ''}
