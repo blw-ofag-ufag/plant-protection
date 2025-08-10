@@ -116,16 +116,22 @@
     .chip.active {
       background-color: var(--primary); color: var(--background); font-weight: 600;
     }
+    /* NEW: Style for the 'NOT' filter state */
+    .chip.not {
+      background-color: #ff5252; /* Light, strong red */
+      color: var(--background);
+      font-weight: 600;
+      text-decoration: line-through;
+    }
     .chip.disabled {
       opacity: 0.4; pointer-events: none; background-color: var(--surface-1);
     }
 
-    /* FIX: The border-top is removed from this container */
     .reset-filters-container {
       padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
     }
     
-    /* NEW: Styling for the search term reminder message */
     .search-term-reminder {
         color: var(--text-secondary);
         margin-bottom: 1.5rem;
@@ -244,20 +250,22 @@
           $pageContent.classList.add('has-company-filter');
       };
       
-      const renderFilterUI = (productsForFilterLogic) => {
+      const renderFilterUI = (productsForFilterLogic, activeFilters) => {
           const urlParams = new URLSearchParams(window.location.search);
           const searchTerm = urlParams.get('search');
-          const activeSlugs = (urlParams.get('class') || '').split(',').filter(Boolean);
           
           const availableClassSlugs = new Set(productsForFilterLogic.flatMap(p => p.classes.map(c => c.slug)));
+          
           $classFilters.querySelectorAll('.chip[data-class-slug]').forEach(chip => {
               const slug = chip.dataset.classSlug;
-              const isActive = activeSlugs.includes(slug);
-              chip.classList.toggle('active', isActive);
-              chip.classList.toggle('disabled', !isActive && !availableClassSlugs.has(slug));
+              const filterState = activeFilters[slug];
+              
+              chip.classList.toggle('active', filterState === 'include');
+              chip.classList.toggle('not', filterState === 'exclude');
+              chip.classList.toggle('disabled', !filterState && !availableClassSlugs.has(slug));
           });
           
-          const isFilterActive = !!urlParams.get('company') || !!searchTerm || activeSlugs.length > 0;
+          const isFilterActive = !!urlParams.get('company') || !!searchTerm || Object.keys(activeFilters).length > 0;
           let uiHtml = '';
           if (isFilterActive) {
               if (searchTerm) {
@@ -271,26 +279,43 @@
       const applyFilters = async () => {
         const urlParams = new URLSearchParams(window.location.search);
         const searchTerm = (urlParams.get('search') || '').toLowerCase();
-        const selectedClassSlugs = (urlParams.get('class') || '').split(',').filter(Boolean);
         const companySlug = urlParams.get('company');
 
-        let intermediateProducts = allProducts.filter(p => 
-            (!companySlug || p.companySlug === companySlug) &&
-            (!searchTerm || p.name.toLowerCase().includes(searchTerm) || p.federalAdmissionNumber.toLowerCase().includes(searchTerm) || p.companyName.toLowerCase().includes(searchTerm))
-        );
+        // NEW: Get class filter states from the URL
+        const classFilters = {};
+        const classParam = urlParams.get('class') || '';
+        classParam.split(',').filter(Boolean).forEach(param => {
+            if (param.startsWith('!')) {
+                classFilters[param.substring(1)] = 'exclude';
+            } else {
+                classFilters[param] = 'include';
+            }
+        });
+
+        let intermediateProducts = allProducts.filter(p => {
+            const hasIncludedClasses = Object.entries(classFilters)
+                .filter(([, state]) => state === 'include')
+                .every(([slug]) => p.classes.some(c => c.slug === slug));
+
+            const hasExcludedClasses = Object.entries(classFilters)
+                .filter(([, state]) => state === 'exclude')
+                .some(([slug]) => p.classes.some(c => c.slug === slug));
+
+            return hasIncludedClasses && !hasExcludedClasses &&
+                   (!companySlug || p.companySlug === companySlug) &&
+                   (!searchTerm || p.name.toLowerCase().includes(searchTerm) || p.federalAdmissionNumber.toLowerCase().includes(searchTerm) || p.companyName.toLowerCase().includes(searchTerm));
+        });
         
-        const finalProducts = selectedClassSlugs.length > 0 
-            ? intermediateProducts.filter(p => selectedClassSlugs.every(slug => p.classes.some(c => c.slug === slug))) 
-            : intermediateProducts;
+        const finalProducts = intermediateProducts;
         
-        renderFilterUI(finalProducts);
+        renderFilterUI(finalProducts, classFilters);
         renderProducts(finalProducts);
         
         const count = finalProducts.length;
         $pageTitle.textContent = count === 1 ? '1 Produkt gefunden' : `${count} Produkte gefunden`;
 
-        if (companySlug && intermediateProducts.length > 0) {
-            const companyIri = intermediateProducts[0].companyIri;
+        if (companySlug && allProducts.some(p => p.companySlug === companySlug)) {
+            const companyIri = allProducts.find(p => p.companySlug === companySlug).companyIri;
             const sparqlCompany = `PREFIX schema:<http://schema.org/> SELECT * WHERE { VALUES ?c { <${companyIri}> } ?c schema:legalName ?name . OPTIONAL { ?c schema:address ?a . ?a schema:streetAddress ?street ; schema:postalCode ?postal ; schema:addressLocality ?locality . } }`;
             try {
                 const companyJ = await fetchSparql(sparqlCompany);
@@ -317,9 +342,32 @@
           } else if (chipEl) {
               e.preventDefault();
               const urlParams = new URLSearchParams(window.location.search);
-              const activeSlugs = new Set((urlParams.get('class') || '').split(',').filter(Boolean));
-              activeSlugs.add(chipEl.dataset.classSlug);
-              urlParams.set('class', [...activeSlugs].join(','));
+              const classFilters = {};
+              const classParam = urlParams.get('class') || '';
+              classParam.split(',').filter(Boolean).forEach(param => {
+                  if (param.startsWith('!')) {
+                      classFilters[param.substring(1)] = 'exclude';
+                  } else {
+                      classFilters[param] = 'include';
+                  }
+              });
+
+              const slug = chipEl.dataset.classSlug;
+              if (classFilters[slug] === 'include') {
+                classFilters[slug] = 'exclude';
+              } else if (classFilters[slug] === 'exclude') {
+                delete classFilters[slug];
+              } else {
+                classFilters[slug] = 'include';
+              }
+
+              const newClassParam = Object.entries(classFilters).map(([s, state]) => state === 'exclude' ? `!${s}` : s).join(',');
+              
+              if (newClassParam) {
+                  urlParams.set('class', newClassParam);
+              } else {
+                  urlParams.delete('class');
+              }
               window.history.pushState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
               applyFilters();
           }
@@ -328,13 +376,36 @@
       const handleClassFilterClick = (e) => {
         const chip = e.target.closest('.chip[data-class-slug]');
         if (!chip) return;
+        
+        const slug = chip.dataset.classSlug;
         const urlParams = new URLSearchParams(window.location.search);
-        const activeSlugs = (urlParams.get('class') || '').split(',').filter(Boolean);
-        const index = activeSlugs.indexOf(chip.dataset.classSlug);
-        if (index > -1) activeSlugs.splice(index, 1);
-        else activeSlugs.push(chip.dataset.classSlug);
-        if (activeSlugs.length > 0) urlParams.set('class', activeSlugs.join(','));
-        else urlParams.delete('class');
+        
+        const classFilters = {};
+        const classParam = urlParams.get('class') || '';
+        classParam.split(',').filter(Boolean).forEach(param => {
+            if (param.startsWith('!')) {
+                classFilters[param.substring(1)] = 'exclude';
+            } else {
+                classFilters[param] = 'include';
+            }
+        });
+
+        if (classFilters[slug] === 'include') {
+          classFilters[slug] = 'exclude';
+        } else if (classFilters[slug] === 'exclude') {
+          delete classFilters[slug];
+        } else {
+          classFilters[slug] = 'include';
+        }
+
+        const newClassParam = Object.entries(classFilters).map(([s, state]) => state === 'exclude' ? `!${s}` : s).join(',');
+        
+        if (newClassParam) {
+            urlParams.set('class', newClassParam);
+        } else {
+            urlParams.delete('class');
+        }
+        
         window.history.pushState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
         applyFilters();
       };
