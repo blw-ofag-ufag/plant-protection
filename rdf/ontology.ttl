@@ -78,7 +78,10 @@ schema:PostalAddress a owl:Class ;
 schema:QuantitativeValue a owl:Class ;
     rdfs:label "Quantitativer Wert"@de,
         "Quantitative value"@en ;
-    rdfs:comment "A point value or interval for product characteristics and other purposes."@en .
+    rdfs:comment "A point value or interval for product characteristics and other purposes."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :Unit ;
+            owl:onProperty schema:unitCode ] .
 
 wikidata:Q16521 a owl:Class ;
     rdfs:label "Biologisches Taxon"@de,
@@ -765,7 +768,8 @@ wikidata:Q16521 a owl:Class ;
 
 :NonChemicalSubstance a owl:Class ;
     rdfs:label "Chemisch nicht definierbare Substanz"@de ;
-    rdfs:comment "Generische Klasse für Substanzen, Gemische oder Formulierungsbestandteile, die sich nicht auf eine oder wenige klar definierte chemische Verbindung beziehen."@de .
+    rdfs:comment "Generische Klasse für Substanzen, Gemische oder Formulierungsbestandteile, die sich nicht auf eine oder wenige klar definierte chemische Verbindung beziehen."@de ;
+    rdfs:subClassOf :Substance .
 
 :Notice a owl:Class ;
     rdfs:label "Hinweis"@de,
@@ -962,7 +966,7 @@ wikidata:Q16521 a owl:Class ;
         "Viricida"@it ;
     rdfs:subClassOf :ChemicalProduct .
 
-_:nff45ca9369b04bca81151e343eb1b8e5b12 a owl:Class ;
+_:n6368d8c23b8048d6858c853bf9596736b13 a owl:Class ;
     owl:oneOf ( :AdditiveToDeclare :Synergist :Safener :ActiveIngredient ) .
 
 schema:addressLocality a owl:DatatypeProperty ;
@@ -1492,7 +1496,7 @@ schema:addressCountry a owl:ObjectProperty ;
         "Role"@en ;
     rdfs:comment "The role that a particular component plays in a mixture."@en ;
     rdfs:domain :ComponentPortion ;
-    rdfs:range _:nff45ca9369b04bca81151e343eb1b8e5b12 .
+    rdfs:range _:n6368d8c23b8048d6858c853bf9596736b13 .
 
 :substance a owl:ObjectProperty ;
     rdfs:label "Substanz"@de,
@@ -1536,15 +1540,15 @@ schema:maxValue rdfs:label "Maximaler Wert"@de,
 schema:minValue rdfs:label "Minimaler Wert"@de,
         "Minimal value"@en .
 
-schema:unitCode rdfs:label "Einheitencode"@de,
-        "Unit code"@en .
-
 schema:validFrom schema:name "Valid from"@en .
 
 schema:validTo schema:name "Valid to"@en .
 
 schema:value rdfs:label "Wert"@de,
         "Value"@en .
+
+schema:unitCode rdfs:label "Einheitencode"@de,
+        "Unit code"@en .
 
 :ActiveIngredient rdfs:label "Aktivsubstanz"@de,
         "Active substance"@en,
