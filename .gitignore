@@ -3,3 +3,5 @@ notes.*
 rdf/graph.ttl
 *.DS_Store
 /api
+/docs/renderer
+/rdf/comments
