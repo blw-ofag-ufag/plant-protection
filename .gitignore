@@ -1,4 +1,5 @@
-upload.sh
+.env
+/venv
 notes.*
 rdf/graph.ttl
 *.DS_Store
