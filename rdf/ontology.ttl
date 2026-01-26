@@ -1137,7 +1137,7 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:domain :Indication ;
     rdfs:range schema:QuantitativeValue .
 
-:federalAdmissionNumber a owl:DatatypeProperty ;
+:federalAdmissionNumber a owl:DatatypeProperty, owl:FunctionalDataProperty ;
     rdfs:label "Eidgenössische Zulassungsnummer"@de,
         "Federal admission number"@en,
         "Numéro d'autorisation fédérale"@fr,
