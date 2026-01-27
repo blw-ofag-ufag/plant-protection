@@ -1,3 +1,6 @@
+# load environment variables
+. ./.env
+
 # Running ETL pipeline
 # Rscript automation/etl.R
 
@@ -21,11 +24,5 @@ curl \
   -H "Content-Type: text/turtle" \
   --data-binary @rdf/graph.ttl \
   "$ENDPOINT?graph=$GRAPH"
-
-echo "Remove graph.ttl file"
-rm rdf/graph.ttl
-
-echo "Remove graph.ttl file"
-rm rdf/graph.ttl
 
 echo "All commands executed."
