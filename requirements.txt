@@ -8,3 +8,4 @@ packaging>=21.3
 prettytable>=3.7.0
 html5rdf<2,>=1.2
 otsrdflib>=0.5.0
+owlready2>=0.49
