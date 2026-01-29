@@ -1,5 +1,7 @@
 > [!WARNING]
-> Currently, this project and the written data is in the prototype stage and should not be consumed by productive applications.
+> This project represents a PoC and should not be consumed by productive applications.
+> It is currently being refactored at <https://github.com/BLV-OSAV-USAV/PSMV-RDF>.
+> Head over there for more information about the availability of plant protection product data on LINDAS.
 
 # Plant Protection Products as Linked Data
 
